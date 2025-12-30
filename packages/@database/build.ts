@@ -7,6 +7,7 @@ Bun.build({
     sourcemap: 'linked',
     minify: false, // Change to true to make the code fucking unreadable for almost no performance boost
     root: '.',
+    packages: 'external',
     external: ['pg', 'neo4j-driver'],
   });
   

@@ -1,23 +1,40 @@
 {
-    "name": "@pokemon/scripts",
-    "version": "0.0.0",
-    "private": true,
-    "type": "module",
-    "module": "./bin/index.js",
-    "bin": "./bin/index.js",
-    "scripts": {
-        "sync:sets": "bun run ./bin/index.js sync:sets",
-        "sync:cards": "bun run ./bin/index.js sync:cards",
-        "docker:scripts:db:sync": "bun run ./bin/index.js db:sync"
-    },
-    "dependencies": {
-        "@pokemon/clients": "workspace:*",
-        "@pokemon/database": "workspace:*",
-        "@pokemon/logger": "workspace:*",
-        "chalk": "^5.4.1",
-        "commander": "^12.1.0",
-        "debug": "^4.4.0",
-        "handlebars": "^4.7.8",
-        "node-emoji": "^2.2.0"
-    }
+  "name": "@pokemon/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "module": "./bin/index.js",
+  "bin": {
+    "pokemon-scripts": "./bin/index.js",
+    "oak": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "types"
+  ],
+  "engines": {
+    "bun": "1.3.5"
+  },
+  "packageManager": "bun@1.3.5",
+  "scripts": {
+    "sync:sets": "bun run ./bin/index.js sync:sets",
+    "sync:cards": "bun run ./bin/index.js sync:cards",
+    "docker:scripts:db:sync": "bun run ./bin/index.js db:sync",
+    "scripts:json:ls": "bun run ./bin/index.js json:ls",
+    "scripts:json:sync": "DEBUG=* bun run ./bin/index.js json:sync"
+  },
+  "dependencies": {
+    "@pokemon/clients": "workspace:*",
+    "@pokemon/database": "workspace:*",
+    "@pokemon/logger": "workspace:*",
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "debug": "^4.4.0",
+    "handlebars": "^4.7.8",
+    "node-emoji": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.5"
+  }
 }

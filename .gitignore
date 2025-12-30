@@ -6,7 +6,13 @@ node_modules
 .pnp.js
 
 # Local env files
-.env*
+.env
+.env.local
+.env.development
+.env.test
+.env.staging
+.env.production
+.env.*.database
 
 # Testing
 coverage
@@ -34,3 +40,9 @@ yarn-error.log*
 
 apps/bot-cli
 apps/bot-cli-auth-server
+
+# Snyk Security Extension - AI Rules (auto-generated)
+.github/instructions/snyk_rules.instructions.md
+
+# Raw JSON Data Files
+data/pokemon-json

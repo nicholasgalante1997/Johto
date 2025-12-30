@@ -1,5 +1,4 @@
 import path from 'path';
-import fs from 'fs/promises';
 
 import { mimeTypes } from './mime';
 
@@ -10,7 +9,7 @@ export async function isRequestForStaticFile(request: Request) {
   for (const directory of staticFileDirectories) {
     const stdpath = path.join(process.cwd(), directory, url.pathname);
     try {
-      if (await fs.exists(stdpath)) {
+      if (await Bun.file(stdpath).exists()) {
         return true;
       }
     } catch (e) {
@@ -26,8 +25,8 @@ export async function handleStaticFileRequest(request: Request) {
   for (const directory of staticFileDirectories) {
     const stdpath = path.join(process.cwd(), directory, url.pathname);
     try {
-      if (await fs.exists(stdpath)) {
-        const file = await fs.readFile(stdpath);
+      const file = Bun.file(stdpath)
+      if (await file.exists()) {
         const ext = path.extname(url.pathname);
         const contentType = mimeTypes[ext] ?? 'application/octet-stream';
         return new Response(file, {

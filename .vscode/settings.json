@@ -3,5 +3,7 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
 }

@@ -5,5 +5,6 @@ Bun.build({
     target: 'bun',
     outdir: './out',
     splitting: false,
-    external: [],
+    packages: 'external',
+    sourcemap: 'linked',
 });

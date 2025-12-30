@@ -1,0 +1,56 @@
+# mise-en-place <https://mise.jdx.dev/configuration.html>
+
+[tools]
+bun = { version = "1.3.5", os = ["linux", "macos"] }
+node = { version = "24.6.0", os = ["linux", "macos"] }
+rust = { version = "1.92.0", os = ["linux", "macos"] }
+
+[env]
+_.file = [".env"]
+_.path = [
+    # adds a path relative to the project root (config_root)
+    # We need this added to path, in order to use commands like
+    # [turbo, webpack, etc]
+    # that our package.json#scripts expects to load from node_modules/.bin
+    "{{config_root}}/node_modules/.bin",
+]
+
+[tasks]
+
+[tasks.install]
+description = "Installs all project dependencies"
+run = "bun install --frozen-lockfile"
+
+[tasks.test]
+description = "Runs the test suite"
+run = "bun run test"
+depends = ["install"]
+
+[tasks.lint]
+description = "Runs the linter"
+run = "bun run lint"
+depends = ["install"]
+
+[tasks.build]
+description = "Builds the project"
+run = "bun run build"
+depends = ["install"]
+
+[tasks.start]
+description = "Starts the application"
+run = "bun run start"
+depends = ["build"]
+
+[tasks.dev]
+description = "Starts the application in development mode"
+run = "bun run dev"
+depends = ["install"]
+
+[tasks.serve]
+description = "Serves the built application"
+run = "bun run serve"
+depends = ["build"]
+
+[tasks.clean]
+description = "Cleans the project build artifacts"
+run = "bun run clean"

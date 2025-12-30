@@ -1,5 +1,5 @@
 include:
-  - ./database/docker-compose.yml
+  - ./docker/database/docker-compose.yml
   - ./apps/tcg-api/docker-compose.yml
   - ./docker-compose.web.yml
 

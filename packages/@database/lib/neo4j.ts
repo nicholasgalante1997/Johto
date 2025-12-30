@@ -1,5 +1,5 @@
 import { Primitives } from '@pokemon/utils';
-import neo4j, { Driver, type Config } from 'neo4j-driver';
+import neo4j, { type Config } from 'neo4j-driver';
 
 import { type Pokemon } from '@pokemon/clients';
 import { createLogger } from '@pokemon/logger';
@@ -28,9 +28,10 @@ const defaultNeo4jConfig: Config = {
   maxTransactionRetryTime: 15 * 1000 // Retry a transaction for up to 15 seconds
 };
 
-let driver: Driver;
 
-export function getNeo4jDriver(): Driver {
+let driver: any;
+
+export function getNeo4jDriver(): typeof driver {
   if (!driver) {
     logger.info('Connecting to Neo4j...');
 
@@ -83,7 +84,7 @@ export async function writeToGraph<
       logger.info(query, params);
     }
 
-    const result = await session.executeWrite(async (tx) => {
+    const result = await session.executeWrite(async (tx: any) => {
       return await tx.run(query, params);
     });
 
@@ -125,7 +126,7 @@ export async function readFromGraph<T>(
       logger.info(query, params);
     }
 
-    const result = await session.executeRead(async (tx) => {
+    const result = await session.executeRead(async (tx: any) => {
       return await tx.run(query, params);
     });
 
@@ -142,7 +143,7 @@ export async function readFromGraph<T>(
     }
 
     await session.close();
-    return records?.records.map((record) => record.toObject()) as T[];
+    return records?.records.map((record: any) => record.toObject()) as T[];
   }
 }
 
