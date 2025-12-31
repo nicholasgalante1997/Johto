@@ -18,8 +18,7 @@
     "bundle": "bun run build.ts",
     "prebuild": "run-p clean",
     "build": "run-s bundle build-types",
-    "clean": "rm -rf out",
-    "test": "bun test"
+    "clean": "rm -rf out"
   },
   "devDependencies": {
     "@pokemon/configs": "workspace:*",

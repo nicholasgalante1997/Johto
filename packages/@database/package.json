@@ -22,8 +22,7 @@
     "build": "run-p bundle build-types",
     "bundle": "bun run build.ts",
     "check-types": "tsc -p tsconfig.json",
-    "clean": "rm -rf dist",
-    "test": "bun test"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "@pokemon/configs": "workspace:*",

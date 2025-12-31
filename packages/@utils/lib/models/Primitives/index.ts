@@ -8,6 +8,10 @@ export default class Primitives {
       return value;
     }
 
+    if (Array.isArray(value)) {
+      return JSON.stringify(value);
+    }
+
     if (typeof value === 'object') {
       if ('toString' in value) {
         return value.toString();
@@ -50,16 +54,16 @@ export default class Primitives {
       return value;
     }
 
-    if (typeof value === 'object') {
-      return Object.entries(value);
-    }
-
     if (value instanceof Set) {
       return Array.from(value);
     }
 
     if (value instanceof Map) {
       return Array.from(value);
+    }
+
+    if (typeof value === 'object') {
+      return Object.entries(value);
     }
 
     return [value];

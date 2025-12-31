@@ -3,6 +3,7 @@ import {
   insertSet as postgres_insertSet,
   insertCard as postgres_insertCard
 } from './postgres';
+import * as sqlite from './sqlite';
 import {
   closeNeo4jDriver,
   getNeo4jDriver,
@@ -29,4 +30,4 @@ const neo4j = {
   closeNeo4jDriver: closeNeo4jDriver
 };
 
-export { neo4j, postgres };
+export { neo4j, postgres, sqlite };

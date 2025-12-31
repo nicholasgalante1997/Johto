@@ -24,6 +24,9 @@
     "start": {
       "dependsOn": ["^start"]
     },
+    "test": {
+      "dependsOn": ["^test"]
+    },
     "docker:web:start": {
       "dependsOn": ["^docker:web:start"]
     },

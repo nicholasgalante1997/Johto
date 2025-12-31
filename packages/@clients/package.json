@@ -26,8 +26,7 @@
     "bundle": "bun run build.ts",
     "check-types": "tsc -p tsconfig.json --noEmit",
     "clean": "rm -rf dist",
-    "show-typescript-config": "tsc -p tsconfig.json --showConfig",
-    "test": "bun test"
+    "show-typescript-config": "tsc -p tsconfig.json --showConfig"
   },
   "dependencies": {
     "@pokemon/configs": "workspace:*"

@@ -10,7 +10,7 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md,js,jsx}\"",
     "start": "turbo start",
-    "json:ls": "",
+    "test": "turbo test",
     "json:sync": "turbo scripts:json:sync",
     "docker:web:start": "turbo run docker:web:start",
     "docker:scripts:db:sync": "turbo run docker:scripts:db:sync"
