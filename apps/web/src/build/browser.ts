@@ -1,6 +1,13 @@
 await Bun.build({
-  entrypoints: ['src/browser/index.tsx'],
+  entrypoints: ['src/web/browser/index.tsx'],
+  jsx: {
+    runtime: 'automatic',
+    importSource: 'react'
+  },
   outdir: './out',
+  naming: {
+    entry: 'www/browser.[hash].js'
+  },
   target: 'browser',
   format: 'esm',
   packages: 'bundle',

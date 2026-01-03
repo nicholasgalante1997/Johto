@@ -1,5 +1,6 @@
+import 'dotenv/config.js';
 import { Command } from 'commander';
-import { scaffold, syncCards, syncPokemonJson, syncSets } from "../lib/index.js";
+import { scaffold, syncCards, syncPokemonJson, syncSets, sqlite } from "../lib/index.js";
 
 const program = new Command();
 
@@ -12,6 +13,15 @@ program
     await syncSets();
     await syncCards();
   });
+
+program
+  .command('db:sqlite:init')
+  .description(
+    'Initializes an in memory sqlite db with the locally fetched Pokemon TCG API V2'
+  )
+  .action(async () => {
+    await sqlite.initDatabase(sqlite.getSqlite3Database());
+  })
 
 program.command('json:sync')
   .description('Synchronizes JSON data from the Pokemon TCG API V2')

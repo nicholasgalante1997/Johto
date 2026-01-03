@@ -61,11 +61,7 @@ export const initSchema = (db: Database): void => {
       legalities TEXT,
       images TEXT,
       tcgplayer_url TEXT,
-      tcgplayer_updated_at TEXT,
-      tcgplayer_prices TEXT,
       cardmarket_url TEXT,
-      cardmarket_updated_at TEXT,
-      cardmarket_prices TEXT,
       created_at TEXT DEFAULT (datetime('now')),
       updated_at TEXT DEFAULT (datetime('now'))
     );
@@ -229,9 +225,8 @@ export const insertCard = (db: Database) => {
       id, name, supertype, subtypes, hp, types, evolves_from, evolves_to,
       rules, abilities, attacks, weaknesses, retreat_cost, converted_retreat_cost,
       set_id, number, artist, rarity, flavor_text, national_pokedex_numbers,
-      legalities, images, tcgplayer_url, tcgplayer_updated_at, tcgplayer_prices,
-      cardmarket_url, cardmarket_updated_at, cardmarket_prices
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      legalities, images, tcgplayer_url, cardmarket_url
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   return (
     id: string,
@@ -257,11 +252,7 @@ export const insertCard = (db: Database) => {
     legalities: string | null,
     images: string | null,
     tcgplayerUrl: string | null,
-    tcgplayerUpdatedAt: string | null,
-    tcgplayerPrices: string | null,
     cardmarketUrl: string | null,
-    cardmarketUpdatedAt: string | null,
-    cardmarketPrices: string | null
   ) =>
     stmt.run(
       id,
@@ -287,11 +278,7 @@ export const insertCard = (db: Database) => {
       legalities,
       images,
       tcgplayerUrl,
-      tcgplayerUpdatedAt,
-      tcgplayerPrices,
       cardmarketUrl,
-      cardmarketUpdatedAt,
-      cardmarketPrices
     );
 };
 
@@ -302,9 +289,8 @@ export const updateCard = (db: Database) => {
         evolves_to = ?, rules = ?, abilities = ?, attacks = ?, weaknesses = ?,
         retreat_cost = ?, converted_retreat_cost = ?, set_id = ?, number = ?,
         artist = ?, rarity = ?, flavor_text = ?, national_pokedex_numbers = ?,
-        legalities = ?, images = ?, tcgplayer_url = ?, tcgplayer_updated_at = ?,
-        tcgplayer_prices = ?, cardmarket_url = ?, cardmarket_updated_at = ?,
-        cardmarket_prices = ?, updated_at = datetime('now')
+        legalities = ?, images = ?, tcgplayer_url = ?, cardmarket_url = ?, 
+        updated_at = datetime('now')
     WHERE id = ?
   `);
   return (
@@ -331,11 +317,7 @@ export const updateCard = (db: Database) => {
     legalities: string | null,
     images: string | null,
     tcgplayerUrl: string | null,
-    tcgplayerUpdatedAt: string | null,
-    tcgplayerPrices: string | null,
     cardmarketUrl: string | null,
-    cardmarketUpdatedAt: string | null,
-    cardmarketPrices: string | null
   ) =>
     stmt.run(
       name,
@@ -360,11 +342,7 @@ export const updateCard = (db: Database) => {
       legalities,
       images,
       tcgplayerUrl,
-      tcgplayerUpdatedAt,
-      tcgplayerPrices,
       cardmarketUrl,
-      cardmarketUpdatedAt,
-      cardmarketPrices,
       id
     );
 };

@@ -1,4 +1,4 @@
-import { renderApp } from './renderApp';
+import { renderWebApp } from './web/utils/render';
 import {
   handleStaticFileRequest,
   isRequestForStaticFile
@@ -6,9 +6,11 @@ import {
 
 export async function handleRequest(request: Request) {
   const url = new URL(request.url);
+  const path = url.pathname;
+  const searchParams = url.searchParams;
 
   if (['/', '/index.html'].includes(url.pathname)) {
-    return renderApp();
+    return renderWebApp();
   }
 
   if (await isRequestForStaticFile(request)) {
