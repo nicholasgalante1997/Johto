@@ -258,8 +258,7 @@ Pokemon/
 ### Frontend
 - **React 19.2** with SSR
 - **TypeScript 5.5** with strict mode
-- **Bun 1.3.5** runtime and package manager
-- **Webpack 5** with Babel and React Compiler
+- **Bun 1.3.5** runtime and package manager and bundler
 - **Storybook 8.5** for component development
 
 ### Backend

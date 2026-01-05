@@ -8,7 +8,7 @@ tools:
   - Bash
   - Grep
   - Glob
-model: claude-haiku-4.5
+model: claude-sonnet-4.5
 permissionMode: default
 skills:
   - react-bun-ssr
@@ -40,13 +40,11 @@ Purpose: You are a specialized agent for React 19 development with Bun runtime, 
 
 ### Build System
 
-- **Webpack 5**: Production bundling configuration
-- **Babel**: React Compiler plugin integration
-- **Code Splitting**: Route-based and component-based splitting
-- **Asset Optimization**: Image and CSS optimization
+- **Bun Bundler** Uses the built in `bun.build(...)` programmatic api
+- **Esbuild Interface** Bun has a similar build api to `esbuild`
 - **Source Maps**: Development debugging support
 
-### Pokemon TCG Features
+### Pokemon TCG Features (All future state)
 
 - **Card Display**: Card grid layouts and detail views
 - **Set Browsing**: Pokemon TCG set organization
@@ -69,17 +67,48 @@ Purpose: You are a specialized agent for React 19 development with Bun runtime, 
 
 ```typescript
 // Server-side rendering entry
-import { renderToString } from 'react-dom/server';
+import React from 'react';
+import { renderToReadableStream, renderToString } from 'react-dom/server';
 
-export async function render(url: string) {
-  const html = renderToString(<App url={url} />);
-  return html;
+import { getBrowserJavascriptBundle } from './fs';
+
+import App from '../../../../web/App';
+import ServerErrorPage from '../../../../web/pages/ServerErrorPage';
+
+export async function renderWebApp() {
+  const bundle = await getBrowserJavascriptBundle();
+  if (!bundle) {
+    return new Response(
+      renderToString(
+        <ServerErrorPage error={new Error('Missing Web Assets')} />
+      ),
+      {
+        status: 500,
+        statusText: 'Internal Server Error',
+        headers: { 'Content-Type': 'text/html; charset=utf-8' }
+      }
+    );
+  }
+
+  const stream = await renderToReadableStream(<App />, {
+    bootstrapScriptContent: `window.__INITIAL_STATE__ = ${JSON.stringify({})}`,
+    bootstrapModules: [bundle]
+  });
+
+  return new Response(stream, {
+    headers: { 'Content-Type': 'text/html; charset=utf-8' }
+  });
 }
 
+
 // Client-side hydration
+import React from 'react';
 import { hydrateRoot } from 'react-dom/client';
 
-hydrateRoot(document.getElementById('root')!, <App />);
+import App from '../App';
+
+hydrateRoot(document, <App />);
+
 ```
 
 ### Component Structure
@@ -87,9 +116,11 @@ hydrateRoot(document.getElementById('root')!, <App />);
 ```
 PokemonCard/
 ├── index.ts
-├── PokemonCard.tsx
+├── Component.tsx (Logic/Hooks/Data Layer)
+├── View.tsx (Markup/View Layer)
 ├── PokemonCard.css
 ├── types.ts
+├── stories/
 └── __tests__/
     └── PokemonCard.test.tsx
 ```
@@ -99,12 +130,12 @@ PokemonCard/
 - Fetch Pokemon card data from GraphQL API
 - Handle loading states with Suspense
 - Error boundaries for failed requests
-- Client-side caching with React hooks
+- Client-side data fetching with React hooks using @tanstack/react-query
 
 ## Critical Constraints
 
 - **Bun Runtime**: Use Bun-native APIs where possible
-- **React 19 Only**: No legacy React patterns
+- **React 19 Only**: No legacy React patterns, automatic runtime
 - **TypeScript Strict**: All code must pass strict type checking
 - **SSR Compatible**: All components must work server-side
 - **Pokemon Data Types**: Use types from @pokemon/pokemon-data
@@ -114,11 +145,11 @@ PokemonCard/
 ### TypeScript Types
 
 ```typescript
-import { PokemonCard as CardData } from '@pokemon/pokemon-data';
+import { type Pokemon } from '@pokemon/clients';
 
 export interface PokemonCardProps {
-  card: CardData;
-  onSelect?: (card: CardData) => void;
+  card: Pokemon.Card;
+  onSelect?: (card: Pokemon.Card) => void;
   variant?: 'grid' | 'list' | 'detail';
 }
 ```
@@ -187,8 +218,8 @@ const data = await file.json();
 Bun.serve({
   port: 3000,
   fetch(req) {
-    const url = new URL(req.url);
-    return handleSSR(url.pathname);
+    middleware(request);
+    return handleRequest(request);
   }
 });
 ```
@@ -237,7 +268,7 @@ test('PokemonCard renders correctly', () => {
 - Create Storybook variants
 
 **Adding a new page:**
-- Create page component in `src/web/components/`
+- Create page component in `src/web/pages/`
 - Add route configuration
 - Implement SSR data fetching
 - Add page-specific styles

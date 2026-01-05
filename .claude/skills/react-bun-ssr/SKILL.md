@@ -25,36 +25,52 @@ Define patterns for React 19 server-side rendering with Bun runtime, focusing on
 **ALWAYS** implement SSR for initial page loads (ID: SSR_FIRST)
 
 ```typescript
-// server/lib/web/utils/render.tsx
-import { renderToString } from 'react-dom/server';
+// Server-side rendering entry
+import React from 'react';
+import { renderToReadableStream, renderToString } from 'react-dom/server';
 
-export async function renderPage(url: string): Promise<string> {
-  const app = <App url={url} />;
-  const html = renderToString(app);
+import { getBrowserJavascriptBundle } from './fs';
 
-  return `
-    <!DOCTYPE html>
-    <html>
-      <head><title>Pokemon TCG</title></head>
-      <body>
-        <div id="root">${html}</div>
-        <script src="/browser.js"></script>
-      </body>
-    </html>
-  `;
+import App from '../../../../web/App';
+import ServerErrorPage from '../../../../web/pages/ServerErrorPage';
+
+export async function renderWebApp() {
+  const bundle = await getBrowserJavascriptBundle();
+  if (!bundle) {
+    return new Response(
+      renderToString(
+        <ServerErrorPage error={new Error('Missing Web Assets')} />
+      ),
+      {
+        status: 500,
+        statusText: 'Internal Server Error',
+        headers: { 'Content-Type': 'text/html; charset=utf-8' }
+      }
+    );
+  }
+
+  const stream = await renderToReadableStream(<App />, {
+    bootstrapScriptContent: `window.__INITIAL_STATE__ = ${JSON.stringify({})}`,
+    bootstrapModules: [bundle]
+  });
+
+  return new Response(stream, {
+    headers: { 'Content-Type': 'text/html; charset=utf-8' }
+  });
 }
 ```
 
 **ALWAYS** hydrate on the client (ID: CLIENT_HYDRATE)
 
 ```typescript
-// web/browser/index.tsx
+// Client-side hydration
+import React from 'react';
 import { hydrateRoot } from 'react-dom/client';
 
-const root = document.getElementById('root');
-if (root) {
-  hydrateRoot(root, <App />);
-}
+import App from '../App';
+
+hydrateRoot(document, <App />);
+
 ```
 
 ### React 19 Features
@@ -132,7 +148,8 @@ export default React.memo(PokemonCard);
 ```
 ComponentName/
 ├── index.ts              # Barrel export
-├── ComponentName.tsx     # Component implementation
+├── Component.tsx         # Logic and Data Layer
+├── View.tsx              # View/Markup Layer
 ├── ComponentName.css     # Component styles
 ├── types.ts              # TypeScript types
 └── __tests__/
@@ -298,19 +315,29 @@ test('renders card name', () => {
 
 ## Build Configuration
 
-**ALWAYS** configure Webpack for SSR (ID: WEBPACK_SSR)
+**ALWAYS** use bun for bundling for production (ID: BUN_BUILDER)
 
 ```javascript
-// webpack.config.js
-export default {
-  target: 'node',
-  entry: './src/server/index.ts',
-  output: {
-    path: './dist',
-    filename: 'server.js'
+// src/build/browser.ts
+await Bun.build({
+  entrypoints: ['src/web/browser/index.tsx'],
+  jsx: {
+    runtime: 'automatic',
+    importSource: 'react'
   },
-  // ... other config
-};
+  outdir: './out',
+  naming: {
+    entry: 'www/browser.[hash].js'
+  },
+  target: 'browser',
+  format: 'esm',
+  packages: 'bundle',
+  splitting: false,
+  sourcemap: 'linked',
+  minify: false, 
+  root: '.'
+});
+
 ```
 
 ## Pokemon TCG Specific
@@ -387,19 +414,18 @@ export default React.memo(CardBrowser);
 ### SSR Entry Point
 
 ```typescript
-// server/index.ts
-import { renderToString } from 'react-dom/server';
-import App from '../web/App';
+// apps/web/src/server/server.ts
+import { handleRequest } from './lib/handleRequest';
+import { middleware } from './lib/middleware/middleware';
 
-Bun.serve({
-  port: 3000,
-  async fetch(req) {
-    const url = new URL(req.url);
-    const html = renderToString(<App url={url.pathname} />);
+export const serve = () => {
+  return Bun.serve({
+    port: 3000,
+    async fetch(req) {
+      middleware(req);
+      return handleRequest(req);
+    }
+  });
+};
 
-    return new Response(html, {
-      headers: { 'Content-Type': 'text/html' }
-    });
-  }
-});
 ```
