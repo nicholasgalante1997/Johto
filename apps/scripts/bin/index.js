@@ -5,7 +5,8 @@ import {
   syncCards,
   syncPokemonJson,
   syncSets,
-  sqlite
+  sqlite,
+  printDB
 } from '../lib/index.js';
 
 const program = new Command();
@@ -27,6 +28,16 @@ program
   )
   .action(async () => {
     await sqlite.initDatabase(sqlite.getSqlite3Database());
+  });
+
+program
+  .command('db:sqlite:print')
+  .description(
+    'Prints the content of Pokemon TCG API V2 (./database/pokemon-data.sqlite3.db)'
+  )
+  .action(() => {
+    const db = sqlite.getSqlite3Database();
+    printDB(db);
   });
 
 program
