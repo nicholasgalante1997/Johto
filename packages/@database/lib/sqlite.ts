@@ -252,7 +252,7 @@ export const insertCard = (db: Database) => {
     legalities: string | null,
     images: string | null,
     tcgplayerUrl: string | null,
-    cardmarketUrl: string | null,
+    cardmarketUrl: string | null
   ) =>
     stmt.run(
       id,
@@ -278,7 +278,7 @@ export const insertCard = (db: Database) => {
       legalities,
       images,
       tcgplayerUrl,
-      cardmarketUrl,
+      cardmarketUrl
     );
 };
 
@@ -317,7 +317,7 @@ export const updateCard = (db: Database) => {
     legalities: string | null,
     images: string | null,
     tcgplayerUrl: string | null,
-    cardmarketUrl: string | null,
+    cardmarketUrl: string | null
   ) =>
     stmt.run(
       name,

@@ -103,8 +103,8 @@ async function insertCard(pool: Pool, card: Pokemon.Card) {
   `;
 
   const params = [
-    card.id, /** Will need ID to be unique non-null non-default value */
-    card.name, /** Will also need name */
+    card.id /** Will need ID to be unique non-null non-default value */,
+    card.name /** Will also need name */,
     Primitives.coerceToString(card.supertype),
     Primitives.coerceToArray(card.subtypes),
     parseInt(Primitives.coerceToString(card.hp, '0'), 10),
@@ -123,7 +123,7 @@ async function insertCard(pool: Pool, card: Pokemon.Card) {
     Primitives.coerceToString(card.rarity),
     Primitives.coerceToString(card.flavorText),
     JSON.stringify(card?.nationalPokedexNumbers || []),
-    JSON.stringify(card?.legalities|| {}),
+    JSON.stringify(card?.legalities || {}),
     JSON.stringify(card?.images || {}),
     Primitives.coerceToString(card?.tcgplayer?.url, '#no-url'),
     null,

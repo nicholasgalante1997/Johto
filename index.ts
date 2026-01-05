@@ -71,7 +71,15 @@ const getCard = (cardId: string) => {
 
 const hasCardsData = async (set: any) => {
   const data = await Bun.file(
-    path.resolve(process.cwd(), 'packages', '@pokemon-data', 'data', 'cards', `${set.id}.d`, 'cards.json')
+    path.resolve(
+      process.cwd(),
+      'packages',
+      '@pokemon-data',
+      'data',
+      'cards',
+      `${set.id}.d`,
+      'cards.json'
+    )
   ).json();
 
   return data && data.data && data.data.length > 0;

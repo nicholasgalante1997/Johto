@@ -25,7 +25,7 @@ export async function handleStaticFileRequest(request: Request) {
   for (const directory of staticFileDirectories) {
     const stdpath = path.join(process.cwd(), directory, url.pathname);
     try {
-      const file = Bun.file(stdpath)
+      const file = Bun.file(stdpath);
       if (await file.exists()) {
         const ext = path.extname(url.pathname);
         const contentType = mimeTypes[ext] ?? 'application/octet-stream';

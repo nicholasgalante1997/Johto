@@ -1,6 +1,7 @@
 # Pokemon TCG Workspace - MVP Implementation Plan
 
 **Target Features:**
+
 - Store and manage decks of cards
 - Store and manage ownership of cards with market value
 - Easy approach to scaling features out
@@ -11,6 +12,7 @@
 ---
 
 ## Table of Contents
+
 1. [Phase 0: Foundation & Prerequisites](#phase-0-foundation--prerequisites)
 2. [Phase 1: User Authentication & Authorization](#phase-1-user-authentication--authorization)
 3. [Phase 2: Core API Endpoints](#phase-2-core-api-endpoints)
@@ -29,12 +31,15 @@
 **Duration:** 1-2 days | **Effort:** 8-12 hours
 
 ### Overview
+
 Set up development environment, verify infrastructure, and establish coding standards.
 
 ### Work Items
 
 #### 0.1 Environment Setup & Verification
+
 **Tasks:**
+
 - [ ] Verify all Docker services start successfully
 - [ ] Create `.env` files from templates
 - [ ] Run database migrations and verify schema
@@ -45,6 +50,7 @@ Set up development environment, verify infrastructure, and establish coding stan
 - [ ] Document environment variables
 
 **Acceptance Criteria:**
+
 - ✅ All 4 Docker services (postgres, neo4j, tcg-api, web) are healthy
 - ✅ PostgreSQL has >10,000 cards and >100 sets
 - ✅ Neo4j has corresponding nodes
@@ -52,6 +58,7 @@ Set up development environment, verify infrastructure, and establish coding stan
 - ✅ `.env.example` files documented for all required variables
 
 **Files to Create/Modify:**
+
 - `.env.postgres.database`
 - `.env.neo4j.database`
 - `apps/tcg-api/.env`
@@ -60,7 +67,9 @@ Set up development environment, verify infrastructure, and establish coding stan
 ---
 
 #### 0.2 Database Schema Extensions
+
 **Tasks:**
+
 - [ ] Design schema for user card ownership
 - [ ] Design schema for deck management
 - [ ] Design schema for price history tracking
@@ -69,6 +78,7 @@ Set up development environment, verify infrastructure, and establish coding stan
 - [ ] Document schema relationships
 
 **New Tables Required:**
+
 ```sql
 -- User card ownership with quantity tracking
 CREATE TABLE user_card_inventory (
@@ -130,6 +140,7 @@ CREATE INDEX idx_deck_cards_card ON deck_cards(card_id);
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Migration file created: `database/migrations/001_user_features.sql`
 - ✅ All tables created with proper constraints
 - ✅ Foreign key relationships established
@@ -138,13 +149,16 @@ CREATE INDEX idx_deck_cards_card ON deck_cards(card_id);
 - ✅ Schema documented in `docs/database-schema.md`
 
 **Files to Create:**
+
 - `database/migrations/001_user_features.sql`
 - `docs/database-schema.md`
 
 ---
 
 #### 0.3 Neo4j Graph Schema Extensions
+
 **Tasks:**
+
 - [ ] Define User node structure
 - [ ] Create OWNS relationship (User -> Card)
 - [ ] Create HAS_DECK relationship (User -> Deck)
@@ -153,6 +167,7 @@ CREATE INDEX idx_deck_cards_card ON deck_cards(card_id);
 - [ ] Document Cypher queries for common operations
 
 **Neo4j Schema:**
+
 ```cypher
 // User node
 CREATE CONSTRAINT user_id_unique IF NOT EXISTS
@@ -169,19 +184,23 @@ FOR (d:Deck) REQUIRE d.id IS UNIQUE;
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Constraints created for User and Deck nodes
 - ✅ Relationship patterns documented
 - ✅ Sample Cypher queries tested
 - ✅ Graph schema visualized and documented
 
 **Files to Create:**
+
 - `database/neo4j-schema.cypher`
 - `docs/neo4j-relationships.md`
 
 ---
 
 #### 0.4 Project Structure & Scalability Foundation
+
 **Tasks:**
+
 - [ ] Create modular route structure in Rust backend
 - [ ] Set up error handling framework
 - [ ] Create response types/DTOs
@@ -190,6 +209,7 @@ FOR (d:Deck) REQUIRE d.id IS UNIQUE;
 - [ ] Document coding standards
 
 **Directory Structure:**
+
 ```
 apps/tcg-api/src/
 ├── main.rs
@@ -225,6 +245,7 @@ apps/tcg-api/src/
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Directory structure created
 - ✅ Module system configured in `mod.rs` files
 - ✅ Custom error types defined (ApiError enum)
@@ -233,6 +254,7 @@ apps/tcg-api/src/
 - ✅ API versioning prefix configured
 
 **Files to Create:**
+
 - `apps/tcg-api/src/routes/mod.rs`
 - `apps/tcg-api/src/services/mod.rs`
 - `apps/tcg-api/src/utils/error.rs`
@@ -246,12 +268,15 @@ apps/tcg-api/src/
 **Duration:** 1 week | **Effort:** 30-40 hours
 
 ### Overview
+
 Implement secure user registration, login, and JWT-based authentication.
 
 ### Work Items
 
 #### 1.1 Backend: Authentication Infrastructure
+
 **Tasks:**
+
 - [ ] Add JWT dependencies to Rust project (`jsonwebtoken`, `bcrypt`)
 - [ ] Create User model with password hashing
 - [ ] Implement JWT token generation/validation
@@ -260,6 +285,7 @@ Implement secure user registration, login, and JWT-based authentication.
 - [ ] Implement password reset flow (email optional for MVP)
 
 **Dependencies:**
+
 ```toml
 # Add to apps/tcg-api/Cargo.toml
 jsonwebtoken = "9.2"
@@ -269,6 +295,7 @@ chrono = "0.4"
 ```
 
 **Code Structure:**
+
 ```rust
 // apps/tcg-api/src/models/user.rs
 pub struct User {
@@ -293,6 +320,7 @@ pub async fn refresh_access_token(refresh_token: &str) -> Result<String>
 ```
 
 **Acceptance Criteria:**
+
 - ✅ User can register with username, email, password
 - ✅ Passwords are hashed with bcrypt (cost factor 12)
 - ✅ Login returns JWT access token (15min expiry) + refresh token (7 days)
@@ -305,6 +333,7 @@ pub async fn refresh_access_token(refresh_token: &str) -> Result<String>
 - ✅ Password minimum 8 characters
 
 **Files to Create:**
+
 - `apps/tcg-api/src/models/user.rs`
 - `apps/tcg-api/src/services/auth_service.rs`
 - `apps/tcg-api/src/middleware/auth.rs`
@@ -313,7 +342,9 @@ pub async fn refresh_access_token(refresh_token: &str) -> Result<String>
 ---
 
 #### 1.2 Backend: Authentication Endpoints
+
 **Tasks:**
+
 - [ ] Implement POST `/api/v1/auth/register`
 - [ ] Implement POST `/api/v1/auth/login`
 - [ ] Implement POST `/api/v1/auth/refresh`
@@ -380,6 +411,7 @@ Response: 200
 ```
 
 **Acceptance Criteria:**
+
 - ✅ All endpoints return proper HTTP status codes
 - ✅ Validation errors return 400 with descriptive messages
 - ✅ Duplicate username/email returns 409 Conflict
@@ -390,13 +422,16 @@ Response: 200
 - ✅ All endpoints tested with curl/Postman
 
 **Files to Modify:**
+
 - `apps/tcg-api/src/routes/auth.rs`
 - `apps/tcg-api/src/main.rs` (register routes)
 
 ---
 
 #### 1.3 Frontend: Authentication UI
+
 **Tasks:**
+
 - [ ] Create AuthContext for global auth state
 - [ ] Build Login page component
 - [ ] Build Register page component
@@ -407,6 +442,7 @@ Response: 200
 - [ ] Implement automatic token refresh
 
 **Components:**
+
 ```
 apps/web/src/
 ├── contexts/
@@ -424,6 +460,7 @@ apps/web/src/
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Login form with email/password fields
 - ✅ Register form with username/email/password fields
 - ✅ Form validation with error messages
@@ -436,6 +473,7 @@ apps/web/src/
 - ✅ Error messages displayed for failed requests
 
 **Files to Create:**
+
 - `apps/web/src/contexts/AuthContext.tsx`
 - `apps/web/src/pages/Login.tsx`
 - `apps/web/src/pages/Register.tsx`
@@ -450,12 +488,15 @@ apps/web/src/
 **Duration:** 1 week | **Effort:** 25-35 hours
 
 ### Overview
+
 Implement foundational card and set browsing endpoints.
 
 ### Work Items
 
 #### 2.1 Backend: Card Endpoints
+
 **Tasks:**
+
 - [ ] Implement GET `/api/v1/cards` (list with pagination)
 - [ ] Implement GET `/api/v1/cards/:id` (single card)
 - [ ] Implement GET `/api/v1/cards/search` (text search)
@@ -511,6 +552,7 @@ Response: 200
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Pagination works correctly (default limit: 20, max: 100)
 - ✅ Filters can be combined (type=Fire&rarity=Rare)
 - ✅ Search is case-insensitive and partial match
@@ -520,13 +562,16 @@ Response: 200
 - ✅ All fields properly serialized to JSON
 
 **Files to Create:**
+
 - `apps/tcg-api/src/routes/cards.rs`
 - `apps/tcg-api/src/models/card.rs` (extend existing)
 
 ---
 
 #### 2.2 Backend: Set Endpoints
+
 **Tasks:**
+
 - [ ] Implement GET `/api/v1/sets` (list all sets)
 - [ ] Implement GET `/api/v1/sets/:id` (single set)
 - [ ] Implement GET `/api/v1/sets/:id/cards` (all cards in set)
@@ -565,6 +610,7 @@ Response: 200
 ```
 
 **Acceptance Criteria:**
+
 - ✅ All sets returned with correct data
 - ✅ Sets sorted by release_date (newest first by default)
 - ✅ Set detail includes card count
@@ -572,13 +618,16 @@ Response: 200
 - ✅ Invalid set ID returns 404
 
 **Files to Create:**
+
 - `apps/tcg-api/src/routes/sets.rs`
 - `apps/tcg-api/src/models/set.rs` (extend existing)
 
 ---
 
 #### 2.3 Frontend: Card & Set Browsing
+
 **Tasks:**
+
 - [ ] Create CardList page
 - [ ] Create CardDetail page
 - [ ] Create SetList page
@@ -591,6 +640,7 @@ Response: 200
 - [ ] Add loading skeletons
 
 **Acceptance Criteria:**
+
 - ✅ Card list displays in grid layout (4 columns desktop)
 - ✅ Filters update URL query params
 - ✅ Pagination maintains filter state
@@ -603,6 +653,7 @@ Response: 200
 - ✅ Responsive design (mobile-friendly)
 
 **Files to Create:**
+
 - `apps/web/src/pages/CardList.tsx`
 - `apps/web/src/pages/CardDetail.tsx`
 - `apps/web/src/pages/SetList.tsx`
@@ -620,12 +671,15 @@ Response: 200
 **Duration:** 1.5 weeks | **Effort:** 35-45 hours
 
 ### Overview
+
 Enable users to track which cards they own, including quantity and condition.
 
 ### Work Items
 
 #### 3.1 Backend: Inventory Models & Services
+
 **Tasks:**
+
 - [ ] Create UserCardInventory model in Rust
 - [ ] Implement inventory service layer
 - [ ] Add validation for card conditions
@@ -633,6 +687,7 @@ Enable users to track which cards they own, including quantity and condition.
 - [ ] Add Neo4j OWNS relationship creation
 
 **Code Structure:**
+
 ```rust
 // apps/tcg-api/src/models/inventory.rs
 pub struct UserCardInventory {
@@ -664,6 +719,7 @@ pub async fn get_inventory_value(user_id) -> Result<f64>
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Models map to database schema correctly
 - ✅ CardCondition enum validated
 - ✅ Quantity must be >= 1
@@ -673,13 +729,16 @@ pub async fn get_inventory_value(user_id) -> Result<f64>
 - ✅ Relationship deleted on remove
 
 **Files to Create:**
+
 - `apps/tcg-api/src/models/inventory.rs`
 - `apps/tcg-api/src/services/inventory_service.rs`
 
 ---
 
 #### 3.2 Backend: Inventory API Endpoints
+
 **Tasks:**
+
 - [ ] Implement POST `/api/v1/inventory/cards` (add card to collection)
 - [ ] Implement GET `/api/v1/inventory/cards` (get user's collection)
 - [ ] Implement PATCH `/api/v1/inventory/cards/:id` (update quantity/condition)
@@ -747,6 +806,7 @@ Response: 200
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Only authenticated users can access inventory
 - ✅ Users can only view/modify their own inventory
 - ✅ Adding duplicate card updates quantity (not creates new row)
@@ -757,12 +817,15 @@ Response: 200
 - ✅ Sorting works (by value, name, acquired_date)
 
 **Files to Create:**
+
 - `apps/tcg-api/src/routes/inventory.rs`
 
 ---
 
 #### 3.3 Frontend: Collection Management UI
+
 **Tasks:**
+
 - [ ] Create MyCollection page (list view)
 - [ ] Create AddCardModal component
 - [ ] Create InventoryCard component (shows quantity, value)
@@ -773,6 +836,7 @@ Response: 200
 - [ ] Add bulk import via CSV (optional for MVP)
 
 **Components:**
+
 ```
 apps/web/src/pages/
 ├── MyCollection.tsx
@@ -786,6 +850,7 @@ apps/web/src/components/
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Collection page shows all owned cards with images
 - ✅ Each card displays: quantity, condition, purchase price, current value
 - ✅ Can add card from detail page with condition selector
@@ -798,6 +863,7 @@ apps/web/src/components/
 - ✅ Optimistic UI updates for quantity changes
 
 **Files to Create:**
+
 - `apps/web/src/pages/MyCollection.tsx`
 - `apps/web/src/pages/CollectionStats.tsx`
 - `apps/web/src/components/AddCardModal.tsx`
@@ -807,13 +873,16 @@ apps/web/src/components/
 ---
 
 #### 3.4 Neo4j Graph Queries for Ownership
+
 **Tasks:**
+
 - [ ] Implement Cypher queries for ownership traversal
 - [ ] Create endpoint to get collection as graph
 - [ ] Build visualization of card relationships (optional)
 - [ ] Add graph-based recommendations (cards to complete set)
 
 **Cypher Queries:**
+
 ```cypher
 // Get all cards owned by user
 MATCH (u:User {id: $user_id})-[o:OWNS]->(c:PokemonCard)
@@ -836,6 +905,7 @@ LIMIT 10
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Graph queries return correct ownership data
 - ✅ Can retrieve collection with relationships
 - ✅ Missing cards query accurate
@@ -843,6 +913,7 @@ LIMIT 10
 - ✅ Query performance < 500ms for users with <1000 cards
 
 **Files to Create:**
+
 - `packages/@database/neo4j/src/queries/ownership.ts`
 - `apps/tcg-api/src/routes/graph.rs` (optional)
 
@@ -853,12 +924,15 @@ LIMIT 10
 **Duration:** 1 week | **Effort:** 25-30 hours
 
 ### Overview
+
 Track card market values over time and display in user inventory.
 
 ### Work Items
 
 #### 4.1 Backend: Price Data Sync Service
+
 **Tasks:**
+
 - [ ] Create price sync script (extends existing db:sync)
 - [ ] Parse TCGPlayer prices from card data
 - [ ] Parse Cardmarket prices from card data
@@ -867,6 +941,7 @@ Track card market values over time and display in user inventory.
 - [ ] Calculate price trends (7-day, 30-day change)
 
 **Code Structure:**
+
 ```typescript
 // apps/scripts/src/commands/sync-prices.ts
 async function syncPrices() {
@@ -897,6 +972,7 @@ async function syncPrices() {
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Script runs successfully and inserts price records
 - ✅ Duplicate price checks (don't insert same price multiple times per day)
 - ✅ Handles missing price data gracefully
@@ -905,13 +981,16 @@ async function syncPrices() {
 - ✅ Performance: processes 10,000 cards in < 5 minutes
 
 **Files to Create:**
+
 - `apps/scripts/src/commands/sync-prices.ts`
 - `packages/@database/postgres/src/queries/prices.ts`
 
 ---
 
 #### 4.2 Backend: Price API Endpoints
+
 **Tasks:**
+
 - [ ] Implement GET `/api/v1/cards/:id/prices` (price history)
 - [ ] Implement GET `/api/v1/cards/:id/prices/current` (latest price)
 - [ ] Add price trends calculation
@@ -964,6 +1043,7 @@ Response: 200
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Price history returns correct data points
 - ✅ Trends calculated accurately
 - ✅ Current prices from both markets
@@ -971,13 +1051,16 @@ Response: 200
 - ✅ Missing price data returns empty array (not error)
 
 **Files to Create:**
+
 - `apps/tcg-api/src/routes/market.rs`
 - `apps/tcg-api/src/services/market_service.rs`
 
 ---
 
 #### 4.3 Frontend: Price Display & Charts
+
 **Tasks:**
+
 - [ ] Add current price to CardDetail page
 - [ ] Create PriceHistoryChart component (line chart)
 - [ ] Show price trends with +/- indicators
@@ -986,6 +1069,7 @@ Response: 200
 - [ ] Add price alerts (optional: notify when card reaches target price)
 
 **Components:**
+
 ```
 apps/web/src/components/
 ├── PriceHistoryChart.tsx
@@ -994,6 +1078,7 @@ apps/web/src/components/
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Card detail page shows current market price
 - ✅ Price history chart displays 30-day trend
 - ✅ Trend indicators show % change (green up, red down)
@@ -1003,6 +1088,7 @@ apps/web/src/components/
 - ✅ Prices formatted with currency ($XX.XX)
 
 **Files to Create:**
+
 - `apps/web/src/components/PriceHistoryChart.tsx`
 - `apps/web/src/components/PriceBadge.tsx`
 - `apps/web/src/components/CollectionValueSummary.tsx`
@@ -1010,7 +1096,9 @@ apps/web/src/components/
 ---
 
 #### 4.4 Background Job for Price Updates
+
 **Tasks:**
+
 - [ ] Set up cron job in Docker Compose
 - [ ] Create background task runner (or use system cron)
 - [ ] Schedule daily price sync (e.g., 2 AM UTC)
@@ -1018,6 +1106,7 @@ apps/web/src/components/
 - [ ] Document maintenance procedures
 
 **Docker Compose:**
+
 ```yaml
 services:
   price-sync:
@@ -1029,11 +1118,12 @@ services:
       - postgres
       - neo4j
     environment:
-      - CRON_SCHEDULE=0 2 * * *  # Daily at 2 AM UTC
+      - CRON_SCHEDULE=0 2 * * * # Daily at 2 AM UTC
     restart: unless-stopped
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Cron job runs daily automatically
 - ✅ Logs written to file or stdout
 - ✅ Failed syncs send alert (email or Slack)
@@ -1041,6 +1131,7 @@ services:
 - ✅ Doesn't block other services
 
 **Files to Create:**
+
 - `Dockerfile.scripts`
 - `apps/scripts/entrypoint.sh`
 
@@ -1051,12 +1142,15 @@ services:
 **Duration:** 2 weeks | **Effort:** 50-60 hours
 
 ### Overview
+
 Allow users to create, edit, and manage Pokemon TCG decks with validation.
 
 ### Work Items
 
 #### 5.1 Backend: Deck Models & Services
+
 **Tasks:**
+
 - [ ] Create Deck and DeckCard models
 - [ ] Implement deck validation rules (Pokemon TCG format)
 - [ ] Create deck service layer
@@ -1064,12 +1158,14 @@ Allow users to create, edit, and manage Pokemon TCG decks with validation.
 - [ ] Implement deck legality checker
 
 **Pokemon TCG Deck Rules:**
+
 - Exactly 60 cards in deck (main deck)
 - Maximum 4 copies of any card (except basic Energy)
 - Must have at least 1 Basic Pokemon
 - Format-specific rules (Standard, Expanded, Unlimited)
 
 **Code Structure:**
+
 ```rust
 // apps/tcg-api/src/models/deck.rs
 pub struct Deck {
@@ -1114,6 +1210,7 @@ pub struct DeckValidation {
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Deck model maps to schema
 - ✅ Validation enforces 60-card limit
 - ✅ Validation enforces 4-copy limit
@@ -1123,6 +1220,7 @@ pub struct DeckValidation {
 - ✅ Service methods isolated from routes
 
 **Files to Create:**
+
 - `apps/tcg-api/src/models/deck.rs`
 - `apps/tcg-api/src/services/deck_service.rs`
 - `apps/tcg-api/src/utils/deck_validator.rs`
@@ -1130,7 +1228,9 @@ pub struct DeckValidation {
 ---
 
 #### 5.2 Backend: Deck API Endpoints
+
 **Tasks:**
+
 - [ ] Implement POST `/api/v1/decks` (create deck)
 - [ ] Implement GET `/api/v1/decks` (list user's decks)
 - [ ] Implement GET `/api/v1/decks/:id` (get deck details)
@@ -1219,6 +1319,7 @@ Response: 200
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Only deck owner can modify/delete deck
 - ✅ Adding card beyond 4 copies returns 400 error
 - ✅ Validation returns detailed error messages
@@ -1229,12 +1330,15 @@ Response: 200
 - ✅ All endpoints properly authenticated
 
 **Files to Create:**
+
 - `apps/tcg-api/src/routes/decks.rs`
 
 ---
 
 #### 5.3 Frontend: Deck Builder UI
+
 **Tasks:**
+
 - [ ] Create MyDecks page (list all decks)
 - [ ] Create DeckBuilder page (visual deck editor)
 - [ ] Create DeckView page (read-only deck display)
@@ -1246,6 +1350,7 @@ Response: 200
 - [ ] Add import from text list feature
 
 **Components:**
+
 ```
 apps/web/src/pages/
 ├── MyDecks.tsx
@@ -1262,6 +1367,7 @@ apps/web/src/components/
 ```
 
 **UI Features:**
+
 - Deck list shows: name, format, card count, legality badge
 - Deck builder has 3 sections: deck list, card browser, stats
 - Visual indicators for card limits (4 copies)
@@ -1270,6 +1376,7 @@ apps/web/src/components/
 - Mana curve histogram (by Energy cost)
 
 **Acceptance Criteria:**
+
 - ✅ Can create new deck from MyDecks page
 - ✅ Deck builder shows all deck cards with quantities
 - ✅ Can search and add cards from browser
@@ -1283,6 +1390,7 @@ apps/web/src/components/
 - ✅ Import deck from text list
 
 **Files to Create:**
+
 - `apps/web/src/pages/MyDecks.tsx`
 - `apps/web/src/pages/DeckBuilder.tsx`
 - `apps/web/src/pages/DeckView.tsx`
@@ -1295,7 +1403,9 @@ apps/web/src/components/
 ---
 
 #### 5.4 Neo4j Deck Relationships & Queries
+
 **Tasks:**
+
 - [ ] Create HAS_DECK relationship (User -> Deck)
 - [ ] Create CONTAINS relationship (Deck -> Card with quantity)
 - [ ] Implement deck recommendation queries
@@ -1303,6 +1413,7 @@ apps/web/src/components/
 - [ ] Suggest cards for deck based on archetypes
 
 **Cypher Queries:**
+
 ```cypher
 // Create deck relationships
 MATCH (u:User {id: $user_id})
@@ -1337,6 +1448,7 @@ LIMIT 10
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Deck nodes created in Neo4j
 - ✅ CONTAINS relationships have quantity property
 - ✅ Similar decks query returns relevant results
@@ -1344,6 +1456,7 @@ LIMIT 10
 - ✅ Queries perform well (< 500ms)
 
 **Files to Create:**
+
 - `packages/@database/neo4j/src/queries/decks.ts`
 - `apps/tcg-api/src/routes/recommendations.rs` (optional)
 
@@ -1354,12 +1467,15 @@ LIMIT 10
 **Duration:** 2 weeks | **Effort:** 45-55 hours
 
 ### Overview
+
 Complete all frontend pages and user experiences.
 
 ### Work Items
 
 #### 6.1 Routing & Navigation
+
 **Tasks:**
+
 - [ ] Install and configure React Router
 - [ ] Define all routes
 - [ ] Update Header with navigation links
@@ -1368,6 +1484,7 @@ Complete all frontend pages and user experiences.
 - [ ] Add loading page/spinner
 
 **Routes:**
+
 ```typescript
 // apps/web/src/App.tsx
 const routes = [
@@ -1390,6 +1507,7 @@ const routes = [
 ```
 
 **Acceptance Criteria:**
+
 - ✅ All routes navigate correctly
 - ✅ Protected routes redirect to login
 - ✅ Header highlights active page
@@ -1398,6 +1516,7 @@ const routes = [
 - ✅ Browser back/forward work correctly
 
 **Files to Create:**
+
 - `apps/web/src/routes.tsx`
 - `apps/web/src/pages/Home.tsx`
 - `apps/web/src/pages/NotFound.tsx`
@@ -1406,7 +1525,9 @@ const routes = [
 ---
 
 #### 6.2 State Management
+
 **Tasks:**
+
 - [ ] Set up React Query for server state
 - [ ] Configure cache invalidation strategies
 - [ ] Create custom hooks for all API calls
@@ -1414,22 +1535,24 @@ const routes = [
 - [ ] Add error boundaries
 
 **Custom Hooks:**
+
 ```typescript
 // apps/web/src/hooks/
-useCards(filters)
-useCard(id)
-useSets()
-useSet(id)
-useInventory(filters)
-useAddToInventory()
-useUpdateInventory()
-useDecks()
-useDeck(id)
-useAddCardToDeck()
-useValidateDeck()
+useCards(filters);
+useCard(id);
+useSets();
+useSet(id);
+useInventory(filters);
+useAddToInventory();
+useUpdateInventory();
+useDecks();
+useDeck(id);
+useAddCardToDeck();
+useValidateDeck();
 ```
 
 **Acceptance Criteria:**
+
 - ✅ React Query installed and configured
 - ✅ All API calls use custom hooks
 - ✅ Loading states handled globally
@@ -1438,6 +1561,7 @@ useValidateDeck()
 - ✅ Optimistic updates for UX
 
 **Files to Create:**
+
 - `apps/web/src/lib/react-query.ts`
 - `apps/web/src/hooks/useCards.ts`
 - `apps/web/src/hooks/useInventory.ts`
@@ -1447,7 +1571,9 @@ useValidateDeck()
 ---
 
 #### 6.3 UI/UX Polish
+
 **Tasks:**
+
 - [ ] Implement loading skeletons for all pages
 - [ ] Add toast notifications (success/error messages)
 - [ ] Create empty states for all lists
@@ -1459,12 +1585,14 @@ useValidateDeck()
 
 **UI Library (optional):**
 Consider adding a component library like:
+
 - Radix UI + Tailwind CSS
 - Chakra UI
 - Material UI
 - Or continue with Pico CSS + custom components
 
 **Acceptance Criteria:**
+
 - ✅ All lists show skeleton loaders
 - ✅ Toasts appear for actions (added to collection, deck created, etc.)
 - ✅ Empty states have helpful CTAs
@@ -1475,6 +1603,7 @@ Consider adding a component library like:
 - ✅ Screen reader accessible
 
 **Files to Create:**
+
 - `apps/web/src/components/Skeleton.tsx`
 - `apps/web/src/components/Toast.tsx`
 - `apps/web/src/components/EmptyState.tsx`
@@ -1484,7 +1613,9 @@ Consider adding a component library like:
 ---
 
 #### 6.4 Home Page & Dashboard
+
 **Tasks:**
+
 - [ ] Design home page layout
 - [ ] Show featured/recent cards
 - [ ] Display collection summary (if logged in)
@@ -1493,6 +1624,7 @@ Consider adding a component library like:
 - [ ] Display trending cards (most added to collections)
 
 **Acceptance Criteria:**
+
 - ✅ Home page loads in < 1 second
 - ✅ Featured cards rotate daily
 - ✅ Logged-in users see personalized dashboard
@@ -1500,6 +1632,7 @@ Consider adding a component library like:
 - ✅ Trending section updates weekly
 
 **Files to Create:**
+
 - `apps/web/src/pages/Home.tsx`
 - `apps/web/src/components/FeaturedCards.tsx`
 - `apps/web/src/components/QuickActions.tsx`
@@ -1511,12 +1644,15 @@ Consider adding a component library like:
 **Duration:** 1.5 weeks | **Effort:** 35-45 hours
 
 ### Overview
+
 Comprehensive testing to ensure quality and reliability.
 
 ### Work Items
 
 #### 7.1 Backend Unit Tests (Rust)
+
 **Tasks:**
+
 - [ ] Set up test framework (built-in Rust testing)
 - [ ] Write tests for auth service
 - [ ] Write tests for inventory service
@@ -1526,6 +1662,7 @@ Comprehensive testing to ensure quality and reliability.
 - [ ] Aim for >70% code coverage
 
 **Test Structure:**
+
 ```rust
 // apps/tcg-api/src/services/deck_service.rs
 #[cfg(test)]
@@ -1548,6 +1685,7 @@ mod tests {
 ```
 
 **Acceptance Criteria:**
+
 - ✅ All service methods have tests
 - ✅ Edge cases covered (empty deck, over-limit, etc.)
 - ✅ Tests run with `cargo test`
@@ -1555,13 +1693,16 @@ mod tests {
 - ✅ Code coverage >70%
 
 **Files to Create:**
+
 - Tests in `apps/tcg-api/src/services/*_test.rs`
 - Tests in `apps/tcg-api/src/utils/*_test.rs`
 
 ---
 
 #### 7.2 Frontend Unit Tests (React)
+
 **Tasks:**
+
 - [ ] Set up Vitest or Jest
 - [ ] Install React Testing Library
 - [ ] Write tests for auth components
@@ -1571,6 +1712,7 @@ mod tests {
 - [ ] Aim for >60% code coverage
 
 **Test Examples:**
+
 ```typescript
 // apps/web/src/components/DeckStats.test.tsx
 import { render, screen } from '@testing-library/react';
@@ -1590,6 +1732,7 @@ describe('DeckStats', () => {
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Test framework configured
 - ✅ Key components tested
 - ✅ Custom hooks tested
@@ -1598,13 +1741,16 @@ describe('DeckStats', () => {
 - ✅ Code coverage >60%
 
 **Files to Create:**
+
 - `apps/web/vitest.config.ts`
 - Tests in `apps/web/src/**/*.test.tsx`
 
 ---
 
 #### 7.3 Integration Tests
+
 **Tasks:**
+
 - [ ] Test full authentication flow (register -> login -> access protected route)
 - [ ] Test card ownership flow (browse -> add to collection -> view collection)
 - [ ] Test deck building flow (create deck -> add cards -> validate -> save)
@@ -1612,6 +1758,7 @@ describe('DeckStats', () => {
 - [ ] Use Playwright or Cypress for E2E tests
 
 **E2E Test Examples:**
+
 ```typescript
 // e2e/deck-builder.spec.ts
 test('user can build a valid deck', async ({ page }) => {
@@ -1629,7 +1776,9 @@ test('user can build a valid deck', async ({ page }) => {
   }
 
   await page.click('[data-testid=validate-deck]');
-  await expect(page.locator('[data-testid=legality-badge]')).toHaveText('Legal');
+  await expect(page.locator('[data-testid=legality-badge]')).toHaveText(
+    'Legal'
+  );
 
   await page.click('[data-testid=save-deck]');
   await expect(page).toHaveURL('/decks/1');
@@ -1637,12 +1786,14 @@ test('user can build a valid deck', async ({ page }) => {
 ```
 
 **Acceptance Criteria:**
+
 - ✅ All critical user flows tested
 - ✅ Tests run in CI/CD pipeline
 - ✅ Tests pass consistently
 - ✅ Screenshots captured on failure
 
 **Files to Create:**
+
 - `e2e/auth.spec.ts`
 - `e2e/collection.spec.ts`
 - `e2e/deck-builder.spec.ts`
@@ -1651,7 +1802,9 @@ test('user can build a valid deck', async ({ page }) => {
 ---
 
 #### 7.4 API Testing
+
 **Tasks:**
+
 - [ ] Create Postman/Insomnia collection
 - [ ] Test all endpoints with valid data
 - [ ] Test error cases (401, 404, 400, 500)
@@ -1660,6 +1813,7 @@ test('user can build a valid deck', async ({ page }) => {
 - [ ] Document API in OpenAPI/Swagger format
 
 **Acceptance Criteria:**
+
 - ✅ Postman collection with all endpoints
 - ✅ All happy paths tested
 - ✅ All error paths tested
@@ -1667,6 +1821,7 @@ test('user can build a valid deck', async ({ page }) => {
 - ✅ OpenAPI spec generated
 
 **Files to Create:**
+
 - `docs/api-collection.postman.json`
 - `docs/openapi.yaml`
 
@@ -1677,12 +1832,15 @@ test('user can build a valid deck', async ({ page }) => {
 **Duration:** 1 week | **Effort:** 25-30 hours
 
 ### Overview
+
 Optimize for scale and prepare for growth.
 
 ### Work Items
 
 #### 8.1 Database Optimization
+
 **Tasks:**
+
 - [ ] Analyze slow queries with EXPLAIN
 - [ ] Add composite indexes for common queries
 - [ ] Optimize N+1 queries
@@ -1691,6 +1849,7 @@ Optimize for scale and prepare for growth.
 - [ ] Implement database backups
 
 **Indexes to Add:**
+
 ```sql
 -- Composite indexes for common queries
 CREATE INDEX idx_cards_set_type ON pokemon_cards(set_id, types);
@@ -1703,6 +1862,7 @@ CREATE INDEX idx_cards_name_trgm ON pokemon_cards USING gin(name gin_trgm_ops);
 ```
 
 **Acceptance Criteria:**
+
 - ✅ All queries under 100ms for typical datasets
 - ✅ No N+1 queries detected
 - ✅ Connection pool configured (max 20 connections)
@@ -1710,13 +1870,16 @@ CREATE INDEX idx_cards_name_trgm ON pokemon_cards USING gin(name gin_trgm_ops);
 - ✅ Full-text search performs well
 
 **Files to Create:**
+
 - `database/optimizations.sql`
 - `database/backup.sh`
 
 ---
 
 #### 8.2 API Performance & Caching
+
 **Tasks:**
+
 - [ ] Add Redis for caching (optional, or use in-memory)
 - [ ] Cache card/set listings (TTL: 1 hour)
 - [ ] Cache price data (TTL: 1 hour)
@@ -1726,6 +1889,7 @@ CREATE INDEX idx_cards_name_trgm ON pokemon_cards USING gin(name gin_trgm_ops);
 - [ ] Monitor API latency
 
 **Caching Strategy:**
+
 ```
 GET /api/v1/cards -> Cache for 1 hour
 GET /api/v1/sets -> Cache for 1 hour
@@ -1735,6 +1899,7 @@ GET /api/v1/decks/:id -> Cache for 5 minutes
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Cache hit rate >80% for card/set endpoints
 - ✅ API response time <100ms (cached), <300ms (uncached)
 - ✅ Rate limiting prevents abuse
@@ -1742,6 +1907,7 @@ GET /api/v1/decks/:id -> Cache for 5 minutes
 - ✅ ETag support for conditional GET
 
 **Files to Create:**
+
 - `apps/tcg-api/src/middleware/cache.rs`
 - `apps/tcg-api/src/middleware/rate_limit.rs`
 - `packages/@cache/redis/` (if using Redis)
@@ -1749,7 +1915,9 @@ GET /api/v1/decks/:id -> Cache for 5 minutes
 ---
 
 #### 8.3 Frontend Performance
+
 **Tasks:**
+
 - [ ] Implement code splitting (lazy load routes)
 - [ ] Optimize images (lazy loading, WebP format)
 - [ ] Add service worker for PWA (optional)
@@ -1758,6 +1926,7 @@ GET /api/v1/decks/:id -> Cache for 5 minutes
 - [ ] Add performance monitoring (Web Vitals)
 
 **Code Splitting:**
+
 ```typescript
 // apps/web/src/App.tsx
 const CardList = lazy(() => import('./pages/CardList'));
@@ -1766,6 +1935,7 @@ const MyCollection = lazy(() => import('./pages/MyCollection'));
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Initial bundle size <500KB
 - ✅ Lazy loading reduces initial load time by >40%
 - ✅ Images lazy-load below fold
@@ -1774,13 +1944,16 @@ const MyCollection = lazy(() => import('./pages/MyCollection'));
 - ✅ Time to Interactive <3.5s
 
 **Files to Create:**
+
 - `apps/web/webpack.config.js` (update)
 - `apps/web/src/serviceWorker.ts` (optional)
 
 ---
 
 #### 8.4 Scalability Architecture
+
 **Tasks:**
+
 - [ ] Document horizontal scaling strategy
 - [ ] Set up load balancer (NGINX or cloud LB)
 - [ ] Configure auto-scaling for API containers
@@ -1789,6 +1962,7 @@ const MyCollection = lazy(() => import('./pages/MyCollection'));
 - [ ] Document disaster recovery procedures
 
 **Scaling Plan:**
+
 ```
 Current (MVP):
 - 1x API server (Rust)
@@ -1805,6 +1979,7 @@ Future (Scale):
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Architecture diagram created
 - ✅ Load balancer configured
 - ✅ API can scale horizontally (stateless)
@@ -1812,6 +1987,7 @@ Future (Scale):
 - ✅ Disaster recovery plan documented
 
 **Files to Create:**
+
 - `docs/architecture.md`
 - `docs/scaling-strategy.md`
 - `nginx.conf` (load balancer config)
@@ -1823,12 +1999,15 @@ Future (Scale):
 **Duration:** 3-5 days | **Effort:** 15-20 hours
 
 ### Overview
+
 Final preparations before MVP launch.
 
 ### Work Items
 
 #### 9.1 Documentation
+
 **Tasks:**
+
 - [ ] Write user guide (how to use the platform)
 - [ ] Document API endpoints (OpenAPI/Swagger)
 - [ ] Create developer setup guide (README)
@@ -1837,6 +2016,7 @@ Final preparations before MVP launch.
 - [ ] Add Terms of Service and Privacy Policy (consult legal)
 
 **Acceptance Criteria:**
+
 - ✅ README with setup instructions
 - ✅ API documentation complete
 - ✅ User guide with screenshots
@@ -1844,6 +2024,7 @@ Final preparations before MVP launch.
 - ✅ Legal pages drafted
 
 **Files to Create:**
+
 - `README.md` (update)
 - `docs/USER_GUIDE.md`
 - `docs/API_DOCUMENTATION.md`
@@ -1853,7 +2034,9 @@ Final preparations before MVP launch.
 ---
 
 #### 9.2 Deployment & DevOps
+
 **Tasks:**
+
 - [ ] Set up production environment (cloud provider)
 - [ ] Configure CI/CD pipeline (GitHub Actions)
 - [ ] Set up monitoring (Prometheus, Grafana, or cloud monitoring)
@@ -1864,6 +2047,7 @@ Final preparations before MVP launch.
 - [ ] Configure environment variables for production
 
 **CI/CD Pipeline:**
+
 ```yaml
 # .github/workflows/deploy.yml
 name: Deploy to Production
@@ -1894,6 +2078,7 @@ jobs:
 ```
 
 **Acceptance Criteria:**
+
 - ✅ Production environment provisioned
 - ✅ CI/CD pipeline runs on push to main
 - ✅ Monitoring dashboards configured
@@ -1904,6 +2089,7 @@ jobs:
 - ✅ Zero-downtime deployments
 
 **Files to Create:**
+
 - `.github/workflows/deploy.yml`
 - `docker-compose.prod.yml`
 - `docs/DEPLOYMENT.md`
@@ -1911,7 +2097,9 @@ jobs:
 ---
 
 #### 9.3 Security Hardening
+
 **Tasks:**
+
 - [ ] Run security audit on dependencies
 - [ ] Implement HTTPS only
 - [ ] Add CSP (Content Security Policy) headers
@@ -1922,6 +2110,7 @@ jobs:
 - [ ] Run penetration testing (basic)
 
 **Security Checklist:**
+
 - ✅ No secrets in environment variables (use secrets manager)
 - ✅ Database credentials rotated
 - ✅ JWT secrets strong (256-bit)
@@ -1932,6 +2121,7 @@ jobs:
 - ✅ Dependencies scanned for vulnerabilities
 
 **Acceptance Criteria:**
+
 - ✅ Security audit passes
 - ✅ All communications encrypted
 - ✅ No high/critical vulnerabilities
@@ -1939,13 +2129,16 @@ jobs:
 - ✅ CSP headers configured
 
 **Files to Create:**
+
 - `docs/SECURITY.md`
 - `security-audit-report.md`
 
 ---
 
 #### 9.4 Final QA & Beta Testing
+
 **Tasks:**
+
 - [ ] Run full regression test suite
 - [ ] Conduct user acceptance testing (UAT)
 - [ ] Test on multiple browsers (Chrome, Firefox, Safari)
@@ -1956,6 +2149,7 @@ jobs:
 - [ ] Address beta feedback
 
 **Acceptance Criteria:**
+
 - ✅ All automated tests pass
 - ✅ No critical/high bugs
 - ✅ Works on Chrome, Firefox, Safari (latest versions)
@@ -1968,6 +2162,7 @@ jobs:
 ## MVP Feature Checklist
 
 ### Core Features
+
 - [ ] User registration and login
 - [ ] Browse all Pokemon cards with pagination
 - [ ] Search cards by name
@@ -1977,6 +2172,7 @@ jobs:
 - [ ] View all cards in a set
 
 ### Card Ownership
+
 - [ ] Add cards to personal collection
 - [ ] Track quantity and condition
 - [ ] Remove cards from collection
@@ -1984,12 +2180,14 @@ jobs:
 - [ ] Filter/sort collection
 
 ### Market Value
+
 - [ ] Display current market prices (TCGPlayer, Cardmarket)
 - [ ] Show price history (30-day chart)
 - [ ] Track total collection value
 - [ ] Daily price updates via cron job
 
 ### Deck Management
+
 - [ ] Create new decks
 - [ ] Add/remove cards from decks
 - [ ] Validate deck legality (format rules)
@@ -2000,6 +2198,7 @@ jobs:
 - [ ] Browse public decks
 
 ### Scalability Features
+
 - [ ] API versioning (/api/v1)
 - [ ] Modular service architecture
 - [ ] Database indexes optimized
@@ -2012,6 +2211,7 @@ jobs:
 ## Success Metrics for MVP Launch
 
 ### Technical Metrics
+
 - ✅ 99% uptime
 - ✅ API response time <300ms (p95)
 - ✅ Page load time <2s (p95)
@@ -2019,6 +2219,7 @@ jobs:
 - ✅ Test coverage >65%
 
 ### User Metrics (First Month)
+
 - ✅ 100+ registered users
 - ✅ 1,000+ cards added to collections
 - ✅ 50+ decks created
@@ -2029,21 +2230,22 @@ jobs:
 
 ## Estimated Timeline Summary
 
-| Phase | Duration | Effort (Hours) |
-|-------|----------|----------------|
-| Phase 0: Foundation | 1-2 days | 8-12 |
-| Phase 1: Authentication | 1 week | 30-40 |
-| Phase 2: Core API | 1 week | 25-35 |
-| Phase 3: Card Ownership | 1.5 weeks | 35-45 |
-| Phase 4: Market Value | 1 week | 25-30 |
-| Phase 5: Deck Management | 2 weeks | 50-60 |
-| Phase 6: Frontend | 2 weeks | 45-55 |
-| Phase 7: Testing | 1.5 weeks | 35-45 |
-| Phase 8: Scalability | 1 week | 25-30 |
-| Phase 9: Launch Prep | 3-5 days | 15-20 |
-| **TOTAL** | **8-10 weeks** | **293-372 hours** |
+| Phase                    | Duration       | Effort (Hours)    |
+| ------------------------ | -------------- | ----------------- |
+| Phase 0: Foundation      | 1-2 days       | 8-12              |
+| Phase 1: Authentication  | 1 week         | 30-40             |
+| Phase 2: Core API        | 1 week         | 25-35             |
+| Phase 3: Card Ownership  | 1.5 weeks      | 35-45             |
+| Phase 4: Market Value    | 1 week         | 25-30             |
+| Phase 5: Deck Management | 2 weeks        | 50-60             |
+| Phase 6: Frontend        | 2 weeks        | 45-55             |
+| Phase 7: Testing         | 1.5 weeks      | 35-45             |
+| Phase 8: Scalability     | 1 week         | 25-30             |
+| Phase 9: Launch Prep     | 3-5 days       | 15-20             |
+| **TOTAL**                | **8-10 weeks** | **293-372 hours** |
 
 **Team Recommendations:**
+
 - **Solo Developer:** 8-10 weeks (full-time), 16-20 weeks (part-time)
 - **2-Person Team:** 4-6 weeks (full-time), 8-12 weeks (part-time)
 - **3-Person Team:** 3-4 weeks (full-time), 6-8 weeks (part-time)
@@ -2053,6 +2255,7 @@ jobs:
 ## Risk Mitigation
 
 ### High-Risk Items
+
 1. **Deck Validation Complexity:** Pokemon TCG rules are complex
    - Mitigation: Start with basic validation, iterate based on user feedback
 
@@ -2066,6 +2269,7 @@ jobs:
    - Mitigation: Strict adherence to MVP feature list, park future ideas in backlog
 
 ### Medium-Risk Items
+
 1. **Performance with Large Datasets:** 20,000+ cards
    - Mitigation: Implement pagination, caching, indexes early
 
@@ -2077,6 +2281,7 @@ jobs:
 ## Post-MVP Roadmap (Future Phases)
 
 ### Phase 10: Social Features (Future)
+
 - User profiles with avatars
 - Follow other collectors
 - Like/comment on decks
@@ -2084,6 +2289,7 @@ jobs:
 - Activity feed
 
 ### Phase 11: Trading & Marketplace (Future)
+
 - Create trade offers
 - Accept/reject trades
 - Marketplace for buying/selling
@@ -2091,6 +2297,7 @@ jobs:
 - Reputation/rating system
 
 ### Phase 12: Advanced Analytics (Future)
+
 - Collection insights (most valuable cards, completion %)
 - Deck performance tracking (win/loss)
 - Meta analysis (popular decks, trending cards)
@@ -2098,6 +2305,7 @@ jobs:
 - Portfolio value over time
 
 ### Phase 13: Mobile Apps (Future)
+
 - React Native iOS app
 - React Native Android app
 - Barcode scanning for quick add
@@ -2110,12 +2318,14 @@ jobs:
 This phased approach provides a clear path to MVP with well-defined work items and acceptance criteria. The focus on deck management, card ownership with market value tracking, and scalable architecture ensures the platform can grow with user demand.
 
 **Key Principles:**
+
 1. **Iterative Development:** Build in phases, test frequently
 2. **User-Centric:** Focus on core user needs first
 3. **Scalable Foundation:** Design for growth from day one
 4. **Quality First:** Don't compromise on testing and security
 
 **Next Steps:**
+
 1. Review and approve this plan
 2. Set up development environment (Phase 0)
 3. Begin Phase 1 (Authentication)

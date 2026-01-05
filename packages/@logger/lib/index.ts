@@ -5,12 +5,15 @@ import { emojify } from 'node-emoji';
 type XDebugger = debug.Debugger & {
   textOptions?: Record<string, boolean>;
   setTextOptions(options?: Record<string, boolean>): void;
-}
+};
 
 type Level = 'info' | 'debug' | 'warn' | 'error';
 
 export function createLogger($namespace: string) {
-  let loggers: Record<Level, debug.Debugger> = {} as Record<Level, debug.Debugger>;
+  let loggers: Record<Level, debug.Debugger> = {} as Record<
+    Level,
+    debug.Debugger
+  >;
   for (const level of ['debug', 'info', 'warn', 'error'] as const) {
     loggers[level] = debug(`${$namespace}:${level}`);
   }
@@ -62,7 +65,7 @@ export function createLogger($namespace: string) {
           value: options,
           writable: true,
           enumerable: true
-        })
+        });
       }
     });
   }

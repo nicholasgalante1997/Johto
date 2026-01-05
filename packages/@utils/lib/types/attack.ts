@@ -9,7 +9,9 @@ export const PokemonCardAttackSchema = z.looseObject({
   text: z.string()
 });
 
-export type PokemonCardAttackSchemaType = z.infer<typeof PokemonCardAttackSchema>;
+export type PokemonCardAttackSchemaType = z.infer<
+  typeof PokemonCardAttackSchema
+>;
 
 export function isPokemonCardAttack(value: unknown): value is Pokemon.Attack {
   try {

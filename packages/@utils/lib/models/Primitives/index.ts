@@ -19,7 +19,7 @@ export default class Primitives {
 
       try {
         return JSON.stringify(value);
-      } catch(e) {
+      } catch (e) {
         return (value as Object).toString();
       }
     }

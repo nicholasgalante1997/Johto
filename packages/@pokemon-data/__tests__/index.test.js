@@ -4,7 +4,6 @@ import { getSets, getSet, getAllSetIds, getCardsInSet } from '../index.js';
 let allSets;
 
 describe('Pokemon Data API', () => {
-
   beforeAll(async () => {
     allSets = await getSets();
   });
@@ -33,7 +32,7 @@ describe('Pokemon Data API', () => {
 
     test('should return sets with valid structure', async () => {
       const sets = await getSets();
-      sets.forEach(set => {
+      sets.forEach((set) => {
         expect(typeof set.id).toBe('string');
         expect(typeof set.name).toBe('string');
         expect(typeof set.series).toBe('string');
@@ -101,7 +100,7 @@ describe('Pokemon Data API', () => {
     test('should return the first matching set if duplicates exist', async () => {
       const set = await getSet('base1');
       const sets = await getSets();
-      const expectedSet = sets.find(s => s.id === 'base1');
+      const expectedSet = sets.find((s) => s.id === 'base1');
 
       expect(set).toEqual(expectedSet);
     });
@@ -123,7 +122,7 @@ describe('Pokemon Data API', () => {
     test('should return only strings', async () => {
       const ids = await getAllSetIds();
 
-      ids.forEach(id => {
+      ids.forEach((id) => {
         expect(typeof id).toBe('string');
       });
     });
@@ -182,7 +181,7 @@ describe('Pokemon Data API', () => {
     test('should return cards with valid structure', async () => {
       const cards = await getCardsInSet('base1');
 
-      cards.forEach(card => {
+      cards.forEach((card) => {
         expect(typeof card.id).toBe('string');
         expect(typeof card.name).toBe('string');
         expect(typeof card.supertype).toBe('string');
@@ -230,7 +229,7 @@ describe('Pokemon Data API', () => {
       const cards = await getCardsInSet('base1');
 
       if (cards.length > 0) {
-        cards.forEach(card => {
+        cards.forEach((card) => {
           expect(card.set.id).toBe('base1');
         });
       }

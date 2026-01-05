@@ -47,7 +47,7 @@ export const initDatabase = async (db) => {
   if (ENABLED_DB_SEED) {
     await seed(db);
   }
-  
+
   validateDB(db);
 };
 

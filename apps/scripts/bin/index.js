@@ -1,6 +1,12 @@
 import 'dotenv/config.js';
 import { Command } from 'commander';
-import { scaffold, syncCards, syncPokemonJson, syncSets, sqlite } from "../lib/index.js";
+import {
+  scaffold,
+  syncCards,
+  syncPokemonJson,
+  syncSets,
+  sqlite
+} from '../lib/index.js';
 
 const program = new Command();
 
@@ -21,9 +27,10 @@ program
   )
   .action(async () => {
     await sqlite.initDatabase(sqlite.getSqlite3Database());
-  })
+  });
 
-program.command('json:sync')
+program
+  .command('json:sync')
   .description('Synchronizes JSON data from the Pokemon TCG API V2')
   .action(async () => {
     await syncPokemonJson();
@@ -31,16 +38,19 @@ program.command('json:sync')
 
 program
   .command('scaffold')
-  .argument('<type>', 'Type of thing to scaffold, either "lib", "rs-app", "ts-app", or "web-app"')
+  .argument(
+    '<type>',
+    'Type of thing to scaffold, either "lib", "rs-app", "ts-app", or "web-app"'
+  )
   .argument('name', 'Name of the thing')
   .action(async (type, name) => {
     const knownScaffoldingTypes = ['lib', 'rs-app', 'ts-app', 'web-app'];
-    
+
     if (!knownScaffoldingTypes.includes(type)) {
       throw new Error(`Unknown scaffolding type ${type}`);
     }
-    
+
     await scaffold(type, name);
-  })
+  });
 
 program.parse();

@@ -52,6 +52,9 @@
   "dependencies": {
     "@pokemon/clients": "workspace:*",
     "@pokemon/configs": "workspace:*",
+    "@pokemon/database": "workspace:*",
+    "@pokemon/logger": "workspace:*",
+    "@pokemon/utils": "workspace:*",
     "debug": "^4.3.7",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

@@ -24,7 +24,7 @@ export default class PokemonTCGClient {
   private fetchWithAuth(url: string | Request, init: RequestInit = {}) {
     return fetch(url, {
       ...init,
-      method: "GET",
+      method: 'GET',
       headers: {
         ...(init?.headers ? init.headers : {}),
         Accept: 'application/json',

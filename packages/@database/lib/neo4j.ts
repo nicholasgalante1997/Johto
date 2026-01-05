@@ -28,7 +28,6 @@ const defaultNeo4jConfig: Config = {
   maxTransactionRetryTime: 15 * 1000 // Retry a transaction for up to 15 seconds
 };
 
-
 let driver: any;
 
 export function getNeo4jDriver(): typeof driver {
@@ -230,8 +229,12 @@ export async function insertCard(card: Pokemon.Card) {
     rules: JSON.stringify(Primitives.coerceToArray(card.rules) || []),
     attacks: JSON.stringify(Primitives.coerceToArray(card.attacks) || []),
     weaknesses: JSON.stringify(Primitives.coerceToArray(card.weaknesses) || []),
-    resistances: JSON.stringify(Primitives.coerceToArray(card.resistances) || []),
-    retreatCost: JSON.stringify(Primitives.coerceToArray(card.retreatCost) || []),
+    resistances: JSON.stringify(
+      Primitives.coerceToArray(card.resistances) || []
+    ),
+    retreatCost: JSON.stringify(
+      Primitives.coerceToArray(card.retreatCost) || []
+    ),
     convertedRetreatCost: card?.convertedRetreatCost || 0,
     set: JSON.stringify(card.set),
     setId: card.set.id,
@@ -239,9 +242,9 @@ export async function insertCard(card: Pokemon.Card) {
     artist: Primitives.coerceToString(card.artist, 'Unknown Artist'),
     rarity: Primitives.coerceToString(card.rarity),
     flavorText: Primitives.coerceToString(card.flavorText),
-    nationalPokedexNumbers: JSON.stringify(Primitives.coerceToArray(
-      card.nationalPokedexNumbers
-    )),
+    nationalPokedexNumbers: JSON.stringify(
+      Primitives.coerceToArray(card.nationalPokedexNumbers)
+    ),
     images_small: Primitives.coerceToString(card.images?.small),
     images_large: Primitives.coerceToString(card.images?.large)
   };

@@ -1,14 +1,20 @@
-import PokemonSearchQuery from "./SearchQuery.js"
-import { type CommonSetSearchCriteria } from "./SetSearchQuery.js";
+import PokemonSearchQuery from './SearchQuery.js';
+import { type CommonSetSearchCriteria } from './SetSearchQuery.js';
 
-type CommonCardSearchCriteria = `set.${string | CommonSetSearchCriteria}` | 'id' | 'name' | 'subtype' | "supertype" | "evolvesTo";
+type CommonCardSearchCriteria =
+  | `set.${string | CommonSetSearchCriteria}`
+  | 'id'
+  | 'name'
+  | 'subtype'
+  | 'supertype'
+  | 'evolvesTo';
 
 export default class PokemonCardSearchQuery extends PokemonSearchQuery {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    set(term: CommonCardSearchCriteria, value: string) {
-        return this.setQueryParam(term, value);
-    }
+  set(term: CommonCardSearchCriteria, value: string) {
+    return this.setQueryParam(term, value);
+  }
 }
