@@ -50,12 +50,19 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@apollo/server": "^5.2.0",
+    "@graphql-tools/schema": "^10.0.30",
     "@pokemon/clients": "workspace:*",
     "@pokemon/configs": "workspace:*",
     "@pokemon/database": "workspace:*",
     "@pokemon/logger": "workspace:*",
     "@pokemon/utils": "workspace:*",
+    "@urql/core": "^6.0.1",
+    "apollo-server": "^3.13.0",
     "debug": "^4.3.7",
+    "graphql": "^16.12.0",
+    "graphql-request": "^7.4.0",
+    "node-emoji": "^2.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "typescript": "^5.0.0"
