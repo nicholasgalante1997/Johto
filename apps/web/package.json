@@ -57,6 +57,7 @@
     "@pokemon/database": "workspace:*",
     "@pokemon/logger": "workspace:*",
     "@pokemon/utils": "workspace:*",
+    "@tanstack/react-query": "^5.90.16",
     "@urql/core": "^6.0.1",
     "apollo-server": "^3.13.0",
     "debug": "^4.3.7",

@@ -100,7 +100,6 @@ export async function renderWebApp() {
   });
 }
 
-
 // Client-side hydration
 import React from 'react';
 import { hydrateRoot } from 'react-dom/client';

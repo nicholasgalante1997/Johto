@@ -1,0 +1,148 @@
+:root {
+  --pokemon-badge-radius: 6px;
+
+  /* Type colors based on Pokemon TCG */
+  --pokemon-type-colorless: #A8A878;
+  --pokemon-type-darkness: #705848;
+  --pokemon-type-dragon: #7038F8;
+  --pokemon-type-fairy: #EE99AC;
+  --pokemon-type-fighting: #C03028;
+  --pokemon-type-fire: #F08030;
+  --pokemon-type-grass: #78C850;
+  --pokemon-type-lightning: #F8D030;
+  --pokemon-type-metal: #B8B8D0;
+  --pokemon-type-psychic: #F85888;
+  --pokemon-type-water: #6890F0;
+
+  /* Rarity colors */
+  --pokemon-rarity-common: #718096;
+  --pokemon-rarity-uncommon: #4A5568;
+  --pokemon-rarity-rare: #68A0F6;
+  --pokemon-rarity-rare-holo: #9F7AEA;
+  --pokemon-rarity-rare-ultra: #F687B3;
+  --pokemon-rarity-rare-secret: #F8D568;
+}
+
+.pokemon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--pokemon-badge-radius);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.pokemon-badge--small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.pokemon-badge--medium {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Default variant */
+.pokemon-badge--default {
+  background-color: #E2E8F0;
+  color: #2D3748;
+}
+
+/* Type variants */
+.pokemon-badge--type {
+  color: #ffffff;
+}
+
+.pokemon-badge--type-colorless {
+  background-color: var(--pokemon-type-colorless);
+}
+
+.pokemon-badge--type-darkness {
+  background-color: var(--pokemon-type-darkness);
+}
+
+.pokemon-badge--type-dragon {
+  background-color: var(--pokemon-type-dragon);
+}
+
+.pokemon-badge--type-fairy {
+  background-color: var(--pokemon-type-fairy);
+  color: #2D3748;
+}
+
+.pokemon-badge--type-fighting {
+  background-color: var(--pokemon-type-fighting);
+}
+
+.pokemon-badge--type-fire {
+  background-color: var(--pokemon-type-fire);
+}
+
+.pokemon-badge--type-grass {
+  background-color: var(--pokemon-type-grass);
+}
+
+.pokemon-badge--type-lightning {
+  background-color: var(--pokemon-type-lightning);
+  color: #2D3748;
+}
+
+.pokemon-badge--type-metal {
+  background-color: var(--pokemon-type-metal);
+  color: #2D3748;
+}
+
+.pokemon-badge--type-psychic {
+  background-color: var(--pokemon-type-psychic);
+}
+
+.pokemon-badge--type-water {
+  background-color: var(--pokemon-type-water);
+}
+
+/* Rarity variants */
+.pokemon-badge--rarity {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.pokemon-badge--rarity-common {
+  background-color: var(--pokemon-rarity-common);
+}
+
+.pokemon-badge--rarity-uncommon {
+  background-color: var(--pokemon-rarity-uncommon);
+}
+
+.pokemon-badge--rarity-rare {
+  background-color: var(--pokemon-rarity-rare);
+}
+
+.pokemon-badge--rarity-rare-holo {
+  background: linear-gradient(135deg, #9F7AEA 0%, #B794F4 100%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.pokemon-badge--rarity-rare-ultra {
+  background: linear-gradient(135deg, #F687B3 0%, #FBB6CE 100%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.pokemon-badge--rarity-rare-secret {
+  background: linear-gradient(135deg, #F8D568 0%, #FAD089 100%);
+  color: #2D3748;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.15);
+  }
+}

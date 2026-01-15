@@ -1,0 +1,91 @@
+:root {
+  --pokemon-dashboard-header-height: 72px;
+  --pokemon-dashboard-sidebar-width: 260px;
+  --pokemon-dashboard-sidebar-collapsed-width: 72px;
+}
+
+.pokemon-dashboard-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F7FAFC;
+}
+
+/* Sidebar */
+.pokemon-dashboard-layout__sidebar {
+  flex-shrink: 0;
+  width: var(--pokemon-dashboard-sidebar-width);
+  background-color: #ffffff;
+  border-right: 1px solid #E2E8F0;
+  transition: width 0.3s ease;
+}
+
+.pokemon-dashboard-layout--sidebar-collapsed .pokemon-dashboard-layout__sidebar {
+  width: var(--pokemon-dashboard-sidebar-collapsed-width);
+}
+
+.pokemon-dashboard-layout--no-sidebar .pokemon-dashboard-layout__sidebar {
+  display: none;
+}
+
+/* Main content area */
+.pokemon-dashboard-layout__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+.pokemon-dashboard-layout__header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: var(--pokemon-dashboard-header-height);
+  background-color: #ffffff;
+  border-bottom: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Content */
+.pokemon-dashboard-layout__content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 100%;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pokemon-dashboard-layout {
+    flex-direction: column;
+  }
+
+  .pokemon-dashboard-layout__sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  .pokemon-dashboard-layout--sidebar-collapsed .pokemon-dashboard-layout__sidebar {
+    width: 100%;
+  }
+
+  .pokemon-dashboard-layout__content {
+    padding: 1rem;
+  }
+}
+
+/* Dark mode support (for future) */
+@media (prefers-color-scheme: dark) {
+  .pokemon-dashboard-layout {
+    background-color: #1A202C;
+  }
+
+  .pokemon-dashboard-layout__sidebar,
+  .pokemon-dashboard-layout__header {
+    background-color: #2D3748;
+    border-color: #4A5568;
+  }
+}

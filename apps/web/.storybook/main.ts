@@ -21,6 +21,15 @@ const config: StorybookConfig = {
   framework: {
     name: getAbsolutePath('@storybook/react-webpack5'),
     options: {}
-  }
+  },
+  swc: () => ({
+    jsc: {
+      transform: {
+        react: {
+          runtime: 'automatic'
+        }
+      }
+    }
+  })
 };
 export default config;

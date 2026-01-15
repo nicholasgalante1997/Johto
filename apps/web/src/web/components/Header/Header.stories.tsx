@@ -1,7 +1,3 @@
-import '../../../public/css/index.css';
-import '../../../public/css/header.css';
-
-import React from 'react';
 import { type Meta, type StoryObj } from '@storybook/react';
 import Header from './Header';
 
