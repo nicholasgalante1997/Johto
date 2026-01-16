@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 import { type DocumentProps } from './Document.types';
-import { Header } from '../Header';
 
 function Document(props: DocumentProps) {
   useEffect(() => console.log('Mounted on the client'), []);
@@ -34,9 +33,7 @@ function Document(props: DocumentProps) {
         />
         <link rel="stylesheet" href="/css/index.css" />
       </head>
-      <body>
-        <main>{props.children}</main>
-      </body>
+      <body>{props.children}</body>
     </html>
   );
 }

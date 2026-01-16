@@ -1,0 +1,320 @@
+.card-detail {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-detail--modal {
+  max-width: none;
+}
+
+/* Image container */
+.card-detail__image-container {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.card-detail__image {
+  display: block;
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.card-detail__quantity-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--pico-primary, #7c3aed);
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Info section */
+.card-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Header */
+.card-detail__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-detail__name {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--pico-color, #e4e4e7);
+}
+
+.card-detail__hp {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ef4444;
+}
+
+/* Types */
+.card-detail__types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Sections */
+.card-detail__section {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+}
+
+.card-detail__section-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--pico-muted-color, #a1a1aa);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Attacks */
+.card-detail__attacks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-detail__attack {
+  padding: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card-detail__attack-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card-detail__attack-cost {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.energy-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.energy-icon--fire { background-color: #ef4444; }
+.energy-icon--water { background-color: #3b82f6; }
+.energy-icon--grass { background-color: #22c55e; }
+.energy-icon--lightning { background-color: #eab308; }
+.energy-icon--psychic { background-color: #a855f7; }
+.energy-icon--fighting { background-color: #c2410c; }
+.energy-icon--darkness { background-color: #1f2937; }
+.energy-icon--metal { background-color: #6b7280; }
+.energy-icon--fairy { background-color: #ec4899; }
+.energy-icon--dragon { background-color: #7c3aed; }
+.energy-icon--colorless { background-color: #9ca3af; }
+
+.card-detail__attack-name {
+  flex: 1;
+  font-weight: 600;
+  color: var(--pico-color, #e4e4e7);
+}
+
+.card-detail__attack-damage {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pico-color, #e4e4e7);
+}
+
+.card-detail__attack-text {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.875rem;
+  color: var(--pico-muted-color, #a1a1aa);
+  line-height: 1.5;
+}
+
+/* Rules */
+.card-detail__rules {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--pico-muted-color, #a1a1aa);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.card-detail__rules li {
+  margin-bottom: 0.5rem;
+}
+
+/* Combat stats */
+.card-detail__combat {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card-detail__weakness,
+.card-detail__resistance,
+.card-detail__retreat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card-detail__combat-label {
+  font-size: 0.75rem;
+  color: var(--pico-muted-color, #a1a1aa);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-detail__combat-value {
+  font-weight: 600;
+  color: var(--pico-color, #e4e4e7);
+}
+
+/* Set info */
+.card-detail__set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card-detail__set-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card-detail__set-symbol {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.card-detail__set-name {
+  font-weight: 600;
+  color: var(--pico-color, #e4e4e7);
+}
+
+.card-detail__set-number {
+  font-size: 0.875rem;
+  color: var(--pico-muted-color, #a1a1aa);
+}
+
+/* Legality */
+.card-detail__legality {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card-detail__legality-label {
+  font-size: 0.875rem;
+  color: var(--pico-muted-color, #a1a1aa);
+}
+
+/* Artist */
+.card-detail__artist {
+  font-size: 0.875rem;
+  color: var(--pico-muted-color, #a1a1aa);
+}
+
+/* Actions */
+.card-detail__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.card-detail__action-btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.card-detail__action-btn--primary {
+  background-color: var(--pico-primary, #7c3aed);
+  border: none;
+  color: white;
+}
+
+.card-detail__action-btn--primary:hover {
+  background-color: var(--pico-primary-hover, #6d28d9);
+}
+
+.card-detail__action-btn--secondary {
+  background-color: transparent;
+  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
+  color: var(--pico-color, #e4e4e7);
+}
+
+.card-detail__action-btn--secondary:hover {
+  background-color: var(--pico-secondary-hover-background, rgba(255, 255, 255, 0.05));
+  border-color: var(--pico-primary, #7c3aed);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-detail {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-detail__image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-detail__image {
+    width: 250px;
+  }
+
+  .card-detail__header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card-detail__combat {
+    flex-wrap: wrap;
+  }
+
+  .card-detail__set {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-detail__actions {
+    flex-direction: column;
+  }
+}

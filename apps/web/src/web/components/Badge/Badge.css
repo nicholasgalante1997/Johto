@@ -48,8 +48,38 @@
 
 /* Default variant */
 .pokemon-badge--default {
-  background-color: #E2E8F0;
-  color: #2D3748;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--pico-color, #e4e4e7);
+}
+
+/* Primary variant */
+.pokemon-badge--primary {
+  background-color: var(--pico-primary, #7c3aed);
+  color: white;
+}
+
+/* Secondary variant */
+.pokemon-badge--secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--pico-muted-color, #a1a1aa);
+}
+
+/* Success variant */
+.pokemon-badge--success {
+  background-color: #22c55e;
+  color: white;
+}
+
+/* Error variant */
+.pokemon-badge--error {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Warning variant */
+.pokemon-badge--warning {
+  background-color: #f59e0b;
+  color: #1f2937;
 }
 
 /* Type variants */
