@@ -54,20 +54,20 @@ This specification outlines the development of a comprehensive Pokemon TCG Dashb
 
 ### Existing Components (Ready to Use)
 
-| Component | Location | Status | Notes |
-|-----------|----------|--------|-------|
-| `DashboardLayout` | `components/DashboardLayout/` | Ready | Accepts sidebar, header, children slots |
-| `Sidebar` | `components/Sidebar/` | Ready | Collapsible, supports icons and counts |
-| `Header` | `components/Header/` | Needs Enhancement | Basic implementation, needs user menu |
-| `Card` | `components/Card/` | Ready | Grid/list/detail variants |
-| `CardGrid` | `components/CardGrid/` | Ready | Loading/empty states, column control |
-| `DeckCard` | `components/DeckCard/` | Ready | Edit/delete actions, validity indicator |
-| `DeckList` | `components/DeckList/` | Ready | Grid/list layouts, create action |
-| `SearchBar` | `components/SearchBar/` | Ready | Type/rarity/set filters |
-| `Stats` | `components/Stats/` | Ready | Trend indicators, color variants |
-| `Badge` | `components/Badge/` | Ready | Type and rarity styling |
-| `Button` | `components/Button/` | Ready | Primary/secondary/ghost/danger |
-| `Document` | `components/Document/` | Ready | HTML document wrapper |
+| Component         | Location                      | Status            | Notes                                   |
+| ----------------- | ----------------------------- | ----------------- | --------------------------------------- |
+| `DashboardLayout` | `components/DashboardLayout/` | Ready             | Accepts sidebar, header, children slots |
+| `Sidebar`         | `components/Sidebar/`         | Ready             | Collapsible, supports icons and counts  |
+| `Header`          | `components/Header/`          | Needs Enhancement | Basic implementation, needs user menu   |
+| `Card`            | `components/Card/`            | Ready             | Grid/list/detail variants               |
+| `CardGrid`        | `components/CardGrid/`        | Ready             | Loading/empty states, column control    |
+| `DeckCard`        | `components/DeckCard/`        | Ready             | Edit/delete actions, validity indicator |
+| `DeckList`        | `components/DeckList/`        | Ready             | Grid/list layouts, create action        |
+| `SearchBar`       | `components/SearchBar/`       | Ready             | Type/rarity/set filters                 |
+| `Stats`           | `components/Stats/`           | Ready             | Trend indicators, color variants        |
+| `Badge`           | `components/Badge/`           | Ready             | Type and rarity styling                 |
+| `Button`          | `components/Button/`          | Ready             | Primary/secondary/ghost/danger          |
+| `Document`        | `components/Document/`        | Ready             | HTML document wrapper                   |
 
 ### Existing Infrastructure
 
@@ -79,20 +79,20 @@ This specification outlines the development of a comprehensive Pokemon TCG Dashb
 
 ### Components to Build
 
-| Component | Priority | Purpose |
-|-----------|----------|---------|
-| `DashboardHeader` | P0 | Enhanced header with navigation |
-| `CollectionView` | P0 | Collection browsing interface |
-| `DeckBuilder` | P1 | Deck editing interface |
-| `CardDetail` | P1 | Full card detail modal/page |
-| `FormatSelector` | P1 | Format dropdown/tabs |
-| `DeckValidator` | P1 | Deck validation display |
-| `Pagination` | P2 | Page navigation |
-| `FilterPanel` | P2 | Advanced filtering sidebar |
-| `Toast` | P2 | Notification system |
-| `Modal` | P2 | Reusable modal component |
-| `EmptyState` | P2 | Consistent empty states |
-| `Skeleton` | P2 | Loading skeletons |
+| Component         | Priority | Purpose                         |
+| ----------------- | -------- | ------------------------------- |
+| `DashboardHeader` | P0       | Enhanced header with navigation |
+| `CollectionView`  | P0       | Collection browsing interface   |
+| `DeckBuilder`     | P1       | Deck editing interface          |
+| `CardDetail`      | P1       | Full card detail modal/page     |
+| `FormatSelector`  | P1       | Format dropdown/tabs            |
+| `DeckValidator`   | P1       | Deck validation display         |
+| `Pagination`      | P2       | Page navigation                 |
+| `FilterPanel`     | P2       | Advanced filtering sidebar      |
+| `Toast`           | P2       | Notification system             |
+| `Modal`           | P2       | Reusable modal component        |
+| `EmptyState`      | P2       | Consistent empty states         |
+| `Skeleton`        | P2       | Loading skeletons               |
 
 > **Note**: Routing is handled by `react-router-dom` - no custom router component needed.
 
@@ -167,6 +167,7 @@ src/web/
 ```
 
 **React Router Hooks Used**:
+
 - `useNavigate()` - Programmatic navigation
 - `useParams()` - Access route parameters (`:deckId`, `:cardId`)
 - `useSearchParams()` - Access and modify query parameters
@@ -179,36 +180,36 @@ src/web/
 
 ### Route Definitions
 
-| Route | Page Component | Description |
-|-------|----------------|-------------|
-| `/` | `DashboardPage` | Dashboard home with overview stats |
-| `/collection` | `CollectionPage` | User's card collection |
-| `/collection/:cardId` | `CollectionPage` + Modal | Card detail overlay |
-| `/browse` | `BrowsePage` | Browse all available cards |
-| `/browse/:cardId` | `BrowsePage` + Modal | Card detail overlay |
-| `/decks` | `DecksPage` | List of user's decks |
-| `/decks/new` | `DeckBuilderPage` | Create new deck |
-| `/decks/:deckId` | `DeckDetailPage` | View deck details |
-| `/decks/:deckId/edit` | `DeckBuilderPage` | Edit existing deck |
+| Route                 | Page Component           | Description                        |
+| --------------------- | ------------------------ | ---------------------------------- |
+| `/`                   | `DashboardPage`          | Dashboard home with overview stats |
+| `/collection`         | `CollectionPage`         | User's card collection             |
+| `/collection/:cardId` | `CollectionPage` + Modal | Card detail overlay                |
+| `/browse`             | `BrowsePage`             | Browse all available cards         |
+| `/browse/:cardId`     | `BrowsePage` + Modal     | Card detail overlay                |
+| `/decks`              | `DecksPage`              | List of user's decks               |
+| `/decks/new`          | `DeckBuilderPage`        | Create new deck                    |
+| `/decks/:deckId`      | `DeckDetailPage`         | View deck details                  |
+| `/decks/:deckId/edit` | `DeckBuilderPage`        | Edit existing deck                 |
 
 ### URL Parameters
 
 ```typescript
 // Route params
 interface RouteParams {
-  cardId?: string;    // Pokemon card ID (e.g., "base1-4")
-  deckId?: string;    // Deck UUID
+  cardId?: string; // Pokemon card ID (e.g., "base1-4")
+  deckId?: string; // Deck UUID
 }
 
 // Query params
 interface QueryParams {
-  q?: string;         // Search query
-  type?: string;      // Pokemon type filter
-  rarity?: string;    // Rarity filter
-  set?: string;       // Set filter
-  format?: string;    // Format filter (standard, expanded, unlimited)
-  page?: number;      // Pagination
-  view?: 'grid' | 'list';  // View mode
+  q?: string; // Search query
+  type?: string; // Pokemon type filter
+  rarity?: string; // Rarity filter
+  set?: string; // Set filter
+  format?: string; // Format filter (standard, expanded, unlimited)
+  page?: number; // Pagination
+  view?: 'grid' | 'list'; // View mode
 }
 ```
 
@@ -217,6 +218,7 @@ interface QueryParams {
 ## Phase 1: Routing & Layout Infrastructure
 
 ### Objective
+
 Establish client-side routing using `react-router-dom` and enhance the dashboard layout for multi-page navigation.
 
 ### Dependencies
@@ -234,6 +236,7 @@ bun add -D @types/react-router @types/react-router-dom  # if needed for types
 **Package**: `react-router-dom` v6.x
 
 React Router provides all routing functionality out of the box:
+
 - `BrowserRouter` - Client-side routing with HTML5 history API
 - `StaticRouter` - Server-side rendering support
 - `Routes` / `Route` - Declarative route definitions
@@ -571,17 +574,17 @@ import { handleApiRequest } from './api';
 
 // All frontend routes that should render the React app
 const WEB_ROUTE_PATTERNS = [
-  /^\/$/,                           // Dashboard
-  /^\/collection(\/.*)?$/,          // Collection and card detail
-  /^\/browse(\/.*)?$/,              // Browse and card detail
-  /^\/decks$/,                      // Deck list
-  /^\/decks\/new$/,                 // New deck
-  /^\/decks\/[^\/]+$/,              // Deck detail
-  /^\/decks\/[^\/]+\/edit$/,        // Edit deck
+  /^\/$/, // Dashboard
+  /^\/collection(\/.*)?$/, // Collection and card detail
+  /^\/browse(\/.*)?$/, // Browse and card detail
+  /^\/decks$/, // Deck list
+  /^\/decks\/new$/, // New deck
+  /^\/decks\/[^\/]+$/, // Deck detail
+  /^\/decks\/[^\/]+\/edit$/ // Edit deck
 ];
 
 function isWebRoute(pathname: string): boolean {
-  return WEB_ROUTE_PATTERNS.some(pattern => pattern.test(pathname));
+  return WEB_ROUTE_PATTERNS.some((pattern) => pattern.test(pathname));
 }
 
 export async function handleRequest(request: Request) {
@@ -621,7 +624,7 @@ export const WEB_ROUTES = [
   '/decks',
   '/decks/new',
   '/decks/:deckId',
-  '/decks/:deckId/edit',
+  '/decks/:deckId/edit'
 ];
 
 // API routes
@@ -820,29 +823,29 @@ export default DeckBuilderPage;
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `package.json` | Modify (add react-router-dom) |
-| `src/web/routes/index.tsx` | Create |
-| `src/web/browser/index.tsx` | Modify |
-| `src/web/App.tsx` | Modify |
-| `src/web/components/AppSidebar/index.ts` | Create |
-| `src/web/components/AppSidebar/AppSidebar.tsx` | Create |
-| `src/web/components/AppSidebar/AppSidebar.css` | Create |
-| `src/web/components/DashboardHeader/index.ts` | Create |
-| `src/web/components/DashboardHeader/DashboardHeader.tsx` | Create |
-| `src/web/components/DashboardHeader/types.ts` | Create |
-| `src/web/components/DashboardHeader/DashboardHeader.css` | Create |
-| `src/web/pages/DashboardPage.tsx` | Create |
-| `src/web/pages/CollectionPage.tsx` | Create |
-| `src/web/pages/BrowsePage.tsx` | Create |
-| `src/web/pages/DecksPage.tsx` | Create |
-| `src/web/pages/DeckDetailPage.tsx` | Create |
-| `src/web/pages/DeckBuilderPage.tsx` | Create |
-| `src/web/pages/NotFoundPage.tsx` | Create |
-| `src/server/lib/web/utils/render.tsx` | Modify |
-| `src/server/lib/handleRequest.ts` | Modify |
-| `src/server/lib/routes.ts` | Modify |
+| File                                                     | Action                        |
+| -------------------------------------------------------- | ----------------------------- |
+| `package.json`                                           | Modify (add react-router-dom) |
+| `src/web/routes/index.tsx`                               | Create                        |
+| `src/web/browser/index.tsx`                              | Modify                        |
+| `src/web/App.tsx`                                        | Modify                        |
+| `src/web/components/AppSidebar/index.ts`                 | Create                        |
+| `src/web/components/AppSidebar/AppSidebar.tsx`           | Create                        |
+| `src/web/components/AppSidebar/AppSidebar.css`           | Create                        |
+| `src/web/components/DashboardHeader/index.ts`            | Create                        |
+| `src/web/components/DashboardHeader/DashboardHeader.tsx` | Create                        |
+| `src/web/components/DashboardHeader/types.ts`            | Create                        |
+| `src/web/components/DashboardHeader/DashboardHeader.css` | Create                        |
+| `src/web/pages/DashboardPage.tsx`                        | Create                        |
+| `src/web/pages/CollectionPage.tsx`                       | Create                        |
+| `src/web/pages/BrowsePage.tsx`                           | Create                        |
+| `src/web/pages/DecksPage.tsx`                            | Create                        |
+| `src/web/pages/DeckDetailPage.tsx`                       | Create                        |
+| `src/web/pages/DeckBuilderPage.tsx`                      | Create                        |
+| `src/web/pages/NotFoundPage.tsx`                         | Create                        |
+| `src/server/lib/web/utils/render.tsx`                    | Modify                        |
+| `src/server/lib/handleRequest.ts`                        | Modify                        |
+| `src/server/lib/routes.ts`                               | Modify                        |
 
 ### React Router Quick Reference
 
@@ -888,6 +891,7 @@ const location = useLocation();
 ## Phase 2: Dashboard Home & Collection Pages
 
 ### Objective
+
 Build the main dashboard overview and collection management pages.
 
 ### Deliverables
@@ -897,6 +901,7 @@ Build the main dashboard overview and collection management pages.
 **File**: `src/web/pages/DashboardPage.tsx`
 
 **Features**:
+
 - Collection statistics (total cards, unique cards, by type)
 - Recent activity summary
 - Quick actions (add cards, create deck, browse)
@@ -904,6 +909,7 @@ Build the main dashboard overview and collection management pages.
 - Featured/favorite cards display
 
 **Layout**:
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  DashboardHeader                                             │
@@ -933,6 +939,7 @@ Build the main dashboard overview and collection management pages.
 **File**: `src/web/pages/CollectionPage.tsx`
 
 **Features**:
+
 - Grid/list view toggle
 - Search and filter functionality
 - Sort options (name, type, set, rarity, quantity)
@@ -942,6 +949,7 @@ Build the main dashboard overview and collection management pages.
 - Bulk actions (select multiple, remove)
 
 **Layout**:
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  DashboardHeader (title: "My Collection")                    │
@@ -972,6 +980,7 @@ Build the main dashboard overview and collection management pages.
 **File**: `src/web/pages/BrowsePage.tsx`
 
 **Features**:
+
 - Browse all available cards (not just owned)
 - Same search/filter as collection
 - "Add to Collection" action on each card
@@ -979,6 +988,7 @@ Build the main dashboard overview and collection management pages.
 - View by set or all cards
 
 **Differences from Collection**:
+
 - No quantity display
 - "Add to Collection" instead of +/- controls
 - Can filter by sets not in collection
@@ -999,6 +1009,7 @@ interface CardDetailProps {
 ```
 
 **Features**:
+
 - Large card image
 - Full card information (HP, types, attacks, abilities)
 - Set information and rarity
@@ -1082,32 +1093,33 @@ interface ModalProps {
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `src/web/pages/DashboardPage.tsx` | Create |
-| `src/web/pages/CollectionPage.tsx` | Create |
-| `src/web/pages/BrowsePage.tsx` | Create |
-| `src/web/components/CardDetail/index.ts` | Create |
+| File                                           | Action |
+| ---------------------------------------------- | ------ |
+| `src/web/pages/DashboardPage.tsx`              | Create |
+| `src/web/pages/CollectionPage.tsx`             | Create |
+| `src/web/pages/BrowsePage.tsx`                 | Create |
+| `src/web/components/CardDetail/index.ts`       | Create |
 | `src/web/components/CardDetail/CardDetail.tsx` | Create |
-| `src/web/components/CardDetail/types.ts` | Create |
+| `src/web/components/CardDetail/types.ts`       | Create |
 | `src/web/components/CardDetail/CardDetail.css` | Create |
-| `src/web/components/Pagination/index.ts` | Create |
+| `src/web/components/Pagination/index.ts`       | Create |
 | `src/web/components/Pagination/Pagination.tsx` | Create |
-| `src/web/components/Pagination/types.ts` | Create |
+| `src/web/components/Pagination/types.ts`       | Create |
 | `src/web/components/Pagination/Pagination.css` | Create |
-| `src/web/components/Modal/index.ts` | Create |
-| `src/web/components/Modal/Modal.tsx` | Create |
-| `src/web/components/Modal/types.ts` | Create |
-| `src/web/components/Modal/Modal.css` | Create |
-| `src/web/context/CollectionContext.tsx` | Create |
-| `src/web/hooks/useCollection.ts` | Create |
-| `src/web/hooks/useLocalStorage.ts` | Create |
+| `src/web/components/Modal/index.ts`            | Create |
+| `src/web/components/Modal/Modal.tsx`           | Create |
+| `src/web/components/Modal/types.ts`            | Create |
+| `src/web/components/Modal/Modal.css`           | Create |
+| `src/web/context/CollectionContext.tsx`        | Create |
+| `src/web/hooks/useCollection.ts`               | Create |
+| `src/web/hooks/useLocalStorage.ts`             | Create |
 
 ---
 
 ## Phase 3: Deck Management System
 
 ### Objective
+
 Build deck listing, viewing, and CRUD operations.
 
 ### Deliverables
@@ -1117,6 +1129,7 @@ Build deck listing, viewing, and CRUD operations.
 **File**: `src/web/pages/DecksPage.tsx`
 
 **Features**:
+
 - Grid of deck cards (using existing `DeckList` component)
 - Create new deck button
 - Filter by format (Standard, Expanded, Unlimited)
@@ -1124,6 +1137,7 @@ Build deck listing, viewing, and CRUD operations.
 - Edit/delete actions on each deck
 
 **Layout**:
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  DashboardHeader (title: "My Decks")                         │
@@ -1156,6 +1170,7 @@ Build deck listing, viewing, and CRUD operations.
 **File**: `src/web/pages/DeckDetailPage.tsx`
 
 **Features**:
+
 - Deck name and description
 - Format indicator
 - Validity status with breakdown
@@ -1165,6 +1180,7 @@ Build deck listing, viewing, and CRUD operations.
 - Export deck (future)
 
 **Layout**:
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  DashboardHeader (breadcrumb: Decks > Deck Name)             │
@@ -1228,7 +1244,11 @@ interface DeckContextValue {
   getDeck: (id: string) => Deck | undefined;
   setCurrentDeck: (id: string | null) => void;
   addCardToDeck: (deckId: string, cardId: string, quantity?: number) => void;
-  removeCardFromDeck: (deckId: string, cardId: string, quantity?: number) => void;
+  removeCardFromDeck: (
+    deckId: string,
+    cardId: string,
+    quantity?: number
+  ) => void;
 }
 ```
 
@@ -1325,27 +1345,28 @@ interface ConfirmDialogProps {
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `src/web/pages/DecksPage.tsx` | Create |
-| `src/web/pages/DeckDetailPage.tsx` | Create |
-| `src/web/context/DeckContext.tsx` | Create |
-| `src/web/hooks/useDecks.ts` | Create |
-| `src/web/types/deck.ts` | Create |
-| `src/web/components/FormatSelector/index.ts` | Create |
+| File                                                   | Action |
+| ------------------------------------------------------ | ------ |
+| `src/web/pages/DecksPage.tsx`                          | Create |
+| `src/web/pages/DeckDetailPage.tsx`                     | Create |
+| `src/web/context/DeckContext.tsx`                      | Create |
+| `src/web/hooks/useDecks.ts`                            | Create |
+| `src/web/types/deck.ts`                                | Create |
+| `src/web/components/FormatSelector/index.ts`           | Create |
 | `src/web/components/FormatSelector/FormatSelector.tsx` | Create |
-| `src/web/components/FormatSelector/types.ts` | Create |
+| `src/web/components/FormatSelector/types.ts`           | Create |
 | `src/web/components/FormatSelector/FormatSelector.css` | Create |
-| `src/web/components/ConfirmDialog/index.ts` | Create |
-| `src/web/components/ConfirmDialog/ConfirmDialog.tsx` | Create |
-| `src/web/components/ConfirmDialog/types.ts` | Create |
-| `src/web/components/ConfirmDialog/ConfirmDialog.css` | Create |
+| `src/web/components/ConfirmDialog/index.ts`            | Create |
+| `src/web/components/ConfirmDialog/ConfirmDialog.tsx`   | Create |
+| `src/web/components/ConfirmDialog/types.ts`            | Create |
+| `src/web/components/ConfirmDialog/ConfirmDialog.css`   | Create |
 
 ---
 
 ## Phase 4: Deck Builder Interface
 
 ### Objective
+
 Build the interactive deck building/editing interface.
 
 ### Deliverables
@@ -1355,6 +1376,7 @@ Build the interactive deck building/editing interface.
 **File**: `src/web/pages/DeckBuilderPage.tsx`
 
 **Features**:
+
 - Two-panel layout (card browser + deck contents)
 - Real-time deck validation
 - Drag-and-drop card addition (optional, click works too)
@@ -1364,6 +1386,7 @@ Build the interactive deck building/editing interface.
 - Cancel/discard changes option
 
 **Layout**:
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  DashboardHeader (title: "Deck Builder")                     │
@@ -1417,6 +1440,7 @@ interface DeckBuilderState {
 ```
 
 **Sub-components**:
+
 - `DeckBuilderHeader` - Name input, format selector, save/cancel
 - `CardBrowser` - Left panel with search and card grid
 - `DeckContents` - Right panel with deck cards grouped
@@ -1428,12 +1452,13 @@ interface DeckBuilderState {
 ```typescript
 interface CardBrowserProps {
   onAddCard: (card: Pokemon.Card) => void;
-  deckCards: DeckCard[];  // To show which cards are already in deck
-  format: DeckFormat;     // To filter by format legality
+  deckCards: DeckCard[]; // To show which cards are already in deck
+  format: DeckFormat; // To filter by format legality
 }
 ```
 
 **Features**:
+
 - Search by name
 - Filter by type, supertype (Pokemon/Trainer/Energy)
 - Filter by legality (based on selected format)
@@ -1456,6 +1481,7 @@ interface DeckContentsProps {
 ```
 
 **Features**:
+
 - Cards grouped by supertype (Pokemon, Trainer, Energy)
 - Quantity controls (+/-)
 - Remove card button
@@ -1551,23 +1577,24 @@ useEffect(() => {
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `src/web/pages/DeckBuilderPage.tsx` | Create |
-| `src/web/components/DeckBuilder/index.ts` | Create |
-| `src/web/components/DeckBuilder/DeckBuilder.tsx` | Create |
+| File                                                    | Action |
+| ------------------------------------------------------- | ------ |
+| `src/web/pages/DeckBuilderPage.tsx`                     | Create |
+| `src/web/components/DeckBuilder/index.ts`               | Create |
+| `src/web/components/DeckBuilder/DeckBuilder.tsx`        | Create |
 | `src/web/components/DeckBuilder/DeckBuilderContext.tsx` | Create |
-| `src/web/components/DeckBuilder/CardBrowser.tsx` | Create |
-| `src/web/components/DeckBuilder/DeckContents.tsx` | Create |
-| `src/web/components/DeckBuilder/DeckBuilderHeader.tsx` | Create |
-| `src/web/components/DeckBuilder/types.ts` | Create |
-| `src/web/components/DeckBuilder/DeckBuilder.css` | Create |
+| `src/web/components/DeckBuilder/CardBrowser.tsx`        | Create |
+| `src/web/components/DeckBuilder/DeckContents.tsx`       | Create |
+| `src/web/components/DeckBuilder/DeckBuilderHeader.tsx`  | Create |
+| `src/web/components/DeckBuilder/types.ts`               | Create |
+| `src/web/components/DeckBuilder/DeckBuilder.css`        | Create |
 
 ---
 
 ## Phase 5: Format Support & Validation
 
 ### Objective
+
 Implement deck format rules and validation logic.
 
 ### Deliverables
@@ -1663,7 +1690,7 @@ export function validateDeck(
     totalCards,
     errors,
     warnings,
-    breakdown,
+    breakdown
   };
 }
 
@@ -1674,7 +1701,7 @@ export const VALIDATION_ERRORS = {
   COPY_LIMIT_EXCEEDED: 'COPY_LIMIT_EXCEEDED',
   NO_BASIC_POKEMON: 'NO_BASIC_POKEMON',
   ILLEGAL_CARD: 'ILLEGAL_CARD',
-  BANNED_CARD: 'BANNED_CARD',
+  BANNED_CARD: 'BANNED_CARD'
 };
 ```
 
@@ -1691,6 +1718,7 @@ interface DeckValidationProps {
 ```
 
 **Features**:
+
 - Green checkmark for valid decks
 - Red X for invalid decks
 - List of errors with icons
@@ -1711,6 +1739,7 @@ interface FormatInfoProps {
 ```
 
 **Features**:
+
 - Format name and description
 - Current legal sets
 - Banned card list
@@ -1730,24 +1759,25 @@ interface FormatInfoProps {
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `src/web/utils/format-rules.ts` | Create |
-| `src/web/utils/deck-validator.ts` | Create |
-| `src/web/components/DeckValidation/index.ts` | Create |
+| File                                                   | Action |
+| ------------------------------------------------------ | ------ |
+| `src/web/utils/format-rules.ts`                        | Create |
+| `src/web/utils/deck-validator.ts`                      | Create |
+| `src/web/components/DeckValidation/index.ts`           | Create |
 | `src/web/components/DeckValidation/DeckValidation.tsx` | Create |
-| `src/web/components/DeckValidation/types.ts` | Create |
+| `src/web/components/DeckValidation/types.ts`           | Create |
 | `src/web/components/DeckValidation/DeckValidation.css` | Create |
-| `src/web/components/FormatInfo/index.ts` | Create |
-| `src/web/components/FormatInfo/FormatInfo.tsx` | Create |
-| `src/web/components/FormatInfo/types.ts` | Create |
-| `src/web/components/FormatInfo/FormatInfo.css` | Create |
+| `src/web/components/FormatInfo/index.ts`               | Create |
+| `src/web/components/FormatInfo/FormatInfo.tsx`         | Create |
+| `src/web/components/FormatInfo/types.ts`               | Create |
+| `src/web/components/FormatInfo/FormatInfo.css`         | Create |
 
 ---
 
 ## Phase 6: Data Layer & API Integration
 
 ### Objective
+
 Connect frontend to backend API with proper data fetching patterns.
 
 ### Deliverables
@@ -1817,14 +1847,14 @@ const API_BASE = '/api/v1';
 export const api = {
   cards: {
     list: (params?: SearchParams) => fetch(`${API_BASE}/cards?${params}`),
-    get: (id: string) => fetch(`${API_BASE}/cards/${id}`),
+    get: (id: string) => fetch(`${API_BASE}/cards/${id}`)
   },
   sets: {
     list: () => fetch(`${API_BASE}/sets`),
     get: (id: string) => fetch(`${API_BASE}/sets/${id}`),
     cards: (id: string, params?: SearchParams) =>
-      fetch(`${API_BASE}/sets/${id}/cards?${params}`),
-  },
+      fetch(`${API_BASE}/sets/${id}/cards?${params}`)
+  }
 };
 ```
 
@@ -1885,27 +1915,28 @@ Skeleton specifically for card loading state.
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `src/web/hooks/useCards.ts` | Create |
-| `src/web/hooks/useCard.ts` | Create |
-| `src/web/hooks/useSets.ts` | Create |
-| `src/web/utils/api-client.ts` | Create |
-| `src/web/context/CardCacheContext.tsx` | Create |
-| `src/web/components/ErrorBoundary/index.ts` | Create |
+| File                                                 | Action |
+| ---------------------------------------------------- | ------ |
+| `src/web/hooks/useCards.ts`                          | Create |
+| `src/web/hooks/useCard.ts`                           | Create |
+| `src/web/hooks/useSets.ts`                           | Create |
+| `src/web/utils/api-client.ts`                        | Create |
+| `src/web/context/CardCacheContext.tsx`               | Create |
+| `src/web/components/ErrorBoundary/index.ts`          | Create |
 | `src/web/components/ErrorBoundary/ErrorBoundary.tsx` | Create |
-| `src/web/components/Skeleton/index.ts` | Create |
-| `src/web/components/Skeleton/Skeleton.tsx` | Create |
-| `src/web/components/Skeleton/Skeleton.css` | Create |
-| `src/web/components/CardSkeleton/index.ts` | Create |
-| `src/web/components/CardSkeleton/CardSkeleton.tsx` | Create |
-| `src/web/components/CardSkeleton/CardSkeleton.css` | Create |
+| `src/web/components/Skeleton/index.ts`               | Create |
+| `src/web/components/Skeleton/Skeleton.tsx`           | Create |
+| `src/web/components/Skeleton/Skeleton.css`           | Create |
+| `src/web/components/CardSkeleton/index.ts`           | Create |
+| `src/web/components/CardSkeleton/CardSkeleton.tsx`   | Create |
+| `src/web/components/CardSkeleton/CardSkeleton.css`   | Create |
 
 ---
 
 ## Phase 7: Polish & Optimization
 
 ### Objective
+
 Final polish, performance optimization, and production readiness.
 
 ### Deliverables
@@ -1987,18 +2018,18 @@ interface ToastContextValue {
 
 ### Files to Create/Modify
 
-| File | Action |
-|------|--------|
-| `src/web/components/Toast/index.ts` | Create |
-| `src/web/components/Toast/Toast.tsx` | Create |
-| `src/web/components/Toast/ToastContainer.tsx` | Create |
-| `src/web/components/Toast/types.ts` | Create |
-| `src/web/components/Toast/Toast.css` | Create |
-| `src/web/context/ToastContext.tsx` | Create |
-| `src/web/hooks/useKeyboard.ts` | Create |
-| `src/web/components/VirtualizedGrid/VirtualizedGrid.tsx` | Create |
-| `public/css/index.css` | Modify |
-| `src/web/**/__tests__/*.test.tsx` | Create (multiple) |
+| File                                                     | Action            |
+| -------------------------------------------------------- | ----------------- |
+| `src/web/components/Toast/index.ts`                      | Create            |
+| `src/web/components/Toast/Toast.tsx`                     | Create            |
+| `src/web/components/Toast/ToastContainer.tsx`            | Create            |
+| `src/web/components/Toast/types.ts`                      | Create            |
+| `src/web/components/Toast/Toast.css`                     | Create            |
+| `src/web/context/ToastContext.tsx`                       | Create            |
+| `src/web/hooks/useKeyboard.ts`                           | Create            |
+| `src/web/components/VirtualizedGrid/VirtualizedGrid.tsx` | Create            |
+| `public/css/index.css`                                   | Modify            |
+| `src/web/**/__tests__/*.test.tsx`                        | Create (multiple) |
 
 ---
 
@@ -2006,41 +2037,41 @@ interface ToastContextValue {
 
 ### Existing Components (No Changes Needed)
 
-| Component | Props Interface | Notes |
-|-----------|-----------------|-------|
-| `Badge` | `BadgeProps` | Type/rarity styling |
-| `Button` | `ButtonProps` | Variants: primary, secondary, ghost, danger |
-| `Card` | `CardProps` | Variants: grid, list, detail |
-| `CardGrid` | `CardGridProps` | Loading/empty states |
-| `DeckCard` | `DeckCardProps` | Edit/delete actions |
-| `DeckList` | `DeckListProps` | Grid/list layouts |
-| `SearchBar` | `SearchBarProps` | Type/rarity/set filters |
-| `Stats` | `StatsProps` | Trend indicators |
-| `Sidebar` | `SidebarProps` | Collapsible navigation |
-| `DashboardLayout` | `DashboardLayoutProps` | Layout wrapper |
-| `Document` | `DocumentProps` | HTML document |
+| Component         | Props Interface        | Notes                                       |
+| ----------------- | ---------------------- | ------------------------------------------- |
+| `Badge`           | `BadgeProps`           | Type/rarity styling                         |
+| `Button`          | `ButtonProps`          | Variants: primary, secondary, ghost, danger |
+| `Card`            | `CardProps`            | Variants: grid, list, detail                |
+| `CardGrid`        | `CardGridProps`        | Loading/empty states                        |
+| `DeckCard`        | `DeckCardProps`        | Edit/delete actions                         |
+| `DeckList`        | `DeckListProps`        | Grid/list layouts                           |
+| `SearchBar`       | `SearchBarProps`       | Type/rarity/set filters                     |
+| `Stats`           | `StatsProps`           | Trend indicators                            |
+| `Sidebar`         | `SidebarProps`         | Collapsible navigation                      |
+| `DashboardLayout` | `DashboardLayoutProps` | Layout wrapper                              |
+| `Document`        | `DocumentProps`        | HTML document                               |
 
 ### New Components Summary
 
-| Component | Phase | Priority |
-|-----------|-------|----------|
-| `AppSidebar` | 1 | P0 |
-| `DashboardHeader` | 1 | P0 |
-| `CardDetail` | 2 | P0 |
-| `Pagination` | 2 | P0 |
-| `Modal` | 2 | P0 |
-| `FormatSelector` | 3 | P1 |
-| `ConfirmDialog` | 3 | P1 |
-| `DeckBuilder` | 4 | P1 |
-| `CardBrowser` | 4 | P1 |
-| `DeckContents` | 4 | P1 |
-| `DeckValidation` | 5 | P1 |
-| `FormatInfo` | 5 | P2 |
-| `ErrorBoundary` | 6 | P1 |
-| `Skeleton` | 6 | P2 |
-| `CardSkeleton` | 6 | P2 |
-| `Toast` | 7 | P2 |
-| `VirtualizedGrid` | 7 | P3 |
+| Component         | Phase | Priority |
+| ----------------- | ----- | -------- |
+| `AppSidebar`      | 1     | P0       |
+| `DashboardHeader` | 1     | P0       |
+| `CardDetail`      | 2     | P0       |
+| `Pagination`      | 2     | P0       |
+| `Modal`           | 2     | P0       |
+| `FormatSelector`  | 3     | P1       |
+| `ConfirmDialog`   | 3     | P1       |
+| `DeckBuilder`     | 4     | P1       |
+| `CardBrowser`     | 4     | P1       |
+| `DeckContents`    | 4     | P1       |
+| `DeckValidation`  | 5     | P1       |
+| `FormatInfo`      | 5     | P2       |
+| `ErrorBoundary`   | 6     | P1       |
+| `Skeleton`        | 6     | P2       |
+| `CardSkeleton`    | 6     | P2       |
+| `Toast`           | 7     | P2       |
+| `VirtualizedGrid` | 7     | P3       |
 
 > **Note**: Routing is handled by `react-router-dom` - uses `Link`, `NavLink`, and router hooks from the library.
 
@@ -2088,7 +2119,7 @@ interface DeckStore {
 const STORAGE_KEYS = {
   COLLECTION: 'pokemon-tcg-collection',
   DECKS: 'pokemon-tcg-decks',
-  PREFERENCES: 'pokemon-tcg-preferences',
+  PREFERENCES: 'pokemon-tcg-preferences'
 };
 ```
 
@@ -2098,36 +2129,36 @@ const STORAGE_KEYS = {
 
 ### Existing Endpoints
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/v1/cards` | GET | List cards with pagination |
-| `/api/v1/cards/:id` | GET | Get single card |
-| `/api/v1/sets` | GET | List sets |
-| `/api/v1/sets/:id` | GET | Get single set |
-| `/api/v1/sets/:id/cards` | GET | Get cards in set |
+| Endpoint                 | Method | Description                |
+| ------------------------ | ------ | -------------------------- |
+| `/api/v1/cards`          | GET    | List cards with pagination |
+| `/api/v1/cards/:id`      | GET    | Get single card            |
+| `/api/v1/sets`           | GET    | List sets                  |
+| `/api/v1/sets/:id`       | GET    | Get single set             |
+| `/api/v1/sets/:id/cards` | GET    | Get cards in set           |
 
 ### Query Parameters
 
-| Param | Type | Description |
-|-------|------|-------------|
-| `page` | number | Page number (1-indexed) |
-| `limit` | number | Items per page (default 20) |
-| `q` | string | Search query |
-| `type` | string | Pokemon type filter |
-| `rarity` | string | Rarity filter |
-| `supertype` | string | Pokemon/Trainer/Energy |
+| Param       | Type   | Description                 |
+| ----------- | ------ | --------------------------- |
+| `page`      | number | Page number (1-indexed)     |
+| `limit`     | number | Items per page (default 20) |
+| `q`         | string | Search query                |
+| `type`      | string | Pokemon type filter         |
+| `rarity`    | string | Rarity filter               |
+| `supertype` | string | Pokemon/Trainer/Energy      |
 
 ### Future API Endpoints (v2)
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/v1/decks` | GET | List user decks |
-| `/api/v1/decks` | POST | Create deck |
-| `/api/v1/decks/:id` | GET | Get deck |
-| `/api/v1/decks/:id` | PUT | Update deck |
-| `/api/v1/decks/:id` | DELETE | Delete deck |
-| `/api/v1/collections` | GET | Get user collection |
-| `/api/v1/collections` | POST | Add to collection |
+| Endpoint                      | Method | Description            |
+| ----------------------------- | ------ | ---------------------- |
+| `/api/v1/decks`               | GET    | List user decks        |
+| `/api/v1/decks`               | POST   | Create deck            |
+| `/api/v1/decks/:id`           | GET    | Get deck               |
+| `/api/v1/decks/:id`           | PUT    | Update deck            |
+| `/api/v1/decks/:id`           | DELETE | Delete deck            |
+| `/api/v1/collections`         | GET    | Get user collection    |
+| `/api/v1/collections`         | POST   | Add to collection      |
 | `/api/v1/collections/:cardId` | DELETE | Remove from collection |
 
 ---
@@ -2137,6 +2168,7 @@ const STORAGE_KEYS = {
 ### Recommended Sprint Plan
 
 **Sprint 1 (Phase 1)**: Routing & Layout
+
 - Install and configure `react-router-dom`
 - Set up `BrowserRouter` (client) and `StaticRouter` (SSR)
 - Create route configuration with lazy-loaded pages
@@ -2146,6 +2178,7 @@ const STORAGE_KEYS = {
 - Create page shell components
 
 **Sprint 2 (Phase 2)**: Collection
+
 - Dashboard home page
 - Collection page
 - Card detail modal
@@ -2153,29 +2186,34 @@ const STORAGE_KEYS = {
 - LocalStorage persistence
 
 **Sprint 3 (Phase 3)**: Decks
+
 - Decks page
 - Deck detail page
 - Deck context
 - Format selector
 
 **Sprint 4 (Phase 4)**: Deck Builder
+
 - Deck builder page
 - Card browser panel
 - Deck contents panel
 - Real-time validation
 
 **Sprint 5 (Phase 5)**: Validation
+
 - Format rules
 - Deck validator
 - Validation display
 
 **Sprint 6 (Phase 6)**: API Integration
+
 - Data fetching hooks
 - API client
 - Error handling
 - Loading states
 
 **Sprint 7 (Phase 7)**: Polish
+
 - Toast notifications
 - Mobile responsiveness
 - Accessibility
@@ -2197,13 +2235,13 @@ const STORAGE_KEYS = {
 
 ## Risk Mitigation
 
-| Risk | Mitigation |
-|------|------------|
+| Risk                                    | Mitigation                                        |
+| --------------------------------------- | ------------------------------------------------- |
 | Large card database impacts performance | Implement pagination, virtualization, and caching |
-| Complex validation rules | Thorough testing, configurable rules |
-| LocalStorage limits | Monitor storage usage, implement data pruning |
-| SSR hydration mismatches | Careful client/server state synchronization |
-| API rate limiting | Implement request batching and caching |
+| Complex validation rules                | Thorough testing, configurable rules              |
+| LocalStorage limits                     | Monitor storage usage, implement data pruning     |
+| SSR hydration mismatches                | Careful client/server state synchronization       |
+| API rate limiting                       | Implement request batching and caching            |
 
 ---
 
@@ -2213,13 +2251,14 @@ const STORAGE_KEYS = {
 
 ```json
 {
-  "react-router-dom": "^6.x",        // Required: Client-side routing
-  "@tanstack/react-query": "^5.x",   // Optional: for data fetching
-  "uuid": "^9.x"                     // For deck ID generation
+  "react-router-dom": "^6.x", // Required: Client-side routing
+  "@tanstack/react-query": "^5.x", // Optional: for data fetching
+  "uuid": "^9.x" // For deck ID generation
 }
 ```
 
 **Installation**:
+
 ```bash
 bun add react-router-dom
 bun add uuid
@@ -2291,4 +2330,4 @@ const NAV_ITEMS = [
 
 ---
 
-*End of Specification Document*
+_End of Specification Document_

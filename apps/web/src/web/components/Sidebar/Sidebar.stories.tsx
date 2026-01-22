@@ -11,7 +11,7 @@ const mockItems: NavItem[] = [
   { id: 'trades', label: 'Trades', icon: '🔄', count: 3 },
   { id: 'browse', label: 'Browse Cards', icon: '🔍' },
   { id: 'sets', label: 'Sets', icon: '📚' },
-  { id: 'settings', label: 'Settings', icon: '⚙️' },
+  { id: 'settings', label: 'Settings', icon: '⚙️' }
 ];
 
 const meta: Meta<typeof Sidebar> = {
@@ -20,16 +20,16 @@ const meta: Meta<typeof Sidebar> = {
   tags: ['autodocs'],
   argTypes: {
     collapsed: {
-      control: 'boolean',
-    },
+      control: 'boolean'
+    }
   },
   decorators: [
     (Story) => (
       <div style={{ height: '600px', display: 'flex' }}>
         <Story />
       </div>
-    ),
-  ],
+    )
+  ]
 };
 
 export default meta;
@@ -38,16 +38,16 @@ type Story = StoryObj<typeof Sidebar>;
 export const Default: Story = {
   args: {
     items: mockItems,
-    activeItemId: 'collection',
-  },
+    activeItemId: 'collection'
+  }
 };
 
 export const Collapsed: Story = {
   args: {
     items: mockItems,
     activeItemId: 'collection',
-    collapsed: true,
-  },
+    collapsed: true
+  }
 };
 
 export const WithToggle: Story = {
@@ -56,14 +56,14 @@ export const WithToggle: Story = {
     activeItemId: 'decks',
     onToggleCollapse: () => {
       console.log('Toggle collapse');
-    },
-  },
+    }
+  }
 };
 
 export const NoActivePage: Story = {
   args: {
-    items: mockItems,
-  },
+    items: mockItems
+  }
 };
 
 export const WithClickHandler: Story = {
@@ -72,8 +72,8 @@ export const WithClickHandler: Story = {
     activeItemId: 'overview',
     onItemClick: (item) => {
       console.log('Clicked:', item.label);
-    },
-  },
+    }
+  }
 };
 
 export const Interactive: Story = {
@@ -83,8 +83,15 @@ export const Interactive: Story = {
 
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        <div style={{ padding: '1rem', backgroundColor: '#F7FAFC', borderRadius: '8px' }}>
-          <strong>Active Page:</strong> {mockItems.find((item) => item.id === activeId)?.label}
+        <div
+          style={{
+            padding: '1rem',
+            backgroundColor: '#F7FAFC',
+            borderRadius: '8px'
+          }}
+        >
+          <strong>Active Page:</strong>{' '}
+          {mockItems.find((item) => item.id === activeId)?.label}
           <br />
           <strong>Collapsed:</strong> {collapsed ? 'Yes' : 'No'}
         </div>
@@ -103,5 +110,5 @@ export const Interactive: Story = {
         </div>
       </div>
     );
-  },
+  }
 };

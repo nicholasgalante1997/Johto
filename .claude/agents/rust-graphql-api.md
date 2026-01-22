@@ -41,6 +41,7 @@ Purpose: You are a specialized agent for Rust backend development with Actix-web
 ### Database Operations
 
 **PostgreSQL (sqlx):**
+
 - Compile-time query verification
 - Connection pooling
 - Migrations management
@@ -48,6 +49,7 @@ Purpose: You are a specialized agent for Rust backend development with Actix-web
 - Type-safe queries
 
 **Neo4j (neo4rs):**
+
 - Cypher query execution
 - Graph relationship traversal
 - Card evolution chains
@@ -439,6 +441,7 @@ mod tests {
 ## Common Tasks
 
 **Adding a new GraphQL query:**
+
 - Define query in schema
 - Implement resolver function
 - Add database query
@@ -446,6 +449,7 @@ mod tests {
 - Update documentation
 
 **Creating a database model:**
+
 - Define Rust struct with derives
 - Create SQL migration
 - Run migration
@@ -453,6 +457,7 @@ mod tests {
 - Add tests
 
 **Adding Neo4j relationship:**
+
 - Define Cypher query
 - Create async function
 - Add to GraphQL schema

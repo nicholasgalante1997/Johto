@@ -48,15 +48,13 @@ export function transformCardRow(row: CardRow): Pokemon.Card {
     artist: row.artist || '',
     rarity: row.rarity || '',
     flavorText: row.flavor_text || undefined,
-    nationalPokedexNumbers: parseJSONArray<string>(row.national_pokedex_numbers),
+    nationalPokedexNumbers: parseJSONArray<string>(
+      row.national_pokedex_numbers
+    ),
     legalities: parseJSON(row.legalities) || { unlimited: '', expanded: '' },
     images: parseJSON(row.images) || { small: '', large: '' },
-    tcgplayer: row.tcgplayer_url
-      ? { url: row.tcgplayer_url }
-      : undefined,
-    cardmarket: row.cardmarket_url
-      ? { url: row.cardmarket_url }
-      : undefined,
+    tcgplayer: row.tcgplayer_url ? { url: row.tcgplayer_url } : undefined,
+    cardmarket: row.cardmarket_url ? { url: row.cardmarket_url } : undefined,
     set: { id: row.set_id } as Pokemon.Set // Minimal set, needs full set data from JOIN
   } as Pokemon.Card;
 }

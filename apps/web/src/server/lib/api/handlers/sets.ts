@@ -1,6 +1,9 @@
 import { sqlite } from '@pokemon/database';
 import { getDatabase } from '../db';
-import { parsePaginationParams, createPaginationMeta } from '../utils/pagination';
+import {
+  parsePaginationParams,
+  createPaginationMeta
+} from '../utils/pagination';
 import { successResponse, notFoundResponse } from '../utils/response';
 import { handleApiError } from '../utils/error';
 import { transformSetRow, transformCardRow } from '../utils/transforms';
@@ -33,13 +36,17 @@ export async function getSetById(id: string): Promise<Response> {
  * GET /api/v1/sets
  * List all sets with pagination
  */
-export async function getSets(searchParams: URLSearchParams): Promise<Response> {
+export async function getSets(
+  searchParams: URLSearchParams
+): Promise<Response> {
   try {
     const db = getDatabase();
     const pagination = parsePaginationParams(searchParams);
 
     // Get total count
-    const countQuery = db.query('SELECT COUNT(*) as total FROM pokemon_card_sets');
+    const countQuery = db.query(
+      'SELECT COUNT(*) as total FROM pokemon_card_sets'
+    );
     const { total } = countQuery.get() as { total: number };
 
     // Get paginated sets ordered by release date (newest first)
@@ -95,7 +102,11 @@ export async function getCardsBySetId(
       LIMIT ? OFFSET ?
     `);
 
-    const rows = query.all(setId, pagination.limit, pagination.offset) as CardRow[];
+    const rows = query.all(
+      setId,
+      pagination.limit,
+      pagination.offset
+    ) as CardRow[];
     const cards = rows.map(transformCardRow);
 
     const meta = createPaginationMeta(pagination, cards.length, total);

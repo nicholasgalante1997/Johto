@@ -9,12 +9,12 @@ const meta: Meta<typeof SearchBar> = {
   tags: ['autodocs'],
   argTypes: {
     showFilters: {
-      control: 'boolean',
+      control: 'boolean'
     },
     loading: {
-      control: 'boolean',
-    },
-  },
+      control: 'boolean'
+    }
+  }
 };
 
 export default meta;
@@ -24,8 +24,8 @@ export const Default: Story = {
   args: {
     onSearch: (filters: SearchFilters) => {
       console.log('Search:', filters);
-    },
-  },
+    }
+  }
 };
 
 export const WithFilters: Story = {
@@ -33,8 +33,8 @@ export const WithFilters: Story = {
     onSearch: (filters: SearchFilters) => {
       console.log('Search:', filters);
     },
-    showFilters: true,
-  },
+    showFilters: true
+  }
 };
 
 export const WithoutFilters: Story = {
@@ -42,8 +42,8 @@ export const WithoutFilters: Story = {
     onSearch: (filters: SearchFilters) => {
       console.log('Search:', filters);
     },
-    showFilters: false,
-  },
+    showFilters: false
+  }
 };
 
 export const Loading: Story = {
@@ -51,8 +51,8 @@ export const Loading: Story = {
     onSearch: (filters: SearchFilters) => {
       console.log('Search:', filters);
     },
-    loading: true,
-  },
+    loading: true
+  }
 };
 
 export const CustomPlaceholder: Story = {
@@ -60,8 +60,8 @@ export const CustomPlaceholder: Story = {
     onSearch: (filters: SearchFilters) => {
       console.log('Search:', filters);
     },
-    placeholder: 'Find your favorite Pokemon...',
-  },
+    placeholder: 'Find your favorite Pokemon...'
+  }
 };
 
 export const Interactive: Story = {
@@ -86,7 +86,7 @@ export const Interactive: Story = {
               marginTop: '1rem',
               padding: '1rem',
               backgroundColor: '#F7FAFC',
-              borderRadius: '8px',
+              borderRadius: '8px'
             }}
           >
             <h4 style={{ margin: '0 0 0.5rem 0' }}>Search Results:</h4>
@@ -97,5 +97,5 @@ export const Interactive: Story = {
         )}
       </div>
     );
-  },
+  }
 };

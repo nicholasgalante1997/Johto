@@ -7,15 +7,16 @@ const mockDecks: Deck[] = [
   {
     id: '1',
     name: 'Fire Deck',
-    description: 'A powerful fire-type deck featuring Charizard and other fire Pokemon.',
+    description:
+      'A powerful fire-type deck featuring Charizard and other fire Pokemon.',
     cardCount: 60,
     lastModified: '2026-01-05',
     isValid: true,
     coverCard: {
       id: 'base1-4',
       name: 'Charizard',
-      imageUrl: 'https://images.pokemontcg.io/base1/4.png',
-    },
+      imageUrl: 'https://images.pokemontcg.io/base1/4.png'
+    }
   },
   {
     id: '2',
@@ -27,8 +28,8 @@ const mockDecks: Deck[] = [
     coverCard: {
       id: 'base1-2',
       name: 'Blastoise',
-      imageUrl: 'https://images.pokemontcg.io/base1/2.png',
-    },
+      imageUrl: 'https://images.pokemontcg.io/base1/2.png'
+    }
   },
   {
     id: '3',
@@ -36,7 +37,7 @@ const mockDecks: Deck[] = [
     description: 'Building a grass-type deck.',
     cardCount: 45,
     lastModified: '2026-01-08',
-    isValid: false,
+    isValid: false
   },
   {
     id: '4',
@@ -48,8 +49,8 @@ const mockDecks: Deck[] = [
     coverCard: {
       id: 'base1-58',
       name: 'Pikachu',
-      imageUrl: 'https://images.pokemontcg.io/base1/58.png',
-    },
+      imageUrl: 'https://images.pokemontcg.io/base1/58.png'
+    }
   },
   {
     id: '5',
@@ -57,8 +58,8 @@ const mockDecks: Deck[] = [
     description: 'Control-oriented psychic deck with Alakazam.',
     cardCount: 60,
     lastModified: '2025-12-28',
-    isValid: true,
-  },
+    isValid: true
+  }
 ];
 
 const meta: Meta<typeof DeckList> = {
@@ -68,12 +69,12 @@ const meta: Meta<typeof DeckList> = {
   argTypes: {
     layout: {
       control: 'select',
-      options: ['grid', 'list'],
+      options: ['grid', 'list']
     },
     loading: {
-      control: 'boolean',
-    },
-  },
+      control: 'boolean'
+    }
+  }
 };
 
 export default meta;
@@ -81,8 +82,8 @@ type Story = StoryObj<typeof DeckList>;
 
 export const Default: Story = {
   args: {
-    decks: mockDecks,
-  },
+    decks: mockDecks
+  }
 };
 
 export const WithCreateButton: Story = {
@@ -90,8 +91,8 @@ export const WithCreateButton: Story = {
     decks: mockDecks,
     onCreateNew: () => {
       console.log('Create new deck');
-    },
-  },
+    }
+  }
 };
 
 export const WithSelection: Story = {
@@ -100,8 +101,8 @@ export const WithSelection: Story = {
     selectedDeckId: '2',
     onDeckSelect: (deck) => {
       console.log('Selected deck:', deck.name);
-    },
-  },
+    }
+  }
 };
 
 export const ListLayout: Story = {
@@ -110,8 +111,8 @@ export const ListLayout: Story = {
     layout: 'list',
     onCreateNew: () => {
       console.log('Create new deck');
-    },
-  },
+    }
+  }
 };
 
 export const Empty: Story = {
@@ -119,15 +120,15 @@ export const Empty: Story = {
     decks: [],
     onCreateNew: () => {
       console.log('Create new deck');
-    },
-  },
+    }
+  }
 };
 
 export const Loading: Story = {
   args: {
     decks: [],
-    loading: true,
-  },
+    loading: true
+  }
 };
 
 export const FewDecks: Story = {
@@ -135,8 +136,8 @@ export const FewDecks: Story = {
     decks: mockDecks.slice(0, 2),
     onCreateNew: () => {
       console.log('Create new deck');
-    },
-  },
+    }
+  }
 };
 
 export const Interactive: Story = {
@@ -151,7 +152,7 @@ export const Interactive: Story = {
         description: 'A newly created deck',
         cardCount: 0,
         lastModified: new Date().toISOString().split('T')[0],
-        isValid: false,
+        isValid: false
       };
       setDecks([...decks, newDeck]);
     };
@@ -167,8 +168,16 @@ export const Interactive: Story = {
 
     return (
       <div>
-        <div style={{ marginBottom: '1rem', padding: '1rem', backgroundColor: '#F7FAFC', borderRadius: '8px' }}>
-          <strong>Selected Deck:</strong> {selectedId ? decks.find((d) => d.id === selectedId)?.name : 'None'}
+        <div
+          style={{
+            marginBottom: '1rem',
+            padding: '1rem',
+            backgroundColor: '#F7FAFC',
+            borderRadius: '8px'
+          }}
+        >
+          <strong>Selected Deck:</strong>{' '}
+          {selectedId ? decks.find((d) => d.id === selectedId)?.name : 'None'}
           <br />
           <strong>Total Decks:</strong> {decks.length}
         </div>
@@ -182,5 +191,5 @@ export const Interactive: Story = {
         />
       </div>
     );
-  },
+  }
 };

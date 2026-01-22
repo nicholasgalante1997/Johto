@@ -181,7 +181,7 @@ import './PokemonCard.css';
 const meta: Meta<typeof PokemonCard> = {
   title: 'Pokemon/PokemonCard',
   component: PokemonCard,
-  tags: ['autodocs'],
+  tags: ['autodocs']
 };
 
 export default meta;
@@ -193,7 +193,7 @@ export const Default: Story = {
       id: 'base1-4',
       name: 'Charizard',
       hp: '120',
-      types: ['Fire'],
+      types: ['Fire']
       // ... card data
     }
   }
@@ -260,6 +260,7 @@ test('PokemonCard renders correctly', () => {
 ## Common Tasks
 
 **Creating a card component:**
+
 - Define card data interface
 - Create responsive card layout
 - Add hover/focus states
@@ -267,6 +268,7 @@ test('PokemonCard renders correctly', () => {
 - Create Storybook variants
 
 **Adding a new page:**
+
 - Create page component in `src/web/pages/`
 - Add route configuration
 - Implement SSR data fetching
@@ -274,6 +276,7 @@ test('PokemonCard renders correctly', () => {
 - Create layout components
 
 **Optimizing performance:**
+
 - Profile component render times
 - Implement virtualization for card grids
 - Lazy load card images

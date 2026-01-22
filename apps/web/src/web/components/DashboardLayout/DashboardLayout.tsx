@@ -9,13 +9,13 @@ export function DashboardLayout({
   showSidebar = true,
   sidebarCollapsed = false,
   onToggleSidebar,
-  className = '',
+  className = ''
 }: DashboardLayoutProps) {
   const classNames = [
     'pokemon-dashboard-layout',
     !showSidebar && 'pokemon-dashboard-layout--no-sidebar',
     sidebarCollapsed && 'pokemon-dashboard-layout--sidebar-collapsed',
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');

@@ -8,14 +8,14 @@ export function Card({
   variant = 'grid',
   onSelect,
   selected = false,
-  className = '',
+  className = ''
 }: CardProps) {
   const classNames = [
     'pokemon-card',
     `pokemon-card--${variant}`,
     selected && 'pokemon-card--selected',
     onSelect && 'pokemon-card--clickable',
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');
@@ -52,7 +52,12 @@ export function Card({
           </div>
           <div className="pokemon-card__types">
             {card.types?.map((type) => (
-              <Badge key={type} variant="type" pokemonType={type as any} size="small">
+              <Badge
+                key={type}
+                variant="type"
+                pokemonType={type as any}
+                size="small"
+              >
                 {type}
               </Badge>
             ))}
@@ -90,7 +95,12 @@ export function Card({
         {card.types && card.types.length > 0 && (
           <div className="pokemon-card__types">
             {card.types.map((type) => (
-              <Badge key={type} variant="type" pokemonType={type as any} size="small">
+              <Badge
+                key={type}
+                variant="type"
+                pokemonType={type as any}
+                size="small"
+              >
                 {type}
               </Badge>
             ))}
@@ -109,8 +119,12 @@ export function Card({
                 {card.attacks.map((attack, idx) => (
                   <div key={idx} className="pokemon-card__attack">
                     <div className="pokemon-card__attack-header">
-                      <span className="pokemon-card__attack-name">{attack.name}</span>
-                      <span className="pokemon-card__attack-damage">{attack.damage}</span>
+                      <span className="pokemon-card__attack-name">
+                        {attack.name}
+                      </span>
+                      <span className="pokemon-card__attack-damage">
+                        {attack.damage}
+                      </span>
                     </div>
                     {attack.text && (
                       <p className="pokemon-card__attack-text">{attack.text}</p>

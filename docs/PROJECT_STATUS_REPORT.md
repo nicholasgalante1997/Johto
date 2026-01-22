@@ -1,18 +1,18 @@
 # Pokemon TCG Workspace - Project Status Report
 
-**Generated:** December 27, 2025
-**Branch:** `dev`
-**Last Commit:** `75c02af - feat: Middleware for the tcg-api`
+**Generated:** January 21, 2026
+**Branch:** `specs/dashboard-spec`
+**Last Commit:** `cb7fd0f - chore: Adds DASHBOARD_SPEC, react-router`
 
 ---
 
 ## Executive Summary
 
-The Pokemon TCG workspace is a **well-architected but early-stage project** (~20-30% complete) designed to manage Pokemon Trading Card Game data from a centralized dashboard. The foundation is solid with modern technologies, proper infrastructure, and complete data synchronization, but core user-facing functionality remains unimplemented.
+The Pokemon TCG workspace has progressed significantly and is now a **feature-rich application** (~55-65% complete towards full MVP). The frontend is substantially built with comprehensive components, routing, state management, and data hooks. A REST API layer with SQLite backend is functional. The primary gaps are user authentication, server-side persistence, and completing the Rust backend API.
 
-**Status:** Infrastructure complete, API skeleton ready, frontend minimal
-**Blockers:** No API endpoints, no frontend pages, no tests
-**Time to MVP:** Estimated 40-60 hours of focused development
+**Status:** Frontend substantially complete, REST API functional, authentication missing
+**Blockers:** No user authentication, Rust API not implemented, no server-side deck/collection persistence
+**Time to Full MVP:** Estimated 80-120 hours of focused development
 
 ---
 
@@ -20,438 +20,371 @@ The Pokemon TCG workspace is a **well-architected but early-stage project** (~20
 
 ### Tech Stack
 
-**Backend (Rust - TCG API)**
+**Frontend (React - Web)**
+
+- Language: TypeScript + React 19
+- Runtime: Bun 1.3.5
+- Routing: React Router v6
+- State: React Context + React Query + LocalStorage
+- Styling: Custom CSS with component-scoped styles
+- Build: Bun bundler with SSR support
+- Status: **~70% complete** - Pages, components, routing, hooks implemented
+
+**Backend API (Web Server)**
+
+- Runtime: Bun HTTP server
+- Database: SQLite (read-only, pokemon-data.sqlite3.db)
+- REST API: `/api/v1/cards`, `/api/v1/sets` endpoints
+- GraphQL: Apollo Server with partial resolvers
+- Status: **~60% complete** - Read endpoints working, mutations missing
+
+**Backend API (Rust - TCG API)**
 
 - Language: Rust (Edition 2021)
 - Web Framework: Actix-web 4.9.0
 - Databases: PostgreSQL (sqlx 0.8.2) + Neo4j (neo4rs 0.8.0)
 - Async Runtime: Tokio
-- Status: ~440 lines, skeleton only
-
-**Frontend (React - Web)**
-
-- Language: TypeScript + React 19 RC
-- Runtime: Bun 1.1.34
-- Styling: Pico CSS + Custom
-- Build: Webpack 5 + Babel 7
-- Status: ~34 lines, minimal structure
+- Status: **~15% complete** - Server skeleton only, no routes implemented
 
 **Infrastructure**
 
 - Monorepo: Turborepo
 - Package Manager: Bun
 - Containerization: Docker Compose
-- Databases: PostgreSQL + Neo4j (graph database)
+- Databases: SQLite (primary), PostgreSQL + Neo4j (configured but unused)
 
 ### Project Structure
 
 ```
 Pokemon/
 ├── apps/
-│   ├── tcg-api/              ✅ Rust backend (skeleton)
-│   ├── web/                  ⚠️  React frontend (minimal)
+│   ├── tcg-api/              ⚠️  Rust backend (skeleton only)
+│   ├── web/                  ✅ React frontend (substantially complete)
+│   │   ├── src/web/          ✅ 8 pages, 20+ components, hooks, contexts
+│   │   └── src/server/       ✅ Bun server with REST API + GraphQL
 │   ├── scripts/              ✅ Data sync pipeline (complete)
 │   └── distributed-ledger/   ❌ Not started
 ├── packages/
 │   ├── @clients/             ✅ Pokemon TCG API client (complete)
-│   ├── @database/            ✅ Connection managers (complete)
+│   ├── @database/            ✅ SQLite + PostgreSQL + Neo4j managers
 │   ├── @logger/              ✅ Logging utilities (complete)
-│   └── @utils/               ✅ Helper utilities (complete)
-├── database/                 ✅ Schema & Docker setup (complete)
-└── docs/                     ⚠️  Basic todo tracking
+│   ├── @utils/               ✅ Helper utilities (complete)
+│   └── @pokemon-data/        ✅ JSON card data + types (complete)
+├── database/                 ✅ SQLite database with card data
+└── docs/                     ✅ MVP plan + status reports
 ```
 
 ---
 
 ## Current State: What's Complete
 
-### ✅ Infrastructure & DevOps (100%)
+### ✅ Frontend Pages (70%)
 
-- Docker Compose orchestration with 4 services
-- Multi-stage Dockerfiles for Rust and Bun
-- PostgreSQL database with auto-initialization
-- Neo4j graph database integration
-- Custom Docker network (`pika`)
-- Health checks configured
+| Page | Status | Description |
+|------|--------|-------------|
+| DashboardPage | ✅ Complete | Stats grid, quick actions, recent decks |
+| BrowsePage | ✅ Complete | Card grid with search, filter, modal detail |
+| CollectionPage | ⚠️ Partial | Shell exists, needs full card grid |
+| DecksPage | ⚠️ Partial | Basic structure, needs polish |
+| DeckBuilderPage | ✅ Complete | Two-panel layout, quantity controls, validation |
+| DeckDetailPage | ⚠️ Partial | Structure only, needs card grouping UI |
+| NotFoundPage | ✅ Complete | 404 page with navigation |
+| ServerErrorPage | ✅ Complete | 500 error page |
 
-### ✅ Database Layer (90%)
+### ✅ Frontend Components (85%)
 
-**PostgreSQL Schema:**
+**Core UI Components:**
+- ✅ Button - Multiple variants (primary, secondary, outline, ghost)
+- ✅ Badge - Status badges with color variants
+- ✅ Card - Pokemon card display with image, stats
+- ✅ CardGrid - Responsive grid with loading states
+- ✅ CardDetail - Full card information modal
+- ✅ SearchBar - Search with type/rarity filters
+- ✅ Pagination - Page controls with navigation
+- ✅ Modal - Overlay system with size variants
+- ✅ Stats - Statistics display with trends
 
-- `users` table (id, username, email, password, timestamps)
-- `pokemon_card_sets` table (14 columns, JSONB for complex data)
-- `pokemon_cards` table (28 columns, comprehensive attributes)
-- Foreign key relationships (cards → sets)
-- Indexes on foreign keys
+**Layout Components:**
+- ✅ DashboardLayout - 2-column with sidebar/header
+- ✅ AppSidebar - Navigation with active states
+- ✅ DashboardHeader - Breadcrumbs, actions
+- ✅ Document - SSR wrapper
 
-**Neo4j Graph:**
+**Deck Components:**
+- ✅ DeckCard - Individual deck display
+- ✅ DeckList - Deck listing component
+- ✅ DeckValidation - Errors, warnings, card breakdown
 
-- Node constraints (PokemonCard, PokemonCardSet)
-- Write operations implemented
-- Read operations missing ❌
+### ✅ Frontend State Management (90%)
 
-### ✅ Data Synchronization (100%)
+**React Contexts:**
+- ✅ CollectionContext - User card collection with localStorage persistence
+- ✅ DeckContext - Deck CRUD, card management, validation
+- ✅ QueryProvider - React Query configuration with caching
 
-- Complete async generator client for Pokemon TCG API v2
-- Dual database writes (PostgreSQL + Neo4j simultaneously)
-- CLI commands: `db:sync` for sets and cards
-- Error handling and detailed logging
-- Pagination support for large datasets
+**Custom Hooks:**
+- ✅ `useCards(filters)` - Fetch cards with pagination
+- ✅ `useCard(id)` - Single card fetch
+- ✅ `useSets()` - Fetch all sets
+- ✅ `useSet(id)` - Single set fetch
+- ✅ `useDeckValidation(cards, format)` - Real-time deck validation
+- ✅ `useLocalStorage(key)` - Persistent storage
 
-### ✅ Backend Server (30%)
+### ✅ Frontend Routing (100%)
+
+- ✅ React Router v6 integration
+- ✅ Server-side routing (StaticRouter for SSR)
+- ✅ Client-side hydration (BrowserRouter)
+- ✅ Route constants for type-safe navigation
+- ✅ Sidebar navigation with active state tracking
+
+### ✅ REST API Layer (75%)
+
+**Card Endpoints:**
+- ✅ `GET /api/v1/cards` - List cards with pagination (limit, offset)
+- ✅ `GET /api/v1/cards/:id` - Single card detail
+
+**Set Endpoints:**
+- ✅ `GET /api/v1/sets` - List all sets
+- ✅ `GET /api/v1/sets/:id` - Single set detail
+- ✅ `GET /api/v1/sets/:id/cards` - Cards in set with pagination
+
+**Utility Endpoints:**
+- ✅ `GET /api/v1/endpoints` - API discovery/documentation
+
+**API Features:**
+- ✅ Pagination utilities (limit/offset)
+- ✅ Response transformation helpers
+- ✅ Error handling with proper HTTP codes
+- ✅ SQLite database queries via @pokemon/database package
+
+### ⚠️ GraphQL API (50%)
 
 **Implemented:**
-
-- Actix-web server initialization
-- Database connection pooling (both PostgreSQL and Neo4j)
-- Middleware layer:
-  - CORS configuration
-  - Custom headers
-  - Request logging
-- Health check endpoint (`GET /health`)
-- Shared application state
-- ORM models for PokemonCard and PokemonCardSet
+- ✅ Apollo Server configured
+- ✅ Schema defined (User, Set, Card, Deck types)
+- ✅ Query resolvers for cards and sets
+- ✅ GraphiQL IDE at `/graphiql`
 
 **Missing:**
+- ❌ Mutation resolvers (no create/update/delete)
+- ❌ Authentication integration
+- ❌ Subscription support
 
-- ❌ RESTful API routes (0 endpoints beyond health check)
-- ❌ Query implementations
-- ❌ Authentication/authorization
-- ❌ Search functionality
-- ❌ GraphQL setup (dependencies imported but not configured)
+### ✅ Database Layer (100%)
 
-### ⚠️ Frontend (10%)
+**SQLite (Primary - Read-Only):**
+- ✅ Database: `database/pokemon-data.sqlite3.db`
+- ✅ Tables: `pokemon_cards`, `pokemon_card_sets`
+- ✅ Data synced from Pokemon TCG JSON files
+- ✅ Query functions: findCardById, findAllCards, findSetById, findAllSets, etc.
 
-**Implemented:**
+**PostgreSQL (Configured):**
+- ✅ Schema defined in `database/init.sql`
+- ❌ Not actively used (Rust API not implemented)
 
-- Basic app structure (App.tsx, Document.tsx)
-- Header component with Pokéball logo
-- Storybook integration for component development
-- Bun HTTP server with SSR support
-- Build pipeline configured
-
-**Missing:**
-
-- ❌ All pages (home, login, card detail, search)
-- ❌ API integration
-- ❌ State management
-- ❌ Routing
-- ❌ User authentication UI
+**Neo4j (Configured):**
+- ✅ Connection manager in `@pokemon/database`
+- ❌ No read queries implemented
 
 ### ✅ Shared Packages (100%)
 
-- Pokemon TCG API client with pagination
-- Database connection managers (PostgreSQL + Neo4j)
-- Logger with debug module, chalk colors, emoji support
-- Utility primitives for type coercion
+- ✅ `@pokemon/clients` - Pokemon TCG API client with pagination
+- ✅ `@pokemon/database` - SQLite, PostgreSQL, Neo4j managers
+- ✅ `@pokemon/logger` - Structured logging with colors
+- ✅ `@pokemon/utils` - Type utilities, primitives
+- ✅ `@pokemon/pokemon-data` - Card JSON data and TypeScript types
 
-### ❌ Testing (0%)
+### ⚠️ Rust Backend (15%)
 
-- No unit tests
-- No integration tests
-- No E2E tests
+**Implemented:**
+- ✅ Actix-web server initialization
+- ✅ Database connection setup (PostgreSQL + Neo4j)
+- ✅ CORS middleware
+- ✅ Health check endpoint
+- ✅ ORM models for Card and Set
+
+**Missing:**
+- ❌ All API routes (returns HTML stub only)
+- ❌ Query implementations
+- ❌ GraphQL resolvers
+- ❌ Authentication
+
+### ❌ Testing (5%)
+
+- ❌ No frontend unit tests
+- ❌ No backend unit tests
+- ❌ No integration tests
+- ❌ No E2E tests
+- ⚠️ Some Storybook stories exist for component development
 
 ---
 
-## What's Missing for MVP
+## What's Missing for Full MVP
 
-### Critical Path Items
+### Phase 1: Critical Path (Blocking MVP)
 
-#### 1. Backend API Endpoints (HIGH PRIORITY)
+#### 1.1 User Authentication System
+**Backend:**
+- [ ] JWT token generation/validation
+- [ ] User registration endpoint
+- [ ] Login endpoint
+- [ ] Password hashing (bcrypt)
+- [ ] Refresh token mechanism
 
-**Required Routes:**
+**Frontend:**
+- [ ] Login page
+- [ ] Register page
+- [ ] AuthContext for auth state
+- [ ] ProtectedRoute component
+- [ ] Token storage/refresh logic
 
-```
-GET  /api/cards              - List all cards (paginated)
-GET  /api/cards/:id          - Get single card details
-GET  /api/cards/search       - Search cards by name/type/set
-GET  /api/sets               - List all sets
-GET  /api/sets/:id           - Get single set details
-GET  /api/sets/:id/cards     - Get all cards in a set
-```
+**Estimated Effort:** 30-40 hours
 
-**Implementation Tasks:**
+#### 1.2 Server-Side Persistence
+- [ ] PostgreSQL users table integration
+- [ ] User deck storage (decks table)
+- [ ] User collection storage (user_card_inventory table)
+- [ ] API endpoints for deck/collection CRUD
+- [ ] Sync localStorage to server on login
 
-- [ ] Create route handlers in `apps/tcg-api/src/routes/`
-- [ ] Implement query functions using existing ORM models
-- [ ] Add pagination support (limit/offset)
-- [ ] Add basic filtering (by type, rarity, set)
-- [ ] Add error handling (404, 500)
-- [ ] Wire routes into main.rs
+**Estimated Effort:** 20-30 hours
+
+### Phase 2: Feature Completion
+
+#### 2.1 Collection Page Enhancement
+- [ ] Full card grid display
+- [ ] Collection statistics panel
+- [ ] Add/remove cards integration
+- [ ] Filter by owned quantity
+- [ ] Sort by value/date acquired
+
+**Estimated Effort:** 8-12 hours
+
+#### 2.2 Deck Management Features
+- [ ] Deck export (text format)
+- [ ] Deck import (text parsing)
+- [ ] Deck cloning
+- [ ] Public deck sharing URLs
+- [ ] Deck statistics charts
 
 **Estimated Effort:** 12-16 hours
 
-#### 2. Frontend Pages (HIGH PRIORITY)
+#### 2.3 GraphQL Mutations
+- [ ] createDeck mutation
+- [ ] updateDeck mutation
+- [ ] deleteDeck mutation
+- [ ] addCardToCollection mutation
+- [ ] removeCardFromCollection mutation
 
-**Required Pages:**
+**Estimated Effort:** 10-14 hours
 
-```
-/                - Home page (featured cards, recent sets)
-/cards           - Card browser with filters
-/cards/:id       - Card detail page
-/sets            - Set browser
-/sets/:id        - Set detail page with card list
-```
+### Phase 3: Market Value Tracking
 
-**Components Needed:**
+#### 3.1 Price Data Integration
+- [ ] Price sync script for TCGPlayer/Cardmarket data
+- [ ] card_price_history table
+- [ ] Price display on cards
+- [ ] Collection value calculation
+- [ ] Price trend charts
 
-- [ ] CardList component (grid/list view)
-- [ ] CardCard component (display single card)
-- [ ] FilterBar component (search, type, rarity filters)
-- [ ] SetList component
-- [ ] Pagination component
-- [ ] Loading/error states
+**Estimated Effort:** 20-25 hours
 
-**Estimated Effort:** 16-20 hours
+### Phase 4: Quality & Polish
 
-#### 3. API Integration (MEDIUM PRIORITY)
+#### 4.1 Testing Foundation
+- [ ] Vitest setup for frontend
+- [ ] Component tests for key UI
+- [ ] API endpoint tests
+- [ ] E2E tests for critical flows
+- [ ] >60% coverage target
 
-- [ ] Create API client service in frontend
-- [ ] Implement data fetching hooks (useCards, useSets)
-- [ ] Add loading states
-- [ ] Add error handling
-- [ ] Implement caching strategy
+**Estimated Effort:** 20-30 hours
 
-**Estimated Effort:** 6-8 hours
+#### 4.2 UI/UX Polish
+- [ ] Toast notification system
+- [ ] Loading skeletons throughout
+- [ ] Error boundary improvements
+- [ ] Accessibility audit (ARIA labels)
+- [ ] Mobile responsive refinement
 
-#### 4. Basic Routing (MEDIUM PRIORITY)
+**Estimated Effort:** 15-20 hours
 
-- [ ] Install React Router or similar
-- [ ] Configure routes for all pages
-- [ ] Add navigation in Header component
-- [ ] Implement 404 page
+### Phase 5: Rust API (Optional for MVP)
 
-**Estimated Effort:** 3-4 hours
+#### 5.1 Implement Rust Backend
+- [ ] Card endpoints
+- [ ] Set endpoints
+- [ ] Auth endpoints
+- [ ] GraphQL resolvers
+- [ ] Database queries
 
-#### 5. Testing Foundation (MEDIUM PRIORITY)
-
-- [ ] Set up Jest/Vitest for frontend
-- [ ] Set up Rust testing framework
-- [ ] Write basic API endpoint tests
-- [ ] Write basic component tests
-
-**Estimated Effort:** 8-10 hours
-
-### Nice-to-Have (Post-MVP)
-
-- User authentication system
-- User card collection tracking
-- Advanced search with autocomplete
-- GraphQL API implementation
-- Neo4j relationship queries (card ownership, set relationships)
-- Card price tracking/charts
-- Responsive mobile design
-- PWA features (offline support)
-- Distributed ledger marketplace
+**Estimated Effort:** 30-40 hours (can defer post-MVP)
 
 ---
 
-## Recommended MVP Scope
+## Comparison: MVP Plan vs Current State
 
-### Core Features for v1.0 MVP
-
-**1. Browse Cards**
-
-- View all Pokemon cards in a paginated grid
-- See card image, name, type, HP, rarity
-- Basic filtering (by set, type, rarity)
-- Text search by card name
-
-**2. View Card Details**
-
-- Full card information display
-- Attacks, abilities, weaknesses
-- Set information
-- Market prices (if available)
-
-**3. Browse Sets**
-
-- View all Pokemon card sets
-- See set logo, release date, card count
-- Click to view all cards in a set
-
-**4. Basic UI/UX**
-
-- Responsive layout
-- Loading states
-- Error messages
-- Navigation between pages
-
-### Out of Scope for MVP
-
-- User accounts/authentication
-- Card collection tracking
-- Wishlist/favorites
-- Advanced filters (multiple types, price ranges)
-- GraphQL API
-- Neo4j graph queries
-- Social features
-- Trading/marketplace
+| MVP Feature | Plan Phase | Current Status | Remaining Work |
+|-------------|-----------|----------------|----------------|
+| Environment Setup | Phase 0 | ✅ Complete | - |
+| Database Schema | Phase 0 | ✅ Complete | - |
+| User Auth Backend | Phase 1 | ❌ Not Started | 15-20 hours |
+| User Auth Frontend | Phase 1 | ❌ Not Started | 15-20 hours |
+| Card Endpoints | Phase 2 | ✅ Complete (Web API) | - |
+| Set Endpoints | Phase 2 | ✅ Complete (Web API) | - |
+| Card Browsing UI | Phase 2 | ✅ Complete | - |
+| Set Browsing UI | Phase 2 | ✅ Complete | - |
+| Card Ownership Backend | Phase 3 | ⚠️ Partial (localStorage) | 15-20 hours |
+| Card Ownership UI | Phase 3 | ⚠️ Partial | 8-12 hours |
+| Price Sync Service | Phase 4 | ❌ Not Started | 15-20 hours |
+| Price Display UI | Phase 4 | ❌ Not Started | 10-15 hours |
+| Deck Models/Services | Phase 5 | ✅ Complete (Client-side) | - |
+| Deck API | Phase 5 | ❌ Not Started (Server) | 15-20 hours |
+| Deck Builder UI | Phase 5 | ✅ Complete | - |
+| Deck Validation | Phase 5 | ✅ Complete | - |
+| Testing Foundation | Phase 7 | ❌ Not Started | 20-30 hours |
+| Performance Optimization | Phase 8 | ⚠️ Partial | 10-15 hours |
 
 ---
 
-## Implementation Roadmap
+## Recommended MVP Completion Plan
 
-### Phase 1: Backend API (Week 1)
+### Phased Approach
 
-**Day 1-2:**
+#### Phase A: Local-First MVP (2-3 weeks)
+**Goal:** Ship a functional app using client-side storage
 
-- [ ] Implement card endpoints (list, get by ID)
-- [ ] Add pagination logic
-- [ ] Test with curl/Postman
+1. Complete Collection Page UI
+2. Complete Deck Detail Page UI
+3. Add toast notifications
+4. Polish UI/UX inconsistencies
+5. Add basic unit tests
+6. Deploy static site + API
 
-**Day 3-4:**
+**Deliverable:** Working app with localStorage persistence
 
-- [ ] Implement set endpoints
-- [ ] Add search functionality (basic text matching)
-- [ ] Add filtering (type, rarity, set_id)
+#### Phase B: Server Persistence MVP (3-4 weeks)
+**Goal:** Add user accounts and server storage
 
-**Day 5:**
+1. Implement user authentication
+2. Add deck/collection server storage
+3. Sync localStorage to server
+4. Add protected routes
+5. Integration testing
 
-- [ ] Write API tests
-- [ ] Documentation (OpenAPI/Swagger)
-- [ ] Performance testing with large datasets
+**Deliverable:** Multi-user app with persistent data
 
-### Phase 2: Frontend Pages (Week 2)
+#### Phase C: Market Data MVP (2-3 weeks)
+**Goal:** Add price tracking
 
-**Day 1-2:**
+1. Price data sync service
+2. Price history storage
+3. Price display UI
+4. Collection value tracking
+5. Price trend charts
 
-- [ ] Set up routing
-- [ ] Create API client service
-- [ ] Build CardList and CardCard components
-
-**Day 3-4:**
-
-- [ ] Implement card browser page
-- [ ] Implement card detail page
-- [ ] Add filter/search UI
-
-**Day 5:**
-
-- [ ] Build set browser and detail pages
-- [ ] Implement home page
-- [ ] Polish UI/UX
-
-### Phase 3: Integration & Testing (Weekend)
-
-**Day 6:**
-
-- [ ] Connect frontend to backend API
-- [ ] Test all user flows
-- [ ] Fix bugs
-
-**Day 7:**
-
-- [ ] Write component tests
-- [ ] Write E2E tests for critical paths
-- [ ] Final QA pass
-
----
-
-## Dependencies & Prerequisites
-
-### Before Starting Development
-
-**1. Environment Setup**
-
-```bash
-# Ensure .env files exist (not in git):
-.env.postgres.database
-.env.neo4j.database
-apps/tcg-api/.env
-```
-
-**2. Data Sync**
-
-```bash
-# Run data sync to populate databases:
-bun run db:sync
-```
-
-**3. Verify Services**
-
-```bash
-# Start all Docker services:
-docker-compose up -d
-
-# Check health:
-curl http://localhost:8080/health  # Should return "OK"
-```
-
-**4. Recommended Tools**
-
-- Postman/Insomnia (API testing)
-- pgAdmin or DBeaver (PostgreSQL inspection)
-- Neo4j Browser (graph visualization)
-
----
-
-## Current Blockers
-
-### Technical Blockers
-
-1. **No API Endpoints:** Cannot fetch data without implementing routes
-2. **No Frontend Pages:** Cannot display data without UI components
-3. **No Tests:** Cannot ensure quality without test coverage
-
-### Non-Technical Blockers
-
-None identified - project dependencies are up to date, Docker environment works
-
----
-
-## Risks & Considerations
-
-### Technical Risks
-
-1. **Performance:** No query optimization yet (indexes exist but queries not tested)
-2. **Data Volume:** ~20,000+ cards - pagination critical
-3. **API Rate Limits:** Pokemon TCG API has rate limits (sync handled, but consider caching)
-4. **Neo4j Unused:** Graph database write-only, no read queries implemented
-
-### Maintenance Risks
-
-1. **Data Staleness:** Card data needs periodic re-sync
-2. **Price Data:** TCGPlayer/Cardmarket prices need regular updates
-3. **New Sets:** Requires manual sync trigger for new releases
-
----
-
-## Success Metrics for MVP
-
-### Functional Metrics
-
-- [ ] Can browse all cards with pagination
-- [ ] Can search cards by name
-- [ ] Can filter by type, rarity, set
-- [ ] Can view detailed card information
-- [ ] Can browse all sets
-- [ ] Can view all cards in a specific set
-- [ ] Page load time < 2 seconds
-- [ ] No 500 errors on valid requests
-
-### Code Quality Metrics
-
-- [ ] > 70% test coverage on backend
-- [ ] > 60% test coverage on frontend
-- [ ] All API endpoints documented
-- [ ] No TypeScript/Rust compiler warnings
-
----
-
-## Estimated Total Effort
-
-| Task                        | Hours           |
-| --------------------------- | --------------- |
-| Backend API endpoints       | 12-16           |
-| Frontend pages & components | 16-20           |
-| API integration             | 6-8             |
-| Routing setup               | 3-4             |
-| Testing foundation          | 8-10            |
-| Bug fixes & polish          | 5-7             |
-| **TOTAL**                   | **50-65 hours** |
-
-**Timeline:** 1-2 weeks for solo developer, 3-5 days for small team
+**Deliverable:** Full-featured TCG management platform
 
 ---
 
@@ -461,65 +394,98 @@ None identified - project dependencies are up to date, Docker environment works
 # Install dependencies
 bun install
 
-# Sync card/set data from Pokemon TCG API
-bun run db:sync
-
-# Start all services
-docker-compose up -d
-
-# Develop backend (hot reload)
-cd apps/tcg-api && cargo watch -x run
-
-# Develop frontend (hot reload)
+# Start development server (frontend + API)
 cd apps/web && bun run dev
 
-# Run tests (when implemented)
-bun run test
+# Sync Pokemon data from JSON to SQLite
+bun run json:sync
+
+# Start Storybook for component development
+cd apps/web && bun run storybook
 
 # Build for production
 bun run build
+
+# Run the Rust API (skeleton)
+cd apps/tcg-api && cargo run
 ```
 
 ---
 
-## Appendix: File Locations
+## File Locations
 
-### Backend
+### Frontend (apps/web/src/web)
+- Pages: `pages/` (8 page components)
+- Components: `components/` (20+ UI components)
+- Hooks: `hooks/` (6 data hooks)
+- Contexts: `contexts/` (Collection, Deck)
+- Services: `services/` (CardsService, SetsService, APIModel)
+- Routes: `routes/` (Router configuration)
+- GraphQL: `graphql/` (Client, documents, hooks)
 
-- Main: `apps/tcg-api/src/main.rs:1`
-- Models: `apps/tcg-api/src/models/`
-- Routes: `apps/tcg-api/src/routes/` (create this)
-- Middleware: `apps/tcg-api/src/middleware/middleware.rs:1`
+### Server (apps/web/src/server)
+- Entry: `server.ts`
+- API Handlers: `lib/api/handlers/` (cards.ts, sets.ts, discovery.ts)
+- API Router: `lib/api/router.ts`
+- GraphQL: `lib/api/graphql/` (server.ts, schema.ts, resolvers.ts)
+- Database: `lib/api/db.ts`
 
-### Frontend
+### Rust API (apps/tcg-api/src)
+- Entry: `main.rs`
+- Routes: `routes/` (stub only)
+- Database: `database/` (connection setup)
+- Models: `database/postgres/models/`
 
-- App: `apps/web/src/App.tsx:1`
-- Components: `apps/web/src/components/`
-- Pages: `apps/web/src/pages/` (create this)
-- Server: `apps/web/server.tsx:1`
-
-### Database
-
-- Schema: `database/init.sql:1`
-- Compose: `database/docker-compose.yml:1`
-
-### Shared
-
-- TCG Client: `packages/@clients/pokemon-tcg/src/index.ts:1`
-- DB Managers: `packages/@database/`
-- Logger: `packages/@logger/src/index.ts:1`
-
----
-
-## Next Steps
-
-1. **Immediate:** Implement core backend API endpoints (`GET /api/cards`, `GET /api/sets`)
-2. **Then:** Build frontend card browser page with basic filtering
-3. **Finally:** Connect frontend to backend and test end-to-end flow
-
-**Recommended Starting Point:**
-`apps/tcg-api/src/routes/cards.rs` - Create card route handlers using existing ORM models
+### Shared Packages
+- Database: `packages/@database/lib/`
+- Logger: `packages/@logger/lib/`
+- Utils: `packages/@utils/lib/`
+- Pokemon Data: `packages/@pokemon-data/`
 
 ---
 
-_This report was generated by analyzing the codebase structure, git history, and implementation status as of December 27, 2025._
+## Success Metrics
+
+### Currently Achieved
+- [x] Can browse all cards with pagination
+- [x] Can search cards by name
+- [x] Can view detailed card information
+- [x] Can browse all sets
+- [x] Can view all cards in a set
+- [x] Can build decks with validation
+- [x] Can manage collection (localStorage)
+- [x] Dashboard with statistics
+- [x] Responsive layout
+- [x] Loading states on data fetch
+
+### Not Yet Achieved
+- [ ] User authentication
+- [ ] Server-side persistence
+- [ ] Price tracking
+- [ ] >60% test coverage
+- [ ] Production deployment
+
+---
+
+## Estimated Remaining Effort
+
+| Task | Hours |
+|------|-------|
+| Collection Page completion | 8-12 |
+| Deck Detail Page completion | 6-8 |
+| User authentication (full stack) | 30-40 |
+| Server persistence | 20-30 |
+| Price tracking | 20-25 |
+| Testing foundation | 20-30 |
+| UI/UX polish | 15-20 |
+| **TOTAL** | **119-165 hours** |
+
+**Timeline:**
+- Phase A (Local MVP): 2-3 weeks
+- Phase B (Server MVP): 3-4 weeks
+- Phase C (Full MVP): 2-3 weeks
+- **Total:** 7-10 weeks
+
+---
+
+_This report was generated by analyzing the codebase structure, git diff, and implementation status as of January 21, 2026._

@@ -14,12 +14,12 @@ export function DeckList({
   emptyMessage = 'No decks created yet',
   loading = false,
   layout = 'grid',
-  className = '',
+  className = ''
 }: DeckListProps) {
   const classNames = [
     'pokemon-deck-list',
     `pokemon-deck-list--${layout}`,
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');
@@ -52,7 +52,8 @@ export function DeckList({
       {onCreateNew && (
         <div className="pokemon-deck-list__header">
           <h2 className="pokemon-deck-list__title">
-            My Decks <span className="pokemon-deck-list__count">({decks.length})</span>
+            My Decks{' '}
+            <span className="pokemon-deck-list__count">({decks.length})</span>
           </h2>
           <Button variant="primary" size="medium" onClick={onCreateNew}>
             + New Deck

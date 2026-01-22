@@ -10,12 +10,12 @@ export function CardGrid({
   emptyMessage = 'No cards found',
   loading = false,
   columns = 'auto',
-  className = '',
+  className = ''
 }: CardGridProps) {
   const classNames = [
     'pokemon-card-grid',
     columns !== 'auto' && `pokemon-card-grid--columns-${columns}`,
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');

@@ -6,4 +6,5 @@
   ],
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+  "snyk.advanced.autoSelectOrganization": true,
 }

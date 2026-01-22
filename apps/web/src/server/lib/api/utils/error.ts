@@ -8,12 +8,22 @@ export function handleApiError(error: unknown): Response {
 
   if (error instanceof Error) {
     // Database readonly errors
-    if (error.message.includes('readonly') || error.message.includes('read-only')) {
-      return errorResponse('Database is in read-only mode', 403, 'READONLY_ERROR');
+    if (
+      error.message.includes('readonly') ||
+      error.message.includes('read-only')
+    ) {
+      return errorResponse(
+        'Database is in read-only mode',
+        403,
+        'READONLY_ERROR'
+      );
     }
 
     // Database file not found
-    if (error.message.includes('ENOENT') || error.message.includes('no such file')) {
+    if (
+      error.message.includes('ENOENT') ||
+      error.message.includes('no such file')
+    ) {
       return errorResponse('Database not found', 500, 'DATABASE_ERROR');
     }
 

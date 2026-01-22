@@ -14,17 +14,24 @@ const POKEMON_TYPES = [
   'Lightning',
   'Metal',
   'Psychic',
-  'Water',
+  'Water'
 ];
 
-const RARITIES = ['Common', 'Uncommon', 'Rare', 'Rare Holo', 'Rare Ultra', 'Rare Secret'];
+const RARITIES = [
+  'Common',
+  'Uncommon',
+  'Rare',
+  'Rare Holo',
+  'Rare Ultra',
+  'Rare Secret'
+];
 
 export function SearchBar({
   onSearch,
   placeholder = 'Search Pokemon cards...',
   showFilters = true,
   loading = false,
-  className = '',
+  className = ''
 }: SearchBarProps) {
   const [query, setQuery] = useState('');
   const [type, setType] = useState('');
@@ -38,7 +45,7 @@ export function SearchBar({
       query,
       type: type || undefined,
       rarity: rarity || undefined,
-      set: set || undefined,
+      set: set || undefined
     });
   };
 
@@ -52,7 +59,9 @@ export function SearchBar({
 
   const hasActiveFilters = type || rarity || set;
 
-  const classNames = ['pokemon-search-bar', className].filter(Boolean).join(' ');
+  const classNames = ['pokemon-search-bar', className]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className={classNames}>
@@ -78,7 +87,12 @@ export function SearchBar({
                 Clear
               </Button>
             )}
-            <Button type="submit" variant="primary" size="medium" disabled={loading}>
+            <Button
+              type="submit"
+              variant="primary"
+              size="medium"
+              disabled={loading}
+            >
               {loading ? 'Searching...' : 'Search'}
             </Button>
           </div>
@@ -97,7 +111,9 @@ export function SearchBar({
                   {[type, rarity, set].filter(Boolean).length}
                 </span>
               )}
-              <span className={`pokemon-search-bar__filter-icon ${filtersExpanded ? 'expanded' : ''}`}>
+              <span
+                className={`pokemon-search-bar__filter-icon ${filtersExpanded ? 'expanded' : ''}`}
+              >
                 ▼
               </span>
             </button>

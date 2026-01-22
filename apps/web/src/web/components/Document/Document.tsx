@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 import { type DocumentProps } from './Document.types';
-import { Header } from '../Header';
 
 function Document(props: DocumentProps) {
   useEffect(() => console.log('Mounted on the client'), []);
@@ -33,6 +32,7 @@ function Document(props: DocumentProps) {
           href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
         />
         <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/pages.css" />
       </head>
       <body>
         <main>{props.children}</main>

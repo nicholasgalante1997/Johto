@@ -8,23 +8,23 @@ export function Sidebar({
   onItemClick,
   collapsed = false,
   onToggleCollapse,
-  className = '',
+  className = ''
 }: SidebarProps) {
   const classNames = [
     'pokemon-sidebar',
     collapsed && 'pokemon-sidebar--collapsed',
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');
 
-  const handleItemClick = (item: typeof items[0]) => {
+  const handleItemClick = (item: (typeof items)[0]) => {
     if (onItemClick) {
       onItemClick(item);
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent, item: typeof items[0]) => {
+  const handleKeyDown = (e: React.KeyboardEvent, item: (typeof items)[0]) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       handleItemClick(item);
@@ -53,7 +53,7 @@ export function Sidebar({
             const isActive = item.id === activeItemId;
             const itemClassNames = [
               'pokemon-sidebar__item',
-              isActive && 'pokemon-sidebar__item--active',
+              isActive && 'pokemon-sidebar__item--active'
             ]
               .filter(Boolean)
               .join(' ');
@@ -78,9 +78,13 @@ export function Sidebar({
                   )}
                   {!collapsed && (
                     <>
-                      <span className="pokemon-sidebar__label">{item.label}</span>
+                      <span className="pokemon-sidebar__label">
+                        {item.label}
+                      </span>
                       {item.count !== undefined && (
-                        <span className="pokemon-sidebar__count">{item.count}</span>
+                        <span className="pokemon-sidebar__count">
+                          {item.count}
+                        </span>
                       )}
                     </>
                   )}

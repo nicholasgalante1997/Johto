@@ -19,11 +19,21 @@ export type RarityType =
   | 'Rare Ultra'
   | 'Rare Secret';
 
+export type BadgeVariant =
+  | 'default'
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'error'
+  | 'warning'
+  | 'type'
+  | 'rarity';
+
 export interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'type' | 'rarity' | 'default';
-  pokemonType?: PokemonType;
-  rarity?: RarityType;
+  variant?: BadgeVariant;
+  pokemonType?: PokemonType | string;
+  rarity?: RarityType | string;
   size?: 'small' | 'medium';
   className?: string;
 }

@@ -166,7 +166,7 @@ export async function getServerSideProps() {
   const cards = await fetch('http://localhost:8080/graphql', {
     method: 'POST',
     body: JSON.stringify({ query: '{ cards { id name } }' })
-  }).then(r => r.json());
+  }).then((r) => r.json());
 
   return { props: { cards } };
 }
@@ -334,10 +334,9 @@ await Bun.build({
   packages: 'bundle',
   splitting: false,
   sourcemap: 'linked',
-  minify: false, 
+  minify: false,
   root: '.'
 });
-
 ```
 
 ## Pokemon TCG Specific
@@ -368,7 +367,7 @@ function CardGrid({ cards }: { cards: Card[] }) {
   const virtualizer = useVirtualizer({
     count: cards.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 300,
+    estimateSize: () => 300
   });
 
   // ... render virtual items
@@ -427,5 +426,4 @@ export const serve = () => {
     }
   });
 };
-
 ```

@@ -9,7 +9,7 @@ export function DeckCard({
   onEdit,
   onDelete,
   selected = false,
-  className = '',
+  className = ''
 }: DeckCardProps) {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -17,7 +17,7 @@ export function DeckCard({
     'pokemon-deck-card',
     selected && 'pokemon-deck-card--selected',
     onSelect && 'pokemon-deck-card--clickable',
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');
@@ -127,7 +127,9 @@ export function DeckCard({
             {deck.isValid !== undefined && (
               <span
                 className={`pokemon-deck-card__status ${
-                  deck.isValid ? 'pokemon-deck-card__status--valid' : 'pokemon-deck-card__status--invalid'
+                  deck.isValid
+                    ? 'pokemon-deck-card__status--valid'
+                    : 'pokemon-deck-card__status--invalid'
                 }`}
               >
                 {deck.isValid ? '✓ Valid' : '✗ Invalid'}
