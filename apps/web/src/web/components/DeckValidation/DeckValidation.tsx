@@ -1,4 +1,5 @@
 import React from 'react';
+import { X, AlertTriangle, Check } from 'lucide-react';
 import { Badge } from '../Badge';
 import type { DeckValidation as DeckValidationType } from '../../../types/deck';
 import './DeckValidation.css';
@@ -91,7 +92,9 @@ export function DeckValidation({
                 key={`${error.code}-${index}`}
                 className="deck-validation__item deck-validation__item--error"
               >
-                <span className="deck-validation__icon">{'✗'}</span>
+                <span className="deck-validation__icon">
+                  <X size={16} aria-hidden="true" />
+                </span>
                 <span className="deck-validation__message">
                   {error.message}
                 </span>
@@ -110,7 +113,9 @@ export function DeckValidation({
                 key={`${warning.code}-${index}`}
                 className="deck-validation__item deck-validation__item--warning"
               >
-                <span className="deck-validation__icon">{'⚠'}</span>
+                <span className="deck-validation__icon">
+                  <AlertTriangle size={16} aria-hidden="true" />
+                </span>
                 <span className="deck-validation__message">
                   {warning.message}
                 </span>
@@ -122,7 +127,9 @@ export function DeckValidation({
 
       {showDetails && isValid && warnings.length === 0 && (
         <div className="deck-validation__success">
-          <span className="deck-validation__icon">{'✓'}</span>
+          <span className="deck-validation__icon">
+            <Check size={16} aria-hidden="true" />
+          </span>
           <span className="deck-validation__message">
             Your deck meets all format requirements and is ready to play!
           </span>

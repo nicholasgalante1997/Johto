@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { SidebarProps } from './types';
 import './Sidebar.css';
 
@@ -42,7 +43,11 @@ export function Sidebar({
             aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
             title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
           >
-            {collapsed ? '»' : '«'}
+            {collapsed ? (
+              <ChevronRight size={20} aria-hidden="true" />
+            ) : (
+              <ChevronLeft size={20} aria-hidden="true" />
+            )}
           </button>
         )}
       </div>

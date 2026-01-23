@@ -1,4 +1,5 @@
 import React from 'react';
+import { Home, Library, Search, Layers, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ROUTES } from '@/web/routes';
 import type { AppSidebarProps, NavItem } from './types';
 import './AppSidebar.css';
@@ -7,17 +8,17 @@ const NAV_ITEMS: NavItem[] = [
   {
     id: 'dashboard',
     label: 'Dashboard',
-    icon: '\u{1F3E0}',
+    icon: <Home size={20} />,
     to: ROUTES.DASHBOARD
   },
   {
     id: 'collection',
     label: 'My Collection',
-    icon: '\u{1F4DA}',
+    icon: <Library size={20} />,
     to: ROUTES.COLLECTION
   },
-  { id: 'browse', label: 'Browse Cards', icon: '\u{1F50D}', to: ROUTES.BROWSE },
-  { id: 'decks', label: 'My Decks', icon: '\u{1F3B4}', to: ROUTES.DECKS }
+  { id: 'browse', label: 'Browse Cards', icon: <Search size={20} />, to: ROUTES.BROWSE },
+  { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, to: ROUTES.DECKS }
 ];
 
 const isActive = false; // Placeholder for active route logic
@@ -53,7 +54,9 @@ export function AppSidebar({
     <aside className={classNames}>
       <div className="app-sidebar__header">
         <div className="app-sidebar__logo">
-          <span className="app-sidebar__logo-icon">{'\u{1F3B4}'}</span>
+          <span className="app-sidebar__logo-icon">
+            <Layers size={24} aria-hidden="true" />
+          </span>
           {!collapsed && (
             <span className="app-sidebar__logo-text">Pokemon TCG</span>
           )}
@@ -65,7 +68,11 @@ export function AppSidebar({
             aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
             type="button"
           >
-            {collapsed ? '\u{00BB}' : '\u{00AB}'}
+            {collapsed ? (
+              <ChevronRight size={20} aria-hidden="true" />
+            ) : (
+              <ChevronLeft size={20} aria-hidden="true" />
+            )}
           </button>
         )}
       </div>

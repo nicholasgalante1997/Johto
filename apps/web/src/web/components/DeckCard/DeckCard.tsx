@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Layers, Pencil, Trash2, Check, X, MoreVertical } from 'lucide-react';
 import type { DeckCardProps } from './types';
 import { Button } from '../Button';
 import './DeckCard.css';
@@ -75,7 +76,9 @@ export function DeckCard({
         </div>
       ) : (
         <div className="pokemon-deck-card__cover pokemon-deck-card__cover--empty">
-          <span className="pokemon-deck-card__placeholder">🎴</span>
+          <span className="pokemon-deck-card__placeholder">
+            <Layers size={48} aria-hidden="true" />
+          </span>
         </div>
       )}
 
@@ -89,7 +92,7 @@ export function DeckCard({
                 onClick={toggleMenu}
                 aria-label="Deck options"
               >
-                ⋮
+                <MoreVertical size={20} aria-hidden="true" />
               </button>
               {showMenu && (
                 <div className="pokemon-deck-card__menu-dropdown">
@@ -98,7 +101,7 @@ export function DeckCard({
                       className="pokemon-deck-card__menu-item"
                       onClick={handleEdit}
                     >
-                      ✏️ Edit
+                      <Pencil size={14} aria-hidden="true" /> Edit
                     </button>
                   )}
                   {onDelete && (
@@ -106,7 +109,7 @@ export function DeckCard({
                       className="pokemon-deck-card__menu-item pokemon-deck-card__menu-item--danger"
                       onClick={handleDelete}
                     >
-                      🗑️ Delete
+                      <Trash2 size={14} aria-hidden="true" /> Delete
                     </button>
                   )}
                 </div>
@@ -132,7 +135,15 @@ export function DeckCard({
                     : 'pokemon-deck-card__status--invalid'
                 }`}
               >
-                {deck.isValid ? '✓ Valid' : '✗ Invalid'}
+                {deck.isValid ? (
+                  <>
+                    <Check size={14} aria-hidden="true" /> Valid
+                  </>
+                ) : (
+                  <>
+                    <X size={14} aria-hidden="true" /> Invalid
+                  </>
+                )}
               </span>
             )}
           </div>

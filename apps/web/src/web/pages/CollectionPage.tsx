@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router';
+import { Library } from 'lucide-react';
 import { useCollection } from '../contexts/Collection';
 import { useCards } from '../hooks/useCards';
 import { CardGrid } from '../components/CardGrid';
@@ -103,7 +104,9 @@ function CollectionPage() {
 
         <div className="page__content">
           <div className="page__empty-state">
-            <span className="page__empty-icon">{'\u{1F4DA}'}</span>
+            <span className="page__empty-icon">
+              <Library size={64} aria-hidden="true" />
+            </span>
             <h2>Your collection is empty</h2>
             <p>Start browsing cards to add them to your collection.</p>
             <Link to={ROUTES.BROWSE} className="button button--primary">

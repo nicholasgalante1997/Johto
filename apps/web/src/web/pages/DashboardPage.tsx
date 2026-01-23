@@ -1,5 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
+import {
+  Library,
+  Sparkles,
+  Layers,
+  CheckCircle,
+  Search,
+  Plus
+} from 'lucide-react';
 import { ROUTES } from '../routes';
 import { useCollection } from '../contexts/Collection';
 import { useDecks } from '../contexts/Deck';
@@ -30,7 +38,7 @@ function DashboardPage() {
             id: 'total-cards',
             label: 'Total Cards',
             value: totalCards,
-            icon: '\u{1F4DA}',
+            icon: <Library size={20} />,
             trend: totalCards > 0 ? 'up' : undefined,
             color: 'blue'
           },
@@ -38,21 +46,21 @@ function DashboardPage() {
             id: 'unique-cards',
             label: 'Unique Cards',
             value: uniqueCards,
-            icon: '\u{2728}',
+            icon: <Sparkles size={20} />,
             color: 'purple'
           },
           {
             id: 'decks-created',
             label: 'Decks Created',
             value: deckCount,
-            icon: '\u{1F3B4}',
+            icon: <Layers size={20} />,
             color: 'yellow'
           },
           {
             id: 'format-ready',
             label: 'Format Ready',
             value: validDecks,
-            icon: '\u{2705}',
+            icon: <CheckCircle size={20} />,
             color: validDecks > 0 ? 'green' : undefined
           }
         ]}
@@ -63,25 +71,33 @@ function DashboardPage() {
         <h2>Quick Actions</h2>
         <div className="dashboard-page__action-grid">
           <Link to={ROUTES.BROWSE} className="dashboard-page__action-card">
-            <span className="dashboard-page__action-icon">{'\u{1F50D}'}</span>
+            <span className="dashboard-page__action-icon">
+              <Search size={32} aria-hidden="true" />
+            </span>
             <h3>Browse Cards</h3>
             <p>Explore all available Pokemon cards</p>
           </Link>
 
           <Link to={ROUTES.COLLECTION} className="dashboard-page__action-card">
-            <span className="dashboard-page__action-icon">{'\u{1F4DA}'}</span>
+            <span className="dashboard-page__action-icon">
+              <Library size={32} aria-hidden="true" />
+            </span>
             <h3>My Collection</h3>
             <p>View and manage your card collection</p>
           </Link>
 
           <Link to={ROUTES.DECK_NEW} className="dashboard-page__action-card">
-            <span className="dashboard-page__action-icon">{'\u{2795}'}</span>
+            <span className="dashboard-page__action-icon">
+              <Plus size={32} aria-hidden="true" />
+            </span>
             <h3>Create Deck</h3>
             <p>Build a new competitive deck</p>
           </Link>
 
           <Link to={ROUTES.DECKS} className="dashboard-page__action-card">
-            <span className="dashboard-page__action-icon">{'\u{1F3B4}'}</span>
+            <span className="dashboard-page__action-icon">
+              <Layers size={32} aria-hidden="true" />
+            </span>
             <h3>My Decks</h3>
             <p>View and edit your saved decks</p>
           </Link>

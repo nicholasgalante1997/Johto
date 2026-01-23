@@ -1,8 +1,10 @@
+import type { ReactNode } from 'react';
+
 export interface StatItem {
   id: string;
   label: string;
   value: string | number;
-  icon?: string;
+  icon?: ReactNode;
   trend?: 'up' | 'down' | 'neutral';
   trendValue?: string;
   color?: 'blue' | 'green' | 'yellow' | 'red' | 'purple';

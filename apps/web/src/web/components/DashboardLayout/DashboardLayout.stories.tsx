@@ -1,5 +1,15 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import {
+  BarChart3,
+  Package,
+  Layers,
+  Star,
+  Search,
+  Settings,
+  DollarSign,
+  User
+} from 'lucide-react';
 import { DashboardLayout } from './DashboardLayout';
 import { Sidebar } from '../Sidebar';
 import { Stats } from '../Stats';
@@ -11,12 +21,12 @@ import type { Pokemon } from '@pokemon/clients';
 import './DashboardLayout.css';
 
 const mockNavItems: NavItem[] = [
-  { id: 'overview', label: 'Overview', icon: '📊' },
-  { id: 'collection', label: 'My Collection', icon: '📦', count: 152 },
-  { id: 'decks', label: 'My Decks', icon: '🎴', count: 5 },
-  { id: 'wishlist', label: 'Wishlist', icon: '⭐', count: 23 },
-  { id: 'browse', label: 'Browse Cards', icon: '🔍' },
-  { id: 'settings', label: 'Settings', icon: '⚙️' }
+  { id: 'overview', label: 'Overview', icon: <BarChart3 size={20} /> },
+  { id: 'collection', label: 'My Collection', icon: <Package size={20} />, count: 152 },
+  { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, count: 5 },
+  { id: 'wishlist', label: 'Wishlist', icon: <Star size={20} />, count: 23 },
+  { id: 'browse', label: 'Browse Cards', icon: <Search size={20} /> },
+  { id: 'settings', label: 'Settings', icon: <Settings size={20} /> }
 ];
 
 const mockStats: StatItem[] = [
@@ -24,17 +34,17 @@ const mockStats: StatItem[] = [
     id: '1',
     label: 'Total Cards',
     value: '152',
-    icon: '📦',
+    icon: <Package size={20} />,
     trend: 'up',
     trendValue: '+12',
     color: 'blue'
   },
-  { id: '2', label: 'Active Decks', value: '5', icon: '🎴', color: 'green' },
+  { id: '2', label: 'Active Decks', value: '5', icon: <Layers size={20} />, color: 'green' },
   {
     id: '3',
     label: 'Wishlist',
     value: '23',
-    icon: '⭐',
+    icon: <Star size={20} />,
     trend: 'up',
     trendValue: '+5',
     color: 'yellow'
@@ -43,7 +53,7 @@ const mockStats: StatItem[] = [
     id: '4',
     label: 'Est. Value',
     value: '$1,247',
-    icon: '💰',
+    icon: <DollarSign size={20} />,
     trend: 'up',
     trendValue: '+8%',
     color: 'purple'
@@ -104,7 +114,7 @@ const SampleHeader = () => (
           fontWeight: 700
         }}
       >
-        👤
+        <User size={20} />
       </div>
     </div>
   </div>

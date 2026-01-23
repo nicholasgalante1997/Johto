@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useParams, Link, useNavigate } from 'react-router';
+import { Layers } from 'lucide-react';
 import { useDecks } from '../contexts/Deck';
 import { useCards } from '../hooks/useCards';
 import { useDeckValidation } from '../hooks/useDeckValidation';
@@ -81,7 +82,9 @@ function DeckDetailPage() {
         </div>
         <div className="page__content">
           <div className="page__empty-state">
-            <span className="page__empty-icon">{'\u{1F3B4}'}</span>
+            <span className="page__empty-icon">
+              <Layers size={64} aria-hidden="true" />
+            </span>
             <h2>Deck not found</h2>
             <p>The deck you're looking for doesn't exist.</p>
             <Link to={ROUTES.DECKS} className="button button--primary">
@@ -220,7 +223,9 @@ function DeckDetailPage() {
 
         {deck.cards.length === 0 && (
           <div className="page__empty-state">
-            <span className="page__empty-icon">{'\u{1F3B4}'}</span>
+            <span className="page__empty-icon">
+              <Layers size={64} aria-hidden="true" />
+            </span>
             <h2>Empty Deck</h2>
             <p>This deck has no cards yet.</p>
             <Link

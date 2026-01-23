@@ -1,4 +1,5 @@
 import React from 'react';
+import { TrendingUp, TrendingDown, ArrowRight } from 'lucide-react';
 import type { StatsProps } from './types';
 import './Stats.css';
 
@@ -41,9 +42,15 @@ export function Stats({
                 <span
                   className={`pokemon-stat__trend pokemon-stat__trend--${stat.trend}`}
                 >
-                  {stat.trend === 'up' && '↑'}
-                  {stat.trend === 'down' && '↓'}
-                  {stat.trend === 'neutral' && '→'}
+                  {stat.trend === 'up' && (
+                    <TrendingUp size={14} aria-hidden="true" />
+                  )}
+                  {stat.trend === 'down' && (
+                    <TrendingDown size={14} aria-hidden="true" />
+                  )}
+                  {stat.trend === 'neutral' && (
+                    <ArrowRight size={14} aria-hidden="true" />
+                  )}
                   {stat.trendValue}
                 </span>
               )}

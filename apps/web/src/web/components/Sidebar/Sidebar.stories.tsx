@@ -1,17 +1,28 @@
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import {
+  BarChart3,
+  Package,
+  Layers,
+  Star,
+  RefreshCw,
+  Search,
+  Library,
+  Settings
+} from 'lucide-react';
 import { Sidebar } from './Sidebar';
 import type { NavItem } from './types';
 import './Sidebar.css';
 
 const mockItems: NavItem[] = [
-  { id: 'overview', label: 'Overview', icon: '📊', count: undefined },
-  { id: 'collection', label: 'My Collection', icon: '📦', count: 152 },
-  { id: 'decks', label: 'My Decks', icon: '🎴', count: 5 },
-  { id: 'wishlist', label: 'Wishlist', icon: '⭐', count: 23 },
-  { id: 'trades', label: 'Trades', icon: '🔄', count: 3 },
-  { id: 'browse', label: 'Browse Cards', icon: '🔍' },
-  { id: 'sets', label: 'Sets', icon: '📚' },
-  { id: 'settings', label: 'Settings', icon: '⚙️' }
+  { id: 'overview', label: 'Overview', icon: <BarChart3 size={20} />, count: undefined },
+  { id: 'collection', label: 'My Collection', icon: <Package size={20} />, count: 152 },
+  { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, count: 5 },
+  { id: 'wishlist', label: 'Wishlist', icon: <Star size={20} />, count: 23 },
+  { id: 'trades', label: 'Trades', icon: <RefreshCw size={20} />, count: 3 },
+  { id: 'browse', label: 'Browse Cards', icon: <Search size={20} /> },
+  { id: 'sets', label: 'Sets', icon: <Library size={20} /> },
+  { id: 'settings', label: 'Settings', icon: <Settings size={20} /> }
 ];
 
 const meta: Meta<typeof Sidebar> = {

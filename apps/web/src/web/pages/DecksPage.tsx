@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router';
+import { Layers } from 'lucide-react';
 import { useDecks } from '../contexts/Deck';
 import { DeckList } from '../components/DeckList';
 import { Modal } from '../components/Modal';
@@ -68,7 +69,9 @@ function DecksPage() {
 
         <div className="page__content">
           <div className="page__empty-state">
-            <span className="page__empty-icon">{'\u{1F3B4}'}</span>
+            <span className="page__empty-icon">
+              <Layers size={64} aria-hidden="true" />
+            </span>
             <h2>No decks yet</h2>
             <p>Create your first deck to get started.</p>
             <Link to={ROUTES.DECK_NEW} className="button button--primary">

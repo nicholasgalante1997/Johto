@@ -1,4 +1,19 @@
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import {
+  Package,
+  Layers,
+  Star,
+  DollarSign,
+  BarChart3,
+  CheckCircle,
+  Zap,
+  Flame,
+  Heart,
+  TrendingUp,
+  TrendingDown,
+  ArrowRight
+} from 'lucide-react';
 import { Stats } from './Stats';
 import type { StatItem } from './types';
 import './Stats.css';
@@ -8,7 +23,7 @@ const mockStats: StatItem[] = [
     id: 'total-cards',
     label: 'Total Cards',
     value: '152',
-    icon: '📦',
+    icon: <Package size={20} />,
     trend: 'up',
     trendValue: '+12',
     color: 'blue'
@@ -17,7 +32,7 @@ const mockStats: StatItem[] = [
     id: 'total-decks',
     label: 'Active Decks',
     value: '5',
-    icon: '🎴',
+    icon: <Layers size={20} />,
     trend: 'neutral',
     trendValue: '0',
     color: 'green'
@@ -26,7 +41,7 @@ const mockStats: StatItem[] = [
     id: 'wishlist',
     label: 'Wishlist',
     value: '23',
-    icon: '⭐',
+    icon: <Star size={20} />,
     trend: 'up',
     trendValue: '+5',
     color: 'yellow'
@@ -35,7 +50,7 @@ const mockStats: StatItem[] = [
     id: 'collection-value',
     label: 'Est. Value',
     value: '$1,247',
-    icon: '💰',
+    icon: <DollarSign size={20} />,
     trend: 'up',
     trendValue: '+8%',
     color: 'purple'
@@ -116,21 +131,21 @@ export const SingleStat: Story = {
 export const AllColors: Story = {
   args: {
     stats: [
-      { id: '1', label: 'Blue Stat', value: '100', icon: '📊', color: 'blue' },
-      { id: '2', label: 'Green Stat', value: '85', icon: '✅', color: 'green' },
+      { id: '1', label: 'Blue Stat', value: '100', icon: <BarChart3 size={20} />, color: 'blue' },
+      { id: '2', label: 'Green Stat', value: '85', icon: <CheckCircle size={20} />, color: 'green' },
       {
         id: '3',
         label: 'Yellow Stat',
         value: '42',
-        icon: '⚡',
+        icon: <Zap size={20} />,
         color: 'yellow'
       },
-      { id: '4', label: 'Red Stat', value: '15', icon: '🔥', color: 'red' },
+      { id: '4', label: 'Red Stat', value: '15', icon: <Flame size={20} />, color: 'red' },
       {
         id: '5',
         label: 'Purple Stat',
         value: '67',
-        icon: '💜',
+        icon: <Heart size={20} />,
         color: 'purple'
       }
     ]
@@ -144,7 +159,7 @@ export const AllTrends: Story = {
         id: '1',
         label: 'Trending Up',
         value: '150',
-        icon: '📈',
+        icon: <TrendingUp size={20} />,
         trend: 'up',
         trendValue: '+25%',
         color: 'blue'
@@ -153,7 +168,7 @@ export const AllTrends: Story = {
         id: '2',
         label: 'Trending Down',
         value: '75',
-        icon: '📉',
+        icon: <TrendingDown size={20} />,
         trend: 'down',
         trendValue: '-10%',
         color: 'red'
@@ -162,7 +177,7 @@ export const AllTrends: Story = {
         id: '3',
         label: 'No Change',
         value: '100',
-        icon: '➡️',
+        icon: <ArrowRight size={20} />,
         trend: 'neutral',
         trendValue: '0%',
         color: 'green'
