@@ -13,7 +13,10 @@
     "test": "turbo test",
     "json:sync": "turbo scripts:json:sync",
     "docker:web:start": "turbo run docker:web:start",
-    "docker:scripts:db:sync": "turbo run docker:scripts:db:sync"
+    "docker:scripts:db:sync": "turbo run docker:scripts:db:sync",
+    "db:report": "bun run scripts/db-card-report.ts",
+    "db:missing": "bun run scripts/db-missing-cards.ts",
+    "db:export": "bun run scripts/db-export-report.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
