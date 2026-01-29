@@ -17,6 +17,10 @@ _.path = [
 
 [tasks]
 
+[tasks.submodules-update]
+description = "Updates all submodules"
+run = "git submodule update --init --recursive"
+
 [tasks.install]
 description = "Installs all project dependencies"
 run = "bun install --frozen-lockfile"
