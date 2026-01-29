@@ -1,3 +1,4 @@
+import 'dotenv/config.js';
 import {
   concurrent_build,
   esm_react_browser_app,

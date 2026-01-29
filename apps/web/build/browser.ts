@@ -12,6 +12,7 @@ const _: BuildConfig = {
   },
   target: 'browser',
   format: 'esm',
+  env: 'inline',
   packages: 'bundle',
   splitting: false,
   sourcemap: 'linked',

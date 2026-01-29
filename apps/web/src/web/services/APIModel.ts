@@ -273,7 +273,7 @@ export abstract class APIModel {
 export function getBaseAPIURL() {
   const v1APIEndpointPrefix = '/api/v1';
 
-  if (process.env.API_URL) {
+  if (typeof process !== "undefined" && process?.env?.API_URL) {
     return process.env.API_URL;
   }
 
