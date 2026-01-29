@@ -1,0 +1,48 @@
+services:
+  cron:
+    container_name: pokemon-cron
+    build:
+      context: ../..
+      dockerfile: apps/cron/Dockerfile
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - DATABASE_PATH=/app/database/pokemon-data.sqlite3.db
+      - BACKUP_DIR=/app/database/backups
+      - CRON_LOG_LEVEL=info
+      - CRON_TIMEZONE=America/New_York
+      - CRON_MAX_CONCURRENT=3
+      - CRON_METRICS_ENABLED=true
+      # PostgreSQL connection (optional)
+      - POSTGRES_USER=${POSTGRES_USER:-pokemon}
+      - POSTGRES_HOST=${POSTGRES_HOST:-postgres}
+      - POSTGRES_DB=${POSTGRES_DB:-pokemon_tcg}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-pokemon}
+      - POSTGRES_PORT=${POSTGRES_PORT:-5432}
+      # Notifications (optional)
+      - NOTIFICATIONS_ENABLED=${NOTIFICATIONS_ENABLED:-false}
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL:-}
+    volumes:
+      # Mount database directory for persistence
+      - ../../database:/app/database
+      # Mount pokemon-data package for local data access
+      - ../../packages/@pokemon-data/data:/app/packages/@pokemon-data/data:ro
+    networks:
+      - pika
+    depends_on:
+      - postgres
+    healthcheck:
+      test: ["CMD", "bun", "run", "src/cli.ts", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  pika:
+    external: true

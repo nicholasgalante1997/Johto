@@ -1,0 +1,31 @@
+{
+  "name": "@pokemon/cron",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "start:dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir=dist --target=bun",
+    "check-types": "tsc -p ./tsconfig.json --noEmit",
+    "test": "bun test",
+    "job:run": "bun run src/cli.ts run",
+    "job:list": "bun run src/cli.ts list",
+    "job:status": "bun run src/cli.ts status",
+    "job:history": "bun run src/cli.ts history",
+    "docs": "bunx serve docs",
+    "docs:dev": "bunx docsify-cli serve docs"
+  },
+  "dependencies": {
+    "dotenv": "17.2.3",
+    "@pokemon/clients": "workspace:*",
+    "@pokemon/database": "workspace:*",
+    "@pokemon/data": "workspace:*",
+    "@pokemon/logger": "workspace:*",
+    "@pokemon/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@pokemon/configs": "workspace:*",
+    "@types/bun": "latest",
+    "typescript": "5.5.4"
+  }
+}
