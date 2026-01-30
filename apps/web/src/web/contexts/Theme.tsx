@@ -57,14 +57,18 @@ function getThemeUrl(flavor: CatppuccinFlavor): string {
   return `/css/themes/catppuccin-${flavor}.css`;
 }
 
+function isBrowser(): boolean {
+  return typeof window !== 'undefined' && typeof window.document !== 'undefined';
+}
+
 /**
  * Load or swap the theme stylesheet
  */
 function loadThemeStylesheet(flavor: CatppuccinFlavor): void {
-  if (typeof document === 'undefined') return;
+  if (!isBrowser()) return;
 
   const url = getThemeUrl(flavor);
-  let link = document.getElementById(THEME_LINK_ID) as HTMLLinkElement | null;
+  let link = window.document.getElementById(THEME_LINK_ID) as HTMLLinkElement | null;
 
   if (link) {
     // Update existing link
@@ -75,12 +79,12 @@ function loadThemeStylesheet(flavor: CatppuccinFlavor): void {
     link.id = THEME_LINK_ID;
     link.rel = 'stylesheet';
     link.href = url;
-    document.head.appendChild(link);
+    window.document.head.appendChild(link);
   }
 
   // Update data attribute on html element for CSS selectors
-  document.documentElement.setAttribute('data-theme', flavor);
-  document.documentElement.setAttribute(
+  window.document.documentElement.setAttribute('data-theme', flavor);
+  window.document.documentElement.setAttribute(
     'data-theme-mode',
     FLAVOR_META[flavor].isDark ? 'dark' : 'light'
   );
@@ -90,10 +94,10 @@ function loadThemeStylesheet(flavor: CatppuccinFlavor): void {
  * Get stored flavor from localStorage
  */
 function getStoredFlavor(): CatppuccinFlavor {
-  if (typeof localStorage === 'undefined') return DEFAULT_FLAVOR;
+  if (!isBrowser()) return DEFAULT_FLAVOR;
 
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored && FLAVORS.includes(stored as CatppuccinFlavor)) {
       return stored as CatppuccinFlavor;
     }
@@ -108,10 +112,10 @@ function getStoredFlavor(): CatppuccinFlavor {
  * Store flavor to localStorage
  */
 function storeFlavor(flavor: CatppuccinFlavor): void {
-  if (typeof localStorage === 'undefined') return;
+  if (!isBrowser()) return;
 
   try {
-    localStorage.setItem(STORAGE_KEY, flavor);
+    window.localStorage.setItem(STORAGE_KEY, flavor);
   } catch {
     // localStorage may be unavailable
   }
