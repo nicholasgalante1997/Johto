@@ -255,6 +255,23 @@
       }
     },
     {
+      "id": "bp",
+      "name": "Best of Game",
+      "series": "Other",
+      "printedTotal": 9,
+      "total": 9,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "BP",
+      "releaseDate": "2002/12/01",
+      "updatedAt": "2021/10/16 09:52:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/bp/symbol.png",
+        "logo": "https://images.pokemontcg.io/bp/logo.png"
+      }
+    },
+    {
       "id": "ecard2",
       "name": "Aquapolis",
       "series": "E-Card",
@@ -371,6 +388,38 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/ex4/symbol.png",
         "logo": "https://images.pokemontcg.io/ex4/logo.png"
+      }
+    },
+    {
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
+      "series": "EX",
+      "printedTotal": 10,
+      "total": 10,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "releaseDate": "2004/06/01",
+      "updatedAt": "2022/01/13 20:44:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/tk1a/symbol.png",
+        "logo": "https://images.pokemontcg.io/tk1a/logo.png"
+      }
+    },
+    {
+      "id": "tk1b",
+      "name": "EX Trainer Kit Latios",
+      "series": "EX",
+      "printedTotal": 10,
+      "total": 10,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "releaseDate": "2004/06/01",
+      "updatedAt": "2022/01/13 20:44:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/tk1b/symbol.png",
+        "logo": "https://images.pokemontcg.io/tk1b/logo.png"
       }
     },
     {
@@ -539,6 +588,38 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/ex12/symbol.png",
         "logo": "https://images.pokemontcg.io/ex12/logo.png"
+      }
+    },
+    {
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "series": "EX",
+      "printedTotal": 12,
+      "total": 12,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "releaseDate": "2006/03/01",
+      "updatedAt": "2022/01/13 20:44:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/tk2a/symbol.png",
+        "logo": "https://images.pokemontcg.io/tk2a/logo.png"
+      }
+    },
+    {
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "series": "EX",
+      "printedTotal": 12,
+      "total": 12,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "releaseDate": "2006/03/01",
+      "updatedAt": "2022/01/13 20:44:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/tk2b/symbol.png",
+        "logo": "https://images.pokemontcg.io/tk2b/logo.png"
       }
     },
     {
@@ -1384,6 +1465,23 @@
       }
     },
     {
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "series": "Other",
+      "printedTotal": 12,
+      "total": 12,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "releaseDate": "2014/05/23",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/mcd14/symbol.png",
+        "logo": "https://images.pokemontcg.io/mcd14/logo.png"
+      }
+    },
+    {
       "id": "xy3",
       "name": "Furious Fists",
       "series": "XY",
@@ -1507,6 +1605,23 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
         "logo": "https://images.pokemontcg.io/xy8/logo.png"
+      }
+    },
+    {
+      "id": "mcd15",
+      "name": "McDonald's Collection 2015",
+      "series": "Other",
+      "printedTotal": 12,
+      "total": 12,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "releaseDate": "2015/11/27",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/mcd15/symbol.png",
+        "logo": "https://images.pokemontcg.io/mcd15/logo.png"
       }
     },
     {
@@ -1725,6 +1840,23 @@
       }
     },
     {
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
+      "series": "Other",
+      "printedTotal": 12,
+      "total": 12,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "releaseDate": "2017/11/07",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/mcd17/symbol.png",
+        "logo": "https://images.pokemontcg.io/mcd17/logo.png"
+      }
+    },
+    {
       "id": "sm5",
       "name": "Ultra Prism",
       "series": "Sun & Moon",
@@ -1794,6 +1926,23 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/sm75/symbol.png",
         "logo": "https://images.pokemontcg.io/sm75/logo.png"
+      }
+    },
+    {
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
+      "series": "Other",
+      "printedTotal": 12,
+      "total": 12,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "releaseDate": "2018/10/16",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/mcd18/symbol.png",
+        "logo": "https://images.pokemontcg.io/mcd18/logo.png"
       }
     },
     {
@@ -2031,6 +2180,24 @@
       }
     },
     {
+      "id": "fut20",
+      "name": "Pokémon Futsal Collection",
+      "series": "Other",
+      "printedTotal": 5,
+      "total": 5,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "FUT20",
+      "releaseDate": "2020/09/11",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/fut20/symbol.png",
+        "logo": "https://images.pokemontcg.io/fut20/logo.png"
+      }
+    },
+    {
       "id": "swsh35",
       "name": "Champion's Path",
       "series": "Sword & Shield",
@@ -2157,6 +2324,23 @@
       }
     },
     {
+      "id": "mcd21",
+      "name": "McDonald's Collection 2021",
+      "series": "Other",
+      "printedTotal": 25,
+      "total": 25,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "releaseDate": "2021/02/09",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/mcd21/symbol.png",
+        "logo": "https://images.pokemontcg.io/mcd21/logo.png"
+      }
+    },
+    {
       "id": "cel25",
       "name": "Celebrations",
       "series": "Sword & Shield",
@@ -2192,108 +2376,6 @@
       }
     },
     {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
-      "series": "Other",
-      "printedTotal": 12,
-      "total": 12,
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "releaseDate": "2014/05/23",
-      "updatedAt": "2022/10/10 15:12:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/mcd14/symbol.png",
-        "logo": "https://images.pokemontcg.io/mcd14/logo.png"
-      }
-    },
-    {
-      "id": "mcd15",
-      "name": "McDonald's Collection 2015",
-      "series": "Other",
-      "printedTotal": 12,
-      "total": 12,
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "releaseDate": "2015/11/27",
-      "updatedAt": "2022/10/10 15:12:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/mcd15/symbol.png",
-        "logo": "https://images.pokemontcg.io/mcd15/logo.png"
-      }
-    },
-    {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
-      "series": "Other",
-      "printedTotal": 12,
-      "total": 12,
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "releaseDate": "2018/10/16",
-      "updatedAt": "2022/10/10 15:12:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/mcd18/symbol.png",
-        "logo": "https://images.pokemontcg.io/mcd18/logo.png"
-      }
-    },
-    {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
-      "series": "Other",
-      "printedTotal": 12,
-      "total": 12,
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "releaseDate": "2017/11/07",
-      "updatedAt": "2022/10/10 15:12:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/mcd17/symbol.png",
-        "logo": "https://images.pokemontcg.io/mcd17/logo.png"
-      }
-    },
-    {
-      "id": "mcd21",
-      "name": "McDonald's Collection 2021",
-      "series": "Other",
-      "printedTotal": 25,
-      "total": 25,
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "releaseDate": "2021/02/09",
-      "updatedAt": "2022/10/10 15:12:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/mcd21/symbol.png",
-        "logo": "https://images.pokemontcg.io/mcd21/logo.png"
-      }
-    },
-    {
-      "id": "bp",
-      "name": "Best of Game",
-      "series": "Other",
-      "printedTotal": 9,
-      "total": 9,
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "ptcgoCode": "BP",
-      "releaseDate": "2002/12/01",
-      "updatedAt": "2021/10/16 09:52:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/bp/symbol.png",
-        "logo": "https://images.pokemontcg.io/bp/logo.png"
-      }
-    },
-    {
       "id": "swsh8",
       "name": "Fusion Strike",
       "series": "Sword & Shield",
@@ -2309,89 +2391,6 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/swsh8/symbol.png",
         "logo": "https://images.pokemontcg.io/swsh8/logo.png"
-      }
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "series": "Other",
-      "printedTotal": 5,
-      "total": 5,
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "ptcgoCode": "FUT20",
-      "releaseDate": "2020/09/11",
-      "updatedAt": "2022/10/10 15:12:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/fut20/symbol.png",
-        "logo": "https://images.pokemontcg.io/fut20/logo.png"
-      }
-    },
-    {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
-      "series": "EX",
-      "printedTotal": 10,
-      "total": 10,
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "releaseDate": "2004/06/01",
-      "updatedAt": "2022/01/13 20:44:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/tk1a/symbol.png",
-        "logo": "https://images.pokemontcg.io/tk1a/logo.png"
-      }
-    },
-    {
-      "id": "tk1b",
-      "name": "EX Trainer Kit Latios",
-      "series": "EX",
-      "printedTotal": 10,
-      "total": 10,
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "releaseDate": "2004/06/01",
-      "updatedAt": "2022/01/13 20:44:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/tk1b/symbol.png",
-        "logo": "https://images.pokemontcg.io/tk1b/logo.png"
-      }
-    },
-    {
-      "id": "tk2a",
-      "name": "EX Trainer Kit 2 Plusle",
-      "series": "EX",
-      "printedTotal": 12,
-      "total": 12,
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "releaseDate": "2006/03/01",
-      "updatedAt": "2022/01/13 20:44:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/tk2a/symbol.png",
-        "logo": "https://images.pokemontcg.io/tk2a/logo.png"
-      }
-    },
-    {
-      "id": "tk2b",
-      "name": "EX Trainer Kit 2 Minun",
-      "series": "EX",
-      "printedTotal": 12,
-      "total": 12,
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "releaseDate": "2006/03/01",
-      "updatedAt": "2022/01/13 20:44:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/tk2b/symbol.png",
-        "logo": "https://images.pokemontcg.io/tk2b/logo.png"
       }
     },
     {
@@ -2490,6 +2489,24 @@
       }
     },
     {
+      "id": "mcd22",
+      "name": "McDonald's Collection 2022",
+      "series": "Other",
+      "printedTotal": 15,
+      "total": 15,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal",
+        "standard": "Legal"
+      },
+      "releaseDate": "2022/08/03",
+      "updatedAt": "2022/10/09 13:21:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/mcd22/symbol.png",
+        "logo": "https://images.pokemontcg.io/mcd22/logo.png"
+      }
+    },
+    {
       "id": "swsh11",
       "name": "Lost Origin",
       "series": "Sword & Shield",
@@ -2566,24 +2583,6 @@
       }
     },
     {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
-      "series": "Other",
-      "printedTotal": 15,
-      "total": 15,
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal",
-        "standard": "Legal"
-      },
-      "releaseDate": "2022/08/03",
-      "updatedAt": "2022/10/09 13:21:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/mcd22/symbol.png",
-        "logo": "https://images.pokemontcg.io/mcd22/logo.png"
-      }
-    },
-    {
       "id": "swsh12pt5",
       "name": "Crown Zenith",
       "series": "Sword & Shield",
@@ -2622,30 +2621,11 @@
       }
     },
     {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
-      "series": "Scarlet & Violet",
-      "printedTotal": 198,
-      "total": 258,
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "ptcgoCode": "SVI",
-      "releaseDate": "2023/03/31",
-      "updatedAt": "2023/03/31 15:45:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/sv1/symbol.png",
-        "logo": "https://images.pokemontcg.io/sv1/logo.png"
-      }
-    },
-    {
       "id": "svp",
       "name": "Scarlet & Violet Black Star Promos",
       "series": "Scarlet & Violet",
-      "printedTotal": 215,
-      "total": 196,
+      "printedTotal": 102,
+      "total": 75,
       "legalities": {
         "unlimited": "Legal",
         "standard": "Legal",
@@ -2657,25 +2637,6 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/svp/symbol.png",
         "logo": "https://images.pokemontcg.io/svp/logo.png"
-      }
-    },
-    {
-      "id": "sv2",
-      "name": "Paldea Evolved",
-      "series": "Scarlet & Violet",
-      "printedTotal": 193,
-      "total": 279,
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "ptcgoCode": "PAL",
-      "releaseDate": "2023/06/09",
-      "updatedAt": "2023/06/09 15:00:00",
-      "images": {
-        "symbol": "https://images.pokemontcg.io/sv2/symbol.png",
-        "logo": "https://images.pokemontcg.io/sv2/logo.png"
       }
     },
     {
@@ -2695,6 +2656,44 @@
       "images": {
         "symbol": "https://images.pokemontcg.io/sve/symbol.png",
         "logo": "https://images.pokemontcg.io/sve/logo.png"
+      }
+    },
+    {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "series": "Scarlet & Violet",
+      "printedTotal": 198,
+      "total": 258,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "SVI",
+      "releaseDate": "2023/03/31",
+      "updatedAt": "2023/03/31 15:45:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sv1/symbol.png",
+        "logo": "https://images.pokemontcg.io/sv1/logo.png"
+      }
+    },
+    {
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "series": "Scarlet & Violet",
+      "printedTotal": 193,
+      "total": 279,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "PAL",
+      "releaseDate": "2023/06/09",
+      "updatedAt": "2023/06/09 15:00:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sv2/symbol.png",
+        "logo": "https://images.pokemontcg.io/sv2/logo.png"
       }
     },
     {

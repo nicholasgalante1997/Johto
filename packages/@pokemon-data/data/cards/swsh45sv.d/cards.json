@@ -44,6 +44,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV001",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Shiny",
+      "flavorText": "At a distance, it launches its sharp feathers while flying about. If the enemy gets too close, Rowlet switches tactics and delivers vicious kicks.",
+      "nationalPokedexNumbers": [
+        722
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV001.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV001_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -61,22 +77,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV001",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Shiny",
-      "flavorText": "At a distance, it launches its sharp feathers while flying about. If the enemy gets too close, Rowlet switches tactics and delivers vicious kicks.",
-      "nationalPokedexNumbers": [
-        722
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV001.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV001_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV001",
@@ -149,6 +149,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV002",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Shiny",
+      "flavorText": "It throws one knifelike feather after another at its enemies, and each one precisely strikes a weak point. These feathers are known as blade quills.",
+      "nationalPokedexNumbers": [
+        723
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV002.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV002_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -166,22 +182,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV002",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Shiny",
-      "flavorText": "It throws one knifelike feather after another at its enemies, and each one precisely strikes a weak point. These feathers are known as blade quills.",
-      "nationalPokedexNumbers": [
-        723
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV002.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV002_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV002",
@@ -260,6 +260,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV003",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "As if wielding a bow, it launches the arrow quills hidden among the feathers of its wings. Decidueye's shots never miss.",
+      "nationalPokedexNumbers": [
+        724
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV003.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV003_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -277,22 +293,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV003",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "As if wielding a bow, it launches the arrow quills hidden among the feathers of its wings. Decidueye's shots never miss.",
-      "nationalPokedexNumbers": [
-        724
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV003.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV003_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV003",
@@ -364,6 +364,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV004",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Rare Shiny",
+      "flavorText": "When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area.",
+      "nationalPokedexNumbers": [
+        810
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV004.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV004_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -381,22 +397,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV004",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Rare Shiny",
-      "flavorText": "When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area.",
-      "nationalPokedexNumbers": [
-        810
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV004.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV004_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV004",
@@ -457,7 +457,7 @@
       ],
       "attacks": [
         {
-          "name": "Branch Poké",
+          "name": "Branch Poke",
           "cost": [
             "Grass"
           ],
@@ -477,6 +477,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV005",
+      "artist": "tetsuya koizumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "The faster a Thwackey can beat out a rhythm with its two sticks, the more respect it wins from its peers.",
+      "nationalPokedexNumbers": [
+        811
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV005.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV005_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -494,22 +510,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV005",
-      "artist": "tetsuya koizumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "The faster a Thwackey can beat out a rhythm with its two sticks, the more respect it wins from its peers.",
-      "nationalPokedexNumbers": [
-        811
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV005.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV005_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV005",
@@ -591,6 +591,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV006",
+      "artist": "Ryuta Fuse",
+      "rarity": "Rare Shiny",
+      "flavorText": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle.",
+      "nationalPokedexNumbers": [
+        812
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV006.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV006_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -608,22 +624,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV006",
-      "artist": "Ryuta Fuse",
-      "rarity": "Rare Shiny",
-      "flavorText": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle.",
-      "nationalPokedexNumbers": [
-        812
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV006.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV006_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV006",
@@ -695,6 +695,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV007",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare Shiny",
+      "flavorText": "Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings.",
+      "nationalPokedexNumbers": [
+        824
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV007.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV007_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -712,22 +728,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV007",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare Shiny",
-      "flavorText": "Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings.",
-      "nationalPokedexNumbers": [
-        824
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV007.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV007_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV007",
@@ -811,6 +811,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV008",
+      "artist": "tetsuya koizumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "As it grows inside its shell, it uses its psychic abilities to monitor the outside world and prepare for evolution.",
+      "nationalPokedexNumbers": [
+        825
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV008.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV008_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -828,22 +844,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV008",
-      "artist": "tetsuya koizumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "As it grows inside its shell, it uses its psychic abilities to monitor the outside world and prepare for evolution.",
-      "nationalPokedexNumbers": [
-        825
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV008.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV008_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV008",
@@ -921,6 +921,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV009",
+      "artist": "SATOSHI NAKAI",
+      "rarity": "Rare Shiny",
+      "flavorText": "It emits psychic energy to observe and study what's around it—and what's around it can include things over six miles away.",
+      "nationalPokedexNumbers": [
+        826
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV009.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV009_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -938,22 +954,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV009",
-      "artist": "SATOSHI NAKAI",
-      "rarity": "Rare Shiny",
-      "flavorText": "It emits psychic energy to observe and study what's around it—and what's around it can include things over six miles away.",
-      "nationalPokedexNumbers": [
-        826
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV009.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV009_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV009",
@@ -1034,6 +1034,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV010",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare Shiny",
+      "flavorText": "It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon.",
+      "nationalPokedexNumbers": [
+        829
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV010.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV010_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1051,22 +1067,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV010",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare Shiny",
-      "flavorText": "It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon.",
-      "nationalPokedexNumbers": [
-        829
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV010.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV010_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV010",
@@ -1145,6 +1145,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV011",
+      "artist": "Mizue",
+      "rarity": "Rare Shiny",
+      "flavorText": "The cotton on the head of this Pokémon can be spun into a glossy, gorgeous yarn—a Galar regional specialty.",
+      "nationalPokedexNumbers": [
+        830
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV011.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV011_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1162,22 +1178,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV011",
-      "artist": "Mizue",
-      "rarity": "Rare Shiny",
-      "flavorText": "The cotton on the head of this Pokémon can be spun into a glossy, gorgeous yarn—a Galar regional specialty.",
-      "nationalPokedexNumbers": [
-        830
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV011.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV011_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV011",
@@ -1249,6 +1249,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV012",
+      "artist": "otumami",
+      "rarity": "Rare Shiny",
+      "flavorText": "It spends its entire life inside an apple. It hides from its natural enemies, bird Pokémon, by pretending it's just an apple and nothing more.",
+      "nationalPokedexNumbers": [
+        840
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV012.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV012_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1266,22 +1282,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV012",
-      "artist": "otumami",
-      "rarity": "Rare Shiny",
-      "flavorText": "It spends its entire life inside an apple. It hides from its natural enemies, bird Pokémon, by pretending it's just an apple and nothing more.",
-      "nationalPokedexNumbers": [
-        840
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV012.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV012_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV012",
@@ -1359,6 +1359,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV013",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns.",
+      "nationalPokedexNumbers": [
+        841
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV013.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV013_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1376,22 +1392,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV013",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns.",
-      "nationalPokedexNumbers": [
-        841
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV013.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV013_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV013",
@@ -1471,6 +1471,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV014",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "Eating a sweet apple caused its evolution. A nectarous scent wafts from its body, luring in the bug Pokémon it preys on.",
+      "nationalPokedexNumbers": [
+        842
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV014.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV014_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1488,22 +1504,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV014",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "Eating a sweet apple caused its evolution. A nectarous scent wafts from its body, luring in the bug Pokémon it preys on.",
-      "nationalPokedexNumbers": [
-        842
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV014.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV014_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV014",
@@ -1575,6 +1575,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV015",
+      "artist": "MAHOU",
+      "rarity": "Rare Shiny",
+      "flavorText": "It has special pads on the backs of its feet, and one on its nose. Once it's raring to fight, these pads radiate tremendous heat.",
+      "nationalPokedexNumbers": [
+        813
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV015.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV015_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1592,22 +1608,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV015",
-      "artist": "MAHOU",
-      "rarity": "Rare Shiny",
-      "flavorText": "It has special pads on the backs of its feet, and one on its nose. Once it's raring to fight, these pads radiate tremendous heat.",
-      "nationalPokedexNumbers": [
-        813
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV015.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV015_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV015",
@@ -1691,6 +1691,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV016",
+      "artist": "Lee HyunJung",
+      "rarity": "Rare Shiny",
+      "flavorText": "It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork.",
+      "nationalPokedexNumbers": [
+        814
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV016.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV016_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1708,22 +1724,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV016",
-      "artist": "Lee HyunJung",
-      "rarity": "Rare Shiny",
-      "flavorText": "It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork.",
-      "nationalPokedexNumbers": [
-        814
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV016.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV016_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV016",
@@ -1802,6 +1802,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV017",
+      "artist": "Hitoshi Ariga",
+      "rarity": "Rare Shiny",
+      "flavorText": "It's skilled at both offense and defense, and it gets pumped up when cheered on. But if it starts showboating, it could put itself in a tough spot.",
+      "nationalPokedexNumbers": [
+        815
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV017.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV017_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1819,22 +1835,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV017",
-      "artist": "Hitoshi Ariga",
-      "rarity": "Rare Shiny",
-      "flavorText": "It's skilled at both offense and defense, and it gets pumped up when cheered on. But if it starts showboating, it could put itself in a tough spot.",
-      "nationalPokedexNumbers": [
-        815
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV017.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV017_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV017",
@@ -1917,6 +1917,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV018",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "It stores flammable gas in its body and uses it to generate heat. The yellow sections on its belly get particularly hot.",
+      "nationalPokedexNumbers": [
+        850
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV018.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV018_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -1934,22 +1950,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV018",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "It stores flammable gas in its body and uses it to generate heat. The yellow sections on its belly get particularly hot.",
-      "nationalPokedexNumbers": [
-        850
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV018.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV018_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV018",
@@ -2033,6 +2033,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV019",
+      "artist": "SATOSHI NAKAI",
+      "rarity": "Rare Shiny",
+      "flavorText": "When it heats up, its body temperature reaches about 1,500 degrees Fahrenheit. It lashes its body like a whip and launches itself at enemies.",
+      "nationalPokedexNumbers": [
+        851
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV019.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV019_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2050,22 +2066,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV019",
-      "artist": "SATOSHI NAKAI",
-      "rarity": "Rare Shiny",
-      "flavorText": "When it heats up, its body temperature reaches about 1,500 degrees Fahrenheit. It lashes its body like a whip and launches itself at enemies.",
-      "nationalPokedexNumbers": [
-        851
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV019.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV019_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV019",
@@ -2147,6 +2147,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV020",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its talent is tap-dancing. It can also manipulate temperatures to create a floor of ice, which this Pokémon can kick up to use as a barrier.",
+      "nationalPokedexNumbers": [
+        122
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV020.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV020_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2164,22 +2180,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV020",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its talent is tap-dancing. It can also manipulate temperatures to create a floor of ice, which this Pokémon can kick up to use as a barrier.",
-      "nationalPokedexNumbers": [
-        122
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV020.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV020_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV020",
@@ -2259,6 +2259,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV021",
+      "artist": "Hideki Ishikawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "It's highly skilled at tap-dancing. It waves its cane of ice in time with its graceful movements.",
+      "nationalPokedexNumbers": [
+        866
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV021.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV021_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2276,22 +2292,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV021",
-      "artist": "Hideki Ishikawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "It's highly skilled at tap-dancing. It waves its cane of ice in time with its graceful movements.",
-      "nationalPokedexNumbers": [
-        866
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV021.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV021_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV021",
@@ -2371,6 +2371,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV022",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Shiny",
+      "flavorText": "Said to be the embodiment of north winds, it can instantly purify filthy, murky water.",
+      "nationalPokedexNumbers": [
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV022.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV022_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2388,22 +2404,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV022",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare Shiny",
-      "flavorText": "Said to be the embodiment of north winds, it can instantly purify filthy, murky water.",
-      "nationalPokedexNumbers": [
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV022.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV022_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV022",
@@ -2477,6 +2477,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV023",
+      "artist": "SATOSHI NAKAI",
+      "rarity": "Rare Shiny",
+      "flavorText": "It lived in snowy areas for so long that its fire sac cooled off and atrophied. It now has an organ that generates cold instead.",
+      "nationalPokedexNumbers": [
+        554
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV023.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV023_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2494,22 +2510,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV023",
-      "artist": "SATOSHI NAKAI",
-      "rarity": "Rare Shiny",
-      "flavorText": "It lived in snowy areas for so long that its fire sac cooled off and atrophied. It now has an organ that generates cold instead.",
-      "nationalPokedexNumbers": [
-        554
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV023.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV023_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV023",
@@ -2595,6 +2595,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV024",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "On days when blizzards blow through, it comes down to where people live. It stashes food in the snowball on its head, taking it home for later.",
+      "nationalPokedexNumbers": [
+        555
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV024.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV024_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2612,22 +2628,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV024",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "On days when blizzards blow through, it comes down to where people live. It stashes food in the snowball on its head, taking it home for later.",
-      "nationalPokedexNumbers": [
-        555
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV024.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV024_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV024",
@@ -2699,6 +2699,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV025",
+      "artist": "Saya Tsuruta",
+      "rarity": "Rare Shiny",
+      "flavorText": "When scared, this Pokémon cries. Its tears pack the chemical punch of 100 onions, and attackers won't be able to resist weeping.",
+      "nationalPokedexNumbers": [
+        816
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV025.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV025_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2716,22 +2732,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV025",
-      "artist": "Saya Tsuruta",
-      "rarity": "Rare Shiny",
-      "flavorText": "When scared, this Pokémon cries. Its tears pack the chemical punch of 100 onions, and attackers won't be able to resist weeping.",
-      "nationalPokedexNumbers": [
-        816
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV025.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV025_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV025",
@@ -2812,6 +2812,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV026",
+      "artist": "Ryuta Fuse",
+      "rarity": "Rare Shiny",
+      "flavorText": "A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms.",
+      "nationalPokedexNumbers": [
+        817
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV026.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV026_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2829,22 +2845,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV026",
-      "artist": "Ryuta Fuse",
-      "rarity": "Rare Shiny",
-      "flavorText": "A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms.",
-      "nationalPokedexNumbers": [
-        817
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV026.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV026_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV026",
@@ -2922,6 +2922,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV027",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air.",
+      "nationalPokedexNumbers": [
+        818
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV027.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV027_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -2939,22 +2955,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV027",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air.",
-      "nationalPokedexNumbers": [
-        818
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV027.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV027_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV027",
@@ -3039,6 +3039,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV028",
+      "artist": "otumami",
+      "rarity": "Rare Shiny",
+      "flavorText": "It starts off battles by attacking with its rock-hard horn, but as soon as the opponent flinches, this Pokémon bites down and never lets go.",
+      "nationalPokedexNumbers": [
+        833
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV028.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV028_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3056,22 +3072,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV028",
-      "artist": "otumami",
-      "rarity": "Rare Shiny",
-      "flavorText": "It starts off battles by attacking with its rock-hard horn, but as soon as the opponent flinches, this Pokémon bites down and never lets go.",
-      "nationalPokedexNumbers": [
-        833
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV028.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV028_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV028",
@@ -3157,6 +3157,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV029",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down.",
+      "nationalPokedexNumbers": [
+        834
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV029.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV029_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3174,22 +3190,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV029",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down.",
-      "nationalPokedexNumbers": [
-        834
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV029.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV029_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV029",
@@ -3275,6 +3275,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV030",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Shiny",
+      "flavorText": "It's so strong that it can knock out some opponents in a single hit, but it also may forget what it's battling midfight.",
+      "nationalPokedexNumbers": [
+        845
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV030.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV030_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3292,22 +3308,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV030",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Shiny",
-      "flavorText": "It's so strong that it can knock out some opponents in a single hit, but it also may forget what it's battling midfight.",
-      "nationalPokedexNumbers": [
-        845
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV030.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV030_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV030",
@@ -3379,6 +3379,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV031",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "If it sees any movement around it, this Pokémon charges for it straightaway, leading with its sharply pointed jaw. It's very proud of that jaw.",
+      "nationalPokedexNumbers": [
+        846
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV031.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV031_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3396,22 +3412,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV031",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "If it sees any movement around it, this Pokémon charges for it straightaway, leading with its sharply pointed jaw. It's very proud of that jaw.",
-      "nationalPokedexNumbers": [
-        846
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV031.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV031_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV031",
@@ -3490,6 +3490,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV032",
+      "artist": "Misa Tsutsui",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon has a jaw that's as sharp as a spear and as strong as steel. Apparently Barraskewda's flesh is surprisingly tasty, too.",
+      "nationalPokedexNumbers": [
+        847
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV032.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV032_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3507,22 +3523,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV032",
-      "artist": "Misa Tsutsui",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon has a jaw that's as sharp as a spear and as strong as steel. Apparently Barraskewda's flesh is surprisingly tasty, too.",
-      "nationalPokedexNumbers": [
-        847
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV032.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV032_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV032",
@@ -3595,6 +3595,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV033",
+      "artist": "Yumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "It spits out thread imbued with a frigid sort of energy and uses it to tie its body to branches, disguising itself as an icicle while it sleeps.",
+      "nationalPokedexNumbers": [
+        872
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV033.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV033_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3612,22 +3628,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV033",
-      "artist": "Yumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "It spits out thread imbued with a frigid sort of energy and uses it to tie its body to branches, disguising itself as an icicle while it sleeps.",
-      "nationalPokedexNumbers": [
-        872
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV033.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV033_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV033",
@@ -3706,6 +3706,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV034",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Shiny",
+      "flavorText": "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away.",
+      "nationalPokedexNumbers": [
+        873
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV034.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV034_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3723,22 +3739,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV034",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Shiny",
-      "flavorText": "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away.",
-      "nationalPokedexNumbers": [
-        873
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV034.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV034_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV034",
@@ -3817,6 +3817,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV035",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "It drifted in on the flow of ocean waters from a frigid place. It keeps its head iced constantly to make sure it stays nice and cold.",
+      "nationalPokedexNumbers": [
+        875
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV035.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV035_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3834,22 +3850,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV035",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "It drifted in on the flow of ocean waters from a frigid place. It keeps its head iced constantly to make sure it stays nice and cold.",
-      "nationalPokedexNumbers": [
-        875
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV035.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV035_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV035",
@@ -3930,6 +3930,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV036",
+      "artist": "SATOSHI NAKAI",
+      "rarity": "Rare Shiny",
+      "flavorText": "Powerful legs and jaws made it the apex predator of its time. Its own overhunting of its prey was what drove it to extinction.",
+      "nationalPokedexNumbers": [
+        882
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV036.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV036_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -3947,22 +3963,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV036",
-      "artist": "SATOSHI NAKAI",
-      "rarity": "Rare Shiny",
-      "flavorText": "Powerful legs and jaws made it the apex predator of its time. Its own overhunting of its prey was what drove it to extinction.",
-      "nationalPokedexNumbers": [
-        882
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV036.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV036_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV036",
@@ -4047,6 +4047,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV037",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Shiny",
+      "flavorText": "Though it's able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head.",
+      "nationalPokedexNumbers": [
+        883
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV037.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV037_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4064,22 +4080,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV037",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Shiny",
-      "flavorText": "Though it's able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head.",
-      "nationalPokedexNumbers": [
-        883
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV037.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV037_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV037",
@@ -4156,6 +4156,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV038",
+      "artist": "kirisAki",
+      "rarity": "Rare Shiny",
+      "flavorText": "One boy's invention led to the development of many different machines that take advantage of Rotom's unique capabilities.",
+      "nationalPokedexNumbers": [
+        479
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV038.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV038_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4173,22 +4189,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV038",
-      "artist": "kirisAki",
-      "rarity": "Rare Shiny",
-      "flavorText": "One boy's invention led to the development of many different machines that take advantage of Rotom's unique capabilities.",
-      "nationalPokedexNumbers": [
-        479
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV038.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV038_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV038",
@@ -4269,6 +4269,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV039",
+      "artist": "sowsow",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon is very popular as a herding dog in the Galar region. As it runs, it generates electricity from the base of its tail.",
+      "nationalPokedexNumbers": [
+        835
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV039.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV039_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4286,22 +4302,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV039",
-      "artist": "sowsow",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon is very popular as a herding dog in the Galar region. As it runs, it generates electricity from the base of its tail.",
-      "nationalPokedexNumbers": [
-        835
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV039.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV039_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV039",
@@ -4383,6 +4383,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV040",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon generates electricity and channels it into its legs to keep them going strong. Boltund can run nonstop for three full days.",
+      "nationalPokedexNumbers": [
+        836
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV040.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV040_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4400,22 +4416,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV040",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon generates electricity and channels it into its legs to keep them going strong. Boltund can run nonstop for three full days.",
-      "nationalPokedexNumbers": [
-        836
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV040.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV040_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV040",
@@ -4498,6 +4498,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV041",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "It stores poison in an internal poison sac and secretes that poison through its skin. If you touch this Pokémon, a tingling sensation follows.",
+      "nationalPokedexNumbers": [
+        848
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV041.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV041_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4515,22 +4531,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV041",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "It stores poison in an internal poison sac and secretes that poison through its skin. If you touch this Pokémon, a tingling sensation follows.",
-      "nationalPokedexNumbers": [
-        848
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV041.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV041_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV041",
@@ -4613,6 +4613,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV042",
+      "artist": "Hideki Ishikawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "When this Pokémon sounds as if it's strumming a guitar, it's actually clawing at the protrusions on its chest to generate electricity.",
+      "nationalPokedexNumbers": [
+        849
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV042.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV042_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4630,22 +4646,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV042",
-      "artist": "Hideki Ishikawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "When this Pokémon sounds as if it's strumming a guitar, it's actually clawing at the protrusions on its chest to generate electricity.",
-      "nationalPokedexNumbers": [
-        849
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV042.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV042_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV042",
@@ -4716,6 +4716,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV043",
+      "artist": "Motofumi Fujiwara",
+      "rarity": "Rare Shiny",
+      "flavorText": "It feeds on seaweed, using its teeth to scrape it off rocks. Electric current flows from the tips of its spines.",
+      "nationalPokedexNumbers": [
+        871
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV043.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV043_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4733,22 +4749,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV043",
-      "artist": "Motofumi Fujiwara",
-      "rarity": "Rare Shiny",
-      "flavorText": "It feeds on seaweed, using its teeth to scrape it off rocks. Electric current flows from the tips of its spines.",
-      "nationalPokedexNumbers": [
-        871
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV043.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV043_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV043",
@@ -4827,6 +4827,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV044",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Shiny",
+      "flavorText": "As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity.",
+      "nationalPokedexNumbers": [
+        877
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV044.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV044_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4844,22 +4860,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV044",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Shiny",
-      "flavorText": "As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity.",
-      "nationalPokedexNumbers": [
-        877
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV044.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV044_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV044",
@@ -4944,6 +4944,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "SV045",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources.",
+      "nationalPokedexNumbers": [
+        880
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV045.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV045_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -4961,22 +4977,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV045",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources.",
-      "nationalPokedexNumbers": [
-        880
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV045.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV045_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV045",
@@ -5055,6 +5055,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV046",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "The shaking of its freezing upper half is what generates its electricity. It has a hard time walking around.",
+      "nationalPokedexNumbers": [
+        881
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV046.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV046_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5072,22 +5088,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV046",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "The shaking of its freezing upper half is what generates its electricity. It has a hard time walking around.",
-      "nationalPokedexNumbers": [
-        881
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV046.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV046_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV046",
@@ -5165,6 +5165,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV047",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon will look into your eyes and read the contents of your heart. If it finds evil there, it promptly hides away.",
+      "nationalPokedexNumbers": [
+        77
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV047.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV047_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5182,22 +5198,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV047",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon will look into your eyes and read the contents of your heart. If it finds evil there, it promptly hides away.",
-      "nationalPokedexNumbers": [
-        77
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV047.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV047_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV047",
@@ -5281,6 +5281,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV048",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Shiny",
+      "flavorText": "Brave and prideful, this Pokémon dashes airily through the forest, its steps aided by the psychic power stored in the fur on its fetlocks.",
+      "nationalPokedexNumbers": [
+        78
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV048.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV048_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5298,22 +5314,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV048",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare Shiny",
-      "flavorText": "Brave and prideful, this Pokémon dashes airily through the forest, its steps aided by the psychic power stored in the fur on its fetlocks.",
-      "nationalPokedexNumbers": [
-        78
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV048.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV048_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV048",
@@ -5392,6 +5392,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV049",
+      "artist": "Mizue",
+      "rarity": "Rare Shiny",
+      "flavorText": "Watch your step when wandering areas oceans once covered. What looks like a stone could be this Pokémon, and it will curse you if you kick it.",
+      "nationalPokedexNumbers": [
+        222
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV049.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV049_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5409,22 +5425,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV049",
-      "artist": "Mizue",
-      "rarity": "Rare Shiny",
-      "flavorText": "Watch your step when wandering areas oceans once covered. What looks like a stone could be this Pokémon, and it will curse you if you kick it.",
-      "nationalPokedexNumbers": [
-        222
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV049.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV049_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV049",
@@ -5509,6 +5509,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV050",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its shell is overflowing with its heightened otherworldly energy. The ectoplasm serves as protection for this Pokémon's core spirit.",
+      "nationalPokedexNumbers": [
+        864
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV050.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV050_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5526,22 +5542,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV050",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its shell is overflowing with its heightened otherworldly energy. The ectoplasm serves as protection for this Pokémon's core spirit.",
-      "nationalPokedexNumbers": [
-        864
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV050.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV050_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV050",
@@ -5612,6 +5612,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV051",
+      "artist": "Mizue",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its upper whiskers are sensors that survey its surroundings. Its lower whiskers are organs that shoot electricity.",
+      "nationalPokedexNumbers": [
+        702
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV051.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV051_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5629,22 +5645,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV051",
-      "artist": "Mizue",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its upper whiskers are sensors that survey its surroundings. Its lower whiskers are organs that shoot electricity.",
-      "nationalPokedexNumbers": [
-        702
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV051.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV051_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV051",
@@ -5722,6 +5722,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV052",
+      "artist": "MAHOU",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon is said to have been born when a lonely spirit possessed a cold, leftover cup of tea.",
+      "nationalPokedexNumbers": [
+        854
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV052.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV052_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5739,22 +5755,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV052",
-      "artist": "MAHOU",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon is said to have been born when a lonely spirit possessed a cold, leftover cup of tea.",
-      "nationalPokedexNumbers": [
-        854
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV052.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV052_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV052",
@@ -5838,6 +5838,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV053",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Rare Shiny",
+      "flavorText": "This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found.",
+      "nationalPokedexNumbers": [
+        855
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV053.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV053_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5855,22 +5871,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV053",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Rare Shiny",
-      "flavorText": "This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found.",
-      "nationalPokedexNumbers": [
-        855
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV053.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV053_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV053",
@@ -5958,6 +5958,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV054",
+      "artist": "otumami",
+      "rarity": "Rare Shiny",
+      "flavorText": "Via the protrusion on its head, it senses other creatures' emotions. If you don't have a calm disposition, it will never warm up to you.",
+      "nationalPokedexNumbers": [
+        856
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV054.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV054_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -5975,22 +5991,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV054",
-      "artist": "otumami",
-      "rarity": "Rare Shiny",
-      "flavorText": "Via the protrusion on its head, it senses other creatures' emotions. If you don't have a calm disposition, it will never warm up to you.",
-      "nationalPokedexNumbers": [
-        856
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV054.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV054_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV054",
@@ -6079,6 +6079,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV055",
+      "artist": "Lee HyunJung",
+      "rarity": "Rare Shiny",
+      "flavorText": "No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently.",
+      "nationalPokedexNumbers": [
+        857
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV055.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV055_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6096,22 +6112,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV055",
-      "artist": "Lee HyunJung",
-      "rarity": "Rare Shiny",
-      "flavorText": "No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently.",
-      "nationalPokedexNumbers": [
-        857
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV055.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV055_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV055",
@@ -6195,6 +6195,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV056",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Shiny",
+      "flavorText": "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others.",
+      "nationalPokedexNumbers": [
+        858
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV056.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV056_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6212,22 +6228,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV056",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Shiny",
-      "flavorText": "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others.",
-      "nationalPokedexNumbers": [
-        858
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV056.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV056_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV056",
@@ -6309,6 +6309,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV057",
+      "artist": "Motofumi Fujiwara",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon was born from sweet-smelling particles in the air. Its body is made of cream.",
+      "nationalPokedexNumbers": [
+        868
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV057.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV057_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6326,22 +6342,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV057",
-      "artist": "Motofumi Fujiwara",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon was born from sweet-smelling particles in the air. Its body is made of cream.",
-      "nationalPokedexNumbers": [
-        868
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV057.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV057_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV057",
@@ -6421,6 +6421,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV058",
+      "artist": "MAHOU",
+      "rarity": "Rare Shiny",
+      "flavorText": "When it trusts a Trainer, it will treat them to berries it's decorated with cream.",
+      "nationalPokedexNumbers": [
+        869
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV058.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV058_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6438,22 +6454,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV058",
-      "artist": "MAHOU",
-      "rarity": "Rare Shiny",
-      "flavorText": "When it trusts a Trainer, it will treat them to berries it's decorated with cream.",
-      "nationalPokedexNumbers": [
-        869
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV058.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV058_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV058",
@@ -6538,6 +6538,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV059",
+      "artist": "Saya Tsuruta",
+      "rarity": "Rare Shiny",
+      "flavorText": "These intelligent Pokémon touch horns with each other to share information between them.",
+      "nationalPokedexNumbers": [
+        876
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV059.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV059_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6555,22 +6571,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV059",
-      "artist": "Saya Tsuruta",
-      "rarity": "Rare Shiny",
-      "flavorText": "These intelligent Pokémon touch horns with each other to share information between them.",
-      "nationalPokedexNumbers": [
-        876
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV059.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV059_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV059",
@@ -6648,6 +6648,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV060",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Shiny",
+      "flavorText": "After being reborn as a ghost Pokémon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas.",
+      "nationalPokedexNumbers": [
+        885
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV060.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV060_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6665,22 +6681,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV060",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Shiny",
-      "flavorText": "After being reborn as a ghost Pokémon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas.",
-      "nationalPokedexNumbers": [
-        885
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV060.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV060_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV060",
@@ -6769,6 +6769,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV061",
+      "artist": "tetsuya koizumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "It's capable of flying faster than 120 mph. It battles alongside Dreepy and dotes on them until they successfully evolve.",
+      "nationalPokedexNumbers": [
+        886
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV061.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV061_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6786,22 +6802,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV061",
-      "artist": "tetsuya koizumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "It's capable of flying faster than 120 mph. It battles alongside Dreepy and dotes on them until they successfully evolve.",
-      "nationalPokedexNumbers": [
-        886
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV061.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV061_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV061",
@@ -6881,6 +6881,22 @@
           "value": "-30"
         }
       ],
+      "number": "SV062",
+      "artist": "Naoki Saito",
+      "rarity": "Rare Shiny",
+      "flavorText": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles.",
+      "nationalPokedexNumbers": [
+        887
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV062.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV062_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -6898,22 +6914,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV062",
-      "artist": "Naoki Saito",
-      "rarity": "Rare Shiny",
-      "flavorText": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles.",
-      "nationalPokedexNumbers": [
-        887
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV062.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV062_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV062",
@@ -6995,6 +6995,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV063",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Shiny",
+      "flavorText": "The Farfetch'd of the Galar region are brave warriors, and they wield thick, tough leeks in battle.",
+      "nationalPokedexNumbers": [
+        83
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV063.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV063_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7012,22 +7028,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV063",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare Shiny",
-      "flavorText": "The Farfetch'd of the Galar region are brave warriors, and they wield thick, tough leeks in battle.",
-      "nationalPokedexNumbers": [
-        83
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV063.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV063_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV063",
@@ -7109,6 +7109,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV064",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "Only Farfetch'd that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat.",
+      "nationalPokedexNumbers": [
+        865
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV064.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV064_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7126,22 +7142,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV064",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "Only Farfetch'd that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat.",
-      "nationalPokedexNumbers": [
-        865
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV064.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV064_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV064",
@@ -7215,6 +7215,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV065",
+      "artist": "sowsow",
+      "rarity": "Rare Shiny",
+      "flavorText": "A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask's dark power.",
+      "nationalPokedexNumbers": [
+        562
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV065.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV065_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7232,22 +7248,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV065",
-      "artist": "sowsow",
-      "rarity": "Rare Shiny",
-      "flavorText": "A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask's dark power.",
-      "nationalPokedexNumbers": [
-        562
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV065.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV065_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV065",
@@ -7330,6 +7330,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV066",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "A powerful curse was woven into an ancient painting. After absorbing the spirit of a Yamask, the painting began to move.",
+      "nationalPokedexNumbers": [
+        867
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV066.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV066_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7347,22 +7363,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV066",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "A powerful curse was woven into an ancient painting. After absorbing the spirit of a Yamask, the painting began to move.",
-      "nationalPokedexNumbers": [
-        867
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV066.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV066_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV066",
@@ -7435,6 +7435,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV067",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "Most of its body has the same composition as coal. Fittingly, this Pokémon was first discovered in coal mines about 400 years ago.",
+      "nationalPokedexNumbers": [
+        837
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV067.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV067_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7452,22 +7468,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV067",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "Most of its body has the same composition as coal. Fittingly, this Pokémon was first discovered in coal mines about 400 years ago.",
-      "nationalPokedexNumbers": [
-        837
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV067.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV067_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV067",
@@ -7554,6 +7554,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV068",
+      "artist": "tetsuya koizumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "It forms coal inside its body. Coal dropped by this Pokémon once helped fuel the lives of people in the Galar region.",
+      "nationalPokedexNumbers": [
+        838
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV068.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV068_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7571,22 +7587,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV068",
-      "artist": "tetsuya koizumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "It forms coal inside its body. Coal dropped by this Pokémon once helped fuel the lives of people in the Galar region.",
-      "nationalPokedexNumbers": [
-        838
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV068.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV068_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV068",
@@ -7669,6 +7669,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "SV069",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "It's usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit.",
+      "nationalPokedexNumbers": [
+        839
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV069.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV069_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7686,22 +7702,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV069",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "It's usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit.",
-      "nationalPokedexNumbers": [
-        839
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV069.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV069_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV069",
@@ -7774,6 +7774,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV070",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Shiny",
+      "flavorText": "It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hide.",
+      "nationalPokedexNumbers": [
+        843
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV070.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV070_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7791,22 +7807,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV070",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Shiny",
-      "flavorText": "It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hide.",
-      "nationalPokedexNumbers": [
-        843
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV070.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV070_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV070",
@@ -7888,6 +7888,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV071",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its unique style of coiling allows it to blast sand out of its sand sac more efficiently.",
+      "nationalPokedexNumbers": [
+        844
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV071.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV071_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -7905,22 +7921,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV071",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its unique style of coiling allows it to blast sand out of its sand sac more efficiently.",
-      "nationalPokedexNumbers": [
-        844
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV071.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV071_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV071",
@@ -7993,6 +7993,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV072",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare Shiny",
+      "flavorText": "It's very curious, but its means of investigating things is to try to punch them with its tentacles. The search for food is what brings it onto land.",
+      "nationalPokedexNumbers": [
+        852
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV072.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV072_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8010,22 +8026,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV072",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare Shiny",
-      "flavorText": "It's very curious, but its means of investigating things is to try to punch them with its tentacles. The search for food is what brings it onto land.",
-      "nationalPokedexNumbers": [
-        852
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV072.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV072_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV072",
@@ -8108,6 +8108,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV073",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Shiny",
+      "flavorText": "A body made up of nothing but muscle makes the grappling moves this Pokémon performs with its tentacles tremendously powerful.",
+      "nationalPokedexNumbers": [
+        853
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV073.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV073_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8125,22 +8141,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV073",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Shiny",
-      "flavorText": "A body made up of nothing but muscle makes the grappling moves this Pokémon performs with its tentacles tremendously powerful.",
-      "nationalPokedexNumbers": [
-        853
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV073.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV073_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV073",
@@ -8219,6 +8219,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV074",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "Five of them are troopers, and one is the brass. The brass's orders are absolute.",
+      "nationalPokedexNumbers": [
+        870
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV074.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV074_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8236,22 +8252,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV074",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "Five of them are troopers, and one is the brass. The brass's orders are absolute.",
-      "nationalPokedexNumbers": [
-        870
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV074.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV074_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV074",
@@ -8337,6 +8337,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "SV075",
+      "artist": "Hitoshi Ariga",
+      "rarity": "Rare Shiny",
+      "flavorText": "It stands in grasslands, watching the sun's descent from zenith to horizon. This Pokémon has a talent for delivering dynamic kicks.",
+      "nationalPokedexNumbers": [
+        874
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV075.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV075_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8354,22 +8370,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV075",
-      "artist": "Hitoshi Ariga",
-      "rarity": "Rare Shiny",
-      "flavorText": "It stands in grasslands, watching the sun's descent from zenith to horizon. This Pokémon has a talent for delivering dynamic kicks.",
-      "nationalPokedexNumbers": [
-        874
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV075.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV075_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV075",
@@ -8441,6 +8441,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV076",
+      "artist": "Yumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.",
+      "nationalPokedexNumbers": [
+        109
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV076.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV076_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8458,22 +8474,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV076",
-      "artist": "Yumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.",
-      "nationalPokedexNumbers": [
-        109
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV076.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV076_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV076",
@@ -8552,6 +8552,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV077",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air.",
+      "nationalPokedexNumbers": [
+        110
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV077.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV077_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8569,22 +8585,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV077",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air.",
-      "nationalPokedexNumbers": [
-        110
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV077.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV077_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV077",
@@ -8664,6 +8664,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV078",
+      "artist": "Misa Tsutsui",
+      "rarity": "Rare Shiny",
+      "flavorText": "Thought to be the oldest form of Zigzagoon, it moves in zigzags and wreaks havoc upon its surroundings.",
+      "nationalPokedexNumbers": [
+        263
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV078.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV078_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8681,22 +8697,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV078",
-      "artist": "Misa Tsutsui",
-      "rarity": "Rare Shiny",
-      "flavorText": "Thought to be the oldest form of Zigzagoon, it moves in zigzags and wreaks havoc upon its surroundings.",
-      "nationalPokedexNumbers": [
-        263
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV078.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV078_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV078",
@@ -8781,6 +8781,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV079",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "This very aggressive Pokémon will recklessly challenge opponents stronger than itself.",
+      "nationalPokedexNumbers": [
+        264
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV079.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV079_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8798,22 +8814,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV079",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "This very aggressive Pokémon will recklessly challenge opponents stronger than itself.",
-      "nationalPokedexNumbers": [
-        264
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV079.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV079_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV079",
@@ -8892,6 +8892,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV080",
+      "artist": "Ryuta Fuse",
+      "rarity": "Rare Shiny",
+      "flavorText": "It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch.",
+      "nationalPokedexNumbers": [
+        862
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV080.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV080_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -8909,22 +8925,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV080",
-      "artist": "Ryuta Fuse",
-      "rarity": "Rare Shiny",
-      "flavorText": "It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch.",
-      "nationalPokedexNumbers": [
-        862
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV080.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV080_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV080",
@@ -8996,6 +8996,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV081",
+      "artist": "Saya Tsuruta",
+      "rarity": "Rare Shiny",
+      "flavorText": "Aided by the soft pads on its feet, it silently raids the food stores of other Pokémon. It survives off its ill-gotten gains.",
+      "nationalPokedexNumbers": [
+        827
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV081.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV081_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9013,22 +9029,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV081",
-      "artist": "Saya Tsuruta",
-      "rarity": "Rare Shiny",
-      "flavorText": "Aided by the soft pads on its feet, it silently raids the food stores of other Pokémon. It survives off its ill-gotten gains.",
-      "nationalPokedexNumbers": [
-        827
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV081.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV081_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV081",
@@ -9109,6 +9109,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV082",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Shiny",
+      "flavorText": "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it.",
+      "nationalPokedexNumbers": [
+        828
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV082.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV082_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9126,22 +9142,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV082",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare Shiny",
-      "flavorText": "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it.",
-      "nationalPokedexNumbers": [
-        828
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV082.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV082_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV082",
@@ -9223,6 +9223,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV083",
+      "artist": "Misa Tsutsui",
+      "rarity": "Rare Shiny",
+      "flavorText": "Through its nose, it sucks in the emanations produced by people and Pokémon when they feel annoyed. It thrives off this negative energy.",
+      "nationalPokedexNumbers": [
+        859
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV083.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV083_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9240,22 +9256,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV083",
-      "artist": "Misa Tsutsui",
-      "rarity": "Rare Shiny",
-      "flavorText": "Through its nose, it sucks in the emanations produced by people and Pokémon when they feel annoyed. It thrives off this negative energy.",
-      "nationalPokedexNumbers": [
-        859
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV083.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV083_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV083",
@@ -9340,6 +9340,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV084",
+      "artist": "SATOSHI NAKAI",
+      "rarity": "Rare Shiny",
+      "flavorText": "When it gets down on all fours as if to beg for forgiveness, it's trying to lure opponents in so that it can stab them with its spear-like hair.",
+      "nationalPokedexNumbers": [
+        860
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV084.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV084_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9357,22 +9373,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV084",
-      "artist": "SATOSHI NAKAI",
-      "rarity": "Rare Shiny",
-      "flavorText": "When it gets down on all fours as if to beg for forgiveness, it's trying to lure opponents in so that it can stab them with its spear-like hair.",
-      "nationalPokedexNumbers": [
-        860
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV084.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV084_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV084",
@@ -9453,6 +9453,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV085",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp.",
+      "nationalPokedexNumbers": [
+        861
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV085.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV085_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9470,22 +9486,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV085",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp.",
-      "nationalPokedexNumbers": [
-        861
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV085.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV085_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV085",
@@ -9572,6 +9572,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV086",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "Living with a savage, seafaring people has toughened this Pokémon's body so much that parts of it have turned to iron.",
+      "nationalPokedexNumbers": [
+        52
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV086.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV086_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9589,22 +9605,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV086",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "Living with a savage, seafaring people has toughened this Pokémon's body so much that parts of it have turned to iron.",
-      "nationalPokedexNumbers": [
-        52
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV086.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV086_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV086",
@@ -9690,6 +9690,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV087",
+      "artist": "Ryuta Fuse",
+      "rarity": "Rare Shiny",
+      "flavorText": "What appears to be an iron helmet is actually hardened hair. This Pokémon lives for the thrill of battle.",
+      "nationalPokedexNumbers": [
+        863
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV087.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV087_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9707,22 +9723,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV087",
-      "artist": "Ryuta Fuse",
-      "rarity": "Rare Shiny",
-      "flavorText": "What appears to be an iron helmet is actually hardened hair. This Pokémon lives for the thrill of battle.",
-      "nationalPokedexNumbers": [
-        863
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV087.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV087_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV087",
@@ -9806,6 +9806,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV088",
+      "artist": "tetsuya koizumi",
+      "rarity": "Rare Shiny",
+      "flavorText": "Living in mud with a high iron content has given it a strong steel body.",
+      "nationalPokedexNumbers": [
+        618
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV088.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV088_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9823,22 +9839,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV088",
-      "artist": "tetsuya koizumi",
-      "rarity": "Rare Shiny",
-      "flavorText": "Living in mud with a high iron content has given it a strong steel body.",
-      "nationalPokedexNumbers": [
-        618
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV088.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV088_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV088",
@@ -9926,6 +9926,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV089",
+      "artist": "kirisAki",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe.",
+      "nationalPokedexNumbers": [
+        823
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV089.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV089_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -9943,22 +9959,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV089",
-      "artist": "kirisAki",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe.",
-      "nationalPokedexNumbers": [
-        823
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV089.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV089_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV089",
@@ -10040,6 +10040,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV090",
+      "artist": "sowsow",
+      "rarity": "Rare Shiny",
+      "flavorText": "It digs up the ground with its trunk. It's also very strong, being able to carry loads of over five tons without any problem at all.",
+      "nationalPokedexNumbers": [
+        878
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV090.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV090_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10057,22 +10073,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV090",
-      "artist": "sowsow",
-      "rarity": "Rare Shiny",
-      "flavorText": "It digs up the ground with its trunk. It's also very strong, being able to carry loads of over five tons without any problem at all.",
-      "nationalPokedexNumbers": [
-        878
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV090.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV090_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV090",
@@ -10161,6 +10161,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "SV091",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "They came over from another region long ago and worked together with humans. Their green skin is resistant to water.",
+      "nationalPokedexNumbers": [
+        879
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV091.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV091_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10178,22 +10194,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV091",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "They came over from another region long ago and worked together with humans. Their green skin is resistant to water.",
-      "nationalPokedexNumbers": [
-        879
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV091.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV091_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV091",
@@ -10280,6 +10280,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV092",
+      "artist": "Souichirou Gunjima",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its body resembles polished metal, and it's both lightweight and strong. The only drawback is that it rusts easily.",
+      "nationalPokedexNumbers": [
+        884
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV092.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV092_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10297,22 +10313,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV092",
-      "artist": "Souichirou Gunjima",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its body resembles polished metal, and it's both lightweight and strong. The only drawback is that it rusts easily.",
-      "nationalPokedexNumbers": [
-        884
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV092.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV092_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV092",
@@ -10394,6 +10394,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV093",
+      "artist": "MAHOU",
+      "rarity": "Rare Shiny",
+      "flavorText": "The way it brushes away grime with its tail can be helpful when cleaning. But its focus on spotlessness can make cleaning more of a hassle.",
+      "nationalPokedexNumbers": [
+        572
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV093.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV093_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10411,22 +10427,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV093",
-      "artist": "MAHOU",
-      "rarity": "Rare Shiny",
-      "flavorText": "The way it brushes away grime with its tail can be helpful when cleaning. But its focus on spotlessness can make cleaning more of a hassle.",
-      "nationalPokedexNumbers": [
-        572
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV093.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV093_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV093",
@@ -10503,6 +10503,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV094",
+      "artist": "kirisAki",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its body secretes oil that this Pokémon spreads over its nest as a coating to protect it from dust. Cinccino won't tolerate even a speck of the stuff.",
+      "nationalPokedexNumbers": [
+        573
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV094.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV094_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10520,22 +10536,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV094",
-      "artist": "kirisAki",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its body secretes oil that this Pokémon spreads over its nest as a coating to protect it from dust. Cinccino won't tolerate even a speck of the stuff.",
-      "nationalPokedexNumbers": [
-        573
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV094.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV094_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV094",
@@ -10613,6 +10613,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV095",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare Shiny",
+      "flavorText": "They are better at swimming than flying, and they happily eat their favorite food, peat moss, as they dive underwater.",
+      "nationalPokedexNumbers": [
+        580
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV095.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV095_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10630,22 +10646,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV095",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare Shiny",
-      "flavorText": "They are better at swimming than flying, and they happily eat their favorite food, peat moss, as they dive underwater.",
-      "nationalPokedexNumbers": [
-        580
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV095.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV095_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV095",
@@ -10726,6 +10726,22 @@
           "value": "-30"
         }
       ],
+      "number": "SV096",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Shiny",
+      "flavorText": "Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.",
+      "nationalPokedexNumbers": [
+        581
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV096.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV096_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10743,22 +10759,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV096",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare Shiny",
-      "flavorText": "Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.",
-      "nationalPokedexNumbers": [
-        581
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV096.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV096_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV096",
@@ -10831,6 +10831,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV097",
+      "artist": "Misa Tsutsui",
+      "rarity": "Rare Shiny",
+      "flavorText": "It excels at digging holes. Using its ears, it can dig a nest 33 feet deep in one night.",
+      "nationalPokedexNumbers": [
+        659
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV097.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV097_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10848,22 +10864,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV097",
-      "artist": "Misa Tsutsui",
-      "rarity": "Rare Shiny",
-      "flavorText": "It excels at digging holes. Using its ears, it can dig a nest 33 feet deep in one night.",
-      "nationalPokedexNumbers": [
-        659
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV097.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV097_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV097",
@@ -10942,6 +10942,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV098",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "It knows the forest inside and out. If it comes across a wounded Pokémon, Oranguru will gather medicinal herbs to treat it.",
+      "nationalPokedexNumbers": [
+        765
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV098.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV098_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -10959,22 +10975,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV098",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "It knows the forest inside and out. If it comes across a wounded Pokémon, Oranguru will gather medicinal herbs to treat it.",
-      "nationalPokedexNumbers": [
-        765
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV098.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV098_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV098",
@@ -11056,6 +11056,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV099",
+      "artist": "Naoki Saito",
+      "rarity": "Rare Shiny",
+      "flavorText": "Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries.",
+      "nationalPokedexNumbers": [
+        819
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV099.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV099_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11073,22 +11089,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV099",
-      "artist": "Naoki Saito",
-      "rarity": "Rare Shiny",
-      "flavorText": "Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries.",
-      "nationalPokedexNumbers": [
-        819
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV099.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV099_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV099",
@@ -11167,6 +11167,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV100",
+      "artist": "Hideki Ishikawa",
+      "rarity": "Rare Shiny",
+      "flavorText": "It stashes berries in its tail—so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn't notice the loss.",
+      "nationalPokedexNumbers": [
+        820
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV100.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV100_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11184,22 +11200,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV100",
-      "artist": "Hideki Ishikawa",
-      "rarity": "Rare Shiny",
-      "flavorText": "It stashes berries in its tail—so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn't notice the loss.",
-      "nationalPokedexNumbers": [
-        820
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV100.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV100_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV100",
@@ -11287,6 +11287,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV101",
+      "artist": "Lee HyunJung",
+      "rarity": "Rare Shiny",
+      "flavorText": "It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle—even a defeat increases its strength a bit.",
+      "nationalPokedexNumbers": [
+        821
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV101.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV101_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11304,22 +11320,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV101",
-      "artist": "Lee HyunJung",
-      "rarity": "Rare Shiny",
-      "flavorText": "It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle—even a defeat increases its strength a bit.",
-      "nationalPokedexNumbers": [
-        821
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV101.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV101_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV101",
@@ -11408,6 +11408,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV102",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Shiny",
+      "flavorText": "Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies.",
+      "nationalPokedexNumbers": [
+        822
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV102.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV102_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11425,22 +11441,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV102",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Shiny",
-      "flavorText": "Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies.",
-      "nationalPokedexNumbers": [
-        822
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV102.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV102_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV102",
@@ -11513,6 +11513,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "SV103",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare Shiny",
+      "flavorText": "If its fleece grows too long, Wooloo won't be able to move. Cloth made with the wool of this Pokémon is surprisingly strong.",
+      "nationalPokedexNumbers": [
+        831
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV103.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV103_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11530,22 +11546,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV103",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare Shiny",
-      "flavorText": "If its fleece grows too long, Wooloo won't be able to move. Cloth made with the wool of this Pokémon is surprisingly strong.",
-      "nationalPokedexNumbers": [
-        831
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV103.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV103_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV103",
@@ -11627,6 +11627,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV104",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "Its majestic horns are meant only to impress the opposite gender. They never see use in battle.",
+      "nationalPokedexNumbers": [
+        832
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV104.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV104_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11644,22 +11660,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV104",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "Its majestic horns are meant only to impress the opposite gender. They never see use in battle.",
-      "nationalPokedexNumbers": [
-        832
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV104.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV104_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV104",
@@ -11746,6 +11746,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV105",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        812
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV105.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV105_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11763,21 +11778,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV105",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        812
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV105.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV105_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV105",
@@ -11864,6 +11864,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV106",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        812
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV106.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV106_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -11881,21 +11896,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV106",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        812
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV106.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV106_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV106",
@@ -11985,6 +11985,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV107",
+      "artist": "aky CG Works",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        6
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV107.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV107_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12002,21 +12017,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV107",
-      "artist": "aky CG Works",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        6
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV107.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV107_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV107",
@@ -12103,6 +12103,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV108",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        851
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV108.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV108_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12120,21 +12135,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV108",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        851
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV108.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV108_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV108",
@@ -12210,6 +12210,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV109",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        851
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV109.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV109_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12227,21 +12242,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV109",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        851
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV109.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV109_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV109",
@@ -12327,6 +12327,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV110",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        131
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV110.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV110_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12344,21 +12359,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV110",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        131
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV110.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV110_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV110",
@@ -12435,6 +12435,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV111",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        131
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV111.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV111_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12452,21 +12467,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV111",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        131
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV111.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV111_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV111",
@@ -12551,6 +12551,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV112",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        849
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV112.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV112_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12568,21 +12583,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV112",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        849
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV112.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV112_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV112",
@@ -12658,6 +12658,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV113",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        849
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV113.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV113_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12675,21 +12690,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV113",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        849
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV113.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV113_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV113",
@@ -12778,6 +12778,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV114",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        876
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV114.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV114_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12795,21 +12810,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV114",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        876
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV114.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV114_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV114",
@@ -12892,6 +12892,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV115",
+      "artist": "aky CG Works",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        870
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV115.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV115_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -12909,21 +12924,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV115",
-      "artist": "aky CG Works",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        870
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV115.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV115_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV115",
@@ -13008,6 +13008,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV116",
+      "artist": "PLANETA Mochizuki",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        861
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV116.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV116_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13025,21 +13040,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV116",
-      "artist": "PLANETA Mochizuki",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        861
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV116.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV116_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV116",
@@ -13116,6 +13116,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV117",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        861
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV117.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV117_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13133,21 +13148,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV117",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        861
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV117.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV117_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV117",
@@ -13228,6 +13228,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV118",
+      "artist": "Saki Hayashiro",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        132
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV118.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV118_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13245,21 +13260,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV118",
-      "artist": "Saki Hayashiro",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        132
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV118.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV118_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV118",
@@ -13336,6 +13336,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV119",
+      "artist": "PLANETA Tsuji",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        132
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV119.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV119_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13353,21 +13368,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV119",
-      "artist": "PLANETA Tsuji",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        132
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV119.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV119_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV119",
@@ -13450,6 +13450,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV120",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        832
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV120.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV120_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13467,21 +13482,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV120",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        832
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV120.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV120_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV120",
@@ -13567,6 +13567,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "SV121",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        890
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV121.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV121_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13584,21 +13599,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV121",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        890
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV121.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV121_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV121",
@@ -13681,6 +13681,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "SV122",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        890
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh45sv/SV122.png",
+        "large": "https://images.pokemontcg.io/swsh45sv/SV122_hires.png"
+      },
       "set": {
         "id": "swsh45sv",
         "name": "Shining Fates Shiny Vault",
@@ -13698,21 +13713,6 @@
           "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
         }
-      },
-      "number": "SV122",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        890
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh45sv/SV122.png",
-        "large": "https://images.pokemontcg.io/swsh45sv/SV122_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh45sv-SV122",

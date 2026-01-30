@@ -42,6 +42,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG01",
+      "artist": "HYOGONOSUKE",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "An enigmatic Pokémon that happens to bear a resemblance to a Poké Ball. When excited, it discharges the electric current it has stored in its belly, then lets out a great, uproarious laugh.",
+      "nationalPokedexNumbers": [
+        100
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG01.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG01_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -60,23 +77,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG01",
-      "artist": "HYOGONOSUKE",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "An enigmatic Pokémon that happens to bear a resemblance to a Poké Ball. When excited, it discharges the electric current it has stored in its belly, then lets out a great, uproarious laugh.",
-      "nationalPokedexNumbers": [
-        100
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG01.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG01_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG01",
@@ -154,6 +154,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG02",
+      "artist": "Nurikabe",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It signals its emotions with its melodies. Scientists are studying these melodic patterns.",
+      "nationalPokedexNumbers": [
+        402
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG02.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG02_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -172,23 +189,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG02",
-      "artist": "Nurikabe",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It signals its emotions with its melodies. Scientists are studying these melodic patterns.",
-      "nationalPokedexNumbers": [
-        402
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG02.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG02_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG02",
@@ -272,6 +272,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "GG03",
+      "artist": "Saya Tsuruta",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "When Magmortar inhales deeply, the fire burning in its belly intensifies, rising in temperature to over 3,600 degrees Fahrenheit.",
+      "nationalPokedexNumbers": [
+        467
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG03.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG03_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -290,23 +307,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG03",
-      "artist": "Saya Tsuruta",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "When Magmortar inhales deeply, the fire burning in its belly intensifies, rising in temperature to over 3,600 degrees Fahrenheit.",
-      "nationalPokedexNumbers": [
-        467
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG03.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG03_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG03",
@@ -384,6 +384,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG04",
+      "artist": "Tomokazu Komiya",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "This Oricorio has drunk red nectar. If its Trainer gives the wrong order, this passionate Pokémon becomes fiercely angry.",
+      "nationalPokedexNumbers": [
+        741
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG04.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG04_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -402,23 +418,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG04",
-      "artist": "Tomokazu Komiya",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "This Oricorio has drunk red nectar. If its Trainer gives the wrong order, this passionate Pokémon becomes fiercely angry.",
-      "nationalPokedexNumbers": [
-        741
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG04.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG04_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG04",
@@ -490,6 +489,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG05",
+      "artist": "zig",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it.",
+      "nationalPokedexNumbers": [
+        131
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG05.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG05_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -508,23 +524,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG05",
-      "artist": "zig",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it.",
-      "nationalPokedexNumbers": [
-        131
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG05.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG05_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG05",
@@ -600,6 +599,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG06",
+      "artist": "Taira Akitsu",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It starts its life with a wondrous power that permits it to bond with any kind of Pokémon.",
+      "nationalPokedexNumbers": [
+        490
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG06.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG06_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -618,23 +634,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG06",
-      "artist": "Taira Akitsu",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It starts its life with a wondrous power that permits it to bond with any kind of Pokémon.",
-      "nationalPokedexNumbers": [
-        490
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG06.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG06_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG06",
@@ -713,6 +712,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG07",
+      "artist": "KEIICHIRO ITO",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "When it is resolute, its body fills with power and it becomes swifter. Its jumps are then too fast to follow.",
+      "nationalPokedexNumbers": [
+        647
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG07.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG07_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -731,23 +747,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG07",
-      "artist": "KEIICHIRO ITO",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "When it is resolute, its body fills with power and it becomes swifter. Its jumps are then too fast to follow.",
-      "nationalPokedexNumbers": [
-        647
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG07.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG07_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG07",
@@ -830,6 +829,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "GG08",
+      "artist": "Mina Nakai",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "The amount of electrical energy this Pokémon produces is proportional to the rate of its pulse. The voltage jumps while Electivire is battling.",
+      "nationalPokedexNumbers": [
+        466
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG08.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG08_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -848,23 +864,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG08",
-      "artist": "Mina Nakai",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "The amount of electrical energy this Pokémon produces is proportional to the rate of its pulse. The voltage jumps while Electivire is battling.",
-      "nationalPokedexNumbers": [
-        466
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG08.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG08_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG08",
@@ -945,6 +944,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG09",
+      "artist": "Nelnal",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It has an electrical organ on its chest. While generating electricity, it fills its surroundings with what sounds like the strumming of a bass guitar.",
+      "nationalPokedexNumbers": [
+        849
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG09.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG09_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -963,23 +978,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG09",
-      "artist": "Nelnal",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It has an electrical organ on its chest. While generating electricity, it fills its surroundings with what sounds like the strumming of a bass guitar.",
-      "nationalPokedexNumbers": [
-        849
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG09.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG09_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG09",
@@ -1062,6 +1060,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG10",
+      "artist": "Ryota Murayama",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.",
+      "nationalPokedexNumbers": [
+        151
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG10.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG10_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1080,23 +1094,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG10",
-      "artist": "Ryota Murayama",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.",
-      "nationalPokedexNumbers": [
-        151
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG10.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG10_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG10",
@@ -1182,6 +1179,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG11",
+      "artist": "sowsow",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "The phase of the moon apparently has some effect on its power. It's active on the night of a full moon.",
+      "nationalPokedexNumbers": [
+        337
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG11.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG11_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1200,23 +1214,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG11",
-      "artist": "sowsow",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "The phase of the moon apparently has some effect on its power. It's active on the night of a full moon.",
-      "nationalPokedexNumbers": [
-        337
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG11.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG11_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG11",
@@ -1296,6 +1293,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG12",
+      "artist": "Scav",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "DNA from a space virus mutated and became a Pokémon. It appears where auroras are seen.",
+      "nationalPokedexNumbers": [
+        386
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG12.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG12_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1314,23 +1327,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG12",
-      "artist": "Scav",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "DNA from a space virus mutated and became a Pokémon. It appears where auroras are seen.",
-      "nationalPokedexNumbers": [
-        386
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG12.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG12_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG12",
@@ -1406,6 +1402,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG13",
+      "artist": "Haruko Ichikawa",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It can instantly create many diamonds by compressing the carbon in the air between its hands.",
+      "nationalPokedexNumbers": [
+        719
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG13.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG13_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1424,23 +1437,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG13",
-      "artist": "Haruko Ichikawa",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It can instantly create many diamonds by compressing the carbon in the air between its hands.",
-      "nationalPokedexNumbers": [
-        719
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG13.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG13_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG13",
@@ -1517,6 +1513,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG14",
+      "artist": "Yano Keiji",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Comfey picks flowers with its vine and decorates itself with them. For some reason, flowers won't wither once they're attached to a Comfey.",
+      "nationalPokedexNumbers": [
+        764
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG14.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG14_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1535,23 +1548,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG14",
-      "artist": "Yano Keiji",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Comfey picks flowers with its vine and decorates itself with them. For some reason, flowers won't wither once they're attached to a Comfey.",
-      "nationalPokedexNumbers": [
-        764
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG14.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG14_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG14",
@@ -1628,6 +1624,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG15",
+      "artist": "Nobuhiro Imagawa",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "When it rotates itself, it gives off light similar to the sun, thus blinding its foes.",
+      "nationalPokedexNumbers": [
+        338
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG15.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG15_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1646,23 +1659,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG15",
-      "artist": "Nobuhiro Imagawa",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "When it rotates itself, it gives off light similar to the sun, thus blinding its foes.",
-      "nationalPokedexNumbers": [
-        338
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG15.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG15_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG15",
@@ -1741,6 +1737,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG16",
+      "artist": "Uta",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters.",
+      "nationalPokedexNumbers": [
+        359
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG16.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG16_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1759,23 +1772,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG16",
-      "artist": "Uta",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters.",
-      "nationalPokedexNumbers": [
-        359
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG16.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG16_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG16",
@@ -1854,6 +1850,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG17",
+      "artist": "NC Empire",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it.",
+      "nationalPokedexNumbers": [
+        828
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG17.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG17_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1872,23 +1885,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG17",
-      "artist": "NC Empire",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it.",
-      "nationalPokedexNumbers": [
-        828
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG17.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG17_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG17",
@@ -1974,6 +1970,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG18",
+      "artist": "Shinya Komatsu",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Some say that Magnezone receives signals from space via the antenna on its head and that it's being controlled by some mysterious being.",
+      "nationalPokedexNumbers": [
+        462
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG18.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG18_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -1992,23 +2005,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG18",
-      "artist": "Shinya Komatsu",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Some say that Magnezone receives signals from space via the antenna on its head and that it's being controlled by some mysterious being.",
-      "nationalPokedexNumbers": [
-        462
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG18.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG18_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG18",
@@ -2076,6 +2072,22 @@
           "text": ""
         }
       ],
+      "number": "GG19",
+      "artist": "Asako Ito",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "On sunny days, it flies freely through the sky and blends into the clouds. It sings in a beautiful soprano.",
+      "nationalPokedexNumbers": [
+        334
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG19.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG19_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2094,23 +2106,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG19",
-      "artist": "Asako Ito",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "On sunny days, it flies freely through the sky and blends into the clouds. It sings in a beautiful soprano.",
-      "nationalPokedexNumbers": [
-        334
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG19.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG19_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG19",
@@ -2183,6 +2178,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG20",
+      "artist": "Teeziro",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It can telepathically communicate with people. It changes its appearance using its down that refracts light.",
+      "nationalPokedexNumbers": [
+        380
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG20.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG20_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2201,23 +2212,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG20",
-      "artist": "Teeziro",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It can telepathically communicate with people. It changes its appearance using its down that refracts light.",
-      "nationalPokedexNumbers": [
-        380
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG20.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG20_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG20",
@@ -2292,6 +2286,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "GG21",
+      "artist": "You Iribi",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy— it will fume and run riot if those dearest to it ever leave its side.",
+      "nationalPokedexNumbers": [
+        706
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG21.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG21_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2310,23 +2321,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG21",
-      "artist": "You Iribi",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy— it will fume and run riot if those dearest to it ever leave its side.",
-      "nationalPokedexNumbers": [
-        706
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG21.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG21_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG21",
@@ -2391,6 +2385,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG22",
+      "artist": "Miki Tanaka",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
+      "nationalPokedexNumbers": [
+        132
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG22.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG22_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2409,23 +2420,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG22",
-      "artist": "Miki Tanaka",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
-      "nationalPokedexNumbers": [
-        132
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG22.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG22_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG22",
@@ -2502,6 +2496,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG23",
+      "artist": "Kurata So",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "When it sees a person, it digs a hole with its tail to make its escape. If you happen to find one, consider yourself lucky.",
+      "nationalPokedexNumbers": [
+        206
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG23.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG23_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2520,23 +2530,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG23",
-      "artist": "Kurata So",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "When it sees a person, it digs a hole with its tail to make its escape. If you happen to find one, consider yourself lucky.",
-      "nationalPokedexNumbers": [
-        206
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG23.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG23_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG23",
@@ -2614,6 +2607,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG24",
+      "artist": "Yuu Nishida",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Miltank produces highly nutritious milk, so it's been supporting the lives of people and other Pokémon since ancient times.",
+      "nationalPokedexNumbers": [
+        241
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG24.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG24_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2632,23 +2642,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG24",
-      "artist": "Yuu Nishida",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Miltank produces highly nutritious milk, so it's been supporting the lives of people and other Pokémon since ancient times.",
-      "nationalPokedexNumbers": [
-        241
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG24.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG24_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG24",
@@ -2728,6 +2721,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG25",
+      "artist": "Amelicart",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It makes its nest by damming streams with bark and mud. It is known as an industrious worker.",
+      "nationalPokedexNumbers": [
+        400
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG25.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG25_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2746,23 +2756,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG25",
-      "artist": "Amelicart",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It makes its nest by damming streams with bark and mud. It is known as an industrious worker.",
-      "nationalPokedexNumbers": [
-        400
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG25.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG25_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG25",
@@ -2835,6 +2828,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG26",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It's exceedingly energetic, with enough stamina to keep running all through the night. Taking it for walks can be a challenging experience.",
+      "nationalPokedexNumbers": [
+        447
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG26.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG26_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2853,23 +2863,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG26",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It's exceedingly energetic, with enough stamina to keep running all through the night. Taking it for walks can be a challenging experience.",
-      "nationalPokedexNumbers": [
-        447
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG26.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG26_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG26",
@@ -2947,6 +2940,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG27",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It constantly grooms its cotton-like wings. It takes a shower to clean itself if it becomes dirty.",
+      "nationalPokedexNumbers": [
+        333
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG27.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG27_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -2965,23 +2974,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG27",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It constantly grooms its cotton-like wings. It takes a shower to clean itself if it becomes dirty.",
-      "nationalPokedexNumbers": [
-        333
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG27.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG27_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG27",
@@ -3059,6 +3051,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG28",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "If it finds bad children who won't listen to their parents, it will spirit them away—or so it's said.",
+      "nationalPokedexNumbers": [
+        355
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG28.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG28_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3077,23 +3086,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG28",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "If it finds bad children who won't listen to their parents, it will spirit them away—or so it's said.",
-      "nationalPokedexNumbers": [
-        355
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG28.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG28_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG28",
@@ -3173,6 +3165,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG29",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongside water.",
+      "nationalPokedexNumbers": [
+        399
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG29.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG29_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3191,23 +3200,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG29",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongside water.",
-      "nationalPokedexNumbers": [
-        399
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG29.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG29_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG29",
@@ -3288,6 +3280,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG30",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG30.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG30_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3306,23 +3315,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG30",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
-      "nationalPokedexNumbers": [
-        25
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG30.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG30_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG30",
@@ -3405,6 +3397,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG31",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It undertakes photosynthesis with its body, making oxygen. The leaf on its head wilts if it is thirsty.",
+      "nationalPokedexNumbers": [
+        387
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG31.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG31_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3423,23 +3432,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG31",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It undertakes photosynthesis with its body, making oxygen. The leaf on its head wilts if it is thirsty.",
-      "nationalPokedexNumbers": [
-        387
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG31.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG31_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG31",
@@ -3512,6 +3504,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG32",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off.",
+      "nationalPokedexNumbers": [
+        46
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG32.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG32_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3530,23 +3539,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG32",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off.",
-      "nationalPokedexNumbers": [
-        46
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG32.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG32_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG32",
@@ -3628,6 +3620,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG33",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It has a very tenacious nature. Its acute sense of smell lets it chase a chosen prey without ever losing track.",
+      "nationalPokedexNumbers": [
+        261
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG33.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG33_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3646,23 +3655,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG33",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It has a very tenacious nature. Its acute sense of smell lets it chase a chosen prey without ever losing track.",
-      "nationalPokedexNumbers": [
-        261
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG33.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG33_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG33",
@@ -3744,6 +3736,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG34",
+      "artist": "Kouki Saitou",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Rubbing its fleece generates electricity. You'll want to pet it because it's cute, but if you use your bare hand, you'll get a painful shock.",
+      "nationalPokedexNumbers": [
+        179
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG34.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG34_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3762,23 +3770,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG34",
-      "artist": "Kouki Saitou",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Rubbing its fleece generates electricity. You'll want to pet it because it's cute, but if you use your bare hand, you'll get a painful shock.",
-      "nationalPokedexNumbers": [
-        179
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG34.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG34_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG34",
@@ -3861,6 +3852,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG35",
+      "artist": "Jiro Sasumo",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        470
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG35.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG35_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3879,22 +3886,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG35",
-      "artist": "Jiro Sasumo",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        470
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG35.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG35_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG35",
@@ -3977,6 +3968,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "GG36",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG36.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG36_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -3995,22 +4002,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG36",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        244
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG36.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG36_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG36",
@@ -4095,6 +4086,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG37",
+      "artist": "nagano",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        514
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG37.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG37_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4113,22 +4120,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG37",
-      "artist": "nagano",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        514
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG37.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG37_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG37",
@@ -4210,6 +4201,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG38",
+      "artist": "Atsushi Furusawa",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG38.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG38_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4228,22 +4234,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG38",
-      "artist": "Atsushi Furusawa",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG38.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG38_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG38",
@@ -4325,6 +4315,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG39",
+      "artist": "Jerky",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        457
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG39.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG39_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4343,22 +4349,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG39",
-      "artist": "Jerky",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        457
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG39.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG39_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG39",
@@ -4445,6 +4435,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG40",
+      "artist": "Gemi",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        471
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG40.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG40_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4463,22 +4469,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG40",
-      "artist": "Gemi",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        471
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG40.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG40_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG40",
@@ -4559,6 +4549,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "GG41",
+      "artist": "nagimiso",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        243
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG41.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG41_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4577,22 +4583,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG41",
-      "artist": "nagimiso",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        243
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG41.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG41_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG41",
@@ -4678,6 +4668,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG42",
+      "artist": "aoki",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        807
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG42.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG42_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4696,22 +4702,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG42",
-      "artist": "aoki",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        807
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG42.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG42_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG42",
@@ -4794,6 +4784,22 @@
           "value": "×2"
         }
       ],
+      "number": "GG43",
+      "artist": "Ligton",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        807
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG43.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG43_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4812,22 +4818,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG43",
-      "artist": "Ligton",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        807
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG43.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG43_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG43",
@@ -4918,6 +4908,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG44",
+      "artist": "GOSSAN",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        150
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG44.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG44_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -4936,22 +4942,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG44",
-      "artist": "GOSSAN",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        150
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG44.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG44_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG44",
@@ -5041,6 +5031,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "GG45",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        386
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG45.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG45_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5059,22 +5065,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG45",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        386
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG45.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG45_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG45",
@@ -5165,6 +5155,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG46",
+      "artist": "DOM",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        386
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG46.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG46_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5183,22 +5189,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG46",
-      "artist": "DOM",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        386
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG46.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG46_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG46",
@@ -5287,6 +5277,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG47",
+      "artist": "sui",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        858
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG47.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG47_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5305,22 +5311,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG47",
-      "artist": "sui",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        858
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG47.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG47_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG47",
@@ -5403,6 +5393,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG48",
+      "artist": "Hataya",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        888
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG48.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG48_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5421,22 +5426,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG48",
-      "artist": "Hataya",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        888
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG48.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG48_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG48",
@@ -5520,6 +5509,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG49",
+      "artist": "Yuka Morii",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        452
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG49.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG49_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5538,22 +5543,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG49",
-      "artist": "Yuka Morii",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        452
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG49.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG49_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG49",
@@ -5635,6 +5624,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG50",
+      "artist": "Pani Kobayashi",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        491
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG50.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG50_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5653,22 +5658,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG50",
-      "artist": "Pani Kobayashi",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        491
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG50.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG50_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG50",
@@ -5753,6 +5742,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG51",
+      "artist": "kodama",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        503
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG51.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG51_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5771,22 +5776,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG51",
-      "artist": "kodama",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        503
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG51.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG51_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG51",
@@ -5868,6 +5857,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG52",
+      "artist": "Shibuzoh.",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        503
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG52.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG52_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -5886,22 +5891,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG52",
-      "artist": "Shibuzoh.",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        503
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG52.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG52_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG52",
@@ -5985,6 +5974,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG53",
+      "artist": "OKACHEKE",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        720
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG53.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG53_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6003,22 +6007,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG53",
-      "artist": "OKACHEKE",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        720
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG53.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG53_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG53",
@@ -6107,6 +6095,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG54",
+      "artist": "Haru Akasaka",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        889
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG54.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG54_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6125,22 +6129,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG54",
-      "artist": "Haru Akasaka",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        889
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG54.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG54_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG54",
@@ -6225,6 +6213,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "GG55",
+      "artist": "Aya Kusube",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        486
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG55.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG55_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6243,22 +6247,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG55",
-      "artist": "Aya Kusube",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        486
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG55.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG55_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG55",
@@ -6340,6 +6328,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG56",
+      "artist": "SIE NANAHARA",
+      "rarity": "Rare Holo VSTAR",
+      "nationalPokedexNumbers": [
+        571
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG56.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG56_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6358,22 +6362,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG56",
-      "artist": "SIE NANAHARA",
-      "rarity": "Rare Holo VSTAR",
-      "nationalPokedexNumbers": [
-        571
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG56.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG56_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG56",
@@ -6421,6 +6409,19 @@
         "You can use this card only if you discard 2 Metal Energy cards from your hand. Search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG57",
+      "artist": "Naoki Saito",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG57.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG57_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6439,19 +6440,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG57",
-      "artist": "Naoki Saito",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG57.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG57_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG57",
@@ -6499,6 +6487,19 @@
         "Put 1 of your Colorless Pokémon that has any damage counters on it and all attached cards into your hand.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG58",
+      "artist": "chibi",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG58.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG58_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6517,19 +6518,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG58",
-      "artist": "chibi",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG58.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG58_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG58",
@@ -6577,6 +6565,19 @@
         "Look at the top 5 cards of your deck and put 3 of them into your hand. Put the other cards in the Lost Zone.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG59",
+      "artist": "kantaro",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG59.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG59_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6595,19 +6596,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG59",
-      "artist": "kantaro",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG59.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG59_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG59",
@@ -6655,6 +6643,19 @@
         "Draw cards until you have 5 cards in your hand. If any of your Pokémon were Knocked Out during your opponent's last turn, draw cards until you have 8 cards in your hand instead.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG60",
+      "artist": "Atsuya Uki",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG60.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG60_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6673,19 +6674,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG60",
-      "artist": "Atsuya Uki",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG60.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG60_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG60",
@@ -6733,6 +6721,19 @@
         "Draw 2 cards. If you drew any cards in this way, attach up to 2 Grass Energy cards from your hand to 1 of your Benched Pokémon.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG61",
+      "artist": "Yoriyuki Ikegami",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG61.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG61_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6751,19 +6752,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG61",
-      "artist": "Yoriyuki Ikegami",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG61.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG61_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG61",
@@ -6811,6 +6799,19 @@
         "During this turn, your Fighting Pokémon's attacks do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). During your turn, if this Grant is in your discard pile, you may discard 2 cards, except any Grant, from your hand. If you do, put this Grant into your hand. (This effect doesn't use up your Supporter card for the turn.)",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG62",
+      "artist": "Oswaldo KATO",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG62.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG62_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6829,19 +6830,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG62",
-      "artist": "Oswaldo KATO",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG62.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG62_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG62",
@@ -6889,6 +6877,19 @@
         "Search your deck for a Water Pokémon and an Item card, reveal them, and put them into your hand. Then, shuffle your deck.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG63",
+      "artist": "Naoki Saito",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG63.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG63_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6907,19 +6908,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG63",
-      "artist": "Naoki Saito",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG63.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG63_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG63",
@@ -6967,6 +6955,18 @@
         "Attach a Water Energy card from your discard pile to 1 of your Pokémon V. If you do, draw 3 cards.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG64",
+      "artist": "saino misaki",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG64.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG64_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -6985,19 +6985,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG64",
-      "artist": "saino misaki",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG64.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG64_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG64",
@@ -7045,6 +7032,18 @@
         "You can play this card only if any of your Pokémon were Knocked Out during your opponent's last turn. Attach a basic Energy card from your discard pile to 1 of your Pokémon. If you do, search your deck for a card and put it into your hand. Then, shuffle your deck.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG65",
+      "artist": "GIDORA",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG65.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG65_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -7063,19 +7062,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG65",
-      "artist": "GIDORA",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG65.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG65_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG65",
@@ -7123,6 +7109,19 @@
         "You can use this card only if your opponent has 3 or fewer Prize cards remaining. Each player shuffles their hand into their deck. Then, you draw 6 cards, and your opponent draws 2 cards.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "GG66",
+      "artist": "Toshinao Aoki",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG66.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG66_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -7141,19 +7140,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG66",
-      "artist": "Toshinao Aoki",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG66.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG66_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG66",
@@ -7235,6 +7221,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG67",
+      "artist": "AKIRA EGAWA",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        484
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG67.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG67_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -7253,22 +7255,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG67",
-      "artist": "AKIRA EGAWA",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        484
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG67.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG67_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG67",
@@ -7362,6 +7348,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "GG68",
+      "artist": "AKIRA EGAWA",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        483
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG68.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG68_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -7380,22 +7382,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG68",
-      "artist": "AKIRA EGAWA",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        483
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG68.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG68_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG68",
@@ -7475,6 +7461,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG69",
+      "artist": "AKIRA EGAWA",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        487
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG69.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG69_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -7493,22 +7495,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG69",
-      "artist": "AKIRA EGAWA",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        487
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG69.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG69_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG69",
@@ -7591,6 +7577,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "GG70",
+      "artist": "AKIRA EGAWA",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        493
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG70.png",
+        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG70_hires.png"
+      },
       "set": {
         "id": "swsh12pt5gg",
         "name": "Crown Zenith Galarian Gallery",
@@ -7609,22 +7611,6 @@
           "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
         }
-      },
-      "number": "GG70",
-      "artist": "AKIRA EGAWA",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        493
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh12pt5gg/GG70.png",
-        "large": "https://images.pokemontcg.io/swsh12pt5gg/GG70_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG70",
@@ -7661,9 +7647,5 @@
         }
       }
     }
-  ],
-  "page": 1,
-  "pageSize": 250,
-  "count": 70,
-  "totalCount": 70
+  ]
 }

@@ -45,6 +45,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "1",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5000.",
+      "nationalPokedexNumbers": [
+        65
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/1.png",
+        "large": "https://images.pokemontcg.io/base1/1_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -61,20 +75,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "1",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5000.",
-      "nationalPokedexNumbers": [
-        65
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/1.png",
-        "large": "https://images.pokemontcg.io/base1/1_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-1",
@@ -115,6 +115,928 @@
           "reverseHoloAvg1": 0,
           "reverseHoloAvg7": 0,
           "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "base1-2",
+      "name": "Blastoise",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "52",
+      "hp": "100",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Wartortle",
+      "abilities": [
+        {
+          "name": "Rain Dance",
+          "text": "As often as you like during your turn (before your attack), you may attach 1 Water Energy card to 1 of your Water Pokémon. (This doesn't use up your 1 Energy card attachment for the turn.) This power can't be used if Blastoise is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Does 40 damage plus 10 more damage for each Water Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra Water Energy after the 2nd doesn't count."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "2",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "A brutal Pokémon with pressurized water jets on its shell. They are used for high-speed tackles.",
+      "nationalPokedexNumbers": [
+        9
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/2.png",
+        "large": "https://images.pokemontcg.io/base1/2_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 96.17,
+            "mid": 125,
+            "high": 500,
+            "market": 161.38,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 143.91,
+          "lowPrice": 20,
+          "trendPrice": 98.64,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 73.51,
+          "lowPriceExPlus": 69.99,
+          "avg1": 55,
+          "avg7": 97.95,
+          "avg30": 136.32,
+          "reverseHoloAvg1": 100,
+          "reverseHoloAvg7": 50.43,
+          "reverseHoloAvg30": 64.46
+        }
+      }
+    },
+    {
+      "id": "base1-3",
+      "name": "Chansey",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "55",
+      "hp": "120",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesTo": [
+        "Blissey"
+      ],
+      "attacks": [
+        {
+          "name": "Scrunch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all damage done to Chansey during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        {
+          "name": "Double-edge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Chansey does 80 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "3",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "A rare and elusive Pokémon that is said to bring happiness to those who manage to catch it.",
+      "nationalPokedexNumbers": [
+        113
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/3.png",
+        "large": "https://images.pokemontcg.io/base1/3_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 16.55,
+            "mid": 23,
+            "high": 54.99,
+            "market": 27.29,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 24.4,
+          "lowPrice": 3.5,
+          "trendPrice": 22.1,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 21.43,
+          "lowPriceExPlus": 23,
+          "avg1": 29.28,
+          "avg7": 24.2,
+          "avg30": 25.09,
+          "reverseHoloAvg1": 17.45,
+          "reverseHoloAvg7": 21.22,
+          "reverseHoloAvg30": 19.23
+        }
+      }
+    },
+    {
+      "id": "base1-4",
+      "name": "Charizard",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "76",
+      "hp": "120",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Charmeleon",
+      "abilities": [
+        {
+          "name": "Energy Burn",
+          "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Fire Spin",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": "Discard 2 Energy cards attached to Charizard in order to use this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "4",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Holo",
+      "flavorText": "Spits fire that is hot enough to melt boulders. Known to unintentionally cause forest fires.",
+      "nationalPokedexNumbers": [
+        6
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/4.png",
+        "large": "https://images.pokemontcg.io/base1/4_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 355.93,
+            "mid": 465.62,
+            "high": 999.99,
+            "market": 481.68,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1400,
+          "lowPrice": 550,
+          "trendPrice": 1916.72,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 1100,
+          "avg1": 2050,
+          "avg7": 2092.86,
+          "avg30": 2662.9,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "base1-5",
+      "name": "Clefairy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "14",
+      "hp": "40",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesTo": [
+        "Clefable"
+      ],
+      "attacks": [
+        {
+          "name": "Sing",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Metronome",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefairy's type is still Colorless.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "5",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
+      "nationalPokedexNumbers": [
+        35
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/5.png",
+        "large": "https://images.pokemontcg.io/base1/5_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 13.65,
+            "mid": 23.16,
+            "high": 95.98,
+            "market": 25.01,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 21.93,
+          "lowPrice": 4.99,
+          "trendPrice": 11.75,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 14,
+          "lowPriceExPlus": 14.5,
+          "avg1": 12.69,
+          "avg7": 11.68,
+          "avg30": 22.05,
+          "reverseHoloAvg1": 16.81,
+          "reverseHoloAvg7": 11.97,
+          "reverseHoloAvg30": 19.63
+        }
+      }
+    },
+    {
+      "id": "base1-6",
+      "name": "Gyarados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "41",
+      "hp": "100",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Magikarp",
+      "attacks": [
+        {
+          "name": "Dragon Rage",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Bubblebeam",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "40",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "6",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Holo",
+      "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/6.png",
+        "large": "https://images.pokemontcg.io/base1/6_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 15,
+            "mid": 29.99,
+            "high": 167.15,
+            "market": 33.9,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 37.01,
+          "lowPrice": 2,
+          "trendPrice": 18.75,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 14.3,
+          "lowPriceExPlus": 8,
+          "avg1": 11.79,
+          "avg7": 15.51,
+          "avg30": 24.69,
+          "reverseHoloAvg1": 12.94,
+          "reverseHoloAvg7": 13.88,
+          "reverseHoloAvg30": 12.87
+        }
+      }
+    },
+    {
+      "id": "base1-7",
+      "name": "Hitmonchan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "33",
+      "hp": "70",
+      "types": [
+        "Fighting"
+      ],
+      "attacks": [
+        {
+          "name": "Jab",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Special Punch",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "7",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "While seeming to do nothing, it fires punches in lightning-fast volleys that are impossible to see.",
+      "nationalPokedexNumbers": [
+        107
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/7.png",
+        "large": "https://images.pokemontcg.io/base1/7_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 5.98,
+            "mid": 11,
+            "high": 34.98,
+            "market": 18.45,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 34.95,
+          "lowPrice": 14.99,
+          "trendPrice": 76.97,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 40,
+          "avg1": 34.95,
+          "avg7": 60.65,
+          "avg30": 58.92,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "base1-8",
+      "name": "Machamp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "67",
+      "hp": "100",
+      "types": [
+        "Fighting"
+      ],
+      "evolvesFrom": "Machoke",
+      "abilities": [
+        {
+          "name": "Strikes Back",
+          "text": "Whenever your opponent's attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokémon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is Asleep, Confused, or Paralyzed when your opponent attacks.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Seismic Toss",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "8",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Using its amazing muscles, it throws powerful punches that can knock its victim clear over the horizon.",
+      "nationalPokedexNumbers": [
+        68
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/8.png",
+        "large": "https://images.pokemontcg.io/base1/8_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-8",
+        "updatedAt": "2023/03/27"
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 25,
+          "lowPrice": 17,
+          "trendPrice": 52.81,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 50,
+          "avg1": 25,
+          "avg7": 52.84,
+          "avg30": 75.57,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "base1-9",
+      "name": "Magneton",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "28",
+      "hp": "60",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Magnemite",
+      "evolvesTo": [
+        "Magnezone"
+      ],
+      "attacks": [
+        {
+          "name": "Thunder Wave",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Selfdestruct",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 80 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "9",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare Holo",
+      "flavorText": "Formed by several Magnemites linked together. It frequently appears when sunspots flare up.",
+      "nationalPokedexNumbers": [
+        82
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/9.png",
+        "large": "https://images.pokemontcg.io/base1/9_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 9.67,
+            "mid": 12.97,
+            "high": 44.49,
+            "market": 17.11,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 23.2,
+          "lowPrice": 2.54,
+          "trendPrice": 24.25,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 12.94,
+          "lowPriceExPlus": 9.99,
+          "avg1": 6.99,
+          "avg7": 17.71,
+          "avg30": 21.87,
+          "reverseHoloAvg1": 8.8,
+          "reverseHoloAvg7": 13.69,
+          "reverseHoloAvg30": 12.92
         }
       }
     },
@@ -164,6 +1086,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "10",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "A scientist created this Pokémon after years of horrific gene-splicing and DNA engineering experiments.",
+      "nationalPokedexNumbers": [
+        150
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/10.png",
+        "large": "https://images.pokemontcg.io/base1/10_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -180,20 +1116,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "10",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "A scientist created this Pokémon after years of horrific gene-splicing and DNA engineering experiments.",
-      "nationalPokedexNumbers": [
-        150
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/10.png",
-        "large": "https://images.pokemontcg.io/base1/10_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-10",
@@ -227,216 +1149,6 @@
           "reverseHoloAvg1": 0,
           "reverseHoloAvg7": 0,
           "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "base1-100",
-      "name": "Lightning Energy",
-      "supertype": "Energy",
-      "subtypes": [
-        "Basic"
-      ],
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "100",
-      "artist": "Keiji Kinebuchi",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/100.png",
-        "large": "https://images.pokemontcg.io/base1/100_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-100",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.08,
-            "mid": 0.36,
-            "high": 2,
-            "market": 0.44,
-            "directLow": 0.44
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-100",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 2.94,
-          "lowPrice": 0.35,
-          "trendPrice": 2.41,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.98,
-          "avg1": 0.98,
-          "avg7": 2.69,
-          "avg30": 1.93,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "base1-101",
-      "name": "Psychic Energy",
-      "supertype": "Energy",
-      "subtypes": [
-        "Basic"
-      ],
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "101",
-      "artist": "Keiji Kinebuchi",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/101.png",
-        "large": "https://images.pokemontcg.io/base1/101_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-101",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.07,
-            "mid": 0.32,
-            "high": 3,
-            "market": 0.39,
-            "directLow": 0.1
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-101",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.44,
-          "lowPrice": 0.02,
-          "trendPrice": 0.45,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 2.91,
-          "lowPriceExPlus": 0.02,
-          "avg1": 0.29,
-          "avg7": 0.34,
-          "avg30": 0.38,
-          "reverseHoloAvg1": 3,
-          "reverseHoloAvg7": 2.5,
-          "reverseHoloAvg30": 2.61
-        }
-      }
-    },
-    {
-      "id": "base1-102",
-      "name": "Water Energy",
-      "supertype": "Energy",
-      "subtypes": [
-        "Basic"
-      ],
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "102",
-      "artist": "Keiji Kinebuchi",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/102.png",
-        "large": "https://images.pokemontcg.io/base1/102_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-102",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.1,
-            "mid": 0.29,
-            "high": 19.97,
-            "market": 0.26,
-            "directLow": 0.14
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-102",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.3,
-          "lowPrice": 0.02,
-          "trendPrice": 0.28,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 1.66,
-          "lowPriceExPlus": 0.02,
-          "avg1": 0.36,
-          "avg7": 0.14,
-          "avg30": 0.26,
-          "reverseHoloAvg1": 4,
-          "reverseHoloAvg7": 0.83,
-          "reverseHoloAvg30": 0.92
         }
       }
     },
@@ -489,6 +1201,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "11",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Uses its powerful tail in battle to smash, constrict, then break its prey's bones.",
+      "nationalPokedexNumbers": [
+        34
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/11.png",
+        "large": "https://images.pokemontcg.io/base1/11_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -505,20 +1231,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "11",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "Uses its powerful tail in battle to smash, constrict, then break its prey's bones.",
-      "nationalPokedexNumbers": [
-        34
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/11.png",
-        "large": "https://images.pokemontcg.io/base1/11_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-11",
@@ -602,6 +1314,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "12",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse.",
+      "nationalPokedexNumbers": [
+        38
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/12.png",
+        "large": "https://images.pokemontcg.io/base1/12_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -618,20 +1344,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "12",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse.",
-      "nationalPokedexNumbers": [
-        38
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/12.png",
-        "large": "https://images.pokemontcg.io/base1/12_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-12",
@@ -718,6 +1430,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "13",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "An adept swimmer at both the front crawl and breaststroke. Easily overtakes the best human swimmers.",
+      "nationalPokedexNumbers": [
+        62
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/13.png",
+        "large": "https://images.pokemontcg.io/base1/13_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -734,20 +1460,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "13",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "An adept swimmer at both the front crawl and breaststroke. Easily overtakes the best human swimmers.",
-      "nationalPokedexNumbers": [
-        62
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/13.png",
-        "large": "https://images.pokemontcg.io/base1/13_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-13",
@@ -832,6 +1544,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "14",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+      "nationalPokedexNumbers": [
+        26
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/14.png",
+        "large": "https://images.pokemontcg.io/base1/14_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -848,20 +1574,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "14",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
-      "nationalPokedexNumbers": [
-        26
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/14.png",
-        "large": "https://images.pokemontcg.io/base1/14_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-14",
@@ -943,6 +1655,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "15",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Holo",
+      "flavorText": "This plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+      "nationalPokedexNumbers": [
+        3
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/15.png",
+        "large": "https://images.pokemontcg.io/base1/15_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -959,20 +1685,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "15",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Rare Holo",
-      "flavorText": "This plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
-      "nationalPokedexNumbers": [
-        3
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/15.png",
-        "large": "https://images.pokemontcg.io/base1/15_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-15",
@@ -1059,6 +1771,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "16",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "A legendary bird Pokémon said to appear from clouds while wielding enormous lightning bolts.",
+      "nationalPokedexNumbers": [
+        145
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/16.png",
+        "large": "https://images.pokemontcg.io/base1/16_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1075,20 +1801,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "16",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "A legendary bird Pokémon said to appear from clouds while wielding enormous lightning bolts.",
-      "nationalPokedexNumbers": [
-        145
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/16.png",
-        "large": "https://images.pokemontcg.io/base1/16_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-16",
@@ -1174,6 +1886,20 @@
           "value": "-30"
         }
       ],
+      "number": "17",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "flavorText": "Flies at high speed and attacks using the large, venomous stingers on its forelegs and tail.",
+      "nationalPokedexNumbers": [
+        15
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/17.png",
+        "large": "https://images.pokemontcg.io/base1/17_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1190,20 +1916,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "17",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "flavorText": "Flies at high speed and attacks using the large, venomous stingers on its forelegs and tail.",
-      "nationalPokedexNumbers": [
-        15
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/17.png",
-        "large": "https://images.pokemontcg.io/base1/17_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-17",
@@ -1292,6 +2004,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "18",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare",
+      "flavorText": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions.",
+      "nationalPokedexNumbers": [
+        148
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/18.png",
+        "large": "https://images.pokemontcg.io/base1/18_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1308,20 +2034,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "18",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Rare",
-      "flavorText": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions.",
-      "nationalPokedexNumbers": [
-        148
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/18.png",
-        "large": "https://images.pokemontcg.io/base1/18_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-18",
@@ -1413,6 +2125,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "19",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "flavorText": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+      "nationalPokedexNumbers": [
+        51
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/19.png",
+        "large": "https://images.pokemontcg.io/base1/19_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1429,20 +2155,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "19",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "flavorText": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
-      "nationalPokedexNumbers": [
-        51
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/19.png",
-        "large": "https://images.pokemontcg.io/base1/19_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-19",
@@ -1476,117 +2188,6 @@
           "reverseHoloAvg1": 5,
           "reverseHoloAvg7": 2.45,
           "reverseHoloAvg30": 2.18
-        }
-      }
-    },
-    {
-      "id": "base1-2",
-      "name": "Blastoise",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "level": "52",
-      "hp": "100",
-      "types": [
-        "Water"
-      ],
-      "evolvesFrom": "Wartortle",
-      "abilities": [
-        {
-          "name": "Rain Dance",
-          "text": "As often as you like during your turn (before your attack), you may attach 1 Water Energy card to 1 of your Water Pokémon. (This doesn't use up your 1 Energy card attachment for the turn.) This power can't be used if Blastoise is Asleep, Confused, or Paralyzed.",
-          "type": "Pokémon Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Hydro Pump",
-          "cost": [
-            "Water",
-            "Water",
-            "Water"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40+",
-          "text": "Does 40 damage plus 10 more damage for each Water Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra Water Energy after the 2nd doesn't count."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Lightning",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "2",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "A brutal Pokémon with pressurized water jets on its shell. They are used for high-speed tackles.",
-      "nationalPokedexNumbers": [
-        9
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/2.png",
-        "large": "https://images.pokemontcg.io/base1/2_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 96.17,
-            "mid": 125,
-            "high": 500,
-            "market": 161.38,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 143.91,
-          "lowPrice": 20,
-          "trendPrice": 98.64,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 73.51,
-          "lowPriceExPlus": 69.99,
-          "avg1": 55,
-          "avg7": 97.95,
-          "avg30": 136.32,
-          "reverseHoloAvg1": 100,
-          "reverseHoloAvg7": 50.43,
-          "reverseHoloAvg30": 64.46
         }
       }
     },
@@ -1637,6 +2238,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "20",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "flavorText": "Normally found near power plants, it can wander away and cause major blackouts in cities.",
+      "nationalPokedexNumbers": [
+        125
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/20.png",
+        "large": "https://images.pokemontcg.io/base1/20_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1653,20 +2268,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "20",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "flavorText": "Normally found near power plants, it can wander away and cause major blackouts in cities.",
-      "nationalPokedexNumbers": [
-        125
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/20.png",
-        "large": "https://images.pokemontcg.io/base1/20_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-20",
@@ -1746,6 +2347,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "21",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "flavorText": "It stores electrical energy under very high pressure. It often explodes with little or no provocation.",
+      "nationalPokedexNumbers": [
+        101
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/21.png",
+        "large": "https://images.pokemontcg.io/base1/21_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1762,20 +2377,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "21",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "flavorText": "It stores electrical energy under very high pressure. It often explodes with little or no provocation.",
-      "nationalPokedexNumbers": [
-        101
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/21.png",
-        "large": "https://images.pokemontcg.io/base1/21_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-21",
@@ -1867,6 +2468,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "22",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "flavorText": "Very protective of its sprawling territory, this Pokémon will fiercely peck at any intruder.",
+      "nationalPokedexNumbers": [
+        17
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/22.png",
+        "large": "https://images.pokemontcg.io/base1/22_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1883,20 +2498,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "22",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "flavorText": "Very protective of its sprawling territory, this Pokémon will fiercely peck at any intruder.",
-      "nationalPokedexNumbers": [
-        17
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/22.png",
-        "large": "https://images.pokemontcg.io/base1/22_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-22",
@@ -1983,6 +2584,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "23",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "A Pokémon that has been long admired for its beauty. It runs gracefully, as if on wings.",
+      "nationalPokedexNumbers": [
+        59
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/23.png",
+        "large": "https://images.pokemontcg.io/base1/23_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -1999,20 +2614,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "23",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "A Pokémon that has been long admired for its beauty. It runs gracefully, as if on wings.",
-      "nationalPokedexNumbers": [
-        59
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/23.png",
-        "large": "https://images.pokemontcg.io/base1/23_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-23",
@@ -2099,6 +2700,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "24",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Uncommon",
+      "flavorText": "When it swings its burning tail, it raises the temperature to unbearably high levels.",
+      "nationalPokedexNumbers": [
+        5
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/24.png",
+        "large": "https://images.pokemontcg.io/base1/24_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2115,20 +2730,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "24",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Uncommon",
-      "flavorText": "When it swings its burning tail, it raises the temperature to unbearably high levels.",
-      "nationalPokedexNumbers": [
-        5
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/24.png",
-        "large": "https://images.pokemontcg.io/base1/24_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-24",
@@ -2215,6 +2816,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "25",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Uncommon",
+      "flavorText": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+      "nationalPokedexNumbers": [
+        87
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/25.png",
+        "large": "https://images.pokemontcg.io/base1/25_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2231,20 +2846,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "25",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Uncommon",
-      "flavorText": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
-      "nationalPokedexNumbers": [
-        87
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/25.png",
-        "large": "https://images.pokemontcg.io/base1/25_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-25",
@@ -2317,6 +2918,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "26",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Long considered a mythical Pokémon until recently, when a small colony was found living underwater.",
+      "nationalPokedexNumbers": [
+        147
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/26.png",
+        "large": "https://images.pokemontcg.io/base1/26_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2333,20 +2948,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "26",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Long considered a mythical Pokémon until recently, when a small colony was found living underwater.",
-      "nationalPokedexNumbers": [
-        147
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/26.png",
-        "large": "https://images.pokemontcg.io/base1/26_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-26",
@@ -2436,6 +3037,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "27",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "The sprig of green onions it holds is its weapon. This sprig is used much like a metal sword.",
+      "nationalPokedexNumbers": [
+        83
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/27.png",
+        "large": "https://images.pokemontcg.io/base1/27_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2452,20 +3067,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "27",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "The sprig of green onions it holds is its weapon. This sprig is used much like a metal sword.",
-      "nationalPokedexNumbers": [
-        83
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/27.png",
-        "large": "https://images.pokemontcg.io/base1/27_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-27",
@@ -2539,6 +3140,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "28",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+      "nationalPokedexNumbers": [
+        58
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/28.png",
+        "large": "https://images.pokemontcg.io/base1/28_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2555,20 +3170,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "28",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
-      "nationalPokedexNumbers": [
-        58
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/28.png",
-        "large": "https://images.pokemontcg.io/base1/28_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-28",
@@ -2652,6 +3253,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "29",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "flavorText": "Because of its ability to slip through block walls, it is said to be from another dimension.",
+      "nationalPokedexNumbers": [
+        93
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/29.png",
+        "large": "https://images.pokemontcg.io/base1/29_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2668,20 +3283,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "29",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "flavorText": "Because of its ability to slip through block walls, it is said to be from another dimension.",
-      "nationalPokedexNumbers": [
-        93
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/29.png",
-        "large": "https://images.pokemontcg.io/base1/29_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-29",
@@ -2715,127 +3316,6 @@
           "reverseHoloAvg1": 0,
           "reverseHoloAvg7": 0,
           "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "base1-3",
-      "name": "Chansey",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "55",
-      "hp": "120",
-      "types": [
-        "Colorless"
-      ],
-      "evolvesTo": [
-        "Blissey"
-      ],
-      "attacks": [
-        {
-          "name": "Scrunch",
-          "cost": [
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "",
-          "text": "Flip a coin. If heads, prevent all damage done to Chansey during your opponent's next turn. (Any other effects of attacks still happen.)"
-        },
-        {
-          "name": "Double-edge",
-          "cost": [
-            "Colorless",
-            "Colorless",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 4,
-          "damage": "80",
-          "text": "Chansey does 80 damage to itself."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "×2"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Psychic",
-          "value": "-30"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "3",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "A rare and elusive Pokémon that is said to bring happiness to those who manage to catch it.",
-      "nationalPokedexNumbers": [
-        113
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/3.png",
-        "large": "https://images.pokemontcg.io/base1/3_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 16.55,
-            "mid": 23,
-            "high": 54.99,
-            "market": 27.29,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 24.4,
-          "lowPrice": 3.5,
-          "trendPrice": 22.1,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 21.43,
-          "lowPriceExPlus": 23,
-          "avg1": 29.28,
-          "avg7": 24.2,
-          "avg30": 25.09,
-          "reverseHoloAvg1": 17.45,
-          "reverseHoloAvg7": 21.22,
-          "reverseHoloAvg30": 19.23
         }
       }
     },
@@ -2889,6 +3369,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "30",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "When the bulb on its back grows large, the Pokémon seems to lose the ability to stand on its hind legs.",
+      "nationalPokedexNumbers": [
+        2
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/30.png",
+        "large": "https://images.pokemontcg.io/base1/30_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -2905,20 +3399,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "30",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "When the bulb on its back grows large, the Pokémon seems to lose the ability to stand on its hind legs.",
-      "nationalPokedexNumbers": [
-        2
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/30.png",
-        "large": "https://images.pokemontcg.io/base1/30_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-30",
@@ -3000,6 +3480,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "31",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Merely by meditating, the Pokémon launches a powerful psychic energy attack.",
+      "nationalPokedexNumbers": [
+        124
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/31.png",
+        "large": "https://images.pokemontcg.io/base1/31_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3016,20 +3510,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "31",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Merely by meditating, the Pokémon launches a powerful psychic energy attack.",
-      "nationalPokedexNumbers": [
-        124
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/31.png",
-        "large": "https://images.pokemontcg.io/base1/31_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-31",
@@ -3117,6 +3597,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "32",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "It emits special alpha waves from its body that induce headaches even to those just nearby.",
+      "nationalPokedexNumbers": [
+        64
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/32.png",
+        "large": "https://images.pokemontcg.io/base1/32_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3133,20 +3627,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "32",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "It emits special alpha waves from its body that induce headaches even to those just nearby.",
-      "nationalPokedexNumbers": [
-        64
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/32.png",
-        "large": "https://images.pokemontcg.io/base1/32_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-32",
@@ -3232,6 +3712,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "33",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "flavorText": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.",
+      "nationalPokedexNumbers": [
+        14
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/33.png",
+        "large": "https://images.pokemontcg.io/base1/33_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3248,20 +3742,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "33",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "flavorText": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.",
-      "nationalPokedexNumbers": [
-        14
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/33.png",
-        "large": "https://images.pokemontcg.io/base1/33_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-33",
@@ -3351,6 +3831,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "34",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Its muscular body is so powerful that it must wear a power-save belt to help regulate its motions.",
+      "nationalPokedexNumbers": [
+        67
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/34.png",
+        "large": "https://images.pokemontcg.io/base1/34_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3367,20 +3861,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "34",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Its muscular body is so powerful that it must wear a power-save belt to help regulate its motions.",
-      "nationalPokedexNumbers": [
-        67
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/34.png",
-        "large": "https://images.pokemontcg.io/base1/34_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-34",
@@ -3462,6 +3942,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "35",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Uncommon",
+      "flavorText": "In the distant past, it was stronger than its horribly weak descendants that exist today.",
+      "nationalPokedexNumbers": [
+        129
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/35.png",
+        "large": "https://images.pokemontcg.io/base1/35_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3478,20 +3972,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "35",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Uncommon",
-      "flavorText": "In the distant past, it was stronger than its horribly weak descendants that exist today.",
-      "nationalPokedexNumbers": [
-        129
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/35.png",
-        "large": "https://images.pokemontcg.io/base1/35_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-35",
@@ -3577,6 +4057,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "36",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+      "nationalPokedexNumbers": [
+        126
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/36.png",
+        "large": "https://images.pokemontcg.io/base1/36_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3593,20 +4087,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "36",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
-      "nationalPokedexNumbers": [
-        126
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/36.png",
-        "large": "https://images.pokemontcg.io/base1/36_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-36",
@@ -3694,6 +4174,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "37",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Uncommon",
+      "flavorText": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom.",
+      "nationalPokedexNumbers": [
+        33
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/37.png",
+        "large": "https://images.pokemontcg.io/base1/37_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3710,20 +4204,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "37",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Uncommon",
-      "flavorText": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom.",
-      "nationalPokedexNumbers": [
-        33
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/37.png",
-        "large": "https://images.pokemontcg.io/base1/37_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-37",
@@ -3810,6 +4290,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "38",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+      "nationalPokedexNumbers": [
+        61
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/38.png",
+        "large": "https://images.pokemontcg.io/base1/38_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3826,20 +4320,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "38",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
-      "nationalPokedexNumbers": [
-        61
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/38.png",
-        "large": "https://images.pokemontcg.io/base1/38_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-38",
@@ -3928,6 +4408,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "39",
+      "artist": "Tomoaki Imakuni",
+      "rarity": "Uncommon",
+      "flavorText": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace.",
+      "nationalPokedexNumbers": [
+        137
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/39.png",
+        "large": "https://images.pokemontcg.io/base1/39_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -3944,20 +4438,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "39",
-      "artist": "Tomoaki Imakuni",
-      "rarity": "Uncommon",
-      "flavorText": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace.",
-      "nationalPokedexNumbers": [
-        137
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/39.png",
-        "large": "https://images.pokemontcg.io/base1/39_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-39",
@@ -3995,124 +4475,6 @@
       }
     },
     {
-      "id": "base1-4",
-      "name": "Charizard",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "level": "76",
-      "hp": "120",
-      "types": [
-        "Fire"
-      ],
-      "evolvesFrom": "Charmeleon",
-      "abilities": [
-        {
-          "name": "Energy Burn",
-          "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed.",
-          "type": "Pokémon Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Fire Spin",
-          "cost": [
-            "Fire",
-            "Fire",
-            "Fire",
-            "Fire"
-          ],
-          "convertedEnergyCost": 4,
-          "damage": "100",
-          "text": "Discard 2 Energy cards attached to Charizard in order to use this attack."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Water",
-          "value": "×2"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Fighting",
-          "value": "-30"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "4",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Rare Holo",
-      "flavorText": "Spits fire that is hot enough to melt boulders. Known to unintentionally cause forest fires.",
-      "nationalPokedexNumbers": [
-        6
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/4.png",
-        "large": "https://images.pokemontcg.io/base1/4_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 355.93,
-            "mid": 465.62,
-            "high": 999.99,
-            "market": 481.68,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1400,
-          "lowPrice": 550,
-          "trendPrice": 1916.72,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 1100,
-          "avg1": 2050,
-          "avg7": 2092.86,
-          "avg30": 2662.9,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
       "id": "base1-40",
       "name": "Raticate",
       "supertype": "Pokémon",
@@ -4143,7 +4505,7 @@
             "Colorless"
           ],
           "convertedEnergyCost": 3,
-          "damage": "",
+          "damage": "?",
           "text": "Does damage to the Defending Pokémon equal to half the Defending Pokémon's remaining HP (rounded up to the nearest 10)."
         }
       ],
@@ -4163,6 +4525,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "40",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "It uses its whiskers to maintain its balance. It seems to slow down if they are cut off.",
+      "nationalPokedexNumbers": [
+        20
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/40.png",
+        "large": "https://images.pokemontcg.io/base1/40_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4179,20 +4555,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "40",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "It uses its whiskers to maintain its balance. It seems to slow down if they are cut off.",
-      "nationalPokedexNumbers": [
-        20
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/40.png",
-        "large": "https://images.pokemontcg.io/base1/40_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-40",
@@ -4265,6 +4627,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "41",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "The protruding horn on its head is very hard. This horn is used for bashing through thick ice.",
+      "nationalPokedexNumbers": [
+        86
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/41.png",
+        "large": "https://images.pokemontcg.io/base1/41_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4281,20 +4657,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "41",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "The protruding horn on its head is very hard. This horn is used for bashing through thick ice.",
-      "nationalPokedexNumbers": [
-        86
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/41.png",
-        "large": "https://images.pokemontcg.io/base1/41_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-41",
@@ -4380,6 +4742,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "42",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "Often hides in water to stalk unweary prey. When swimming quickly, it moves its ears to maintain balance.",
+      "nationalPokedexNumbers": [
+        8
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/42.png",
+        "large": "https://images.pokemontcg.io/base1/42_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4396,20 +4772,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "42",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "flavorText": "Often hides in water to stalk unweary prey. When swimming quickly, it moves its ears to maintain balance.",
-      "nationalPokedexNumbers": [
-        8
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/42.png",
-        "large": "https://images.pokemontcg.io/base1/42_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-42",
@@ -4478,6 +4840,20 @@
           "value": "×2"
         }
       ],
+      "number": "43",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Using its ability to read minds, it will identify impending danger and teleport to safety.",
+      "nationalPokedexNumbers": [
+        63
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/43.png",
+        "large": "https://images.pokemontcg.io/base1/43_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4494,20 +4870,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "43",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Using its ability to read minds, it will identify impending danger and teleport to safety.",
-      "nationalPokedexNumbers": [
-        63
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/43.png",
-        "large": "https://images.pokemontcg.io/base1/43_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-43",
@@ -4581,6 +4943,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "44",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "A strange seed was planted on its back at birth. Thus, a plant sprouted and now grows with this Pokémon.",
+      "nationalPokedexNumbers": [
+        1
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/44.png",
+        "large": "https://images.pokemontcg.io/base1/44_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4597,20 +4973,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "44",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "A strange seed was planted on its back at birth. Thus, a plant sprouted and now grows with this Pokémon.",
-      "nationalPokedexNumbers": [
-        1
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/44.png",
-        "large": "https://images.pokemontcg.io/base1/44_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-44",
@@ -4683,6 +5045,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "45",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+      "nationalPokedexNumbers": [
+        10
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/45.png",
+        "large": "https://images.pokemontcg.io/base1/45_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4699,21 +5076,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "45",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
-      "nationalPokedexNumbers": [
-        10
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/45.png",
-        "large": "https://images.pokemontcg.io/base1/45_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-45",
@@ -4796,6 +5158,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "46",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/46.png",
+        "large": "https://images.pokemontcg.io/base1/46_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4812,20 +5188,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "46",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.",
-      "nationalPokedexNumbers": [
-        4
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/46.png",
-        "large": "https://images.pokemontcg.io/base1/46_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-46",
@@ -4910,6 +5272,20 @@
           "value": "-30"
         }
       ],
+      "number": "47",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "flavorText": "Lives about three feet underground, where it feeds on plant roots. It sometimes appears above ground.",
+      "nationalPokedexNumbers": [
+        50
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/47.png",
+        "large": "https://images.pokemontcg.io/base1/47_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -4926,20 +5302,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "47",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "flavorText": "Lives about three feet underground, where it feeds on plant roots. It sometimes appears above ground.",
-      "nationalPokedexNumbers": [
-        50
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/47.png",
-        "large": "https://images.pokemontcg.io/base1/47_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-47",
@@ -5014,6 +5376,20 @@
           "value": "-30"
         }
       ],
+      "number": "48",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
+      "nationalPokedexNumbers": [
+        84
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/48.png",
+        "large": "https://images.pokemontcg.io/base1/48_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5030,20 +5406,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "48",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
-      "nationalPokedexNumbers": [
-        84
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/48.png",
-        "large": "https://images.pokemontcg.io/base1/48_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-48",
@@ -5126,6 +5488,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "49",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "Puts enemies to sleep, then eats their dreams. Occasionally gets sick from eating bad dreams.",
+      "nationalPokedexNumbers": [
+        96
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/49.png",
+        "large": "https://images.pokemontcg.io/base1/49_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5142,20 +5518,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "49",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "Puts enemies to sleep, then eats their dreams. Occasionally gets sick from eating bad dreams.",
-      "nationalPokedexNumbers": [
-        96
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/49.png",
-        "large": "https://images.pokemontcg.io/base1/49_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-49",
@@ -5189,125 +5551,6 @@
           "reverseHoloAvg1": 0,
           "reverseHoloAvg7": 0,
           "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "base1-5",
-      "name": "Clefairy",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "14",
-      "hp": "40",
-      "types": [
-        "Colorless"
-      ],
-      "evolvesTo": [
-        "Clefable"
-      ],
-      "attacks": [
-        {
-          "name": "Sing",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep."
-        },
-        {
-          "name": "Metronome",
-          "cost": [
-            "Colorless",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "",
-          "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefairy's type is still Colorless.)"
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "×2"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Psychic",
-          "value": "-30"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "5",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
-      "nationalPokedexNumbers": [
-        35
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/5.png",
-        "large": "https://images.pokemontcg.io/base1/5_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 13.65,
-            "mid": 23.16,
-            "high": 95.98,
-            "market": 25.01,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 21.93,
-          "lowPrice": 4.99,
-          "trendPrice": 11.75,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 14,
-          "lowPriceExPlus": 14.5,
-          "avg1": 12.69,
-          "avg7": 11.68,
-          "avg30": 22.05,
-          "reverseHoloAvg1": 16.81,
-          "reverseHoloAvg7": 11.97,
-          "reverseHoloAvg30": 19.63
         }
       }
     },
@@ -5353,6 +5596,20 @@
           "value": "-30"
         }
       ],
+      "number": "50",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "flavorText": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice.",
+      "nationalPokedexNumbers": [
+        92
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/50.png",
+        "large": "https://images.pokemontcg.io/base1/50_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5369,20 +5626,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "50",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "flavorText": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice.",
-      "nationalPokedexNumbers": [
-        92
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/50.png",
-        "large": "https://images.pokemontcg.io/base1/50_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-50",
@@ -5456,6 +5699,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "51",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
+      "nationalPokedexNumbers": [
+        109
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/51.png",
+        "large": "https://images.pokemontcg.io/base1/51_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5472,20 +5729,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "51",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
-      "nationalPokedexNumbers": [
-        109
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/51.png",
-        "large": "https://images.pokemontcg.io/base1/51_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-51",
@@ -5558,6 +5801,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "52",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+      "nationalPokedexNumbers": [
+        66
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/52.png",
+        "large": "https://images.pokemontcg.io/base1/52_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5574,20 +5831,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "52",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
-      "nationalPokedexNumbers": [
-        66
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/52.png",
-        "large": "https://images.pokemontcg.io/base1/52_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-52",
@@ -5670,6 +5913,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "53",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "flavorText": "Uses anti-gravity to stay suspended. Appears without warning and uses attacks like Thunder Wave.",
+      "nationalPokedexNumbers": [
+        81
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/53.png",
+        "large": "https://images.pokemontcg.io/base1/53_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5686,20 +5943,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "53",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "flavorText": "Uses anti-gravity to stay suspended. Appears without warning and uses attacks like Thunder Wave.",
-      "nationalPokedexNumbers": [
-        81
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/53.png",
-        "large": "https://images.pokemontcg.io/base1/53_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-53",
@@ -5785,6 +6028,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "54",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "It is vulnerable to attack because its shell is soft, exposing its weak and tender body.",
+      "nationalPokedexNumbers": [
+        11
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/54.png",
+        "large": "https://images.pokemontcg.io/base1/54_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5801,20 +6058,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "54",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "It is vulnerable to attack because its shell is soft, exposing its weak and tender body.",
-      "nationalPokedexNumbers": [
-        11
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/54.png",
-        "large": "https://images.pokemontcg.io/base1/54_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-54",
@@ -5887,6 +6130,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "55",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "Stiffens its ears to sense danger. The larger, more powerful of its horns secretes venom.",
+      "nationalPokedexNumbers": [
+        32
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/55.png",
+        "large": "https://images.pokemontcg.io/base1/55_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -5903,20 +6160,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "55",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "Stiffens its ears to sense danger. The larger, more powerful of its horns secretes venom.",
-      "nationalPokedexNumbers": [
-        32
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/55.png",
-        "large": "https://images.pokemontcg.io/base1/55_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-55",
@@ -6001,6 +6244,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "56",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "As it grows, the stone portions of its body harden to become similar to a diamond, though colored black.",
+      "nationalPokedexNumbers": [
+        95
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/56.png",
+        "large": "https://images.pokemontcg.io/base1/56_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6017,20 +6274,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "56",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "As it grows, the stone portions of its body harden to become similar to a diamond, though colored black.",
-      "nationalPokedexNumbers": [
-        95
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/56.png",
-        "large": "https://images.pokemontcg.io/base1/56_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-56",
@@ -6110,6 +6353,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "57",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+      "nationalPokedexNumbers": [
+        16
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/57.png",
+        "large": "https://images.pokemontcg.io/base1/57_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6126,20 +6383,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "57",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
-      "nationalPokedexNumbers": [
-        16
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/57.png",
-        "large": "https://images.pokemontcg.io/base1/57_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-57",
@@ -6222,6 +6465,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "58",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "When several of these Pokémon gather, their electricity can cause lightning storms.",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/58.png",
+        "large": "https://images.pokemontcg.io/base1/58_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6238,20 +6495,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "58",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "When several of these Pokémon gather, their electricity can cause lightning storms.",
-      "nationalPokedexNumbers": [
-        25
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/58.png",
-        "large": "https://images.pokemontcg.io/base1/58_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-58",
@@ -6324,6 +6567,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "59",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "Its newly grown legs prevent it from running. It appears to prefer swimming over trying to stand.",
+      "nationalPokedexNumbers": [
+        60
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/59.png",
+        "large": "https://images.pokemontcg.io/base1/59_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6340,20 +6597,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "59",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "Its newly grown legs prevent it from running. It appears to prefer swimming over trying to stand.",
-      "nationalPokedexNumbers": [
-        60
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/59.png",
-        "large": "https://images.pokemontcg.io/base1/59_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-59",
@@ -6387,128 +6630,6 @@
           "reverseHoloAvg1": 0,
           "reverseHoloAvg7": 0,
           "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "base1-6",
-      "name": "Gyarados",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "level": "41",
-      "hp": "100",
-      "types": [
-        "Water"
-      ],
-      "evolvesFrom": "Magikarp",
-      "attacks": [
-        {
-          "name": "Dragon Rage",
-          "cost": [
-            "Water",
-            "Water",
-            "Water"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "50",
-          "text": ""
-        },
-        {
-          "name": "Bubblebeam",
-          "cost": [
-            "Water",
-            "Water",
-            "Water",
-            "Water"
-          ],
-          "convertedEnergyCost": 4,
-          "damage": "40",
-          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Grass",
-          "value": "×2"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Fighting",
-          "value": "-30"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "6",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Rare Holo",
-      "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
-      "nationalPokedexNumbers": [
-        130
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/6.png",
-        "large": "https://images.pokemontcg.io/base1/6_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 15,
-            "mid": 29.99,
-            "high": 167.15,
-            "market": 33.9,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 37.01,
-          "lowPrice": 2,
-          "trendPrice": 18.75,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 14.3,
-          "lowPriceExPlus": 8,
-          "avg1": 11.79,
-          "avg7": 15.51,
-          "avg30": 24.69,
-          "reverseHoloAvg1": 12.94,
-          "reverseHoloAvg7": 13.88,
-          "reverseHoloAvg30": 12.87
         }
       }
     },
@@ -6559,6 +6680,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "60",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "Its hooves are 10 times harder than diamonds. It can trample anything flat in moments.",
+      "nationalPokedexNumbers": [
+        77
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/60.png",
+        "large": "https://images.pokemontcg.io/base1/60_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6575,20 +6710,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "60",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "Its hooves are 10 times harder than diamonds. It can trample anything flat in moments.",
-      "nationalPokedexNumbers": [
-        77
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/60.png",
-        "large": "https://images.pokemontcg.io/base1/60_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-60",
@@ -6663,6 +6784,20 @@
           "value": "-30"
         }
       ],
+      "number": "61",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+      "nationalPokedexNumbers": [
+        19
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/61.png",
+        "large": "https://images.pokemontcg.io/base1/61_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6679,20 +6814,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "61",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
-      "nationalPokedexNumbers": [
-        19
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/61.png",
-        "large": "https://images.pokemontcg.io/base1/61_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-61",
@@ -6771,6 +6892,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "62",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+      "nationalPokedexNumbers": [
+        27
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/62.png",
+        "large": "https://images.pokemontcg.io/base1/62_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6787,20 +6922,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "62",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
-      "nationalPokedexNumbers": [
-        27
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/62.png",
-        "large": "https://images.pokemontcg.io/base1/62_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-62",
@@ -6883,6 +7004,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "63",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "After birth, its back swells and hardens into a shell. It powerfully sprays foam from its mouth.",
+      "nationalPokedexNumbers": [
+        7
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/63.png",
+        "large": "https://images.pokemontcg.io/base1/63_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -6899,20 +7034,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "63",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "After birth, its back swells and hardens into a shell. It powerfully sprays foam from its mouth.",
-      "nationalPokedexNumbers": [
-        7
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/63.png",
-        "large": "https://images.pokemontcg.io/base1/63_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-63",
@@ -6995,6 +7116,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "64",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "flavorText": "Its central core glows with the seven colors of the rainbow. Some people value this core as a gem.",
+      "nationalPokedexNumbers": [
+        121
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/64.png",
+        "large": "https://images.pokemontcg.io/base1/64_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7011,20 +7146,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "64",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "flavorText": "Its central core glows with the seven colors of the rainbow. Some people value this core as a gem.",
-      "nationalPokedexNumbers": [
-        121
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/64.png",
-        "large": "https://images.pokemontcg.io/base1/64_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-64",
@@ -7097,6 +7218,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "65",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "flavorText": "An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle.",
+      "nationalPokedexNumbers": [
+        120
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/65.png",
+        "large": "https://images.pokemontcg.io/base1/65_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7113,20 +7248,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "65",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "flavorText": "An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle.",
-      "nationalPokedexNumbers": [
-        120
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/65.png",
-        "large": "https://images.pokemontcg.io/base1/65_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-65",
@@ -7212,6 +7333,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "66",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Its whole body is swathed with wide vines that are similar to seaweed. These vines shake as it walks.",
+      "nationalPokedexNumbers": [
+        114
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/66.png",
+        "large": "https://images.pokemontcg.io/base1/66_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7228,20 +7363,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "66",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Its whole body is swathed with wide vines that are similar to seaweed. These vines shake as it walks.",
-      "nationalPokedexNumbers": [
-        114
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/66.png",
-        "large": "https://images.pokemontcg.io/base1/66_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-66",
@@ -7314,6 +7435,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "67",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "flavorText": "Usually found in power plants. Easily mistaken for a Monster Ball, it has zapped many people.",
+      "nationalPokedexNumbers": [
+        100
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/67.png",
+        "large": "https://images.pokemontcg.io/base1/67_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7330,20 +7465,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "67",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "flavorText": "Usually found in power plants. Easily mistaken for a Monster Ball, it has zapped many people.",
-      "nationalPokedexNumbers": [
-        100
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/67.png",
-        "large": "https://images.pokemontcg.io/base1/67_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-67",
@@ -7417,6 +7538,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "68",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "At the time of birth, it has just one tail. Its tail splits from the tip as it grows older.",
+      "nationalPokedexNumbers": [
+        37
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/68.png",
+        "large": "https://images.pokemontcg.io/base1/68_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7433,20 +7568,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "68",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "At the time of birth, it has just one tail. Its tail splits from the tip as it grows older.",
-      "nationalPokedexNumbers": [
-        37
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/68.png",
-        "large": "https://images.pokemontcg.io/base1/68_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-68",
@@ -7519,6 +7640,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "69",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Often found in forests, eating leaves. It has a sharp, venomous stinger on its head.",
+      "nationalPokedexNumbers": [
+        13
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/69.png",
+        "large": "https://images.pokemontcg.io/base1/69_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7535,21 +7671,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "69",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Often found in forests, eating leaves. It has a sharp, venomous stinger on its head.",
-      "nationalPokedexNumbers": [
-        13
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/69.png",
-        "large": "https://images.pokemontcg.io/base1/69_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-69",
@@ -7587,141 +7708,13 @@
       }
     },
     {
-      "id": "base1-7",
-      "name": "Hitmonchan",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "33",
-      "hp": "70",
-      "types": [
-        "Fighting"
-      ],
-      "attacks": [
-        {
-          "name": "Jab",
-          "cost": [
-            "Fighting"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "20",
-          "text": ""
-        },
-        {
-          "name": "Special Punch",
-          "cost": [
-            "Fighting",
-            "Fighting",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Psychic",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "7",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "While seeming to do nothing, it fires punches in lightning-fast volleys that are impossible to see.",
-      "nationalPokedexNumbers": [
-        107
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/7.png",
-        "large": "https://images.pokemontcg.io/base1/7_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 5.98,
-            "mid": 11,
-            "high": 34.98,
-            "market": 18.45,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 34.95,
-          "lowPrice": 14.99,
-          "trendPrice": 76.97,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 40,
-          "avg1": 34.95,
-          "avg7": 60.65,
-          "avg30": 58.92,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
       "id": "base1-70",
       "name": "Clefairy Doll",
       "supertype": "Trainer",
       "hp": "10",
       "rules": [
-        "Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts a a Pokémon (instead of a Trainer card). Clefairy Doll has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn't count as a Knocked Out Pokémon. At any time during your turn before your attack, you may discard Clefairy Doll."
+        "Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts as a Pokémon (instead of a Trainer card). Clefairy Doll has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn't count as a Knocked Out Pokémon. At any time during your turn before your attack, you may discard Clefairy Doll."
       ],
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
       "number": "70",
       "artist": "Keiji Kinebuchi",
       "rarity": "Rare",
@@ -7731,6 +7724,23 @@
       "images": {
         "small": "https://images.pokemontcg.io/base1/70.png",
         "large": "https://images.pokemontcg.io/base1/70_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-70",
@@ -7774,6 +7784,16 @@
       "rules": [
         "Discard 2 of the other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward."
       ],
+      "number": "71",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/71.png",
+        "large": "https://images.pokemontcg.io/base1/71_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7790,16 +7810,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "71",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/71.png",
-        "large": "https://images.pokemontcg.io/base1/71_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-71",
@@ -7843,6 +7853,16 @@
       "rules": [
         "Choose 1 of your own Pokémon in play and a Stage of Evolution. Discard all Evolution cards of that Stage or higher attached to that Pokémon. That Pokémon is no longer Asleep, Confused, Paralyzed, Poisoned, or anything else that might be the result of an attack (just as if you had evolved it)."
       ],
+      "number": "72",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/72.png",
+        "large": "https://images.pokemontcg.io/base1/72_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7859,16 +7879,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "72",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/72.png",
-        "large": "https://images.pokemontcg.io/base1/72_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-72",
@@ -7912,6 +7922,16 @@
       "rules": [
         "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards."
       ],
+      "number": "73",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/73.png",
+        "large": "https://images.pokemontcg.io/base1/73_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7928,16 +7948,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "73",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/73.png",
-        "large": "https://images.pokemontcg.io/base1/73_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-73",
@@ -7981,6 +7991,16 @@
       "rules": [
         "Discard 2 of the other cards from your hand in order to put a Trainer card from your discard pile into your hand."
       ],
+      "number": "74",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/74.png",
+        "large": "https://images.pokemontcg.io/base1/74_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -7997,16 +8017,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "74",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/74.png",
-        "large": "https://images.pokemontcg.io/base1/74_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-74",
@@ -8050,6 +8060,16 @@
       "rules": [
         "You and your opponent show each other your hands, then shuffle all the Trainer cards from your hands into your decks."
       ],
+      "number": "75",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/75.png",
+        "large": "https://images.pokemontcg.io/base1/75_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8066,16 +8086,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "75",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/75.png",
-        "large": "https://images.pokemontcg.io/base1/75_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-75",
@@ -8119,6 +8129,16 @@
       "rules": [
         "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway."
       ],
+      "number": "76",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/76.png",
+        "large": "https://images.pokemontcg.io/base1/76_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8135,16 +8155,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "76",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/76.png",
-        "large": "https://images.pokemontcg.io/base1/76_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-76",
@@ -8188,6 +8198,16 @@
       "rules": [
         "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward."
       ],
+      "number": "77",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/77.png",
+        "large": "https://images.pokemontcg.io/base1/77_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8204,16 +8224,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "77",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/77.png",
-        "large": "https://images.pokemontcg.io/base1/77_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-77",
@@ -8257,6 +8267,16 @@
       "rules": [
         "Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)"
       ],
+      "number": "78",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/78.png",
+        "large": "https://images.pokemontcg.io/base1/78_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8273,16 +8293,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "78",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/78.png",
-        "large": "https://images.pokemontcg.io/base1/78_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-78",
@@ -8326,6 +8336,16 @@
       "rules": [
         "Discard 1 Energy card attached to 1 of your Pokémon in order to choose 1 of your opponent's Pokémon and up to 2 Energy cards attached to it. Discard those Energy cards."
       ],
+      "number": "79",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Rare",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/79.png",
+        "large": "https://images.pokemontcg.io/base1/79_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8342,16 +8362,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "79",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/79.png",
-        "large": "https://images.pokemontcg.io/base1/79_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-79",
@@ -8389,132 +8399,12 @@
       }
     },
     {
-      "id": "base1-8",
-      "name": "Machamp",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "level": "67",
-      "hp": "100",
-      "types": [
-        "Fighting"
-      ],
-      "evolvesFrom": "Machoke",
-      "abilities": [
-        {
-          "name": "Strikes Back",
-          "text": "Whenever your opponent's attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokémon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is Asleep, Confused, or Paralyzed when your opponent attacks.",
-          "type": "Pokémon Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Seismic Toss",
-          "cost": [
-            "Fighting",
-            "Fighting",
-            "Fighting",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 4,
-          "damage": "60",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Psychic",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "8",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "Using its amazing muscles, it throws powerful punches that can knock its victim clear over the horizon.",
-      "nationalPokedexNumbers": [
-        68
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/8.png",
-        "large": "https://images.pokemontcg.io/base1/8_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-8",
-        "updatedAt": "2023/03/27"
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 25,
-          "lowPrice": 17,
-          "trendPrice": 52.81,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 50,
-          "avg1": 25,
-          "avg7": 52.84,
-          "avg30": 75.57,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
       "id": "base1-80",
       "name": "Defender",
       "supertype": "Trainer",
       "rules": [
         "Attach Defender to 1 of your Pokémon. At the end of your opponent's next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
       ],
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
       "number": "80",
       "artist": "Keiji Kinebuchi",
       "rarity": "Uncommon",
@@ -8524,6 +8414,23 @@
       "images": {
         "small": "https://images.pokemontcg.io/base1/80.png",
         "large": "https://images.pokemontcg.io/base1/80_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-80",
@@ -8567,6 +8474,18 @@
       "rules": [
         "Trade 1 of the other cards in your hand for up to 2 basic Energy cards from your discard pile."
       ],
+      "number": "81",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/81.png",
+        "large": "https://images.pokemontcg.io/base1/81_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8583,18 +8502,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "81",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/81.png",
-        "large": "https://images.pokemontcg.io/base1/81_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-81",
@@ -8638,6 +8545,16 @@
       "rules": [
         "Your Active Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned."
       ],
+      "number": "82",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/82.png",
+        "large": "https://images.pokemontcg.io/base1/82_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8654,16 +8571,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "82",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/82.png",
-        "large": "https://images.pokemontcg.io/base1/82_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-82",
@@ -8707,6 +8614,17 @@
       "rules": [
         "Shuffle 2 of the other cards from your hand into your deck in order to draw a card."
       ],
+      "number": "83",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/83.png",
+        "large": "https://images.pokemontcg.io/base1/83_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8723,17 +8641,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "83",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/83.png",
-        "large": "https://images.pokemontcg.io/base1/83_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-83",
@@ -8777,6 +8684,17 @@
       "rules": [
         "Attach PlusPower to your Active Pokémon. At the end of your turn, discard PlusPower. If this Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon."
       ],
+      "number": "84",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/84.png",
+        "large": "https://images.pokemontcg.io/base1/84_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8793,17 +8711,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "84",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/84.png",
-        "large": "https://images.pokemontcg.io/base1/84_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-84",
@@ -8847,6 +8754,16 @@
       "rules": [
         "Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon."
       ],
+      "number": "85",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/85.png",
+        "large": "https://images.pokemontcg.io/base1/85_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8863,16 +8780,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "85",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/85.png",
-        "large": "https://images.pokemontcg.io/base1/85_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-85",
@@ -8916,6 +8823,16 @@
       "rules": [
         "Choose 1 Basic Pokémon card from your opponent's discard pile and put it onto his or her Bench. (You can't play Pokémon Flute if your opponent's Bench is full.)"
       ],
+      "number": "86",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/86.png",
+        "large": "https://images.pokemontcg.io/base1/86_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -8932,16 +8849,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "86",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/86.png",
-        "large": "https://images.pokemontcg.io/base1/86_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-86",
@@ -8985,6 +8892,17 @@
       "rules": [
         "Look at up to 5 cards from the top of your deck and rearrange them as you like."
       ],
+      "number": "87",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/87.png",
+        "large": "https://images.pokemontcg.io/base1/87_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9001,17 +8919,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "87",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/87.png",
-        "large": "https://images.pokemontcg.io/base1/87_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-87",
@@ -9055,6 +8962,16 @@
       "rules": [
         "Discard your hand, then draw 7 cards."
       ],
+      "number": "88",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/88.png",
+        "large": "https://images.pokemontcg.io/base1/88_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9071,16 +8988,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "88",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/88.png",
-        "large": "https://images.pokemontcg.io/base1/88_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-88",
@@ -9124,6 +9031,16 @@
       "rules": [
         "Put 1 Basic Pokémon card from your discard pile onto your Bench. Put damage counters on that Pokémon equal to half its HP (rounded down to the nearest 10). (You can't play Revive if your Bench is full.)"
       ],
+      "number": "89",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/89.png",
+        "large": "https://images.pokemontcg.io/base1/89_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9140,16 +9057,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "89",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/89.png",
-        "large": "https://images.pokemontcg.io/base1/89_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-89",
@@ -9187,146 +9094,12 @@
       }
     },
     {
-      "id": "base1-9",
-      "name": "Magneton",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "level": "28",
-      "hp": "60",
-      "types": [
-        "Lightning"
-      ],
-      "evolvesFrom": "Magnemite",
-      "evolvesTo": [
-        "Magnezone"
-      ],
-      "attacks": [
-        {
-          "name": "Thunder Wave",
-          "cost": [
-            "Lightning",
-            "Lightning",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "30",
-          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
-        },
-        {
-          "name": "Selfdestruct",
-          "cost": [
-            "Lightning",
-            "Lightning",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 4,
-          "damage": "80",
-          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 80 damage to itself."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
-      "number": "9",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Rare Holo",
-      "flavorText": "Formed by several Magnemites linked together. It frequently appears when sunspots flare up.",
-      "nationalPokedexNumbers": [
-        82
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/9.png",
-        "large": "https://images.pokemontcg.io/base1/9_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/base1-9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 9.67,
-            "mid": 12.97,
-            "high": 44.49,
-            "market": 17.11,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/base1-9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 23.2,
-          "lowPrice": 2.54,
-          "trendPrice": 24.25,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 12.94,
-          "lowPriceExPlus": 9.99,
-          "avg1": 6.99,
-          "avg7": 17.71,
-          "avg30": 21.87,
-          "reverseHoloAvg1": 8.8,
-          "reverseHoloAvg7": 13.69,
-          "reverseHoloAvg30": 12.92
-        }
-      }
-    },
-    {
       "id": "base1-90",
       "name": "Super Potion",
       "supertype": "Trainer",
       "rules": [
         "Discard 1 Energy card attached to your own Pokémon in order to remove up to 4 damage counters from that Pokémon."
       ],
-      "set": {
-        "id": "base1",
-        "name": "Base",
-        "series": "Base",
-        "printedTotal": 102,
-        "total": 102,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "BS",
-        "releaseDate": "1999/01/09",
-        "updatedAt": "2022/10/10 15:12:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
-          "logo": "https://images.pokemontcg.io/base1/logo.png"
-        }
-      },
       "number": "90",
       "artist": "Keiji Kinebuchi",
       "rarity": "Uncommon",
@@ -9336,6 +9109,23 @@
       "images": {
         "small": "https://images.pokemontcg.io/base1/90.png",
         "large": "https://images.pokemontcg.io/base1/90_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-90",
@@ -9379,6 +9169,16 @@
       "rules": [
         "Draw 2 cards."
       ],
+      "number": "91",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/91.png",
+        "large": "https://images.pokemontcg.io/base1/91_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9395,16 +9195,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "91",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/91.png",
-        "large": "https://images.pokemontcg.io/base1/91_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-91",
@@ -9448,6 +9238,16 @@
       "rules": [
         "Choose 1 Energy card attached to 1 of your opponent's Pokémon and discard it."
       ],
+      "number": "92",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/92.png",
+        "large": "https://images.pokemontcg.io/base1/92_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9464,16 +9264,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "92",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/92.png",
-        "large": "https://images.pokemontcg.io/base1/92_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-92",
@@ -9517,6 +9307,16 @@
       "rules": [
         "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon."
       ],
+      "number": "93",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/93.png",
+        "large": "https://images.pokemontcg.io/base1/93_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9533,16 +9333,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "93",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/93.png",
-        "large": "https://images.pokemontcg.io/base1/93_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-93",
@@ -9586,6 +9376,18 @@
       "rules": [
         "Remove up to 2 damage counters from 1 of your Pokémon."
       ],
+      "number": "94",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/94.png",
+        "large": "https://images.pokemontcg.io/base1/94_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9602,18 +9404,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "94",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/94.png",
-        "large": "https://images.pokemontcg.io/base1/94_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-94",
@@ -9657,6 +9447,18 @@
       "rules": [
         "Switch 1 of your own Benched Pokémon with your Active Pokémon."
       ],
+      "number": "95",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Common",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/95.png",
+        "large": "https://images.pokemontcg.io/base1/95_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9673,18 +9475,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "95",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Common",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/95.png",
-        "large": "https://images.pokemontcg.io/base1/95_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-95",
@@ -9731,6 +9521,17 @@
       "rules": [
         "Provides ColorlessColorless energy.\nDoesn't count as a basic Energy card."
       ],
+      "number": "96",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/96.png",
+        "large": "https://images.pokemontcg.io/base1/96_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9747,17 +9548,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "96",
-      "artist": "Keiji Kinebuchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/96.png",
-        "large": "https://images.pokemontcg.io/base1/96_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-96",
@@ -9801,6 +9591,17 @@
       "subtypes": [
         "Basic"
       ],
+      "number": "97",
+      "artist": "Keiji Kinebuchi",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/97.png",
+        "large": "https://images.pokemontcg.io/base1/97_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9817,17 +9618,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "97",
-      "artist": "Keiji Kinebuchi",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/97.png",
-        "large": "https://images.pokemontcg.io/base1/97_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-97",
@@ -9871,6 +9661,17 @@
       "subtypes": [
         "Basic"
       ],
+      "number": "98",
+      "artist": "Keiji Kinebuchi",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/98.png",
+        "large": "https://images.pokemontcg.io/base1/98_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9887,17 +9688,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "98",
-      "artist": "Keiji Kinebuchi",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/98.png",
-        "large": "https://images.pokemontcg.io/base1/98_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-98",
@@ -9941,6 +9731,17 @@
       "subtypes": [
         "Basic"
       ],
+      "number": "99",
+      "artist": "Keiji Kinebuchi",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/99.png",
+        "large": "https://images.pokemontcg.io/base1/99_hires.png"
+      },
       "set": {
         "id": "base1",
         "name": "Base",
@@ -9957,17 +9758,6 @@
           "symbol": "https://images.pokemontcg.io/base1/symbol.png",
           "logo": "https://images.pokemontcg.io/base1/logo.png"
         }
-      },
-      "number": "99",
-      "artist": "Keiji Kinebuchi",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/base1/99.png",
-        "large": "https://images.pokemontcg.io/base1/99_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/base1-99",
@@ -10001,6 +9791,216 @@
           "reverseHoloAvg1": 4,
           "reverseHoloAvg7": 3.16,
           "reverseHoloAvg30": 3.16
+        }
+      }
+    },
+    {
+      "id": "base1-100",
+      "name": "Lightning Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "number": "100",
+      "artist": "Keiji Kinebuchi",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/100.png",
+        "large": "https://images.pokemontcg.io/base1/100_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-100",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.08,
+            "mid": 0.36,
+            "high": 2,
+            "market": 0.44,
+            "directLow": 0.44
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-100",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 2.94,
+          "lowPrice": 0.35,
+          "trendPrice": 2.41,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.98,
+          "avg1": 0.98,
+          "avg7": 2.69,
+          "avg30": 1.93,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "base1-101",
+      "name": "Psychic Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "number": "101",
+      "artist": "Keiji Kinebuchi",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/101.png",
+        "large": "https://images.pokemontcg.io/base1/101_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-101",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.07,
+            "mid": 0.32,
+            "high": 3,
+            "market": 0.39,
+            "directLow": 0.1
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-101",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.44,
+          "lowPrice": 0.02,
+          "trendPrice": 0.45,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 2.91,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.29,
+          "avg7": 0.34,
+          "avg30": 0.38,
+          "reverseHoloAvg1": 3,
+          "reverseHoloAvg7": 2.5,
+          "reverseHoloAvg30": 2.61
+        }
+      }
+    },
+    {
+      "id": "base1-102",
+      "name": "Water Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "number": "102",
+      "artist": "Keiji Kinebuchi",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/102.png",
+        "large": "https://images.pokemontcg.io/base1/102_hires.png"
+      },
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2022/10/10 15:12:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-102",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.1,
+            "mid": 0.29,
+            "high": 19.97,
+            "market": 0.26,
+            "directLow": 0.14
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-102",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.3,
+          "lowPrice": 0.02,
+          "trendPrice": 0.28,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 1.66,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.36,
+          "avg7": 0.14,
+          "avg30": 0.26,
+          "reverseHoloAvg1": 4,
+          "reverseHoloAvg7": 0.83,
+          "reverseHoloAvg30": 0.92
         }
       }
     }
