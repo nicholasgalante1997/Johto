@@ -51,6 +51,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "1",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare",
+      "flavorText": "The tip of its tail shines brightly. In the olden days, people sent signals using the tail's light.",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/1.png",
+        "large": "https://images.pokemontcg.io/pop7/1_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -66,20 +80,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "1",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare",
-      "flavorText": "The tip of its tail shines brightly. In the olden days, people sent signals using the tail's light.",
-      "nationalPokedexNumbers": [
-        181
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/1.png",
-        "large": "https://images.pokemontcg.io/pop7/1_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-1",
@@ -120,893 +120,6 @@
           "reverseHoloAvg1": 2.25,
           "reverseHoloAvg7": 2.52,
           "reverseHoloAvg30": 2.96
-        }
-      }
-    },
-    {
-      "id": "pop7-10",
-      "name": "Wormadam Sandy Cloak",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "level": "37",
-      "hp": "80",
-      "types": [
-        "Fighting"
-      ],
-      "evolvesFrom": "Burmy Sandy Cloak",
-      "abilities": [
-        {
-          "name": "Sandy Cloak",
-          "text": "Prevent all effects, excluding damage, done to Wormadam Sandy Cloak.",
-          "type": "Poké-Body"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Push Over",
-          "cost": [
-            "Fighting",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40+",
-          "text": "Does 40 damage plus 10 more damage for each Fighting Energy attached to Wormadam Sandy Cloak."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "+20"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Lightning",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "10",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Uncommon",
-      "flavorText": "When BURMY evolved, it cloak became a part of this Pokémon's body. The cloak is never shed.",
-      "nationalPokedexNumbers": [
-        413
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/10.png",
-        "large": "https://images.pokemontcg.io/pop7/10_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-10",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 6,
-            "mid": 6.59,
-            "high": 7.17,
-            "market": 5.19,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-10",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 4,
-          "lowPrice": 2.5,
-          "trendPrice": 5.19,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 2.5,
-          "avg1": 4,
-          "avg7": 5.69,
-          "avg30": 4.47,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "pop7-11",
-      "name": "Burmy Plant Cloak",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "10",
-      "hp": "40",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Wormadam",
-        "Mothim"
-      ],
-      "abilities": [
-        {
-          "name": "Wear Cloak",
-          "text": "Once during your turn (before your attack), if Burmy Plant Cloak is your Active Pokémon, you may search your discard pile for a basic Grass Energy card and attach it to Burmy Plant Cloak.",
-          "type": "Poké-Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Plant Cloak Tackle",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10+",
-          "text": "If Burmy Plant Cloak has any Grass Energy attached to it, this attack does 10 damage plus 10 more damage."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "11",
-      "artist": "Kouki Saitou",
-      "rarity": "Common",
-      "flavorText": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
-      "nationalPokedexNumbers": [
-        412
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/11.png",
-        "large": "https://images.pokemontcg.io/pop7/11_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-11",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.33,
-            "mid": 0.84,
-            "high": 5,
-            "market": 0.85,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-11",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.85,
-          "lowPrice": 0.35,
-          "trendPrice": 0.81,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.75,
-          "avg1": 1,
-          "avg7": 0.91,
-          "avg30": 0.78,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "pop7-12",
-      "name": "Burmy Sandy Cloak",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "10",
-      "hp": "40",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Wormadam",
-        "Mothim"
-      ],
-      "abilities": [
-        {
-          "name": "Wear Cloak",
-          "text": "Once during your turn (before your attack), if Burmy Sandy Cloak is your Active Pokémon, you may search your discard pile for a basic Fighting Energy card and attach it to Burmy Sandy Cloak.",
-          "type": "Poké-Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Sandy Cloak Tackle",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10+",
-          "text": "If Burmy Sandy Cloak has any Fighting Energy attached to it, this attack does 10 damage plus 10 more damage."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "12",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
-      "nationalPokedexNumbers": [
-        412
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/12.png",
-        "large": "https://images.pokemontcg.io/pop7/12_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-12",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.37,
-            "mid": 0.93,
-            "high": 2,
-            "market": 0.98,
-            "directLow": 1.02
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-12",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.88,
-          "lowPrice": 0.25,
-          "trendPrice": 0.75,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.44,
-          "avg1": 0.99,
-          "avg7": 0.81,
-          "avg30": 0.7,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "pop7-13",
-      "name": "Corsola",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "32",
-      "hp": "70",
-      "types": [
-        "Water"
-      ],
-      "evolvesTo": [
-        "Cursola"
-      ],
-      "attacks": [
-        {
-          "name": "Rally",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Search your deck for up to 3 different types of Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
-        },
-        {
-          "name": "Hook",
-          "cost": [
-            "Water",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "30",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Grass",
-          "value": "+20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "13",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "Many live in the clean seas of the south. They apparently can't live in polluted waters.",
-      "nationalPokedexNumbers": [
-        222
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/13.png",
-        "large": "https://images.pokemontcg.io/pop7/13_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-13",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.74,
-            "mid": 1,
-            "high": 2,
-            "market": 0.97,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-13",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.58,
-          "lowPrice": 0.6,
-          "trendPrice": 0.68,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0.19,
-          "lowPriceExPlus": 0.6,
-          "avg1": 0.69,
-          "avg7": 0.64,
-          "avg30": 0.76,
-          "reverseHoloAvg1": 0.19,
-          "reverseHoloAvg7": 0.19,
-          "reverseHoloAvg30": 0.19
-        }
-      }
-    },
-    {
-      "id": "pop7-14",
-      "name": "Mareep",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "11",
-      "hp": "50",
-      "types": [
-        "Lightning"
-      ],
-      "evolvesTo": [
-        "Flaaffy"
-      ],
-      "attacks": [
-        {
-          "name": "Thundershock",
-          "cost": [
-            "Lightning"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
-        },
-        {
-          "name": "Static Shock",
-          "cost": [
-            "Lightning",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+10"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Metal",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "14",
-      "artist": "Atsuko Nishida",
-      "rarity": "Common",
-      "flavorText": "Its fluffy coat swells to double when static electricity builds up. Touching it can be shocking.",
-      "nationalPokedexNumbers": [
-        179
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/14.png",
-        "large": "https://images.pokemontcg.io/pop7/14_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-14",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 1,
-            "mid": 1.5,
-            "high": 2,
-            "market": 1.43,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-14",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.5,
-          "lowPrice": 1,
-          "trendPrice": 2.71,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 1.2,
-          "avg1": 1.5,
-          "avg7": 2.39,
-          "avg30": 1.9,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "pop7-15",
-      "name": "Ralts",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "13",
-      "hp": "60",
-      "types": [
-        "Psychic"
-      ],
-      "evolvesTo": [
-        "Kirlia"
-      ],
-      "attacks": [
-        {
-          "name": "Smack",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": ""
-        },
-        {
-          "name": "Confuse Ray",
-          "cost": [
-            "Psychic"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Psychic",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "15",
-      "artist": "Sumiyoshi Kizuki",
-      "rarity": "Common",
-      "flavorText": "It uses the horns on its head to sense human emotions. It is said to appear in front of cheerful people.",
-      "nationalPokedexNumbers": [
-        280
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/15.png",
-        "large": "https://images.pokemontcg.io/pop7/15_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-15",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 4,
-            "mid": 5.12,
-            "high": 24.99,
-            "market": 2.99,
-            "directLow": 5.4
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-15",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.62,
-          "lowPrice": 0.99,
-          "trendPrice": 2.37,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.99,
-          "avg1": 0.5,
-          "avg7": 1.87,
-          "avg30": 2.1,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "pop7-16",
-      "name": "Sentret",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "11",
-      "hp": "60",
-      "types": [
-        "Colorless"
-      ],
-      "evolvesTo": [
-        "Furret"
-      ],
-      "attacks": [
-        {
-          "name": "Grope",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Look at the top 2 cards of your deck, choose 1 of them, and put it into your hand. Put the other card on the bottom of your deck."
-        },
-        {
-          "name": "Scratch",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "16",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "It has a very nervous nature. It stands up high on its tail so it can scan wide areas.",
-      "nationalPokedexNumbers": [
-        161
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/16.png",
-        "large": "https://images.pokemontcg.io/pop7/16_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-16",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 1,
-            "mid": 2,
-            "high": 4.99,
-            "market": 1.68,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-16",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.21,
-          "lowPrice": 0.49,
-          "trendPrice": 1.48,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 1.19,
-          "avg1": 1.49,
-          "avg7": 1.51,
-          "avg30": 1.4,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
-        }
-      }
-    },
-    {
-      "id": "pop7-17",
-      "name": "Spinda",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "25",
-      "hp": "70",
-      "types": [
-        "Colorless"
-      ],
-      "attacks": [
-        {
-          "name": "Dish Out",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Draw a card from the top and the bottom of your deck."
-        },
-        {
-          "name": "Synchro Punch",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10+",
-          "text": "If any basic Energy card attached to Spinda is the same type as any Energy attached to the Defending Pokémon, this attack does 10 damage plus 30 more damage."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop7",
-        "name": "POP Series 7",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2008/03/01",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop7/logo.png"
-        }
-      },
-      "number": "17",
-      "artist": "Atsuko Nishida",
-      "rarity": "Common",
-      "flavorText": "No two SPINDA have the same pattern of spots. Its tottering step fouls the aim of foes.",
-      "nationalPokedexNumbers": [
-        327
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/17.png",
-        "large": "https://images.pokemontcg.io/pop7/17_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-17",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 1,
-            "mid": 1.25,
-            "high": 2,
-            "market": 1,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop7-17",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.2,
-          "lowPrice": 0.25,
-          "trendPrice": 1.28,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.7,
-          "avg1": 1.49,
-          "avg7": 1.47,
-          "avg30": 1.15,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
         }
       }
     },
@@ -1057,6 +170,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "2",
+      "artist": "Daisuke Ito",
+      "rarity": "Rare",
+      "flavorText": "A master of courtesy and swordsmanship, it fights using extending swords on it elbows.",
+      "nationalPokedexNumbers": [
+        475
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/2.png",
+        "large": "https://images.pokemontcg.io/pop7/2_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1072,20 +199,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "2",
-      "artist": "Daisuke Ito",
-      "rarity": "Rare",
-      "flavorText": "A master of courtesy and swordsmanship, it fights using extending swords on it elbows.",
-      "nationalPokedexNumbers": [
-        475
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/2.png",
-        "large": "https://images.pokemontcg.io/pop7/2_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-2",
@@ -1179,6 +292,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "3",
+      "artist": "Daisuke Ito",
+      "rarity": "Rare",
+      "flavorText": "Its body is covered with a down that can refract light in such a way that it becomes invisible.",
+      "nationalPokedexNumbers": [
+        380
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/3.png",
+        "large": "https://images.pokemontcg.io/pop7/3_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1194,20 +321,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "3",
-      "artist": "Daisuke Ito",
-      "rarity": "Rare",
-      "flavorText": "Its body is covered with a down that can refract light in such a way that it becomes invisible.",
-      "nationalPokedexNumbers": [
-        380
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/3.png",
-        "large": "https://images.pokemontcg.io/pop7/3_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-3",
@@ -1303,6 +416,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "4",
+      "artist": "Daisuke Ito",
+      "rarity": "Rare",
+      "flavorText": "A highly intelligent Pokémon. By folding back its wings in flight, it can overtake jet planes.",
+      "nationalPokedexNumbers": [
+        381
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/4.png",
+        "large": "https://images.pokemontcg.io/pop7/4_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1318,20 +445,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "4",
-      "artist": "Daisuke Ito",
-      "rarity": "Rare",
-      "flavorText": "A highly intelligent Pokémon. By folding back its wings in flight, it can overtake jet planes.",
-      "nationalPokedexNumbers": [
-        381
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/4.png",
-        "large": "https://images.pokemontcg.io/pop7/4_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-4",
@@ -1419,6 +532,20 @@
           "value": "-20"
         }
       ],
+      "number": "5",
+      "artist": "Kazuyuki Kano",
+      "rarity": "Rare",
+      "flavorText": "It loves the honey of flowers and steals honey collected by COMBEE.",
+      "nationalPokedexNumbers": [
+        414
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/5.png",
+        "large": "https://images.pokemontcg.io/pop7/5_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1434,20 +561,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "5",
-      "artist": "Kazuyuki Kano",
-      "rarity": "Rare",
-      "flavorText": "It loves the honey of flowers and steals honey collected by COMBEE.",
-      "nationalPokedexNumbers": [
-        414
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/5.png",
-        "large": "https://images.pokemontcg.io/pop7/5_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-5",
@@ -1531,6 +644,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "6",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Uncommon",
+      "flavorText": "It carries food rolled up in its tail. It has the habit of sharing food with people lost in mountains.",
+      "nationalPokedexNumbers": [
+        225
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/6.png",
+        "large": "https://images.pokemontcg.io/pop7/6_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1546,20 +673,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "6",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Uncommon",
-      "flavorText": "It carries food rolled up in its tail. It has the habit of sharing food with people lost in mountains.",
-      "nationalPokedexNumbers": [
-        225
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/6.png",
-        "large": "https://images.pokemontcg.io/pop7/6_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-6",
@@ -1650,6 +763,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "7",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Uncommon",
+      "flavorText": "If its coat becomes fully charged with electricity, its tail lights up. It fire hair that zaps on impact.",
+      "nationalPokedexNumbers": [
+        180
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/7.png",
+        "large": "https://images.pokemontcg.io/pop7/7_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1665,20 +792,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "7",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Uncommon",
-      "flavorText": "If its coat becomes fully charged with electricity, its tail lights up. It fire hair that zaps on impact.",
-      "nationalPokedexNumbers": [
-        180
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/7.png",
-        "large": "https://images.pokemontcg.io/pop7/7_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-7",
@@ -1764,6 +877,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "8",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Uncommon",
+      "flavorText": "It is highly perceptive of its Trainer's feelings. It dances when it is feeling happy.",
+      "nationalPokedexNumbers": [
+        281
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/8.png",
+        "large": "https://images.pokemontcg.io/pop7/8_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1779,20 +906,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "8",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Uncommon",
-      "flavorText": "It is highly perceptive of its Trainer's feelings. It dances when it is feeling happy.",
-      "nationalPokedexNumbers": [
-        281
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/8.png",
-        "large": "https://images.pokemontcg.io/pop7/8_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-8",
@@ -1877,6 +990,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "9",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "flavorText": "Staring at its antlers creates an odd sensation as if one were being drawn into their centers.",
+      "nationalPokedexNumbers": [
+        234
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/9.png",
+        "large": "https://images.pokemontcg.io/pop7/9_hires.png"
+      },
       "set": {
         "id": "pop7",
         "name": "POP Series 7",
@@ -1892,20 +1019,6 @@
           "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
           "logo": "https://images.pokemontcg.io/pop7/logo.png"
         }
-      },
-      "number": "9",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "flavorText": "Staring at its antlers creates an odd sensation as if one were being drawn into their centers.",
-      "nationalPokedexNumbers": [
-        234
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop7/9.png",
-        "large": "https://images.pokemontcg.io/pop7/9_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop7-9",
@@ -1936,6 +1049,893 @@
           "avg1": 4,
           "avg7": 6.26,
           "avg30": 5.04,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-10",
+      "name": "Wormadam Sandy Cloak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "37",
+      "hp": "80",
+      "types": [
+        "Fighting"
+      ],
+      "evolvesFrom": "Burmy Sandy Cloak",
+      "abilities": [
+        {
+          "name": "Sandy Cloak",
+          "text": "Prevent all effects, excluding damage, done to Wormadam Sandy Cloak.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Push Over",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Does 40 damage plus 10 more damage for each Fighting Energy attached to Wormadam Sandy Cloak."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "10",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Uncommon",
+      "flavorText": "When BURMY evolved, it cloak became a part of this Pokémon's body. The cloak is never shed.",
+      "nationalPokedexNumbers": [
+        413
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/10.png",
+        "large": "https://images.pokemontcg.io/pop7/10_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-10",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 6,
+            "mid": 6.59,
+            "high": 7.17,
+            "market": 5.19,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-10",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 4,
+          "lowPrice": 2.5,
+          "trendPrice": 5.19,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 2.5,
+          "avg1": 4,
+          "avg7": 5.69,
+          "avg30": 4.47,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-11",
+      "name": "Burmy Plant Cloak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "10",
+      "hp": "40",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Wormadam",
+        "Mothim"
+      ],
+      "abilities": [
+        {
+          "name": "Wear Cloak",
+          "text": "Once during your turn (before your attack), if Burmy Plant Cloak is your Active Pokémon, you may search your discard pile for a basic Grass Energy card and attach it to Burmy Plant Cloak.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Plant Cloak Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If Burmy Plant Cloak has any Grass Energy attached to it, this attack does 10 damage plus 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "11",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
+      "nationalPokedexNumbers": [
+        412
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/11.png",
+        "large": "https://images.pokemontcg.io/pop7/11_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-11",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.33,
+            "mid": 0.84,
+            "high": 5,
+            "market": 0.85,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-11",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.85,
+          "lowPrice": 0.35,
+          "trendPrice": 0.81,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.75,
+          "avg1": 1,
+          "avg7": 0.91,
+          "avg30": 0.78,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-12",
+      "name": "Burmy Sandy Cloak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "10",
+      "hp": "40",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Wormadam",
+        "Mothim"
+      ],
+      "abilities": [
+        {
+          "name": "Wear Cloak",
+          "text": "Once during your turn (before your attack), if Burmy Sandy Cloak is your Active Pokémon, you may search your discard pile for a basic Fighting Energy card and attach it to Burmy Sandy Cloak.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sandy Cloak Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If Burmy Sandy Cloak has any Fighting Energy attached to it, this attack does 10 damage plus 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "12",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
+      "nationalPokedexNumbers": [
+        412
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/12.png",
+        "large": "https://images.pokemontcg.io/pop7/12_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-12",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.37,
+            "mid": 0.93,
+            "high": 2,
+            "market": 0.98,
+            "directLow": 1.02
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-12",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.88,
+          "lowPrice": 0.25,
+          "trendPrice": 0.75,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.44,
+          "avg1": 0.99,
+          "avg7": 0.81,
+          "avg30": 0.7,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-13",
+      "name": "Corsola",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "32",
+      "hp": "70",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "Cursola"
+      ],
+      "attacks": [
+        {
+          "name": "Rally",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 different types of Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Hook",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "+20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "13",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "Many live in the clean seas of the south. They apparently can't live in polluted waters.",
+      "nationalPokedexNumbers": [
+        222
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/13.png",
+        "large": "https://images.pokemontcg.io/pop7/13_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-13",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.74,
+            "mid": 1,
+            "high": 2,
+            "market": 0.97,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-13",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.58,
+          "lowPrice": 0.6,
+          "trendPrice": 0.68,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0.19,
+          "lowPriceExPlus": 0.6,
+          "avg1": 0.69,
+          "avg7": 0.64,
+          "avg30": 0.76,
+          "reverseHoloAvg1": 0.19,
+          "reverseHoloAvg7": 0.19,
+          "reverseHoloAvg30": 0.19
+        }
+      }
+    },
+    {
+      "id": "pop7-14",
+      "name": "Mareep",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "11",
+      "hp": "50",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesTo": [
+        "Flaaffy"
+      ],
+      "attacks": [
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Static Shock",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "14",
+      "artist": "Atsuko Nishida",
+      "rarity": "Common",
+      "flavorText": "Its fluffy coat swells to double when static electricity builds up. Touching it can be shocking.",
+      "nationalPokedexNumbers": [
+        179
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/14.png",
+        "large": "https://images.pokemontcg.io/pop7/14_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-14",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 1,
+            "mid": 1.5,
+            "high": 2,
+            "market": 1.43,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-14",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.5,
+          "lowPrice": 1,
+          "trendPrice": 2.71,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 1.2,
+          "avg1": 1.5,
+          "avg7": 2.39,
+          "avg30": 1.9,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-15",
+      "name": "Ralts",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "13",
+      "hp": "60",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesTo": [
+        "Kirlia"
+      ],
+      "attacks": [
+        {
+          "name": "Smack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Confuse Ray",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "15",
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Common",
+      "flavorText": "It uses the horns on its head to sense human emotions. It is said to appear in front of cheerful people.",
+      "nationalPokedexNumbers": [
+        280
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/15.png",
+        "large": "https://images.pokemontcg.io/pop7/15_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-15",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 4,
+            "mid": 5.12,
+            "high": 24.99,
+            "market": 2.99,
+            "directLow": 5.4
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-15",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.62,
+          "lowPrice": 0.99,
+          "trendPrice": 2.37,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.99,
+          "avg1": 0.5,
+          "avg7": 1.87,
+          "avg30": 2.1,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-16",
+      "name": "Sentret",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "11",
+      "hp": "60",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesTo": [
+        "Furret"
+      ],
+      "attacks": [
+        {
+          "name": "Grope",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at the top 2 cards of your deck, choose 1 of them, and put it into your hand. Put the other card on the bottom of your deck."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "16",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "It has a very nervous nature. It stands up high on its tail so it can scan wide areas.",
+      "nationalPokedexNumbers": [
+        161
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/16.png",
+        "large": "https://images.pokemontcg.io/pop7/16_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-16",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 1,
+            "mid": 2,
+            "high": 4.99,
+            "market": 1.68,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-16",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.21,
+          "lowPrice": 0.49,
+          "trendPrice": 1.48,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 1.19,
+          "avg1": 1.49,
+          "avg7": 1.51,
+          "avg30": 1.4,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "pop7-17",
+      "name": "Spinda",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "25",
+      "hp": "70",
+      "types": [
+        "Colorless"
+      ],
+      "attacks": [
+        {
+          "name": "Dish Out",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card from the top and the bottom of your deck."
+        },
+        {
+          "name": "Synchro Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If any basic Energy card attached to Spinda is the same type as any Energy attached to the Defending Pokémon, this attack does 10 damage plus 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "17",
+      "artist": "Atsuko Nishida",
+      "rarity": "Common",
+      "flavorText": "No two SPINDA have the same pattern of spots. Its tottering step fouls the aim of foes.",
+      "nationalPokedexNumbers": [
+        327
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/17.png",
+        "large": "https://images.pokemontcg.io/pop7/17_hires.png"
+      },
+      "set": {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2008/03/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop7-17",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 1,
+            "mid": 1.25,
+            "high": 2,
+            "market": 1,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop7-17",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.2,
+          "lowPrice": 0.25,
+          "trendPrice": 1.28,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.7,
+          "avg1": 1.49,
+          "avg7": 1.47,
+          "avg30": 1.15,
           "reverseHoloAvg1": 0,
           "reverseHoloAvg7": 0,
           "reverseHoloAvg30": 0

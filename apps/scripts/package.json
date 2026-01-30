@@ -22,7 +22,8 @@
     "sync:cards": "bun run ./bin/index.js sync:cards",
     "docker:scripts:db:sync": "bun run ./bin/index.js db:sync",
     "scripts:json:ls": "bun run ./bin/index.js json:ls",
-    "scripts:json:sync": "DEBUG=* bun run ./bin/index.js json:sync"
+    "scripts:json:sync": "DEBUG=* bun run ./bin/index.js json:sync",
+    "scripts:fork:sync": "DEBUG=* bun run ./bin/index.js fork:sync"
   },
   "dependencies": {
     "@pokemon/clients": "workspace:*",

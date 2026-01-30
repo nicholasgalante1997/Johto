@@ -45,6 +45,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "TG01",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "The Pokémon is known to bring blizzards. A shake of its massive body is enough to cause whiteout conditions.",
+      "nationalPokedexNumbers": [
+        460
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG01.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG01_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -63,23 +79,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG01",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "The Pokémon is known to bring blizzards. A shake of its massive body is enough to cause whiteout conditions.",
-      "nationalPokedexNumbers": [
-        460
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG01.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG01_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG01",
@@ -157,6 +156,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "TG02",
+      "artist": "Misaki Hashimoto",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns.",
+      "nationalPokedexNumbers": [
+        841
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG02.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG02_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -175,22 +190,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG02",
-      "artist": "Misaki Hashimoto",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns.",
-      "nationalPokedexNumbers": [
-        841
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG02.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG02_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG02",
@@ -267,6 +266,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "TG03",
+      "artist": "Taira Akitsu",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It stores energy by sleeping at underwater depths at which no other life forms can survive.",
+      "nationalPokedexNumbers": [
+        230
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG03.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG03_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -285,23 +300,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG03",
-      "artist": "Taira Akitsu",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It stores energy by sleeping at underwater depths at which no other life forms can survive.",
-      "nationalPokedexNumbers": [
-        230
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG03.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG03_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG03",
@@ -380,6 +378,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG04",
+      "artist": "aoki",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away.",
+      "nationalPokedexNumbers": [
+        873
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG04.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG04_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -398,22 +412,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG04",
-      "artist": "aoki",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away.",
-      "nationalPokedexNumbers": [
-        873
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG04.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG04_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG04",
@@ -493,6 +491,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG05",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "To protect its Trainer, it will expend all its psychic power to create a small black hole.",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG05.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG05_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -511,23 +525,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG05",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "To protect its Trainer, it will expend all its psychic power to create a small black hole.",
-      "nationalPokedexNumbers": [
-        282
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG05.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG05_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG05",
@@ -612,6 +609,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG06",
+      "artist": "kirisAki",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers. The fur shed from its beard retains heat well and is a highly useful material for winter clothing.",
+      "nationalPokedexNumbers": [
+        899
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG06.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG06_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -630,23 +644,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG06",
-      "artist": "kirisAki",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers. The fur shed from its beard retains heat well and is a highly useful material for winter clothing.",
-      "nationalPokedexNumbers": [
-        899
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG06.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG06_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG06",
@@ -718,6 +715,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG07",
+      "artist": "Kinu Nishimura",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "The six of them work together as one Pokémon. Teamwork is also their battle strategy, and they constantly change their formation as they fight.",
+      "nationalPokedexNumbers": [
+        870
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG07.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG07_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -736,23 +749,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG07",
-      "artist": "Kinu Nishimura",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "The six of them work together as one Pokémon. Teamwork is also their battle strategy, and they constantly change their formation as they fight.",
-      "nationalPokedexNumbers": [
-        870
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG07.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG07_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG07",
@@ -834,6 +830,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG08",
+      "artist": "Souichirou Gunjima",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee.",
+      "nationalPokedexNumbers": [
+        900
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG08.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG08_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -852,23 +865,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG08",
-      "artist": "Souichirou Gunjima",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee.",
-      "nationalPokedexNumbers": [
-        900
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG08.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG08_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG08",
@@ -948,6 +944,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG09",
+      "artist": "GOSSAN",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It chases down prey in a pack of around ten. They defeat foes with perfectly coordinated teamwork.",
+      "nationalPokedexNumbers": [
+        262
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG09.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG09_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -966,23 +979,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG09",
-      "artist": "GOSSAN",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It chases down prey in a pack of around ten. They defeat foes with perfectly coordinated teamwork.",
-      "nationalPokedexNumbers": [
-        262
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG09.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG09_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG09",
@@ -1061,6 +1057,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG10",
+      "artist": "GOSSAN",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch.",
+      "nationalPokedexNumbers": [
+        862
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG10.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG10_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1079,22 +1091,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG10",
-      "artist": "GOSSAN",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch.",
-      "nationalPokedexNumbers": [
-        862
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG10.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG10_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG10",
@@ -1181,6 +1177,22 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "TG11",
+      "artist": "Hataya",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "Many scientists suspect that this Pokémon originated outside the Galar region, based on the patterns on its body.",
+      "nationalPokedexNumbers": [
+        437
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG11.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG11_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1199,23 +1211,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG11",
-      "artist": "Hataya",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "Many scientists suspect that this Pokémon originated outside the Galar region, based on the patterns on its body.",
-      "nationalPokedexNumbers": [
-        437
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG11.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG11_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG11",
@@ -1301,6 +1296,23 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "TG12",
+      "artist": "HYOGONOSUKE",
+      "rarity": "Trainer Gallery Rare Holo",
+      "flavorText": "It always stands on one foot. It changes feet so fast, the movement can rarely be seen.",
+      "nationalPokedexNumbers": [
+        163
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG12.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG12_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1319,23 +1331,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG12",
-      "artist": "HYOGONOSUKE",
-      "rarity": "Trainer Gallery Rare Holo",
-      "flavorText": "It always stands on one foot. It changes feet so fast, the movement can rarely be seen.",
-      "nationalPokedexNumbers": [
-        163
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG12.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG12_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG12",
@@ -1415,6 +1410,22 @@
           "value": "×2"
         }
       ],
+      "number": "TG13",
+      "artist": "Akira Komayama",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        121
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG13.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG13_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1433,22 +1444,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG13",
-      "artist": "Akira Komayama",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        121
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG13.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG13_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG13",
@@ -1533,6 +1528,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG14",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        898
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG14.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG14_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1551,22 +1561,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG14",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        898
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG14.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG14_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG14",
@@ -1651,6 +1645,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG15",
+      "artist": "Hitoshi Ariga",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        898
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG15.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG15_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1669,22 +1678,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG15",
-      "artist": "Hitoshi Ariga",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        898
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG15.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG15_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG15",
@@ -1773,6 +1766,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG16",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        144
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG16.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG16_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1791,22 +1799,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG16",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        144
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG16.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG16_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG16",
@@ -1897,6 +1889,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG17",
+      "artist": "Oswaldo KATO",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        898
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG17.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG17_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -1915,22 +1922,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG17",
-      "artist": "Oswaldo KATO",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        898
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG17.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG17_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG17",
@@ -2019,6 +2010,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG18",
+      "artist": "chibi",
+      "rarity": "Rare Holo VMAX",
+      "nationalPokedexNumbers": [
+        898
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG18.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG18_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2037,22 +2043,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG18",
-      "artist": "chibi",
-      "rarity": "Rare Holo VMAX",
-      "nationalPokedexNumbers": [
-        898
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG18.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG18_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG18",
@@ -2135,6 +2125,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "TG19",
+      "artist": "kirisAki",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        145
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG19.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG19_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2153,22 +2158,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG19",
-      "artist": "kirisAki",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        145
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG19.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG19_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG19",
@@ -2251,6 +2240,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG20",
+      "artist": "Jiro Sasumo",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        146
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG20.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG20_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2269,22 +2273,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG20",
-      "artist": "Jiro Sasumo",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        146
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG20.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG20_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG20",
@@ -2373,6 +2361,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG21",
+      "artist": "aoki",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        888
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG21.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG21_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2391,21 +2394,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG21",
-      "artist": "aoki",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        888
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG21.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG21_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG21",
@@ -2494,6 +2482,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG22",
+      "artist": "Ryuta Fuse",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        889
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG22.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG22_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2512,21 +2515,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG22",
-      "artist": "Ryuta Fuse",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        889
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG22.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG22_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG22",
@@ -2603,6 +2591,22 @@
           "text": "Discard 3 Energy from this Pokémon. This attack does 220 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
         }
       ],
+      "number": "TG23",
+      "artist": "Taira Akitsu",
+      "rarity": "Rare Holo V",
+      "nationalPokedexNumbers": [
+        445
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "F",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG23.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG23_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2621,22 +2625,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG23",
-      "artist": "Taira Akitsu",
-      "rarity": "Rare Holo V",
-      "nationalPokedexNumbers": [
-        445
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "F",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG23.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG23_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG23",
@@ -2684,6 +2672,18 @@
         "Draw 3 cards. If you drew any cards in this way, discard up to 3 cards from your hand. (You must discard at least 1 card.)",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "TG24",
+      "artist": "Jiro Sasumo",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG24.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG24_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2702,18 +2702,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG24",
-      "artist": "Jiro Sasumo",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG24.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG24_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG24",
@@ -2761,6 +2749,18 @@
         "Discard the top 5 cards of your deck, and attach any Energy cards you discarded in this way to your Benched Fighting Pokémon in any way you like.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "TG25",
+      "artist": "Souichirou Gunjima",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG25.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG25_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2779,18 +2779,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG25",
-      "artist": "Souichirou Gunjima",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG25.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG25_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG25",
@@ -2838,6 +2826,18 @@
         "Attach a Water Energy card from your discard pile to 1 of your Pokémon V. If you do, draw 3 cards.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "TG26",
+      "artist": "nagimiso",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG26.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG26_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2856,19 +2856,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG26",
-      "artist": "nagimiso",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG26.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG26_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG26",
@@ -2916,6 +2903,18 @@
         "Discard up to 2 cards from your hand, and draw 2 cards for each card you discarded in this way.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "TG27",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG27.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG27_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -2934,18 +2933,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG27",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG27.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG27_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG27",
@@ -2993,6 +2980,18 @@
         "Search your deck for an Energy card and a Darkness Pokémon, reveal them, and put them into your hand. Then, shuffle your deck.",
         "You may play only 1 Supporter card during your turn."
       ],
+      "number": "TG28",
+      "artist": "GOSSAN",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG28.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG28_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -3011,18 +3010,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG28",
-      "artist": "GOSSAN",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "D",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG28.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG28_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG28",
@@ -3107,6 +3094,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG29",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        898
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG29.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG29_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -3125,22 +3127,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG29",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        898
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG29.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG29_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG29",
@@ -3229,6 +3215,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "TG30",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        898
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "E",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh10tg/TG30.png",
+        "large": "https://images.pokemontcg.io/swsh10tg/TG30_hires.png"
+      },
       "set": {
         "id": "swsh10tg",
         "name": "Astral Radiance Trainer Gallery",
@@ -3247,22 +3248,6 @@
           "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
           "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
         }
-      },
-      "number": "TG30",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        898
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "regulationMark": "E",
-      "images": {
-        "small": "https://images.pokemontcg.io/swsh10tg/TG30.png",
-        "large": "https://images.pokemontcg.io/swsh10tg/TG30_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/swsh10tg-TG30",
@@ -3299,9 +3284,5 @@
         }
       }
     }
-  ],
-  "page": 1,
-  "pageSize": 250,
-  "count": 30,
-  "totalCount": 30
+  ]
 }

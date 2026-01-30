@@ -6,10 +6,21 @@ import {
   syncPokemonJson,
   syncSets,
   sqlite,
-  printDB
+  printDB,
+  syncForkToData
 } from '../lib/index.js';
 
 const program = new Command();
+
+program
+  .command('fork:sync')
+  .description(
+    'Syncs Pokemon TCG data from fork submodule to @pokemon-data package'
+  )
+  .option('--dry-run', 'Preview without writing files', false)
+  .action(async (options) => {
+    await syncForkToData(options);
+  });
 
 program
   .command('db:sync')

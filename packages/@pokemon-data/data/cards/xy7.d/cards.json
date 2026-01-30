@@ -35,6 +35,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "1",
+      "artist": "MAHOU",
+      "rarity": "Common",
+      "flavorText": "Its scientific name is \"Oddium Wanderus.\" At night, it is said to walk nearly 1,000 feet on its two roots.",
+      "nationalPokedexNumbers": [
+        43
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/1.png",
+        "large": "https://images.pokemontcg.io/xy7/1_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -52,21 +67,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "1",
-      "artist": "MAHOU",
-      "rarity": "Common",
-      "flavorText": "Its scientific name is \"Oddium Wanderus.\" At night, it is said to walk nearly 1,000 feet on its two roots.",
-      "nationalPokedexNumbers": [
-        43
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/1.png",
-        "large": "https://images.pokemontcg.io/xy7/1_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-1",
@@ -111,6 +111,919 @@
       }
     },
     {
+      "id": "xy7-2",
+      "name": "Gloom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "80",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Oddish",
+      "evolvesTo": [
+        "Vileplume",
+        "Bellossom"
+      ],
+      "attacks": [
+        {
+          "name": "Drool",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "2",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Uncommon",
+      "flavorText": "The honey it drools from its mouth smells so atrocious, it can curl noses more than a mile away.",
+      "nationalPokedexNumbers": [
+        44
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/2.png",
+        "large": "https://images.pokemontcg.io/xy7/2_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.03,
+            "mid": 0.21,
+            "high": 4,
+            "market": 0.15,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.1,
+            "mid": 0.47,
+            "high": 2,
+            "market": 0.49,
+            "directLow": 0.48
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.16,
+          "lowPrice": 0.02,
+          "trendPrice": 0.13,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0.44,
+          "reverseHoloLow": 0.1,
+          "reverseHoloTrend": 0.38,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.02,
+          "avg7": 0.14,
+          "avg30": 0.15,
+          "reverseHoloAvg1": 0.05,
+          "reverseHoloAvg7": 0.58,
+          "reverseHoloAvg30": 0.56
+        }
+      }
+    },
+    {
+      "id": "xy7-3",
+      "name": "Vileplume",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "130",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Gloom",
+      "abilities": [
+        {
+          "name": "Irritating Pollen",
+          "text": "Each player can't play any Item cards from his or her hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Solar Beam",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "3",
+      "artist": "Midori Harada",
+      "rarity": "Rare",
+      "flavorText": "It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
+      "nationalPokedexNumbers": [
+        45
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/3.png",
+        "large": "https://images.pokemontcg.io/xy7/3_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.18,
+            "mid": 0.54,
+            "high": 4,
+            "market": 0.57,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.75,
+            "mid": 1.25,
+            "high": 3.75,
+            "market": 1.21,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.75,
+          "lowPrice": 0.1,
+          "trendPrice": 0.8,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 2.23,
+          "reverseHoloLow": 0.6,
+          "reverseHoloTrend": 2.53,
+          "lowPriceExPlus": 0.15,
+          "avg1": 0.88,
+          "avg7": 0.88,
+          "avg30": 0.62,
+          "reverseHoloAvg1": 1.25,
+          "reverseHoloAvg7": 2.68,
+          "reverseHoloAvg30": 2.15
+        }
+      }
+    },
+    {
+      "id": "xy7-4",
+      "name": "Bellossom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "120",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Gloom",
+      "attacks": [
+        {
+          "name": "Windmill",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Flower Tornado",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Move as many Grass Energy attached to your Pokémon to your other Pokémon in any way you like."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "4",
+      "artist": "Mizue",
+      "rarity": "Uncommon",
+      "flavorText": "When the heavy rainfall season ends, it is drawn out by warm sunlight to dance in the open.",
+      "nationalPokedexNumbers": [
+        182
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/4.png",
+        "large": "https://images.pokemontcg.io/xy7/4_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.05,
+            "mid": 0.28,
+            "high": 2.5,
+            "market": 0.25,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.13,
+            "mid": 0.46,
+            "high": 2,
+            "market": 0.46,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.29,
+          "lowPrice": 0.02,
+          "trendPrice": 0.42,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0.72,
+          "reverseHoloLow": 0.15,
+          "reverseHoloTrend": 0.96,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.04,
+          "avg7": 0.14,
+          "avg30": 0.38,
+          "reverseHoloAvg1": 0.45,
+          "reverseHoloAvg7": 0.64,
+          "reverseHoloAvg30": 0.78
+        }
+      }
+    },
+    {
+      "id": "xy7-5",
+      "name": "Spinarak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Ariados"
+      ],
+      "attacks": [
+        {
+          "name": "String Shot",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "5",
+      "artist": "Naoyo Kimura",
+      "rarity": "Common",
+      "flavorText": "It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close.",
+      "nationalPokedexNumbers": [
+        167
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/5.png",
+        "large": "https://images.pokemontcg.io/xy7/5_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.04,
+            "mid": 0.17,
+            "high": 4,
+            "market": 0.13,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.08,
+            "mid": 0.39,
+            "high": 1.63,
+            "market": 0.4,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.05,
+          "lowPrice": 0.05,
+          "trendPrice": 0.02,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.1,
+          "avg1": 0.05,
+          "avg7": 0.11,
+          "avg30": 0.11,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "xy7-6",
+      "name": "Ariados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "70",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Spinarak",
+      "abilities": [
+        {
+          "name": "Poisonous Nest",
+          "text": "Once during your turn (before your attack), you may use this Ability. Both Active Pokémon (except for Grass Pokémon) are now Poisoned.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Impound",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "6",
+      "artist": "Hajime Kusajima",
+      "rarity": "Uncommon",
+      "flavorText": "It attaches silk to its prey and sets it free. Later, it tracks the silk to the prey and its friends.",
+      "nationalPokedexNumbers": [
+        168
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/6.png",
+        "large": "https://images.pokemontcg.io/xy7/6_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.03,
+            "mid": 0.2,
+            "high": 4,
+            "market": 0.19,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.09,
+            "mid": 0.34,
+            "high": 1.49,
+            "market": 0.32,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.1,
+          "lowPrice": 0.1,
+          "trendPrice": 0.13,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.1,
+          "avg1": 0.1,
+          "avg7": 0.15,
+          "avg30": 0.15,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
+      "id": "xy7-7",
+      "name": "Sceptile-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "hp": "170",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "M Sceptile-EX"
+      ],
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Sleep Poison",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Asleep and Poisoned."
+        },
+        {
+          "name": "Unseen Claw",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack does 70 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "7",
+      "artist": "Eske Yoshinob",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        254
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/7.png",
+        "large": "https://images.pokemontcg.io/xy7/7_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 3.25,
+            "mid": 6.02,
+            "high": 10.53,
+            "market": 6.78,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 6.11,
+          "lowPrice": 2.2,
+          "trendPrice": 6.14,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 3.03,
+          "lowPriceExPlus": 3.95,
+          "avg1": 5,
+          "avg7": 6.11,
+          "avg30": 5.96,
+          "reverseHoloAvg1": 1.79,
+          "reverseHoloAvg7": 3.52,
+          "reverseHoloAvg30": 4.11
+        }
+      }
+    },
+    {
+      "id": "xy7-8",
+      "name": "M Sceptile-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Sceptile-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "ancientTrait": {
+        "name": "θ Stop",
+        "text": "Prevent all effects of your opponent's Pokémon's Abilities done to this Pokémon."
+      },
+      "attacks": [
+        {
+          "name": "Jagged Saber",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "100",
+          "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pokémon in any way you like. If you attached Energy to a Pokémon in this way, heal all damage from that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "8",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        254
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/8.png",
+        "large": "https://images.pokemontcg.io/xy7/8_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 13.8,
+            "mid": 20.73,
+            "high": 85,
+            "market": 20.73,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 17.27,
+          "lowPrice": 6.5,
+          "trendPrice": 15.1,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 6.87,
+          "lowPriceExPlus": 16.9,
+          "avg1": 10,
+          "avg7": 16.9,
+          "avg30": 21.87,
+          "reverseHoloAvg1": 4.5,
+          "reverseHoloAvg7": 6.09,
+          "reverseHoloAvg30": 6.92
+        }
+      }
+    },
+    {
+      "id": "xy7-9",
+      "name": "Combee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "40",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Vespiquen"
+      ],
+      "attacks": [
+        {
+          "name": "Bug Bite",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "9",
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Common",
+      "flavorText": "It collects and delivers honey to its colony. At night, they cluster to form a beehive and sleep.",
+      "nationalPokedexNumbers": [
+        415
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/9.png",
+        "large": "https://images.pokemontcg.io/xy7/9_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.01,
+            "mid": 0.16,
+            "high": 4,
+            "market": 0.12,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.09,
+            "mid": 0.3,
+            "high": 1.41,
+            "market": 0.28,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.2,
+          "lowPrice": 0.05,
+          "trendPrice": 0.09,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0,
+          "lowPriceExPlus": 0.2,
+          "avg1": 0.2,
+          "avg7": 0.17,
+          "avg30": 0.17,
+          "reverseHoloAvg1": 0,
+          "reverseHoloAvg7": 0,
+          "reverseHoloAvg30": 0
+        }
+      }
+    },
+    {
       "id": "xy7-10",
       "name": "Vespiquen",
       "supertype": "Pokémon",
@@ -149,6 +1062,21 @@
           "value": "×2"
         }
       ],
+      "number": "10",
+      "artist": "kawayoo",
+      "rarity": "Uncommon",
+      "flavorText": "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee.",
+      "nationalPokedexNumbers": [
+        416
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/10.png",
+        "large": "https://images.pokemontcg.io/xy7/10_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -166,21 +1094,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "10",
-      "artist": "kawayoo",
-      "rarity": "Uncommon",
-      "flavorText": "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee.",
-      "nationalPokedexNumbers": [
-        416
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/10.png",
-        "large": "https://images.pokemontcg.io/xy7/10_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-10",
@@ -221,81 +1134,6 @@
           "reverseHoloAvg1": 0.72,
           "reverseHoloAvg7": 0.54,
           "reverseHoloAvg30": 0.54
-        }
-      }
-    },
-    {
-      "id": "xy7-100",
-      "name": "Trainers' Mail",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Item"
-      ],
-      "rules": [
-        "Look at the top 4 cards of your deck. You may reveal a Trainer card you find there (except Trainers' Mail) and put it into your hand. Shuffle the other cards back into your deck.",
-        "You may play as many Item cards as you like during your turn (before your attack)."
-      ],
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "100",
-      "artist": "Toyste Beach",
-      "rarity": "Rare Secret",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/100.png",
-        "large": "https://images.pokemontcg.io/xy7/100_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-100",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 4.5,
-            "mid": 7.72,
-            "high": 29.99,
-            "market": 7.96,
-            "directLow": 6.99
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-100",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.02,
-          "lowPrice": 7.5,
-          "trendPrice": 0.02,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 1,
-          "lowPriceExPlus": 0,
-          "avg1": 0.02,
-          "avg7": 0.67,
-          "avg30": 0.67,
-          "reverseHoloAvg1": 1,
-          "reverseHoloAvg7": 1,
-          "reverseHoloAvg30": 1
         }
       }
     },
@@ -346,6 +1184,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "11",
+      "artist": "Ayaka Yoshida",
+      "rarity": "Rare",
+      "flavorText": "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee.",
+      "nationalPokedexNumbers": [
+        416
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/11.png",
+        "large": "https://images.pokemontcg.io/xy7/11_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -363,21 +1216,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "11",
-      "artist": "Ayaka Yoshida",
-      "rarity": "Rare",
-      "flavorText": "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee.",
-      "nationalPokedexNumbers": [
-        416
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/11.png",
-        "large": "https://images.pokemontcg.io/xy7/11_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-11",
@@ -463,6 +1301,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "12",
+      "artist": "match",
+      "rarity": "Rare Holo",
+      "flavorText": "Legends say this Pokémon confounded opponents with its swift movements.",
+      "nationalPokedexNumbers": [
+        640
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/12.png",
+        "large": "https://images.pokemontcg.io/xy7/12_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -480,21 +1333,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "12",
-      "artist": "match",
-      "rarity": "Rare Holo",
-      "flavorText": "Legends say this Pokémon confounded opponents with its swift movements.",
-      "nationalPokedexNumbers": [
-        640
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/12.png",
-        "large": "https://images.pokemontcg.io/xy7/12_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-12",
@@ -580,6 +1418,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "13",
+      "artist": "sui",
+      "rarity": "Uncommon",
+      "flavorText": "It has a flame bag inside its body. After inhaling deeply, it blows out flames of nearly 3,000 degrees Fahrenheit.",
+      "nationalPokedexNumbers": [
+        136
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/13.png",
+        "large": "https://images.pokemontcg.io/xy7/13_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -597,21 +1450,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "13",
-      "artist": "sui",
-      "rarity": "Uncommon",
-      "flavorText": "It has a flame bag inside its body. After inhaling deeply, it blows out flames of nearly 3,000 degrees Fahrenheit.",
-      "nationalPokedexNumbers": [
-        136
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/13.png",
-        "large": "https://images.pokemontcg.io/xy7/13_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-13",
@@ -698,6 +1536,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "14",
+      "artist": "Naoki Saito",
+      "rarity": "Rare",
+      "flavorText": "It is said that when it roars, a volcano erupts somewhere around the globe.",
+      "nationalPokedexNumbers": [
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/14.png",
+        "large": "https://images.pokemontcg.io/xy7/14_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -715,21 +1568,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "14",
-      "artist": "Naoki Saito",
-      "rarity": "Rare",
-      "flavorText": "It is said that when it roars, a volcano erupts somewhere around the globe.",
-      "nationalPokedexNumbers": [
-        244
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/14.png",
-        "large": "https://images.pokemontcg.io/xy7/14_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-14",
@@ -823,6 +1661,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "15",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Holo",
+      "flavorText": "It is said that when it roars, a volcano erupts somewhere around the globe.",
+      "nationalPokedexNumbers": [
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/15.png",
+        "large": "https://images.pokemontcg.io/xy7/15_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -840,21 +1693,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "15",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Rare Holo",
-      "flavorText": "It is said that when it roars, a volcano erupts somewhere around the globe.",
-      "nationalPokedexNumbers": [
-        244
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/15.png",
-        "large": "https://images.pokemontcg.io/xy7/15_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-15",
@@ -935,6 +1773,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "16",
+      "artist": "Satoshi Shirai",
+      "rarity": "Common",
+      "flavorText": "The base of volcanoes is where they make their homes. They shoot fire from their five horns to repel attacking enemies.",
+      "nationalPokedexNumbers": [
+        636
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/16.png",
+        "large": "https://images.pokemontcg.io/xy7/16_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -952,21 +1805,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "16",
-      "artist": "Satoshi Shirai",
-      "rarity": "Common",
-      "flavorText": "The base of volcanoes is where they make their homes. They shoot fire from their five horns to repel attacking enemies.",
-      "nationalPokedexNumbers": [
-        636
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/16.png",
-        "large": "https://images.pokemontcg.io/xy7/16_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-16",
@@ -1053,6 +1891,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "17",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare Holo",
+      "flavorText": "When volcanic ash darkened the atmosphere, it is said that Volcarona's fire provided a replacement for the sun.",
+      "nationalPokedexNumbers": [
+        637
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/17.png",
+        "large": "https://images.pokemontcg.io/xy7/17_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1070,21 +1923,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "17",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare Holo",
-      "flavorText": "When volcanic ash darkened the atmosphere, it is said that Volcarona's fire provided a replacement for the sun.",
-      "nationalPokedexNumbers": [
-        637
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/17.png",
-        "large": "https://images.pokemontcg.io/xy7/17_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-17",
@@ -1177,6 +2015,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "18",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare",
+      "flavorText": "When volcanic ash darkened the atmosphere, it is said that Volcarona's fire provided a replacement for the sun.",
+      "nationalPokedexNumbers": [
+        637
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/18.png",
+        "large": "https://images.pokemontcg.io/xy7/18_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1194,21 +2047,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "18",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare",
-      "flavorText": "When volcanic ash darkened the atmosphere, it is said that Volcarona's fire provided a replacement for the sun.",
-      "nationalPokedexNumbers": [
-        637
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/18.png",
-        "large": "https://images.pokemontcg.io/xy7/18_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-18",
@@ -1287,6 +2125,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "19",
+      "artist": "Akira Komayama",
+      "rarity": "Common",
+      "flavorText": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
+      "nationalPokedexNumbers": [
+        129
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/19.png",
+        "large": "https://images.pokemontcg.io/xy7/19_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1304,21 +2157,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "19",
-      "artist": "Akira Komayama",
-      "rarity": "Common",
-      "flavorText": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
-      "nationalPokedexNumbers": [
-        129
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/19.png",
-        "large": "https://images.pokemontcg.io/xy7/19_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-19",
@@ -1359,119 +2197,6 @@
           "reverseHoloAvg1": 0.89,
           "reverseHoloAvg7": 0.72,
           "reverseHoloAvg30": 0.86
-        }
-      }
-    },
-    {
-      "id": "xy7-2",
-      "name": "Gloom",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "80",
-      "types": [
-        "Grass"
-      ],
-      "evolvesFrom": "Oddish",
-      "evolvesTo": [
-        "Vileplume",
-        "Bellossom"
-      ],
-      "attacks": [
-        {
-          "name": "Drool",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "2",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Uncommon",
-      "flavorText": "The honey it drools from its mouth smells so atrocious, it can curl noses more than a mile away.",
-      "nationalPokedexNumbers": [
-        44
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/2.png",
-        "large": "https://images.pokemontcg.io/xy7/2_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.03,
-            "mid": 0.21,
-            "high": 4,
-            "market": 0.15,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 0.1,
-            "mid": 0.47,
-            "high": 2,
-            "market": 0.49,
-            "directLow": 0.48
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.16,
-          "lowPrice": 0.02,
-          "trendPrice": 0.13,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0.44,
-          "reverseHoloLow": 0.1,
-          "reverseHoloTrend": 0.38,
-          "lowPriceExPlus": 0.02,
-          "avg1": 0.02,
-          "avg7": 0.14,
-          "avg30": 0.15,
-          "reverseHoloAvg1": 0.05,
-          "reverseHoloAvg7": 0.58,
-          "reverseHoloAvg30": 0.56
         }
       }
     },
@@ -1524,6 +2249,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "20",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare",
+      "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/20.png",
+        "large": "https://images.pokemontcg.io/xy7/20_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1541,21 +2281,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "20",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare",
-      "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
-      "nationalPokedexNumbers": [
-        130
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/20.png",
-        "large": "https://images.pokemontcg.io/xy7/20_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-20",
@@ -1651,6 +2376,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "21",
+      "artist": "TOKIYA",
+      "rarity": "Rare Holo",
+      "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/21.png",
+        "large": "https://images.pokemontcg.io/xy7/21_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1668,21 +2408,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "21",
-      "artist": "TOKIYA",
-      "rarity": "Rare Holo",
-      "flavorText": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
-      "nationalPokedexNumbers": [
-        130
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/21.png",
-        "large": "https://images.pokemontcg.io/xy7/21_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-21",
@@ -1769,6 +2494,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "22",
+      "artist": "kirisAki",
+      "rarity": "Uncommon",
+      "flavorText": "It has evolved to be suitable for an aquatic life. It can invisibly melt away into water.",
+      "nationalPokedexNumbers": [
+        134
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/22.png",
+        "large": "https://images.pokemontcg.io/xy7/22_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1786,21 +2526,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "22",
-      "artist": "kirisAki",
-      "rarity": "Uncommon",
-      "flavorText": "It has evolved to be suitable for an aquatic life. It can invisibly melt away into water.",
-      "nationalPokedexNumbers": [
-        134
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/22.png",
-        "large": "https://images.pokemontcg.io/xy7/22_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-22",
@@ -1886,6 +2611,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "23",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Common",
+      "flavorText": "A rare Pokémon discovered during a deep-sea exploration. It has not changed in over 100 million years.",
+      "nationalPokedexNumbers": [
+        369
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/23.png",
+        "large": "https://images.pokemontcg.io/xy7/23_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -1903,21 +2643,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "23",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Common",
-      "flavorText": "A rare Pokémon discovered during a deep-sea exploration. It has not changed in over 100 million years.",
-      "nationalPokedexNumbers": [
-        369
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/23.png",
-        "large": "https://images.pokemontcg.io/xy7/23_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-23",
@@ -2007,6 +2732,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "24",
+      "artist": "Miki Tanaka",
+      "rarity": "Rare",
+      "flavorText": "Its body is made of ice from the ice age. It controls frigid air of -328 degrees Fahrenheit.",
+      "nationalPokedexNumbers": [
+        378
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/24.png",
+        "large": "https://images.pokemontcg.io/xy7/24_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2024,21 +2764,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "24",
-      "artist": "Miki Tanaka",
-      "rarity": "Rare",
-      "flavorText": "Its body is made of ice from the ice age. It controls frigid air of -328 degrees Fahrenheit.",
-      "nationalPokedexNumbers": [
-        378
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/24.png",
-        "large": "https://images.pokemontcg.io/xy7/24_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-24",
@@ -2134,6 +2859,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "25",
+      "artist": "PLANETA",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        646
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/25.png",
+        "large": "https://images.pokemontcg.io/xy7/25_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2151,20 +2890,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "25",
-      "artist": "PLANETA",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        646
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/25.png",
-        "large": "https://images.pokemontcg.io/xy7/25_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-25",
@@ -2245,6 +2970,21 @@
           "value": "-20"
         }
       ],
+      "number": "26",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Rare Holo",
+      "flavorText": "It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts.",
+      "nationalPokedexNumbers": [
+        135
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/26.png",
+        "large": "https://images.pokemontcg.io/xy7/26_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2262,21 +3002,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "26",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Rare Holo",
-      "flavorText": "It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts.",
-      "nationalPokedexNumbers": [
-        135
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/26.png",
-        "large": "https://images.pokemontcg.io/xy7/26_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-26",
@@ -2378,6 +3103,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "27",
+      "artist": "Eske Yoshinob",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/27.png",
+        "large": "https://images.pokemontcg.io/xy7/27_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2395,20 +3134,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "27",
-      "artist": "Eske Yoshinob",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        181
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/27.png",
-        "large": "https://images.pokemontcg.io/xy7/27_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-27",
@@ -2494,6 +3219,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "28",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/28.png",
+        "large": "https://images.pokemontcg.io/xy7/28_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2511,20 +3250,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "28",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        181
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/28.png",
-        "large": "https://images.pokemontcg.io/xy7/28_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-28",
@@ -2609,6 +3334,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "29",
+      "artist": "Mizue",
+      "rarity": "Uncommon",
+      "flavorText": "Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.",
+      "nationalPokedexNumbers": [
+        479
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/29.png",
+        "large": "https://images.pokemontcg.io/xy7/29_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2626,21 +3366,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "29",
-      "artist": "Mizue",
-      "rarity": "Uncommon",
-      "flavorText": "Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.",
-      "nationalPokedexNumbers": [
-        479
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/29.png",
-        "large": "https://images.pokemontcg.io/xy7/29_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-29",
@@ -2685,125 +3410,6 @@
       }
     },
     {
-      "id": "xy7-3",
-      "name": "Vileplume",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "hp": "130",
-      "types": [
-        "Grass"
-      ],
-      "evolvesFrom": "Gloom",
-      "abilities": [
-        {
-          "name": "Irritating Pollen",
-          "text": "Each player can't play any Item cards from his or her hand.",
-          "type": "Ability"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Solar Beam",
-          "cost": [
-            "Grass",
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "70",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "3",
-      "artist": "Midori Harada",
-      "rarity": "Rare",
-      "flavorText": "It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
-      "nationalPokedexNumbers": [
-        45
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/3.png",
-        "large": "https://images.pokemontcg.io/xy7/3_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.18,
-            "mid": 0.54,
-            "high": 4,
-            "market": 0.57,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 0.75,
-            "mid": 1.25,
-            "high": 3.75,
-            "market": 1.21,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.75,
-          "lowPrice": 0.1,
-          "trendPrice": 0.8,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 2.23,
-          "reverseHoloLow": 0.6,
-          "reverseHoloTrend": 2.53,
-          "lowPriceExPlus": 0.15,
-          "avg1": 0.88,
-          "avg7": 0.88,
-          "avg30": 0.62,
-          "reverseHoloAvg1": 1.25,
-          "reverseHoloAvg7": 2.68,
-          "reverseHoloAvg30": 2.15
-        }
-      }
-    },
-    {
       "id": "xy7-30",
       "name": "Unown",
       "supertype": "Pokémon",
@@ -2842,6 +3448,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "30",
+      "artist": "Akira Komayama",
+      "rarity": "Common",
+      "flavorText": "Shaped like ancient writing, it is a huge mystery whether language or Unown came first.",
+      "nationalPokedexNumbers": [
+        201
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/30.png",
+        "large": "https://images.pokemontcg.io/xy7/30_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2859,21 +3480,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "30",
-      "artist": "Akira Komayama",
-      "rarity": "Common",
-      "flavorText": "Shaped like ancient writing, it is a huge mystery whether language or Unown came first.",
-      "nationalPokedexNumbers": [
-        201
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/30.png",
-        "large": "https://images.pokemontcg.io/xy7/30_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-30",
@@ -2962,6 +3568,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "31",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "It moves by spinning on its foot. It is a rare Pokémon that was discovered in ancient ruins.",
+      "nationalPokedexNumbers": [
+        343
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/31.png",
+        "large": "https://images.pokemontcg.io/xy7/31_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -2979,21 +3600,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "31",
-      "artist": "Kouki Saitou",
-      "rarity": "Common",
-      "flavorText": "It moves by spinning on its foot. It is a rare Pokémon that was discovered in ancient ruins.",
-      "nationalPokedexNumbers": [
-        343
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/31.png",
-        "large": "https://images.pokemontcg.io/xy7/31_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-31",
@@ -3076,6 +3682,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "32",
+      "artist": "Ayaka Yoshida",
+      "rarity": "Common",
+      "flavorText": "It moves by spinning on its foot. It is a rare Pokémon that was discovered in ancient ruins.",
+      "nationalPokedexNumbers": [
+        343
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/32.png",
+        "large": "https://images.pokemontcg.io/xy7/32_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3093,21 +3714,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "32",
-      "artist": "Ayaka Yoshida",
-      "rarity": "Common",
-      "flavorText": "It moves by spinning on its foot. It is a rare Pokémon that was discovered in ancient ruins.",
-      "nationalPokedexNumbers": [
-        343
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/32.png",
-        "large": "https://images.pokemontcg.io/xy7/32_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-32",
@@ -3195,6 +3801,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "33",
+      "artist": "Satoshi Shirai",
+      "rarity": "Rare",
+      "flavorText": "It is said that it originates from clay dolls made by an ancient civilization.",
+      "nationalPokedexNumbers": [
+        344
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/33.png",
+        "large": "https://images.pokemontcg.io/xy7/33_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3212,21 +3833,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "33",
-      "artist": "Satoshi Shirai",
-      "rarity": "Rare",
-      "flavorText": "It is said that it originates from clay dolls made by an ancient civilization.",
-      "nationalPokedexNumbers": [
-        344
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/33.png",
-        "large": "https://images.pokemontcg.io/xy7/33_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-33",
@@ -3314,6 +3920,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "34",
+      "artist": "Sanosuke Sakuma",
+      "rarity": "Common",
+      "flavorText": "Ancient science fashioned this Pokémon from clay. It's been active for thousands of years.",
+      "nationalPokedexNumbers": [
+        622
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/34.png",
+        "large": "https://images.pokemontcg.io/xy7/34_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3331,21 +3952,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "34",
-      "artist": "Sanosuke Sakuma",
-      "rarity": "Common",
-      "flavorText": "Ancient science fashioned this Pokémon from clay. It's been active for thousands of years.",
-      "nationalPokedexNumbers": [
-        622
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/34.png",
-        "large": "https://images.pokemontcg.io/xy7/34_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-34",
@@ -3445,6 +4051,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "35",
+      "artist": "kawayoo",
+      "rarity": "Rare",
+      "flavorText": "It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.",
+      "nationalPokedexNumbers": [
+        623
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/35.png",
+        "large": "https://images.pokemontcg.io/xy7/35_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3462,21 +4083,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "35",
-      "artist": "kawayoo",
-      "rarity": "Rare",
-      "flavorText": "It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.",
-      "nationalPokedexNumbers": [
-        623
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/35.png",
-        "large": "https://images.pokemontcg.io/xy7/35_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-35",
@@ -3566,6 +4172,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "36",
+      "artist": "Ryota Murayama",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        720
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/36.png",
+        "large": "https://images.pokemontcg.io/xy7/36_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3583,20 +4203,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "36",
-      "artist": "Ryota Murayama",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        720
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/36.png",
-        "large": "https://images.pokemontcg.io/xy7/36_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-36",
@@ -3683,6 +4289,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "37",
+      "artist": "Eske Yoshinob",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        68
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/37.png",
+        "large": "https://images.pokemontcg.io/xy7/37_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3700,20 +4320,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "37",
-      "artist": "Eske Yoshinob",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        68
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/37.png",
-        "large": "https://images.pokemontcg.io/xy7/37_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-37",
@@ -3796,6 +4402,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "38",
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Common",
+      "flavorText": "When the temperature cools in the evening, they emerge from water to seek food along the shore.",
+      "nationalPokedexNumbers": [
+        194
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/38.png",
+        "large": "https://images.pokemontcg.io/xy7/38_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3813,21 +4434,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "38",
-      "artist": "Sumiyoshi Kizuki",
-      "rarity": "Common",
-      "flavorText": "When the temperature cools in the evening, they emerge from water to seek food along the shore.",
-      "nationalPokedexNumbers": [
-        194
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/38.png",
-        "large": "https://images.pokemontcg.io/xy7/38_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-38",
@@ -3918,6 +4524,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "39",
+      "artist": "Naoyo Kimura",
+      "rarity": "Common",
+      "flavorText": "This carefree Pokémon has an easy-going nature. While swimming, it always bumps into boat hulls.",
+      "nationalPokedexNumbers": [
+        195
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/39.png",
+        "large": "https://images.pokemontcg.io/xy7/39_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -3935,21 +4556,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "39",
-      "artist": "Naoyo Kimura",
-      "rarity": "Common",
-      "flavorText": "This carefree Pokémon has an easy-going nature. While swimming, it always bumps into boat hulls.",
-      "nationalPokedexNumbers": [
-        195
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/39.png",
-        "large": "https://images.pokemontcg.io/xy7/39_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-39",
@@ -3990,124 +4596,6 @@
           "reverseHoloAvg1": 9.95,
           "reverseHoloAvg7": 1.15,
           "reverseHoloAvg30": 0.68
-        }
-      }
-    },
-    {
-      "id": "xy7-4",
-      "name": "Bellossom",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "hp": "120",
-      "types": [
-        "Grass"
-      ],
-      "evolvesFrom": "Gloom",
-      "attacks": [
-        {
-          "name": "Windmill",
-          "cost": [
-            "Grass"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "20",
-          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
-        },
-        {
-          "name": "Flower Tornado",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "60",
-          "text": "Move as many Grass Energy attached to your Pokémon to your other Pokémon in any way you like."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "4",
-      "artist": "Mizue",
-      "rarity": "Uncommon",
-      "flavorText": "When the heavy rainfall season ends, it is drawn out by warm sunlight to dance in the open.",
-      "nationalPokedexNumbers": [
-        182
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/4.png",
-        "large": "https://images.pokemontcg.io/xy7/4_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.05,
-            "mid": 0.28,
-            "high": 2.5,
-            "market": 0.25,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 0.13,
-            "mid": 0.46,
-            "high": 2,
-            "market": 0.46,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.29,
-          "lowPrice": 0.02,
-          "trendPrice": 0.42,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0.72,
-          "reverseHoloLow": 0.15,
-          "reverseHoloTrend": 0.96,
-          "lowPriceExPlus": 0.02,
-          "avg1": 0.04,
-          "avg7": 0.14,
-          "avg30": 0.38,
-          "reverseHoloAvg1": 0.45,
-          "reverseHoloAvg7": 0.64,
-          "reverseHoloAvg30": 0.78
         }
       }
     },
@@ -4157,6 +4645,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "40",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare",
+      "flavorText": "The same rocks that form its body have been found in ground layers around the world.",
+      "nationalPokedexNumbers": [
+        377
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/40.png",
+        "large": "https://images.pokemontcg.io/xy7/40_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4174,21 +4677,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "40",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare",
-      "flavorText": "The same rocks that form its body have been found in ground layers around the world.",
-      "nationalPokedexNumbers": [
-        377
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/40.png",
-        "large": "https://images.pokemontcg.io/xy7/40_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-40",
@@ -4280,6 +4768,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "41",
+      "artist": "Suwama Chiaki",
+      "rarity": "Common",
+      "flavorText": "It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.",
+      "nationalPokedexNumbers": [
+        623
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/41.png",
+        "large": "https://images.pokemontcg.io/xy7/41_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4297,21 +4800,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "41",
-      "artist": "Suwama Chiaki",
-      "rarity": "Common",
-      "flavorText": "It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.",
-      "nationalPokedexNumbers": [
-        623
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/41.png",
-        "large": "https://images.pokemontcg.io/xy7/41_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-41",
@@ -4417,6 +4905,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "42",
+      "artist": "Eske Yoshinob",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/42.png",
+        "large": "https://images.pokemontcg.io/xy7/42_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4434,20 +4936,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "42",
-      "artist": "Eske Yoshinob",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        248
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/42.png",
-        "large": "https://images.pokemontcg.io/xy7/42_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-42",
@@ -4538,6 +5026,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "43",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/43.png",
+        "large": "https://images.pokemontcg.io/xy7/43_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4555,20 +5057,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "43",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        248
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/43.png",
-        "large": "https://images.pokemontcg.io/xy7/43_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-43",
@@ -4641,6 +5129,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "44",
+      "artist": "Hitoshi Ariga",
+      "rarity": "Uncommon",
+      "flavorText": "It dwells in the darkness of caves. It uses its sharp claws to dig up gems to nourish itself.",
+      "nationalPokedexNumbers": [
+        302
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/44.png",
+        "large": "https://images.pokemontcg.io/xy7/44_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4658,21 +5161,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "44",
-      "artist": "Hitoshi Ariga",
-      "rarity": "Uncommon",
-      "flavorText": "It dwells in the darkness of caves. It uses its sharp claws to dig up gems to nourish itself.",
-      "nationalPokedexNumbers": [
-        302
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/44.png",
-        "large": "https://images.pokemontcg.io/xy7/44_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-44",
@@ -4757,6 +5245,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "45",
+      "artist": "Tomokazu Komiya",
+      "rarity": "Common",
+      "flavorText": "It flashes the light-emitting spots on its body, which drains its opponent's will to fight. It takes the opportunity to scuttle away and hide.",
+      "nationalPokedexNumbers": [
+        686
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/45.png",
+        "large": "https://images.pokemontcg.io/xy7/45_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4774,21 +5277,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "45",
-      "artist": "Tomokazu Komiya",
-      "rarity": "Common",
-      "flavorText": "It flashes the light-emitting spots on its body, which drains its opponent's will to fight. It takes the opportunity to scuttle away and hide.",
-      "nationalPokedexNumbers": [
-        686
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/45.png",
-        "large": "https://images.pokemontcg.io/xy7/45_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-45",
@@ -4880,6 +5368,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "46",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Common",
+      "flavorText": "It lures prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids.",
+      "nationalPokedexNumbers": [
+        687
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/46.png",
+        "large": "https://images.pokemontcg.io/xy7/46_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -4897,21 +5400,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "46",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Common",
-      "flavorText": "It lures prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids.",
-      "nationalPokedexNumbers": [
-        687
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/46.png",
-        "large": "https://images.pokemontcg.io/xy7/46_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-46",
@@ -5008,6 +5496,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "47",
+      "artist": "Yuka Morii",
+      "rarity": "Common",
+      "flavorText": "It converses with others by magnetic pulses. In a swarm, they move in perfect unison.",
+      "nationalPokedexNumbers": [
+        374
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/47.png",
+        "large": "https://images.pokemontcg.io/xy7/47_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5025,21 +5528,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "47",
-      "artist": "Yuka Morii",
-      "rarity": "Common",
-      "flavorText": "It converses with others by magnetic pulses. In a swarm, they move in perfect unison.",
-      "nationalPokedexNumbers": [
-        374
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/47.png",
-        "large": "https://images.pokemontcg.io/xy7/47_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-47",
@@ -5139,6 +5627,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "48",
+      "artist": "Shigenori Negishi",
+      "rarity": "Uncommon",
+      "flavorText": "It is formed by two Beldum joining together. Its two brains are linked, amplifying its psychic power.",
+      "nationalPokedexNumbers": [
+        375
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/48.png",
+        "large": "https://images.pokemontcg.io/xy7/48_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5156,21 +5659,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "48",
-      "artist": "Shigenori Negishi",
-      "rarity": "Uncommon",
-      "flavorText": "It is formed by two Beldum joining together. Its two brains are linked, amplifying its psychic power.",
-      "nationalPokedexNumbers": [
-        375
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/48.png",
-        "large": "https://images.pokemontcg.io/xy7/48_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-48",
@@ -5266,6 +5754,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "49",
+      "artist": "kirisAki",
+      "rarity": "Rare",
+      "flavorText": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
+      "nationalPokedexNumbers": [
+        376
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/49.png",
+        "large": "https://images.pokemontcg.io/xy7/49_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5283,21 +5786,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "49",
-      "artist": "kirisAki",
-      "rarity": "Rare",
-      "flavorText": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
-      "nationalPokedexNumbers": [
-        376
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/49.png",
-        "large": "https://images.pokemontcg.io/xy7/49_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-49",
@@ -5338,116 +5826,6 @@
           "reverseHoloAvg1": 1.35,
           "reverseHoloAvg7": 2.2,
           "reverseHoloAvg30": 1.92
-        }
-      }
-    },
-    {
-      "id": "xy7-5",
-      "name": "Spinarak",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "50",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Ariados"
-      ],
-      "attacks": [
-        {
-          "name": "String Shot",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "5",
-      "artist": "Naoyo Kimura",
-      "rarity": "Common",
-      "flavorText": "It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close.",
-      "nationalPokedexNumbers": [
-        167
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/5.png",
-        "large": "https://images.pokemontcg.io/xy7/5_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.04,
-            "mid": 0.17,
-            "high": 4,
-            "market": 0.13,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 0.08,
-            "mid": 0.39,
-            "high": 1.63,
-            "market": 0.4,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.05,
-          "lowPrice": 0.05,
-          "trendPrice": 0.02,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.1,
-          "avg1": 0.05,
-          "avg7": 0.11,
-          "avg30": 0.11,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
         }
       }
     },
@@ -5510,6 +5888,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "50",
+      "artist": "Hitoshi Ariga",
+      "rarity": "Rare",
+      "flavorText": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
+      "nationalPokedexNumbers": [
+        376
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/50.png",
+        "large": "https://images.pokemontcg.io/xy7/50_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5527,21 +5920,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "50",
-      "artist": "Hitoshi Ariga",
-      "rarity": "Rare",
-      "flavorText": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
-      "nationalPokedexNumbers": [
-        376
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/50.png",
-        "large": "https://images.pokemontcg.io/xy7/50_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-50",
@@ -5637,6 +6015,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "51",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare",
+      "flavorText": "Its body is said to be harder than any kind of metal. A study has revealed that its body is hollow.",
+      "nationalPokedexNumbers": [
+        379
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/51.png",
+        "large": "https://images.pokemontcg.io/xy7/51_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5654,21 +6047,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "51",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare",
-      "flavorText": "Its body is said to be harder than any kind of metal. A study has revealed that its body is hollow.",
-      "nationalPokedexNumbers": [
-        379
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/51.png",
-        "large": "https://images.pokemontcg.io/xy7/51_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-51",
@@ -5763,6 +6141,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "52",
+      "artist": "Aya Kusube",
+      "rarity": "Common",
+      "flavorText": "It is highly attuned to the emotions of people and Pokémon. It hides if it senses hostility.",
+      "nationalPokedexNumbers": [
+        280
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/52.png",
+        "large": "https://images.pokemontcg.io/xy7/52_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5780,21 +6173,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "52",
-      "artist": "Aya Kusube",
-      "rarity": "Common",
-      "flavorText": "It is highly attuned to the emotions of people and Pokémon. It hides if it senses hostility.",
-      "nationalPokedexNumbers": [
-        280
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/52.png",
-        "large": "https://images.pokemontcg.io/xy7/52_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-52",
@@ -5892,6 +6270,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "53",
+      "artist": "match",
+      "rarity": "Uncommon",
+      "flavorText": "It has a psychic power that enables it to distort the space around it and see into the future.",
+      "nationalPokedexNumbers": [
+        281
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/53.png",
+        "large": "https://images.pokemontcg.io/xy7/53_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -5909,21 +6302,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "53",
-      "artist": "match",
-      "rarity": "Uncommon",
-      "flavorText": "It has a psychic power that enables it to distort the space around it and see into the future.",
-      "nationalPokedexNumbers": [
-        281
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/53.png",
-        "large": "https://images.pokemontcg.io/xy7/53_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-53",
@@ -6016,6 +6394,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "54",
+      "artist": "TOKIYA",
+      "rarity": "Rare Holo",
+      "flavorText": "It has the power to predict the future. Its power peaks when it is protecting its Trainer.",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/54.png",
+        "large": "https://images.pokemontcg.io/xy7/54_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6033,21 +6426,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "54",
-      "artist": "TOKIYA",
-      "rarity": "Rare Holo",
-      "flavorText": "It has the power to predict the future. Its power peaks when it is protecting its Trainer.",
-      "nationalPokedexNumbers": [
-        282
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/54.png",
-        "large": "https://images.pokemontcg.io/xy7/54_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-54",
@@ -6132,6 +6510,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "55",
+      "artist": "Kanako Eo",
+      "rarity": "Common",
+      "flavorText": "Perhaps because they feel more at ease in a group, they stick to others they find. They end up looking like a cloud.",
+      "nationalPokedexNumbers": [
+        546
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/55.png",
+        "large": "https://images.pokemontcg.io/xy7/55_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6149,21 +6542,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "55",
-      "artist": "Kanako Eo",
-      "rarity": "Common",
-      "flavorText": "Perhaps because they feel more at ease in a group, they stick to others they find. They end up looking like a cloud.",
-      "nationalPokedexNumbers": [
-        546
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/55.png",
-        "large": "https://images.pokemontcg.io/xy7/55_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-55",
@@ -6256,6 +6634,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "56",
+      "artist": "Atsuko Nishida",
+      "rarity": "Uncommon",
+      "flavorText": "Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind.",
+      "nationalPokedexNumbers": [
+        547
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/56.png",
+        "large": "https://images.pokemontcg.io/xy7/56_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6273,21 +6666,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "56",
-      "artist": "Atsuko Nishida",
-      "rarity": "Uncommon",
-      "flavorText": "Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind.",
-      "nationalPokedexNumbers": [
-        547
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/56.png",
-        "large": "https://images.pokemontcg.io/xy7/56_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-56",
@@ -6379,6 +6757,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "57",
+      "artist": "PLANETA",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        487
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/57.png",
+        "large": "https://images.pokemontcg.io/xy7/57_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6396,20 +6788,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "57",
-      "artist": "PLANETA",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        487
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/57.png",
-        "large": "https://images.pokemontcg.io/xy7/57_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-57",
@@ -6490,6 +6868,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "58",
+      "artist": "sui",
+      "rarity": "Common",
+      "flavorText": "It's covered in a slimy membrane that makes any punches or kicks slide off it harmlessly.",
+      "nationalPokedexNumbers": [
+        704
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/58.png",
+        "large": "https://images.pokemontcg.io/xy7/58_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6507,21 +6900,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "58",
-      "artist": "sui",
-      "rarity": "Common",
-      "flavorText": "It's covered in a slimy membrane that makes any punches or kicks slide off it harmlessly.",
-      "nationalPokedexNumbers": [
-        704
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/58.png",
-        "large": "https://images.pokemontcg.io/xy7/58_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-58",
@@ -6613,6 +6991,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "59",
+      "artist": "Midori Harada",
+      "rarity": "Uncommon",
+      "flavorText": "Its four horns are a high-performance radar system. It uses them to sense sounds and smells, rather than using ears or a nose.",
+      "nationalPokedexNumbers": [
+        705
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/59.png",
+        "large": "https://images.pokemontcg.io/xy7/59_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6630,21 +7023,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "59",
-      "artist": "Midori Harada",
-      "rarity": "Uncommon",
-      "flavorText": "Its four horns are a high-performance radar system. It uses them to sense sounds and smells, rather than using ears or a nose.",
-      "nationalPokedexNumbers": [
-        705
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/59.png",
-        "large": "https://images.pokemontcg.io/xy7/59_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-59",
@@ -6685,122 +7063,6 @@
           "reverseHoloAvg1": 0.24,
           "reverseHoloAvg7": 0.45,
           "reverseHoloAvg30": 0.43
-        }
-      }
-    },
-    {
-      "id": "xy7-6",
-      "name": "Ariados",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "70",
-      "types": [
-        "Grass"
-      ],
-      "evolvesFrom": "Spinarak",
-      "abilities": [
-        {
-          "name": "Poisonous Nest",
-          "text": "Once during your turn (before your attack), you may use this Ability. Both Active Pokémon (except for Grass Pokémon) are now Poisoned.",
-          "type": "Ability"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Impound",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "30",
-          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "6",
-      "artist": "Hajime Kusajima",
-      "rarity": "Uncommon",
-      "flavorText": "It attaches silk to its prey and sets it free. Later, it tracks the silk to the prey and its friends.",
-      "nationalPokedexNumbers": [
-        168
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/6.png",
-        "large": "https://images.pokemontcg.io/xy7/6_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.03,
-            "mid": 0.2,
-            "high": 4,
-            "market": 0.19,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 0.09,
-            "mid": 0.34,
-            "high": 1.49,
-            "market": 0.32,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.1,
-          "lowPrice": 0.1,
-          "trendPrice": 0.13,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.1,
-          "avg1": 0.1,
-          "avg7": 0.15,
-          "avg30": 0.15,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
         }
       }
     },
@@ -6852,6 +7114,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "60",
+      "artist": "Saya Tsuruta",
+      "rarity": "Rare Holo",
+      "flavorText": "It attacks with retractable horns. It throws a punch that's the equivalent of the force of a hundred pro boxers.",
+      "nationalPokedexNumbers": [
+        706
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/60.png",
+        "large": "https://images.pokemontcg.io/xy7/60_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6869,21 +7146,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "60",
-      "artist": "Saya Tsuruta",
-      "rarity": "Rare Holo",
-      "flavorText": "It attacks with retractable horns. It throws a punch that's the equivalent of the force of a hundred pro boxers.",
-      "nationalPokedexNumbers": [
-        706
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/60.png",
-        "large": "https://images.pokemontcg.io/xy7/60_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-60",
@@ -6962,6 +7224,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "61",
+      "artist": "Kanako Eo",
+      "rarity": "Common",
+      "flavorText": "Adores round objects. It wanders the streets on a nightly basis to look for dropped loose change.",
+      "nationalPokedexNumbers": [
+        52
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/61.png",
+        "large": "https://images.pokemontcg.io/xy7/61_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -6979,21 +7256,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "61",
-      "artist": "Kanako Eo",
-      "rarity": "Common",
-      "flavorText": "Adores round objects. It wanders the streets on a nightly basis to look for dropped loose change.",
-      "nationalPokedexNumbers": [
-        52
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/61.png",
-        "large": "https://images.pokemontcg.io/xy7/61_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-61",
@@ -7080,6 +7342,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "62",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Its lithe muscles allow it to walk without making a sound. It attacks in an instant.",
+      "nationalPokedexNumbers": [
+        53
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/62.png",
+        "large": "https://images.pokemontcg.io/xy7/62_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7097,21 +7374,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "62",
-      "artist": "Mitsuhiro Arita",
-      "rarity": "Common",
-      "flavorText": "Its lithe muscles allow it to walk without making a sound. It attacks in an instant.",
-      "nationalPokedexNumbers": [
-        53
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/62.png",
-        "large": "https://images.pokemontcg.io/xy7/62_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-62",
@@ -7207,6 +7469,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "63",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.",
+      "nationalPokedexNumbers": [
+        133
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/63.png",
+        "large": "https://images.pokemontcg.io/xy7/63_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7224,21 +7501,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "63",
-      "artist": "Kouki Saitou",
-      "rarity": "Common",
-      "flavorText": "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.",
-      "nationalPokedexNumbers": [
-        133
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/63.png",
-        "large": "https://images.pokemontcg.io/xy7/63_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-63",
@@ -7327,6 +7589,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "64",
+      "artist": "Yukiko Baba",
+      "rarity": "Common",
+      "flavorText": "A Pokémon that consists entirely of programming code. It is capable of moving freely in cyberspace.",
+      "nationalPokedexNumbers": [
+        137
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/64.png",
+        "large": "https://images.pokemontcg.io/xy7/64_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7344,21 +7621,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "64",
-      "artist": "Yukiko Baba",
-      "rarity": "Common",
-      "flavorText": "A Pokémon that consists entirely of programming code. It is capable of moving freely in cyberspace.",
-      "nationalPokedexNumbers": [
-        137
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/64.png",
-        "large": "https://images.pokemontcg.io/xy7/64_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-64",
@@ -7450,6 +7712,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "65",
+      "artist": "MAHOU",
+      "rarity": "Uncommon",
+      "flavorText": "With planetary development software installed, it became capable of working in space.",
+      "nationalPokedexNumbers": [
+        233
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/65.png",
+        "large": "https://images.pokemontcg.io/xy7/65_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7467,21 +7744,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "65",
-      "artist": "MAHOU",
-      "rarity": "Uncommon",
-      "flavorText": "With planetary development software installed, it became capable of working in space.",
-      "nationalPokedexNumbers": [
-        233
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/65.png",
-        "large": "https://images.pokemontcg.io/xy7/65_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-65",
@@ -7570,6 +7832,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "66",
+      "artist": "TOKIYA",
+      "rarity": "Rare",
+      "flavorText": "Its programming was modified to enable it to travel through alien dimensions. Seems there might have been an error…",
+      "nationalPokedexNumbers": [
+        474
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/66.png",
+        "large": "https://images.pokemontcg.io/xy7/66_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7587,21 +7864,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "66",
-      "artist": "TOKIYA",
-      "rarity": "Rare",
-      "flavorText": "Its programming was modified to enable it to travel through alien dimensions. Seems there might have been an error…",
-      "nationalPokedexNumbers": [
-        474
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/66.png",
-        "large": "https://images.pokemontcg.io/xy7/66_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-66",
@@ -7693,6 +7955,21 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "67",
+      "artist": "Naoki Saito",
+      "rarity": "Rare Holo",
+      "flavorText": "Its programming was modified to enable it to travel through alien dimensions. Seems there might have been an error…",
+      "nationalPokedexNumbers": [
+        474
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/67.png",
+        "large": "https://images.pokemontcg.io/xy7/67_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7710,21 +7987,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "67",
-      "artist": "Naoki Saito",
-      "rarity": "Rare Holo",
-      "flavorText": "Its programming was modified to enable it to travel through alien dimensions. Seems there might have been an error…",
-      "nationalPokedexNumbers": [
-        474
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/67.png",
-        "large": "https://images.pokemontcg.io/xy7/67_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-67",
@@ -7824,6 +8086,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "68",
+      "artist": "Eske Yoshinob",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        249
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/68.png",
+        "large": "https://images.pokemontcg.io/xy7/68_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7841,20 +8117,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "68",
-      "artist": "Eske Yoshinob",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        249
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/68.png",
-        "large": "https://images.pokemontcg.io/xy7/68_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-68",
@@ -7903,6 +8165,17 @@
         "Each player shuffles his or her hand into his or her deck. Then, draw 6 cards. Your opponent draws 3 cards.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
+      "number": "69",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/69.png",
+        "large": "https://images.pokemontcg.io/xy7/69_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -7920,17 +8193,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "69",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/69.png",
-        "large": "https://images.pokemontcg.io/xy7/69_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-69",
@@ -7975,122 +8237,6 @@
       }
     },
     {
-      "id": "xy7-7",
-      "name": "Sceptile-EX",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic",
-        "EX"
-      ],
-      "hp": "170",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "M Sceptile-EX"
-      ],
-      "rules": [
-        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-      ],
-      "attacks": [
-        {
-          "name": "Sleep Poison",
-          "cost": [
-            "Grass"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Asleep and Poisoned."
-        },
-        {
-          "name": "Unseen Claw",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "60+",
-          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack does 70 more damage."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "7",
-      "artist": "Eske Yoshinob",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        254
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/7.png",
-        "large": "https://images.pokemontcg.io/xy7/7_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 3.25,
-            "mid": 6.02,
-            "high": 10.53,
-            "market": 6.78,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 6.11,
-          "lowPrice": 2.2,
-          "trendPrice": 6.14,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 3.03,
-          "lowPriceExPlus": 3.95,
-          "avg1": 5,
-          "avg7": 6.11,
-          "avg30": 5.96,
-          "reverseHoloAvg1": 1.79,
-          "reverseHoloAvg7": 3.52,
-          "reverseHoloAvg30": 4.11
-        }
-      }
-    },
-    {
       "id": "xy7-70",
       "name": "Ampharos Spirit Link",
       "supertype": "Trainer",
@@ -8102,6 +8248,17 @@
         "Your turn does not end if the Pokémon this card is attached to becomes M Ampharos-EX.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "70",
+      "artist": "5ban Graphics",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/70.png",
+        "large": "https://images.pokemontcg.io/xy7/70_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8119,17 +8276,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "70",
-      "artist": "5ban Graphics",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/70.png",
-        "large": "https://images.pokemontcg.io/xy7/70_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-70",
@@ -8184,6 +8330,17 @@
         "Shuffle 3 Pokémon Tool cards from your discard pile into your deck.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "71",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/71.png",
+        "large": "https://images.pokemontcg.io/xy7/71_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8201,17 +8358,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "71",
-      "artist": "Toyste Beach",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/71.png",
-        "large": "https://images.pokemontcg.io/xy7/71_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-71",
@@ -8266,6 +8412,17 @@
         "Shuffle 5 basic Energy cards from your discard pile into your deck.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "72",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/72.png",
+        "large": "https://images.pokemontcg.io/xy7/72_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8283,18 +8440,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "72",
-      "artist": "Toyste Beach",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/72.png",
-        "large": "https://images.pokemontcg.io/xy7/72_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-72",
@@ -8349,6 +8494,17 @@
         "At any time between turns, put 2 damage counters on each Mega Evolution Pokémon.",
         "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
       ],
+      "number": "73",
+      "artist": "Ryo Ueda",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/73.png",
+        "large": "https://images.pokemontcg.io/xy7/73_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8366,17 +8522,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "73",
-      "artist": "Ryo Ueda",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/73.png",
-        "large": "https://images.pokemontcg.io/xy7/73_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-73",
@@ -8431,6 +8576,17 @@
         "Each player's Grass Pokémon can evolve during his or her first turn or the turn he or she plays those Pokémon.",
         "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
       ],
+      "number": "74",
+      "artist": "Ryo Ueda",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Banned"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/74.png",
+        "large": "https://images.pokemontcg.io/xy7/74_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8448,17 +8604,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "74",
-      "artist": "Ryo Ueda",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Banned"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/74.png",
-        "large": "https://images.pokemontcg.io/xy7/74_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-74",
@@ -8513,6 +8658,17 @@
         "Until the end of your opponent's next turn, each Pokémon in play, in each player's hand, and in each player's discard pile has no Abilities. (This includes cards that come into play on that turn.)",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
+      "number": "75",
+      "artist": "Yusuke Ohmura",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Banned"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/75.png",
+        "large": "https://images.pokemontcg.io/xy7/75_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8530,17 +8686,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "75",
-      "artist": "Yusuke Ohmura",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Banned"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/75.png",
-        "large": "https://images.pokemontcg.io/xy7/75_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-75",
@@ -8595,6 +8740,17 @@
         "Until the end of your opponent's next turn, each Pokémon in play, in each player's hand, and in each player's discard pile has no Abilities. (This includes cards that come into play on that turn.)",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
+      "number": "75a",
+      "artist": "You Iribi",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Banned"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/75a.png",
+        "large": "https://images.pokemontcg.io/xy7/75a_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8613,17 +8769,7 @@
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
       },
-      "number": "75a",
-      "artist": "You Iribi",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Banned"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/75a.png",
-        "large": "https://images.pokemontcg.io/xy7/75a_hires.png"
-      },
+      "tcgplayer": null,
       "cardmarket": {
         "url": "https://prices.pokemontcg.io/cardmarket/xy7-75a",
         "updatedAt": "2025/12/28",
@@ -8657,6 +8803,17 @@
         "Search your deck for a Pokémon with 90 HP or less, reveal it, and put it into your hand. Shuffle your deck afterward.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "76",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/76.png",
+        "large": "https://images.pokemontcg.io/xy7/76_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8674,18 +8831,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "76",
-      "artist": "Toyste Beach",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/76.png",
-        "large": "https://images.pokemontcg.io/xy7/76_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-76",
@@ -8741,6 +8886,17 @@
         "Whenever the Pokémon this card is attached to is your Active Pokémon and is damaged by an opponent's attack (even if that Pokémon is Knocked Out), draw 2 cards.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "77",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/77.png",
+        "large": "https://images.pokemontcg.io/xy7/77_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8758,17 +8914,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "77",
-      "artist": "Toyste Beach",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/77.png",
-        "large": "https://images.pokemontcg.io/xy7/77_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-77",
@@ -8823,6 +8968,17 @@
         "Switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
+      "number": "78",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/78.png",
+        "large": "https://images.pokemontcg.io/xy7/78_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8840,17 +8996,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "78",
-      "artist": "Ken Sugimori",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/78.png",
-        "large": "https://images.pokemontcg.io/xy7/78_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-78",
@@ -8905,6 +9050,17 @@
         "Discard any Stadium card in play. Then, draw a card.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "79",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/79.png",
+        "large": "https://images.pokemontcg.io/xy7/79_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -8922,17 +9078,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "79",
-      "artist": "Toyste Beach",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/79.png",
-        "large": "https://images.pokemontcg.io/xy7/79_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-79",
@@ -8977,117 +9122,6 @@
       }
     },
     {
-      "id": "xy7-8",
-      "name": "M Sceptile-EX",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "MEGA",
-        "EX"
-      ],
-      "hp": "220",
-      "types": [
-        "Grass"
-      ],
-      "evolvesFrom": "Sceptile-EX",
-      "rules": [
-        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-      ],
-      "ancientTrait": {
-        "name": "θ Stop",
-        "text": "Prevent all effects of your opponent's Pokémon's Abilities done to this Pokémon."
-      },
-      "attacks": [
-        {
-          "name": "Jagged Saber",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "100",
-          "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pokémon in any way you like. If you attached Energy to a Pokémon in this way, heal all damage from that Pokémon."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "8",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [
-        254
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/8.png",
-        "large": "https://images.pokemontcg.io/xy7/8_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 13.8,
-            "mid": 20.73,
-            "high": 85,
-            "market": 20.73,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 17.27,
-          "lowPrice": 6.5,
-          "trendPrice": 15.1,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 6.87,
-          "lowPriceExPlus": 16.9,
-          "avg1": 10,
-          "avg7": 16.9,
-          "avg30": 21.87,
-          "reverseHoloAvg1": 4.5,
-          "reverseHoloAvg7": 6.09,
-          "reverseHoloAvg30": 6.92
-        }
-      }
-    },
-    {
       "id": "xy7-80",
       "name": "Sceptile Spirit Link",
       "supertype": "Trainer",
@@ -9099,6 +9133,17 @@
         "Your turn does not end if the Pokémon this card is attached to becomes M Sceptile-EX.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "80",
+      "artist": "5ban Graphics",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/80.png",
+        "large": "https://images.pokemontcg.io/xy7/80_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9116,17 +9161,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "80",
-      "artist": "5ban Graphics",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/80.png",
-        "large": "https://images.pokemontcg.io/xy7/80_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-80",
@@ -9182,6 +9216,17 @@
         "Your turn does not end if the Pokémon this card is attached to becomes M Tyranitar-EX.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "81",
+      "artist": "5ban Graphics",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/81.png",
+        "large": "https://images.pokemontcg.io/xy7/81_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9199,17 +9244,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "81",
-      "artist": "5ban Graphics",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/81.png",
-        "large": "https://images.pokemontcg.io/xy7/81_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-81",
@@ -9265,6 +9299,17 @@
         "Whenever the Darkness Pokémon this card is attached to is your Active Pokémon and is damaged by an attack from your opponent's Pokémon-EX (even if that Pokémon is Knocked Out), put 2 damage counters on the Attacking Pokémon-EX.",
         "(If this card is attached to anything other than a Darkness Pokémon, discard this card.)"
       ],
+      "number": "82",
+      "artist": "5ban Graphics",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/82.png",
+        "large": "https://images.pokemontcg.io/xy7/82_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9282,17 +9327,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "82",
-      "artist": "5ban Graphics",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/82.png",
-        "large": "https://images.pokemontcg.io/xy7/82_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-82",
@@ -9348,6 +9382,17 @@
         "The Lightning Pokémon this card is attached to has no Weakness.",
         "(If this card is attached to anything other than a Lightning Pokémon, discard this card.)"
       ],
+      "number": "83",
+      "artist": "5ban Graphics",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/83.png",
+        "large": "https://images.pokemontcg.io/xy7/83_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9365,17 +9410,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "83",
-      "artist": "5ban Graphics",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/83.png",
-        "large": "https://images.pokemontcg.io/xy7/83_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-83",
@@ -9468,6 +9502,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "84",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        254
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/84.png",
+        "large": "https://images.pokemontcg.io/xy7/84_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9485,20 +9533,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "84",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        254
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/84.png",
-        "large": "https://images.pokemontcg.io/xy7/84_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-84",
@@ -9579,6 +9613,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "85",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        254
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/85.png",
+        "large": "https://images.pokemontcg.io/xy7/85_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9596,20 +9644,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "85",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        254
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/85.png",
-        "large": "https://images.pokemontcg.io/xy7/85_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-85",
@@ -9698,6 +9732,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "86",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        646
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/86.png",
+        "large": "https://images.pokemontcg.io/xy7/86_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9715,20 +9763,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "86",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        646
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/86.png",
-        "large": "https://images.pokemontcg.io/xy7/86_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-86",
@@ -9823,6 +9857,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "87",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/87.png",
+        "large": "https://images.pokemontcg.io/xy7/87_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9840,20 +9888,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "87",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        181
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/87.png",
-        "large": "https://images.pokemontcg.io/xy7/87_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-87",
@@ -9939,6 +9973,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "88",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/88.png",
+        "large": "https://images.pokemontcg.io/xy7/88_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -9956,20 +10004,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "88",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        181
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/88.png",
-        "large": "https://images.pokemontcg.io/xy7/88_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-88",
@@ -10052,6 +10086,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "89",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        720
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/89.png",
+        "large": "https://images.pokemontcg.io/xy7/89_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10069,20 +10117,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "89",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        720
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/89.png",
-        "large": "https://images.pokemontcg.io/xy7/89_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-89",
@@ -10116,116 +10150,6 @@
           "reverseHoloAvg1": 9,
           "reverseHoloAvg7": 10.28,
           "reverseHoloAvg30": 9.61
-        }
-      }
-    },
-    {
-      "id": "xy7-9",
-      "name": "Combee",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "40",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Vespiquen"
-      ],
-      "attacks": [
-        {
-          "name": "Bug Bite",
-          "cost": [
-            "Grass"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy7",
-        "name": "Ancient Origins",
-        "series": "XY",
-        "printedTotal": 98,
-        "total": 100,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "ptcgoCode": "AOR",
-        "releaseDate": "2015/08/12",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy7/logo.png"
-        }
-      },
-      "number": "9",
-      "artist": "Sumiyoshi Kizuki",
-      "rarity": "Common",
-      "flavorText": "It collects and delivers honey to its colony. At night, they cluster to form a beehive and sleep.",
-      "nationalPokedexNumbers": [
-        415
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/9.png",
-        "large": "https://images.pokemontcg.io/xy7/9_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.01,
-            "mid": 0.16,
-            "high": 4,
-            "market": 0.12,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 0.09,
-            "mid": 0.3,
-            "high": 1.41,
-            "market": 0.28,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy7-9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.2,
-          "lowPrice": 0.05,
-          "trendPrice": 0.09,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0,
-          "lowPriceExPlus": 0.2,
-          "avg1": 0.2,
-          "avg7": 0.17,
-          "avg30": 0.17,
-          "reverseHoloAvg1": 0,
-          "reverseHoloAvg7": 0,
-          "reverseHoloAvg30": 0
         }
       }
     },
@@ -10279,6 +10203,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "90",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        68
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/90.png",
+        "large": "https://images.pokemontcg.io/xy7/90_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10296,20 +10234,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "90",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        68
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/90.png",
-        "large": "https://images.pokemontcg.io/xy7/90_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-90",
@@ -10408,6 +10332,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "91",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/91.png",
+        "large": "https://images.pokemontcg.io/xy7/91_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10425,20 +10363,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "91",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        248
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/91.png",
-        "large": "https://images.pokemontcg.io/xy7/91_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-91",
@@ -10529,6 +10453,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "92",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/92.png",
+        "large": "https://images.pokemontcg.io/xy7/92_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10546,20 +10484,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "92",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        248
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/92.png",
-        "large": "https://images.pokemontcg.io/xy7/92_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-92",
@@ -10644,6 +10568,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "93",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        487
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/93.png",
+        "large": "https://images.pokemontcg.io/xy7/93_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10661,20 +10599,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "93",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        487
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/93.png",
-        "large": "https://images.pokemontcg.io/xy7/93_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-93",
@@ -10767,6 +10691,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "94",
+      "artist": "Ryo Ueda",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [
+        249
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/94.png",
+        "large": "https://images.pokemontcg.io/xy7/94_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10784,20 +10722,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "94",
-      "artist": "Ryo Ueda",
-      "rarity": "Rare Ultra",
-      "nationalPokedexNumbers": [
-        249
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/94.png",
-        "large": "https://images.pokemontcg.io/xy7/94_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-94",
@@ -10845,6 +10769,17 @@
         "Search your deck for a Supporter card and a basic Energy card, reveal them, and put them into your hand. Shuffle your deck afterward.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
+      "number": "95",
+      "artist": "Megumi Mizutani",
+      "rarity": "Rare Ultra",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/95.png",
+        "large": "https://images.pokemontcg.io/xy7/95_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10862,17 +10797,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "95",
-      "artist": "Megumi Mizutani",
-      "rarity": "Rare Ultra",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/95.png",
-        "large": "https://images.pokemontcg.io/xy7/95_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-95",
@@ -10957,6 +10881,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "96",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        382
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/96.png",
+        "large": "https://images.pokemontcg.io/xy7/96_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -10974,20 +10912,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "96",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        382
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/96.png",
-        "large": "https://images.pokemontcg.io/xy7/96_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-96",
@@ -11072,6 +10996,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "97",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        383
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/97.png",
+        "large": "https://images.pokemontcg.io/xy7/97_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -11089,20 +11027,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "97",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        383
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/97.png",
-        "large": "https://images.pokemontcg.io/xy7/97_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-97",
@@ -11189,6 +11113,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "98",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        384
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/98.png",
+        "large": "https://images.pokemontcg.io/xy7/98_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -11206,20 +11144,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "98",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "nationalPokedexNumbers": [
-        384
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/98.png",
-        "large": "https://images.pokemontcg.io/xy7/98_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-98",
@@ -11267,6 +11191,18 @@
         "Put 2 basic Energy cards from your discard pile into your hand.",
         "You may play as many Item cards as you like during your turn (before your attack)."
       ],
+      "number": "99",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Secret",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/99.png",
+        "large": "https://images.pokemontcg.io/xy7/99_hires.png"
+      },
       "set": {
         "id": "xy7",
         "name": "Ancient Origins",
@@ -11284,18 +11220,6 @@
           "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
           "logo": "https://images.pokemontcg.io/xy7/logo.png"
         }
-      },
-      "number": "99",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Secret",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy7/99.png",
-        "large": "https://images.pokemontcg.io/xy7/99_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/xy7-99",
@@ -11329,6 +11253,81 @@
           "reverseHoloAvg1": 5,
           "reverseHoloAvg7": 4.63,
           "reverseHoloAvg30": 5.18
+        }
+      }
+    },
+    {
+      "id": "xy7-100",
+      "name": "Trainers' Mail",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Look at the top 4 cards of your deck. You may reveal a Trainer card you find there (except Trainers' Mail) and put it into your hand. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "number": "100",
+      "artist": "Toyste Beach",
+      "rarity": "Rare Secret",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/100.png",
+        "large": "https://images.pokemontcg.io/xy7/100_hires.png"
+      },
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-100",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 4.5,
+            "mid": 7.72,
+            "high": 29.99,
+            "market": 7.96,
+            "directLow": 6.99
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-100",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.02,
+          "lowPrice": 7.5,
+          "trendPrice": 0.02,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 1,
+          "lowPriceExPlus": 0,
+          "avg1": 0.02,
+          "avg7": 0.67,
+          "avg30": 0.67,
+          "reverseHoloAvg1": 1,
+          "reverseHoloAvg7": 1,
+          "reverseHoloAvg30": 1
         }
       }
     }

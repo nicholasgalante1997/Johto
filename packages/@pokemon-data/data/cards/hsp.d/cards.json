@@ -52,6 +52,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "HGSS01",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Promo",
+      "flavorText": "A legend says that its body glows in seven colors. A rainbow is said to form behind when it flies.",
+      "nationalPokedexNumbers": [
+        250
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS01.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS01_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -69,20 +83,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS01",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Promo",
-      "flavorText": "A legend says that its body glows in seven colors. A rainbow is said to form behind when it flies.",
-      "nationalPokedexNumbers": [
-        250
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS01.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS01_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS01",
         "updatedAt": "2025/12/28",
@@ -95,7 +95,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS02",
@@ -148,6 +149,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS02",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Promo",
+      "flavorText": "It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong.",
+      "nationalPokedexNumbers": [
+        249
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS02.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS02_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -165,20 +180,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS02",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Promo",
-      "flavorText": "It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong.",
-      "nationalPokedexNumbers": [
-        249
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS02.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS02_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS02",
         "updatedAt": "2025/12/28",
@@ -191,7 +192,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS03",
@@ -246,6 +248,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS03",
+      "artist": "Kanako Eo",
+      "rarity": "Promo",
+      "flavorText": "It occasionally uses an electric shock to recharge a fellow Pikachu that is in a weakened state.",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS03.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS03_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -263,20 +279,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS03",
-      "artist": "Kanako Eo",
-      "rarity": "Promo",
-      "flavorText": "It occasionally uses an electric shock to recharge a fellow Pikachu that is in a weakened state.",
-      "nationalPokedexNumbers": [
-        25
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS03.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS03_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS03",
         "updatedAt": "2025/12/28",
@@ -289,7 +291,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS04",
@@ -333,6 +336,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "HGSS04",
+      "artist": "match",
+      "rarity": "Promo",
+      "flavorText": "To keep its pitch-black tail hidden, it lives quietly in the darkness. It is never first to attack.",
+      "nationalPokedexNumbers": [
+        202
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS04.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS04_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -350,20 +367,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS04",
-      "artist": "match",
-      "rarity": "Promo",
-      "flavorText": "To keep its pitch-black tail hidden, it lives quietly in the darkness. It is never first to attack.",
-      "nationalPokedexNumbers": [
-        202
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS04.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS04_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS04",
         "updatedAt": "2025/12/28",
@@ -376,7 +379,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS05",
@@ -426,6 +430,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS05",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Promo",
+      "flavorText": "It has a perfect sense of time. Whatever happens, it keeps rhythm by precisely tilting its head in time.",
+      "nationalPokedexNumbers": [
+        163
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS05.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS05_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -443,20 +461,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS05",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Promo",
-      "flavorText": "It has a perfect sense of time. Whatever happens, it keeps rhythm by precisely tilting its head in time.",
-      "nationalPokedexNumbers": [
-        163
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS05.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS05_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS05",
         "updatedAt": "2025/12/28",
@@ -469,7 +473,8 @@
             "directLow": 3.62
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS06",
@@ -519,6 +524,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS06",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Promo",
+      "flavorText": "When it needs to think, it rotates its head 180 degrees to sharpen its intellectual power.",
+      "nationalPokedexNumbers": [
+        164
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS06.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS06_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -536,20 +555,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS06",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Promo",
-      "flavorText": "When it needs to think, it rotates its head 180 degrees to sharpen its intellectual power.",
-      "nationalPokedexNumbers": [
-        164
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS06.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS06_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS06",
         "updatedAt": "2025/12/28",
@@ -562,7 +567,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS07",
@@ -610,6 +616,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "HGSS07",
+      "artist": "Kent Kanetsuna",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        160
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS07.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS07_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -627,19 +646,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS07",
-      "artist": "Kent Kanetsuna",
-      "rarity": "Promo",
-      "nationalPokedexNumbers": [
-        160
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS07.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS07_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS07",
         "updatedAt": "2025/12/28",
@@ -652,7 +658,8 @@
             "directLow": 53.3
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS08",
@@ -705,6 +712,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS08",
+      "artist": "Noriko Hotta",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        154
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS08.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS08_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -722,19 +742,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS08",
-      "artist": "Noriko Hotta",
-      "rarity": "Promo",
-      "nationalPokedexNumbers": [
-        154
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS08.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS08_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS08",
         "updatedAt": "2025/12/28",
@@ -747,7 +754,8 @@
             "directLow": 21.28
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS09",
@@ -793,6 +801,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS09",
+      "artist": "Wataru Kawahara",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        157
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS09.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS09_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -810,19 +831,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS09",
-      "artist": "Wataru Kawahara",
-      "rarity": "Promo",
-      "nationalPokedexNumbers": [
-        157
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS09.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS09_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS09",
         "updatedAt": "2025/12/28",
@@ -835,7 +843,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS10",
@@ -880,6 +889,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS10",
+      "artist": "Wataru Kawahara",
+      "rarity": "Promo",
+      "flavorText": "It communicates using telepathy. Its body is covered in down that refracts light to make it invisible.",
+      "nationalPokedexNumbers": [
+        380
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS10.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS10_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -897,20 +920,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS10",
-      "artist": "Wataru Kawahara",
-      "rarity": "Promo",
-      "flavorText": "It communicates using telepathy. Its body is covered in down that refracts light to make it invisible.",
-      "nationalPokedexNumbers": [
-        380
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS10.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS10_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS10",
         "updatedAt": "2025/12/28",
@@ -923,7 +932,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS11",
@@ -968,6 +978,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS11",
+      "artist": "Wataru Kawahara",
+      "rarity": "Promo",
+      "flavorText": "It understands human speech and is highly intelligent. It is a tender Pokémon that dislikes fighting.",
+      "nationalPokedexNumbers": [
+        381
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS11.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS11_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -985,20 +1009,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS11",
-      "artist": "Wataru Kawahara",
-      "rarity": "Promo",
-      "flavorText": "It understands human speech and is highly intelligent. It is a tender Pokémon that dislikes fighting.",
-      "nationalPokedexNumbers": [
-        381
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS11.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS11_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS11",
         "updatedAt": "2025/12/28",
@@ -1011,7 +1021,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS12",
@@ -1043,6 +1054,20 @@
           "text": "Shuffle your hand into your deck, then draw 6 cards. Cleffa is now Asleep."
         }
       ],
+      "number": "HGSS12",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Promo",
+      "flavorText": "Because of its unusual, star-like silhouette, people believe that it came here on a meteor.",
+      "nationalPokedexNumbers": [
+        173
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS12.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS12_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1060,20 +1085,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS12",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Promo",
-      "flavorText": "Because of its unusual, star-like silhouette, people believe that it came here on a meteor.",
-      "nationalPokedexNumbers": [
-        173
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS12.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS12_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS12",
         "updatedAt": "2025/12/28",
@@ -1086,7 +1097,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS13",
@@ -1118,6 +1130,20 @@
           "text": "Move an Energy card attached to 1 of your opponent's Pokémon to another of your opponent's Pokémon. Smoochum is now Asleep."
         }
       ],
+      "number": "HGSS13",
+      "artist": "Midori Harada",
+      "rarity": "Promo",
+      "flavorText": "Its lips are the most sensitive part of its body. It always uses its lips first to examine things.",
+      "nationalPokedexNumbers": [
+        238
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS13.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS13_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1135,20 +1161,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS13",
-      "artist": "Midori Harada",
-      "rarity": "Promo",
-      "flavorText": "Its lips are the most sensitive part of its body. It always uses its lips first to examine things.",
-      "nationalPokedexNumbers": [
-        238
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS13.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS13_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS13",
         "updatedAt": "2025/12/28",
@@ -1161,7 +1173,8 @@
             "directLow": 23.7
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS14",
@@ -1207,6 +1220,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS14",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Promo",
+      "flavorText": "It ferries people across the sea on its back. It may sing an enchanting cry if it is in a good mood.",
+      "nationalPokedexNumbers": [
+        131
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS14.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS14_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1224,20 +1251,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS14",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Promo",
-      "flavorText": "It ferries people across the sea on its back. It may sing an enchanting cry if it is in a good mood.",
-      "nationalPokedexNumbers": [
-        131
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS14.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS14_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS14",
         "updatedAt": "2025/12/28",
@@ -1250,7 +1263,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS15",
@@ -1292,6 +1306,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS15",
+      "artist": "match",
+      "rarity": "Promo",
+      "flavorText": "It stores berries inside its shell. To avoid attacks, it hides beneath rocks and remains completely still.",
+      "nationalPokedexNumbers": [
+        213
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS15.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS15_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1309,20 +1337,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS15",
-      "artist": "match",
-      "rarity": "Promo",
-      "flavorText": "It stores berries inside its shell. To avoid attacks, it hides beneath rocks and remains completely still.",
-      "nationalPokedexNumbers": [
-        213
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS15.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS15_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS15",
         "updatedAt": "2025/12/28",
@@ -1335,7 +1349,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS16",
@@ -1384,6 +1399,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS16",
+      "artist": "Kouki Saitou",
+      "rarity": "Promo",
+      "flavorText": "It absorbs electricity from telephone poles. It shorts out its body to create crackling noises.",
+      "nationalPokedexNumbers": [
+        311
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS16.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS16_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1401,20 +1430,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS16",
-      "artist": "Kouki Saitou",
-      "rarity": "Promo",
-      "flavorText": "It absorbs electricity from telephone poles. It shorts out its body to create crackling noises.",
-      "nationalPokedexNumbers": [
-        311
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS16.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS16_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS16",
         "updatedAt": "2025/12/28",
@@ -1427,7 +1442,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS17",
@@ -1476,23 +1492,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "hsp",
-        "name": "HGSS Black Star Promos",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 25,
-        "total": 25,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "PR-HS",
-        "releaseDate": "2010/02/10",
-        "updatedAt": "2019/01/28 16:44:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hsp/symbol.png",
-          "logo": "https://images.pokemontcg.io/hsp/logo.png"
-        }
-      },
       "number": "HGSS17",
       "artist": "Kouki Saitou",
       "rarity": "Promo",
@@ -1507,30 +1506,6 @@
         "small": "https://images.pokemontcg.io/hsp/HGSS17.png",
         "large": "https://images.pokemontcg.io/hsp/HGSS17_hires.png"
       },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS17",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 40,
-            "mid": 124.99,
-            "high": 201.04,
-            "market": 13.65,
-            "directLow": 69.99
-          }
-        }
-      }
-    },
-    {
-      "id": "hsp-HGSS18",
-      "name": "Tropical Tidal Wave",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Item"
-      ],
-      "rules": [
-        "Flip a coin. If heads, discard all Trainer and Stadium cards your opponent has in play. If tails, discard all Trainer and Stadium cards you have in play."
-      ],
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1548,6 +1523,31 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS17",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 40,
+            "mid": 124.99,
+            "high": 201.04,
+            "market": 13.65,
+            "directLow": 69.99
+          }
+        }
+      },
+      "cardmarket": null
+    },
+    {
+      "id": "hsp-HGSS18",
+      "name": "Tropical Tidal Wave",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, discard all Trainer and Stadium cards your opponent has in play. If tails, discard all Trainer and Stadium cards you have in play."
+      ],
       "number": "HGSS18",
       "artist": "Sumiyoshi Kizuki",
       "rarity": "Promo",
@@ -1557,6 +1557,23 @@
       "images": {
         "small": "https://images.pokemontcg.io/hsp/HGSS18.png",
         "large": "https://images.pokemontcg.io/hsp/HGSS18_hires.png"
+      },
+      "set": {
+        "id": "hsp",
+        "name": "HGSS Black Star Promos",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 25,
+        "total": 25,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "PR-HS",
+        "releaseDate": "2010/02/10",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hsp/symbol.png",
+          "logo": "https://images.pokemontcg.io/hsp/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS18",
@@ -1570,7 +1587,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS19",
@@ -1612,6 +1630,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS19",
+      "artist": "Noriko Hotta",
+      "rarity": "Promo",
+      "flavorText": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning.",
+      "nationalPokedexNumbers": [
+        243
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS19.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS19_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1629,20 +1661,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS19",
-      "artist": "Noriko Hotta",
-      "rarity": "Promo",
-      "flavorText": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning.",
-      "nationalPokedexNumbers": [
-        243
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS19.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS19_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS19",
         "updatedAt": "2025/12/28",
@@ -1655,7 +1673,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS20",
@@ -1691,6 +1710,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS20",
+      "artist": "Yuri Umemura",
+      "rarity": "Promo",
+      "flavorText": "Volcanoes erupt when it barks. Unable to contain its sheer power, it races headlong around the land.",
+      "nationalPokedexNumbers": [
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS20.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS20_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1708,20 +1741,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS20",
-      "artist": "Yuri Umemura",
-      "rarity": "Promo",
-      "flavorText": "Volcanoes erupt when it barks. Unable to contain its sheer power, it races headlong around the land.",
-      "nationalPokedexNumbers": [
-        244
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS20.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS20_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS20",
         "updatedAt": "2025/12/28",
@@ -1734,7 +1753,8 @@
             "directLow": 29.99
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS21",
@@ -1770,6 +1790,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS21",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Promo",
+      "flavorText": "Said to be the embodiment of north winds, it can instantly purify filthy, murky water.",
+      "nationalPokedexNumbers": [
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS21.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS21_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1787,20 +1821,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS21",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Promo",
-      "flavorText": "Said to be the embodiment of north winds, it can instantly purify filthy, murky water.",
-      "nationalPokedexNumbers": [
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS21.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS21_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS21",
         "updatedAt": "2025/12/28",
@@ -1813,7 +1833,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS22",
@@ -1860,6 +1881,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS22",
+      "artist": "TOKIYA",
+      "rarity": "Promo",
+      "flavorText": "It is a manmade Pokémon. Since it doesn't breathe, people are eager to try it in any environment..",
+      "nationalPokedexNumbers": [
+        137
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS22.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS22_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1877,20 +1912,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS22",
-      "artist": "TOKIYA",
-      "rarity": "Promo",
-      "flavorText": "It is a manmade Pokémon. Since it doesn't breathe, people are eager to try it in any environment..",
-      "nationalPokedexNumbers": [
-        137
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS22.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS22_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS22",
         "updatedAt": "2025/12/28",
@@ -1903,7 +1924,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS23",
@@ -1951,6 +1973,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS23",
+      "artist": "TOKIYA",
+      "rarity": "Promo",
+      "flavorText": "This upgraded version of Porygon is designed for space exploration. It can't fly, though.",
+      "nationalPokedexNumbers": [
+        233
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS23.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS23_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -1968,20 +2004,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS23",
-      "artist": "TOKIYA",
-      "rarity": "Promo",
-      "flavorText": "This upgraded version of Porygon is designed for space exploration. It can't fly, though.",
-      "nationalPokedexNumbers": [
-        233
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS23.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS23_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS23",
         "updatedAt": "2025/12/28",
@@ -1994,7 +2016,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS24",
@@ -2038,6 +2061,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "HGSS24",
+      "artist": "Kouki Saitou",
+      "rarity": "Promo",
+      "flavorText": "Its punches slice the air. However, it seems to need a short break after fighting for three minutes.",
+      "nationalPokedexNumbers": [
+        107
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS24.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS24_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -2055,20 +2092,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS24",
-      "artist": "Kouki Saitou",
-      "rarity": "Promo",
-      "flavorText": "Its punches slice the air. However, it seems to need a short break after fighting for three minutes.",
-      "nationalPokedexNumbers": [
-        107
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS24.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS24_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS24",
         "updatedAt": "2025/12/28",
@@ -2081,7 +2104,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     },
     {
       "id": "hsp-HGSS25",
@@ -2127,6 +2151,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "HGSS25",
+      "artist": "Kouki Saitou",
+      "rarity": "Promo",
+      "flavorText": "If it starts kicking repeatedly, both legs will stretch even longer to strike a fleeing foe.",
+      "nationalPokedexNumbers": [
+        106
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hsp/HGSS25.png",
+        "large": "https://images.pokemontcg.io/hsp/HGSS25_hires.png"
+      },
       "set": {
         "id": "hsp",
         "name": "HGSS Black Star Promos",
@@ -2144,20 +2182,6 @@
           "logo": "https://images.pokemontcg.io/hsp/logo.png"
         }
       },
-      "number": "HGSS25",
-      "artist": "Kouki Saitou",
-      "rarity": "Promo",
-      "flavorText": "If it starts kicking repeatedly, both legs will stretch even longer to strike a fleeing foe.",
-      "nationalPokedexNumbers": [
-        106
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hsp/HGSS25.png",
-        "large": "https://images.pokemontcg.io/hsp/HGSS25_hires.png"
-      },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hsp-HGSS25",
         "updatedAt": "2025/12/28",
@@ -2170,7 +2194,8 @@
             "directLow": null
           }
         }
-      }
+      },
+      "cardmarket": null
     }
   ]
 }
