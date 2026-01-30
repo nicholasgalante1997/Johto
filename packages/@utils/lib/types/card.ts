@@ -25,14 +25,18 @@ export const PokemonCardSchema = z.looseObject({
   rarity: z.optional(z.string()),
   nationalPokedexNumbers: z.optional(z.array(z.number())),
   tcgplayer: z.optional(
-    z.looseObject({
-      url: z.string()
-    })
+    z.nullable(
+      z.looseObject({
+        url: z.string()
+      })
+    )
   ),
   cardmarket: z.optional(
-    z.looseObject({
-      url: z.string()
-    })
+    z.nullable(
+      z.looseObject({
+        url: z.string()
+      })
+    )
   ),
   legalities: z.optional(
     z.looseObject({
