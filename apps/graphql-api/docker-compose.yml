@@ -1,0 +1,29 @@
+services:
+  graphql-api:
+    image: pokemon-graphql-api:latest
+    container_name: pokemon-graphql-api
+    build:
+      context: ../..
+      dockerfile: apps/graphql-api/Dockerfile
+    environment:
+      - GRAPHQL_API_PORT=3002
+      - GRAPHQL_API_HOST=0.0.0.0
+      - DATABASE_PATH=/data/pokemon-data.sqlite3.db
+      - LOG_LEVEL=info
+      - APOLLO_INTROSPECTION=true
+      - APOLLO_PLAYGROUND=true
+      - CORS_ORIGINS=http://localhost:3000,http://bun-pokemon-web-server:3000
+    ports:
+      - "3002:3002"
+    expose:
+      - "3002"
+    volumes:
+      - ../../database:/data:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    networks:
+      - pika

@@ -1,0 +1,27 @@
+services:
+  rest-api:
+    image: pokemon-rest-api:latest
+    container_name: pokemon-rest-api
+    build:
+      context: ../..
+      dockerfile: apps/rest-api/Dockerfile
+    environment:
+      - REST_API_PORT=3001
+      - REST_API_HOST=0.0.0.0
+      - DATABASE_PATH=/data/pokemon-data.sqlite3.db
+      - LOG_LEVEL=info
+      - CORS_ORIGINS=http://localhost:3000,http://bun-pokemon-web-server:3000
+    ports:
+      - "3001:3001"
+    expose:
+      - "3001"
+    volumes:
+      - ../../database:/data:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    networks:
+      - pika

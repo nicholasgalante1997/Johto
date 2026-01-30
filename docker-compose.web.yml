@@ -7,6 +7,10 @@ services:
       dockerfile: Dockerfile.web
     environment:
       - PORT=3000
+      - REST_API_URL=http://rest-api:3001
+      - GRAPHQL_API_URL=http://graphql-api:3002
+      - BFF_CACHE_TTL_SECONDS=300
+      - BFF_CACHE_MAX_SIZE=1000
     ports:
       - 3000:3000
     expose:
@@ -19,6 +23,12 @@ services:
         condition: service_healthy
         restart: true
       rs-tcg-api:
+        condition: service_healthy
+        restart: true
+      rest-api:
+        condition: service_healthy
+        restart: true
+      graphql-api:
         condition: service_healthy
         restart: true
     env_file:

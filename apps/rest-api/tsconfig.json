@@ -1,0 +1,14 @@
+{
+  "extends": "@pokemon/configs/typescript/bun.tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["node_modules/@types", "../../node_modules/@types"],
+    "types": ["node", "bun"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
