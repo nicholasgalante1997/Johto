@@ -5,6 +5,7 @@
 Project Johto is a comprehensive Pokemon Trading Card Game platform built as a Turborepo monorepo. The architecture combines a modern React SSR frontend with a high-performance Rust backend, PostgreSQL and Neo4j databases, and an experimental distributed ledger for card ownership tracking.
 
 **Core Goals:**
+
 - Server-side rendered React 19 frontend with Bun runtime
 - High-performance GraphQL API built with Rust and Actix-web
 - Multi-database architecture (PostgreSQL for relational data, Neo4j for graph relationships)
@@ -76,6 +77,7 @@ Project Johto is a comprehensive Pokemon Trading Card Game platform built as a T
 ### Component Patterns (React)
 
 **File Structure:**
+
 ```
 ComponentName/
 ├── index.ts          # Barrel export
@@ -88,6 +90,7 @@ ComponentName/
 ### API Patterns (Rust)
 
 **File Structure:**
+
 ```
 feature/
 ├── mod.rs            # Module exports
@@ -102,6 +105,7 @@ feature/
 ### Why React 19 SSR?
 
 Server-side rendering provides:
+
 - Fast initial page loads with hydrated HTML
 - Better SEO for Pokemon TCG content
 - Progressive enhancement capabilities
@@ -110,6 +114,7 @@ Server-side rendering provides:
 ### Why Bun Runtime?
 
 Bun provides:
+
 - Native TypeScript execution without transpilation
 - Fast package management and installation
 - Built-in test runner and bundler
@@ -119,6 +124,7 @@ Bun provides:
 ### Why Rust for Backend?
 
 Rust provides:
+
 - Memory safety without garbage collection
 - Fearless concurrency with Tokio
 - Zero-cost abstractions
@@ -134,6 +140,7 @@ Rust provides:
 ### Why Turborepo?
 
 Turborepo provides:
+
 - Fast incremental builds with intelligent caching
 - Parallel task execution across workspaces
 - Simple configuration for complex monorepos
@@ -256,12 +263,14 @@ Pokemon/
 ## Tech Stack
 
 ### Frontend
+
 - **React 19.2** with SSR
 - **TypeScript 5.5** with strict mode
 - **Bun 1.3.5** runtime and package manager and bundler
 - **Storybook 8.5** for component development
 
 ### Backend
+
 - **Rust** with Actix-web 4.9
 - **async-graphql 7.0** for GraphQL
 - **sqlx 0.8** for PostgreSQL
@@ -269,12 +278,14 @@ Pokemon/
 - **Tokio** async runtime
 
 ### Infrastructure
+
 - **PostgreSQL** for relational data
 - **Neo4j** for graph data
 - **Docker** for containerization
 - **Turborepo 2.3** for monorepo orchestration
 
 ### Development Tools
+
 - **ESLint** for linting
 - **Prettier** for formatting
 - **Storybook** for component dev
@@ -285,6 +296,7 @@ Pokemon/
 ### Pokemon TCG Data Structure
 
 Cards are stored with:
+
 - Unique identifiers and set information
 - Card attributes (HP, attacks, abilities, types)
 - Rarity and collector information
@@ -295,6 +307,7 @@ Cards are stored with:
 ### Database Schema
 
 **PostgreSQL Tables:**
+
 - `sets` - Pokemon TCG set information
 - `pokemon_cards` - Individual card data
 - `users` - User accounts
@@ -302,6 +315,7 @@ Cards are stored with:
 - `trades` - Trading history
 
 **Neo4j Graph:**
+
 - Card evolution relationships
 - Deck synergy networks
 - Card combo patterns
@@ -310,6 +324,7 @@ Cards are stored with:
 ### API Design
 
 GraphQL queries and mutations for:
+
 - Card search and filtering
 - Set browsing
 - Collection management
@@ -350,12 +365,14 @@ GraphQL queries and mutations for:
 ### Required Environment Variables
 
 **Frontend (.env):**
+
 ```
 API_URL=http://localhost:8080
 NODE_ENV=development
 ```
 
 **Backend (.env):**
+
 ```
 DATABASE_URL=postgresql://user:pass@localhost:5432/pokemon_tcg
 NEO4J_URI=bolt://localhost:7687
@@ -369,6 +386,7 @@ RUST_LOG=info
 ### Docker Deployment
 
 All services containerized:
+
 - `web` - Frontend SSR server
 - `tcg-api` - GraphQL API server
 - `postgres` - PostgreSQL database

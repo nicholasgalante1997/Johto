@@ -5,16 +5,19 @@ Your Pokemon TCG Platform is now configured for spec-driven development with Cla
 ## What Was Created
 
 ### Core Configuration
+
 - ✅ **CLAUDE.md** - Comprehensive project context with architecture, standards, and workflows
 - ✅ **settings.json** - Permission rules and lifecycle hooks for safe development
 - ✅ **README.md** - Complete documentation for the .claude workspace
 - ✅ **QUICK_REFERENCE.md** - Fast command reference for daily use
 
 ### Specialized Agents
+
 - ✅ **bun-react-frontend** - React 19 + Bun SSR development
 - ✅ **rust-graphql-api** - Rust + Actix-web + GraphQL API development
 
 ### Domain Skills
+
 - ✅ **react-bun-ssr** - React 19 SSR patterns with Bun runtime
 - ✅ **rust-actix-graphql** - Rust API patterns with GraphQL
 - ✅ **pokemon-tcg-data** - Pokemon TCG data structures and validation
@@ -39,26 +42,33 @@ claude --agent rust-graphql-api
 ### 2. Try Your First Task
 
 **Frontend Example:**
+
 ```bash
 claude --agent bun-react-frontend
 ```
+
 Then ask: "Create a PokemonCardGrid component that displays cards in a responsive grid"
 
 **Backend Example:**
+
 ```bash
 claude --agent rust-graphql-api
 ```
+
 Then ask: "Add a GraphQL mutation to create a new collection"
 
 **Infrastructure Example:**
+
 ```bash
 claude
 ```
+
 Then ask: "Review the Docker Compose configuration and suggest optimizations"
 
 ## What Each Agent Knows
 
 ### bun-react-frontend
+
 - React 19 canary features and SSR patterns
 - Bun runtime native APIs
 - Webpack 5 configuration
@@ -68,6 +78,7 @@ Then ask: "Review the Docker Compose configuration and suggest optimizations"
 - Component composition patterns
 
 ### rust-graphql-api
+
 - Actix-web framework patterns
 - async-graphql schema design
 - PostgreSQL with sqlx
@@ -78,6 +89,7 @@ Then ask: "Review the Docker Compose configuration and suggest optimizations"
 - Database migrations
 
 ### Default Agent
+
 - All capabilities from specialized agents
 - Docker and infrastructure
 - Build system configuration
@@ -96,7 +108,9 @@ All agents have access to these skills which activate automatically:
 ## Key Features
 
 ### Automatic Context Loading
+
 Every time you start Claude Code, it automatically loads:
+
 - Project architecture and goals
 - Technology stack information
 - Development standards
@@ -104,18 +118,22 @@ Every time you start Claude Code, it automatically loads:
 - Technical decisions
 
 ### Smart Permissions
+
 Configured to allow:
+
 - Reading all source code and configs
 - Writing to apps/ and packages/
 - Running bun, cargo, docker commands
 - Safe git operations
 
 Blocked from:
+
 - Accessing .env files
 - Modifying node_modules or target/
 - Running destructive commands
 
 ### Development Workflow Support
+
 - Component creation with tests and stories
 - GraphQL schema generation
 - Database migration management
@@ -140,6 +158,7 @@ cat .claude/CLAUDE.md
 ### 2. Test the Setup
 
 Try creating a simple component:
+
 ```bash
 claude --agent bun-react-frontend
 # Ask: "Create a simple Button component with TypeScript types and Storybook story"
@@ -148,6 +167,7 @@ claude --agent bun-react-frontend
 ### 3. Customize for Your Workflow
 
 Edit `.claude/settings.json` to:
+
 - Add more allowed file patterns
 - Configure post-save hooks (linting, formatting)
 - Adjust permissions for your needs
@@ -167,15 +187,19 @@ Edit `.claude/settings.json` to:
 ### Creating a New Feature
 
 1. **Frontend Component**
+
    ```bash
    claude --agent bun-react-frontend
    ```
+
    Ask: "Create a CardSearchFilter component with filters for type, rarity, and HP range"
 
 2. **Backend API**
+
    ```bash
    claude --agent rust-graphql-api
    ```
+
    Ask: "Add GraphQL query and resolver to support the card search filters"
 
 3. **Integration**
@@ -189,6 +213,7 @@ Edit `.claude/settings.json` to:
 ```bash
 claude --agent rust-graphql-api
 ```
+
 Ask: "Create a migration to add a 'favorites' table for users to save favorite cards"
 
 ### Infrastructure Changes
@@ -196,6 +221,7 @@ Ask: "Create a migration to add a 'favorites' table for users to save favorite c
 ```bash
 claude
 ```
+
 Ask: "Add Redis to docker-compose.yml for caching frequently accessed card data"
 
 ## Tips for Success
@@ -211,6 +237,7 @@ Ask: "Add Redis to docker-compose.yml for caching frequently accessed card data"
 ## Troubleshooting
 
 ### Agent Not Loading
+
 ```bash
 # Check agent files exist
 ls -la .claude/agents/
@@ -220,6 +247,7 @@ cat .claude/agents/bun-react-frontend.md | head -20
 ```
 
 ### Permissions Issues
+
 ```bash
 # Review current permissions
 cat .claude/settings.json | jq '.permissions'
@@ -229,6 +257,7 @@ cat .claude/settings.json | jq '.permissions'
 ```
 
 ### Context Too Large
+
 ```
 # Within Claude Code:
 /compact           # Summarize conversation
@@ -256,6 +285,7 @@ If you encounter issues:
 ## Success Indicators
 
 You'll know the setup is working when:
+
 - ✅ Claude understands your project architecture
 - ✅ Generated code follows your conventions
 - ✅ TypeScript types are properly inferred
@@ -266,6 +296,7 @@ You'll know the setup is working when:
 ## What Makes This Special
 
 Unlike generic AI assistance, Claude Code with this setup:
+
 - **Knows your architecture** - Understands the multi-service Pokemon TCG platform
 - **Follows your patterns** - Uses Container/View for React, proper Rust error handling
 - **Validates properly** - Enforces Pokemon TCG deck rules and card validation
@@ -287,5 +318,5 @@ Happy coding! 🚀
 
 ---
 
-*Setup created based on analysis of Arcturus-JR patterns and Project Johto codebase.*
-*Last updated: 2026-01-04*
+_Setup created based on analysis of Arcturus-JR patterns and Project Johto codebase._
+_Last updated: 2026-01-04_

@@ -1,18 +1,23 @@
-await Bun.build({
-  entrypoints: ['src/web/browser/index.tsx'],
+import type { BuildConfig } from 'bun';
+
+const _: BuildConfig = {
+  entrypoints: ['src/web/browser/browser.tsx'],
   jsx: {
     runtime: 'automatic',
     importSource: 'react'
   },
   outdir: './out',
   naming: {
-    entry: 'www/browser.[hash].js'
+    entry: 'www/[name].[hash].[ext]'
   },
   target: 'browser',
   format: 'esm',
+  env: 'inline',
   packages: 'bundle',
-  splitting: false, // Change to true to enable splitting
+  splitting: false,
   sourcemap: 'linked',
   minify: false, // Change to true to make the code fucking unreadable for almost no performance boost
   root: '.'
-});
+};
+
+export default _;

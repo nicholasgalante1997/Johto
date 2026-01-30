@@ -42,9 +42,11 @@ claude --resume
 ## Agents
 
 ### bun-react-frontend
+
 Specialized for React 19 frontend development with Bun runtime, SSR, and Pokemon TCG UI.
 
 **Best for:**
+
 - Creating React components
 - Implementing SSR patterns
 - Building Pokemon card UI
@@ -52,13 +54,16 @@ Specialized for React 19 frontend development with Bun runtime, SSR, and Pokemon
 - Creating Storybook stories
 
 **Includes:**
+
 - react-bun-ssr skill
 - pokemon-tcg-data skill
 
 ### rust-graphql-api
+
 Specialized for Rust backend development with Actix-web, GraphQL, and databases.
 
 **Best for:**
+
 - Building GraphQL schemas
 - Database operations (PostgreSQL, Neo4j)
 - Rust async patterns
@@ -66,13 +71,16 @@ Specialized for Rust backend development with Actix-web, GraphQL, and databases.
 - Performance optimization
 
 **Includes:**
+
 - rust-actix-graphql skill
 - pokemon-tcg-data skill
 
 ### Default Agent
+
 General-purpose agent with full capabilities.
 
 **Best for:**
+
 - Infrastructure and Docker
 - Build system configuration
 - Cross-cutting concerns
@@ -84,21 +92,25 @@ General-purpose agent with full capabilities.
 Skills are modular capabilities that load automatically based on relevance.
 
 ### react-bun-ssr
+
 React 19 patterns with Bun runtime, SSR, hydration, and modern React features.
 
 **Activates for:** React components, SSR implementation, Bun runtime usage
 
 ### rust-actix-graphql
+
 Rust patterns with Actix-web, async-graphql, PostgreSQL, and Neo4j.
 
 **Activates for:** Rust development, GraphQL schemas, database operations
 
 ### pokemon-tcg-data
+
 Pokemon TCG data structures, validation, and management patterns.
 
 **Activates for:** Card data, deck validation, collection management, TCG rules
 
 ### docker-infrastructure
+
 Docker and docker-compose patterns for multi-service deployment.
 
 **Activates for:** Docker configuration, service orchestration, deployment
@@ -119,11 +131,7 @@ Controls permissions and lifecycle hooks:
       "Bash(cargo :*)",
       "Bash(docker :*)"
     ],
-    "deny": [
-      "Read(.env*)",
-      "Write(node_modules/**)",
-      "Bash(rm -rf :*)"
-    ]
+    "deny": ["Read(.env*)", "Write(node_modules/**)", "Bash(rm -rf :*)"]
   }
 }
 ```
@@ -131,6 +139,7 @@ Controls permissions and lifecycle hooks:
 ## Project Context
 
 CLAUDE.md contains:
+
 - Project overview and architecture
 - Technology stack details
 - Development standards
@@ -150,6 +159,7 @@ claude --agent bun-react-frontend
 ```
 
 Claude will:
+
 1. Create component structure (PokemonCard.tsx, types.ts, CSS)
 2. Implement responsive card layout
 3. Add TypeScript types
@@ -164,6 +174,7 @@ claude --agent rust-graphql-api
 ```
 
 Claude will:
+
 1. Define GraphQL schema
 2. Create database query
 3. Implement resolver function
@@ -178,6 +189,7 @@ claude
 ```
 
 Claude will:
+
 1. Create docker-compose.yml configuration
 2. Set up volumes and networks
 3. Configure health checks
@@ -187,6 +199,7 @@ Claude will:
 ## Permissions
 
 Default permissions allow:
+
 - **Read**: All source files, configs, markdown, Rust, TypeScript
 - **Write**: Source code in apps/, packages/, docker/
 - **Bash**: bun, cargo, docker, docker compose, git log
@@ -207,21 +220,27 @@ Adjust in settings.json as needed.
 ## Troubleshooting
 
 ### Agent not loading
+
 ```bash
 ls -la .claude/agents/
 ```
 
 ### Skills not activating
+
 Skills activate based on relevance. Verify skill description matches your task.
 
 ### Permissions not working
+
 Check pattern syntax in settings.json:
+
 ```bash
 cat .claude/settings.json | jq '.permissions'
 ```
 
 ### Context issues
+
 Verify CLAUDE.md is properly formatted:
+
 ```bash
 cat .claude/CLAUDE.md | head -20
 ```
@@ -250,6 +269,7 @@ Pokemon/
 ## Tech Stack Summary
 
 **Frontend:**
+
 - React 19.2 with SSR
 - Bun 1.3.5 runtime
 - TypeScript 5.5
@@ -257,6 +277,7 @@ Pokemon/
 - Storybook 8.5
 
 **Backend:**
+
 - Rust with Actix-web
 - async-graphql
 - PostgreSQL (sqlx)
@@ -264,6 +285,7 @@ Pokemon/
 - Tokio runtime
 
 **Infrastructure:**
+
 - Docker & Docker Compose
 - Turborepo
 - PostgreSQL
@@ -307,6 +329,7 @@ bun run check-types             # Type check
 ## Support
 
 For issues or questions:
+
 1. Check Claude Code docs
 2. Review CLAUDE.md for project context
 3. Consult relevant skill for domain patterns

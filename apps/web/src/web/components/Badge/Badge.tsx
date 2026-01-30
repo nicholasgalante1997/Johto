@@ -8,15 +8,16 @@ export function Badge({
   pokemonType,
   rarity,
   size = 'medium',
-  className = '',
+  className = ''
 }: BadgeProps) {
   const classNames = [
     'pokemon-badge',
     `pokemon-badge--${variant}`,
     `pokemon-badge--${size}`,
     pokemonType && `pokemon-badge--type-${pokemonType.toLowerCase()}`,
-    rarity && `pokemon-badge--rarity-${rarity.toLowerCase().replace(/\s+/g, '-')}`,
-    className,
+    rarity &&
+      `pokemon-badge--rarity-${rarity.toLowerCase().replace(/\s+/g, '-')}`,
+    className
   ]
     .filter(Boolean)
     .join(' ');

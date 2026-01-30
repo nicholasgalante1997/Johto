@@ -10,14 +10,14 @@ export function Button({
   fullWidth = false,
   onClick,
   type = 'button',
-  className = '',
+  className = ''
 }: ButtonProps) {
   const classNames = [
     'pokemon-button',
     `pokemon-button--${variant}`,
     `pokemon-button--${size}`,
     fullWidth && 'pokemon-button--full-width',
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');

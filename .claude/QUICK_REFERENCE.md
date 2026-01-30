@@ -19,16 +19,16 @@ claude -p "Review this code"
 
 ## Essential Commands (within Claude Code)
 
-| Command | Purpose |
-|---------|---------|
-| `/usage` | View context window consumption |
-| `/compact` | Summarize conversation history |
-| `/context add file` | Add file to context |
-| `/context show` | View current context |
-| `/context clear` | Clear session context |
-| `/help` | List available commands |
-| `/save name` | Save conversation |
-| `/load name` | Load saved conversation |
+| Command             | Purpose                         |
+| ------------------- | ------------------------------- |
+| `/usage`            | View context window consumption |
+| `/compact`          | Summarize conversation history  |
+| `/context add file` | Add file to context             |
+| `/context show`     | View current context            |
+| `/context clear`    | Clear session context           |
+| `/help`             | List available commands         |
+| `/save name`        | Save conversation               |
+| `/load name`        | Load saved conversation         |
 
 ## Project Structure
 
@@ -88,6 +88,7 @@ claude
 ## Key Conventions
 
 ### React Component Structure
+
 ```
 PokemonCard/
 ├── index.ts
@@ -99,6 +100,7 @@ PokemonCard/
 ```
 
 ### Rust Module Structure
+
 ```
 feature/
 ├── mod.rs                # Module exports
@@ -109,6 +111,7 @@ feature/
 ```
 
 ### GraphQL Query Pattern
+
 ```rust
 #[Object]
 impl QueryRoot {
@@ -120,6 +123,7 @@ impl QueryRoot {
 ```
 
 ### React SSR Pattern
+
 ```typescript
 // Server-side
 import { renderToString } from 'react-dom/server';
@@ -133,6 +137,7 @@ hydrateRoot(document.getElementById('root')!, <App />);
 ## Critical Requirements
 
 ### Frontend (React + Bun)
+
 - **ALWAYS** use React 19 canary features
 - **ALWAYS** implement SSR for pages
 - **ALWAYS** use Bun native APIs when possible
@@ -140,6 +145,7 @@ hydrateRoot(document.getElementById('root')!, <App />);
 - **ALWAYS** handle hydration errors
 
 ### Backend (Rust + GraphQL)
+
 - **ALWAYS** use async/await patterns
 - **ALWAYS** parameterize database queries
 - **ALWAYS** use transactions for multi-step operations
@@ -147,12 +153,14 @@ hydrateRoot(document.getElementById('root')!, <App />);
 - **ALWAYS** implement proper error handling
 
 ### Pokemon TCG Data
+
 - **ALWAYS** validate card data before insertion
 - **ALWAYS** enforce deck composition rules (60 cards, max 4 copies)
 - **ALWAYS** check format legality
 - **ALWAYS** handle missing optional fields
 
 ### Docker Infrastructure
+
 - **ALWAYS** use health checks for dependencies
 - **ALWAYS** configure persistent volumes
 - **ALWAYS** use multi-stage builds
@@ -161,6 +169,7 @@ hydrateRoot(document.getElementById('root')!, <App />);
 ## Permissions
 
 Default permissions:
+
 - ✅ Read: Source files, configs, markdown, Rust, TypeScript
 - ✅ Write: Source code in apps/ and packages/
 - ✅ Bash: bun, cargo, docker, git log
@@ -170,24 +179,25 @@ Modify in `.claude/settings.json`
 
 ## Agents
 
-| Agent | Best For | Skills |
-|-------|----------|--------|
-| bun-react-frontend | React development, UI components | react-bun-ssr, pokemon-tcg-data |
-| rust-graphql-api | API development, database ops | rust-actix-graphql, pokemon-tcg-data |
-| default | Infrastructure, Docker, general tasks | All capabilities |
+| Agent              | Best For                              | Skills                               |
+| ------------------ | ------------------------------------- | ------------------------------------ |
+| bun-react-frontend | React development, UI components      | react-bun-ssr, pokemon-tcg-data      |
+| rust-graphql-api   | API development, database ops         | rust-actix-graphql, pokemon-tcg-data |
+| default            | Infrastructure, Docker, general tasks | All capabilities                     |
 
 ## Skills (Auto-Loading)
 
-| Skill | Activates For |
-|-------|---------------|
-| react-bun-ssr | React components, SSR, Bun runtime |
-| rust-actix-graphql | Rust API, GraphQL, database operations |
-| pokemon-tcg-data | Card data, validation, TCG rules |
-| docker-infrastructure | Docker, compose, deployment |
+| Skill                 | Activates For                          |
+| --------------------- | -------------------------------------- |
+| react-bun-ssr         | React components, SSR, Bun runtime     |
+| rust-actix-graphql    | Rust API, GraphQL, database operations |
+| pokemon-tcg-data      | Card data, validation, TCG rules       |
+| docker-infrastructure | Docker, compose, deployment            |
 
 ## Development Commands
 
 ### Frontend (Bun + React)
+
 ```bash
 cd apps/web
 
@@ -200,6 +210,7 @@ bun run check-types      # TypeScript check
 ```
 
 ### Backend (Rust + GraphQL)
+
 ```bash
 cd apps/tcg-api
 
@@ -215,6 +226,7 @@ sqlx migrate revert      # Revert migration
 ```
 
 ### Docker Commands
+
 ```bash
 # Start all services
 docker compose up
@@ -236,6 +248,7 @@ docker compose up postgres neo4j
 ```
 
 ### Turborepo Commands
+
 ```bash
 # Root commands
 bun run dev              # Start all apps
@@ -252,6 +265,7 @@ bun run --filter @pokemon/web dev
 ## Database Operations
 
 ### PostgreSQL
+
 ```bash
 # Connect to database
 docker exec -it pokemon-postgres psql -U pokemon -d pokemon_tcg
@@ -268,6 +282,7 @@ docker exec pokemon-postgres pg_dump -U pokemon pokemon_tcg > backup.sql
 ```
 
 ### Neo4j
+
 ```bash
 # Access Neo4j browser
 open http://localhost:7474
@@ -277,6 +292,7 @@ docker exec pokemon-neo4j neo4j-admin dump --to=/tmp/backup.dump
 ```
 
 ### Sync Pokemon Data
+
 ```bash
 # Sync all card data
 bun run json:sync
@@ -288,21 +304,25 @@ docker compose --profile seed up seed
 ## Troubleshooting
 
 ### Frontend Issues
+
 - **Hydration errors**: Ensure server/client renders match
 - **Bun errors**: Check Bun version (1.3.5)
 - **Build fails**: Clear dist/ and node_modules/, reinstall
 
 ### Backend Issues
+
 - **Database connection**: Check DATABASE_URL env var
 - **Compile errors**: Run `cargo clean && cargo build`
 - **Migration fails**: Check migration order and rollback
 
 ### Docker Issues
+
 - **Service won't start**: Check `docker compose logs <service>`
 - **Port conflicts**: Change port mapping in docker-compose.yml
 - **Volume issues**: Remove volumes with `docker compose down -v`
 
 ### Context Issues
+
 - Use `/usage` to check consumption
 - Use `/compact` to summarize history
 - Use `/context clear` to reset
@@ -330,12 +350,14 @@ docker compose --profile seed up seed
 ### Required Environment Variables
 
 **Frontend (.env):**
+
 ```
 API_URL=http://localhost:8080
 NODE_ENV=development
 ```
 
 **Backend (.env):**
+
 ```
 DATABASE_URL=postgresql://pokemon:password@localhost:5432/pokemon_tcg
 NEO4J_URI=bolt://localhost:7687

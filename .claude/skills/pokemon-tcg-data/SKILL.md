@@ -27,19 +27,19 @@ Define patterns for Pokemon Trading Card Game data structures, validation rules,
 ```typescript
 interface PokemonCard {
   // Identifiers
-  id: string;              // e.g., "base1-4"
-  name: string;            // e.g., "Charizard"
+  id: string; // e.g., "base1-4"
+  name: string; // e.g., "Charizard"
 
   // Set Information
-  set_id: string;          // e.g., "base1"
-  number: string;          // Card number in set
-  total_in_set: number;    // Total cards in set
+  set_id: string; // e.g., "base1"
+  number: string; // Card number in set
+  total_in_set: number; // Total cards in set
 
   // Card Stats
-  hp?: string;             // Hit points, e.g., "120"
-  types?: string[];        // e.g., ["Fire"]
-  supertype: string;       // "Pokémon", "Trainer", "Energy"
-  subtypes?: string[];     // e.g., ["Stage 2", "V", "VMAX"]
+  hp?: string; // Hit points, e.g., "120"
+  types?: string[]; // e.g., ["Fire"]
+  supertype: string; // "Pokémon", "Trainer", "Energy"
+  subtypes?: string[]; // e.g., ["Stage 2", "V", "VMAX"]
 
   // Battle Info
   attacks?: Attack[];
@@ -49,11 +49,11 @@ interface PokemonCard {
   retreat_cost?: string[]; // Energy types required
 
   // Evolution
-  evolves_from?: string;   // Previous evolution
-  evolves_to?: string[];   // Next evolutions
+  evolves_from?: string; // Previous evolution
+  evolves_to?: string[]; // Next evolutions
 
   // Collection Info
-  rarity?: string;         // e.g., "Rare Holo", "Common"
+  rarity?: string; // e.g., "Rare Holo", "Common"
   artist?: string;
   flavor_text?: string;
 
@@ -68,25 +68,25 @@ interface PokemonCard {
 
 interface Attack {
   name: string;
-  cost: string[];          // Energy types
-  damage?: string;         // e.g., "50", "10+", "×30"
-  text?: string;           // Attack description
+  cost: string[]; // Energy types
+  damage?: string; // e.g., "50", "10+", "×30"
+  text?: string; // Attack description
 }
 
 interface Ability {
   name: string;
   text: string;
-  type?: string;           // "Ability" or "Poké-Power" or "Poké-Body"
+  type?: string; // "Ability" or "Poké-Power" or "Poké-Body"
 }
 
 interface Weakness {
-  type: string;            // Energy type
-  value: string;           // e.g., "×2", "+20"
+  type: string; // Energy type
+  value: string; // e.g., "×2", "+20"
 }
 
 interface Resistance {
   type: string;
-  value: string;           // e.g., "-20", "-30"
+  value: string; // e.g., "-20", "-30"
 }
 ```
 
@@ -96,13 +96,13 @@ interface Resistance {
 
 ```typescript
 interface PokemonSet {
-  id: string;              // e.g., "base1"
-  name: string;            // e.g., "Base Set"
-  series: string;          // e.g., "Base"
+  id: string; // e.g., "base1"
+  name: string; // e.g., "Base Set"
+  series: string; // e.g., "Base"
   total_cards: number;
 
   // Release Info
-  release_date: string;    // ISO date
+  release_date: string; // ISO date
 
   // Images
   logo_url?: string;
@@ -133,7 +133,13 @@ interface CollectionCard {
   collection_id: string;
   card_id: string;
   quantity: number;
-  condition?: 'Mint' | 'Near Mint' | 'Lightly Played' | 'Moderately Played' | 'Heavily Played' | 'Damaged';
+  condition?:
+    | 'Mint'
+    | 'Near Mint'
+    | 'Lightly Played'
+    | 'Moderately Played'
+    | 'Heavily Played'
+    | 'Damaged';
   notes?: string;
   acquired_date?: string;
   acquisition_price?: number;
@@ -207,7 +213,10 @@ function validateCard(card: PokemonCard): ValidationResult {
 **ALWAYS** enforce TCG deck rules (ID: DECK_VALIDATION)
 
 ```typescript
-function validateDeck(cards: DeckCard[], cardData: Map<string, PokemonCard>): DeckValidationResult {
+function validateDeck(
+  cards: DeckCard[],
+  cardData: Map<string, PokemonCard>
+): DeckValidationResult {
   const errors: string[] = [];
 
   // Rule 1: Exactly 60 cards
@@ -235,10 +244,9 @@ function validateDeck(cards: DeckCard[], cardData: Map<string, PokemonCard>): De
   }
 
   // Rule 3: At least one Basic Pokemon
-  const hasBasicPokemon = cards.some(dc => {
+  const hasBasicPokemon = cards.some((dc) => {
     const card = cardData.get(dc.card_id);
-    return card?.supertype === 'Pokémon' &&
-           card?.subtypes?.includes('Basic');
+    return card?.supertype === 'Pokémon' && card?.subtypes?.includes('Basic');
   });
 
   if (!hasBasicPokemon) {
@@ -258,7 +266,11 @@ function validateDeck(cards: DeckCard[], cardData: Map<string, PokemonCard>): De
 **ALWAYS** check card legality in format (ID: FORMAT_LEGALITY)
 
 ```typescript
-function isCardLegalInFormat(card: PokemonCard, set: PokemonSet, format: 'Standard' | 'Expanded' | 'Unlimited'): boolean {
+function isCardLegalInFormat(
+  card: PokemonCard,
+  set: PokemonSet,
+  format: 'Standard' | 'Expanded' | 'Unlimited'
+): boolean {
   switch (format) {
     case 'Standard':
       return set.standard_legal;
@@ -292,13 +304,22 @@ interface CardSearchCriteria {
   retreat_cost_max?: number;
 }
 
-function searchCards(cards: PokemonCard[], criteria: CardSearchCriteria): PokemonCard[] {
-  return cards.filter(card => {
-    if (criteria.name && !card.name.toLowerCase().includes(criteria.name.toLowerCase())) {
+function searchCards(
+  cards: PokemonCard[],
+  criteria: CardSearchCriteria
+): PokemonCard[] {
+  return cards.filter((card) => {
+    if (
+      criteria.name &&
+      !card.name.toLowerCase().includes(criteria.name.toLowerCase())
+    ) {
       return false;
     }
 
-    if (criteria.types && !criteria.types.some(t => card.types?.includes(t))) {
+    if (
+      criteria.types &&
+      !criteria.types.some((t) => card.types?.includes(t))
+    ) {
       return false;
     }
 
@@ -365,7 +386,10 @@ interface CollectionStats {
   by_rarity: Map<string, number>;
   by_type: Map<string, number>;
   by_set: Map<string, number>;
-  completion_by_set: Map<string, { owned: number; total: number; percentage: number }>;
+  completion_by_set: Map<
+    string,
+    { owned: number; total: number; percentage: number }
+  >;
   estimated_value: number;
 }
 
@@ -374,7 +398,7 @@ function calculateCollectionStats(
   allCards: PokemonCard[],
   sets: PokemonSet[]
 ): CollectionStats {
-  const cardMap = new Map(allCards.map(c => [c.id, c]));
+  const cardMap = new Map(allCards.map((c) => [c.id, c]));
 
   const stats: CollectionStats = {
     total_cards: 0,
@@ -513,7 +537,7 @@ const ENERGY_TYPES = [
   'Colorless'
 ] as const;
 
-type EnergyType = typeof ENERGY_TYPES[number];
+type EnergyType = (typeof ENERGY_TYPES)[number];
 ```
 
 ### Rarity Constants
@@ -533,7 +557,7 @@ const RARITIES = [
   'Promo'
 ] as const;
 
-type Rarity = typeof RARITIES[number];
+type Rarity = (typeof RARITIES)[number];
 ```
 
 ## Best Practices

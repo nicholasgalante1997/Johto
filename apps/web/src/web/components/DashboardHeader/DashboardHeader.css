@@ -1,0 +1,126 @@
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--pico-card-background-color, #1a1a2e);
+  border-bottom: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+  min-height: 64px;
+}
+
+/* Left section */
+.dashboard-header__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.dashboard-header__menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
+  border-radius: 8px;
+  color: var(--pico-color, #e4e4e7);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dashboard-header__menu-btn:hover {
+  background-color: var(--pico-secondary-hover-background, rgba(255, 255, 255, 0.05));
+  border-color: var(--pico-primary, #7c3aed);
+}
+
+@media (max-width: 768px) {
+  .dashboard-header__menu-btn {
+    display: flex;
+  }
+}
+
+/* Breadcrumbs */
+.dashboard-header__breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-header__breadcrumbs ol {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+.dashboard-header__breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dashboard-header__breadcrumbs a {
+  color: var(--pico-muted-color, #a1a1aa);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.15s ease;
+}
+
+.dashboard-header__breadcrumbs a:hover {
+  color: var(--pico-primary, #7c3aed);
+}
+
+.dashboard-header__breadcrumbs span[aria-current="page"] {
+  color: var(--pico-color, #e4e4e7);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.dashboard-header__breadcrumb-separator {
+  color: var(--pico-muted-color, #71717a);
+  font-size: 0.875rem;
+  margin: 0 0.25rem;
+}
+
+/* Center section */
+.dashboard-header__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.dashboard-header__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--pico-color, #e4e4e7);
+}
+
+/* Right section */
+.dashboard-header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .dashboard-header__breadcrumbs {
+    display: none;
+  }
+
+  .dashboard-header__title {
+    font-size: 1.125rem;
+  }
+}

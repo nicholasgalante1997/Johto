@@ -1,5 +1,6 @@
 import { routeApiRequest } from './router';
 import { errorResponse } from './utils/response';
+import { getApiDiscovery } from './handlers/discovery';
 
 /**
  * Handle API requests
@@ -15,6 +16,14 @@ export async function handleApiRequest(request: Request): Promise<Response> {
       405,
       'METHOD_NOT_ALLOWED'
     );
+  }
+
+  // Handle API discovery endpoint (needs request for content negotiation)
+  if (
+    url.pathname === '/api/v1/endpoints' ||
+    url.pathname === '/api/v1/endpoints/'
+  ) {
+    return await getApiDiscovery(request);
   }
 
   // Route the request

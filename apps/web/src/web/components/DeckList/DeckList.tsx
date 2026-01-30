@@ -1,4 +1,5 @@
 import React from 'react';
+import { Layers } from 'lucide-react';
 import type { DeckListProps } from './types';
 import { DeckCard } from '../DeckCard';
 import { Button } from '../Button';
@@ -14,12 +15,12 @@ export function DeckList({
   emptyMessage = 'No decks created yet',
   loading = false,
   layout = 'grid',
-  className = '',
+  className = ''
 }: DeckListProps) {
   const classNames = [
     'pokemon-deck-list',
     `pokemon-deck-list--${layout}`,
-    className,
+    className
   ]
     .filter(Boolean)
     .join(' ');
@@ -36,7 +37,9 @@ export function DeckList({
   if (decks.length === 0) {
     return (
       <div className="pokemon-deck-list__empty">
-        <div className="pokemon-deck-list__empty-icon">🎴</div>
+        <div className="pokemon-deck-list__empty-icon">
+          <Layers size={64} aria-hidden="true" />
+        </div>
         <h3 className="pokemon-deck-list__empty-title">{emptyMessage}</h3>
         {onCreateNew && (
           <Button variant="primary" size="large" onClick={onCreateNew}>
@@ -52,7 +55,8 @@ export function DeckList({
       {onCreateNew && (
         <div className="pokemon-deck-list__header">
           <h2 className="pokemon-deck-list__title">
-            My Decks <span className="pokemon-deck-list__count">({decks.length})</span>
+            My Decks{' '}
+            <span className="pokemon-deck-list__count">({decks.length})</span>
           </h2>
           <Button variant="primary" size="medium" onClick={onCreateNew}>
             + New Deck

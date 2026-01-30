@@ -51,14 +51,14 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-pokemon}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - pika
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U pokemon"]
+      test: ['CMD-SHELL', 'pg_isready -U pokemon']
       interval: 10s
       timeout: 5s
       retries: 5
@@ -70,15 +70,19 @@ services:
       NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-password}
       NEO4J_PLUGINS: '["apoc"]'
     ports:
-      - "7474:7474"  # HTTP
-      - "7687:7687"  # Bolt
+      - '7474:7474' # HTTP
+      - '7687:7687' # Bolt
     volumes:
       - neo4j_data:/data
       - neo4j_logs:/logs
     networks:
       - pika
     healthcheck:
-      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:7474 || exit 1"]
+      test:
+        [
+          'CMD-SHELL',
+          'wget --no-verbose --tries=1 --spider localhost:7474 || exit 1'
+        ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -156,7 +160,7 @@ services:
       NEO4J_PASSWORD: ${NEO4J_PASSWORD:-password}
       RUST_LOG: info
     ports:
-      - "8080:8080"
+      - '8080:8080'
     depends_on:
       postgres:
         condition: service_healthy
@@ -165,7 +169,11 @@ services:
     networks:
       - pika
     healthcheck:
-      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:8080/health || exit 1"]
+      test:
+        [
+          'CMD-SHELL',
+          'wget --no-verbose --tries=1 --spider localhost:8080/health || exit 1'
+        ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -230,14 +238,18 @@ services:
       API_URL: http://tcg-api:8080
       PORT: 3000
     ports:
-      - "3000:3000"
+      - '3000:3000'
     depends_on:
       tcg-api:
         condition: service_healthy
     networks:
       - pika
     healthcheck:
-      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:3000 || exit 1"]
+      test:
+        [
+          'CMD-SHELL',
+          'wget --no-verbose --tries=1 --spider localhost:3000 || exit 1'
+        ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -484,17 +496,17 @@ API_URL=http://tcg-api:8080
 services:
   web:
     logging:
-      driver: "json-file"
+      driver: 'json-file'
       options:
-        max-size: "10m"
-        max-file: "3"
+        max-size: '10m'
+        max-file: '3'
 
   tcg-api:
     logging:
-      driver: "json-file"
+      driver: 'json-file'
       options:
-        max-size: "10m"
-        max-file: "3"
+        max-size: '10m'
+        max-file: '3'
 ```
 
 ## Monitoring & Health

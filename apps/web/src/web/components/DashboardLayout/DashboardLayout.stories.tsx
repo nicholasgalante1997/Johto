@@ -1,5 +1,15 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import {
+  BarChart3,
+  Package,
+  Layers,
+  Star,
+  Search,
+  Settings,
+  DollarSign,
+  User
+} from 'lucide-react';
 import { DashboardLayout } from './DashboardLayout';
 import { Sidebar } from '../Sidebar';
 import { Stats } from '../Stats';
@@ -11,19 +21,43 @@ import type { Pokemon } from '@pokemon/clients';
 import './DashboardLayout.css';
 
 const mockNavItems: NavItem[] = [
-  { id: 'overview', label: 'Overview', icon: '📊' },
-  { id: 'collection', label: 'My Collection', icon: '📦', count: 152 },
-  { id: 'decks', label: 'My Decks', icon: '🎴', count: 5 },
-  { id: 'wishlist', label: 'Wishlist', icon: '⭐', count: 23 },
-  { id: 'browse', label: 'Browse Cards', icon: '🔍' },
-  { id: 'settings', label: 'Settings', icon: '⚙️' },
+  { id: 'overview', label: 'Overview', icon: <BarChart3 size={20} /> },
+  { id: 'collection', label: 'My Collection', icon: <Package size={20} />, count: 152 },
+  { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, count: 5 },
+  { id: 'wishlist', label: 'Wishlist', icon: <Star size={20} />, count: 23 },
+  { id: 'browse', label: 'Browse Cards', icon: <Search size={20} /> },
+  { id: 'settings', label: 'Settings', icon: <Settings size={20} /> }
 ];
 
 const mockStats: StatItem[] = [
-  { id: '1', label: 'Total Cards', value: '152', icon: '📦', trend: 'up', trendValue: '+12', color: 'blue' },
-  { id: '2', label: 'Active Decks', value: '5', icon: '🎴', color: 'green' },
-  { id: '3', label: 'Wishlist', value: '23', icon: '⭐', trend: 'up', trendValue: '+5', color: 'yellow' },
-  { id: '4', label: 'Est. Value', value: '$1,247', icon: '💰', trend: 'up', trendValue: '+8%', color: 'purple' },
+  {
+    id: '1',
+    label: 'Total Cards',
+    value: '152',
+    icon: <Package size={20} />,
+    trend: 'up',
+    trendValue: '+12',
+    color: 'blue'
+  },
+  { id: '2', label: 'Active Decks', value: '5', icon: <Layers size={20} />, color: 'green' },
+  {
+    id: '3',
+    label: 'Wishlist',
+    value: '23',
+    icon: <Star size={20} />,
+    trend: 'up',
+    trendValue: '+5',
+    color: 'yellow'
+  },
+  {
+    id: '4',
+    label: 'Est. Value',
+    value: '$1,247',
+    icon: <DollarSign size={20} />,
+    trend: 'up',
+    trendValue: '+8%',
+    color: 'purple'
+  }
 ];
 
 const mockCards: Pokemon.Card[] = [];
@@ -33,16 +67,16 @@ const meta: Meta<typeof DashboardLayout> = {
   component: DashboardLayout,
   tags: ['autodocs'],
   parameters: {
-    layout: 'fullscreen',
+    layout: 'fullscreen'
   },
   argTypes: {
     showSidebar: {
-      control: 'boolean',
+      control: 'boolean'
     },
     sidebarCollapsed: {
-      control: 'boolean',
-    },
-  },
+      control: 'boolean'
+    }
+  }
 };
 
 export default meta;
@@ -53,28 +87,34 @@ const SampleSidebar = () => (
 );
 
 const SampleHeader = () => (
-  <div style={{
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    padding: '0 2rem',
-    justifyContent: 'space-between'
-  }}>
-    <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>Dashboard</h1>
+  <div
+    style={{
+      height: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      padding: '0 2rem',
+      justifyContent: 'space-between'
+    }}
+  >
+    <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>
+      Dashboard
+    </h1>
     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
       <span style={{ color: '#718096' }}>Welcome back!</span>
-      <div style={{
-        width: 40,
-        height: 40,
-        borderRadius: '50%',
-        background: 'linear-gradient(135deg, #68A0F6 0%, #9F7AEA 100%)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#fff',
-        fontWeight: 700
-      }}>
-        👤
+      <div
+        style={{
+          width: 40,
+          height: 40,
+          borderRadius: '50%',
+          background: 'linear-gradient(135deg, #68A0F6 0%, #9F7AEA 100%)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: '#fff',
+          fontWeight: 700
+        }}
+      >
+        <User size={20} />
       </div>
     </div>
   </div>
@@ -88,8 +128,8 @@ export const Default: Story = {
         <h2>Dashboard Content</h2>
         <p>Your main content goes here.</p>
       </div>
-    ),
-  },
+    )
+  }
 };
 
 export const WithHeader: Story = {
@@ -101,8 +141,8 @@ export const WithHeader: Story = {
         <h2>Dashboard Content</h2>
         <p>Layout with header and sidebar.</p>
       </div>
-    ),
-  },
+    )
+  }
 };
 
 export const NoSidebar: Story = {
@@ -114,8 +154,8 @@ export const NoSidebar: Story = {
         <h2>Full Width Content</h2>
         <p>Layout without sidebar.</p>
       </div>
-    ),
-  },
+    )
+  }
 };
 
 export const CollapsedSidebar: Story = {
@@ -127,8 +167,8 @@ export const CollapsedSidebar: Story = {
         <h2>Dashboard Content</h2>
         <p>Layout with collapsed sidebar.</p>
       </div>
-    ),
-  },
+    )
+  }
 };
 
 export const FullDashboard: Story = {
@@ -144,11 +184,14 @@ export const FullDashboard: Story = {
         </div>
         <div>
           <h2 style={{ marginBottom: '1rem' }}>Your Collection</h2>
-          <CardGrid cards={mockCards} emptyMessage="Start adding cards to your collection" />
+          <CardGrid
+            cards={mockCards}
+            emptyMessage="Start adding cards to your collection"
+          />
         </div>
       </div>
-    ),
-  },
+    )
+  }
 };
 
 export const Interactive: Story = {
@@ -171,8 +214,16 @@ export const Interactive: Story = {
         sidebarCollapsed={collapsed}
       >
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-          <div style={{ padding: '1rem', backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
-            <strong>Current Page:</strong> {mockNavItems.find((item) => item.id === activePage)?.label}
+          <div
+            style={{
+              padding: '1rem',
+              backgroundColor: '#fff',
+              borderRadius: '8px',
+              border: '1px solid #E2E8F0'
+            }}
+          >
+            <strong>Current Page:</strong>{' '}
+            {mockNavItems.find((item) => item.id === activePage)?.label}
             <br />
             <strong>Sidebar:</strong> {collapsed ? 'Collapsed' : 'Expanded'}
           </div>
@@ -190,9 +241,14 @@ export const Interactive: Story = {
           {activePage === 'collection' && (
             <div>
               <h2>My Collection</h2>
-              <SearchBar onSearch={(filters) => console.log('Search:', filters)} />
+              <SearchBar
+                onSearch={(filters) => console.log('Search:', filters)}
+              />
               <div style={{ marginTop: '1rem' }}>
-                <CardGrid cards={mockCards} emptyMessage="No cards in your collection yet" />
+                <CardGrid
+                  cards={mockCards}
+                  emptyMessage="No cards in your collection yet"
+                />
               </div>
             </div>
           )}
@@ -204,14 +260,18 @@ export const Interactive: Story = {
             </div>
           )}
 
-          {activePage !== 'overview' && activePage !== 'collection' && activePage !== 'decks' && (
-            <div>
-              <h2>{mockNavItems.find((item) => item.id === activePage)?.label}</h2>
-              <p>Content for this page coming soon...</p>
-            </div>
-          )}
+          {activePage !== 'overview' &&
+            activePage !== 'collection' &&
+            activePage !== 'decks' && (
+              <div>
+                <h2>
+                  {mockNavItems.find((item) => item.id === activePage)?.label}
+                </h2>
+                <p>Content for this page coming soon...</p>
+              </div>
+            )}
         </div>
       </DashboardLayout>
     );
-  },
+  }
 };

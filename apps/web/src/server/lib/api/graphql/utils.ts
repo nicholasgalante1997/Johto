@@ -4,7 +4,7 @@ export function formatUser(user: any) {
     username: user.username,
     email: user.email,
     createdAt: user.created_at,
-    updatedAt: user.updated_at,
+    updatedAt: user.updated_at
   };
 }
 
@@ -20,7 +20,7 @@ export function formatSet(set: any) {
     release_date: set.release_date,
     updated_at: set.updated_at,
     images: set.images,
-    created_at: set.created_at,
+    created_at: set.created_at
   };
 }
 
@@ -51,6 +51,6 @@ export function formatCard(card: any) {
     tcgplayer_url: card.tcgplayer_url,
     cardmarket_url: card.cardmarket_url,
     created_at: card.created_at,
-    updated_at: card.updated_at,
+    updated_at: card.updated_at
   };
 }

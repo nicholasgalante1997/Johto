@@ -30,6 +30,10 @@ export function createGraphQLSidecarServer() {
     await apolloServer.start();
   }
 
+  async function stop() {
+    return apolloServer.stop();
+  }
+
   /**
    * Converts Apollo Server's HTTPGraphQLResponse to a Bun-compatible Response
    */
@@ -169,9 +173,73 @@ export function createGraphQLSidecarServer() {
     }
   }
 
+  function handleGraphiQLRequest(request: Request): Response {
+    const url = new URL(request.url);
+    const graphqlEndpoint = `${url.protocol}//${url.host}/graphql`;
+
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GraphiQL IDE</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+    #graphiql {
+      height: 100vh;
+    }
+  </style>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.production.min.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+  ></script>
+  <link rel="stylesheet" href="https://unpkg.com/graphiql@3/graphiql.min.css" />
+</head>
+<body>
+  <div id="graphiql">Loading...</div>
+  <script
+    src="https://unpkg.com/graphiql@3/graphiql.min.js"
+    type="application/javascript"
+  ></script>
+  <script>
+    const fetcher = GraphiQL.createFetcher({
+      url: '${graphqlEndpoint}',
+    });
+
+    const root = ReactDOM.createRoot(document.getElementById('graphiql'));
+    root.render(
+      React.createElement(GraphiQL, {
+        fetcher,
+        defaultEditorToolsVisibility: true,
+      })
+    );
+  </script>
+</body>
+</html>
+    `;
+
+    return new Response(html, {
+      status: 200,
+      headers: {
+        'Content-Type': 'text/html; charset=utf-8'
+      }
+    });
+  }
+
   return {
     start,
     handleGraphQLRequest,
+    handleGraphiQLRequest,
     server: apolloServer
   };
 }

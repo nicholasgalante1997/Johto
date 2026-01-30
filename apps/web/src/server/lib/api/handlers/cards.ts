@@ -1,6 +1,9 @@
 import { sqlite } from '@pokemon/database';
 import { getDatabase } from '../db';
-import { parsePaginationParams, createPaginationMeta } from '../utils/pagination';
+import {
+  parsePaginationParams,
+  createPaginationMeta
+} from '../utils/pagination';
 import { successResponse, notFoundResponse } from '../utils/response';
 import { handleApiError } from '../utils/error';
 import { transformCardRow, transformCardRowWithSet } from '../utils/transforms';
@@ -44,7 +47,9 @@ export async function getCardById(id: string): Promise<Response> {
  * GET /api/v1/cards
  * Query cards with pagination
  */
-export async function getCards(searchParams: URLSearchParams): Promise<Response> {
+export async function getCards(
+  searchParams: URLSearchParams
+): Promise<Response> {
   try {
     const db = getDatabase();
     const pagination = parsePaginationParams(searchParams);
