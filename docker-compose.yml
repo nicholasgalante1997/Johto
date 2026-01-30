@@ -1,6 +1,7 @@
 include:
   - ./docker/database/docker-compose.yml
   - ./apps/tcg-api/docker-compose.yml
+  - ./apps/cron/docker-compose.yml
   - ./docker-compose.web.yml
 
 networks:
