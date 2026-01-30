@@ -39,6 +39,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "1",
+      "artist": "Wataru Kawahara",
+      "rarity": "Rare Holo",
+      "flavorText": "Generations have believed that any wish written on a note on its head will come true when it awakens.",
+      "nationalPokedexNumbers": [
+        385
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/1.png",
+        "large": "https://images.pokemontcg.io/hgss2/1_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -55,20 +69,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "1",
-      "artist": "Wataru Kawahara",
-      "rarity": "Rare Holo",
-      "flavorText": "Generations have believed that any wish written on a note on its head will come true when it awakens.",
-      "nationalPokedexNumbers": [
-        385
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/1.png",
-        "large": "https://images.pokemontcg.io/hgss2/1_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-1",
@@ -109,6 +109,953 @@
           "reverseHoloAvg1": 1,
           "reverseHoloAvg7": 1.42,
           "reverseHoloAvg30": 3.81
+        }
+      }
+    },
+    {
+      "id": "hgss2-2",
+      "name": "Magmortar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "110",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Magmar",
+      "attacks": [
+        {
+          "name": "Hard Crush",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50×",
+          "text": "Discard the top 3 cards from your deck. This attack does 50 damage times the number of Energy cards you discarded."
+        },
+        {
+          "name": "Mantle Bazooka",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": "Discard 2 Fire Energy attached to Magmortar."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "2",
+      "artist": "Hajime Kusajima",
+      "rarity": "Rare Holo",
+      "flavorText": "It blasts fireballs of over 3,600 degrees Fahrenheit out of its arms. Its breath also sears and sizzles.",
+      "nationalPokedexNumbers": [
+        467
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/2.png",
+        "large": "https://images.pokemontcg.io/hgss2/2_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 1.62,
+            "mid": 4.88,
+            "high": 29.99,
+            "market": 3.39,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 4,
+            "mid": 4.32,
+            "high": 19.99,
+            "market": 4.32,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 2.88,
+          "lowPrice": 0.2,
+          "trendPrice": 2.4,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 2.77,
+          "reverseHoloLow": 0.3,
+          "reverseHoloTrend": 1.98,
+          "lowPriceExPlus": 0.7,
+          "avg1": 4.5,
+          "avg7": 2.86,
+          "avg30": 2.96,
+          "reverseHoloAvg1": 3.99,
+          "reverseHoloAvg7": 2.2,
+          "reverseHoloAvg30": 2.4
+        }
+      }
+    },
+    {
+      "id": "hgss2-3",
+      "name": "Manaphy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Water"
+      ],
+      "attacks": [
+        {
+          "name": "Deep Sea Swirl",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle your hand into your deck. Then, draw 5 cards."
+        },
+        {
+          "name": "Wave Splash",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "number": "3",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Holo",
+      "flavorText": "It starts its life with a wondrous power that permits it to bond with any kind of Pokémon.",
+      "nationalPokedexNumbers": [
+        490
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/3.png",
+        "large": "https://images.pokemontcg.io/hgss2/3_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 6.55,
+            "mid": 15.83,
+            "high": 29.99,
+            "market": 5.36,
+            "directLow": 29.99
+          },
+          "reverseHolofoil": {
+            "low": 6.09,
+            "mid": 8.98,
+            "high": 19.99,
+            "market": 6.41,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.22,
+          "lowPrice": 0.28,
+          "trendPrice": 1.63,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 2.5,
+          "reverseHoloLow": 0.4,
+          "reverseHoloTrend": 3.09,
+          "lowPriceExPlus": 0.9,
+          "avg1": 1.49,
+          "avg7": 1.22,
+          "avg30": 3.04,
+          "reverseHoloAvg1": 2.5,
+          "reverseHoloAvg7": 3.84,
+          "reverseHoloAvg30": 2.47
+        }
+      }
+    },
+    {
+      "id": "hgss2-4",
+      "name": "Metagross",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "130",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Metang",
+      "abilities": [
+        {
+          "name": "Psychic Float",
+          "text": "If you have any Psychic Energy attached to your Active Pokémon, the Retreat Cost for that Pokémon is 0.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Pulse Blast",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": ""
+        },
+        {
+          "name": "Double Leg Hammer",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Choose 2 of your opponent's Benched Pokémon. This attack does 40 damage to each of them. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "number": "4",
+      "artist": "Wataru Kawahara",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [
+        376
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/4.png",
+        "large": "https://images.pokemontcg.io/hgss2/4_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 2.24,
+            "mid": 7,
+            "high": 29.99,
+            "market": 7.3,
+            "directLow": 29.98
+          },
+          "reverseHolofoil": {
+            "low": 2.25,
+            "mid": 4.88,
+            "high": 19.99,
+            "market": 7.33,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 3.47,
+          "lowPrice": 0.3,
+          "trendPrice": 3.41,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 2.77,
+          "reverseHoloLow": 0.45,
+          "reverseHoloTrend": 4.21,
+          "lowPriceExPlus": 0.94,
+          "avg1": 2,
+          "avg7": 3.34,
+          "avg30": 3.3,
+          "reverseHoloAvg1": 3.79,
+          "reverseHoloAvg7": 4.41,
+          "reverseHoloAvg30": 3.82
+        }
+      }
+    },
+    {
+      "id": "hgss2-5",
+      "name": "Mismagius",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Misdreavus",
+      "abilities": [
+        {
+          "name": "Magical Trans",
+          "text": "Once during your turn (before your attack), you may move a Psychic Energy attached to 1 of your Pokémon to another of your Pokémon. This power can't be used if Mismagius is affected by a Special Condition.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Psychic Pulse",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Does 10 damage to each of your opponent's Benched Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Colorless",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "5",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Rare Holo",
+      "flavorText": "Its cries sound like incantations to torment the foe. It appears where you least expect it.",
+      "nationalPokedexNumbers": [
+        429
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/5.png",
+        "large": "https://images.pokemontcg.io/hgss2/5_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 1.92,
+            "mid": 5.8,
+            "high": 29.99,
+            "market": 4.49,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 2.55,
+            "mid": 6.09,
+            "high": 7.68,
+            "market": 9.49,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.93,
+          "lowPrice": 0.12,
+          "trendPrice": 0.92,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0.4,
+          "reverseHoloTrend": 2.27,
+          "lowPriceExPlus": 0.5,
+          "avg1": 0.45,
+          "avg7": 0.67,
+          "avg30": 1.02,
+          "reverseHoloAvg1": 3,
+          "reverseHoloAvg7": 2.41,
+          "reverseHoloAvg30": 2.15
+        }
+      }
+    },
+    {
+      "id": "hgss2-6",
+      "name": "Octillery",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "80",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Remoraid",
+      "attacks": [
+        {
+          "name": "Switch Cannon",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) Switch Octillery with 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Ink Bomb",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "6",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "It traps foes with the suction cups on its tentacles, then smashes them with its rock-hard head.",
+      "nationalPokedexNumbers": [
+        224
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/6.png",
+        "large": "https://images.pokemontcg.io/hgss2/6_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 1.78,
+            "mid": 2.52,
+            "high": 19.99,
+            "market": 3.43,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 1.28,
+            "mid": 1.5,
+            "high": 14.99,
+            "market": 3.15,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.93,
+          "lowPrice": 0.3,
+          "trendPrice": 1.55,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 1.8,
+          "reverseHoloLow": 0.34,
+          "reverseHoloTrend": 1.09,
+          "lowPriceExPlus": 0.75,
+          "avg1": 1.39,
+          "avg7": 1.66,
+          "avg30": 2.02,
+          "reverseHoloAvg1": 1.8,
+          "reverseHoloAvg7": 1.66,
+          "reverseHoloAvg30": 2.86
+        }
+      }
+    },
+    {
+      "id": "hgss2-7",
+      "name": "Politoed",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "120",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Poliwhirl",
+      "abilities": [
+        {
+          "name": "Leap Frog",
+          "text": "Once during your turn (before your attack), you may choose a Water Pokémon on your Bench and switch it with your Active Pokémon. This power can't be used if Politoed is affected by a Special Condition.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Big Chorus",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip a coin for each Water Pokémon you have in play. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "7",
+      "artist": "Naoyo Kimura",
+      "rarity": "Rare Holo",
+      "flavorText": "Whenever three or more of these get together, they sing in a loud voice that sounds like bellowing.",
+      "nationalPokedexNumbers": [
+        186
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/7.png",
+        "large": "https://images.pokemontcg.io/hgss2/7_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 7.22,
+            "mid": 43.99,
+            "high": 63.73,
+            "market": 9.15,
+            "directLow": 19.99
+          },
+          "reverseHolofoil": {
+            "low": 8.99,
+            "mid": 15.75,
+            "high": 19.99,
+            "market": 11.38,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 5.18,
+          "lowPrice": 0.49,
+          "trendPrice": 1.43,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 3.37,
+          "reverseHoloLow": 0.49,
+          "reverseHoloTrend": 3.99,
+          "lowPriceExPlus": 1,
+          "avg1": 5,
+          "avg7": 4.96,
+          "avg30": 5.13,
+          "reverseHoloAvg1": 4,
+          "reverseHoloAvg7": 3.73,
+          "reverseHoloAvg30": 3.48
+        }
+      }
+    },
+    {
+      "id": "hgss2-8",
+      "name": "Shaymin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Grass"
+      ],
+      "abilities": [
+        {
+          "name": "Celebration Wind",
+          "text": "Once during your turn, when you put Shaymin from your hand onto your Bench, you may move as many Energy cards attached to your Pokémon as you like to any of your other Pokémon.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energy Bloom",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Remove 3 damage counters from each of your Pokémon that has any Energy attached to it."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "8",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Rare Holo",
+      "flavorText": "The blooming of Gracidea flowers confers the power of flight upon it. Feelings of gratitude are the message it delivers.",
+      "nationalPokedexNumbers": [
+        492
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/8.png",
+        "large": "https://images.pokemontcg.io/hgss2/8_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 7,
+            "mid": 12.69,
+            "high": 29.99,
+            "market": 10.19,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 9.89,
+            "mid": 13.5,
+            "high": 16.66,
+            "market": 9.13,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 5.9,
+          "lowPrice": 0.15,
+          "trendPrice": 5.74,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0.45,
+          "reverseHoloLow": 0.35,
+          "reverseHoloTrend": 2.2,
+          "lowPriceExPlus": 0.5,
+          "avg1": 4.9,
+          "avg7": 6.14,
+          "avg30": 4.1,
+          "reverseHoloAvg1": 0.45,
+          "reverseHoloAvg7": 2.43,
+          "reverseHoloAvg30": 2.8
+        }
+      }
+    },
+    {
+      "id": "hgss2-9",
+      "name": "Sudowoodo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "90",
+      "types": [
+        "Fighting"
+      ],
+      "attacks": [
+        {
+          "name": "Push Over",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20×",
+          "text": "Does 20 damage times the amount of Fighting Energy attached to Sudowoodo."
+        },
+        {
+          "name": "Rumble",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "9",
+      "artist": "Sachiko Adachi",
+      "rarity": "Rare Holo",
+      "flavorText": "It disguises itself as a tree to avoid attack. It hates water, so it will disappear if it starts raining.",
+      "nationalPokedexNumbers": [
+        185
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/9.png",
+        "large": "https://images.pokemontcg.io/hgss2/9_hires.png"
+      },
+      "set": {
+        "id": "hgss2",
+        "name": "HS—Unleashed",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 95,
+        "total": 96,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UL",
+        "releaseDate": "2010/05/12",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 11.99,
+            "mid": 17.99,
+            "high": 29.99,
+            "market": 12.93,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 19.99,
+            "mid": 19.99,
+            "high": 19.99,
+            "market": 7.25,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 2.35,
+          "lowPrice": 0.49,
+          "trendPrice": 3.18,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 2.83,
+          "reverseHoloLow": 0.49,
+          "reverseHoloTrend": 3.41,
+          "lowPriceExPlus": 0.8,
+          "avg1": 3.6,
+          "avg7": 2.4,
+          "avg30": 3.25,
+          "reverseHoloAvg1": 1.49,
+          "reverseHoloAvg7": 3.45,
+          "reverseHoloAvg30": 2.78
         }
       }
     },
@@ -162,6 +1109,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "10",
+      "artist": "match",
+      "rarity": "Rare Holo",
+      "flavorText": "Ancient people imagined that beneath the ground, a gigantic Torterra dwelled.",
+      "nationalPokedexNumbers": [
+        389
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/10.png",
+        "large": "https://images.pokemontcg.io/hgss2/10_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -178,20 +1139,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "10",
-      "artist": "match",
-      "rarity": "Rare Holo",
-      "flavorText": "Ancient people imagined that beneath the ground, a gigantic Torterra dwelled.",
-      "nationalPokedexNumbers": [
-        389
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/10.png",
-        "large": "https://images.pokemontcg.io/hgss2/10_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-10",
@@ -285,6 +1232,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "11",
+      "artist": "sui",
+      "rarity": "Rare Holo",
+      "flavorText": "In South America, it is said that its right eye sees the future and its left eye views the past.",
+      "nationalPokedexNumbers": [
+        178
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/11.png",
+        "large": "https://images.pokemontcg.io/hgss2/11_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -301,20 +1262,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "11",
-      "artist": "sui",
-      "rarity": "Rare Holo",
-      "flavorText": "In South America, it is said that its right eye sees the future and its left eye views the past.",
-      "nationalPokedexNumbers": [
-        178
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/11.png",
-        "large": "https://images.pokemontcg.io/hgss2/11_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-11",
@@ -397,6 +1344,20 @@
           "value": "×2"
         }
       ],
+      "number": "12",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Rare",
+      "flavorText": "It can take down any opponent with its powerful poison stingers. It sometimes attacks in swarms.",
+      "nationalPokedexNumbers": [
+        15
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/12.png",
+        "large": "https://images.pokemontcg.io/hgss2/12_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -413,20 +1374,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "12",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Rare",
-      "flavorText": "It can take down any opponent with its powerful poison stingers. It sometimes attacks in swarms.",
-      "nationalPokedexNumbers": [
-        15
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/12.png",
-        "large": "https://images.pokemontcg.io/hgss2/12_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-12",
@@ -515,6 +1462,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "13",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare",
+      "flavorText": "It deliberately makes itself heavy so it can withstand the recoil of the water jets it fires.",
+      "nationalPokedexNumbers": [
+        9
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/13.png",
+        "large": "https://images.pokemontcg.io/hgss2/13_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -531,20 +1492,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "13",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare",
-      "flavorText": "It deliberately makes itself heavy so it can withstand the recoil of the water jets it fires.",
-      "nationalPokedexNumbers": [
-        9
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/13.png",
-        "large": "https://images.pokemontcg.io/hgss2/13_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-13",
@@ -634,6 +1581,20 @@
           "value": "-20"
         }
       ],
+      "number": "14",
+      "artist": "kawayoo",
+      "rarity": "Rare",
+      "flavorText": "The development of wings on its legs enables it to fly fast but also makes it tough to stop and rest.",
+      "nationalPokedexNumbers": [
+        169
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/14.png",
+        "large": "https://images.pokemontcg.io/hgss2/14_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -650,20 +1611,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "14",
-      "artist": "kawayoo",
-      "rarity": "Rare",
-      "flavorText": "The development of wings on its legs enables it to fly fast but also makes it tough to stop and rest.",
-      "nationalPokedexNumbers": [
-        169
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/14.png",
-        "large": "https://images.pokemontcg.io/hgss2/14_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-14",
@@ -758,6 +1705,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "15",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare",
+      "flavorText": "It shoots itself suddenly high into the sky, then plummets down in one fell swoop to strike its prey.",
+      "nationalPokedexNumbers": [
+        22
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/15.png",
+        "large": "https://images.pokemontcg.io/hgss2/15_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -774,20 +1735,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "15",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare",
-      "flavorText": "It shoots itself suddenly high into the sky, then plummets down in one fell swoop to strike its prey.",
-      "nationalPokedexNumbers": [
-        22
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/15.png",
-        "large": "https://images.pokemontcg.io/hgss2/15_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-15",
@@ -869,6 +1816,20 @@
           "value": "×2"
         }
       ],
+      "number": "16",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare",
+      "flavorText": "With its flotation sac inflated, it can carry people on its back. It deflates the sac before it dives.",
+      "nationalPokedexNumbers": [
+        419
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/16.png",
+        "large": "https://images.pokemontcg.io/hgss2/16_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -885,20 +1846,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "16",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare",
-      "flavorText": "With its flotation sac inflated, it can carry people on its back. It deflates the sac before it dives.",
-      "nationalPokedexNumbers": [
-        419
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/16.png",
-        "large": "https://images.pokemontcg.io/hgss2/16_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-16",
@@ -986,6 +1933,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "17",
+      "artist": "Shin Nagasawa",
+      "rarity": "Rare",
+      "flavorText": "It sleeps deep on the ocean floor to build its energy. It is said to cause tornadoes as it wakes.",
+      "nationalPokedexNumbers": [
+        230
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/17.png",
+        "large": "https://images.pokemontcg.io/hgss2/17_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1002,20 +1963,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "17",
-      "artist": "Shin Nagasawa",
-      "rarity": "Rare",
-      "flavorText": "It sleeps deep on the ocean floor to build its energy. It is said to cause tornadoes as it wakes.",
-      "nationalPokedexNumbers": [
-        230
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/17.png",
-        "large": "https://images.pokemontcg.io/hgss2/17_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-17",
@@ -1104,6 +2051,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "18",
+      "artist": "sui",
+      "rarity": "Rare",
+      "flavorText": "The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles.",
+      "nationalPokedexNumbers": [
+        171
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/18.png",
+        "large": "https://images.pokemontcg.io/hgss2/18_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1120,20 +2081,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "18",
-      "artist": "sui",
-      "rarity": "Rare",
-      "flavorText": "The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles.",
-      "nationalPokedexNumbers": [
-        171
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/18.png",
-        "large": "https://images.pokemontcg.io/hgss2/18_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-18",
@@ -1220,6 +2167,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "19",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare",
+      "flavorText": "It's said that no foe can remain invisible to Lucario, since it can detect auras, even foes it could not otherwise see.",
+      "nationalPokedexNumbers": [
+        448
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/19.png",
+        "large": "https://images.pokemontcg.io/hgss2/19_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1236,20 +2197,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "19",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare",
-      "flavorText": "It's said that no foe can remain invisible to Lucario, since it can detect auras, even foes it could not otherwise see.",
-      "nationalPokedexNumbers": [
-        448
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/19.png",
-        "large": "https://images.pokemontcg.io/hgss2/19_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-19",
@@ -1283,127 +2230,6 @@
           "reverseHoloAvg1": 0.8,
           "reverseHoloAvg7": 6.29,
           "reverseHoloAvg30": 5.3
-        }
-      }
-    },
-    {
-      "id": "hgss2-2",
-      "name": "Magmortar",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "110",
-      "types": [
-        "Fire"
-      ],
-      "evolvesFrom": "Magmar",
-      "attacks": [
-        {
-          "name": "Hard Crush",
-          "cost": [
-            "Fire",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "50×",
-          "text": "Discard the top 3 cards from your deck. This attack does 50 damage times the number of Energy cards you discarded."
-        },
-        {
-          "name": "Mantle Bazooka",
-          "cost": [
-            "Fire",
-            "Fire",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 4,
-          "damage": "100",
-          "text": "Discard 2 Fire Energy attached to Magmortar."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Water",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "2",
-      "artist": "Hajime Kusajima",
-      "rarity": "Rare Holo",
-      "flavorText": "It blasts fireballs of over 3,600 degrees Fahrenheit out of its arms. Its breath also sears and sizzles.",
-      "nationalPokedexNumbers": [
-        467
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/2.png",
-        "large": "https://images.pokemontcg.io/hgss2/2_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 1.62,
-            "mid": 4.88,
-            "high": 29.99,
-            "market": 3.39,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 4,
-            "mid": 4.32,
-            "high": 19.99,
-            "market": 4.32,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 2.88,
-          "lowPrice": 0.2,
-          "trendPrice": 2.4,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 2.77,
-          "reverseHoloLow": 0.3,
-          "reverseHoloTrend": 1.98,
-          "lowPriceExPlus": 0.7,
-          "avg1": 4.5,
-          "avg7": 2.86,
-          "avg30": 2.96,
-          "reverseHoloAvg1": 3.99,
-          "reverseHoloAvg7": 2.2,
-          "reverseHoloAvg30": 2.4
         }
       }
     },
@@ -1450,6 +2276,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "20",
+      "artist": "Hajime Kusajima",
+      "rarity": "Rare",
+      "flavorText": "Some legends claim that each of its nine tails has its own unique type of special mystical power.",
+      "nationalPokedexNumbers": [
+        38
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/20.png",
+        "large": "https://images.pokemontcg.io/hgss2/20_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1466,20 +2306,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "20",
-      "artist": "Hajime Kusajima",
-      "rarity": "Rare",
-      "flavorText": "Some legends claim that each of its nine tails has its own unique type of special mystical power.",
-      "nationalPokedexNumbers": [
-        38
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/20.png",
-        "large": "https://images.pokemontcg.io/hgss2/20_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-20",
@@ -1570,6 +2396,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "21",
+      "artist": "Naoyo Kimura",
+      "rarity": "Rare",
+      "flavorText": "Although an energetic, skilled swimmer that uses all of its muscles, it lives on dry land.",
+      "nationalPokedexNumbers": [
+        62
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/21.png",
+        "large": "https://images.pokemontcg.io/hgss2/21_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1586,20 +2426,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "21",
-      "artist": "Naoyo Kimura",
-      "rarity": "Rare",
-      "flavorText": "Although an energetic, skilled swimmer that uses all of its muscles, it lives on dry land.",
-      "nationalPokedexNumbers": [
-        62
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/21.png",
-        "large": "https://images.pokemontcg.io/hgss2/21_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-21",
@@ -1687,6 +2513,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "22",
+      "artist": "Sachiko Adachi",
+      "rarity": "Rare",
+      "flavorText": "If approached while asleep, it may awaken and angrily give chase in a groggy state of semi-sleep.",
+      "nationalPokedexNumbers": [
+        57
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/22.png",
+        "large": "https://images.pokemontcg.io/hgss2/22_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1703,20 +2543,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "22",
-      "artist": "Sachiko Adachi",
-      "rarity": "Rare",
-      "flavorText": "If approached while asleep, it may awaken and angrily give chase in a groggy state of semi-sleep.",
-      "nationalPokedexNumbers": [
-        57
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/22.png",
-        "large": "https://images.pokemontcg.io/hgss2/22_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-22",
@@ -1801,6 +2627,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "23",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Rare",
+      "flavorText": "Its sweet aroma attracts prey. Then it spews poison. The more toxic it is, the sweeter its aroma.",
+      "nationalPokedexNumbers": [
+        407
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/23.png",
+        "large": "https://images.pokemontcg.io/hgss2/23_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1817,20 +2657,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "23",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Rare",
-      "flavorText": "Its sweet aroma attracts prey. Then it spews poison. The more toxic it is, the sweeter its aroma.",
-      "nationalPokedexNumbers": [
-        407
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/23.png",
-        "large": "https://images.pokemontcg.io/hgss2/23_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-23",
@@ -1930,6 +2756,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "24",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare",
+      "flavorText": "Its body has been compressed deep under the ground. As a result, it is even harder than a diamond.",
+      "nationalPokedexNumbers": [
+        208
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/24.png",
+        "large": "https://images.pokemontcg.io/hgss2/24_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -1946,20 +2786,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "24",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare",
-      "flavorText": "Its body has been compressed deep under the ground. As a result, it is even harder than a diamond.",
-      "nationalPokedexNumbers": [
-        208
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/24.png",
-        "large": "https://images.pokemontcg.io/hgss2/24_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-24",
@@ -2044,6 +2870,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "25",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Rare",
+      "flavorText": "You find abandoned coal mines full of them. They dig tirelessly in search of coal.",
+      "nationalPokedexNumbers": [
+        324
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/25.png",
+        "large": "https://images.pokemontcg.io/hgss2/25_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2060,20 +2900,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "25",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Rare",
-      "flavorText": "You find abandoned coal mines full of them. They dig tirelessly in search of coal.",
-      "nationalPokedexNumbers": [
-        324
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/25.png",
-        "large": "https://images.pokemontcg.io/hgss2/25_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-25",
@@ -2172,6 +2998,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "26",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare",
+      "flavorText": "Extremely strong, it can change the landscape. It has an insolent nature that makes it not care about others.",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/26.png",
+        "large": "https://images.pokemontcg.io/hgss2/26_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2188,20 +3028,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "26",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare",
-      "flavorText": "Extremely strong, it can change the landscape. It has an insolent nature that makes it not care about others.",
-      "nationalPokedexNumbers": [
-        248
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/26.png",
-        "large": "https://images.pokemontcg.io/hgss2/26_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-26",
@@ -2291,6 +3117,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "27",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare",
+      "flavorText": "With its ability to distinguish any aroma, it unfailing finds all food buried deep underground.",
+      "nationalPokedexNumbers": [
+        217
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/27.png",
+        "large": "https://images.pokemontcg.io/hgss2/27_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2307,20 +3147,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "27",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare",
-      "flavorText": "With its ability to distinguish any aroma, it unfailing finds all food buried deep underground.",
-      "nationalPokedexNumbers": [
-        217
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/27.png",
-        "large": "https://images.pokemontcg.io/hgss2/27_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-27",
@@ -2410,6 +3236,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "28",
+      "artist": "match",
+      "rarity": "Uncommon",
+      "flavorText": "During times of strong sunlight, its bud blooms, its petals open fully, and it becomes very active.",
+      "nationalPokedexNumbers": [
+        421
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/28.png",
+        "large": "https://images.pokemontcg.io/hgss2/28_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2426,20 +3266,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "28",
-      "artist": "match",
-      "rarity": "Uncommon",
-      "flavorText": "During times of strong sunlight, its bud blooms, its petals open fully, and it becomes very active.",
-      "nationalPokedexNumbers": [
-        421
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/28.png",
-        "large": "https://images.pokemontcg.io/hgss2/28_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-28",
@@ -2515,6 +3341,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "29",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Uncommon",
+      "flavorText": "When spotted, this Pokémon escapes backward by furiously boring into the ground with its tail.",
+      "nationalPokedexNumbers": [
+        206
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/29.png",
+        "large": "https://images.pokemontcg.io/hgss2/29_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2531,20 +3371,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "29",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Uncommon",
-      "flavorText": "When spotted, this Pokémon escapes backward by furiously boring into the ground with its tail.",
-      "nationalPokedexNumbers": [
-        206
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/29.png",
-        "large": "https://images.pokemontcg.io/hgss2/29_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-29",
@@ -2589,116 +3415,6 @@
       }
     },
     {
-      "id": "hgss2-3",
-      "name": "Manaphy",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "60",
-      "types": [
-        "Water"
-      ],
-      "attacks": [
-        {
-          "name": "Deep Sea Swirl",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Shuffle your hand into your deck. Then, draw 5 cards."
-        },
-        {
-          "name": "Wave Splash",
-          "cost": [
-            "Water"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "20",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Lightning",
-          "value": "×2"
-        }
-      ],
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "3",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare Holo",
-      "flavorText": "It starts its life with a wondrous power that permits it to bond with any kind of Pokémon.",
-      "nationalPokedexNumbers": [
-        490
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/3.png",
-        "large": "https://images.pokemontcg.io/hgss2/3_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 6.55,
-            "mid": 15.83,
-            "high": 29.99,
-            "market": 5.36,
-            "directLow": 29.99
-          },
-          "reverseHolofoil": {
-            "low": 6.09,
-            "mid": 8.98,
-            "high": 19.99,
-            "market": 6.41,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.22,
-          "lowPrice": 0.28,
-          "trendPrice": 1.63,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 2.5,
-          "reverseHoloLow": 0.4,
-          "reverseHoloTrend": 3.09,
-          "lowPriceExPlus": 0.9,
-          "avg1": 1.49,
-          "avg7": 1.22,
-          "avg30": 3.04,
-          "reverseHoloAvg1": 2.5,
-          "reverseHoloAvg7": 3.84,
-          "reverseHoloAvg30": 2.47
-        }
-      }
-    },
-    {
       "id": "hgss2-30",
       "name": "Golbat",
       "supertype": "Pokémon",
@@ -2736,6 +3452,20 @@
           "value": "-20"
         }
       ],
+      "number": "30",
+      "artist": "kawayoo",
+      "rarity": "Uncommon",
+      "flavorText": "It can drink more than 10 ounces of blood at once. If it has too much, it gets heavy and flies clumsily.",
+      "nationalPokedexNumbers": [
+        42
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/30.png",
+        "large": "https://images.pokemontcg.io/hgss2/30_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2752,20 +3482,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "30",
-      "artist": "kawayoo",
-      "rarity": "Uncommon",
-      "flavorText": "It can drink more than 10 ounces of blood at once. If it has too much, it gets heavy and flies clumsily.",
-      "nationalPokedexNumbers": [
-        42
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/30.png",
-        "large": "https://images.pokemontcg.io/hgss2/30_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-30",
@@ -2864,6 +3580,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "31",
+      "artist": "match",
+      "rarity": "Uncommon",
+      "flavorText": "A Grotle that lives in the forest is said to have its own secret springwater.",
+      "nationalPokedexNumbers": [
+        388
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/31.png",
+        "large": "https://images.pokemontcg.io/hgss2/31_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2880,20 +3610,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "31",
-      "artist": "match",
-      "rarity": "Uncommon",
-      "flavorText": "A Grotle that lives in the forest is said to have its own secret springwater.",
-      "nationalPokedexNumbers": [
-        388
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/31.png",
-        "large": "https://images.pokemontcg.io/hgss2/31_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-31",
@@ -2983,6 +3699,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "32",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Uncommon",
+      "flavorText": "Although it is a cocoon, it can move a little. It can extend its poison barb if it is attacked.",
+      "nationalPokedexNumbers": [
+        14
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/32.png",
+        "large": "https://images.pokemontcg.io/hgss2/32_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -2999,20 +3729,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "32",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Uncommon",
-      "flavorText": "Although it is a cocoon, it can move a little. It can extend its poison barb if it is attacked.",
-      "nationalPokedexNumbers": [
-        14
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/32.png",
-        "large": "https://images.pokemontcg.io/hgss2/32_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-32",
@@ -3105,6 +3821,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "33",
+      "artist": "Wataru Kawahara",
+      "rarity": "Uncommon",
+      "flavorText": "When two Beldum fuse together, a magnetic nervous system places their brains in union.",
+      "nationalPokedexNumbers": [
+        375
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/33.png",
+        "large": "https://images.pokemontcg.io/hgss2/33_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3121,20 +3851,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "33",
-      "artist": "Wataru Kawahara",
-      "rarity": "Uncommon",
-      "flavorText": "When two Beldum fuse together, a magnetic nervous system places their brains in union.",
-      "nationalPokedexNumbers": [
-        375
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/33.png",
-        "large": "https://images.pokemontcg.io/hgss2/33_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-33",
@@ -3225,6 +3941,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "34",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "flavorText": "Exposure to electricity from Minun and Plusle promotes blood circulation and relaxes muscles.",
+      "nationalPokedexNumbers": [
+        312
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/34.png",
+        "large": "https://images.pokemontcg.io/hgss2/34_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3241,20 +3971,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "34",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "flavorText": "Exposure to electricity from Minun and Plusle promotes blood circulation and relaxes muscles.",
-      "nationalPokedexNumbers": [
-        312
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/34.png",
-        "large": "https://images.pokemontcg.io/hgss2/34_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-34",
@@ -3344,6 +4060,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "35",
+      "artist": "Hajime Kusajima",
+      "rarity": "Uncommon",
+      "flavorText": "The flaming magma it stores in the hump on its back is the source of its tremendous power.",
+      "nationalPokedexNumbers": [
+        322
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/35.png",
+        "large": "https://images.pokemontcg.io/hgss2/35_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3360,20 +4090,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "35",
-      "artist": "Hajime Kusajima",
-      "rarity": "Uncommon",
-      "flavorText": "The flaming magma it stores in the hump on its back is the source of its tremendous power.",
-      "nationalPokedexNumbers": [
-        322
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/35.png",
-        "large": "https://images.pokemontcg.io/hgss2/35_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-35",
@@ -3464,6 +4180,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "36",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "flavorText": "It absorbs electricity from telephone poles. It shorts out its body to create crackling noises.",
+      "nationalPokedexNumbers": [
+        311
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/36.png",
+        "large": "https://images.pokemontcg.io/hgss2/36_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3480,20 +4210,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "36",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "flavorText": "It absorbs electricity from telephone poles. It shorts out its body to create crackling noises.",
-      "nationalPokedexNumbers": [
-        311
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/36.png",
-        "large": "https://images.pokemontcg.io/hgss2/36_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-36",
@@ -3584,6 +4300,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "37",
+      "artist": "Naoyo Kimura",
+      "rarity": "Uncommon",
+      "flavorText": "The skin on most of its body is moist. However, the skin on its belly spiral feels smooth.",
+      "nationalPokedexNumbers": [
+        61
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/37.png",
+        "large": "https://images.pokemontcg.io/hgss2/37_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3600,20 +4330,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "37",
-      "artist": "Naoyo Kimura",
-      "rarity": "Uncommon",
-      "flavorText": "The skin on most of its body is moist. However, the skin on its belly spiral feels smooth.",
-      "nationalPokedexNumbers": [
-        61
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/37.png",
-        "large": "https://images.pokemontcg.io/hgss2/37_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-37",
@@ -3707,6 +4423,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "38",
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Uncommon",
+      "flavorText": "Its shell is as hard as sheet rock, and it is also very strong. Its thrashing can topple a mountain.",
+      "nationalPokedexNumbers": [
+        247
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/38.png",
+        "large": "https://images.pokemontcg.io/hgss2/38_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3723,20 +4453,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "38",
-      "artist": "Sumiyoshi Kizuki",
-      "rarity": "Uncommon",
-      "flavorText": "Its shell is as hard as sheet rock, and it is also very strong. Its thrashing can topple a mountain.",
-      "nationalPokedexNumbers": [
-        247
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/38.png",
-        "large": "https://images.pokemontcg.io/hgss2/38_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-38",
@@ -3834,6 +4550,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "39",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "flavorText": "Even sealed in its shell, it can move freely. Hard and fast, it has outstanding destructive power.",
+      "nationalPokedexNumbers": [
+        247
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/39.png",
+        "large": "https://images.pokemontcg.io/hgss2/39_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -3850,20 +4580,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "39",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "flavorText": "Even sealed in its shell, it can move freely. Hard and fast, it has outstanding destructive power.",
-      "nationalPokedexNumbers": [
-        247
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/39.png",
-        "large": "https://images.pokemontcg.io/hgss2/39_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-39",
@@ -3904,133 +4620,6 @@
           "reverseHoloAvg1": 0.5,
           "reverseHoloAvg7": 0.3,
           "reverseHoloAvg30": 0.89
-        }
-      }
-    },
-    {
-      "id": "hgss2-4",
-      "name": "Metagross",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "hp": "130",
-      "types": [
-        "Psychic"
-      ],
-      "evolvesFrom": "Metang",
-      "abilities": [
-        {
-          "name": "Psychic Float",
-          "text": "If you have any Psychic Energy attached to your Active Pokémon, the Retreat Cost for that Pokémon is 0.",
-          "type": "Poké-Body"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Pulse Blast",
-          "cost": [
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "60",
-          "text": ""
-        },
-        {
-          "name": "Double Leg Hammer",
-          "cost": [
-            "Psychic",
-            "Psychic",
-            "Psychic"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "",
-          "text": "Choose 2 of your opponent's Benched Pokémon. This attack does 40 damage to each of them. (Don't apply Weakness and Resistance for Benched Pokémon.)"
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Psychic",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 4,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "4",
-      "artist": "Wataru Kawahara",
-      "rarity": "Rare Holo",
-      "nationalPokedexNumbers": [
-        376
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/4.png",
-        "large": "https://images.pokemontcg.io/hgss2/4_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 2.24,
-            "mid": 7,
-            "high": 29.99,
-            "market": 7.3,
-            "directLow": 29.98
-          },
-          "reverseHolofoil": {
-            "low": 2.25,
-            "mid": 4.88,
-            "high": 19.99,
-            "market": 7.33,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 3.47,
-          "lowPrice": 0.3,
-          "trendPrice": 3.41,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 2.77,
-          "reverseHoloLow": 0.45,
-          "reverseHoloTrend": 4.21,
-          "lowPriceExPlus": 0.94,
-          "avg1": 2,
-          "avg7": 3.34,
-          "avg30": 3.3,
-          "reverseHoloAvg1": 3.79,
-          "reverseHoloAvg7": 4.41,
-          "reverseHoloAvg30": 3.82
         }
       }
     },
@@ -4081,6 +4670,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "40",
+      "artist": "Shin Nagasawa",
+      "rarity": "Uncommon",
+      "flavorText": "Its fin tips leak poison. Its fins and bones are highly valued as ingredients in herbal medicine.",
+      "nationalPokedexNumbers": [
+        117
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/40.png",
+        "large": "https://images.pokemontcg.io/hgss2/40_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4097,20 +4700,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "40",
-      "artist": "Shin Nagasawa",
-      "rarity": "Uncommon",
-      "flavorText": "Its fin tips leak poison. Its fins and bones are highly valued as ingredients in herbal medicine.",
-      "nationalPokedexNumbers": [
-        117
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/40.png",
-        "large": "https://images.pokemontcg.io/hgss2/40_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-40",
@@ -4198,6 +4787,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "41",
+      "artist": "Tomokazu Komiya",
+      "rarity": "Uncommon",
+      "flavorText": "They fight each other by locking horns. The herd's protector takes pride in its battle-scarred horns.",
+      "nationalPokedexNumbers": [
+        128
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/41.png",
+        "large": "https://images.pokemontcg.io/hgss2/41_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4214,20 +4817,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "41",
-      "artist": "Tomokazu Komiya",
-      "rarity": "Uncommon",
-      "flavorText": "They fight each other by locking horns. The herd's protector takes pride in its battle-scarred horns.",
-      "nationalPokedexNumbers": [
-        128
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/41.png",
-        "large": "https://images.pokemontcg.io/hgss2/41_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-41",
@@ -4318,6 +4907,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "42",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Uncommon",
+      "flavorText": "It is a well-established symbol of longevity. If its shell has algae on it, that Wartortle is very old.",
+      "nationalPokedexNumbers": [
+        8
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/42.png",
+        "large": "https://images.pokemontcg.io/hgss2/42_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4334,20 +4937,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "42",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Uncommon",
-      "flavorText": "It is a well-established symbol of longevity. If its shell has algae on it, that Wartortle is very old.",
-      "nationalPokedexNumbers": [
-        8
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/42.png",
-        "large": "https://images.pokemontcg.io/hgss2/42_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-42",
@@ -4436,6 +5025,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "43",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "It lives atop tall trees. When leaping from branch to branch, it deftly uses its tail for balance.",
+      "nationalPokedexNumbers": [
+        190
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/43.png",
+        "large": "https://images.pokemontcg.io/hgss2/43_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4452,20 +5055,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "43",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "It lives atop tall trees. When leaping from branch to branch, it deftly uses its tail for balance.",
-      "nationalPokedexNumbers": [
-        190
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/43.png",
-        "large": "https://images.pokemontcg.io/hgss2/43_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-43",
@@ -4545,6 +5134,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "44",
+      "artist": "Wataru Kawahara",
+      "rarity": "Common",
+      "flavorText": "The magnetic force generated by its body repels the ground's natural magnetism, letting it float.",
+      "nationalPokedexNumbers": [
+        374
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/44.png",
+        "large": "https://images.pokemontcg.io/hgss2/44_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4561,20 +5164,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "44",
-      "artist": "Wataru Kawahara",
-      "rarity": "Common",
-      "flavorText": "The magnetic force generated by its body repels the ground's natural magnetism, letting it float.",
-      "nationalPokedexNumbers": [
-        374
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/44.png",
-        "large": "https://images.pokemontcg.io/hgss2/44_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-44",
@@ -4653,6 +5242,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "45",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Common",
+      "flavorText": "It inflates its flotation sac, keeping its face above water in order to watch for prey movement.",
+      "nationalPokedexNumbers": [
+        418
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/45.png",
+        "large": "https://images.pokemontcg.io/hgss2/45_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4669,20 +5272,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "45",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Common",
-      "flavorText": "It inflates its flotation sac, keeping its face above water in order to watch for prey movement.",
-      "nationalPokedexNumbers": [
-        418
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/45.png",
-        "large": "https://images.pokemontcg.io/hgss2/45_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-45",
@@ -4773,6 +5362,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "46",
+      "artist": "Wataru Kawahara",
+      "rarity": "Common",
+      "flavorText": "It walks around on its tentacles in search of a tree branch where it can dangle down and ambush prey.",
+      "nationalPokedexNumbers": [
+        455
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/46.png",
+        "large": "https://images.pokemontcg.io/hgss2/46_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4789,20 +5392,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "46",
-      "artist": "Wataru Kawahara",
-      "rarity": "Common",
-      "flavorText": "It walks around on its tentacles in search of a tree branch where it can dangle down and ambush prey.",
-      "nationalPokedexNumbers": [
-        455
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/46.png",
-        "large": "https://images.pokemontcg.io/hgss2/46_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-46",
@@ -4887,6 +5476,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "47",
+      "artist": "match",
+      "rarity": "Common",
+      "flavorText": "It evolves by sucking the energy out of the small ball where it had been storing nutrients.",
+      "nationalPokedexNumbers": [
+        420
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/47.png",
+        "large": "https://images.pokemontcg.io/hgss2/47_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -4903,20 +5506,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "47",
-      "artist": "match",
-      "rarity": "Common",
-      "flavorText": "It evolves by sucking the energy out of the small ball where it had been storing nutrients.",
-      "nationalPokedexNumbers": [
-        420
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/47.png",
-        "large": "https://images.pokemontcg.io/hgss2/47_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-47",
@@ -5005,6 +5594,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "48",
+      "artist": "sui",
+      "rarity": "Common",
+      "flavorText": "It shoots positive and negative electricity between the tips of its two antennae and zaps its enemies.",
+      "nationalPokedexNumbers": [
+        170
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/48.png",
+        "large": "https://images.pokemontcg.io/hgss2/48_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5021,20 +5624,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "48",
-      "artist": "sui",
-      "rarity": "Common",
-      "flavorText": "It shoots positive and negative electricity between the tips of its two antennae and zaps its enemies.",
-      "nationalPokedexNumbers": [
-        170
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/48.png",
-        "large": "https://images.pokemontcg.io/hgss2/48_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-48",
@@ -5123,6 +5712,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "49",
+      "artist": "Shin Nagasawa",
+      "rarity": "Common",
+      "flavorText": "Its big, developed fins move rapidly, allowing it to swim backward while still facing forward.",
+      "nationalPokedexNumbers": [
+        116
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/49.png",
+        "large": "https://images.pokemontcg.io/hgss2/49_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5139,20 +5742,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "49",
-      "artist": "Shin Nagasawa",
-      "rarity": "Common",
-      "flavorText": "Its big, developed fins move rapidly, allowing it to swim backward while still facing forward.",
-      "nationalPokedexNumbers": [
-        116
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/49.png",
-        "large": "https://images.pokemontcg.io/hgss2/49_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-49",
@@ -5193,125 +5782,6 @@
           "reverseHoloAvg1": 0.15,
           "reverseHoloAvg7": 1.46,
           "reverseHoloAvg30": 1.99
-        }
-      }
-    },
-    {
-      "id": "hgss2-5",
-      "name": "Mismagius",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "90",
-      "types": [
-        "Psychic"
-      ],
-      "evolvesFrom": "Misdreavus",
-      "abilities": [
-        {
-          "name": "Magical Trans",
-          "text": "Once during your turn (before your attack), you may move a Psychic Energy attached to 1 of your Pokémon to another of your Pokémon. This power can't be used if Mismagius is affected by a Special Condition.",
-          "type": "Poké-Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Psychic Pulse",
-          "cost": [
-            "Psychic"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "30",
-          "text": "Does 10 damage to each of your opponent's Benched Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Darkness",
-          "value": "×2"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Colorless",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "5",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Rare Holo",
-      "flavorText": "Its cries sound like incantations to torment the foe. It appears where you least expect it.",
-      "nationalPokedexNumbers": [
-        429
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/5.png",
-        "large": "https://images.pokemontcg.io/hgss2/5_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 1.92,
-            "mid": 5.8,
-            "high": 29.99,
-            "market": 4.49,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 2.55,
-            "mid": 6.09,
-            "high": 7.68,
-            "market": 9.49,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.93,
-          "lowPrice": 0.12,
-          "trendPrice": 0.92,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0.4,
-          "reverseHoloTrend": 2.27,
-          "lowPriceExPlus": 0.5,
-          "avg1": 0.45,
-          "avg7": 0.67,
-          "avg30": 1.02,
-          "reverseHoloAvg1": 3,
-          "reverseHoloAvg7": 2.41,
-          "reverseHoloAvg30": 2.15
         }
       }
     },
@@ -5365,6 +5835,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "50",
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Common",
+      "flavorText": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow.",
+      "nationalPokedexNumbers": [
+        246
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/50.png",
+        "large": "https://images.pokemontcg.io/hgss2/50_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5381,20 +5865,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "50",
-      "artist": "Sumiyoshi Kizuki",
-      "rarity": "Common",
-      "flavorText": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow.",
-      "nationalPokedexNumbers": [
-        246
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/50.png",
-        "large": "https://images.pokemontcg.io/hgss2/50_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-50",
@@ -5489,6 +5959,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "51",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "It is born deep underground. It can't emerge until it has entirely consumed the soil around it.",
+      "nationalPokedexNumbers": [
+        246
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/51.png",
+        "large": "https://images.pokemontcg.io/hgss2/51_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5505,20 +5989,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "51",
-      "artist": "Kouki Saitou",
-      "rarity": "Common",
-      "flavorText": "It is born deep underground. It can't emerge until it has entirely consumed the soil around it.",
-      "nationalPokedexNumbers": [
-        246
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/51.png",
-        "large": "https://images.pokemontcg.io/hgss2/51_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-51",
@@ -5607,6 +6077,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "52",
+      "artist": "Hajime Kusajima",
+      "rarity": "Common",
+      "flavorText": "It dislikes cold places, so it blows scorching flames to make the environment suitable for itself.",
+      "nationalPokedexNumbers": [
+        126
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/52.png",
+        "large": "https://images.pokemontcg.io/hgss2/52_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5623,20 +6107,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "52",
-      "artist": "Hajime Kusajima",
-      "rarity": "Common",
-      "flavorText": "It dislikes cold places, so it blows scorching flames to make the environment suitable for itself.",
-      "nationalPokedexNumbers": [
-        126
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/52.png",
-        "large": "https://images.pokemontcg.io/hgss2/52_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-52",
@@ -5725,6 +6195,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "53",
+      "artist": "Sachiko Adachi",
+      "rarity": "Common",
+      "flavorText": "It is extremely ill-tempered. Groups of them will attack any handy target for no reason.",
+      "nationalPokedexNumbers": [
+        56
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/53.png",
+        "large": "https://images.pokemontcg.io/hgss2/53_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5741,20 +6225,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "53",
-      "artist": "Sachiko Adachi",
-      "rarity": "Common",
-      "flavorText": "It is extremely ill-tempered. Groups of them will attack any handy target for no reason.",
-      "nationalPokedexNumbers": [
-        56
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/53.png",
-        "large": "https://images.pokemontcg.io/hgss2/53_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-53",
@@ -5839,6 +6309,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "54",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Common",
+      "flavorText": "It likes playing mischievous tricks such as screaming and wailing to startle people at night.",
+      "nationalPokedexNumbers": [
+        200
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/54.png",
+        "large": "https://images.pokemontcg.io/hgss2/54_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5855,20 +6339,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "54",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Common",
-      "flavorText": "It likes playing mischievous tricks such as screaming and wailing to startle people at night.",
-      "nationalPokedexNumbers": [
-        200
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/54.png",
-        "large": "https://images.pokemontcg.io/hgss2/54_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-54",
@@ -5962,6 +6432,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "55",
+      "artist": "sui",
+      "rarity": "Common",
+      "flavorText": "It usually forages for food on the ground but may, on rare occasions, hop onto branches to peck at shoots.",
+      "nationalPokedexNumbers": [
+        177
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/55.png",
+        "large": "https://images.pokemontcg.io/hgss2/55_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -5978,20 +6462,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "55",
-      "artist": "sui",
-      "rarity": "Common",
-      "flavorText": "It usually forages for food on the ground but may, on rare occasions, hop onto branches to peck at shoots.",
-      "nationalPokedexNumbers": [
-        177
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/55.png",
-        "large": "https://images.pokemontcg.io/hgss2/55_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-55",
@@ -6083,6 +6553,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "56",
+      "artist": "MAHOU",
+      "rarity": "Common",
+      "flavorText": "It rapidly bores through the ground at 50 mph by squirming and twisting its massive, rugged body.",
+      "nationalPokedexNumbers": [
+        95
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/56.png",
+        "large": "https://images.pokemontcg.io/hgss2/56_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6099,20 +6583,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "56",
-      "artist": "MAHOU",
-      "rarity": "Common",
-      "flavorText": "It rapidly bores through the ground at 50 mph by squirming and twisting its massive, rugged body.",
-      "nationalPokedexNumbers": [
-        95
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/56.png",
-        "large": "https://images.pokemontcg.io/hgss2/56_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-56",
@@ -6195,6 +6665,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "57",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Common",
+      "flavorText": "It twists and squirms through the ground. The thunderous roar of its tunneling echoes a long way.",
+      "nationalPokedexNumbers": [
+        95
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/57.png",
+        "large": "https://images.pokemontcg.io/hgss2/57_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6211,20 +6695,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "57",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Common",
-      "flavorText": "It twists and squirms through the ground. The thunderous roar of its tunneling echoes a long way.",
-      "nationalPokedexNumbers": [
-        95
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/57.png",
-        "large": "https://images.pokemontcg.io/hgss2/57_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-57",
@@ -6313,6 +6783,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "58",
+      "artist": "Naoyo Kimura",
+      "rarity": "Common",
+      "flavorText": "The direction of its belly spiral differs by area. The equator is thought to have an effect on this.",
+      "nationalPokedexNumbers": [
+        60
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/58.png",
+        "large": "https://images.pokemontcg.io/hgss2/58_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6329,20 +6813,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "58",
-      "artist": "Naoyo Kimura",
-      "rarity": "Common",
-      "flavorText": "The direction of its belly spiral differs by area. The equator is thought to have an effect on this.",
-      "nationalPokedexNumbers": [
-        60
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/58.png",
-        "large": "https://images.pokemontcg.io/hgss2/58_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-58",
@@ -6431,6 +6901,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "59",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.",
+      "nationalPokedexNumbers": [
+        223
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/59.png",
+        "large": "https://images.pokemontcg.io/hgss2/59_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6447,20 +6931,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "59",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.",
-      "nationalPokedexNumbers": [
-        223
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/59.png",
-        "large": "https://images.pokemontcg.io/hgss2/59_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-59",
@@ -6501,124 +6971,6 @@
           "reverseHoloAvg1": 0.35,
           "reverseHoloAvg7": 2.19,
           "reverseHoloAvg30": 1.52
-        }
-      }
-    },
-    {
-      "id": "hgss2-6",
-      "name": "Octillery",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "80",
-      "types": [
-        "Water"
-      ],
-      "evolvesFrom": "Remoraid",
-      "attacks": [
-        {
-          "name": "Switch Cannon",
-          "cost": [
-            "Water"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) Switch Octillery with 1 of your Benched Pokémon."
-        },
-        {
-          "name": "Ink Bomb",
-          "cost": [
-            "Water",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "50",
-          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Lightning",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "6",
-      "artist": "Ken Sugimori",
-      "rarity": "Rare Holo",
-      "flavorText": "It traps foes with the suction cups on its tentacles, then smashes them with its rock-hard head.",
-      "nationalPokedexNumbers": [
-        224
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/6.png",
-        "large": "https://images.pokemontcg.io/hgss2/6_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 1.78,
-            "mid": 2.52,
-            "high": 19.99,
-            "market": 3.43,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 1.28,
-            "mid": 1.5,
-            "high": 14.99,
-            "market": 3.15,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.93,
-          "lowPrice": 0.3,
-          "trendPrice": 1.55,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 1.8,
-          "reverseHoloLow": 0.34,
-          "reverseHoloTrend": 1.09,
-          "lowPriceExPlus": 0.75,
-          "avg1": 1.39,
-          "avg7": 1.66,
-          "avg30": 2.02,
-          "reverseHoloAvg1": 1.8,
-          "reverseHoloAvg7": 1.66,
-          "reverseHoloAvg30": 2.86
         }
       }
     },
@@ -6667,6 +7019,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "60",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "They communicate with one another using their auras. They are able to run all through the night.",
+      "nationalPokedexNumbers": [
+        447
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/60.png",
+        "large": "https://images.pokemontcg.io/hgss2/60_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6683,20 +7049,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "60",
-      "artist": "Kouki Saitou",
-      "rarity": "Common",
-      "flavorText": "They communicate with one another using their auras. They are able to run all through the night.",
-      "nationalPokedexNumbers": [
-        447
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/60.png",
-        "large": "https://images.pokemontcg.io/hgss2/60_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-60",
@@ -6775,6 +7127,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "61",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Common",
+      "flavorText": "Roselia that drink nutritionally rich springwater are said to reveal rare coloration when they bloom.",
+      "nationalPokedexNumbers": [
+        315
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/61.png",
+        "large": "https://images.pokemontcg.io/hgss2/61_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6791,20 +7157,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "61",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Common",
-      "flavorText": "Roselia that drink nutritionally rich springwater are said to reveal rare coloration when they bloom.",
-      "nationalPokedexNumbers": [
-        315
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/61.png",
-        "large": "https://images.pokemontcg.io/hgss2/61_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-61",
@@ -6898,6 +7250,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "62",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Common",
+      "flavorText": "It flaps its short wings to flush out insects from tall grass. It then plucks them with its stubby beak.",
+      "nationalPokedexNumbers": [
+        21
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/62.png",
+        "large": "https://images.pokemontcg.io/hgss2/62_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -6914,20 +7280,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "62",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Common",
-      "flavorText": "It flaps its short wings to flush out insects from tall grass. It then plucks them with its stubby beak.",
-      "nationalPokedexNumbers": [
-        21
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/62.png",
-        "large": "https://images.pokemontcg.io/hgss2/62_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-62",
@@ -7017,6 +7369,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "63",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Common",
+      "flavorText": "The shell is soft when it is born. It soon becomes so resilient, prodding fingers will bounce off it.",
+      "nationalPokedexNumbers": [
+        7
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/63.png",
+        "large": "https://images.pokemontcg.io/hgss2/63_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7033,20 +7399,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "63",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Common",
-      "flavorText": "The shell is soft when it is born. It soon becomes so resilient, prodding fingers will bounce off it.",
-      "nationalPokedexNumbers": [
-        7
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/63.png",
-        "large": "https://images.pokemontcg.io/hgss2/63_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-63",
@@ -7133,6 +7485,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "64",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "The curved antlers subtly change the flow of air to create a strange space where reality is distorted.",
+      "nationalPokedexNumbers": [
+        234
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/64.png",
+        "large": "https://images.pokemontcg.io/hgss2/64_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7149,20 +7515,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "64",
-      "artist": "Ken Sugimori",
-      "rarity": "Common",
-      "flavorText": "The curved antlers subtly change the flow of air to create a strange space where reality is distorted.",
-      "nationalPokedexNumbers": [
-        234
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/64.png",
-        "large": "https://images.pokemontcg.io/hgss2/64_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-64",
@@ -7241,6 +7593,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "65",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "Before food becomes scarce in wintertime, its habit is to hoard food in many hidden locations.",
+      "nationalPokedexNumbers": [
+        216
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/65.png",
+        "large": "https://images.pokemontcg.io/hgss2/65_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7257,20 +7623,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "65",
-      "artist": "Kouki Saitou",
-      "rarity": "Common",
-      "flavorText": "Before food becomes scarce in wintertime, its habit is to hoard food in many hidden locations.",
-      "nationalPokedexNumbers": [
-        216
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/65.png",
-        "large": "https://images.pokemontcg.io/hgss2/65_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-65",
@@ -7362,6 +7714,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "66",
+      "artist": "match",
+      "rarity": "Common",
+      "flavorText": "The bunch of fruit around its neck ripens twice a year and is delicious. It's a highly favored tropical snack.",
+      "nationalPokedexNumbers": [
+        357
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/66.png",
+        "large": "https://images.pokemontcg.io/hgss2/66_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7378,20 +7744,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "66",
-      "artist": "match",
-      "rarity": "Common",
-      "flavorText": "The bunch of fruit around its neck ripens twice a year and is delicious. It's a highly favored tropical snack.",
-      "nationalPokedexNumbers": [
-        357
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/66.png",
-        "large": "https://images.pokemontcg.io/hgss2/66_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-66",
@@ -7486,6 +7838,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "67",
+      "artist": "match",
+      "rarity": "Common",
+      "flavorText": "Photosynthesis occurs across its body under the sun. The shell on its back is actually hardened soil.",
+      "nationalPokedexNumbers": [
+        387
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/67.png",
+        "large": "https://images.pokemontcg.io/hgss2/67_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7502,20 +7868,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "67",
-      "artist": "match",
-      "rarity": "Common",
-      "flavorText": "Photosynthesis occurs across its body under the sun. The shell on its back is actually hardened soil.",
-      "nationalPokedexNumbers": [
-        387
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/67.png",
-        "large": "https://images.pokemontcg.io/hgss2/67_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-67",
@@ -7594,6 +7946,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "68",
+      "artist": "Hajime Kusajima",
+      "rarity": "Common",
+      "flavorText": "As it develops, its single white tail gains color and splits into six. It is quite warm and cuddly.",
+      "nationalPokedexNumbers": [
+        37
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/68.png",
+        "large": "https://images.pokemontcg.io/hgss2/68_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7610,20 +7976,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "68",
-      "artist": "Hajime Kusajima",
-      "rarity": "Common",
-      "flavorText": "As it develops, its single white tail gains color and splits into six. It is quite warm and cuddly.",
-      "nationalPokedexNumbers": [
-        37
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/68.png",
-        "large": "https://images.pokemontcg.io/hgss2/68_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-68",
@@ -7711,6 +8063,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "69",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Common",
+      "flavorText": "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
+      "nationalPokedexNumbers": [
+        13
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/69.png",
+        "large": "https://images.pokemontcg.io/hgss2/69_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7727,20 +8093,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "69",
-      "artist": "Kyoko Umemoto",
-      "rarity": "Common",
-      "flavorText": "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
-      "nationalPokedexNumbers": [
-        13
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/69.png",
-        "large": "https://images.pokemontcg.io/hgss2/69_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-69",
@@ -7781,122 +8133,6 @@
           "reverseHoloAvg1": 0.6,
           "reverseHoloAvg7": 0.66,
           "reverseHoloAvg30": 0.81
-        }
-      }
-    },
-    {
-      "id": "hgss2-7",
-      "name": "Politoed",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 2"
-      ],
-      "hp": "120",
-      "types": [
-        "Water"
-      ],
-      "evolvesFrom": "Poliwhirl",
-      "abilities": [
-        {
-          "name": "Leap Frog",
-          "text": "Once during your turn (before your attack), you may choose a Water Pokémon on your Bench and switch it with your Active Pokémon. This power can't be used if Politoed is affected by a Special Condition.",
-          "type": "Poké-Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Big Chorus",
-          "cost": [
-            "Water",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "30×",
-          "text": "Flip a coin for each Water Pokémon you have in play. This attack does 30 damage times the number of heads."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Lightning",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "7",
-      "artist": "Naoyo Kimura",
-      "rarity": "Rare Holo",
-      "flavorText": "Whenever three or more of these get together, they sing in a loud voice that sounds like bellowing.",
-      "nationalPokedexNumbers": [
-        186
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/7.png",
-        "large": "https://images.pokemontcg.io/hgss2/7_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 7.22,
-            "mid": 43.99,
-            "high": 63.73,
-            "market": 9.15,
-            "directLow": 19.99
-          },
-          "reverseHolofoil": {
-            "low": 8.99,
-            "mid": 15.75,
-            "high": 19.99,
-            "market": 11.38,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 5.18,
-          "lowPrice": 0.49,
-          "trendPrice": 1.43,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 3.37,
-          "reverseHoloLow": 0.49,
-          "reverseHoloTrend": 3.99,
-          "lowPriceExPlus": 1,
-          "avg1": 5,
-          "avg7": 4.96,
-          "avg30": 5.13,
-          "reverseHoloAvg1": 4,
-          "reverseHoloAvg7": 3.73,
-          "reverseHoloAvg30": 3.48
         }
       }
     },
@@ -7950,6 +8186,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "70",
+      "artist": "kawayoo",
+      "rarity": "Common",
+      "flavorText": "Capable of flying safely in dark places, it emits ultrasonic cries to check for any obstacles.",
+      "nationalPokedexNumbers": [
+        41
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/70.png",
+        "large": "https://images.pokemontcg.io/hgss2/70_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -7966,20 +8216,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "70",
-      "artist": "kawayoo",
-      "rarity": "Common",
-      "flavorText": "Capable of flying safely in dark places, it emits ultrasonic cries to check for any obstacles.",
-      "nationalPokedexNumbers": [
-        41
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/70.png",
-        "large": "https://images.pokemontcg.io/hgss2/70_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-70",
@@ -8034,6 +8270,16 @@
         "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
         "Draw 3 cards. Your opponent may draw a card."
       ],
+      "number": "71",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/71.png",
+        "large": "https://images.pokemontcg.io/hgss2/71_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8050,16 +8296,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "71",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/71.png",
-        "large": "https://images.pokemontcg.io/hgss2/71_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-71",
@@ -8113,6 +8349,16 @@
       "rules": [
         "Flip 2 coins. For each heads, search your deck for a Basic Pokémon, show it to your opponent, and put it into your hand. If you do, shuffle your deck afterward."
       ],
+      "number": "72",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/72.png",
+        "large": "https://images.pokemontcg.io/hgss2/72_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8129,16 +8375,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "72",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/72.png",
-        "large": "https://images.pokemontcg.io/hgss2/72_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-72",
@@ -8193,6 +8429,16 @@
         "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
         "Flip a coin. If heads, draw 3 cards. If tails, draw 2 cards."
       ],
+      "number": "73",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/73.png",
+        "large": "https://images.pokemontcg.io/hgss2/73_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8209,16 +8455,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "73",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/73.png",
-        "large": "https://images.pokemontcg.io/hgss2/73_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-73",
@@ -8272,6 +8508,16 @@
       "rules": [
         "Search your discard pile for 4 basic Energy cards, show them to your opponent, and shuffle them into your deck."
       ],
+      "number": "74",
+      "artist": "Wataru Kawahara",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/74.png",
+        "large": "https://images.pokemontcg.io/hgss2/74_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8288,16 +8534,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "74",
-      "artist": "Wataru Kawahara",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/74.png",
-        "large": "https://images.pokemontcg.io/hgss2/74_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-74",
@@ -8352,6 +8588,16 @@
         "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
         "Discard an Energy card from your hand. Then, draw 4 cards."
       ],
+      "number": "75",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/75.png",
+        "large": "https://images.pokemontcg.io/hgss2/75_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8368,16 +8614,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "75",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/75.png",
-        "large": "https://images.pokemontcg.io/hgss2/75_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-75",
@@ -8431,6 +8667,16 @@
       "rules": [
         "Flip a coin. If heads, search your discard pile for a Pokémon, show it to your opponent, and put it on top of your deck. If tails, search your discard pile for a Trainer card, show it to your opponent, and put it on top of your deck."
       ],
+      "number": "76",
+      "artist": "Wataru Kawahara",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/76.png",
+        "large": "https://images.pokemontcg.io/hgss2/76_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8447,16 +8693,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "76",
-      "artist": "Wataru Kawahara",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/76.png",
-        "large": "https://images.pokemontcg.io/hgss2/76_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-76",
@@ -8511,6 +8747,16 @@
         "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
         "Look at the top 8 cards of your deck. Choose as many Energy cards as you like, show them to your opponent, and put them into your hand. Shuffle the other cards back into your deck."
       ],
+      "number": "77",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/77.png",
+        "large": "https://images.pokemontcg.io/hgss2/77_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8527,16 +8773,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "77",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/77.png",
-        "large": "https://images.pokemontcg.io/hgss2/77_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-77",
@@ -8591,6 +8827,18 @@
         "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
         "Each player shuffles his or her hand into his or her deck and draws 4 cards."
       ],
+      "number": "78",
+      "artist": "Kouki Saitou",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/78.png",
+        "large": "https://images.pokemontcg.io/hgss2/78_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8607,18 +8855,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "78",
-      "artist": "Kouki Saitou",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/78.png",
-        "large": "https://images.pokemontcg.io/hgss2/78_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-78",
@@ -8672,6 +8908,17 @@
       "rules": [
         "Flip a coin. If heads, choose 1 of your Pokémon, and remove all Special Conditions and 6 damage counters from that Pokémon (all if there are less than 6)."
       ],
+      "number": "79",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/79.png",
+        "large": "https://images.pokemontcg.io/hgss2/79_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8688,17 +8935,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "79",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/79.png",
-        "large": "https://images.pokemontcg.io/hgss2/79_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-79",
@@ -8743,125 +8979,6 @@
       }
     },
     {
-      "id": "hgss2-8",
-      "name": "Shaymin",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "70",
-      "types": [
-        "Grass"
-      ],
-      "abilities": [
-        {
-          "name": "Celebration Wind",
-          "text": "Once during your turn, when you put Shaymin from your hand onto your Bench, you may move as many Energy cards attached to your Pokémon as you like to any of your other Pokémon.",
-          "type": "Poké-Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Energy Bloom",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "30",
-          "text": "Remove 3 damage counters from each of your Pokémon that has any Energy attached to it."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Fighting",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "8",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Rare Holo",
-      "flavorText": "The blooming of Gracidea flowers confers the power of flight upon it. Feelings of gratitude are the message it delivers.",
-      "nationalPokedexNumbers": [
-        492
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/8.png",
-        "large": "https://images.pokemontcg.io/hgss2/8_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 7,
-            "mid": 12.69,
-            "high": 29.99,
-            "market": 10.19,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 9.89,
-            "mid": 13.5,
-            "high": 16.66,
-            "market": 9.13,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 5.9,
-          "lowPrice": 0.15,
-          "trendPrice": 5.74,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0.45,
-          "reverseHoloLow": 0.35,
-          "reverseHoloTrend": 2.2,
-          "lowPriceExPlus": 0.5,
-          "avg1": 4.9,
-          "avg7": 6.14,
-          "avg30": 4.1,
-          "reverseHoloAvg1": 0.45,
-          "reverseHoloAvg7": 2.43,
-          "reverseHoloAvg30": 2.8
-        }
-      }
-    },
-    {
       "id": "hgss2-80",
       "name": "PlusPower",
       "supertype": "Trainer",
@@ -8872,6 +8989,17 @@
         "Attach PlusPower to 1 of your Pokémon. Discard this card at the end of your turn.",
         "If the Pokémon PlusPower is attached to attacks, the attack does 10 more damage to the Defending Pokémon (before applying Weakness and Resistance)."
       ],
+      "number": "80",
+      "artist": "Takashi Yamaguchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/80.png",
+        "large": "https://images.pokemontcg.io/hgss2/80_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8888,17 +9016,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "80",
-      "artist": "Takashi Yamaguchi",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/80.png",
-        "large": "https://images.pokemontcg.io/hgss2/80_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-80",
@@ -8952,6 +9069,16 @@
       "rules": [
         "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
       ],
+      "number": "81",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/81.png",
+        "large": "https://images.pokemontcg.io/hgss2/81_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -8968,16 +9095,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "81",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/81.png",
-        "large": "https://images.pokemontcg.io/hgss2/81_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-81",
@@ -9031,6 +9148,18 @@
       "rules": [
         "Choose 1 of your Basic Pokémon in play. If you have a Stage 1 or Stage 2 card that evolves from that Pokémon in your hand, put that card on the Basic Pokémon. (This counts as evolving that Pokémon.) If you choose a Stage 2 Pokémon in your hand, put that Pokémon on the Basic Pokémon instead of on a Stage 1 Pokémon."
       ],
+      "number": "82",
+      "artist": "Noriko Hotta",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/82.png",
+        "large": "https://images.pokemontcg.io/hgss2/82_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9047,18 +9176,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "82",
-      "artist": "Noriko Hotta",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal",
-        "standard": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/82.png",
-        "large": "https://images.pokemontcg.io/hgss2/82_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-82",
@@ -9112,6 +9229,16 @@
       "rules": [
         "Flip a coin. If heads, return 1 of your Pokémon and all cards attached to it to your hand."
       ],
+      "number": "83",
+      "artist": "Wataru Kawahara",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/83.png",
+        "large": "https://images.pokemontcg.io/hgss2/83_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9128,16 +9255,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "83",
-      "artist": "Wataru Kawahara",
-      "rarity": "Uncommon",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/83.png",
-        "large": "https://images.pokemontcg.io/hgss2/83_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-83",
@@ -9226,6 +9343,19 @@
           "value": "-20"
         }
       ],
+      "number": "84",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Rare Prime",
+      "nationalPokedexNumbers": [
+        169
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/84.png",
+        "large": "https://images.pokemontcg.io/hgss2/84_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9242,19 +9372,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "84",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Rare Prime",
-      "nationalPokedexNumbers": [
-        169
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/84.png",
-        "large": "https://images.pokemontcg.io/hgss2/84_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-84",
@@ -9332,6 +9449,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "85",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Rare Prime",
+      "nationalPokedexNumbers": [
+        230
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/85.png",
+        "large": "https://images.pokemontcg.io/hgss2/85_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9348,19 +9478,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "85",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Rare Prime",
-      "nationalPokedexNumbers": [
-        230
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/85.png",
-        "large": "https://images.pokemontcg.io/hgss2/85_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-85",
@@ -9441,6 +9558,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "86",
+      "artist": "Hideaki Hakozaki",
+      "rarity": "Rare Prime",
+      "nationalPokedexNumbers": [
+        171
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/86.png",
+        "large": "https://images.pokemontcg.io/hgss2/86_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9457,19 +9587,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "86",
-      "artist": "Hideaki Hakozaki",
-      "rarity": "Rare Prime",
-      "nationalPokedexNumbers": [
-        171
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/86.png",
-        "large": "https://images.pokemontcg.io/hgss2/86_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-86",
@@ -9570,6 +9687,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "87",
+      "artist": "Wataru Kawahara",
+      "rarity": "Rare Prime",
+      "nationalPokedexNumbers": [
+        208
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/87.png",
+        "large": "https://images.pokemontcg.io/hgss2/87_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9586,19 +9716,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "87",
-      "artist": "Wataru Kawahara",
-      "rarity": "Rare Prime",
-      "nationalPokedexNumbers": [
-        208
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/87.png",
-        "large": "https://images.pokemontcg.io/hgss2/87_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-87",
@@ -9700,6 +9817,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "88",
+      "artist": "Wataru Kawahara",
+      "rarity": "Rare Prime",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/88.png",
+        "large": "https://images.pokemontcg.io/hgss2/88_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9716,19 +9846,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "88",
-      "artist": "Wataru Kawahara",
-      "rarity": "Rare Prime",
-      "nationalPokedexNumbers": [
-        248
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/88.png",
-        "large": "https://images.pokemontcg.io/hgss2/88_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-88",
@@ -9822,6 +9939,19 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
+      "number": "89",
+      "artist": "Wataru Kawahara",
+      "rarity": "Rare Prime",
+      "nationalPokedexNumbers": [
+        217
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/89.png",
+        "large": "https://images.pokemontcg.io/hgss2/89_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -9838,19 +9968,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "89",
-      "artist": "Wataru Kawahara",
-      "rarity": "Rare Prime",
-      "nationalPokedexNumbers": [
-        217
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/89.png",
-        "large": "https://images.pokemontcg.io/hgss2/89_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-89",
@@ -9884,123 +10001,6 @@
           "reverseHoloAvg1": 9.45,
           "reverseHoloAvg7": 5.24,
           "reverseHoloAvg30": 4.61
-        }
-      }
-    },
-    {
-      "id": "hgss2-9",
-      "name": "Sudowoodo",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "90",
-      "types": [
-        "Fighting"
-      ],
-      "attacks": [
-        {
-          "name": "Push Over",
-          "cost": [
-            "Fighting"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "20×",
-          "text": "Does 20 damage times the amount of Fighting Energy attached to Sudowoodo."
-        },
-        {
-          "name": "Rumble",
-          "cost": [
-            "Colorless",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40",
-          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Water",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "hgss2",
-        "name": "HS—Unleashed",
-        "series": "HeartGold & SoulSilver",
-        "printedTotal": 95,
-        "total": 96,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "ptcgoCode": "UL",
-        "releaseDate": "2010/05/12",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
-          "logo": "https://images.pokemontcg.io/hgss2/logo.png"
-        }
-      },
-      "number": "9",
-      "artist": "Sachiko Adachi",
-      "rarity": "Rare Holo",
-      "flavorText": "It disguises itself as a tree to avoid attack. It hates water, so it will disappear if it starts raining.",
-      "nationalPokedexNumbers": [
-        185
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/9.png",
-        "large": "https://images.pokemontcg.io/hgss2/9_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 11.99,
-            "mid": 17.99,
-            "high": 29.99,
-            "market": 12.93,
-            "directLow": null
-          },
-          "reverseHolofoil": {
-            "low": 19.99,
-            "mid": 19.99,
-            "high": 19.99,
-            "market": 7.25,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/hgss2-9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 2.35,
-          "lowPrice": 0.49,
-          "trendPrice": 3.18,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 2.83,
-          "reverseHoloLow": 0.49,
-          "reverseHoloTrend": 3.41,
-          "lowPriceExPlus": 0.8,
-          "avg1": 3.6,
-          "avg7": 2.4,
-          "avg30": 3.25,
-          "reverseHoloAvg1": 1.49,
-          "reverseHoloAvg7": 3.45,
-          "reverseHoloAvg30": 2.78
         }
       }
     },
@@ -10048,6 +10048,20 @@
           "value": "×2"
         }
       ],
+      "number": "90",
+      "artist": "Shinji Higuchi + Sachiko Eba",
+      "rarity": "LEGEND",
+      "nationalPokedexNumbers": [
+        243,
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/90.png",
+        "large": "https://images.pokemontcg.io/hgss2/90_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10064,20 +10078,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "90",
-      "artist": "Shinji Higuchi + Sachiko Eba",
-      "rarity": "LEGEND",
-      "nationalPokedexNumbers": [
-        243,
-        244
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/90.png",
-        "large": "https://images.pokemontcg.io/hgss2/90_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-90",
@@ -10162,6 +10162,20 @@
           "value": "×2"
         }
       ],
+      "number": "91",
+      "artist": "Shinji Higuchi + Sachiko Eba",
+      "rarity": "LEGEND",
+      "nationalPokedexNumbers": [
+        243,
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/91.png",
+        "large": "https://images.pokemontcg.io/hgss2/91_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10178,20 +10192,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "91",
-      "artist": "Shinji Higuchi + Sachiko Eba",
-      "rarity": "LEGEND",
-      "nationalPokedexNumbers": [
-        243,
-        244
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/91.png",
-        "large": "https://images.pokemontcg.io/hgss2/91_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-91",
@@ -10282,6 +10282,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "92",
+      "artist": "Shinji Higuchi + Noriko Takaya",
+      "rarity": "LEGEND",
+      "nationalPokedexNumbers": [
+        243,
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/92.png",
+        "large": "https://images.pokemontcg.io/hgss2/92_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10298,20 +10312,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "92",
-      "artist": "Shinji Higuchi + Noriko Takaya",
-      "rarity": "LEGEND",
-      "nationalPokedexNumbers": [
-        243,
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/92.png",
-        "large": "https://images.pokemontcg.io/hgss2/92_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-92",
@@ -10402,6 +10402,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "93",
+      "artist": "Shinji Higuchi + Noriko Takaya",
+      "rarity": "LEGEND",
+      "nationalPokedexNumbers": [
+        243,
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/93.png",
+        "large": "https://images.pokemontcg.io/hgss2/93_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10418,20 +10432,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "93",
-      "artist": "Shinji Higuchi + Noriko Takaya",
-      "rarity": "LEGEND",
-      "nationalPokedexNumbers": [
-        243,
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/93.png",
-        "large": "https://images.pokemontcg.io/hgss2/93_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-93",
@@ -10522,6 +10522,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "94",
+      "artist": "Shinji Higuchi + Sachiko Eba",
+      "rarity": "LEGEND",
+      "nationalPokedexNumbers": [
+        244,
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/94.png",
+        "large": "https://images.pokemontcg.io/hgss2/94_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10538,20 +10552,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "94",
-      "artist": "Shinji Higuchi + Sachiko Eba",
-      "rarity": "LEGEND",
-      "nationalPokedexNumbers": [
-        244,
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/94.png",
-        "large": "https://images.pokemontcg.io/hgss2/94_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-94",
@@ -10642,6 +10642,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "95",
+      "artist": "Shinji Higuchi + Sachiko Eba",
+      "rarity": "LEGEND",
+      "nationalPokedexNumbers": [
+        244,
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/95.png",
+        "large": "https://images.pokemontcg.io/hgss2/95_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10658,20 +10672,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "95",
-      "artist": "Shinji Higuchi + Sachiko Eba",
-      "rarity": "LEGEND",
-      "nationalPokedexNumbers": [
-        244,
-        245
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/95.png",
-        "large": "https://images.pokemontcg.io/hgss2/95_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-95",
@@ -10718,6 +10718,16 @@
       "rules": [
         "Shuffle your deck!"
       ],
+      "number": "TWO",
+      "artist": "Milky Isobe",
+      "rarity": "Rare Secret",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss2/TWO.png",
+        "large": "https://images.pokemontcg.io/hgss2/TWO_hires.png"
+      },
       "set": {
         "id": "hgss2",
         "name": "HS—Unleashed",
@@ -10734,16 +10744,6 @@
           "symbol": "https://images.pokemontcg.io/hgss2/symbol.png",
           "logo": "https://images.pokemontcg.io/hgss2/logo.png"
         }
-      },
-      "number": "TWO",
-      "artist": "Milky Isobe",
-      "rarity": "Rare Secret",
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/hgss2/TWO.png",
-        "large": "https://images.pokemontcg.io/hgss2/TWO_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/hgss2-TWO",

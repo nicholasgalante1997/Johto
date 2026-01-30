@@ -45,23 +45,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV1",
       "artist": "Shigenori Negishi",
       "rarity": "Rare Shiny",
@@ -76,6 +59,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV1.png",
         "large": "https://images.pokemontcg.io/sma/SV1_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV1",
@@ -109,6 +110,899 @@
           "reverseHoloAvg1": 6.99,
           "reverseHoloAvg7": 7.79,
           "reverseHoloAvg30": 10.38
+        }
+      }
+    },
+    {
+      "id": "sma-SV2",
+      "name": "Rowlet",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Dartrix"
+      ],
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Leafage",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "SV2",
+      "artist": "sui",
+      "rarity": "Rare Shiny",
+      "flavorText": "This wary Pokémon uses photosynthesis to store up energy during the day, while becoming active at night.",
+      "nationalPokedexNumbers": [
+        722
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV2.png",
+        "large": "https://images.pokemontcg.io/sma/SV2_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 2.36,
+            "mid": 3.7,
+            "high": 9.99,
+            "market": 3.7,
+            "directLow": 4.98
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV2",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 2.5,
+          "lowPrice": 1.17,
+          "trendPrice": 2.32,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 1.79,
+          "reverseHoloTrend": 4.46,
+          "lowPriceExPlus": 1.17,
+          "avg1": 1.5,
+          "avg7": 2.55,
+          "avg30": 2.47,
+          "reverseHoloAvg1": 3.7,
+          "reverseHoloAvg7": 4.16,
+          "reverseHoloAvg30": 3.69
+        }
+      }
+    },
+    {
+      "id": "sma-SV3",
+      "name": "Dartrix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "80",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Rowlet",
+      "evolvesTo": [
+        "Decidueye"
+      ],
+      "attacks": [
+        {
+          "name": "Sharp Blade Quill",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Leaf Blade",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "SV3",
+      "artist": "Shigenori Negishi",
+      "rarity": "Rare Shiny",
+      "flavorText": "A bit of a dandy, it spends its free time preening its wings. Its preoccupation with any dirt on its plumage can leave it unable to battle.",
+      "nationalPokedexNumbers": [
+        723
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV3.png",
+        "large": "https://images.pokemontcg.io/sma/SV3_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 1,
+            "mid": 1.98,
+            "high": 5,
+            "market": 1.39,
+            "directLow": 1.52
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV3",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 2.82,
+          "lowPrice": 0.89,
+          "trendPrice": 2.79,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 3,
+          "reverseHoloTrend": 1.29,
+          "lowPriceExPlus": 0.89,
+          "avg1": 1,
+          "avg7": 1.59,
+          "avg30": 2.51,
+          "reverseHoloAvg1": 2,
+          "reverseHoloAvg7": 2.67,
+          "reverseHoloAvg30": 3.66
+        }
+      }
+    },
+    {
+      "id": "sma-SV4",
+      "name": "Wimpod",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Golisopod"
+      ],
+      "abilities": [
+        {
+          "name": "Wimp Out",
+          "text": "During your first turn, this Pokémon has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "SV4",
+      "artist": "SATOSHI NAKAI",
+      "rarity": "Rare Shiny",
+      "flavorText": "This Pokémon is a coward. As it desperately dashes off, the flailing of its many legs leaves a sparkling clean path in its wake.",
+      "nationalPokedexNumbers": [
+        767
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV4.png",
+        "large": "https://images.pokemontcg.io/sma/SV4_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 0.99,
+            "mid": 1.63,
+            "high": 9.95,
+            "market": 1.54,
+            "directLow": 2.5
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV4",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.55,
+          "lowPrice": 0.88,
+          "trendPrice": 1.67,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 1.73,
+          "lowPriceExPlus": 0.88,
+          "avg1": 1.3,
+          "avg7": 1.57,
+          "avg30": 1.66,
+          "reverseHoloAvg1": 1.29,
+          "reverseHoloAvg7": 2.44,
+          "reverseHoloAvg30": 3.02
+        }
+      }
+    },
+    {
+      "id": "sma-SV5",
+      "name": "Pheromosa",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Ultra Beast"
+      ],
+      "hp": "110",
+      "types": [
+        "Grass"
+      ],
+      "attacks": [
+        {
+          "name": "High Jump Kick",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "White Ray",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90+",
+          "text": "If you have only 1 Prize card remaining, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "number": "SV5",
+      "artist": "Mizue",
+      "rarity": "Rare Shiny",
+      "flavorText": "One of the Ultra Beasts. It refuses to touch anything, perhaps because it senses some uncleanness in this world.",
+      "nationalPokedexNumbers": [
+        795
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV5.png",
+        "large": "https://images.pokemontcg.io/sma/SV5_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 3.99,
+            "mid": 7.51,
+            "high": 15.95,
+            "market": 7.59,
+            "directLow": 15.69
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV5",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 3.77,
+          "lowPrice": 2.13,
+          "trendPrice": 4.38,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 7.89,
+          "reverseHoloTrend": 4.42,
+          "lowPriceExPlus": 2.13,
+          "avg1": 3.99,
+          "avg7": 4.2,
+          "avg30": 3.96,
+          "reverseHoloAvg1": 4,
+          "reverseHoloAvg7": 3.83,
+          "reverseHoloAvg30": 3.27
+        }
+      }
+    },
+    {
+      "id": "sma-SV6",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Fire Fang",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "SV6",
+      "artist": "kirisAki",
+      "rarity": "Rare Shiny",
+      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV6.png",
+        "large": "https://images.pokemontcg.io/sma/SV6_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 10.08,
+            "mid": 14.49,
+            "high": 74.63,
+            "market": 12.6,
+            "directLow": 13.99
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV6",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 9.29,
+          "lowPrice": 7,
+          "trendPrice": 9.81,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 25,
+          "reverseHoloTrend": 28.96,
+          "lowPriceExPlus": 7,
+          "avg1": 11.99,
+          "avg7": 10.26,
+          "avg30": 10.5,
+          "reverseHoloAvg1": 11.95,
+          "reverseHoloAvg7": 31.26,
+          "reverseHoloAvg30": 30.52
+        }
+      }
+    },
+    {
+      "id": "sma-SV7",
+      "name": "Charmeleon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "80",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Charmander",
+      "evolvesTo": [
+        "Charizard"
+      ],
+      "abilities": [
+        {
+          "name": "Burning Fighter",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may discard the top 5 cards of your deck. If any of those cards are Fire Energy cards, attach them to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "SV7",
+      "artist": "nagimiso",
+      "rarity": "Rare Shiny",
+      "flavorText": "When it swings its burning tail, it elevates the air temperature to unbearably high levels.",
+      "nationalPokedexNumbers": [
+        5
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV7.png",
+        "large": "https://images.pokemontcg.io/sma/SV7_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 10,
+            "mid": 12,
+            "high": 29.97,
+            "market": 11.4,
+            "directLow": 11.43
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV7",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 11.79,
+          "lowPrice": 6.9,
+          "trendPrice": 12.42,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 14,
+          "reverseHoloTrend": 14.73,
+          "lowPriceExPlus": 7.9,
+          "avg1": 9.9,
+          "avg7": 12.2,
+          "avg30": 11.81,
+          "reverseHoloAvg1": 10,
+          "reverseHoloAvg7": 20.85,
+          "reverseHoloAvg30": 40.37
+        }
+      }
+    },
+    {
+      "id": "sma-SV8",
+      "name": "Alolan Vulpix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "Ninetales"
+      ],
+      "attacks": [
+        {
+          "name": "Beacon",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "",
+          "text": "Search your deck for up to 2 Pokémon, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Icy Snow",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "SV8",
+      "artist": "Kouki Saitou",
+      "rarity": "Rare Shiny",
+      "flavorText": "It exhales air colder than -58 degrees Fahrenheit. Elderly people in Alola call this Pokémon by an older name—Keokeo.",
+      "nationalPokedexNumbers": [
+        37
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV8.png",
+        "large": "https://images.pokemontcg.io/sma/SV8_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 5.25,
+            "mid": 7,
+            "high": 14.99,
+            "market": 6.4,
+            "directLow": 14.69
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV8",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 3.33,
+          "lowPrice": 2.9,
+          "trendPrice": 3,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 3.8,
+          "reverseHoloTrend": 4.35,
+          "lowPriceExPlus": 2.9,
+          "avg1": 3.25,
+          "avg7": 2.97,
+          "avg30": 3.51,
+          "reverseHoloAvg1": 4.69,
+          "reverseHoloAvg7": 4.18,
+          "reverseHoloAvg30": 4.34
+        }
+      }
+    },
+    {
+      "id": "sma-SV9",
+      "name": "Wooper",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "Quagsire"
+      ],
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rain Splash",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "SV9",
+      "artist": "Misa Tsutsui",
+      "rarity": "Rare Shiny",
+      "flavorText": "When the temperature cools in the evening, they emerge from water to seek food along the shore.",
+      "nationalPokedexNumbers": [
+        194
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV9.png",
+        "large": "https://images.pokemontcg.io/sma/SV9_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "holofoil": {
+            "low": 8.8,
+            "mid": 12.55,
+            "high": 15,
+            "market": 10.34,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV9",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 3.81,
+          "lowPrice": 1,
+          "trendPrice": 3.9,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 3.27,
+          "lowPriceExPlus": 2.5,
+          "avg1": 4.2,
+          "avg7": 3.86,
+          "avg30": 3.84,
+          "reverseHoloAvg1": 2.99,
+          "reverseHoloAvg7": 4.1,
+          "reverseHoloAvg30": 4.54
         }
       }
     },
@@ -155,23 +1049,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV10",
       "artist": "Saya Tsuruta",
       "rarity": "Rare Shiny",
@@ -186,6 +1063,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV10.png",
         "large": "https://images.pokemontcg.io/sma/SV10_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV10",
@@ -265,23 +1160,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV11",
       "artist": "sui",
       "rarity": "Rare Shiny",
@@ -296,6 +1174,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV11.png",
         "large": "https://images.pokemontcg.io/sma/SV11_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV11",
@@ -375,23 +1271,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV12",
       "artist": "Anesaki Dynamic",
       "rarity": "Rare Shiny",
@@ -406,6 +1285,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV12.png",
         "large": "https://images.pokemontcg.io/sma/SV12_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV12",
@@ -491,23 +1388,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV13",
       "artist": "Shin Nagasawa",
       "rarity": "Rare Shiny",
@@ -522,6 +1402,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV13.png",
         "large": "https://images.pokemontcg.io/sma/SV13_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV13",
@@ -608,23 +1506,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV14",
       "artist": "Naoki Saito",
       "rarity": "Rare Shiny",
@@ -639,6 +1520,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV14.png",
         "large": "https://images.pokemontcg.io/sma/SV14_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV14",
@@ -717,23 +1616,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV15",
       "artist": "SATOSHI NAKAI",
       "rarity": "Rare Shiny",
@@ -748,6 +1630,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV15.png",
         "large": "https://images.pokemontcg.io/sma/SV15_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV15",
@@ -835,23 +1735,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV16",
       "artist": "sui",
       "rarity": "Rare Shiny",
@@ -866,6 +1749,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV16.png",
         "large": "https://images.pokemontcg.io/sma/SV16_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV16",
@@ -937,23 +1838,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV17",
       "artist": "Shigenori Negishi",
       "rarity": "Rare Shiny",
@@ -968,6 +1852,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV17.png",
         "large": "https://images.pokemontcg.io/sma/SV17_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV17",
@@ -1047,23 +1949,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV18",
       "artist": "Hideki Ishikawa",
       "rarity": "Rare Shiny",
@@ -1078,6 +1963,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV18.png",
         "large": "https://images.pokemontcg.io/sma/SV18_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV18",
@@ -1160,23 +2063,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV19",
       "artist": "Akira Komayama",
       "rarity": "Rare Shiny",
@@ -1191,6 +2077,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV19.png",
         "large": "https://images.pokemontcg.io/sma/SV19_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV19",
@@ -1224,118 +2128,6 @@
           "reverseHoloAvg1": 2.95,
           "reverseHoloAvg7": 2.23,
           "reverseHoloAvg30": 3.35
-        }
-      }
-    },
-    {
-      "id": "sma-SV2",
-      "name": "Rowlet",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "60",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Dartrix"
-      ],
-      "attacks": [
-        {
-          "name": "Tackle",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": ""
-        },
-        {
-          "name": "Leafage",
-          "cost": [
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV2",
-      "artist": "sui",
-      "rarity": "Rare Shiny",
-      "flavorText": "This wary Pokémon uses photosynthesis to store up energy during the day, while becoming active at night.",
-      "nationalPokedexNumbers": [
-        722
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV2.png",
-        "large": "https://images.pokemontcg.io/sma/SV2_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 2.36,
-            "mid": 3.7,
-            "high": 9.99,
-            "market": 3.7,
-            "directLow": 4.98
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV2",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 2.5,
-          "lowPrice": 1.17,
-          "trendPrice": 2.32,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 1.79,
-          "reverseHoloTrend": 4.46,
-          "lowPriceExPlus": 1.17,
-          "avg1": 1.5,
-          "avg7": 2.55,
-          "avg30": 2.47,
-          "reverseHoloAvg1": 3.7,
-          "reverseHoloAvg7": 4.16,
-          "reverseHoloAvg30": 3.69
         }
       }
     },
@@ -1380,23 +2172,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV20",
       "artist": "Kyoko Umemoto",
       "rarity": "Rare Shiny",
@@ -1411,6 +2186,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV20.png",
         "large": "https://images.pokemontcg.io/sma/SV20_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV20",
@@ -1491,23 +2284,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV21",
       "artist": "Misa Tsutsui",
       "rarity": "Rare Shiny",
@@ -1522,6 +2298,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV21.png",
         "large": "https://images.pokemontcg.io/sma/SV21_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV21",
@@ -1599,23 +2393,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV22",
       "artist": "Kouki Saitou",
       "rarity": "Rare Shiny",
@@ -1630,6 +2407,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV22.png",
         "large": "https://images.pokemontcg.io/sma/SV22_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV22",
@@ -1702,23 +2497,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV23",
       "artist": "Masakazu Fukuda",
       "rarity": "Rare Shiny",
@@ -1733,6 +2511,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV23.png",
         "large": "https://images.pokemontcg.io/sma/SV23_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV23",
@@ -1814,23 +2610,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV24",
       "artist": "Shin Nagasawa",
       "rarity": "Rare Shiny",
@@ -1845,6 +2624,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV24.png",
         "large": "https://images.pokemontcg.io/sma/SV24_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV24",
@@ -1932,23 +2729,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV25",
       "artist": "Saya Tsuruta",
       "rarity": "Rare Shiny",
@@ -1963,6 +2743,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV25.png",
         "large": "https://images.pokemontcg.io/sma/SV25_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV25",
@@ -2044,23 +2842,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV26",
       "artist": "Masakazu Fukuda",
       "rarity": "Rare Shiny",
@@ -2075,6 +2856,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV26.png",
         "large": "https://images.pokemontcg.io/sma/SV26_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV26",
@@ -2161,23 +2960,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV27",
       "artist": "SATOSHI NAKAI",
       "rarity": "Rare Shiny",
@@ -2192,6 +2974,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV27.png",
         "large": "https://images.pokemontcg.io/sma/SV27_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV27",
@@ -2282,23 +3082,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV28",
       "artist": "Kyoko Umemoto",
       "rarity": "Rare Shiny",
@@ -2313,6 +3096,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV28.png",
         "large": "https://images.pokemontcg.io/sma/SV28_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV28",
@@ -2399,23 +3200,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV29",
       "artist": "Misa Tsutsui",
       "rarity": "Rare Shiny",
@@ -2430,6 +3214,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV29.png",
         "large": "https://images.pokemontcg.io/sma/SV29_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV29",
@@ -2463,120 +3265,6 @@
           "reverseHoloAvg1": 4,
           "reverseHoloAvg7": 4.05,
           "reverseHoloAvg30": 3.75
-        }
-      }
-    },
-    {
-      "id": "sma-SV3",
-      "name": "Dartrix",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "80",
-      "types": [
-        "Grass"
-      ],
-      "evolvesFrom": "Rowlet",
-      "evolvesTo": [
-        "Decidueye"
-      ],
-      "attacks": [
-        {
-          "name": "Sharp Blade Quill",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
-        },
-        {
-          "name": "Leaf Blade",
-          "cost": [
-            "Grass",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "50+",
-          "text": "Flip a coin. If heads, this attack does 20 more damage."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV3",
-      "artist": "Shigenori Negishi",
-      "rarity": "Rare Shiny",
-      "flavorText": "A bit of a dandy, it spends its free time preening its wings. Its preoccupation with any dirt on its plumage can leave it unable to battle.",
-      "nationalPokedexNumbers": [
-        723
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV3.png",
-        "large": "https://images.pokemontcg.io/sma/SV3_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 1,
-            "mid": 1.98,
-            "high": 5,
-            "market": 1.39,
-            "directLow": 1.52
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV3",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 2.82,
-          "lowPrice": 0.89,
-          "trendPrice": 2.79,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 3,
-          "reverseHoloTrend": 1.29,
-          "lowPriceExPlus": 0.89,
-          "avg1": 1,
-          "avg7": 1.59,
-          "avg30": 2.51,
-          "reverseHoloAvg1": 2,
-          "reverseHoloAvg7": 2.67,
-          "reverseHoloAvg30": 3.66
         }
       }
     },
@@ -2621,23 +3309,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV30",
       "artist": "Mizue",
       "rarity": "Rare Shiny",
@@ -2652,6 +3323,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV30.png",
         "large": "https://images.pokemontcg.io/sma/SV30_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV30",
@@ -2743,23 +3432,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV31",
       "artist": "Saya Tsuruta",
       "rarity": "Rare Shiny",
@@ -2774,6 +3446,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV31.png",
         "large": "https://images.pokemontcg.io/sma/SV31_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV31",
@@ -2856,23 +3546,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV32",
       "artist": "Kouki Saitou",
       "rarity": "Rare Shiny",
@@ -2887,6 +3560,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV32.png",
         "large": "https://images.pokemontcg.io/sma/SV32_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV32",
@@ -2963,23 +3654,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV33",
       "artist": "Anesaki Dynamic",
       "rarity": "Rare Shiny",
@@ -2994,6 +3668,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV33.png",
         "large": "https://images.pokemontcg.io/sma/SV33_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV33",
@@ -3071,23 +3763,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV34",
       "artist": "Kyoko Umemoto",
       "rarity": "Rare Shiny",
@@ -3102,6 +3777,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV34.png",
         "large": "https://images.pokemontcg.io/sma/SV34_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV34",
@@ -3191,23 +3884,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV35",
       "artist": "Sumiyoshi Kizuki",
       "rarity": "Rare Shiny",
@@ -3222,6 +3898,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV35.png",
         "large": "https://images.pokemontcg.io/sma/SV35_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV35",
@@ -3306,23 +4000,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV36",
       "artist": "Akira Komayama",
       "rarity": "Rare Shiny",
@@ -3337,6 +4014,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV36.png",
         "large": "https://images.pokemontcg.io/sma/SV36_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV36",
@@ -3414,23 +4109,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV37",
       "artist": "kirisAki",
       "rarity": "Rare Shiny",
@@ -3445,6 +4123,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV37.png",
         "large": "https://images.pokemontcg.io/sma/SV37_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV37",
@@ -3516,23 +4212,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV38",
       "artist": "Saya Tsuruta",
       "rarity": "Rare Shiny",
@@ -3547,6 +4226,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV38.png",
         "large": "https://images.pokemontcg.io/sma/SV38_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV38",
@@ -3629,23 +4326,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV39",
       "artist": "Masakazu Fukuda",
       "rarity": "Rare Shiny",
@@ -3660,6 +4340,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV39.png",
         "large": "https://images.pokemontcg.io/sma/SV39_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV39",
@@ -3693,119 +4391,6 @@
           "reverseHoloAvg1": 3.95,
           "reverseHoloAvg7": 5.27,
           "reverseHoloAvg30": 6.31
-        }
-      }
-    },
-    {
-      "id": "sma-SV4",
-      "name": "Wimpod",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "70",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Golisopod"
-      ],
-      "abilities": [
-        {
-          "name": "Wimp Out",
-          "text": "During your first turn, this Pokémon has no Retreat Cost.",
-          "type": "Ability"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Gnaw",
-          "cost": [
-            "Grass",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "30",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV4",
-      "artist": "SATOSHI NAKAI",
-      "rarity": "Rare Shiny",
-      "flavorText": "This Pokémon is a coward. As it desperately dashes off, the flailing of its many legs leaves a sparkling clean path in its wake.",
-      "nationalPokedexNumbers": [
-        767
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV4.png",
-        "large": "https://images.pokemontcg.io/sma/SV4_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 0.99,
-            "mid": 1.63,
-            "high": 9.95,
-            "market": 1.54,
-            "directLow": 2.5
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV4",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.55,
-          "lowPrice": 0.88,
-          "trendPrice": 1.67,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 1.73,
-          "lowPriceExPlus": 0.88,
-          "avg1": 1.3,
-          "avg7": 1.57,
-          "avg30": 1.66,
-          "reverseHoloAvg1": 1.29,
-          "reverseHoloAvg7": 2.44,
-          "reverseHoloAvg30": 3.02
         }
       }
     },
@@ -3850,23 +4435,6 @@
           "value": "×2"
         }
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV40",
       "artist": "Shin Nagasawa",
       "rarity": "Rare Shiny",
@@ -3881,6 +4449,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV40.png",
         "large": "https://images.pokemontcg.io/sma/SV40_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV40",
@@ -3967,23 +4553,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV41",
       "artist": "kirisAki",
       "rarity": "Rare Shiny",
@@ -3998,6 +4567,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV41.png",
         "large": "https://images.pokemontcg.io/sma/SV41_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV41",
@@ -4085,23 +4672,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV42",
       "artist": "Shigenori Negishi",
       "rarity": "Rare Shiny",
@@ -4116,6 +4686,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV42.png",
         "large": "https://images.pokemontcg.io/sma/SV42_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV42",
@@ -4193,23 +4781,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV43",
       "artist": "Mizue",
       "rarity": "Rare Shiny",
@@ -4224,6 +4795,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV43.png",
         "large": "https://images.pokemontcg.io/sma/SV43_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV43",
@@ -4302,23 +4891,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV44",
       "artist": "Akira Komayama",
       "rarity": "Rare Shiny",
@@ -4333,6 +4905,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV44.png",
         "large": "https://images.pokemontcg.io/sma/SV44_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV44",
@@ -4414,23 +5004,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV45",
       "artist": "Shin Nagasawa",
       "rarity": "Rare Shiny",
@@ -4445,6 +5018,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV45.png",
         "large": "https://images.pokemontcg.io/sma/SV45_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV45",
@@ -4537,23 +5128,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV46",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -4567,6 +5141,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV46.png",
         "large": "https://images.pokemontcg.io/sma/SV46_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV46",
@@ -4659,23 +5251,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV47",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -4689,6 +5264,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV47.png",
         "large": "https://images.pokemontcg.io/sma/SV47_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV47",
@@ -4786,23 +5379,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV48",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -4816,6 +5392,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV48.png",
         "large": "https://images.pokemontcg.io/sma/SV48_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV48",
@@ -4916,23 +5510,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV49",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -4946,6 +5523,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV49.png",
         "large": "https://images.pokemontcg.io/sma/SV49_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV49",
@@ -4979,113 +5574,6 @@
           "reverseHoloAvg1": 500,
           "reverseHoloAvg7": 582.77,
           "reverseHoloAvg30": 546.75
-        }
-      }
-    },
-    {
-      "id": "sma-SV5",
-      "name": "Pheromosa",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic",
-        "Ultra Beast"
-      ],
-      "hp": "110",
-      "types": [
-        "Grass"
-      ],
-      "attacks": [
-        {
-          "name": "High Jump Kick",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "20",
-          "text": ""
-        },
-        {
-          "name": "White Ray",
-          "cost": [
-            "Grass",
-            "Grass",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "90+",
-          "text": "If you have only 1 Prize card remaining, this attack does 90 more damage."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "×2"
-        }
-      ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV5",
-      "artist": "Mizue",
-      "rarity": "Rare Shiny",
-      "flavorText": "One of the Ultra Beasts. It refuses to touch anything, perhaps because it senses some uncleanness in this world.",
-      "nationalPokedexNumbers": [
-        795
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV5.png",
-        "large": "https://images.pokemontcg.io/sma/SV5_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 3.99,
-            "mid": 7.51,
-            "high": 15.95,
-            "market": 7.59,
-            "directLow": 15.69
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV5",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 3.77,
-          "lowPrice": 2.13,
-          "trendPrice": 4.38,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 7.89,
-          "reverseHoloTrend": 4.42,
-          "lowPriceExPlus": 2.13,
-          "avg1": 3.99,
-          "avg7": 4.2,
-          "avg30": 3.96,
-          "reverseHoloAvg1": 4,
-          "reverseHoloAvg7": 3.83,
-          "reverseHoloAvg30": 3.27
         }
       }
     },
@@ -5157,23 +5645,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV50",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -5187,6 +5658,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV50.png",
         "large": "https://images.pokemontcg.io/sma/SV50_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV50",
@@ -5284,23 +5773,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV51",
       "artist": "PLANETA Igarashi",
       "rarity": "Rare Shiny GX",
@@ -5314,6 +5786,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV51.png",
         "large": "https://images.pokemontcg.io/sma/SV51_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV51",
@@ -5409,23 +5899,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV52",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -5439,6 +5912,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV52.png",
         "large": "https://images.pokemontcg.io/sma/SV52_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV52",
@@ -5534,23 +6025,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV53",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -5564,6 +6038,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV53.png",
         "large": "https://images.pokemontcg.io/sma/SV53_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV53",
@@ -5655,23 +6147,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV54",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -5685,6 +6160,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV54.png",
         "large": "https://images.pokemontcg.io/sma/SV54_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV54",
@@ -5779,23 +6272,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV55",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -5809,6 +6285,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV55.png",
         "large": "https://images.pokemontcg.io/sma/SV55_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV55",
@@ -5903,23 +6397,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV56",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -5933,6 +6410,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV56.png",
         "large": "https://images.pokemontcg.io/sma/SV56_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV56",
@@ -6030,23 +6525,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV57",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6060,6 +6538,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV57.png",
         "large": "https://images.pokemontcg.io/sma/SV57_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV57",
@@ -6158,23 +6654,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV58",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6188,6 +6667,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV58.png",
         "large": "https://images.pokemontcg.io/sma/SV58_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV58",
@@ -6282,23 +6779,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV59",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6312,6 +6792,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV59.png",
         "large": "https://images.pokemontcg.io/sma/SV59_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV59",
@@ -6345,110 +6843,6 @@
           "reverseHoloAvg1": 74.95,
           "reverseHoloAvg7": 70.16,
           "reverseHoloAvg30": 82.35
-        }
-      }
-    },
-    {
-      "id": "sma-SV6",
-      "name": "Charmander",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "70",
-      "types": [
-        "Fire"
-      ],
-      "evolvesTo": [
-        "Charmeleon"
-      ],
-      "attacks": [
-        {
-          "name": "Fire Fang",
-          "cost": [
-            "Fire",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20",
-          "text": "Your opponent's Active Pokémon is now Burned."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Water",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV6",
-      "artist": "kirisAki",
-      "rarity": "Rare Shiny",
-      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
-      "nationalPokedexNumbers": [
-        4
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV6.png",
-        "large": "https://images.pokemontcg.io/sma/SV6_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 10.08,
-            "mid": 14.49,
-            "high": 74.63,
-            "market": 12.6,
-            "directLow": 13.99
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV6",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 9.29,
-          "lowPrice": 7,
-          "trendPrice": 9.81,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 25,
-          "reverseHoloTrend": 28.96,
-          "lowPriceExPlus": 7,
-          "avg1": 11.99,
-          "avg7": 10.26,
-          "avg30": 10.5,
-          "reverseHoloAvg1": 11.95,
-          "reverseHoloAvg7": 31.26,
-          "reverseHoloAvg30": 30.52
         }
       }
     },
@@ -6511,23 +6905,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV60",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6541,6 +6918,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV60.png",
         "large": "https://images.pokemontcg.io/sma/SV60_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV60",
@@ -6636,23 +7031,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV61",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6666,6 +7044,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV61.png",
         "large": "https://images.pokemontcg.io/sma/SV61_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV61",
@@ -6760,23 +7156,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV62",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6790,6 +7169,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV62.png",
         "large": "https://images.pokemontcg.io/sma/SV62_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV62",
@@ -6886,23 +7283,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV63",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -6916,6 +7296,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV63.png",
         "large": "https://images.pokemontcg.io/sma/SV63_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV63",
@@ -7011,23 +7409,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV64",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7041,6 +7422,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV64.png",
         "large": "https://images.pokemontcg.io/sma/SV64_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV64",
@@ -7140,23 +7539,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV65",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7170,6 +7552,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV65.png",
         "large": "https://images.pokemontcg.io/sma/SV65_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV65",
@@ -7263,23 +7663,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV66",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7293,6 +7676,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV66.png",
         "large": "https://images.pokemontcg.io/sma/SV66_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV66",
@@ -7385,23 +7786,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV67",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7415,6 +7799,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV67.png",
         "large": "https://images.pokemontcg.io/sma/SV67_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV67",
@@ -7511,23 +7913,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV68",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7541,6 +7926,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV68.png",
         "large": "https://images.pokemontcg.io/sma/SV68_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV68",
@@ -7642,23 +8045,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV69",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7672,6 +8058,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV69.png",
         "large": "https://images.pokemontcg.io/sma/SV69_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV69",
@@ -7705,119 +8109,6 @@
           "reverseHoloAvg1": 143.33,
           "reverseHoloAvg7": 148.39,
           "reverseHoloAvg30": 159.45
-        }
-      }
-    },
-    {
-      "id": "sma-SV7",
-      "name": "Charmeleon",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "hp": "80",
-      "types": [
-        "Fire"
-      ],
-      "evolvesFrom": "Charmander",
-      "evolvesTo": [
-        "Charizard"
-      ],
-      "abilities": [
-        {
-          "name": "Burning Fighter",
-          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may discard the top 5 cards of your deck. If any of those cards are Fire Energy cards, attach them to this Pokémon.",
-          "type": "Ability"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Flamethrower",
-          "cost": [
-            "Fire",
-            "Fire",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "80",
-          "text": "Discard an Energy from this Pokémon."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Water",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV7",
-      "artist": "nagimiso",
-      "rarity": "Rare Shiny",
-      "flavorText": "When it swings its burning tail, it elevates the air temperature to unbearably high levels.",
-      "nationalPokedexNumbers": [
-        5
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV7.png",
-        "large": "https://images.pokemontcg.io/sma/SV7_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 10,
-            "mid": 12,
-            "high": 29.97,
-            "market": 11.4,
-            "directLow": 11.43
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV7",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 11.79,
-          "lowPrice": 6.9,
-          "trendPrice": 12.42,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 14,
-          "reverseHoloTrend": 14.73,
-          "lowPriceExPlus": 7.9,
-          "avg1": 9.9,
-          "avg7": 12.2,
-          "avg30": 11.81,
-          "reverseHoloAvg1": 10,
-          "reverseHoloAvg7": 20.85,
-          "reverseHoloAvg30": 40.37
         }
       }
     },
@@ -7884,23 +8175,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV70",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -7914,6 +8188,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV70.png",
         "large": "https://images.pokemontcg.io/sma/SV70_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV70",
@@ -8022,23 +8314,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV71",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8052,6 +8327,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV71.png",
         "large": "https://images.pokemontcg.io/sma/SV71_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV71",
@@ -8150,23 +8443,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV72",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8180,6 +8456,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV72.png",
         "large": "https://images.pokemontcg.io/sma/SV72_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV72",
@@ -8277,23 +8571,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV73",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8307,6 +8584,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV73.png",
         "large": "https://images.pokemontcg.io/sma/SV73_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV73",
@@ -8408,23 +8703,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV74",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8438,6 +8716,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV74.png",
         "large": "https://images.pokemontcg.io/sma/SV74_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV74",
@@ -8534,23 +8830,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV75",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8564,6 +8843,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV75.png",
         "large": "https://images.pokemontcg.io/sma/SV75_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV75",
@@ -8666,23 +8963,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV76",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8696,6 +8976,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV76.png",
         "large": "https://images.pokemontcg.io/sma/SV76_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV76",
@@ -8791,23 +9089,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV77",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8821,6 +9102,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV77.png",
         "large": "https://images.pokemontcg.io/sma/SV77_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV77",
@@ -8913,23 +9212,6 @@
           "value": "×2"
         }
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV78",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -8943,6 +9225,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV78.png",
         "large": "https://images.pokemontcg.io/sma/SV78_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV78",
@@ -9037,23 +9337,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV79",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -9067,6 +9350,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV79.png",
         "large": "https://images.pokemontcg.io/sma/SV79_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV79",
@@ -9100,116 +9401,6 @@
           "reverseHoloAvg1": 17.98,
           "reverseHoloAvg7": 16.61,
           "reverseHoloAvg30": 20.27
-        }
-      }
-    },
-    {
-      "id": "sma-SV8",
-      "name": "Alolan Vulpix",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "60",
-      "types": [
-        "Water"
-      ],
-      "evolvesTo": [
-        "Ninetales"
-      ],
-      "attacks": [
-        {
-          "name": "Beacon",
-          "cost": [],
-          "convertedEnergyCost": 0,
-          "damage": "",
-          "text": "Search your deck for up to 2 Pokémon, reveal them, and put them into your hand. Then, shuffle your deck."
-        },
-        {
-          "name": "Icy Snow",
-          "cost": [
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Metal",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV8",
-      "artist": "Kouki Saitou",
-      "rarity": "Rare Shiny",
-      "flavorText": "It exhales air colder than -58 degrees Fahrenheit. Elderly people in Alola call this Pokémon by an older name—Keokeo.",
-      "nationalPokedexNumbers": [
-        37
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV8.png",
-        "large": "https://images.pokemontcg.io/sma/SV8_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 5.25,
-            "mid": 7,
-            "high": 14.99,
-            "market": 6.4,
-            "directLow": 14.69
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV8",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 3.33,
-          "lowPrice": 2.9,
-          "trendPrice": 3,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 3.8,
-          "reverseHoloTrend": 4.35,
-          "lowPriceExPlus": 2.9,
-          "avg1": 3.25,
-          "avg7": 2.97,
-          "avg30": 3.51,
-          "reverseHoloAvg1": 4.69,
-          "reverseHoloAvg7": 4.18,
-          "reverseHoloAvg30": 4.34
         }
       }
     },
@@ -9270,23 +9461,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV80",
       "artist": "5ban Graphics",
       "rarity": "Rare Shiny GX",
@@ -9300,6 +9474,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV80.png",
         "large": "https://images.pokemontcg.io/sma/SV80_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV80",
@@ -9347,23 +9539,6 @@
         "Put 3 Pokémon that have \"Alolan\" in their names from your discard pile into your hand.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV81",
       "artist": "take",
       "rarity": "Rare Ultra",
@@ -9374,6 +9549,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV81.png",
         "large": "https://images.pokemontcg.io/sma/SV81_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV81",
@@ -9421,23 +9614,6 @@
         "Shuffle your hand into your deck. Then, draw 6 cards.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV82",
       "artist": "Yusuke Ohmura",
       "rarity": "Rare Ultra",
@@ -9448,6 +9624,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV82.png",
         "large": "https://images.pokemontcg.io/sma/SV82_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV82",
@@ -9495,23 +9689,6 @@
         "Put 4 basic Energy cards from your discard pile into your hand.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV83",
       "artist": "Masakazu Fukuda",
       "rarity": "Rare Ultra",
@@ -9522,6 +9699,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV83.png",
         "large": "https://images.pokemontcg.io/sma/SV83_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV83",
@@ -9569,23 +9764,6 @@
         "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon. If you do, switch your Active Pokémon with 1 of your Benched Pokémon.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV84",
       "artist": "Hitoshi Ariga",
       "rarity": "Rare Ultra",
@@ -9596,6 +9774,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV84.png",
         "large": "https://images.pokemontcg.io/sma/SV84_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV84",
@@ -9643,23 +9839,6 @@
         "Look at the top 5 cards of either player's deck and choose 1 of them. That player shuffles the other cards back into their deck. Then, put the card you chose on top of that deck.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV85",
       "artist": "Naoki Saito",
       "rarity": "Rare Ultra",
@@ -9670,6 +9849,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV85.png",
         "large": "https://images.pokemontcg.io/sma/SV85_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV85",
@@ -9717,23 +9914,6 @@
         "Search your deck for up to 4 basic Energy cards, reveal them, and put them into your hand. Then, shuffle your deck.",
         "You may play only 1 Supporter card during your turn (before your attack)."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV86",
       "artist": "Kanako Eo",
       "rarity": "Rare Ultra",
@@ -9744,6 +9924,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV86.png",
         "large": "https://images.pokemontcg.io/sma/SV86_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV86",
@@ -9791,23 +9989,6 @@
         "Basic Grass and Basic Lightning Pokémon (both yours and your opponent's) take 30 less damage from the opponent's attacks (after applying Weakness and Resistance).",
         "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV87",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -9818,6 +9999,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV87.png",
         "large": "https://images.pokemontcg.io/sma/SV87_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV87",
@@ -9865,23 +10064,6 @@
         "Once during each player's turn, that player may search their deck for a Basic Water Pokémon or Basic Fighting Pokémon and, put it onto their Bench, and shuffle their deck.",
         "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV88",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -9892,6 +10074,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV88.png",
         "large": "https://images.pokemontcg.io/sma/SV88_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV88",
@@ -9939,23 +10139,6 @@
         "Once during each player's turn, that player may put 2 Metal Energy cards from their discard pile into their hand.",
         "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV89",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -9966,6 +10149,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV89.png",
         "large": "https://images.pokemontcg.io/sma/SV89_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV89",
@@ -10003,118 +10204,6 @@
       }
     },
     {
-      "id": "sma-SV9",
-      "name": "Wooper",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "hp": "70",
-      "types": [
-        "Water"
-      ],
-      "evolvesTo": [
-        "Quagsire"
-      ],
-      "attacks": [
-        {
-          "name": "Ram",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": ""
-        },
-        {
-          "name": "Rain Splash",
-          "cost": [
-            "Water",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20",
-          "text": ""
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Grass",
-          "value": "×2"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
-      "number": "SV9",
-      "artist": "Misa Tsutsui",
-      "rarity": "Rare Shiny",
-      "flavorText": "When the temperature cools in the evening, they emerge from water to seek food along the shore.",
-      "nationalPokedexNumbers": [
-        194
-      ],
-      "legalities": {
-        "unlimited": "Legal",
-        "expanded": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/sma/SV9.png",
-        "large": "https://images.pokemontcg.io/sma/SV9_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "holofoil": {
-            "low": 8.8,
-            "mid": 12.55,
-            "high": 15,
-            "market": 10.34,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV9",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 3.81,
-          "lowPrice": 1,
-          "trendPrice": 3.9,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 3.27,
-          "lowPriceExPlus": 2.5,
-          "avg1": 4.2,
-          "avg7": 3.86,
-          "avg30": 3.84,
-          "reverseHoloAvg1": 2.99,
-          "reverseHoloAvg7": 4.1,
-          "reverseHoloAvg30": 4.54
-        }
-      }
-    },
-    {
       "id": "sma-SV90",
       "name": "Shrine of Punishment",
       "supertype": "Trainer",
@@ -10125,23 +10214,6 @@
         "Between turns, put 1 damage counter on each Pokémon-GX and Pokémon-EX (both yours and your opponent's).",
         "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
       ],
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV90",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -10152,6 +10224,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV90.png",
         "large": "https://images.pokemontcg.io/sma/SV90_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV90",
@@ -10242,23 +10332,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 3,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV91",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -10272,6 +10345,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV91.png",
         "large": "https://images.pokemontcg.io/sma/SV91_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV91",
@@ -10358,23 +10449,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV92",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -10388,6 +10462,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV92.png",
         "large": "https://images.pokemontcg.io/sma/SV92_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV92",
@@ -10475,23 +10567,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV93",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -10505,6 +10580,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV93.png",
         "large": "https://images.pokemontcg.io/sma/SV93_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV93",
@@ -10588,23 +10681,6 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
-      "set": {
-        "id": "sma",
-        "name": "Hidden Fates Shiny Vault",
-        "series": "Sun & Moon",
-        "printedTotal": 94,
-        "total": 94,
-        "legalities": {
-          "unlimited": "Legal",
-          "expanded": "Legal"
-        },
-        "releaseDate": "2019/08/23",
-        "updatedAt": "2021/09/01 05:37:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
-          "logo": "https://images.pokemontcg.io/sma/logo.png"
-        }
-      },
       "number": "SV94",
       "artist": "5ban Graphics",
       "rarity": "Rare Secret",
@@ -10618,6 +10694,24 @@
       "images": {
         "small": "https://images.pokemontcg.io/sma/SV94.png",
         "large": "https://images.pokemontcg.io/sma/SV94_hires.png"
+      },
+      "set": {
+        "id": "sma",
+        "name": "Hidden Fates Shiny Vault",
+        "series": "Sun & Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV94",

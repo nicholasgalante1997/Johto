@@ -41,6 +41,20 @@
           "value": "+30"
         }
       ],
+      "number": "1",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare",
+      "flavorText": "It flies at speeds equal to a jet fighter plane. It never allows its prey to escape.",
+      "nationalPokedexNumbers": [
+        445
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/1.png",
+        "large": "https://images.pokemontcg.io/pop9/1_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -56,20 +70,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "1",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Rare",
-      "flavorText": "It flies at speeds equal to a jet fighter plane. It never allows its prey to escape.",
-      "nationalPokedexNumbers": [
-        445
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/1.png",
-        "large": "https://images.pokemontcg.io/pop9/1_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-1",
@@ -103,905 +103,6 @@
           "reverseHoloAvg1": 3.11,
           "reverseHoloAvg7": 2,
           "reverseHoloAvg30": 2
-        }
-      }
-    },
-    {
-      "id": "pop9-10",
-      "name": "Pachirisu",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "20",
-      "hp": "70",
-      "types": [
-        "Lightning"
-      ],
-      "attacks": [
-        {
-          "name": "Thunder Wave",
-          "cost": [
-            "Lightning"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
-        },
-        {
-          "name": "Poison Berry",
-          "cost": [
-            "Lightning",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "20+",
-          "text": "If you have Croagunk in play, this attack does 20 damage plus 20 more damage and the Defending Pokémon is now Poisoned."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+20"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Metal",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "10",
-      "artist": "Midori Harada",
-      "rarity": "Uncommon",
-      "flavorText": "It makes electricity with pouches in its cheeks and shoots charges from its tail. It live atop trees.",
-      "nationalPokedexNumbers": [
-        417
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/10.png",
-        "large": "https://images.pokemontcg.io/pop9/10_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-10",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 3,
-            "mid": 5,
-            "high": 7.99,
-            "market": 4.12,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-10",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 4.5,
-          "lowPrice": 3.45,
-          "trendPrice": 9.18,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 40,
-          "reverseHoloTrend": 4,
-          "lowPriceExPlus": 3.45,
-          "avg1": 4.5,
-          "avg7": 9.46,
-          "avg30": 5.08,
-          "reverseHoloAvg1": 4,
-          "reverseHoloAvg7": 3.25,
-          "reverseHoloAvg30": 3.25
-        }
-      }
-    },
-    {
-      "id": "pop9-11",
-      "name": "Pichu",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "5",
-      "hp": "40",
-      "types": [
-        "Lightning"
-      ],
-      "evolvesTo": [
-        "Pikachu"
-      ],
-      "abilities": [
-        {
-          "name": "Baby Evolution",
-          "text": "Once during your turn (before your attack), you may put Pikachu from your hand onto Pichu (this counts as evolving Pichu) and remove all damage counters from Pichu.",
-          "type": "Poké-Power"
-        }
-      ],
-      "attacks": [
-        {
-          "name": "Find a Friend",
-          "cost": [],
-          "convertedEnergyCost": 0,
-          "damage": "",
-          "text": "Flip a coin. If heads, search your deck for a Pokémon, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+10"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Metal",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "11",
-      "artist": "Midori Harada",
-      "rarity": "Uncommon",
-      "flavorText": "It plays with others by touching tails and setting off sparks. This appears to be a test of courage.",
-      "nationalPokedexNumbers": [
-        172
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/11.png",
-        "large": "https://images.pokemontcg.io/pop9/11_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-11",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 13.28,
-            "mid": 18,
-            "high": 349.99,
-            "market": 13.08,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-11",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 11.49,
-          "lowPrice": 5,
-          "trendPrice": 10.32,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 8.81,
-          "lowPriceExPlus": 7.99,
-          "avg1": 15,
-          "avg7": 10.5,
-          "avg30": 8.78,
-          "reverseHoloAvg1": 5,
-          "reverseHoloAvg7": 7.5,
-          "reverseHoloAvg30": 6.35
-        }
-      }
-    },
-    {
-      "id": "pop9-12",
-      "name": "Buneary",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "8",
-      "hp": "50",
-      "types": [
-        "Colorless"
-      ],
-      "evolvesTo": [
-        "Lopunny"
-      ],
-      "attacks": [
-        {
-          "name": "Dizzy Punch",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10×",
-          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
-        },
-        {
-          "name": "Defense Curl",
-          "cost": [
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 2,
-          "damage": "",
-          "text": "Flip a coin. If heads, prevent all damage done to Buneary by attacks during your opponent's next turn."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "12",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "When it senses danger, it perks up its ears. On cold nights, it sleeps with its head tucked into its fur.",
-      "nationalPokedexNumbers": [
-        427
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/12.png",
-        "large": "https://images.pokemontcg.io/pop9/12_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-12",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.1,
-            "mid": 0.5,
-            "high": 1.75,
-            "market": 0.62,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-12",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.46,
-          "lowPrice": 0.1,
-          "trendPrice": 0.48,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0.1,
-          "lowPriceExPlus": 0.12,
-          "avg1": 0.49,
-          "avg7": 0.44,
-          "avg30": 0.45,
-          "reverseHoloAvg1": 0.1,
-          "reverseHoloAvg7": 0.1,
-          "reverseHoloAvg30": 0.1
-        }
-      }
-    },
-    {
-      "id": "pop9-13",
-      "name": "Chimchar",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "5",
-      "hp": "40",
-      "types": [
-        "Fire"
-      ],
-      "evolvesTo": [
-        "Monferno"
-      ],
-      "attacks": [
-        {
-          "name": "Serial Swipes",
-          "cost": [
-            "Fire"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10×",
-          "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
-        },
-        {
-          "name": "Sleepy",
-          "cost": [
-            "Fire",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40+",
-          "text": "If you have Piplup in play, this attack does 40 damage plus 20 more damage and the Defending Pokémon is now Asleep."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Water",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "13",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "Its fiery rear end is fueled by gas made in its belly. Even rain can't extinguish the fire.",
-      "nationalPokedexNumbers": [
-        390
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/13.png",
-        "large": "https://images.pokemontcg.io/pop9/13_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-13",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.44,
-            "mid": 0.75,
-            "high": 10.47,
-            "market": 0.75,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-13",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.76,
-          "lowPrice": 0.1,
-          "trendPrice": 1.85,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 11.44,
-          "lowPriceExPlus": 0.2,
-          "avg1": 0.99,
-          "avg7": 0.76,
-          "avg30": 1.2,
-          "reverseHoloAvg1": 10,
-          "reverseHoloAvg7": 10.54,
-          "reverseHoloAvg30": 9.32
-        }
-      }
-    },
-    {
-      "id": "pop9-14",
-      "name": "Gible",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "9",
-      "hp": "50",
-      "types": [
-        "Colorless"
-      ],
-      "evolvesTo": [
-        "Gabite"
-      ],
-      "attacks": [
-        {
-          "name": "Push Down",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Colorless",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "14",
-      "artist": "Hiroki Fuchino",
-      "rarity": "Common",
-      "flavorText": "Its nests is small, horizontal holes in cave walls. It pounces to catch prey that stray too close.",
-      "nationalPokedexNumbers": [
-        443
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/14.png",
-        "large": "https://images.pokemontcg.io/pop9/14_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-14",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.2,
-            "mid": 0.6,
-            "high": 2.36,
-            "market": 0.62,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-14",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.53,
-          "lowPrice": 0.05,
-          "trendPrice": 0.4,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0.25,
-          "lowPriceExPlus": 0.1,
-          "avg1": 0.3,
-          "avg7": 0.43,
-          "avg30": 0.31,
-          "reverseHoloAvg1": 0.25,
-          "reverseHoloAvg7": 0.25,
-          "reverseHoloAvg30": 0.25
-        }
-      }
-    },
-    {
-      "id": "pop9-15",
-      "name": "Pikachu",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "18",
-      "hp": "60",
-      "types": [
-        "Lightning"
-      ],
-      "evolvesTo": [
-        "Raichu"
-      ],
-      "attacks": [
-        {
-          "name": "Growl",
-          "cost": [
-            "Colorless"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "",
-          "text": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 20 (before applying Weakness and Resistance)."
-        },
-        {
-          "name": "Numb",
-          "cost": [
-            "Lightning",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "30",
-          "text": "If Pikachu evolved from Pichu during this turn, the Defending Pokémon is now Paralyzed."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fighting",
-          "value": "+10"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Metal",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "15",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "If it looses crackling power from the electric pouches on its cheeks, it is being wary.",
-      "nationalPokedexNumbers": [
-        25
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/15.png",
-        "large": "https://images.pokemontcg.io/pop9/15_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-15",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 5.43,
-            "mid": 10.35,
-            "high": 25.99,
-            "market": 10.63,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-15",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 8.73,
-          "lowPrice": 1.5,
-          "trendPrice": 9.94,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 9.99,
-          "reverseHoloTrend": 10.66,
-          "lowPriceExPlus": 5.99,
-          "avg1": 10,
-          "avg7": 8.68,
-          "avg30": 7.39,
-          "reverseHoloAvg1": 3.99,
-          "reverseHoloAvg7": 11.77,
-          "reverseHoloAvg30": 10.38
-        }
-      }
-    },
-    {
-      "id": "pop9-16",
-      "name": "Piplup",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "6",
-      "hp": "50",
-      "types": [
-        "Water"
-      ],
-      "evolvesTo": [
-        "Prinplup"
-      ],
-      "attacks": [
-        {
-          "name": "Water Sport",
-          "cost": [
-            "Water"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10+",
-          "text": "If Piplup has less Energy attached to it than the Defending Pokémon, this attack does 10 damage plus more 10 more damage."
-        },
-        {
-          "name": "Wavelet",
-          "cost": [
-            "Water",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40",
-          "text": "If you have Buizel in play, this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Lightning",
-          "value": "+10"
-        }
-      ],
-      "retreatCost": [
-        "Colorless"
-      ],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "16",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "It lives along shores in northern countries. A skilled swimmer, it dives for over 10 minutes to hunt.",
-      "nationalPokedexNumbers": [
-        393
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/16.png",
-        "large": "https://images.pokemontcg.io/pop9/16_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-16",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 1,
-            "mid": 1.77,
-            "high": 5,
-            "market": 1.67,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-16",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 1.34,
-          "lowPrice": 0.19,
-          "trendPrice": 2.24,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 85,
-          "reverseHoloTrend": 26.4,
-          "lowPriceExPlus": 0.98,
-          "avg1": 9.9,
-          "avg7": 2.1,
-          "avg30": 1.41,
-          "reverseHoloAvg1": 50,
-          "reverseHoloAvg7": 11.75,
-          "reverseHoloAvg30": 11.75
-        }
-      }
-    },
-    {
-      "id": "pop9-17",
-      "name": "Turtwig",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "level": "7",
-      "hp": "60",
-      "types": [
-        "Grass"
-      ],
-      "evolvesTo": [
-        "Grotle"
-      ],
-      "attacks": [
-        {
-          "name": "Absorb",
-          "cost": [
-            "Grass"
-          ],
-          "convertedEnergyCost": 1,
-          "damage": "10",
-          "text": "Remove 1 damage counter from Turtwig."
-        },
-        {
-          "name": "Parboil",
-          "cost": [
-            "Grass",
-            "Colorless",
-            "Colorless"
-          ],
-          "convertedEnergyCost": 3,
-          "damage": "40+",
-          "text": "If you have Chimchar in play, this attack does 40 damage plus 20 more damage and the Defending Pokémon is now Burned."
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Fire",
-          "value": "+10"
-        }
-      ],
-      "resistances": [
-        {
-          "type": "Water",
-          "value": "-20"
-        }
-      ],
-      "retreatCost": [
-        "Colorless",
-        "Colorless"
-      ],
-      "convertedRetreatCost": 2,
-      "set": {
-        "id": "pop9",
-        "name": "POP Series 9",
-        "series": "POP",
-        "printedTotal": 17,
-        "total": 17,
-        "legalities": {
-          "unlimited": "Legal"
-        },
-        "releaseDate": "2009/03/01",
-        "updatedAt": "2020/05/01 16:06:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
-          "logo": "https://images.pokemontcg.io/pop9/logo.png"
-        }
-      },
-      "number": "17",
-      "artist": "Midori Harada",
-      "rarity": "Common",
-      "flavorText": "It undertakes photosynthesis with its body, making oxygen. The leaf on its head wilts if it is thirsty.",
-      "nationalPokedexNumbers": [
-        387
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/17.png",
-        "large": "https://images.pokemontcg.io/pop9/17_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-17",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "normal": {
-            "low": 0.35,
-            "mid": 1,
-            "high": 5,
-            "market": 0.97,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/pop9-17",
-        "updatedAt": "2025/12/28",
-        "prices": {
-          "averageSellPrice": 0.79,
-          "lowPrice": 0.05,
-          "trendPrice": 0.71,
-          "germanProLow": 0,
-          "suggestedPrice": 0,
-          "reverseHoloSell": 0,
-          "reverseHoloLow": 0,
-          "reverseHoloTrend": 0.1,
-          "lowPriceExPlus": 0.15,
-          "avg1": 0.89,
-          "avg7": 0.74,
-          "avg30": 0.69,
-          "reverseHoloAvg1": 0.1,
-          "reverseHoloAvg7": 0.1,
-          "reverseHoloAvg30": 0.1
         }
       }
     },
@@ -1047,6 +148,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "2",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare",
+      "flavorText": "It is born with a wondrous power that lets it bond with any kind of Pokémon.",
+      "nationalPokedexNumbers": [
+        490
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/2.png",
+        "large": "https://images.pokemontcg.io/pop9/2_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1062,20 +177,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "2",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare",
-      "flavorText": "It is born with a wondrous power that lets it bond with any kind of Pokémon.",
-      "nationalPokedexNumbers": [
-        490
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/2.png",
-        "large": "https://images.pokemontcg.io/pop9/2_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-2",
@@ -1171,6 +272,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "3",
+      "artist": "Midori Harada",
+      "rarity": "Rare",
+      "flavorText": "It can loose 100,000-volt bursts of electricity, instantly downing foes several times its size.",
+      "nationalPokedexNumbers": [
+        26
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/3.png",
+        "large": "https://images.pokemontcg.io/pop9/3_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1186,20 +301,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "3",
-      "artist": "Midori Harada",
-      "rarity": "Rare",
-      "flavorText": "It can loose 100,000-volt bursts of electricity, instantly downing foes several times its size.",
-      "nationalPokedexNumbers": [
-        26
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/3.png",
-        "large": "https://images.pokemontcg.io/pop9/3_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-3",
@@ -1293,6 +394,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 4,
+      "number": "4",
+      "artist": "Kent Kanetsuna",
+      "rarity": "Rare",
+      "flavorText": "There is an enduring legend that states this Pokémon towed continents with ropes.",
+      "nationalPokedexNumbers": [
+        486
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/4.png",
+        "large": "https://images.pokemontcg.io/pop9/4_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1308,20 +423,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "4",
-      "artist": "Kent Kanetsuna",
-      "rarity": "Rare",
-      "flavorText": "There is an enduring legend that states this Pokémon towed continents with ropes.",
-      "nationalPokedexNumbers": [
-        486
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/4.png",
-        "large": "https://images.pokemontcg.io/pop9/4_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-4",
@@ -1412,6 +513,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "5",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare",
+      "flavorText": "Its electric-like body can enter some kinds of machines and take control in order to make mischief.",
+      "nationalPokedexNumbers": [
+        479
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/5.png",
+        "large": "https://images.pokemontcg.io/pop9/5_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1427,20 +542,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "5",
-      "artist": "Masakazu Fukuda",
-      "rarity": "Rare",
-      "flavorText": "Its electric-like body can enter some kinds of machines and take control in order to make mischief.",
-      "nationalPokedexNumbers": [
-        479
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/5.png",
-        "large": "https://images.pokemontcg.io/pop9/5_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-5",
@@ -1530,6 +631,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "6",
+      "artist": "Midori Harada",
+      "rarity": "Uncommon",
+      "flavorText": "It swims by rotating its two tails like a screw. When it dives, its flotation sac collapses.",
+      "nationalPokedexNumbers": [
+        418
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/6.png",
+        "large": "https://images.pokemontcg.io/pop9/6_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1545,20 +660,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "6",
-      "artist": "Midori Harada",
-      "rarity": "Uncommon",
-      "flavorText": "It swims by rotating its two tails like a screw. When it dives, its flotation sac collapses.",
-      "nationalPokedexNumbers": [
-        418
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/6.png",
-        "large": "https://images.pokemontcg.io/pop9/6_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-6",
@@ -1642,6 +743,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 2,
+      "number": "7",
+      "artist": "Midori Harada",
+      "rarity": "Uncommon",
+      "flavorText": "Inflating its poison sacs, it makes an eerie blubbering sound for intimidation.",
+      "nationalPokedexNumbers": [
+        453
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/7.png",
+        "large": "https://images.pokemontcg.io/pop9/7_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1657,20 +772,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "7",
-      "artist": "Midori Harada",
-      "rarity": "Uncommon",
-      "flavorText": "Inflating its poison sacs, it makes an eerie blubbering sound for intimidation.",
-      "nationalPokedexNumbers": [
-        453
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/7.png",
-        "large": "https://images.pokemontcg.io/pop9/7_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-7",
@@ -1755,6 +856,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "8",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Uncommon",
+      "flavorText": "It habitually digs up and hoards gems in its nest. Its loot is constantly targeted by thieves.",
+      "nationalPokedexNumbers": [
+        444
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/8.png",
+        "large": "https://images.pokemontcg.io/pop9/8_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1770,20 +885,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "8",
-      "artist": "Kagemaru Himeno",
-      "rarity": "Uncommon",
-      "flavorText": "It habitually digs up and hoards gems in its nest. Its loot is constantly targeted by thieves.",
-      "nationalPokedexNumbers": [
-        444
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/8.png",
-        "large": "https://images.pokemontcg.io/pop9/8_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-8",
@@ -1866,6 +967,20 @@
         "Colorless"
       ],
       "convertedRetreatCost": 1,
+      "number": "9",
+      "artist": "Midori Harada",
+      "rarity": "Uncommon",
+      "flavorText": "It is very conscious of its looks and never fails to groom its ears. It runs with sprightly jumps.",
+      "nationalPokedexNumbers": [
+        428
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/9.png",
+        "large": "https://images.pokemontcg.io/pop9/9_hires.png"
+      },
       "set": {
         "id": "pop9",
         "name": "POP Series 9",
@@ -1881,20 +996,6 @@
           "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
           "logo": "https://images.pokemontcg.io/pop9/logo.png"
         }
-      },
-      "number": "9",
-      "artist": "Midori Harada",
-      "rarity": "Uncommon",
-      "flavorText": "It is very conscious of its looks and never fails to groom its ears. It runs with sprightly jumps.",
-      "nationalPokedexNumbers": [
-        428
-      ],
-      "legalities": {
-        "unlimited": "Legal"
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/pop9/9.png",
-        "large": "https://images.pokemontcg.io/pop9/9_hires.png"
       },
       "tcgplayer": {
         "url": "https://prices.pokemontcg.io/tcgplayer/pop9-9",
@@ -1935,6 +1036,905 @@
           "reverseHoloAvg1": 2,
           "reverseHoloAvg7": 1.07,
           "reverseHoloAvg30": 1.07
+        }
+      }
+    },
+    {
+      "id": "pop9-10",
+      "name": "Pachirisu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "20",
+      "hp": "70",
+      "types": [
+        "Lightning"
+      ],
+      "attacks": [
+        {
+          "name": "Thunder Wave",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Poison Berry",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If you have Croagunk in play, this attack does 20 damage plus 20 more damage and the Defending Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "10",
+      "artist": "Midori Harada",
+      "rarity": "Uncommon",
+      "flavorText": "It makes electricity with pouches in its cheeks and shoots charges from its tail. It live atop trees.",
+      "nationalPokedexNumbers": [
+        417
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/10.png",
+        "large": "https://images.pokemontcg.io/pop9/10_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-10",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 3,
+            "mid": 5,
+            "high": 7.99,
+            "market": 4.12,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-10",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 4.5,
+          "lowPrice": 3.45,
+          "trendPrice": 9.18,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 40,
+          "reverseHoloTrend": 4,
+          "lowPriceExPlus": 3.45,
+          "avg1": 4.5,
+          "avg7": 9.46,
+          "avg30": 5.08,
+          "reverseHoloAvg1": 4,
+          "reverseHoloAvg7": 3.25,
+          "reverseHoloAvg30": 3.25
+        }
+      }
+    },
+    {
+      "id": "pop9-11",
+      "name": "Pichu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "5",
+      "hp": "40",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesTo": [
+        "Pikachu"
+      ],
+      "abilities": [
+        {
+          "name": "Baby Evolution",
+          "text": "Once during your turn (before your attack), you may put Pikachu from your hand onto Pichu (this counts as evolving Pichu) and remove all damage counters from Pichu.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Find a Friend",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "",
+          "text": "Flip a coin. If heads, search your deck for a Pokémon, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "11",
+      "artist": "Midori Harada",
+      "rarity": "Uncommon",
+      "flavorText": "It plays with others by touching tails and setting off sparks. This appears to be a test of courage.",
+      "nationalPokedexNumbers": [
+        172
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/11.png",
+        "large": "https://images.pokemontcg.io/pop9/11_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-11",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 13.28,
+            "mid": 18,
+            "high": 349.99,
+            "market": 13.08,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-11",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 11.49,
+          "lowPrice": 5,
+          "trendPrice": 10.32,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 8.81,
+          "lowPriceExPlus": 7.99,
+          "avg1": 15,
+          "avg7": 10.5,
+          "avg30": 8.78,
+          "reverseHoloAvg1": 5,
+          "reverseHoloAvg7": 7.5,
+          "reverseHoloAvg30": 6.35
+        }
+      }
+    },
+    {
+      "id": "pop9-12",
+      "name": "Buneary",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "8",
+      "hp": "50",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesTo": [
+        "Lopunny"
+      ],
+      "attacks": [
+        {
+          "name": "Dizzy Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Defense Curl",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all damage done to Buneary by attacks during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "12",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "When it senses danger, it perks up its ears. On cold nights, it sleeps with its head tucked into its fur.",
+      "nationalPokedexNumbers": [
+        427
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/12.png",
+        "large": "https://images.pokemontcg.io/pop9/12_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-12",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.1,
+            "mid": 0.5,
+            "high": 1.75,
+            "market": 0.62,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-12",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.46,
+          "lowPrice": 0.1,
+          "trendPrice": 0.48,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0.1,
+          "lowPriceExPlus": 0.12,
+          "avg1": 0.49,
+          "avg7": 0.44,
+          "avg30": 0.45,
+          "reverseHoloAvg1": 0.1,
+          "reverseHoloAvg7": 0.1,
+          "reverseHoloAvg30": 0.1
+        }
+      }
+    },
+    {
+      "id": "pop9-13",
+      "name": "Chimchar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "5",
+      "hp": "40",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Monferno"
+      ],
+      "attacks": [
+        {
+          "name": "Serial Swipes",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Sleepy",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "If you have Piplup in play, this attack does 40 damage plus 20 more damage and the Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "13",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "Its fiery rear end is fueled by gas made in its belly. Even rain can't extinguish the fire.",
+      "nationalPokedexNumbers": [
+        390
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/13.png",
+        "large": "https://images.pokemontcg.io/pop9/13_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-13",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.44,
+            "mid": 0.75,
+            "high": 10.47,
+            "market": 0.75,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-13",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.76,
+          "lowPrice": 0.1,
+          "trendPrice": 1.85,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 11.44,
+          "lowPriceExPlus": 0.2,
+          "avg1": 0.99,
+          "avg7": 0.76,
+          "avg30": 1.2,
+          "reverseHoloAvg1": 10,
+          "reverseHoloAvg7": 10.54,
+          "reverseHoloAvg30": 9.32
+        }
+      }
+    },
+    {
+      "id": "pop9-14",
+      "name": "Gible",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "9",
+      "hp": "50",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesTo": [
+        "Gabite"
+      ],
+      "attacks": [
+        {
+          "name": "Push Down",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Colorless",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "14",
+      "artist": "Hiroki Fuchino",
+      "rarity": "Common",
+      "flavorText": "Its nests is small, horizontal holes in cave walls. It pounces to catch prey that stray too close.",
+      "nationalPokedexNumbers": [
+        443
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/14.png",
+        "large": "https://images.pokemontcg.io/pop9/14_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-14",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.2,
+            "mid": 0.6,
+            "high": 2.36,
+            "market": 0.62,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-14",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.53,
+          "lowPrice": 0.05,
+          "trendPrice": 0.4,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0.25,
+          "lowPriceExPlus": 0.1,
+          "avg1": 0.3,
+          "avg7": 0.43,
+          "avg30": 0.31,
+          "reverseHoloAvg1": 0.25,
+          "reverseHoloAvg7": 0.25,
+          "reverseHoloAvg30": 0.25
+        }
+      }
+    },
+    {
+      "id": "pop9-15",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "18",
+      "hp": "60",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "attacks": [
+        {
+          "name": "Growl",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 20 (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Numb",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "If Pikachu evolved from Pichu during this turn, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "15",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "If it looses crackling power from the electric pouches on its cheeks, it is being wary.",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/15.png",
+        "large": "https://images.pokemontcg.io/pop9/15_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-15",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 5.43,
+            "mid": 10.35,
+            "high": 25.99,
+            "market": 10.63,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-15",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 8.73,
+          "lowPrice": 1.5,
+          "trendPrice": 9.94,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 9.99,
+          "reverseHoloTrend": 10.66,
+          "lowPriceExPlus": 5.99,
+          "avg1": 10,
+          "avg7": 8.68,
+          "avg30": 7.39,
+          "reverseHoloAvg1": 3.99,
+          "reverseHoloAvg7": 11.77,
+          "reverseHoloAvg30": 10.38
+        }
+      }
+    },
+    {
+      "id": "pop9-16",
+      "name": "Piplup",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "6",
+      "hp": "50",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "Prinplup"
+      ],
+      "attacks": [
+        {
+          "name": "Water Sport",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If Piplup has less Energy attached to it than the Defending Pokémon, this attack does 10 damage plus more 10 more damage."
+        },
+        {
+          "name": "Wavelet",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "If you have Buizel in play, this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "16",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "It lives along shores in northern countries. A skilled swimmer, it dives for over 10 minutes to hunt.",
+      "nationalPokedexNumbers": [
+        393
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/16.png",
+        "large": "https://images.pokemontcg.io/pop9/16_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-16",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 1,
+            "mid": 1.77,
+            "high": 5,
+            "market": 1.67,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-16",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 1.34,
+          "lowPrice": 0.19,
+          "trendPrice": 2.24,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 85,
+          "reverseHoloTrend": 26.4,
+          "lowPriceExPlus": 0.98,
+          "avg1": 9.9,
+          "avg7": 2.1,
+          "avg30": 1.41,
+          "reverseHoloAvg1": 50,
+          "reverseHoloAvg7": 11.75,
+          "reverseHoloAvg30": 11.75
+        }
+      }
+    },
+    {
+      "id": "pop9-17",
+      "name": "Turtwig",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "7",
+      "hp": "60",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Grotle"
+      ],
+      "attacks": [
+        {
+          "name": "Absorb",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Remove 1 damage counter from Turtwig."
+        },
+        {
+          "name": "Parboil",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "If you have Chimchar in play, this attack does 40 damage plus 20 more damage and the Defending Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+10"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "17",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "It undertakes photosynthesis with its body, making oxygen. The leaf on its head wilts if it is thirsty.",
+      "nationalPokedexNumbers": [
+        387
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop9/17.png",
+        "large": "https://images.pokemontcg.io/pop9/17_hires.png"
+      },
+      "set": {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2009/03/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop9/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop9/logo.png"
+        }
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop9-17",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "normal": {
+            "low": 0.35,
+            "mid": 1,
+            "high": 5,
+            "market": 0.97,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop9-17",
+        "updatedAt": "2025/12/28",
+        "prices": {
+          "averageSellPrice": 0.79,
+          "lowPrice": 0.05,
+          "trendPrice": 0.71,
+          "germanProLow": 0,
+          "suggestedPrice": 0,
+          "reverseHoloSell": 0,
+          "reverseHoloLow": 0,
+          "reverseHoloTrend": 0.1,
+          "lowPriceExPlus": 0.15,
+          "avg1": 0.89,
+          "avg7": 0.74,
+          "avg30": 0.69,
+          "reverseHoloAvg1": 0.1,
+          "reverseHoloAvg7": 0.1,
+          "reverseHoloAvg30": 0.1
         }
       }
     }
