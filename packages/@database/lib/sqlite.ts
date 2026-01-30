@@ -127,7 +127,7 @@ export const findAllCards =
 // Users
 export const insertUser = (db: Database) => {
   const stmt = db.prepare(
-    'INSERT INTO users (username, email, password) VALUES (?, ?, ?)'
+    'INSERT OR IGNORE INTO users (username, email, password) VALUES (?, ?, ?)'
   );
   return (username: string, email: string, password: string) =>
     stmt.run(username, email, password);
@@ -149,7 +149,7 @@ export const deleteUser = (db: Database) => {
 // Pokemon Card Sets
 export const insertSet = (db: Database) => {
   const stmt = db.prepare(`
-    INSERT INTO pokemon_card_sets (
+    INSERT OR IGNORE INTO pokemon_card_sets (
       id, name, series, printed_total, total, legalities,
       ptcgo_code, release_date, updated_at, images
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -221,7 +221,7 @@ export const deleteSet = (db: Database) => {
 // Pokemon Cards
 export const insertCard = (db: Database) => {
   const stmt = db.prepare(`
-    INSERT INTO pokemon_cards (
+    INSERT OR IGNORE INTO pokemon_cards (
       id, name, supertype, subtypes, hp, types, evolves_from, evolves_to,
       rules, abilities, attacks, weaknesses, retreat_cost, converted_retreat_cost,
       set_id, number, artist, rarity, flavor_text, national_pokedex_numbers,
