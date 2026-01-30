@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { DeckCard } from './DeckCard';
 import type { Deck } from './types';
 import './DeckCard.css';

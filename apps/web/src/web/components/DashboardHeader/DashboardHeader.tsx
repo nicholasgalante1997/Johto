@@ -1,5 +1,6 @@
 import React from 'react';
 import { ROUTES } from '../../routes';
+import { ThemeSwitcher } from '../ThemeSwitcher';
 import type { DashboardHeaderProps, Breadcrumb } from './types';
 import './DashboardHeader.css';
 
@@ -73,7 +74,10 @@ export function DashboardHeader({
         {title && <h1 className="dashboard-header__title">{title}</h1>}
       </div>
 
-      <div className="dashboard-header__right">{actions}</div>
+      <div className="dashboard-header__right">
+        <ThemeSwitcher variant="compact" />
+        {actions}
+      </div>
     </header>
   );
 }

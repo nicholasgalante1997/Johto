@@ -1,7 +1,11 @@
+/* ============================================
+   Badge Component - Catppuccin Theme
+   ============================================ */
+
 :root {
   --pokemon-badge-radius: 6px;
 
-  /* Type colors based on Pokemon TCG */
+  /* Pokemon Type colors - preserved for TCG accuracy */
   --pokemon-type-colorless: #a8a878;
   --pokemon-type-darkness: #705848;
   --pokemon-type-dragon: #7038f8;
@@ -13,14 +17,6 @@
   --pokemon-type-metal: #b8b8d0;
   --pokemon-type-psychic: #f85888;
   --pokemon-type-water: #6890f0;
-
-  /* Rarity colors */
-  --pokemon-rarity-common: #718096;
-  --pokemon-rarity-uncommon: #4a5568;
-  --pokemon-rarity-rare: #68a0f6;
-  --pokemon-rarity-rare-holo: #9f7aea;
-  --pokemon-rarity-rare-ultra: #f687b3;
-  --pokemon-rarity-rare-secret: #f8d568;
 }
 
 .pokemon-badge {
@@ -28,7 +24,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--pokemon-badge-radius);
-  font-family: 'Fira Sans', sans-serif;
+  font-family: var(--font-sans, 'Fira Sans', sans-serif);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -48,41 +44,41 @@
 
 /* Default variant */
 .pokemon-badge--default {
-  background-color: #e2e8f0;
-  color: #2d3748;
+  background-color: var(--ctp-surface0, #313244);
+  color: var(--ctp-text, #cdd6f4);
 }
 
 /* Primary variant */
 .pokemon-badge--primary {
-  background-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-primary, #cba6f7);
+  color: var(--ctp-crust, #11111b);
 }
 
 /* Secondary variant */
 .pokemon-badge--secondary {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--pico-muted-color, #a1a1aa);
+  background-color: var(--ctp-surface1, #45475a);
+  color: var(--ctp-subtext1, #bac2de);
 }
 
 /* Success variant */
 .pokemon-badge--success {
-  background-color: #22c55e;
-  color: white;
+  background-color: var(--ctp-green, #a6e3a1);
+  color: var(--ctp-crust, #11111b);
 }
 
 /* Error variant */
 .pokemon-badge--error {
-  background-color: #ef4444;
-  color: white;
+  background-color: var(--ctp-red, #f38ba8);
+  color: var(--ctp-crust, #11111b);
 }
 
 /* Warning variant */
 .pokemon-badge--warning {
-  background-color: #f59e0b;
-  color: #1f2937;
+  background-color: var(--ctp-yellow, #f9e2af);
+  color: var(--ctp-crust, #11111b);
 }
 
-/* Type variants */
+/* Type variants - colors are game-accurate */
 .pokemon-badge--type {
   color: #ffffff;
 }
@@ -101,7 +97,7 @@
 
 .pokemon-badge--type-fairy {
   background-color: var(--pokemon-type-fairy);
-  color: #2d3748;
+  color: var(--ctp-crust, #11111b);
 }
 
 .pokemon-badge--type-fighting {
@@ -118,12 +114,12 @@
 
 .pokemon-badge--type-lightning {
   background-color: var(--pokemon-type-lightning);
-  color: #2d3748;
+  color: var(--ctp-crust, #11111b);
 }
 
 .pokemon-badge--type-metal {
   background-color: var(--pokemon-type-metal);
-  color: #2d3748;
+  color: var(--ctp-crust, #11111b);
 }
 
 .pokemon-badge--type-psychic {
@@ -134,37 +130,36 @@
   background-color: var(--pokemon-type-water);
 }
 
-/* Rarity variants */
+/* Rarity variants - using Catppuccin accent colors */
 .pokemon-badge--rarity {
-  color: #ffffff;
+  color: var(--ctp-crust, #11111b);
   font-weight: 700;
 }
 
 .pokemon-badge--rarity-common {
-  background-color: var(--pokemon-rarity-common);
+  background-color: var(--ctp-overlay1, #7f849c);
 }
 
 .pokemon-badge--rarity-uncommon {
-  background-color: var(--pokemon-rarity-uncommon);
+  background-color: var(--ctp-overlay0, #6c7086);
 }
 
 .pokemon-badge--rarity-rare {
-  background-color: var(--pokemon-rarity-rare);
+  background-color: var(--ctp-blue, #89b4fa);
 }
 
 .pokemon-badge--rarity-rare-holo {
-  background: linear-gradient(135deg, #9f7aea 0%, #b794f4 100%);
+  background: linear-gradient(135deg, var(--ctp-mauve, #cba6f7) 0%, var(--ctp-lavender, #b4befe) 100%);
   animation: shimmer 3s ease-in-out infinite;
 }
 
 .pokemon-badge--rarity-rare-ultra {
-  background: linear-gradient(135deg, #f687b3 0%, #fbb6ce 100%);
+  background: linear-gradient(135deg, var(--ctp-pink, #f5c2e7) 0%, var(--ctp-flamingo, #f2cdcd) 100%);
   animation: shimmer 3s ease-in-out infinite;
 }
 
 .pokemon-badge--rarity-rare-secret {
-  background: linear-gradient(135deg, #f8d568 0%, #fad089 100%);
-  color: #2d3748;
+  background: linear-gradient(135deg, var(--ctp-yellow, #f9e2af) 0%, var(--ctp-peach, #fab387) 100%);
   animation: shimmer 3s ease-in-out infinite;
 }
 

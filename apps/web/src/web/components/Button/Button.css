@@ -1,26 +1,10 @@
+/* ============================================
+   Button Component - Catppuccin Theme
+   ============================================ */
+
 :root {
   --pokemon-button-radius: 8px;
   --pokemon-button-transition: all 0.2s ease;
-
-  /* Primary colors */
-  --pokemon-button-primary-bg: #68A0F6;
-  --pokemon-button-primary-hover: #5890E6;
-  --pokemon-button-primary-text: #ffffff;
-
-  /* Secondary colors */
-  --pokemon-button-secondary-bg: #F8D568;
-  --pokemon-button-secondary-hover: #E8C558;
-  --pokemon-button-secondary-text: #2D3748;
-
-  /* Ghost colors */
-  --pokemon-button-ghost-bg: transparent;
-  --pokemon-button-ghost-hover: rgba(104, 160, 246, 0.1);
-  --pokemon-button-ghost-text: #68A0F6;
-
-  /* Danger colors */
-  --pokemon-button-danger-bg: #F87474;
-  --pokemon-button-danger-hover: #E86464;
-  --pokemon-button-danger-text: #ffffff;
 }
 
 .pokemon-button {
@@ -30,7 +14,7 @@
   gap: 0.5rem;
   border: none;
   border-radius: var(--pokemon-button-radius);
-  font-family: 'Fira Sans', sans-serif;
+  font-family: var(--font-sans, 'Fira Sans', sans-serif);
   font-weight: 500;
   cursor: pointer;
   transition: var(--pokemon-button-transition);
@@ -38,7 +22,7 @@
 }
 
 .pokemon-button:focus-visible {
-  outline: 2px solid var(--pokemon-button-primary-bg);
+  outline: 2px solid var(--ctp-primary, #cba6f7);
   outline-offset: 2px;
 }
 
@@ -47,48 +31,51 @@
   cursor: not-allowed;
 }
 
-/* Variants */
+/* Primary variant */
 .pokemon-button--primary {
-  background-color: var(--pokemon-button-primary-bg);
-  color: var(--pokemon-button-primary-text);
+  background-color: var(--ctp-blue, #89b4fa);
+  color: var(--ctp-crust, #11111b);
 }
 
 .pokemon-button--primary:hover:not(:disabled) {
-  background-color: var(--pokemon-button-primary-hover);
+  background-color: var(--ctp-sapphire, #74c7ec);
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(104, 160, 246, 0.3);
+  box-shadow: 0 4px 12px var(--ctp-secondary-glow, rgba(116, 199, 236, 0.3));
 }
 
+/* Secondary variant */
 .pokemon-button--secondary {
-  background-color: var(--pokemon-button-secondary-bg);
-  color: var(--pokemon-button-secondary-text);
+  background-color: var(--ctp-yellow, #f9e2af);
+  color: var(--ctp-crust, #11111b);
 }
 
 .pokemon-button--secondary:hover:not(:disabled) {
-  background-color: var(--pokemon-button-secondary-hover);
+  background-color: var(--ctp-peach, #fab387);
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(248, 213, 104, 0.3);
+  box-shadow: 0 4px 12px var(--ctp-tertiary-glow, rgba(250, 179, 135, 0.3));
 }
 
+/* Ghost variant */
 .pokemon-button--ghost {
-  background-color: var(--pokemon-button-ghost-bg);
-  color: var(--pokemon-button-ghost-text);
-  border: 1px solid var(--pokemon-button-ghost-text);
+  background-color: transparent;
+  color: var(--ctp-primary, #cba6f7);
+  border: 1px solid var(--ctp-primary, #cba6f7);
 }
 
 .pokemon-button--ghost:hover:not(:disabled) {
-  background-color: var(--pokemon-button-ghost-hover);
+  background-color: var(--ctp-primary-muted, rgba(203, 166, 247, 0.12));
 }
 
+/* Danger variant */
 .pokemon-button--danger {
-  background-color: var(--pokemon-button-danger-bg);
-  color: var(--pokemon-button-danger-text);
+  background-color: var(--ctp-red, #f38ba8);
+  color: var(--ctp-crust, #11111b);
 }
 
 .pokemon-button--danger:hover:not(:disabled) {
-  background-color: var(--pokemon-button-danger-hover);
+  background-color: var(--ctp-maroon, #eba0ac);
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(248, 116, 116, 0.3);
+  box-shadow: 0 4px 12px rgba(243, 139, 168, 0.3);
 }
 
 /* Sizes */

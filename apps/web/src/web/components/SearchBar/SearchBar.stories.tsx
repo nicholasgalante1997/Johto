@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { SearchBar } from './SearchBar';
 import type { SearchFilters } from './types';
 import './SearchBar.css';

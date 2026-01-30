@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Card } from './Card';
 import type { Pokemon } from '@pokemon/clients';
 import './Card.css';

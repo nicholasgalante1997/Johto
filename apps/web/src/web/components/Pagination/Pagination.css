@@ -1,3 +1,7 @@
+/* ============================================
+   Pagination Component - Catppuccin Theme
+   ============================================ */
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -22,9 +26,9 @@
   padding: 0 0.75rem;
   margin: 0;
   background-color: transparent;
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+  border: 1px solid var(--ctp-border, #313244);
   border-radius: 8px;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text-primary, #cdd6f4);
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
@@ -32,26 +36,26 @@
 }
 
 .pagination__button:hover:not(:disabled) {
-  background-color: var(--pico-secondary-hover-background, rgba(255, 255, 255, 0.05));
-  border-color: var(--pico-primary, #7c3aed);
-  color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-bg-hover, #313244);
+  border-color: var(--ctp-primary, #cba6f7);
+  color: var(--ctp-primary, #cba6f7);
 }
 
 .pagination__button:focus-visible {
-  outline: 2px solid var(--pico-primary, #7c3aed);
+  outline: 2px solid var(--ctp-primary, #cba6f7);
   outline-offset: 2px;
 }
 
 .pagination__button--active {
-  background-color: var(--pico-primary, #7c3aed);
-  border-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-primary, #cba6f7);
+  border-color: var(--ctp-primary, #cba6f7);
+  color: var(--ctp-crust, #11111b);
 }
 
 .pagination__button--active:hover:not(:disabled) {
-  background-color: var(--pico-primary-hover, #6d28d9);
-  border-color: var(--pico-primary-hover, #6d28d9);
-  color: white;
+  background-color: var(--ctp-primary-hover, #d4b8fa);
+  border-color: var(--ctp-primary-hover, #d4b8fa);
+  color: var(--ctp-crust, #11111b);
 }
 
 .pagination__button--icon {
@@ -69,7 +73,7 @@
   justify-content: center;
   min-width: 36px;
   height: 36px;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
   font-size: 0.875rem;
 }
 

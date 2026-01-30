@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { CardGrid } from './CardGrid';
 import type { Pokemon } from '@pokemon/clients';
 import './CardGrid.css';
