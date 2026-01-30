@@ -1,0 +1,86 @@
+/* ============================================
+   Catppuccin Frappe - Medium Dark Flavor
+   https://catppuccin.com/palette
+   ============================================ */
+
+:root {
+  color-scheme: dark;
+
+  /* Base Colors */
+  --ctp-rosewater: #f2d5cf;
+  --ctp-flamingo: #eebebe;
+  --ctp-pink: #f4b8e4;
+  --ctp-mauve: #ca9ee6;
+  --ctp-red: #e78284;
+  --ctp-maroon: #ea999c;
+  --ctp-peach: #ef9f76;
+  --ctp-yellow: #e5c890;
+  --ctp-green: #a6d189;
+  --ctp-teal: #81c8be;
+  --ctp-sky: #99d1db;
+  --ctp-sapphire: #85c1dc;
+  --ctp-blue: #8caaee;
+  --ctp-lavender: #babbf1;
+
+  /* Surface Colors */
+  --ctp-text: #c6d0f5;
+  --ctp-subtext1: #b5bfe2;
+  --ctp-subtext0: #a5adce;
+  --ctp-overlay2: #949cbb;
+  --ctp-overlay1: #838ba7;
+  --ctp-overlay0: #737994;
+  --ctp-surface2: #626880;
+  --ctp-surface1: #51576d;
+  --ctp-surface0: #414559;
+  --ctp-base: #303446;
+  --ctp-mantle: #292c3c;
+  --ctp-crust: #232634;
+
+  /* Semantic Mappings */
+  --ctp-primary: var(--ctp-mauve);
+  --ctp-primary-hover: #d5b0ea;
+  --ctp-primary-glow: rgba(202, 158, 230, 0.25);
+  --ctp-primary-muted: rgba(202, 158, 230, 0.12);
+
+  --ctp-secondary: var(--ctp-sapphire);
+  --ctp-secondary-hover: #9acce0;
+  --ctp-secondary-glow: rgba(133, 193, 220, 0.25);
+  --ctp-secondary-muted: rgba(133, 193, 220, 0.12);
+
+  --ctp-tertiary: var(--ctp-peach);
+  --ctp-tertiary-glow: rgba(239, 159, 118, 0.25);
+
+  /* Backgrounds */
+  --ctp-bg-base: var(--ctp-crust);
+  --ctp-bg-surface: var(--ctp-mantle);
+  --ctp-bg-elevated: var(--ctp-base);
+  --ctp-bg-hover: var(--ctp-surface0);
+
+  /* Text */
+  --ctp-text-primary: var(--ctp-text);
+  --ctp-text-secondary: var(--ctp-subtext1);
+  --ctp-text-muted: var(--ctp-overlay1);
+  --ctp-text-on-accent: var(--ctp-crust);
+
+  /* Borders */
+  --ctp-border: var(--ctp-surface0);
+  --ctp-border-bright: var(--ctp-surface1);
+  --ctp-border-muted: rgba(255, 255, 255, 0.1);
+
+  /* Semantic Status */
+  --ctp-success: var(--ctp-green);
+  --ctp-warning: var(--ctp-yellow);
+  --ctp-error: var(--ctp-red);
+  --ctp-info: var(--ctp-blue);
+
+  /* Legacy Pico Compatibility */
+  --pico-primary: var(--ctp-mauve);
+  --pico-primary-hover: #d5b0ea;
+  --pico-primary-hover-background: rgba(202, 158, 230, 0.15);
+  --pico-background-color: var(--ctp-crust);
+  --pico-card-background-color: var(--ctp-mantle);
+  --pico-color: var(--ctp-text);
+  --pico-muted-color: var(--ctp-overlay1);
+  --pico-muted-border-color: rgba(255, 255, 255, 0.1);
+  --pico-secondary-hover-background: rgba(255, 255, 255, 0.05);
+}

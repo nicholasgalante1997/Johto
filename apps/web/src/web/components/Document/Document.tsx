@@ -28,11 +28,21 @@ function Document(props: DocumentProps) {
           rel="stylesheet"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
         />
         <link rel="stylesheet" href="/css/index.css" />
         <link rel="stylesheet" href="/css/pages.css" />
+        {/* Default Catppuccin theme - will be swapped by ThemeProvider on client */}
+        <link
+          id="catppuccin-theme"
+          rel="stylesheet"
+          href="/css/themes/catppuccin-mocha.css"
+        />
       </head>
       <body>
         <main>{props.children}</main>

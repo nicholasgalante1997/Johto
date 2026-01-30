@@ -1,3 +1,7 @@
+/* ============================================
+   CardDetail Component - Catppuccin Theme
+   ============================================ */
+
 .card-detail {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -21,7 +25,7 @@
   width: 300px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .card-detail__quantity-badge {
@@ -29,9 +33,9 @@
   top: 0.5rem;
   right: 0.5rem;
   padding: 0.25rem 0.75rem;
-  background-color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-primary, #cba6f7);
   border-radius: 9999px;
-  color: white;
+  color: var(--ctp-crust, #11111b);
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -55,13 +59,13 @@
   margin: 0;
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text-primary, #cdd6f4);
 }
 
 .card-detail__hp {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #ef4444;
+  color: var(--ctp-red, #f38ba8);
 }
 
 /* Types */
@@ -74,14 +78,14 @@
 /* Sections */
 .card-detail__section {
   padding-top: 0.75rem;
-  border-top: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+  border-top: 1px solid var(--ctp-border, #313244);
 }
 
 .card-detail__section-title {
   margin: 0 0 0.75rem 0;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -95,7 +99,7 @@
 
 .card-detail__attack {
   padding: 0.75rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--ctp-bg-elevated, #1e1e2e);
   border-radius: 8px;
 }
 
@@ -122,6 +126,7 @@
   color: white;
 }
 
+/* Energy type colors - game accurate */
 .energy-icon--fire { background-color: #ef4444; }
 .energy-icon--water { background-color: #3b82f6; }
 .energy-icon--grass { background-color: #22c55e; }
@@ -137,19 +142,19 @@
 .card-detail__attack-name {
   flex: 1;
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text-primary, #cdd6f4);
 }
 
 .card-detail__attack-damage {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text-primary, #cdd6f4);
 }
 
 .card-detail__attack-text {
   margin: 0.5rem 0 0 0;
   font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
   line-height: 1.5;
 }
 
@@ -157,7 +162,7 @@
 .card-detail__rules {
   margin: 0;
   padding-left: 1.25rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
   font-size: 0.875rem;
   line-height: 1.6;
 }
@@ -171,7 +176,7 @@
   display: flex;
   gap: 1.5rem;
   padding: 0.75rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--ctp-bg-elevated, #1e1e2e);
   border-radius: 8px;
 }
 
@@ -185,14 +190,14 @@
 
 .card-detail__combat-label {
   font-size: 0.75rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .card-detail__combat-value {
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text-primary, #cdd6f4);
 }
 
 /* Set info */
@@ -202,7 +207,7 @@
   justify-content: space-between;
   gap: 1rem;
   padding: 0.75rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--ctp-bg-elevated, #1e1e2e);
   border-radius: 8px;
 }
 
@@ -220,12 +225,12 @@
 
 .card-detail__set-name {
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text-primary, #cdd6f4);
 }
 
 .card-detail__set-number {
   font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
 }
 
 /* Legality */
@@ -237,13 +242,13 @@
 
 .card-detail__legality-label {
   font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
 }
 
 /* Artist */
 .card-detail__artist {
   font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-text-muted, #7f849c);
 }
 
 /* Actions */
@@ -264,24 +269,24 @@
 }
 
 .card-detail__action-btn--primary {
-  background-color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-primary, #cba6f7);
   border: none;
-  color: white;
+  color: var(--ctp-crust, #11111b);
 }
 
 .card-detail__action-btn--primary:hover {
-  background-color: var(--pico-primary-hover, #6d28d9);
+  background-color: var(--ctp-primary-hover, #d4b8fa);
 }
 
 .card-detail__action-btn--secondary {
   background-color: transparent;
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
-  color: var(--pico-color, #e4e4e7);
+  border: 1px solid var(--ctp-border-bright, #45475a);
+  color: var(--ctp-text-primary, #cdd6f4);
 }
 
 .card-detail__action-btn--secondary:hover {
-  background-color: var(--pico-secondary-hover-background, rgba(255, 255, 255, 0.05));
-  border-color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-bg-hover, #313244);
+  border-color: var(--ctp-primary, #cba6f7);
 }
 
 /* Responsive */

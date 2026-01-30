@@ -8,6 +8,7 @@ import { DashboardHeader } from './components/DashboardHeader';
 import { AppRoutes } from './routes';
 import { CollectionProvider, useCollection } from './contexts/Collection';
 import { DeckProvider, useDecks } from './contexts/Deck';
+import { ThemeProvider } from './contexts/Theme';
 import type { RouterLayerProps } from './routes/types';
 import { QueryProvider } from './providers';
 
@@ -50,13 +51,15 @@ export function App(props: AppProps) {
   }, []);
   return (
     <React.StrictMode>
-      <QueryProvider>
-        <CollectionProvider>
-          <DeckProvider>
-            <AppContent routes={props.routes} />
-          </DeckProvider>
-        </CollectionProvider>
-      </QueryProvider>
+      <ThemeProvider>
+        <QueryProvider>
+          <CollectionProvider>
+            <DeckProvider>
+              <AppContent routes={props.routes} />
+            </DeckProvider>
+          </CollectionProvider>
+        </QueryProvider>
+      </ThemeProvider>
     </React.StrictMode>
   );
 }

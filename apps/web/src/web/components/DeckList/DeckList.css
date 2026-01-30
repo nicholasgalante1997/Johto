@@ -1,3 +1,7 @@
+/* ============================================
+   DeckList Component - Catppuccin Theme
+   ============================================ */
+
 .pokemon-deck-list-container {
   display: flex;
   flex-direction: column;
@@ -17,8 +21,8 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2D3748;
-  font-family: 'Fira Sans', sans-serif;
+  color: var(--ctp-text-primary, #cdd6f4);
+  font-family: var(--font-sans, 'Fira Sans', sans-serif);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -27,7 +31,7 @@
 .pokemon-deck-list__count {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #718096;
+  color: var(--ctp-text-muted, #7f849c);
 }
 
 /* List layouts */
@@ -64,8 +68,8 @@
 .pokemon-deck-list__spinner {
   width: 48px;
   height: 48px;
-  border: 4px solid #E2E8F0;
-  border-top-color: #68A0F6;
+  border: 4px solid var(--ctp-surface1, #45475a);
+  border-top-color: var(--ctp-primary, #cba6f7);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -78,7 +82,7 @@
 
 .pokemon-deck-list__loading p {
   margin: 0;
-  color: #718096;
+  color: var(--ctp-text-muted, #7f849c);
   font-size: 1rem;
 }
 
@@ -102,8 +106,8 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4A5568;
-  font-family: 'Fira Sans', sans-serif;
+  color: var(--ctp-text-secondary, #bac2de);
+  font-family: var(--font-sans, 'Fira Sans', sans-serif);
 }
 
 /* Responsive */
