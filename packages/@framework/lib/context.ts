@@ -48,7 +48,7 @@ function createQueryParams(searchParams: URLSearchParams): QueryParams {
 
     toString() {
       return this.raw.toString();
-    },
+    }
   };
 
   return queryParams;

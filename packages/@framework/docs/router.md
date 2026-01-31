@@ -16,12 +16,12 @@ Routers support all common HTTP methods:
 
 ```typescript
 const cards = createRouter('/api/v1/cards')
-  .get('/', listCards)          // GET /api/v1/cards
-  .get('/:id', getCard)         // GET /api/v1/cards/:id
-  .post('/', createCard)        // POST /api/v1/cards
-  .put('/:id', updateCard)      // PUT /api/v1/cards/:id
-  .patch('/:id', patchCard)     // PATCH /api/v1/cards/:id
-  .delete('/:id', deleteCard);  // DELETE /api/v1/cards/:id
+  .get('/', listCards) // GET /api/v1/cards
+  .get('/:id', getCard) // GET /api/v1/cards/:id
+  .post('/', createCard) // POST /api/v1/cards
+  .put('/:id', updateCard) // PUT /api/v1/cards/:id
+  .patch('/:id', patchCard) // PATCH /api/v1/cards/:id
+  .delete('/:id', deleteCard); // DELETE /api/v1/cards/:id
 ```
 
 ## Path Parameters
@@ -29,14 +29,14 @@ const cards = createRouter('/api/v1/cards')
 Use `:paramName` syntax to capture path segments:
 
 ```typescript
-const router = createRouter('/users')
-  .get('/:userId/posts/:postId', (ctx) => {
-    const { userId, postId } = ctx.params;
-    return ctx.json({ userId, postId });
-  });
+const router = createRouter('/users').get('/:userId/posts/:postId', (ctx) => {
+  const { userId, postId } = ctx.params;
+  return ctx.json({ userId, postId });
+});
 ```
 
 Path parameters are:
+
 - Automatically URL-decoded
 - Available as `ctx.params`
 - Type-safe as `Record<string, string>`
@@ -54,6 +54,7 @@ const adminRouter = createRouter('/admin')
 ```
 
 Middleware execution order:
+
 1. Global middleware (from `app.use()`)
 2. Router middleware (from `router.use()`)
 3. Route handler
@@ -86,21 +87,20 @@ export const setsRouter = createRouter('/api/v1/sets')
 import { cardsRouter } from './routes/cards';
 import { setsRouter } from './routes/sets';
 
-const app = createApp()
-  .routes(cardsRouter)
-  .routes(setsRouter);
+const app = createApp().routes(cardsRouter).routes(setsRouter);
 ```
 
 ## Path Normalization
 
 Paths are automatically normalized:
+
 - Empty paths become `/`
 - Leading slashes are added if missing
 - Trailing slashes are removed
 - Multiple consecutive slashes are collapsed
 
 ```typescript
-createRouter('api/v1');      // becomes /api/v1
-createRouter('/api/v1/');    // becomes /api/v1
+createRouter('api/v1'); // becomes /api/v1
+createRouter('/api/v1/'); // becomes /api/v1
 createRouter('//api//v1//'); // becomes /api/v1
 ```

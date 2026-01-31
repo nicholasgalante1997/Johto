@@ -7,7 +7,14 @@ All TypeScript types exported by the framework.
 ### HttpMethod
 
 ```typescript
-type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 'OPTIONS';
+type HttpMethod =
+  | 'GET'
+  | 'POST'
+  | 'PUT'
+  | 'PATCH'
+  | 'DELETE'
+  | 'HEAD'
+  | 'OPTIONS';
 ```
 
 ## Handler & Middleware

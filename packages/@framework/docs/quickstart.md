@@ -93,21 +93,16 @@ class DatabaseService implements Service {
 }
 
 // Create container
-const container = createContainer()
-  .register('db', () => new DatabaseService());
+const container = createContainer().register('db', () => new DatabaseService());
 
 // Create router
-const api = createRouter('/api')
-  .get('/users', async (ctx) => {
-    const users = await ctx.services.db.query('SELECT * FROM users');
-    return ctx.json({ data: users });
-  });
+const api = createRouter('/api').get('/users', async (ctx) => {
+  const users = await ctx.services.db.query('SELECT * FROM users');
+  return ctx.json({ data: users });
+});
 
 // Create and start app
-const app = createApp({ container })
-  .use(logging)
-  .use(cors())
-  .routes(api);
+const app = createApp({ container }).use(logging).use(cors()).routes(api);
 
 await app.listen(3001, () => {
   console.log('Server running on http://localhost:3001');

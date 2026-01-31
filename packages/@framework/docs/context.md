@@ -7,8 +7,8 @@ The context object provides access to request data and response helpers.
 ### Method and Path
 
 ```typescript
-ctx.method  // 'GET', 'POST', 'PUT', etc.
-ctx.path    // '/api/v1/cards/123'
+ctx.method; // 'GET', 'POST', 'PUT', etc.
+ctx.path; // '/api/v1/cards/123'
 ```
 
 ### Path Parameters
@@ -16,8 +16,8 @@ ctx.path    // '/api/v1/cards/123'
 Captured from route patterns like `/cards/:id`:
 
 ```typescript
-ctx.params.id       // '123'
-ctx.params.userId   // 'abc'
+ctx.params.id; // '123'
+ctx.params.userId; // 'abc'
 ```
 
 ### Query Parameters
@@ -25,24 +25,24 @@ ctx.params.userId   // 'abc'
 ```typescript
 // URL: /search?name=pikachu&page=2&active=true
 
-ctx.query.get('name')              // 'pikachu'
-ctx.query.get('missing')           // undefined
-ctx.query.get('missing', 'default') // 'default'
+ctx.query.get('name'); // 'pikachu'
+ctx.query.get('missing'); // undefined
+ctx.query.get('missing', 'default'); // 'default'
 
-ctx.query.getNumber('page')        // 2
-ctx.query.getNumber('page', 1)     // 2 (or 1 if missing/invalid)
+ctx.query.getNumber('page'); // 2
+ctx.query.getNumber('page', 1); // 2 (or 1 if missing/invalid)
 
-ctx.query.getBool('active')        // true
-ctx.query.has('name')              // true
+ctx.query.getBool('active'); // true
+ctx.query.has('name'); // true
 
-ctx.query.raw                      // URLSearchParams instance
+ctx.query.raw; // URLSearchParams instance
 ```
 
 ### Headers
 
 ```typescript
-ctx.headers.get('authorization')   // 'Bearer xyz...'
-ctx.headers.get('content-type')    // 'application/json'
+ctx.headers.get('authorization'); // 'Bearer xyz...'
+ctx.headers.get('content-type'); // 'application/json'
 ```
 
 ### Request Body
@@ -69,7 +69,7 @@ const cached = await ctx.services.cache.get(key);
 Every request has a unique ID for tracing:
 
 ```typescript
-ctx.requestId  // 'ml1abc12-xyz789'
+ctx.requestId; // 'ml1abc12-xyz789'
 ```
 
 If the incoming request has an `X-Request-ID` header, that value is used. Otherwise, a new ID is generated.
@@ -79,36 +79,36 @@ If the incoming request has an `X-Request-ID` header, that value is used. Otherw
 ### JSON Response
 
 ```typescript
-return ctx.json({ data: cards });           // 200 OK
-return ctx.json({ data: card }, 201);       // 201 Created
-return ctx.json({ data: cards }, 200);      // Explicit status
+return ctx.json({ data: cards }); // 200 OK
+return ctx.json({ data: card }, 201); // 201 Created
+return ctx.json({ data: cards }, 200); // Explicit status
 ```
 
 ### Text Response
 
 ```typescript
-return ctx.text('OK');                      // 200 OK
-return ctx.text('Created', 201);            // 201 Created
+return ctx.text('OK'); // 200 OK
+return ctx.text('Created', 201); // 201 Created
 ```
 
 ### Empty Response
 
 ```typescript
-return ctx.empty();                         // 204 No Content
-return ctx.empty(202);                      // 202 Accepted
+return ctx.empty(); // 204 No Content
+return ctx.empty(202); // 202 Accepted
 ```
 
 ### Error Responses
 
 ```typescript
-return ctx.notFound();                      // 404 Not Found
-return ctx.notFound('Card not found');      // 404 with message
+return ctx.notFound(); // 404 Not Found
+return ctx.notFound('Card not found'); // 404 with message
 
-return ctx.badRequest();                    // 400 Bad Request
-return ctx.badRequest('Invalid card ID');   // 400 with message
+return ctx.badRequest(); // 400 Bad Request
+return ctx.badRequest('Invalid card ID'); // 400 with message
 
-return ctx.error('Something went wrong');   // 500 Internal Error
-return ctx.error('Unauthorized', 401);      // Custom status
+return ctx.error('Something went wrong'); // 500 Internal Error
+return ctx.error('Unauthorized', 401); // Custom status
 ```
 
 Error responses return a standard JSON structure:
@@ -126,7 +126,7 @@ Error responses return a standard JSON structure:
 ## Request Timing
 
 ```typescript
-ctx.startTime  // Date.now() when request started
+ctx.startTime; // Date.now() when request started
 
 // Calculate duration
 const duration = Date.now() - ctx.startTime;
@@ -146,9 +146,7 @@ const SearchSchema = z.object({
 });
 
 router.get('/search', async (ctx) => {
-  const result = SearchSchema.safeParse(
-    Object.fromEntries(ctx.query.raw)
-  );
+  const result = SearchSchema.safeParse(Object.fromEntries(ctx.query.raw));
 
   if (!result.success) {
     return ctx.badRequest(result.error.message);

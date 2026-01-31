@@ -13,23 +13,25 @@ app.use(cors());
 
 ## Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `origins` | `string \| string[]` | `'*'` | Allowed origins |
-| `methods` | `string[]` | `['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS']` | Allowed methods |
-| `headers` | `string[]` | `['Content-Type', 'Authorization', 'X-Request-ID']` | Allowed request headers |
-| `exposeHeaders` | `string[]` | `['X-Request-ID']` | Headers exposed to browser |
-| `credentials` | `boolean` | `false` | Allow credentials |
-| `maxAge` | `number` | `86400` | Preflight cache max age (seconds) |
+| Option          | Type                 | Default                                                        | Description                       |
+| --------------- | -------------------- | -------------------------------------------------------------- | --------------------------------- |
+| `origins`       | `string \| string[]` | `'*'`                                                          | Allowed origins                   |
+| `methods`       | `string[]`           | `['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS']` | Allowed methods                   |
+| `headers`       | `string[]`           | `['Content-Type', 'Authorization', 'X-Request-ID']`            | Allowed request headers           |
+| `exposeHeaders` | `string[]`           | `['X-Request-ID']`                                             | Headers exposed to browser        |
+| `credentials`   | `boolean`            | `false`                                                        | Allow credentials                 |
+| `maxAge`        | `number`             | `86400`                                                        | Preflight cache max age (seconds) |
 
 ## Examples
 
 ### Specific Origins
 
 ```typescript
-app.use(cors({
-  origins: ['http://localhost:3000', 'https://app.example.com']
-}));
+app.use(
+  cors({
+    origins: ['http://localhost:3000', 'https://app.example.com']
+  })
+);
 ```
 
 ### With Credentials
@@ -37,10 +39,12 @@ app.use(cors({
 Required for cookies and authorization headers:
 
 ```typescript
-app.use(cors({
-  origins: ['https://app.example.com'],
-  credentials: true
-}));
+app.use(
+  cors({
+    origins: ['https://app.example.com'],
+    credentials: true
+  })
+);
 ```
 
 > **Note**: When `credentials: true`, you cannot use `'*'` for origins. You must specify exact origins.
@@ -48,18 +52,22 @@ app.use(cors({
 ### Custom Headers
 
 ```typescript
-app.use(cors({
-  headers: ['Content-Type', 'Authorization', 'X-API-Key', 'X-Custom-Header'],
-  exposeHeaders: ['X-Request-ID', 'X-RateLimit-Remaining']
-}));
+app.use(
+  cors({
+    headers: ['Content-Type', 'Authorization', 'X-API-Key', 'X-Custom-Header'],
+    exposeHeaders: ['X-Request-ID', 'X-RateLimit-Remaining']
+  })
+);
 ```
 
 ### Restrict Methods
 
 ```typescript
-app.use(cors({
-  methods: ['GET', 'POST']  // Only allow GET and POST
-}));
+app.use(
+  cors({
+    methods: ['GET', 'POST'] // Only allow GET and POST
+  })
+);
 ```
 
 ## How It Works

@@ -59,7 +59,9 @@ describe('Router', () => {
     });
 
     it('compiles path with multiple params', () => {
-      const { pattern, paramNames } = compilePath('/users/:userId/posts/:postId');
+      const { pattern, paramNames } = compilePath(
+        '/users/:userId/posts/:postId'
+      );
       expect(paramNames).toEqual(['userId', 'postId']);
       expect(pattern.test('/users/1/posts/2')).toBe(true);
     });
@@ -111,9 +113,7 @@ describe('Router', () => {
 
     it('registers middleware', () => {
       const mw = async (ctx: any, next: any) => next();
-      const router = createRouter()
-        .use(mw)
-        .use(mw);
+      const router = createRouter().use(mw).use(mw);
 
       expect(router.middleware).toHaveLength(2);
     });
@@ -126,8 +126,7 @@ describe('Router', () => {
 
 describe('Container', () => {
   it('registers and resolves services', () => {
-    const container = createContainer()
-      .register('value', () => 42);
+    const container = createContainer().register('value', () => 42);
 
     expect(container.get('value')).toBe(42);
   });
@@ -142,8 +141,7 @@ describe('Container', () => {
 
   it('caches singleton instances', () => {
     let callCount = 0;
-    const container = createContainer()
-      .register('counter', () => ++callCount);
+    const container = createContainer().register('counter', () => ++callCount);
 
     container.get('counter');
     container.get('counter');
@@ -154,8 +152,9 @@ describe('Container', () => {
 
   it('creates new instances for transient services', () => {
     let callCount = 0;
-    const container = createContainer()
-      .register('counter', () => ++callCount, { transient: true });
+    const container = createContainer().register('counter', () => ++callCount, {
+      transient: true
+    });
 
     container.get('counter');
     container.get('counter');
@@ -171,8 +170,7 @@ describe('Container', () => {
   });
 
   it('has() returns correct value', () => {
-    const container = createContainer()
-      .register('exists', () => 1);
+    const container = createContainer().register('exists', () => 1);
 
     expect(container.has('exists')).toBe(true);
     expect(container.has('missing')).toBe(false);
@@ -182,11 +180,12 @@ describe('Container', () => {
     let started = false;
 
     const service: Service = {
-      start: () => { started = true; }
+      start: () => {
+        started = true;
+      }
     };
 
-    const container = createContainer()
-      .register('service', () => service);
+    const container = createContainer().register('service', () => service);
 
     await container.start();
     expect(started).toBe(true);
@@ -197,12 +196,20 @@ describe('Container', () => {
 
     const container = createContainer()
       .register('first', () => ({
-        start: () => { order.push('start:first'); },
-        stop: () => { order.push('stop:first'); }
+        start: () => {
+          order.push('start:first');
+        },
+        stop: () => {
+          order.push('stop:first');
+        }
       }))
       .register('second', () => ({
-        start: () => { order.push('start:second'); },
-        stop: () => { order.push('stop:second'); }
+        start: () => {
+          order.push('start:second');
+        },
+        stop: () => {
+          order.push('stop:second');
+        }
       }));
 
     await container.start();
@@ -233,8 +240,9 @@ describe('Container', () => {
 
 describe('Application', () => {
   it('handles basic request', async () => {
-    const app = createApp()
-      .route('GET', '/hello', (ctx) => ctx.json({ message: 'Hello' }));
+    const app = createApp().route('GET', '/hello', (ctx) =>
+      ctx.json({ message: 'Hello' })
+    );
 
     const response = await app.handle(new Request('http://test/hello'));
 
@@ -244,8 +252,9 @@ describe('Application', () => {
   });
 
   it('extracts path params', async () => {
-    const app = createApp()
-      .route('GET', '/cards/:id', (ctx) => ctx.json({ id: ctx.params.id }));
+    const app = createApp().route('GET', '/cards/:id', (ctx) =>
+      ctx.json({ id: ctx.params.id })
+    );
 
     const response = await app.handle(new Request('http://test/cards/abc123'));
     const body = await response.json();
@@ -254,11 +263,12 @@ describe('Application', () => {
   });
 
   it('extracts query params', async () => {
-    const app = createApp()
-      .route('GET', '/search', (ctx) => ctx.json({
+    const app = createApp().route('GET', '/search', (ctx) =>
+      ctx.json({
         name: ctx.query.get('name'),
         page: ctx.query.getNumber('page', 1)
-      }));
+      })
+    );
 
     const response = await app.handle(
       new Request('http://test/search?name=pikachu&page=2')
@@ -321,11 +331,11 @@ describe('Application', () => {
   });
 
   it('provides services in context', async () => {
-    const container = createContainer()
-      .register('greeting', () => 'Hello');
+    const container = createContainer().register('greeting', () => 'Hello');
 
-    const app = createApp({ container })
-      .route('GET', '/', (ctx) => ctx.json({ msg: ctx.services.greeting }));
+    const app = createApp({ container }).route('GET', '/', (ctx) =>
+      ctx.json({ msg: ctx.services.greeting })
+    );
 
     const response = await app.handle(new Request('http://test/'));
     const body = await response.json();
@@ -334,10 +344,9 @@ describe('Application', () => {
   });
 
   it('handles errors gracefully', async () => {
-    const app = createApp()
-      .route('GET', '/error', () => {
-        throw new Error('Test error');
-      });
+    const app = createApp().route('GET', '/error', () => {
+      throw new Error('Test error');
+    });
 
     const response = await app.handle(new Request('http://test/error'));
 
@@ -347,8 +356,7 @@ describe('Application', () => {
   });
 
   it('adds request ID to responses', async () => {
-    const app = createApp()
-      .route('GET', '/', (ctx) => ctx.text('OK'));
+    const app = createApp().route('GET', '/', (ctx) => ctx.text('OK'));
 
     const response = await app.handle(new Request('http://test/'));
 
@@ -356,8 +364,7 @@ describe('Application', () => {
   });
 
   it('preserves incoming request ID', async () => {
-    const app = createApp()
-      .route('GET', '/', (ctx) => ctx.text('OK'));
+    const app = createApp().route('GET', '/', (ctx) => ctx.text('OK'));
 
     const response = await app.handle(
       new Request('http://test/', {
@@ -402,7 +409,9 @@ describe('Middleware', () => {
         })
       );
 
-      expect(response.headers.get('access-control-allow-origin')).toBe('http://example.com');
+      expect(response.headers.get('access-control-allow-origin')).toBe(
+        'http://example.com'
+      );
     });
   });
 });

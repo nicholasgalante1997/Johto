@@ -15,8 +15,7 @@ const app = createApp();
 ```typescript
 import { createApp, createContainer } from '@pokemon/framework';
 
-const container = createContainer()
-  .register('config', () => ({ port: 3001 }));
+const container = createContainer().register('config', () => ({ port: 3001 }));
 
 const app = createApp({ container });
 ```
@@ -66,6 +65,7 @@ await app.listen(3001, () => {
 ```
 
 The `listen` method:
+
 1. Starts all container services (calls `start()`)
 2. Starts the HTTP server
 3. Registers shutdown handlers for `SIGINT` and `SIGTERM`
@@ -75,9 +75,7 @@ The `listen` method:
 For testing, use `handle()` to process requests without starting a server:
 
 ```typescript
-const response = await app.handle(
-  new Request('http://localhost/api/v1/cards')
-);
+const response = await app.handle(new Request('http://localhost/api/v1/cards'));
 
 expect(response.status).toBe(200);
 const body = await response.json();
@@ -104,10 +102,9 @@ const container = createContainer()
   .register('cache', () => new CacheService());
 
 // Services are typed in handlers
-const app = createApp({ container })
-  .route('GET', '/test', (ctx) => {
-    // ctx.services.db is DatabaseService
-    // ctx.services.cache is CacheService
-    return ctx.json({ ok: true });
-  });
+const app = createApp({ container }).route('GET', '/test', (ctx) => {
+  // ctx.services.db is DatabaseService
+  // ctx.services.cache is CacheService
+  return ctx.json({ ok: true });
+});
 ```

@@ -63,10 +63,7 @@ const cards = createRouter('/api/v1/cards')
   });
 
 // 3. Create and start app
-const app = createApp({ container })
-  .use(logging)
-  .use(cors())
-  .routes(cards);
+const app = createApp({ container }).use(logging).use(cors()).routes(cards);
 
 await app.listen(3001, () => console.log('Server running on :3001'));
 ```

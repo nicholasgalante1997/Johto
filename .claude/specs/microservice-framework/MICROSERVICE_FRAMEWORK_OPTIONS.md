@@ -33,15 +33,13 @@ async function listCards(ctx: Context): Promise<Response> {
 }
 
 // apps/rest-api/src/main.ts
-const app = createApp()
-  .use(cards)
-  .use(sets)
-  .use(health);
+const app = createApp().use(cards).use(sets).use(health);
 
 app.listen(3001);
 ```
 
 **Pros**:
+
 - Zero reflection, zero decorators
 - Extremely fast startup
 - Easy to test (just functions)
@@ -49,6 +47,7 @@ app.listen(3001);
 - ~50 lines of framework code
 
 **Cons**:
+
 - No automatic dependency injection
 - Manual wiring required
 - Less discoverable than classes
@@ -88,7 +87,10 @@ class CardsService {
   constructor(private db: DatabaseService) {}
 
   findAll(page: number, limit: number) {
-    return this.db.query('SELECT * FROM cards LIMIT ? OFFSET ?', [limit, (page-1)*limit]);
+    return this.db.query('SELECT * FROM cards LIMIT ? OFFSET ?', [
+      limit,
+      (page - 1) * limit
+    ]);
   }
 }
 
@@ -98,11 +100,10 @@ const container = new Container()
   .register('cards', CardsService, ['db']);
 
 // Define routes referencing services
-const routes = new Router()
-  .get('/api/v1/cards', async (ctx) => {
-    const cards = ctx.services.cards.findAll(ctx.query.page, ctx.query.limit);
-    return ctx.json({ data: cards });
-  });
+const routes = new Router().get('/api/v1/cards', async (ctx) => {
+  const cards = ctx.services.cards.findAll(ctx.query.page, ctx.query.limit);
+  return ctx.json({ data: cards });
+});
 
 // apps/rest-api/src/main.ts
 const app = createApp({ container, routes });
@@ -110,12 +111,14 @@ app.listen(3001);
 ```
 
 **Pros**:
+
 - Explicit dependency graph
 - Services are testable with mocks
 - No magic - you see exactly what's wired
 - Lifecycle hooks (start/stop)
 
 **Cons**:
+
 - Manual dependency declaration
 - Slightly more boilerplate than DI
 
@@ -177,12 +180,14 @@ app.listen(3001);
 ```
 
 **Pros**:
+
 - Zero route configuration
 - File structure mirrors API structure
 - Easy to find code for any endpoint
 - Scales naturally with API growth
 
 **Cons**:
+
 - Build step required for route discovery
 - Harder to see full route picture without file tree
 - Dynamic routing is implicit
@@ -223,18 +228,18 @@ const db = new DatabaseService();
 const cards = new CardsService(db);
 const controller = new CardsController(cards);
 
-const app = createApp()
-  .controller(controller)
-  .listen(3001);
+const app = createApp().controller(controller).listen(3001);
 ```
 
 **Pros**:
+
 - Familiar pattern (NestJS-like)
 - Decorators only for routes
 - Manual DI = explicit dependencies
 - No reflection for DI, only for routes
 
 **Cons**:
+
 - Requires `reflect-metadata`
 - Decorator syntax is polarizing
 - Slightly more ceremony than functional
@@ -284,8 +289,16 @@ class GetCardsHandler implements Handler {
 // Factory wires everything
 function createCardsRoutes(cards: CardsService): Route[] {
   return [
-    { method: 'GET', path: '/api/v1/cards', handler: new GetCardsHandler(cards) },
-    { method: 'GET', path: '/api/v1/cards/:id', handler: new GetCardHandler(cards) },
+    {
+      method: 'GET',
+      path: '/api/v1/cards',
+      handler: new GetCardsHandler(cards)
+    },
+    {
+      method: 'GET',
+      path: '/api/v1/cards/:id',
+      handler: new GetCardHandler(cards)
+    }
   ];
 }
 
@@ -300,12 +313,14 @@ const app = createApp()
 ```
 
 **Pros**:
+
 - Maximum type safety
 - Explicit contracts
 - Easy to test each handler
 - No framework magic
 
 **Cons**:
+
 - More files (one handler per route)
 - Verbose for simple endpoints
 - Factory functions add indirection
@@ -318,17 +333,17 @@ const app = createApp()
 
 ## Comparison Matrix
 
-| Criteria | A: Functional | B: Container | C: File-Based | D: Decorators | E: Protocol |
-|----------|--------------|--------------|---------------|---------------|-------------|
-| Lines of framework code | ~50 | ~150 | ~200 | ~300 | ~100 |
-| Startup time | Fastest | Fast | Medium | Fast | Fast |
-| Runtime overhead | None | Minimal | None | Minimal | None |
-| Learning curve | Low | Low | Very Low | Medium | Medium |
-| Type safety | Good | Good | Good | Excellent | Excellent |
-| Testability | Excellent | Excellent | Good | Excellent | Excellent |
-| IDE support | Good | Good | Limited | Excellent | Excellent |
-| Dependency injection | Manual | Explicit | Manual | Manual | Manual |
-| Code organization | Free-form | Structured | Enforced | Structured | Structured |
+| Criteria                | A: Functional | B: Container | C: File-Based | D: Decorators | E: Protocol |
+| ----------------------- | ------------- | ------------ | ------------- | ------------- | ----------- |
+| Lines of framework code | ~50           | ~150         | ~200          | ~300          | ~100        |
+| Startup time            | Fastest       | Fast         | Medium        | Fast          | Fast        |
+| Runtime overhead        | None          | Minimal      | None          | Minimal       | None        |
+| Learning curve          | Low           | Low          | Very Low      | Medium        | Medium      |
+| Type safety             | Good          | Good         | Good          | Excellent     | Excellent   |
+| Testability             | Excellent     | Excellent    | Good          | Excellent     | Excellent   |
+| IDE support             | Good          | Good         | Limited       | Excellent     | Excellent   |
+| Dependency injection    | Manual        | Explicit     | Manual        | Manual        | Manual      |
+| Code organization       | Free-form     | Structured   | Enforced      | Structured    | Structured  |
 
 ---
 
@@ -372,7 +387,10 @@ interface Context {
 type Handler = (ctx: Context) => Promise<Response> | Response;
 
 // Middleware wraps handlers
-type Middleware = (ctx: Context, next: () => Promise<Response>) => Promise<Response>;
+type Middleware = (
+  ctx: Context,
+  next: () => Promise<Response>
+) => Promise<Response>;
 ```
 
 **Example Application**:
@@ -396,7 +414,10 @@ const cards = createRouter('/api/v1/cards')
   .get('/', async (ctx) => {
     const { page = 1, pageSize = 60 } = ctx.query;
     const result = await ctx.services.cards.findAll({ page, pageSize });
-    return ctx.json({ data: result.cards, meta: { page, pageSize, total: result.total } });
+    return ctx.json({
+      data: result.cards,
+      meta: { page, pageSize, total: result.total }
+    });
   })
   .get('/search', async (ctx) => {
     const { name, type, rarity } = ctx.query;
@@ -428,7 +449,9 @@ const sets = createRouter('/api/v1/sets')
   });
 
 const health = createRouter()
-  .get('/health', (ctx) => ctx.json({ status: 'healthy', timestamp: new Date().toISOString() }))
+  .get('/health', (ctx) =>
+    ctx.json({ status: 'healthy', timestamp: new Date().toISOString() })
+  )
   .get('/ready', async (ctx) => {
     const dbOk = await ctx.services.db.ping();
     return ctx.json({ ready: dbOk }, dbOk ? 200 : 503);
@@ -451,15 +474,15 @@ app.listen(3001, () => console.log('REST API running on :3001'));
 
 ## Framework Implementation Estimate
 
-| Component | Lines | Complexity |
-|-----------|-------|------------|
-| App & Server | ~60 | Low |
-| Router | ~80 | Low |
-| Context | ~50 | Low |
-| Container | ~70 | Low |
-| Middleware pipeline | ~40 | Low |
-| Built-in middleware | ~100 | Low |
-| **Total** | **~400** | **Low** |
+| Component           | Lines    | Complexity |
+| ------------------- | -------- | ---------- |
+| App & Server        | ~60      | Low        |
+| Router              | ~80      | Low        |
+| Context             | ~50      | Low        |
+| Container           | ~70      | Low        |
+| Middleware pipeline | ~40      | Low        |
+| Built-in middleware | ~100     | Low        |
+| **Total**           | **~400** | **Low**    |
 
 ---
 

@@ -121,7 +121,7 @@ const container = createContainer()
   .register('cache', () => new CacheService());
 
 // TypeScript knows the types
-const db = container.get('db');     // DatabaseService
+const db = container.get('db'); // DatabaseService
 const cache = container.get('cache'); // CacheService
 
 // Error: 'unknown' is not a registered service
@@ -133,12 +133,11 @@ container.get('unknown');
 Pass the container when creating the app:
 
 ```typescript
-const app = createApp({ container })
-  .route('GET', '/users', (ctx) => {
-    // ctx.services is typed with all registered services
-    const users = await ctx.services.db.findUsers();
-    return ctx.json({ data: users });
-  });
+const app = createApp({ container }).route('GET', '/users', (ctx) => {
+  // ctx.services is typed with all registered services
+  const users = await ctx.services.db.findUsers();
+  return ctx.json({ data: users });
+});
 ```
 
 ## Example: Full Setup
@@ -165,7 +164,9 @@ class DatabaseService implements Service {
     // Close connection
   }
 
-  query(sql: string) { /* ... */ }
+  query(sql: string) {
+    /* ... */
+  }
 }
 
 // Business logic service
@@ -187,11 +188,10 @@ const container = createContainer()
   .register('db', (c) => new DatabaseService(c.get('config').dbUrl))
   .register('cards', (c) => new CardsService(c.get('db')));
 
-const router = createRouter('/api/v1/cards')
-  .get('/', async (ctx) => {
-    const cards = await ctx.services.cards.findAll();
-    return ctx.json({ data: cards });
-  });
+const router = createRouter('/api/v1/cards').get('/', async (ctx) => {
+  const cards = await ctx.services.cards.findAll();
+  return ctx.json({ data: cards });
+});
 
 const app = createApp({ container }).routes(router);
 

@@ -98,11 +98,13 @@ import { cors } from '@pokemon/framework';
 app.use(cors());
 
 // Specific origins
-app.use(cors({
-  origins: ['http://localhost:3000', 'https://app.example.com'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
+app.use(
+  cors({
+    origins: ['http://localhost:3000', 'https://app.example.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+  })
+);
 ```
 
 See [CORS Middleware](middleware-cors.md) for full options.
@@ -116,10 +118,12 @@ import { logging, createLogging } from '@pokemon/framework';
 app.use(logging);
 
 // Custom logging
-app.use(createLogging({
-  skip: ['/health', '/ready'],
-  logger: (msg) => myLogger.info(msg)
-}));
+app.use(
+  createLogging({
+    skip: ['/health', '/ready'],
+    logger: (msg) => myLogger.info(msg)
+  })
+);
 ```
 
 See [Logging Middleware](middleware-logging.md) for full options.
@@ -133,10 +137,12 @@ import { rateLimit } from '@pokemon/framework';
 app.use(rateLimit({ max: 100, windowMs: 60000 }));
 
 // Custom key generator
-app.use(rateLimit({
-  max: 1000,
-  keyGenerator: (ctx) => ctx.headers.get('x-api-key') || 'anonymous'
-}));
+app.use(
+  rateLimit({
+    max: 1000,
+    keyGenerator: (ctx) => ctx.headers.get('x-api-key') || 'anonymous'
+  })
+);
 ```
 
 See [Rate Limiting Middleware](middleware-ratelimit.md) for full options.
@@ -150,6 +156,7 @@ app.use(securityHeaders);
 ```
 
 Adds:
+
 - `X-Content-Type-Options: nosniff`
 - `X-Frame-Options: DENY`
 - `X-XSS-Protection: 1; mode=block`
@@ -174,6 +181,7 @@ app.use(timing);
 ```
 
 Adds a `Server-Timing` header with request duration:
+
 ```
 Server-Timing: total;dur=12.5
 ```
@@ -184,12 +192,12 @@ Order matters! Middleware runs in registration order:
 
 ```typescript
 app
-  .use(requestId)      // 1st: Ensure request ID exists
-  .use(logging)        // 2nd: Log with request ID
-  .use(errorBoundary)  // 3rd: Catch errors from below
+  .use(requestId) // 1st: Ensure request ID exists
+  .use(logging) // 2nd: Log with request ID
+  .use(errorBoundary) // 3rd: Catch errors from below
   .use(authMiddleware) // 4th: Check authentication
-  .use(rateLimit())    // 5th: Apply rate limits
-  .routes(api);        // Handlers run last
+  .use(rateLimit()) // 5th: Apply rate limits
+  .routes(api); // Handlers run last
 ```
 
 ## Global vs Router Middleware
@@ -197,18 +205,19 @@ app
 **Global middleware** runs for all routes:
 
 ```typescript
-app.use(logging);  // All requests
+app.use(logging); // All requests
 ```
 
 **Router middleware** runs only for routes in that router:
 
 ```typescript
 const adminRouter = createRouter('/admin')
-  .use(adminAuth)  // Only /admin/* routes
+  .use(adminAuth) // Only /admin/* routes
   .get('/users', listUsers);
 ```
 
 Execution order:
+
 1. Global middleware
 2. Router middleware
 3. Handler

@@ -6,6 +6,7 @@ This specification defines `@pokemon/framework` - a TypeScript decorator-based m
 
 **Current Problem:**
 The existing microservices (`apps/rest-api`, `apps/graphql-api`) use ad-hoc patterns with:
+
 - Scattered handler functions without clear organization
 - Manual dependency management
 - Duplicated routing logic
@@ -14,6 +15,7 @@ The existing microservices (`apps/rest-api`, `apps/graphql-api`) use ad-hoc patt
 
 **Proposed Solution:**
 A shared framework package providing:
+
 - Decorator-based controllers and routing (`@Controller`, `@Get`, `@Post`)
 - Dependency injection container (`@Injectable`, `@Inject`)
 - Module system for code organization (`@Module`)
@@ -192,7 +194,14 @@ export class CardsController {
       );
     }
 
-    return this.cardsService.search({ name, type, rarity, setId, page, pageSize });
+    return this.cardsService.search({
+      name,
+      type,
+      rarity,
+      setId,
+      page,
+      pageSize
+    });
   }
 
   @Get('/:id')
@@ -250,10 +259,7 @@ export class CardsService {
   }
 
   async findById(id: string) {
-    return this.db.queryOne(
-      'SELECT * FROM pokemon_cards WHERE id = ?',
-      [id]
-    );
+    return this.db.queryOne('SELECT * FROM pokemon_cards WHERE id = ?', [id]);
   }
 
   async search(options: SearchOptions) {
@@ -290,7 +296,10 @@ export class CardsService {
       [...values, options.pageSize, offset]
     );
 
-    return { data: cards, meta: { total, page: options.page, pageSize: options.pageSize } };
+    return {
+      data: cards,
+      meta: { total, page: options.page, pageSize: options.pageSize }
+    };
   }
 }
 ```
@@ -334,7 +343,11 @@ export class DatabaseService {
     return this.db.query(sql).get(...params) as T | null;
   }
 
-  async count(table: string, where?: string, params: any[] = []): Promise<number> {
+  async count(
+    table: string,
+    where?: string,
+    params: any[] = []
+  ): Promise<number> {
     const sql = where
       ? `SELECT COUNT(*) as count FROM ${table} WHERE ${where}`
       : `SELECT COUNT(*) as count FROM ${table}`;
@@ -359,14 +372,19 @@ import { Injectable, Middleware, RequestContext } from '@pokemon/framework';
 
 @Injectable()
 export class LoggingMiddleware implements Middleware {
-  async use(ctx: RequestContext, next: () => Promise<Response>): Promise<Response> {
+  async use(
+    ctx: RequestContext,
+    next: () => Promise<Response>
+  ): Promise<Response> {
     const start = Date.now();
     console.log(`--> ${ctx.method} ${ctx.path}`);
 
     const response = await next();
 
     const duration = Date.now() - start;
-    console.log(`<-- ${ctx.method} ${ctx.path} ${response.status} ${duration}ms`);
+    console.log(
+      `<-- ${ctx.method} ${ctx.path} ${response.status} ${duration}ms`
+    );
 
     return response;
   }
@@ -379,7 +397,13 @@ Guards determine if a request should be handled (authentication, authorization).
 
 ```typescript
 // apps/rest-api/src/guards/api-key.guard.ts
-import { Injectable, Guard, RequestContext, HttpException, HttpStatus } from '@pokemon/framework';
+import {
+  Injectable,
+  Guard,
+  RequestContext,
+  HttpException,
+  HttpStatus
+} from '@pokemon/framework';
 
 @Injectable()
 export class ApiKeyGuard implements Guard {
@@ -408,53 +432,53 @@ export class AdminController {
 
 ### Controller Decorators
 
-| Decorator | Target | Description |
-|-----------|--------|-------------|
-| `@Controller(path)` | Class | Marks class as controller with base path |
-| `@Get(path?)` | Method | HTTP GET route |
-| `@Post(path?)` | Method | HTTP POST route |
-| `@Put(path?)` | Method | HTTP PUT route |
-| `@Patch(path?)` | Method | HTTP PATCH route |
-| `@Delete(path?)` | Method | HTTP DELETE route |
+| Decorator           | Target | Description                              |
+| ------------------- | ------ | ---------------------------------------- |
+| `@Controller(path)` | Class  | Marks class as controller with base path |
+| `@Get(path?)`       | Method | HTTP GET route                           |
+| `@Post(path?)`      | Method | HTTP POST route                          |
+| `@Put(path?)`       | Method | HTTP PUT route                           |
+| `@Patch(path?)`     | Method | HTTP PATCH route                         |
+| `@Delete(path?)`    | Method | HTTP DELETE route                        |
 
 ### Parameter Decorators
 
-| Decorator | Target | Description |
-|-----------|--------|-------------|
-| `@Param(name)` | Parameter | Extract path parameter |
-| `@Query(name)` | Parameter | Extract query parameter |
-| `@Body()` | Parameter | Extract request body |
-| `@Headers(name?)` | Parameter | Extract header(s) |
-| `@Ctx()` | Parameter | Inject request context |
-| `@Req()` | Parameter | Inject raw request |
+| Decorator         | Target    | Description             |
+| ----------------- | --------- | ----------------------- |
+| `@Param(name)`    | Parameter | Extract path parameter  |
+| `@Query(name)`    | Parameter | Extract query parameter |
+| `@Body()`         | Parameter | Extract request body    |
+| `@Headers(name?)` | Parameter | Extract header(s)       |
+| `@Ctx()`          | Parameter | Inject request context  |
+| `@Req()`          | Parameter | Inject raw request      |
 
 ### DI Decorators
 
-| Decorator | Target | Description |
-|-----------|--------|-------------|
-| `@Injectable(options?)` | Class | Marks class for DI (singleton by default) |
-| `@Inject(token)` | Parameter | Inject dependency by token |
-| `@Optional()` | Parameter | Mark dependency as optional |
+| Decorator               | Target    | Description                               |
+| ----------------------- | --------- | ----------------------------------------- |
+| `@Injectable(options?)` | Class     | Marks class for DI (singleton by default) |
+| `@Inject(token)`        | Parameter | Inject dependency by token                |
+| `@Optional()`           | Parameter | Mark dependency as optional               |
 
 ### Module Decorators
 
-| Decorator | Target | Description |
-|-----------|--------|-------------|
-| `@Module(options)` | Class | Defines a module |
+| Decorator          | Target | Description      |
+| ------------------ | ------ | ---------------- |
+| `@Module(options)` | Class  | Defines a module |
 
 ### Lifecycle Decorators
 
-| Decorator | Target | Description |
-|-----------|--------|-------------|
-| `@OnStart()` | Method | Called when application starts |
+| Decorator       | Target | Description                        |
+| --------------- | ------ | ---------------------------------- |
+| `@OnStart()`    | Method | Called when application starts     |
 | `@OnShutdown()` | Method | Called when application shuts down |
 
 ### Middleware Decorators
 
-| Decorator | Target | Description |
-|-----------|--------|-------------|
+| Decorator                       | Target       | Description      |
+| ------------------------------- | ------------ | ---------------- |
 | `@UseMiddleware(...middleware)` | Class/Method | Apply middleware |
-| `@UseGuard(...guards)` | Class/Method | Apply guards |
+| `@UseGuard(...guards)`          | Class/Method | Apply guards     |
 
 ---
 
@@ -522,12 +546,23 @@ export class Application {
     for (const [, metadata] of this.modules) {
       for (const controllerClass of metadata.controllers || []) {
         const controller = this.container.resolve(controllerClass);
-        const routes = Reflect.getMetadata(ROUTES_METADATA_KEY, controllerClass);
-        const basePath = Reflect.getMetadata(CONTROLLER_PATH_KEY, controllerClass);
+        const routes = Reflect.getMetadata(
+          ROUTES_METADATA_KEY,
+          controllerClass
+        );
+        const basePath = Reflect.getMetadata(
+          CONTROLLER_PATH_KEY,
+          controllerClass
+        );
 
         for (const route of routes || []) {
           const fullPath = this.normalizePath(basePath + route.path);
-          this.router.register(route.method, fullPath, controller, route.handler);
+          this.router.register(
+            route.method,
+            fullPath,
+            controller,
+            route.handler
+          );
         }
       }
     }
@@ -593,7 +628,10 @@ export class Container {
 
   register(provider: Function | ProviderDefinition): void {
     if (typeof provider === 'function') {
-      this.definitions.set(provider, { useClass: provider, scope: 'singleton' });
+      this.definitions.set(provider, {
+        useClass: provider,
+        scope: 'singleton'
+      });
     } else {
       this.definitions.set(provider.provide, provider);
     }
@@ -611,7 +649,8 @@ export class Container {
     }
 
     // Resolve dependencies
-    const paramTypes = Reflect.getMetadata('design:paramtypes', definition.useClass) || [];
+    const paramTypes =
+      Reflect.getMetadata('design:paramtypes', definition.useClass) || [];
     const dependencies = paramTypes.map((type: Function) => this.resolve(type));
 
     // Create instance
@@ -628,7 +667,10 @@ export class Container {
   async initializeAll(): Promise<void> {
     for (const [token] of this.definitions) {
       const instance = this.resolve(token);
-      const onStartMethod = Reflect.getMetadata(ON_START_KEY, instance.constructor);
+      const onStartMethod = Reflect.getMetadata(
+        ON_START_KEY,
+        instance.constructor
+      );
       if (onStartMethod) {
         await instance[onStartMethod]();
       }
@@ -637,7 +679,10 @@ export class Container {
 
   async shutdownAll(): Promise<void> {
     for (const [, instance] of this.instances) {
-      const onShutdownMethod = Reflect.getMetadata(ON_SHUTDOWN_KEY, instance.constructor);
+      const onShutdownMethod = Reflect.getMetadata(
+        ON_SHUTDOWN_KEY,
+        instance.constructor
+      );
       if (onShutdownMethod) {
         await instance[onShutdownMethod]();
       }
@@ -778,7 +823,14 @@ The framework extends to support GraphQL with similar patterns:
 
 ```typescript
 // apps/graphql-api/src/cards/cards.resolver.ts
-import { Resolver, Query, Arg, Ctx, FieldResolver, Root } from '@pokemon/framework/graphql';
+import {
+  Resolver,
+  Query,
+  Arg,
+  Ctx,
+  FieldResolver,
+  Root
+} from '@pokemon/framework/graphql';
 import { CardsService } from './cards.service';
 import { SetsService } from '../sets/sets.service';
 
@@ -825,6 +877,7 @@ export class CardsResolver {
 ### Phase 2: Migrate REST API
 
 **Before:**
+
 ```typescript
 // apps/rest-api/src/handlers/cards/getCards.ts
 export async function getCards(
@@ -840,6 +893,7 @@ export async function getCards(
 ```
 
 **After:**
+
 ```typescript
 // apps/rest-api/src/cards/cards.controller.ts
 @Controller('/api/v1/cards')
@@ -949,9 +1003,7 @@ describe('CardsController', () => {
     };
 
     app = await TestApplication.create(CardsController, {
-      providers: [
-        { provide: CardsService, useValue: mockCardsService }
-      ]
+      providers: [{ provide: CardsService, useValue: mockCardsService }]
     });
   });
 
@@ -1033,20 +1085,21 @@ apps/rest-api/
 
 ## Success Criteria
 
-| Criteria | Metric |
-|----------|--------|
-| Code Clarity | Controllers are self-documenting via decorators |
-| Testability | 90%+ coverage achievable with DI mocking |
-| Consistency | Same patterns across REST, GraphQL, and BFF |
-| Developer Experience | <5 min to add new endpoint |
-| Performance | <5ms framework overhead per request |
-| Type Safety | Full TypeScript inference for DI and routes |
+| Criteria             | Metric                                          |
+| -------------------- | ----------------------------------------------- |
+| Code Clarity         | Controllers are self-documenting via decorators |
+| Testability          | 90%+ coverage achievable with DI mocking        |
+| Consistency          | Same patterns across REST, GraphQL, and BFF     |
+| Developer Experience | <5 min to add new endpoint                      |
+| Performance          | <5ms framework overhead per request             |
+| Type Safety          | Full TypeScript inference for DI and routes     |
 
 ---
 
 ## Implementation Phases
 
 ### Phase 1: Core Framework (Week 1)
+
 - [ ] Set up `packages/@framework` structure
 - [ ] Implement `reflect-metadata` decorators
 - [ ] Build DI Container with constructor injection
@@ -1054,29 +1107,34 @@ apps/rest-api/
 - [ ] Add basic middleware pipeline
 
 ### Phase 2: HTTP Layer (Week 1)
+
 - [ ] Implement RequestContext
 - [ ] Build ResponseBuilder with fluent API
 - [ ] Create HttpException hierarchy
 - [ ] Add parameter decorators (@Param, @Query, @Body)
 
 ### Phase 3: Module System (Week 2)
+
 - [ ] Implement @Module decorator
 - [ ] Build module loader with import resolution
 - [ ] Add lifecycle hooks (@OnStart, @OnShutdown)
 - [ ] Create Application bootstrap
 
 ### Phase 4: Migrate REST API (Week 2)
+
 - [ ] Refactor to module structure
 - [ ] Convert handlers to controllers
 - [ ] Extract services from handlers
 - [ ] Add middleware via decorators
 
 ### Phase 5: GraphQL Support (Week 3)
+
 - [ ] Add GraphQL-specific decorators
 - [ ] Integrate with Apollo Server
 - [ ] Migrate GraphQL API
 
 ### Phase 6: Testing & Documentation (Week 3)
+
 - [ ] Build TestApplication harness
 - [ ] Create MockContainer utilities
 - [ ] Write framework documentation
@@ -1108,7 +1166,8 @@ export function Controller(path: string = ''): ClassDecorator {
 function createRouteDecorator(method: string) {
   return (path: string = ''): MethodDecorator => {
     return (target, propertyKey, descriptor) => {
-      const routes = Reflect.getMetadata(ROUTES_METADATA_KEY, target.constructor) || [];
+      const routes =
+        Reflect.getMetadata(ROUTES_METADATA_KEY, target.constructor) || [];
       routes.push({
         method,
         path,
@@ -1130,11 +1189,20 @@ export const PARAMS_METADATA_KEY = Symbol('params');
 
 type ParamType = 'param' | 'query' | 'body' | 'headers' | 'context' | 'request';
 
-function createParamDecorator(type: ParamType, key?: string): ParameterDecorator {
+function createParamDecorator(
+  type: ParamType,
+  key?: string
+): ParameterDecorator {
   return (target, propertyKey, parameterIndex) => {
-    const existingParams = Reflect.getMetadata(PARAMS_METADATA_KEY, target, propertyKey!) || [];
+    const existingParams =
+      Reflect.getMetadata(PARAMS_METADATA_KEY, target, propertyKey!) || [];
     existingParams.push({ type, key, index: parameterIndex });
-    Reflect.defineMetadata(PARAMS_METADATA_KEY, existingParams, target, propertyKey!);
+    Reflect.defineMetadata(
+      PARAMS_METADATA_KEY,
+      existingParams,
+      target,
+      propertyKey!
+    );
   };
 }
 

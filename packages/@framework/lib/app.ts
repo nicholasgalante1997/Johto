@@ -34,7 +34,6 @@ export interface AppOptions<S extends ServiceMap = ServiceMap> {
  * @typeParam S - Service map type for typed service access
  */
 export interface App<S extends ServiceMap = ServiceMap> {
-
   /**
    * The underlying instance of the Bun.Server
    * Will be null until app.listen() is called

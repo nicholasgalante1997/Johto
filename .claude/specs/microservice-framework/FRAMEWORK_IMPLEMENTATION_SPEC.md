@@ -42,7 +42,14 @@ packages/@framework/
 /**
  * HTTP methods supported by the framework
  */
-export type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 'OPTIONS';
+export type HttpMethod =
+  | 'GET'
+  | 'POST'
+  | 'PUT'
+  | 'PATCH'
+  | 'DELETE'
+  | 'HEAD'
+  | 'OPTIONS';
 
 /**
  * Query parameter accessor with type coercion
@@ -145,7 +152,9 @@ export interface Route<S extends ServiceMap = ServiceMap> {
 /**
  * Compiled route with regex pattern
  */
-export interface CompiledRoute<S extends ServiceMap = ServiceMap> extends Route<S> {
+export interface CompiledRoute<
+  S extends ServiceMap = ServiceMap
+> extends Route<S> {
   pattern: RegExp;
   paramNames: string[];
 }
@@ -155,7 +164,7 @@ export interface CompiledRoute<S extends ServiceMap = ServiceMap> extends Route<
 
 ## Service Container
 
-```typescript
+````typescript
 // src/container.ts
 
 import type { Service, ServiceMap } from './types';
@@ -247,7 +256,10 @@ export interface Container<S extends ServiceMap = ServiceMap> {
  * ```
  */
 export function createContainer(): Container<{}> {
-  const factories = new Map<string, { factory: ServiceFactory<unknown, any>; options: ServiceOptions }>();
+  const factories = new Map<
+    string,
+    { factory: ServiceFactory<unknown, any>; options: ServiceOptions }
+  >();
   const instances = new Map<string, unknown>();
   const startOrder: string[] = [];
 
@@ -316,16 +328,23 @@ export function createContainer(): Container<{}> {
 
   return container;
 }
-```
+````
 
 ---
 
 ## Router
 
-```typescript
+````typescript
 // src/router.ts
 
-import type { HttpMethod, Handler, Middleware, Route, CompiledRoute, ServiceMap } from './types';
+import type {
+  HttpMethod,
+  Handler,
+  Middleware,
+  Route,
+  CompiledRoute,
+  ServiceMap
+} from './types';
 
 /**
  * Route builder for composing HTTP routes.
@@ -388,7 +407,9 @@ export interface Router<S extends ServiceMap = ServiceMap> {
  * const health = createRouter(); // No base path
  * ```
  */
-export function createRouter<S extends ServiceMap = ServiceMap>(basePath: string = ''): Router<S> {
+export function createRouter<S extends ServiceMap = ServiceMap>(
+  basePath: string = ''
+): Router<S> {
   const routes: Route<S>[] = [];
   const middlewares: Middleware<S>[] = [];
 
@@ -412,9 +433,15 @@ export function createRouter<S extends ServiceMap = ServiceMap>(basePath: string
     head: (path, handler) => addRoute('HEAD', path, handler),
     options: (path, handler) => addRoute('OPTIONS', path, handler),
 
-    get routes() { return routes; },
-    get middleware() { return middlewares; },
-    get basePath() { return basePath; }
+    get routes() {
+      return routes;
+    },
+    get middleware() {
+      return middlewares;
+    },
+    get basePath() {
+      return basePath;
+    }
   };
 
   return router;
@@ -440,7 +467,10 @@ function normalizePath(path: string): string {
  * // { pattern: /^\/users\/([^/]+)\/posts\/([^/]+)\/?$/, paramNames: ['id', 'postId'] }
  * ```
  */
-export function compilePath(path: string): { pattern: RegExp; paramNames: string[] } {
+export function compilePath(path: string): {
+  pattern: RegExp;
+  paramNames: string[];
+} {
   const paramNames: string[] = [];
 
   const pattern = path.replace(/:([^/]+)/g, (_, name) => {
@@ -473,7 +503,7 @@ export function matchRoute(
 
   return params;
 }
-```
+````
 
 ---
 
@@ -606,10 +636,16 @@ export function createContext<S extends ServiceMap>(
 
 ## Application
 
-```typescript
+````typescript
 // src/app.ts
 
-import type { Handler, Middleware, ServiceMap, CompiledRoute, Context } from './types';
+import type {
+  Handler,
+  Middleware,
+  ServiceMap,
+  CompiledRoute,
+  Context
+} from './types';
 import type { Container } from './container';
 import type { Router } from './router';
 import { createContext } from './context';
@@ -680,7 +716,9 @@ export function createApp<S extends ServiceMap = ServiceMap>(
 ): App<S> {
   const { container } = options;
   const globalMiddleware: Middleware<S>[] = [];
-  const compiledRoutes: Array<CompiledRoute<S> & { middleware: Middleware<S>[] }> = [];
+  const compiledRoutes: Array<
+    CompiledRoute<S> & { middleware: Middleware<S>[] }
+  > = [];
 
   const services = (container?.services ?? {}) as S;
 
@@ -809,13 +847,13 @@ export function createApp<S extends ServiceMap = ServiceMap>(
 
   return app;
 }
-```
+````
 
 ---
 
 ## Built-in Middleware
 
-```typescript
+````typescript
 // src/middleware.ts
 
 import type { Middleware, Context } from './types';
@@ -860,7 +898,8 @@ export function cors(options: CorsOptions = {}): Middleware {
 
   return async (ctx, next) => {
     const origin = ctx.headers.get('origin');
-    const isAllowed = allowedOrigins.includes('*') ||
+    const isAllowed =
+      allowedOrigins.includes('*') ||
       (origin && allowedOrigins.includes(origin));
 
     // Handle preflight
@@ -868,7 +907,7 @@ export function cors(options: CorsOptions = {}): Middleware {
       return new Response(null, {
         status: 204,
         headers: {
-          'access-control-allow-origin': isAllowed ? (origin || '*') : '',
+          'access-control-allow-origin': isAllowed ? origin || '*' : '',
           'access-control-allow-methods': methods.join(', '),
           'access-control-allow-headers': headers.join(', '),
           'access-control-max-age': String(maxAge),
@@ -969,7 +1008,9 @@ export function rateLimit(options: RateLimitOptions = {}): Middleware {
     if (record.count > max) {
       const retryAfter = Math.ceil((record.resetTime - now) / 1000);
       return new Response(
-        JSON.stringify({ error: { code: 'RATE_LIMITED', message: 'Too many requests' } }),
+        JSON.stringify({
+          error: { code: 'RATE_LIMITED', message: 'Too many requests' }
+        }),
         {
           status: 429,
           headers: {
@@ -989,7 +1030,10 @@ export function rateLimit(options: RateLimitOptions = {}): Middleware {
     const headers = new Headers(response.headers);
     headers.set('x-ratelimit-limit', String(max));
     headers.set('x-ratelimit-remaining', String(max - record.count));
-    headers.set('x-ratelimit-reset', String(Math.ceil(record.resetTime / 1000)));
+    headers.set(
+      'x-ratelimit-reset',
+      String(Math.ceil(record.resetTime / 1000))
+    );
 
     return new Response(response.body, {
       status: response.status,
@@ -1019,7 +1063,7 @@ export const securityHeaders: Middleware = async (ctx, next) => {
     headers
   });
 };
-```
+````
 
 ---
 
@@ -1119,7 +1163,12 @@ const cards = createRouter<Services>('/api/v1/cards')
       return ctx.badRequest('At least one search parameter required');
     }
 
-    const cards = await ctx.services.cards.search({ name, type, rarity, setId });
+    const cards = await ctx.services.cards.search({
+      name,
+      type,
+      rarity,
+      setId
+    });
     return ctx.json({ data: cards });
   })
 
@@ -1156,8 +1205,14 @@ const sets = createRouter<Services>('/api/v1/sets')
     const page = ctx.query.getNumber('page', 1);
     const pageSize = ctx.query.getNumber('pageSize', 60);
 
-    const result = await ctx.services.cards.findBySet(ctx.params.id, { page, pageSize });
-    return ctx.json({ data: result.cards, meta: { page, pageSize, total: result.total } });
+    const result = await ctx.services.cards.findBySet(ctx.params.id, {
+      page,
+      pageSize
+    });
+    return ctx.json({
+      data: result.cards,
+      meta: { page, pageSize, total: result.total }
+    });
   });
 
 const health = createRouter<Services>()
@@ -1256,7 +1311,6 @@ export class DatabaseService implements Service {
   }
 }
 
-
 // apps/rest-api/src/services/cards.ts
 
 import { DatabaseService } from './database';
@@ -1331,7 +1385,10 @@ export class CardsService {
     }
 
     const where = conditions.join(' AND ');
-    return this.db.query(`SELECT * FROM pokemon_cards WHERE ${where} ORDER BY name`, values);
+    return this.db.query(
+      `SELECT * FROM pokemon_cards WHERE ${where} ORDER BY name`,
+      values
+    );
   }
 }
 ```
@@ -1349,11 +1406,11 @@ import { createApp, createRouter, createContainer } from '@pokemon/framework';
 // Mock service
 const mockCardsService = {
   findAll: async () => ({ cards: [{ id: '1', name: 'Pikachu' }], total: 1 }),
-  findById: async (id: string) => id === '1' ? { id: '1', name: 'Pikachu' } : null,
+  findById: async (id: string) =>
+    id === '1' ? { id: '1', name: 'Pikachu' } : null
 };
 
-const container = createContainer()
-  .register('cards', () => mockCardsService);
+const container = createContainer().register('cards', () => mockCardsService);
 
 const router = createRouter<typeof container.services>('/api/v1/cards')
   .get('/', async (ctx) => {
@@ -1397,16 +1454,16 @@ describe('Cards API', () => {
 
 ## Implementation Plan
 
-| Phase | Task | Est. Lines |
-|-------|------|------------|
-| 1 | `types.ts` - Core type definitions | ~60 |
-| 2 | `container.ts` - Service container | ~80 |
-| 3 | `router.ts` - Route builder & matcher | ~70 |
-| 4 | `context.ts` - Request context | ~80 |
-| 5 | `app.ts` - Application & server | ~100 |
-| 6 | `middleware.ts` - Built-in middleware | ~120 |
-| 7 | `index.ts` - Public exports | ~20 |
-| **Total** | | **~530** |
+| Phase     | Task                                  | Est. Lines |
+| --------- | ------------------------------------- | ---------- |
+| 1         | `types.ts` - Core type definitions    | ~60        |
+| 2         | `container.ts` - Service container    | ~80        |
+| 3         | `router.ts` - Route builder & matcher | ~70        |
+| 4         | `context.ts` - Request context        | ~80        |
+| 5         | `app.ts` - Application & server       | ~100       |
+| 6         | `middleware.ts` - Built-in middleware | ~120       |
+| 7         | `index.ts` - Public exports           | ~20        |
+| **Total** |                                       | **~530**   |
 
 ### Deliverables
 
@@ -1455,13 +1512,13 @@ function validate<T>(schema: z.ZodSchema<T>, data: unknown): T {
 
 ## Questions Resolved
 
-| Question | Decision |
-|----------|----------|
-| Service lifecycle | Container-managed via `start()`/`stop()` |
-| Validation | Bring-your-own (Zod recommended) |
-| GraphQL | Deferred to separate spec |
-| DI approach | Explicit factory functions, no reflection |
-| Decorators | None - pure functions and composition |
+| Question          | Decision                                  |
+| ----------------- | ----------------------------------------- |
+| Service lifecycle | Container-managed via `start()`/`stop()`  |
+| Validation        | Bring-your-own (Zod recommended)          |
+| GraphQL           | Deferred to separate spec                 |
+| DI approach       | Explicit factory functions, no reflection |
+| Decorators        | None - pure functions and composition     |
 
 ---
 

@@ -3,7 +3,13 @@
  * Provides a fluent API for defining HTTP routes with path parameters.
  */
 
-import type { HttpMethod, Handler, Middleware, Route, ServiceMap } from './types';
+import type {
+  HttpMethod,
+  Handler,
+  Middleware,
+  Route,
+  ServiceMap
+} from './types';
 
 /**
  * Route builder for composing HTTP routes with a fluent API.
@@ -113,7 +119,11 @@ export function createRouter<S extends ServiceMap = ServiceMap>(
   /**
    * Add a route to the router
    */
-  const addRoute = (method: HttpMethod, path: string, handler: Handler<S>): Router<S> => {
+  const addRoute = (
+    method: HttpMethod,
+    path: string,
+    handler: Handler<S>
+  ): Router<S> => {
     const fullPath = normalizePath(basePath + path);
     routes.push({ method, path: fullPath, handler });
     return router;
@@ -171,9 +181,7 @@ export function normalizePath(path: string): string {
   }
 
   // Collapse multiple slashes, ensure leading slash, remove trailing slash
-  const normalized = '/' + path
-    .replace(/\/+/g, '/')
-    .replace(/^\/+|\/+$/g, '');
+  const normalized = '/' + path.replace(/\/+/g, '/').replace(/^\/+|\/+$/g, '');
 
   return normalized || '/';
 }

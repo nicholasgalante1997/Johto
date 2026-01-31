@@ -13,12 +13,12 @@ app.use(rateLimit());
 
 ## Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `windowMs` | `number` | `60000` | Time window in milliseconds |
-| `max` | `number` | `100` | Max requests per window |
-| `keyGenerator` | `(ctx) => string` | IP-based | Function to generate client key |
-| `handler` | `(ctx, retryAfter) => Response` | JSON error | Custom rate limit response |
+| Option         | Type                            | Default    | Description                     |
+| -------------- | ------------------------------- | ---------- | ------------------------------- |
+| `windowMs`     | `number`                        | `60000`    | Time window in milliseconds     |
+| `max`          | `number`                        | `100`      | Max requests per window         |
+| `keyGenerator` | `(ctx) => string`               | IP-based   | Function to generate client key |
+| `handler`      | `(ctx, retryAfter) => Response` | JSON error | Custom rate limit response      |
 
 ## Examples
 
@@ -26,72 +26,86 @@ app.use(rateLimit());
 
 ```typescript
 // 1000 requests per minute
-app.use(rateLimit({
-  max: 1000,
-  windowMs: 60000
-}));
+app.use(
+  rateLimit({
+    max: 1000,
+    windowMs: 60000
+  })
+);
 
 // 10 requests per second (burst protection)
-app.use(rateLimit({
-  max: 10,
-  windowMs: 1000
-}));
+app.use(
+  rateLimit({
+    max: 10,
+    windowMs: 1000
+  })
+);
 ```
 
 ### By API Key
 
 ```typescript
-app.use(rateLimit({
-  max: 10000,
-  keyGenerator: (ctx) => {
-    return ctx.headers.get('x-api-key') || 'anonymous';
-  }
-}));
+app.use(
+  rateLimit({
+    max: 10000,
+    keyGenerator: (ctx) => {
+      return ctx.headers.get('x-api-key') || 'anonymous';
+    }
+  })
+);
 ```
 
 ### By User ID
 
 ```typescript
-app.use(rateLimit({
-  max: 100,
-  keyGenerator: (ctx) => {
-    // Assumes auth middleware ran first and set user
-    return ctx.user?.id || ctx.headers.get('x-forwarded-for') || 'anonymous';
-  }
-}));
+app.use(
+  rateLimit({
+    max: 100,
+    keyGenerator: (ctx) => {
+      // Assumes auth middleware ran first and set user
+      return ctx.user?.id || ctx.headers.get('x-forwarded-for') || 'anonymous';
+    }
+  })
+);
 ```
 
 ### Custom Response
 
 ```typescript
-app.use(rateLimit({
-  max: 100,
-  handler: (ctx, retryAfter) => {
-    return new Response(JSON.stringify({
-      error: 'Slow down!',
-      retryAfter
-    }), {
-      status: 429,
-      headers: {
-        'content-type': 'application/json',
-        'retry-after': String(retryAfter)
-      }
-    });
-  }
-}));
+app.use(
+  rateLimit({
+    max: 100,
+    handler: (ctx, retryAfter) => {
+      return new Response(
+        JSON.stringify({
+          error: 'Slow down!',
+          retryAfter
+        }),
+        {
+          status: 429,
+          headers: {
+            'content-type': 'application/json',
+            'retry-after': String(retryAfter)
+          }
+        }
+      );
+    }
+  })
+);
 ```
 
 ## Response Headers
 
 The middleware adds rate limit headers to all responses:
 
-| Header | Description |
-|--------|-------------|
-| `X-RateLimit-Limit` | Max requests allowed |
-| `X-RateLimit-Remaining` | Requests remaining in window |
-| `X-RateLimit-Reset` | Unix timestamp when window resets |
+| Header                  | Description                       |
+| ----------------------- | --------------------------------- |
+| `X-RateLimit-Limit`     | Max requests allowed              |
+| `X-RateLimit-Remaining` | Requests remaining in window      |
+| `X-RateLimit-Reset`     | Unix timestamp when window resets |
 
 Example response:
+
 ```
 HTTP/1.1 200 OK
 X-RateLimit-Limit: 100
@@ -132,8 +146,7 @@ const authRouter = createRouter('/auth')
   .post('/register', registerHandler);
 
 // API routes: use global limit
-const apiRouter = createRouter('/api/v1')
-  .get('/cards', listCards);
+const apiRouter = createRouter('/api/v1').get('/cards', listCards);
 
 app.routes(authRouter).routes(apiRouter);
 ```
@@ -149,7 +162,10 @@ The built-in rate limiter uses an in-memory store. For production with multiple 
 Example Redis adapter (conceptual):
 
 ```typescript
-const redisRateLimit = (redis: Redis, options: RateLimitOptions): Middleware => {
+const redisRateLimit = (
+  redis: Redis,
+  options: RateLimitOptions
+): Middleware => {
   return async (ctx, next) => {
     const key = `ratelimit:${options.keyGenerator(ctx)}`;
     const count = await redis.incr(key);

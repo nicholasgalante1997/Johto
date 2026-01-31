@@ -204,10 +204,7 @@ export interface LoggingOptions {
  * ```
  */
 export function createLogging(options: LoggingOptions = {}): Middleware {
-  const {
-    logger = console.log,
-    skip = []
-  } = options;
+  const { logger = console.log, skip = [] } = options;
 
   return async (ctx, next) => {
     // Skip logging for specified paths
@@ -331,8 +328,14 @@ export function rateLimit(options: RateLimitOptions = {}): Middleware {
     // Add rate limit headers
     const headers = new Headers(response.headers);
     headers.set('x-ratelimit-limit', String(max));
-    headers.set('x-ratelimit-remaining', String(Math.max(0, max - record.count)));
-    headers.set('x-ratelimit-reset', String(Math.ceil(record.resetTime / 1000)));
+    headers.set(
+      'x-ratelimit-remaining',
+      String(Math.max(0, max - record.count))
+    );
+    headers.set(
+      'x-ratelimit-reset',
+      String(Math.ceil(record.resetTime / 1000))
+    );
 
     return new Response(response.body, {
       status: response.status,

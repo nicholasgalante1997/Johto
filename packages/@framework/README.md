@@ -39,10 +39,7 @@ const cards = createRouter('/api/v1/cards')
   });
 
 // 3. Create and start app
-const app = createApp({ container })
-  .use(logging)
-  .use(cors())
-  .routes(cards);
+const app = createApp({ container }).use(logging).use(cors()).routes(cards);
 
 await app.listen(3001, () => console.log('Server running on :3001'));
 ```
@@ -78,7 +75,7 @@ await app.shutdown();
 
 ```typescript
 const router = createRouter('/api/v1/cards')
-  .use(authMiddleware)        // Router-specific middleware
+  .use(authMiddleware) // Router-specific middleware
   .get('/', listHandler)
   .get('/:id', getHandler)
   .post('/', createHandler)
@@ -111,28 +108,28 @@ Handlers receive a context with request data and response helpers:
 ```typescript
 async function handler(ctx) {
   // Request data
-  ctx.method      // 'GET', 'POST', etc.
-  ctx.path        // '/api/v1/cards/123'
-  ctx.params      // { id: '123' }
-  ctx.query       // QueryParams accessor
-  ctx.headers     // Request headers
-  ctx.services    // Registered services
-  ctx.requestId   // Unique request ID
+  ctx.method; // 'GET', 'POST', etc.
+  ctx.path; // '/api/v1/cards/123'
+  ctx.params; // { id: '123' }
+  ctx.query; // QueryParams accessor
+  ctx.headers; // Request headers
+  ctx.services; // Registered services
+  ctx.requestId; // Unique request ID
 
   // Query params
-  ctx.query.get('name')           // string | undefined
-  ctx.query.get('name', 'default') // string
-  ctx.query.getNumber('page', 1)  // number
-  ctx.query.getBool('active')     // boolean
+  ctx.query.get('name'); // string | undefined
+  ctx.query.get('name', 'default'); // string
+  ctx.query.getNumber('page', 1); // number
+  ctx.query.getBool('active'); // boolean
 
   // Responses
-  return ctx.json({ data });      // 200 JSON
-  return ctx.json(data, 201);     // 201 JSON
-  return ctx.text('OK');          // 200 text
-  return ctx.empty();             // 204 no content
-  return ctx.notFound();          // 404
-  return ctx.badRequest('msg');   // 400
-  return ctx.error('msg', 500);   // Custom error
+  return ctx.json({ data }); // 200 JSON
+  return ctx.json(data, 201); // 201 JSON
+  return ctx.text('OK'); // 200 text
+  return ctx.empty(); // 204 no content
+  return ctx.notFound(); // 404
+  return ctx.badRequest('msg'); // 400
+  return ctx.error('msg', 500); // Custom error
 }
 ```
 
@@ -163,11 +160,11 @@ import {
 } from '@pokemon/framework';
 
 app
-  .use(logging)                              // Request/response logging
+  .use(logging) // Request/response logging
   .use(cors({ origins: ['http://localhost:3000'] }))
   .use(rateLimit({ windowMs: 60000, max: 1000 }))
-  .use(securityHeaders)                      // X-Frame-Options, etc.
-  .use(timing);                              // Server-Timing header
+  .use(securityHeaders) // X-Frame-Options, etc.
+  .use(timing); // Server-Timing header
 ```
 
 ### Services
@@ -205,9 +202,7 @@ import { describe, it, expect } from 'bun:test';
 
 describe('Cards API', () => {
   it('returns cards', async () => {
-    const response = await app.handle(
-      new Request('http://test/api/v1/cards')
-    );
+    const response = await app.handle(new Request('http://test/api/v1/cards'));
 
     expect(response.status).toBe(200);
     const body = await response.json();

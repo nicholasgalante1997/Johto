@@ -12,7 +12,9 @@ import type { Service, ServiceMap } from './types';
  * @typeParam T - The service type being created
  * @typeParam S - The current service map type
  */
-export type ServiceFactory<T, S extends ServiceMap> = (container: Container<S>) => T;
+export type ServiceFactory<T, S extends ServiceMap> = (
+  container: Container<S>
+) => T;
 
 /**
  * Service registration options

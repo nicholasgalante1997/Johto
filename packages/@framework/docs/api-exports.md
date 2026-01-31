@@ -78,7 +78,7 @@ Normalize a path string.
 ```typescript
 import { normalizePath } from '@pokemon/framework';
 
-normalizePath('api/v1/');     // '/api/v1'
+normalizePath('api/v1/'); // '/api/v1'
 normalizePath('//api//v1//'); // '/api/v1'
 ```
 

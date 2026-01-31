@@ -6,7 +6,14 @@
 /**
  * HTTP methods supported by the framework
  */
-export type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 'OPTIONS';
+export type HttpMethod =
+  | 'GET'
+  | 'POST'
+  | 'PUT'
+  | 'PATCH'
+  | 'DELETE'
+  | 'HEAD'
+  | 'OPTIONS';
 
 /**
  * Query parameter accessor with type coercion utilities.
@@ -232,7 +239,9 @@ export interface Route<S extends ServiceMap = ServiceMap> {
 /**
  * Compiled route with regex pattern for matching
  */
-export interface CompiledRoute<S extends ServiceMap = ServiceMap> extends Route<S> {
+export interface CompiledRoute<
+  S extends ServiceMap = ServiceMap
+> extends Route<S> {
   /** Compiled regex pattern */
   pattern: RegExp;
   /** Parameter names extracted from path */
