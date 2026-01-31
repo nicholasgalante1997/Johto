@@ -1,0 +1,20 @@
+{
+  "extends": "@pokemon/configs/typescript/bun.tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./lib",
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+    "sourceMap": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "paths": {
+      "@/*": ["./lib/*"]
+    }
+  },
+  "include": ["lib"],
+  "exclude": ["node_modules", "dist"]
+}
