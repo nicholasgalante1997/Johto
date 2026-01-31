@@ -1,5 +1,9 @@
 import { describe, it, expect } from 'bun:test';
-import { transformSetRow, transformCardRow, transformCardRowWithSet } from './transforms';
+import {
+  transformSetRow,
+  transformCardRow,
+  transformCardRowWithSet
+} from './transforms';
 import type { CardRow, SetRow } from '../types';
 
 // ---------------------------------------------------------------------------
@@ -17,7 +21,8 @@ function fullSetRow(): SetRow {
     ptcgo_code: 'BASE',
     release_date: '1999/01/09',
     updated_at: '2024-01-01T00:00:00.000Z',
-    images: '{"symbol":"https://example.com/symbol.png","logo":"https://example.com/logo.png"}',
+    images:
+      '{"symbol":"https://example.com/symbol.png","logo":"https://example.com/logo.png"}',
     created_at: '2024-01-01T00:00:00.000Z'
   };
 }
@@ -34,7 +39,8 @@ function fullCardRow(): CardRow {
     evolves_to: null,
     rules: null,
     abilities: null,
-    attacks: '[{"name":"Fire Spin","cost":["Fire","Fire","Fire"],"convertedEnergyCost":3,"damage":"80","text":""}]',
+    attacks:
+      '[{"name":"Fire Spin","cost":["Fire","Fire","Fire"],"convertedEnergyCost":3,"damage":"80","text":""}]',
     weaknesses: '[{"type":"Water","value":"x2"}]',
     retreat_cost: '["Colorless","Colorless","Colorless"]',
     converted_retreat_cost: 3,
@@ -45,7 +51,8 @@ function fullCardRow(): CardRow {
     flavor_text: 'It spits fire that is hot enough to melt boulders.',
     national_pokedex_numbers: '["6"]',
     legalities: '{"unlimited":"legal"}',
-    images: '{"small":"https://example.com/small.png","large":"https://example.com/large.png"}',
+    images:
+      '{"small":"https://example.com/small.png","large":"https://example.com/large.png"}',
     tcgplayer_url: 'https://tcgplayer.com/card/123',
     cardmarket_url: 'https://cardmarket.com/card/456',
     created_at: '2024-01-01T00:00:00.000Z',
@@ -77,7 +84,8 @@ function trainerCardRow(): CardRow {
     flavor_text: null,
     national_pokedex_numbers: null,
     legalities: '{"unlimited":"legal"}',
-    images: '{"small":"https://example.com/misty-small.png","large":"https://example.com/misty-large.png"}',
+    images:
+      '{"small":"https://example.com/misty-small.png","large":"https://example.com/misty-large.png"}',
     tcgplayer_url: null,
     cardmarket_url: null,
     created_at: '2024-01-01T00:00:00.000Z',
@@ -165,20 +173,24 @@ describe('transformCardRow', () => {
     expect(card.evolvesTo).toEqual([]);
     expect(card.rules).toEqual([]);
     expect(card.abilities).toEqual([]);
-    expect(card.attacks).toEqual([{
-      name: 'Fire Spin',
-      cost: ['Fire', 'Fire', 'Fire'],
-      convertedEnergyCost: 3,
-      damage: '80',
-      text: ''
-    }]);
+    expect(card.attacks).toEqual([
+      {
+        name: 'Fire Spin',
+        cost: ['Fire', 'Fire', 'Fire'],
+        convertedEnergyCost: 3,
+        damage: '80',
+        text: ''
+      }
+    ]);
     expect(card.weaknesses).toEqual([{ type: 'Water', value: 'x2' }]);
     expect(card.retreatCost).toEqual(['Colorless', 'Colorless', 'Colorless']);
     expect(card.convertedRetreatCost).toBe(3);
     expect(card.number).toBe(4);
     expect(card.artist).toBe('Mitsuhiro Arita');
     expect(card.rarity).toBe('Rare Holo');
-    expect(card.flavorText).toBe('It spits fire that is hot enough to melt boulders.');
+    expect(card.flavorText).toBe(
+      'It spits fire that is hot enough to melt boulders.'
+    );
     expect(card.nationalPokedexNumbers).toEqual(['6']);
     expect(card.legalities).toEqual({ unlimited: 'legal' });
     expect(card.images).toEqual({
@@ -252,7 +264,9 @@ describe('transformCardRow', () => {
 
   it('rules is parsed from JSON array', () => {
     const card = transformCardRow(trainerCardRow());
-    expect(card.rules).toEqual(['You may only have 4 Supporters in play at a time.']);
+    expect(card.rules).toEqual([
+      'You may only have 4 Supporters in play at a time.'
+    ]);
   });
 
   it('nationalPokedexNumbers is empty array when null', () => {
@@ -342,7 +356,8 @@ describe('transformCardRowWithSet', () => {
       ptcgo_code: 'GYM1',
       release_date: '1999/08/14',
       updated_at: '2024-01-01T00:00:00.000Z',
-      images: '{"symbol":"https://example.com/gym1-symbol.png","logo":"https://example.com/gym1-logo.png"}',
+      images:
+        '{"symbol":"https://example.com/gym1-symbol.png","logo":"https://example.com/gym1-logo.png"}',
       created_at: '2024-01-01T00:00:00.000Z'
     };
 

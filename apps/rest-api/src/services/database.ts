@@ -49,12 +49,18 @@ export class DatabaseService implements Service {
   }
 
   /** Execute a query returning multiple rows */
-  query<T>(sql: string, ...params: (null | string | number | bigint | boolean | Uint8Array)[]): T[] {
+  query<T>(
+    sql: string,
+    ...params: (null | string | number | bigint | boolean | Uint8Array)[]
+  ): T[] {
     return this.instance.query(sql).all(...params) as T[];
   }
 
   /** Execute a query returning a single row or null */
-  queryOne<T>(sql: string, ...params: (null | string | number | bigint | boolean | Uint8Array)[]): T | null {
+  queryOne<T>(
+    sql: string,
+    ...params: (null | string | number | bigint | boolean | Uint8Array)[]
+  ): T | null {
     return (this.instance.query(sql).get(...params) as T | null) ?? null;
   }
 

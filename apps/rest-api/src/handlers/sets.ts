@@ -1,6 +1,10 @@
 import type { Handler } from '@pokemon/framework';
 import type { Services } from '../types';
-import { parsePaginationParams, createPaginationMeta, createPaginationLinks } from '../utils/pagination';
+import {
+  parsePaginationParams,
+  createPaginationMeta,
+  createPaginationLinks
+} from '../utils/pagination';
 import { transformSetRow, transformCardRow } from '../utils/transforms';
 import type { CardRow, SetRow } from '../types';
 
@@ -12,9 +16,10 @@ export const getSets: Handler<Services> = async (ctx) => {
   const db = ctx.services.db;
   const pagination = parsePaginationParams(ctx.query.raw);
 
-  const total = db.queryOne<{ total: number }>(
-    'SELECT COUNT(*) as total FROM pokemon_card_sets'
-  )?.total ?? 0;
+  const total =
+    db.queryOne<{ total: number }>(
+      'SELECT COUNT(*) as total FROM pokemon_card_sets'
+    )?.total ?? 0;
 
   const rows = db.query<SetRow>(
     'SELECT * FROM pokemon_card_sets ORDER BY release_date DESC LIMIT ? OFFSET ?',
@@ -61,10 +66,11 @@ export const getSetCards: Handler<Services> = async (ctx) => {
 
   const pagination = parsePaginationParams(ctx.query.raw);
 
-  const total = db.queryOne<{ total: number }>(
-    'SELECT COUNT(*) as total FROM pokemon_cards WHERE set_id = ?',
-    setId
-  )?.total ?? 0;
+  const total =
+    db.queryOne<{ total: number }>(
+      'SELECT COUNT(*) as total FROM pokemon_cards WHERE set_id = ?',
+      setId
+    )?.total ?? 0;
 
   const rows = db.query<CardRow>(
     'SELECT * FROM pokemon_cards WHERE set_id = ? ORDER BY CAST(number AS INTEGER) ASC, number ASC LIMIT ? OFFSET ?',
@@ -78,7 +84,11 @@ export const getSetCards: Handler<Services> = async (ctx) => {
   return ctx.json({
     data: cards,
     meta: createPaginationMeta(pagination, cards.length, total),
-    links: createPaginationLinks(`/api/v1/sets/${setId}/cards`, pagination, total)
+    links: createPaginationLinks(
+      `/api/v1/sets/${setId}/cards`,
+      pagination,
+      total
+    )
   });
 };
 

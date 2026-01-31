@@ -29,7 +29,9 @@ describe('parsePaginationParams', () => {
   });
 
   it('parses page=3 with explicit pageSize=20', () => {
-    const result = parsePaginationParams(new URLSearchParams('page=3&pageSize=20'));
+    const result = parsePaginationParams(
+      new URLSearchParams('page=3&pageSize=20')
+    );
     expect(result.page).toBe(3);
     expect(result.limit).toBe(20);
     expect(result.offset).toBe(40); // (3-1)*20
@@ -53,22 +55,30 @@ describe('parsePaginationParams', () => {
   });
 
   it('clamps pageSize above MAX_PAGE_SIZE', () => {
-    const result = parsePaginationParams(new URLSearchParams('page=1&pageSize=999'));
+    const result = parsePaginationParams(
+      new URLSearchParams('page=1&pageSize=999')
+    );
     expect(result.limit).toBe(MAX_PAGE_SIZE);
   });
 
   it('pageSize=0 is treated as falsy and falls back to DEFAULT_PAGE_SIZE', () => {
-    const result = parsePaginationParams(new URLSearchParams('page=1&pageSize=0'));
+    const result = parsePaginationParams(
+      new URLSearchParams('page=1&pageSize=0')
+    );
     expect(result.limit).toBe(DEFAULT_PAGE_SIZE);
   });
 
   it('clamps negative pageSize to 1', () => {
-    const result = parsePaginationParams(new URLSearchParams('page=1&pageSize=-5'));
+    const result = parsePaginationParams(
+      new URLSearchParams('page=1&pageSize=-5')
+    );
     expect(result.limit).toBe(1);
   });
 
   it('treats non-numeric pageSize as DEFAULT_PAGE_SIZE', () => {
-    const result = parsePaginationParams(new URLSearchParams('page=2&pageSize=foo'));
+    const result = parsePaginationParams(
+      new URLSearchParams('page=2&pageSize=foo')
+    );
     expect(result.limit).toBe(DEFAULT_PAGE_SIZE);
     expect(result.offset).toBe(DEFAULT_PAGE_SIZE); // (2-1)*60
   });
@@ -76,7 +86,9 @@ describe('parsePaginationParams', () => {
   // --- offset-based (no page param) ---
 
   it('parses limit and offset when page is absent', () => {
-    const result = parsePaginationParams(new URLSearchParams('limit=10&offset=30'));
+    const result = parsePaginationParams(
+      new URLSearchParams('limit=10&offset=30')
+    );
     expect(result.limit).toBe(10);
     expect(result.offset).toBe(30);
     expect(result.page).toBe(4); // floor(30/10)+1
@@ -97,12 +109,16 @@ describe('parsePaginationParams', () => {
   });
 
   it('clamps offset below 0 to 0', () => {
-    const result = parsePaginationParams(new URLSearchParams('limit=10&offset=-5'));
+    const result = parsePaginationParams(
+      new URLSearchParams('limit=10&offset=-5')
+    );
     expect(result.offset).toBe(0);
   });
 
   it('clamps limit above MAX_PAGE_SIZE in offset mode', () => {
-    const result = parsePaginationParams(new URLSearchParams('limit=500&offset=0'));
+    const result = parsePaginationParams(
+      new URLSearchParams('limit=500&offset=0')
+    );
     expect(result.limit).toBe(MAX_PAGE_SIZE);
   });
 
@@ -141,17 +157,29 @@ describe('createPaginationMeta', () => {
   });
 
   it('totalPages rounds up for partial last page', () => {
-    const meta = createPaginationMeta({ page: 1, limit: 10, offset: 0 }, 10, 11);
+    const meta = createPaginationMeta(
+      { page: 1, limit: 10, offset: 0 },
+      10,
+      11
+    );
     expect(meta.totalPages).toBe(2);
   });
 
   it('totalPages equals 1 when totalCount equals pageSize', () => {
-    const meta = createPaginationMeta({ page: 1, limit: 50, offset: 0 }, 50, 50);
+    const meta = createPaginationMeta(
+      { page: 1, limit: 50, offset: 0 },
+      50,
+      50
+    );
     expect(meta.totalPages).toBe(1);
   });
 
   it('count can differ from pageSize (last page)', () => {
-    const meta = createPaginationMeta({ page: 3, limit: 10, offset: 20 }, 5, 25);
+    const meta = createPaginationMeta(
+      { page: 3, limit: 10, offset: 20 },
+      5,
+      25
+    );
     expect(meta.count).toBe(5);
     expect(meta.totalPages).toBe(3);
   });
@@ -165,7 +193,11 @@ describe('createPaginationLinks', () => {
   const base = '/api/v1/cards';
 
   it('single page: self + first + last, no prev/next', () => {
-    const links = createPaginationLinks(base, { page: 1, limit: 60, offset: 0 }, 10);
+    const links = createPaginationLinks(
+      base,
+      { page: 1, limit: 60, offset: 0 },
+      10
+    );
     expect(links.self).toBe(`${base}?page=1&pageSize=60`);
     expect(links.first).toBe(`${base}?page=1&pageSize=60`);
     expect(links.last).toBe(`${base}?page=1&pageSize=60`);
@@ -174,7 +206,11 @@ describe('createPaginationLinks', () => {
   });
 
   it('first page of many: has next, no prev', () => {
-    const links = createPaginationLinks(base, { page: 1, limit: 10, offset: 0 }, 50);
+    const links = createPaginationLinks(
+      base,
+      { page: 1, limit: 10, offset: 0 },
+      50
+    );
     expect(links.next).toBe(`${base}?page=2&pageSize=10`);
     expect(links.prev).toBeUndefined();
     expect(links.first).toBe(`${base}?page=1&pageSize=10`);
@@ -182,7 +218,11 @@ describe('createPaginationLinks', () => {
   });
 
   it('middle page: has both prev and next', () => {
-    const links = createPaginationLinks(base, { page: 3, limit: 10, offset: 20 }, 50);
+    const links = createPaginationLinks(
+      base,
+      { page: 3, limit: 10, offset: 20 },
+      50
+    );
     expect(links.prev).toBe(`${base}?page=2&pageSize=10`);
     expect(links.next).toBe(`${base}?page=4&pageSize=10`);
     expect(links.first).toBe(`${base}?page=1&pageSize=10`);
@@ -190,14 +230,22 @@ describe('createPaginationLinks', () => {
   });
 
   it('last page: has prev, no next', () => {
-    const links = createPaginationLinks(base, { page: 5, limit: 10, offset: 40 }, 50);
+    const links = createPaginationLinks(
+      base,
+      { page: 5, limit: 10, offset: 40 },
+      50
+    );
     expect(links.prev).toBe(`${base}?page=4&pageSize=10`);
     expect(links.next).toBeUndefined();
     expect(links.last).toBe(`${base}?page=5&pageSize=10`);
   });
 
   it('empty result set: only self, no other links', () => {
-    const links = createPaginationLinks(base, { page: 1, limit: 60, offset: 0 }, 0);
+    const links = createPaginationLinks(
+      base,
+      { page: 1, limit: 60, offset: 0 },
+      0
+    );
     expect(links.self).toBe(`${base}?page=1&pageSize=60`);
     expect(links.first).toBeUndefined();
     expect(links.last).toBeUndefined();
@@ -207,7 +255,11 @@ describe('createPaginationLinks', () => {
 
   it('preserves base URL with existing structure', () => {
     const customBase = '/api/v1/sets/base1/cards';
-    const links = createPaginationLinks(customBase, { page: 2, limit: 10, offset: 10 }, 30);
+    const links = createPaginationLinks(
+      customBase,
+      { page: 2, limit: 10, offset: 10 },
+      30
+    );
     expect(links.self).toBe(`${customBase}?page=2&pageSize=10`);
     expect(links.next).toBe(`${customBase}?page=3&pageSize=10`);
   });

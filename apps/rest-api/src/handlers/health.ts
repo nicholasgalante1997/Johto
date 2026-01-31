@@ -60,15 +60,26 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
   {
     path: '/api/v1/endpoints',
     method: 'GET',
-    description: 'API discovery endpoint - lists all available endpoints with health status'
+    description:
+      'API discovery endpoint - lists all available endpoints with health status'
   },
   {
     path: '/api/v1/cards',
     method: 'GET',
     description: 'List all Pokemon cards with pagination support',
     parameters: [
-      { name: 'page', type: 'query', required: false, description: 'Page number (default: 1)' },
-      { name: 'pageSize', type: 'query', required: false, description: 'Items per page (default: 60, max: 250)' }
+      {
+        name: 'page',
+        type: 'query',
+        required: false,
+        description: 'Page number (default: 1)'
+      },
+      {
+        name: 'pageSize',
+        type: 'query',
+        required: false,
+        description: 'Items per page (default: 60, max: 250)'
+      }
     ]
   },
   {
@@ -76,7 +87,12 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
     method: 'GET',
     description: 'Get a specific Pokemon card by ID with full set information',
     parameters: [
-      { name: 'id', type: 'path', required: true, description: 'The unique card identifier' }
+      {
+        name: 'id',
+        type: 'path',
+        required: true,
+        description: 'The unique card identifier'
+      }
     ]
   },
   {
@@ -84,9 +100,24 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
     method: 'GET',
     description: 'Search cards by name, type, rarity, or set',
     parameters: [
-      { name: 'name', type: 'query', required: false, description: 'Card name (partial match)' },
-      { name: 'type', type: 'query', required: false, description: 'Card type (e.g., Fire, Water)' },
-      { name: 'rarity', type: 'query', required: false, description: 'Card rarity' },
+      {
+        name: 'name',
+        type: 'query',
+        required: false,
+        description: 'Card name (partial match)'
+      },
+      {
+        name: 'type',
+        type: 'query',
+        required: false,
+        description: 'Card type (e.g., Fire, Water)'
+      },
+      {
+        name: 'rarity',
+        type: 'query',
+        required: false,
+        description: 'Card rarity'
+      },
       { name: 'set', type: 'query', required: false, description: 'Set ID' }
     ]
   },
@@ -95,8 +126,18 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
     method: 'GET',
     description: 'List all Pokemon TCG sets with pagination support',
     parameters: [
-      { name: 'page', type: 'query', required: false, description: 'Page number (default: 1)' },
-      { name: 'pageSize', type: 'query', required: false, description: 'Items per page (default: 60, max: 250)' }
+      {
+        name: 'page',
+        type: 'query',
+        required: false,
+        description: 'Page number (default: 1)'
+      },
+      {
+        name: 'pageSize',
+        type: 'query',
+        required: false,
+        description: 'Items per page (default: 60, max: 250)'
+      }
     ]
   },
   {
@@ -104,7 +145,12 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
     method: 'GET',
     description: 'Get a specific Pokemon TCG set by ID',
     parameters: [
-      { name: 'id', type: 'path', required: true, description: 'The unique set identifier' }
+      {
+        name: 'id',
+        type: 'path',
+        required: true,
+        description: 'The unique set identifier'
+      }
     ]
   },
   {
@@ -112,9 +158,24 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
     method: 'GET',
     description: 'List all cards in a specific set with pagination support',
     parameters: [
-      { name: 'id', type: 'path', required: true, description: 'The set identifier' },
-      { name: 'page', type: 'query', required: false, description: 'Page number (default: 1)' },
-      { name: 'pageSize', type: 'query', required: false, description: 'Items per page (default: 60, max: 250)' }
+      {
+        name: 'id',
+        type: 'path',
+        required: true,
+        description: 'The set identifier'
+      },
+      {
+        name: 'page',
+        type: 'query',
+        required: false,
+        description: 'Page number (default: 1)'
+      },
+      {
+        name: 'pageSize',
+        type: 'query',
+        required: false,
+        description: 'Items per page (default: 60, max: 250)'
+      }
     ]
   },
   {
@@ -122,14 +183,22 @@ const ENDPOINT_REGISTRY: EndpointInfo[] = [
     method: 'GET',
     description: 'Get all sets in a specific series',
     parameters: [
-      { name: 'series', type: 'path', required: true, description: 'The series name (URL encoded)' }
+      {
+        name: 'series',
+        type: 'path',
+        required: true,
+        description: 'The series name (URL encoded)'
+      }
     ]
   }
 ];
 
 type HealthStatus = 'healthy' | 'unhealthy';
 
-function renderHtml(status: HealthStatus, endpoints: (EndpointInfo & { health: HealthStatus })[]): string {
+function renderHtml(
+  status: HealthStatus,
+  endpoints: (EndpointInfo & { health: HealthStatus })[]
+): string {
   const statusColor: Record<HealthStatus, string> = {
     healthy: '#22c55e',
     unhealthy: '#ef4444'
@@ -247,7 +316,8 @@ export const getApiDiscovery: Handler<Services> = async (ctx) => {
 
   const endpoints = ENDPOINT_REGISTRY.map((ep) => ({
     ...ep,
-    health: ep.path === '/api/v1/endpoints' ? 'healthy' as HealthStatus : dbHealth
+    health:
+      ep.path === '/api/v1/endpoints' ? ('healthy' as HealthStatus) : dbHealth
   }));
 
   const accept = ctx.headers.get('accept') || '';

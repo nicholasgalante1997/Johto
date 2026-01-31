@@ -1,6 +1,10 @@
 import type { Handler } from '@pokemon/framework';
 import type { Services } from '../types';
-import { parsePaginationParams, createPaginationMeta, createPaginationLinks } from '../utils/pagination';
+import {
+  parsePaginationParams,
+  createPaginationMeta,
+  createPaginationLinks
+} from '../utils/pagination';
 import { transformCardRow, transformCardRowWithSet } from '../utils/transforms';
 import type { CardRow, SetRow } from '../types';
 
@@ -12,11 +16,15 @@ export const getCards: Handler<Services> = async (ctx) => {
   const db = ctx.services.db;
   const pagination = parsePaginationParams(ctx.query.raw);
 
-  const total = db.queryOne<{ total: number }>(
-    'SELECT COUNT(*) as total FROM pokemon_cards'
-  )?.total ?? 0;
+  const total =
+    db.queryOne<{ total: number }>(
+      'SELECT COUNT(*) as total FROM pokemon_cards'
+    )?.total ?? 0;
 
-  const rows = db.findAllCards(pagination.limit, pagination.offset) as CardRow[];
+  const rows = db.findAllCards(
+    pagination.limit,
+    pagination.offset
+  ) as CardRow[];
   const cards = rows.map(transformCardRow);
 
   return ctx.json({
@@ -80,15 +88,18 @@ export const searchCards: Handler<Services> = async (ctx) => {
   }
 
   if (conditions.length === 0) {
-    return ctx.badRequest('At least one search parameter is required (name, type, rarity, set)');
+    return ctx.badRequest(
+      'At least one search parameter is required (name, type, rarity, set)'
+    );
   }
 
   const where = conditions.join(' AND ');
 
-  const total = db.queryOne<{ total: number }>(
-    `SELECT COUNT(*) as total FROM pokemon_cards WHERE ${where}`,
-    ...values
-  )?.total ?? 0;
+  const total =
+    db.queryOne<{ total: number }>(
+      `SELECT COUNT(*) as total FROM pokemon_cards WHERE ${where}`,
+      ...values
+    )?.total ?? 0;
 
   const rows = db.query<CardRow>(
     `SELECT * FROM pokemon_cards WHERE ${where} ORDER BY name ASC LIMIT ? OFFSET ?`,

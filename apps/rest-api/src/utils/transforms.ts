@@ -48,7 +48,9 @@ export function transformCardRow(row: CardRow): Pokemon.Card {
     artist: row.artist || '',
     rarity: row.rarity || '',
     flavorText: row.flavor_text || undefined,
-    nationalPokedexNumbers: parseJSONArray<string>(row.national_pokedex_numbers),
+    nationalPokedexNumbers: parseJSONArray<string>(
+      row.national_pokedex_numbers
+    ),
     legalities: parseJSON(row.legalities) || { unlimited: '', expanded: '' },
     images: parseJSON(row.images) || { small: '', large: '' },
     tcgplayer: row.tcgplayer_url ? { url: row.tcgplayer_url } : undefined,

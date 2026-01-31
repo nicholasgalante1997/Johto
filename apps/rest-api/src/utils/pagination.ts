@@ -27,7 +27,9 @@ export const MAX_PAGE_SIZE = 250;
  * Parse pagination parameters from URL search params
  * Supports both page-based (?page=1&pageSize=50) and offset-based (?limit=50&offset=0)
  */
-export function parsePaginationParams(searchParams: URLSearchParams): PaginationParams {
+export function parsePaginationParams(
+  searchParams: URLSearchParams
+): PaginationParams {
   // Try page-based first
   const pageStr = searchParams.get('page');
   const pageSizeStr = searchParams.get('pageSize');

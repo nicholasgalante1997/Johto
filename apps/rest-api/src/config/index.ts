@@ -30,7 +30,7 @@ export function loadConfig(): Config {
     port: parseInt(process.env.REST_API_PORT || '3001', 10),
     host: process.env.REST_API_HOST || '0.0.0.0',
     database: {
-      path: process.env.DATABASE_PATH || '../../database/pokemon-data.sqlite3.db',
+      path: process.env.DATABASE_PATH || './database/pokemon-data.sqlite3.db',
       readonly: process.env.DATABASE_READONLY !== 'false'
     },
     cors: {
