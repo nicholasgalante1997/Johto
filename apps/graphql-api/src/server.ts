@@ -1,20 +1,23 @@
-import { ApolloServer, HeaderMap, type HTTPGraphQLResponse } from '@apollo/server';
-import { config } from './config';
-import { getDatabase, checkDatabaseHealth } from './config/database';
+import {
+  ApolloServer,
+  HeaderMap,
+  type HTTPGraphQLResponse
+} from '@apollo/server';
+import type { Handler } from '@pokemon/framework';
 import { typeDefs } from './schema';
 import { createResolvers, type ResolverContext } from './resolvers';
 import { createDataLoaders } from './dataloaders';
+import type { Services } from './types/services';
+import type { DatabaseService } from './services/database';
 
-/**
- * Create and start the GraphQL server
- */
-export async function createGraphQLServer() {
-  const db = getDatabase();
-
-  const apolloServer = new ApolloServer({
+export async function createApolloServer(
+  db: DatabaseService,
+  introspection: boolean
+): Promise<ApolloServer<ResolverContext>> {
+  const server = new ApolloServer({
     typeDefs,
     resolvers: createResolvers(db),
-    introspection: config.apollo.introspection,
+    introspection,
     formatError: (error) => {
       console.error('GraphQL Error:', {
         message: error.message,
@@ -30,93 +33,70 @@ export async function createGraphQLServer() {
     }
   });
 
-  await apolloServer.start();
+  await server.start();
+  return server;
+}
 
-  /**
-   * Convert Apollo response to Bun Response
-   */
-  async function toResponse(gqlResponse: HTTPGraphQLResponse): Promise<Response> {
-    const headers = new Headers();
-    for (const [key, value] of gqlResponse.headers) {
-      headers.set(key, value);
-    }
-
-    // Add CORS headers
-    headers.set('Access-Control-Allow-Origin', '*');
-    headers.set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
-    headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Request-ID');
-
-    const status = gqlResponse.status || 200;
-
-    if (gqlResponse.body.kind === 'complete') {
-      return new Response(gqlResponse.body.string, { status, headers });
-    }
-
-    // Handle streaming response
-    const stream = new ReadableStream({
-      async start(controller) {
-        try {
-          for await (const chunk of (gqlResponse.body as any).asyncIterator) {
-            controller.enqueue(new TextEncoder().encode(chunk));
-          }
-          controller.close();
-        } catch (error) {
-          controller.error(error);
-        }
-      }
-    });
-
-    return new Response(stream, { status, headers });
+async function toResponse(gqlResponse: HTTPGraphQLResponse): Promise<Response> {
+  const headers = new Headers();
+  for (const [key, value] of gqlResponse.headers) {
+    headers.set(key, value);
   }
 
-  /**
-   * Handle GraphQL request
-   */
-  async function handleGraphQLRequest(request: Request): Promise<Response> {
-    // Handle CORS preflight
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        status: 204,
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Request-ID'
+  const status = gqlResponse.status || 200;
+
+  if (gqlResponse.body.kind === 'complete') {
+    return new Response(gqlResponse.body.string, { status, headers });
+  }
+
+  const stream = new ReadableStream({
+    async start(controller) {
+      try {
+        for await (const chunk of (gqlResponse.body as any).asyncIterator) {
+          controller.enqueue(new TextEncoder().encode(chunk));
         }
-      });
+        controller.close();
+      } catch (error) {
+        controller.error(error);
+      }
     }
+  });
 
+  return new Response(stream, { status, headers });
+}
+
+export function createGraphQLHandler(
+  apolloServer: ApolloServer
+): Handler<Services> {
+  return async (ctx) => {
     try {
-      const url = new URL(request.url);
+      const loaders = createDataLoaders(ctx.services.db);
+      const url = new URL(ctx.request.url);
 
-      // Parse body for POST requests
       let body: any = undefined;
-      if (request.method === 'POST' && request.body) {
-        const contentType = request.headers.get('content-type') || '';
+      if (ctx.method === 'POST' && ctx.request.body) {
+        const contentType = ctx.headers.get('content-type') || '';
         if (contentType.includes('application/json')) {
-          body = await request.json();
+          body = await ctx.request.json();
         }
       }
 
-      // Create request-scoped DataLoaders
-      const loaders = createDataLoaders(db);
-
-      // Convert Headers to HeaderMap
       const headerMap = new HeaderMap();
-      request.headers.forEach((value, key) => {
+      ctx.headers.forEach((value, key) => {
         headerMap.set(key, value);
       });
 
       const gqlResponse = await apolloServer.executeHTTPGraphQLRequest({
         httpGraphQLRequest: {
-          method: request.method.toUpperCase(),
+          method: ctx.method,
           headers: headerMap,
           search: url.search,
           body
         },
         context: async (): Promise<ResolverContext> => ({
-          db,
+          db: ctx.services.db,
           loaders,
-          request
+          request: ctx.request
         })
       });
 
@@ -125,24 +105,24 @@ export async function createGraphQLServer() {
       console.error('GraphQL request error:', error);
       return new Response(
         JSON.stringify({
-          errors: [{ message: 'Internal server error', extensions: { code: 'INTERNAL_SERVER_ERROR' } }]
+          errors: [
+            {
+              message: 'Internal server error',
+              extensions: { code: 'INTERNAL_SERVER_ERROR' }
+            }
+          ]
         }),
-        {
-          status: 500,
-          headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }
-        }
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
       );
     }
-  }
+  };
+}
 
-  /**
-   * Handle GraphiQL request
-   */
-  function handleGraphiQLRequest(request: Request): Response {
-    const url = new URL(request.url);
-    const graphqlEndpoint = `${url.protocol}//${url.host}/graphql`;
+export const graphiqlHandler: Handler<Services> = (ctx) => {
+  const url = new URL(ctx.request.url);
+  const graphqlEndpoint = `${url.protocol}//${url.host}/graphql`;
 
-    const html = `
+  const html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -236,73 +216,8 @@ query SearchCards {
 </body>
 </html>`;
 
-    return new Response(html, {
-      status: 200,
-      headers: { 'Content-Type': 'text/html; charset=utf-8' }
-    });
-  }
-
-  /**
-   * Handle health check request
-   */
-  function handleHealthRequest(): Response {
-    const healthy = checkDatabaseHealth();
-    return new Response(
-      JSON.stringify({
-        status: healthy ? 'healthy' : 'unhealthy',
-        service: 'pokemon-graphql-api',
-        timestamp: new Date().toISOString()
-      }),
-      {
-        status: healthy ? 200 : 503,
-        headers: { 'Content-Type': 'application/json' }
-      }
-    );
-  }
-
-  return {
-    server: apolloServer,
-    handleGraphQLRequest,
-    handleGraphiQLRequest,
-    handleHealthRequest
-  };
-}
-
-/**
- * Start the server
- */
-export async function startServer(): Promise<void> {
-  const graphql = await createGraphQLServer();
-
-  const server = Bun.serve({
-    port: config.port,
-    hostname: config.host,
-    async fetch(request) {
-      const url = new URL(request.url);
-      const pathname = url.pathname;
-
-      // Health check endpoints
-      if (pathname === '/health' || pathname === '/ready') {
-        return graphql.handleHealthRequest();
-      }
-
-      // GraphiQL IDE
-      if (pathname === '/graphiql' || pathname === '/') {
-        return graphql.handleGraphiQLRequest(request);
-      }
-
-      // GraphQL endpoint
-      if (pathname === '/graphql') {
-        return graphql.handleGraphQLRequest(request);
-      }
-
-      // Not found
-      return new Response('Not Found', { status: 404 });
-    }
+  return new Response(html, {
+    status: 200,
+    headers: { 'Content-Type': 'text/html; charset=utf-8' }
   });
-
-  console.log(`Pokemon TCG GraphQL API listening on http://${config.host}:${config.port}`);
-  console.log(`GraphiQL IDE: http://${config.host}:${config.port}/graphiql`);
-  console.log(`GraphQL endpoint: http://${config.host}:${config.port}/graphql`);
-  console.log(`Health check: http://${config.host}:${config.port}/health`);
-}
+};

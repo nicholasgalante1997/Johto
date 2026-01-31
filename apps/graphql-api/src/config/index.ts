@@ -31,13 +31,16 @@ export function loadConfig(): Config {
     port: parseInt(process.env.GRAPHQL_API_PORT || '3002', 10),
     host: process.env.GRAPHQL_API_HOST || '0.0.0.0',
     database: {
-      path: process.env.DATABASE_PATH || '../../database/pokemon-data.sqlite3.db',
+      path: process.env.DATABASE_PATH || './database/pokemon-data.sqlite3.db',
       readonly: process.env.DATABASE_READONLY !== 'false'
     },
     apollo: {
       introspection: process.env.APOLLO_INTROSPECTION !== 'false',
       playground: process.env.APOLLO_PLAYGROUND !== 'false',
-      complexityLimit: parseInt(process.env.GRAPHQL_COMPLEXITY_LIMIT || '1000', 10)
+      complexityLimit: parseInt(
+        process.env.GRAPHQL_COMPLEXITY_LIMIT || '1000',
+        10
+      )
     },
     cors: {
       origins: parseOrigins(process.env.CORS_ORIGINS)
@@ -48,5 +51,3 @@ export function loadConfig(): Config {
     }
   };
 }
-
-export const config = loadConfig();

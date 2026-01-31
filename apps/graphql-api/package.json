@@ -7,19 +7,18 @@
     "start:dev": "bun run --watch src/index.ts",
     "build": "bun run build.ts",
     "check-types": "tsc -p ./tsconfig.json --noEmit",
-    "test": "bun test",
     "lint": "eslint src/"
   },
   "dependencies": {
     "dotenv": "17.2.3",
     "@apollo/server": "^4.11.0",
     "@pokemon/database": "workspace:*",
-    "@pokemon/logger": "workspace:*",
-    "@pokemon/utils": "workspace:*",
+    "@pokemon/framework": "workspace:*",
     "dataloader": "^2.2.3",
     "graphql": "^16.9.0"
   },
   "devDependencies": {
+    "@pokemon/build": "workspace:*",
     "@pokemon/configs": "workspace:*",
     "@types/bun": "latest",
     "typescript": "5.5.4"

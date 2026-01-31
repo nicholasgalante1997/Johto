@@ -59,9 +59,9 @@ export function formatCard(card: any) {
     artist: card.artist,
     rarity: card.rarity,
     flavorText: card.flavor_text,
-    nationalPokedexNumbers: parseJSONArray<string>(card.national_pokedex_numbers)?.map(
-      (n) => parseInt(n, 10)
-    ),
+    nationalPokedexNumbers: parseJSONArray<string>(
+      card.national_pokedex_numbers
+    )?.map((n) => parseInt(n, 10)),
     legalities: parseJSON(card.legalities),
     images: parseJSON(card.images),
     tcgplayerUrl: card.tcgplayer_url,
