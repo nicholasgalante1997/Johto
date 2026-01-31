@@ -4,10 +4,22 @@ import path from 'path';
 const logger = createLogger('pokemon:scripts:fork-sync');
 
 const PATHS = {
-  forkSets: path.resolve(import.meta.dir, '../../../../forks/pokemon-tcg-data/sets/en.json'),
-  forkCards: path.resolve(import.meta.dir, '../../../../forks/pokemon-tcg-data/cards/en'),
-  targetSets: path.resolve(import.meta.dir, '../../../../packages/@pokemon-data/data/sets.json'),
-  targetCards: path.resolve(import.meta.dir, '../../../../packages/@pokemon-data/data/cards')
+  forkSets: path.resolve(
+    import.meta.dir,
+    '../../../../forks/pokemon-tcg-data/sets/en.json'
+  ),
+  forkCards: path.resolve(
+    import.meta.dir,
+    '../../../../forks/pokemon-tcg-data/cards/en'
+  ),
+  targetSets: path.resolve(
+    import.meta.dir,
+    '../../../../packages/@pokemon-data/data/sets.json'
+  ),
+  targetCards: path.resolve(
+    import.meta.dir,
+    '../../../../packages/@pokemon-data/data/cards'
+  )
 };
 
 /**
@@ -21,7 +33,7 @@ async function loadExistingCards(setId) {
   if (await file.exists()) {
     try {
       const data = await file.json();
-      return new Map(data.data.map(card => [card.id, card]));
+      return new Map(data.data.map((card) => [card.id, card]));
     } catch {
       return null;
     }
@@ -70,14 +82,17 @@ export async function syncForkToData(options = {}) {
   } catch (error) {
     throw new Error(`Failed to load fork sets: ${error.message}`);
   }
-  const setsMap = new Map(forkSets.map(set => [set.id, set]));
+  const setsMap = new Map(forkSets.map((set) => [set.id, set]));
   logger.info('Loaded %d sets from fork', forkSets.length);
 
   // Phase 2: Sync sets
   logger.info('Phase 2: Syncing sets to @pokemon-data...');
   if (!dryRun) {
     try {
-      await Bun.write(PATHS.targetSets, JSON.stringify({ data: forkSets }, null, 2));
+      await Bun.write(
+        PATHS.targetSets,
+        JSON.stringify({ data: forkSets }, null, 2)
+      );
     } catch (error) {
       throw new Error(`Failed to write sets file: ${error.message}`);
     }
@@ -112,7 +127,7 @@ export async function syncForkToData(options = {}) {
       const existingCardsMap = await loadExistingCards(setId);
 
       // Transform cards: add set object and preserve/default pricing
-      const transformedCards = forkCards.map(card => {
+      const transformedCards = forkCards.map((card) => {
         const existingCard = existingCardsMap?.get(card.id);
         return {
           ...card,
@@ -135,11 +150,13 @@ export async function syncForkToData(options = {}) {
       // Write cards
       const targetPath = path.join(targetDir, 'cards.json');
       if (!dryRun) {
-        await Bun.write(targetPath, JSON.stringify({ data: transformedCards }, null, 2));
+        await Bun.write(
+          targetPath,
+          JSON.stringify({ data: transformedCards }, null, 2)
+        );
       }
 
       stats.cardsProcessed += transformedCards.length;
-
     } catch (error) {
       const _error = new Error(`Error syncing set ${setId}: ${error.message}`);
       logger.error(_error.message);
@@ -156,7 +173,9 @@ export async function syncForkToData(options = {}) {
   logger.info('Errors: %d', errors.length);
 
   if (errors.length > 0) {
-    throw new Error(`Encountered ${errors.length} errors during sync. See logs for details.`);
+    throw new Error(
+      `Encountered ${errors.length} errors during sync. See logs for details.`
+    );
   }
 
   return stats;
