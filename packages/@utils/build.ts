@@ -1,9 +1,3 @@
-Bun.build({
-  entrypoints: ['lib/index.ts'],
-  format: 'esm',
-  minify: false,
-  target: 'bun',
-  outdir: './out',
-  splitting: false,
-  external: []
-});
+import { library, build } from '@pokemon/build';
+
+await build(library());
