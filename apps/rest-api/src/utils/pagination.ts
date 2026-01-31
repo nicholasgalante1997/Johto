@@ -1,4 +1,18 @@
-import type { PaginationMeta, PaginationLinks } from '../types';
+export interface PaginationMeta {
+  page: number;
+  pageSize: number;
+  count: number;
+  totalCount: number;
+  totalPages: number;
+}
+
+export interface PaginationLinks {
+  self: string;
+  first?: string;
+  prev?: string;
+  next?: string;
+  last?: string;
+}
 
 export interface PaginationParams {
   limit: number;

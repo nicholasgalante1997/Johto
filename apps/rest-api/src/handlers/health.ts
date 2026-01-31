@@ -1,6 +1,48 @@
-import { checkDatabaseHealth } from '../../config/database';
-import { jsonResponse } from '../../utils';
-import type { RequestContext, HealthStatus } from '../../types';
+import type { Handler } from '@pokemon/framework';
+import type { Services } from '../types';
+
+const startTime = Date.now();
+
+/**
+ * GET /health
+ * Service health check — reports overall status and per-dependency checks
+ */
+export const healthCheck: Handler<Services> = async (ctx) => {
+  const db = ctx.services.db;
+  const dbHealthy = db.ping();
+
+  const response = {
+    status: dbHealthy ? 'healthy' : 'unhealthy',
+    service: 'pokemon-rest-api',
+    version: 'v1',
+    timestamp: new Date().toISOString(),
+    uptime: Math.floor((Date.now() - startTime) / 1000),
+    checks: {
+      database: dbHealthy ? 'healthy' : 'unhealthy'
+    }
+  };
+
+  return ctx.json(response, dbHealthy ? 200 : 503);
+};
+
+/**
+ * GET /ready
+ * Readiness probe — returns 200 only when all dependencies are available
+ */
+export const readyCheck: Handler<Services> = async (ctx) => {
+  const db = ctx.services.db;
+  const dbHealthy = db.ping();
+
+  if (dbHealthy) {
+    return ctx.json({ ready: true });
+  }
+
+  return ctx.json({ ready: false, reason: 'database unavailable' }, 503);
+};
+
+// ============================================================
+// Discovery endpoint
+// ============================================================
 
 interface EndpointInfo {
   path: string;
@@ -12,20 +54,9 @@ interface EndpointInfo {
     required: boolean;
     description: string;
   }[];
-  health: HealthStatus;
 }
 
-interface DiscoveryResponse {
-  service: string;
-  version: string;
-  status: HealthStatus;
-  endpoints: EndpointInfo[];
-}
-
-/**
- * Registry of all available API endpoints
- */
-const ENDPOINT_REGISTRY: Omit<EndpointInfo, 'health'>[] = [
+const ENDPOINT_REGISTRY: EndpointInfo[] = [
   {
     path: '/api/v1/endpoints',
     method: 'GET',
@@ -96,39 +127,15 @@ const ENDPOINT_REGISTRY: Omit<EndpointInfo, 'health'>[] = [
   }
 ];
 
-/**
- * Build the discovery response with current health status
- */
-function buildDiscoveryResponse(): DiscoveryResponse {
-  const dbHealthy = checkDatabaseHealth();
-  const dbHealth: HealthStatus = dbHealthy ? 'healthy' : 'unhealthy';
+type HealthStatus = 'healthy' | 'unhealthy';
 
-  const endpoints: EndpointInfo[] = ENDPOINT_REGISTRY.map((endpoint) => ({
-    ...endpoint,
-    health: endpoint.path === '/api/v1/endpoints' ? 'healthy' : dbHealth
-  }));
-
-  const overallHealth: HealthStatus = dbHealthy ? 'healthy' : 'unhealthy';
-
-  return {
-    service: 'Pokemon TCG REST API',
-    version: 'v1',
-    status: overallHealth,
-    endpoints
-  };
-}
-
-/**
- * Render discovery response as HTML
- */
-function renderHtml(data: DiscoveryResponse): string {
-  const statusColor = {
+function renderHtml(status: HealthStatus, endpoints: (EndpointInfo & { health: HealthStatus })[]): string {
+  const statusColor: Record<HealthStatus, string> = {
     healthy: '#22c55e',
-    degraded: '#eab308',
     unhealthy: '#ef4444'
   };
 
-  const endpointRows = data.endpoints
+  const endpointRows = endpoints
     .map((ep) => {
       const paramsHtml = ep.parameters
         ? `<ul class="params">${ep.parameters
@@ -155,7 +162,7 @@ function renderHtml(data: DiscoveryResponse): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${data.service} - API Discovery</title>
+  <title>Pokemon TCG REST API - API Discovery</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -201,11 +208,11 @@ function renderHtml(data: DiscoveryResponse): string {
 </head>
 <body>
   <div class="container">
-    <h1>${data.service}</h1>
-    <p class="version">Version: ${data.version}</p>
+    <h1>Pokemon TCG REST API</h1>
+    <p class="version">Version: v1</p>
     <div class="overall-status">
       <span>Service Status:</span>
-      <span class="status" style="background: ${statusColor[data.status]}">${data.status}</span>
+      <span class="status" style="background: ${statusColor[status]}">${status}</span>
     </div>
     <table>
       <thead>
@@ -229,40 +236,38 @@ function renderHtml(data: DiscoveryResponse): string {
 }
 
 /**
- * Determine response format based on Accept header
+ * GET /api/v1/endpoints  (also GET /api/v1)
+ * API discovery — renders HTML by default, JSON when Accept: application/json
  */
-function shouldReturnHtml(request: Request): boolean {
-  const accept = request.headers.get('Accept') || '';
+export const getApiDiscovery: Handler<Services> = async (ctx) => {
+  const db = ctx.services.db;
+  const dbHealthy = db.ping();
+  const dbHealth: HealthStatus = dbHealthy ? 'healthy' : 'unhealthy';
+  const overallHealth: HealthStatus = dbHealthy ? 'healthy' : 'unhealthy';
 
+  const endpoints = ENDPOINT_REGISTRY.map((ep) => ({
+    ...ep,
+    health: ep.path === '/api/v1/endpoints' ? 'healthy' as HealthStatus : dbHealth
+  }));
+
+  const accept = ctx.headers.get('accept') || '';
   if (accept.includes('application/json')) {
-    return false;
-  }
-
-  if (accept.includes('text/html') || accept.includes('*/*') || accept === '') {
-    return true;
-  }
-
-  return false;
-}
-
-/**
- * GET /api/v1/endpoints
- * API discovery endpoint
- */
-export async function getApiDiscovery(
-  request: Request,
-  _params: Record<string, string>,
-  _searchParams: URLSearchParams,
-  context: RequestContext
-): Promise<Response> {
-  const data = buildDiscoveryResponse();
-
-  if (shouldReturnHtml(request)) {
-    return new Response(renderHtml(data), {
-      status: 200,
-      headers: { 'Content-Type': 'text/html; charset=utf-8' }
+    return ctx.json({
+      data: {
+        service: 'Pokemon TCG REST API',
+        version: 'v1',
+        status: overallHealth,
+        endpoints
+      }
     });
   }
 
-  return jsonResponse({ data }, 200);
-}
+  // Default: HTML
+  return new Response(renderHtml(overallHealth, endpoints), {
+    status: 200,
+    headers: {
+      'content-type': 'text/html; charset=utf-8',
+      'x-request-id': ctx.requestId
+    }
+  });
+};
