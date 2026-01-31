@@ -24,6 +24,7 @@ bun run job:run <job-name> [--dry-run]
 ```
 
 **Arguments:**
+
 - `<job-name>` - Name of the job to run (required)
 - `--dry-run` - Preview execution without making changes
 
@@ -70,6 +71,7 @@ Metrics:
 ```
 
 **Exit Codes:**
+
 - `0` - Job completed successfully
 - `1` - Job failed
 
@@ -104,6 +106,7 @@ Total: 8 jobs
 ```
 
 **Status Colors:**
+
 - Green: Ready to run
 - Yellow: Running
 - Red: Failed last run
@@ -184,16 +187,16 @@ Last Execution Metrics:
 
 ## Job Names Reference
 
-| Job Name | Description |
-|----------|-------------|
-| `sync-missing-sets` | Sync Pokemon TCG sets |
-| `sync-missing-cards` | Sync missing cards |
+| Job Name                  | Description                 |
+| ------------------------- | --------------------------- |
+| `sync-missing-sets`       | Sync Pokemon TCG sets       |
+| `sync-missing-cards`      | Sync missing cards          |
 | `validate-data-integrity` | Validate database integrity |
-| `backup-database` | Create database backup |
-| `rotate-backups` | Clean old backups |
-| `replicate-to-primary` | Sync to PostgreSQL |
-| `database-health-check` | Check database health |
-| `cleanup-stale-data` | Optimize database |
+| `backup-database`         | Create database backup      |
+| `rotate-backups`          | Clean old backups           |
+| `replicate-to-primary`    | Sync to PostgreSQL          |
+| `database-health-check`   | Check database health       |
+| `cleanup-stale-data`      | Optimize database           |
 
 ---
 

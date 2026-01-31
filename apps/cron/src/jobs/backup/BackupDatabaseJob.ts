@@ -14,7 +14,7 @@ export class BackupDatabaseJob extends Job {
     timeout: 300_000, // 5 minutes
     retryAttempts: 2,
     retryDelayMs: 30_000,
-    exclusive: true,
+    exclusive: true
   };
 
   private readonly backupService: BackupService;
@@ -31,7 +31,7 @@ export class BackupDatabaseJob extends Job {
     const metrics: Record<string, number> = {
       backup_created: 0,
       backup_size_bytes: 0,
-      backup_verified: 0,
+      backup_verified: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -46,7 +46,7 @@ export class BackupDatabaseJob extends Job {
       // Create backup
       const backup = await this.backupService.createBackup(dbPath, {
         compress: true,
-        verify: false, // Can't verify compressed backups directly
+        verify: false // Can't verify compressed backups directly
       });
 
       metrics.backup_created = 1;
@@ -76,7 +76,10 @@ export class BackupDatabaseJob extends Job {
 
       return this.createResult(startedAt, metrics, logs);
     } catch (error) {
-      logger.error('Backup failed: %s', error instanceof Error ? error.message : error);
+      logger.error(
+        'Backup failed: %s',
+        error instanceof Error ? error.message : error
+      );
       return this.createResult(
         startedAt,
         metrics,

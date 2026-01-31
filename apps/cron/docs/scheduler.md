@@ -22,13 +22,13 @@ const scheduler = new Scheduler({
 
 ### Configuration Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `timezone` | string | `America/New_York` | IANA timezone for schedule evaluation |
-| `maxConcurrentJobs` | number | 3 | Maximum jobs running simultaneously |
-| `defaultRetryAttempts` | number | 3 | Default retry count for failed jobs |
-| `defaultRetryDelay` | number | 60000 | Milliseconds between retry attempts |
-| `metricsEnabled` | boolean | true | Enable metrics collection |
+| Option                 | Type    | Default            | Description                           |
+| ---------------------- | ------- | ------------------ | ------------------------------------- |
+| `timezone`             | string  | `America/New_York` | IANA timezone for schedule evaluation |
+| `maxConcurrentJobs`    | number  | 3                  | Maximum jobs running simultaneously   |
+| `defaultRetryAttempts` | number  | 3                  | Default retry count for failed jobs   |
+| `defaultRetryDelay`    | number  | 60000              | Milliseconds between retry attempts   |
+| `metricsEnabled`       | boolean | true               | Enable metrics collection             |
 
 ## Job Registration
 
@@ -90,7 +90,7 @@ class SyncMissingCardsJob extends Job {
   config = {
     name: 'sync-missing-cards',
     schedule: '0 3 * * *',
-    dependsOn: ['sync-missing-sets']  // Must complete first
+    dependsOn: ['sync-missing-sets'] // Must complete first
   };
 }
 ```
@@ -134,7 +134,7 @@ Some jobs are marked as exclusive and cannot run with other exclusive jobs:
 class BackupDatabaseJob extends Job {
   config = {
     name: 'backup-database',
-    exclusive: true  // No other exclusive jobs while this runs
+    exclusive: true // No other exclusive jobs while this runs
   };
 }
 ```
@@ -145,7 +145,7 @@ Non-exclusive jobs (like health checks) can run alongside exclusive jobs:
 class DatabaseHealthCheckJob extends Job {
   config = {
     name: 'database-health-check',
-    exclusive: false  // Can run concurrently with anything
+    exclusive: false // Can run concurrently with anything
   };
 }
 ```
@@ -194,7 +194,7 @@ Jobs have configurable timeouts:
 class SyncMissingCardsJob extends Job {
   config = {
     name: 'sync-missing-cards',
-    timeout: 30 * 60 * 1000  // 30 minutes
+    timeout: 30 * 60 * 1000 // 30 minutes
   };
 
   async run(context: JobContext): Promise<void> {
@@ -216,8 +216,8 @@ Failed jobs are automatically retried:
 class SyncMissingSetsJob extends Job {
   config = {
     name: 'sync-missing-sets',
-    retryAttempts: 3,    // Try 3 times total
-    retryDelay: 60000    // Wait 1 minute between retries
+    retryAttempts: 3, // Try 3 times total
+    retryDelay: 60000 // Wait 1 minute between retries
   };
 }
 ```
@@ -266,13 +266,13 @@ const desc = parser.describe(schedule);
 
 ### Expression Fields
 
-| Field | Values | Special Characters |
-|-------|--------|-------------------|
-| Minute | 0-59 | `*` `,` `-` `/` |
-| Hour | 0-23 | `*` `,` `-` `/` |
-| Day of Month | 1-31 | `*` `,` `-` `/` |
-| Month | 1-12 | `*` `,` `-` `/` |
-| Day of Week | 0-6 (Sun=0) | `*` `,` `-` `/` |
+| Field        | Values      | Special Characters |
+| ------------ | ----------- | ------------------ |
+| Minute       | 0-59        | `*` `,` `-` `/`    |
+| Hour         | 0-23        | `*` `,` `-` `/`    |
+| Day of Month | 1-31        | `*` `,` `-` `/`    |
+| Month        | 1-12        | `*` `,` `-` `/`    |
+| Day of Week  | 0-6 (Sun=0) | `*` `,` `-` `/`    |
 
 ## Graceful Shutdown
 
@@ -327,12 +327,13 @@ Jobs can be configured to run immediately on scheduler start:
 class SyncMissingSetsJob extends Job {
   config = {
     name: 'sync-missing-sets',
-    runOnStartup: true  // Execute immediately when scheduler starts
+    runOnStartup: true // Execute immediately when scheduler starts
   };
 }
 ```
 
 This is useful for:
+
 - Catching up after downtime
 - Ensuring data is synced before other jobs run
 - Initial data population

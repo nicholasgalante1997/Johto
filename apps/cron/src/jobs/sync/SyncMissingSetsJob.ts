@@ -40,7 +40,7 @@ export class SyncMissingSetsJob extends Job {
     retryAttempts: 3,
     retryDelayMs: 60_000,
     runOnStartup: false,
-    exclusive: true,
+    exclusive: true
   };
 
   async execute(context: JobContext): Promise<JobResult> {
@@ -51,7 +51,7 @@ export class SyncMissingSetsJob extends Job {
       sets_existing: 0,
       sets_missing: 0,
       sets_synced: 0,
-      sets_failed: 0,
+      sets_failed: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -71,7 +71,9 @@ export class SyncMissingSetsJob extends Job {
       logger.info('Found %d sets in local data source', localSets.length);
 
       // Step 3: Find missing sets
-      const missingSets = localSets.filter((set) => !existingSetIds.has(set.id));
+      const missingSets = localSets.filter(
+        (set) => !existingSetIds.has(set.id)
+      );
       metrics.sets_missing = missingSets.length;
 
       if (missingSets.length === 0) {

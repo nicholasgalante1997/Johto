@@ -20,7 +20,7 @@ export class RotateBackupsJob extends Job {
     retryAttempts: 1,
     retryDelayMs: 30_000,
     dependsOn: ['backup-database'],
-    exclusive: true,
+    exclusive: true
   };
 
   private readonly backupService: BackupService;
@@ -28,7 +28,7 @@ export class RotateBackupsJob extends Job {
     dailyRetention: 7,
     weeklyRetention: 4,
     monthlyRetention: 3,
-    minimumBackups: 5,
+    minimumBackups: 5
   };
 
   constructor() {
@@ -44,14 +44,15 @@ export class RotateBackupsJob extends Job {
       total_backups: 0,
       backups_deleted: 0,
       space_freed_bytes: 0,
-      backups_retained: 0,
+      backups_retained: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
 
     try {
       logger.info('Starting backup rotation...');
-      logger.info('Retention policy: %d daily, %d weekly, %d monthly, min %d',
+      logger.info(
+        'Retention policy: %d daily, %d weekly, %d monthly, min %d',
         this.retention.dailyRetention,
         this.retention.weeklyRetention,
         this.retention.monthlyRetention,
@@ -93,7 +94,11 @@ export class RotateBackupsJob extends Job {
           await this.backupService.deleteBackup(backup.path);
           metrics.backups_deleted++;
           metrics.space_freed_bytes += backup.sizeBytes;
-          logger.info('Deleted: %s (%d bytes)', backup.filename, backup.sizeBytes);
+          logger.info(
+            'Deleted: %s (%d bytes)',
+            backup.filename,
+            backup.sizeBytes
+          );
         } catch (error) {
           logger.error(
             'Failed to delete %s: %s',
@@ -103,13 +108,16 @@ export class RotateBackupsJob extends Job {
         }
       }
 
-      metrics.backups_retained = metrics.total_backups - metrics.backups_deleted;
+      metrics.backups_retained =
+        metrics.total_backups - metrics.backups_deleted;
 
-      logger.info('Rotation complete: %d deleted, %d retained',
+      logger.info(
+        'Rotation complete: %d deleted, %d retained',
         metrics.backups_deleted,
         metrics.backups_retained
       );
-      logger.info('Space freed: %d MB',
+      logger.info(
+        'Space freed: %d MB',
         Math.round(metrics.space_freed_bytes / 1024 / 1024)
       );
 
@@ -118,7 +126,10 @@ export class RotateBackupsJob extends Job {
 
       return this.createResult(startedAt, metrics, logs);
     } catch (error) {
-      logger.error('Rotation failed: %s', error instanceof Error ? error.message : error);
+      logger.error(
+        'Rotation failed: %s',
+        error instanceof Error ? error.message : error
+      );
       return this.createResult(
         startedAt,
         metrics,
@@ -131,7 +142,9 @@ export class RotateBackupsJob extends Job {
   async onSuccess(result: JobResult): Promise<void> {
     const deleted = result.metrics.backups_deleted ?? 0;
     const retained = result.metrics.backups_retained ?? 0;
-    console.log(`[RotateBackupsJob] Completed - ${deleted} deleted, ${retained} retained`);
+    console.log(
+      `[RotateBackupsJob] Completed - ${deleted} deleted, ${retained} retained`
+    );
   }
 
   async onFailure(error: Error): Promise<void> {

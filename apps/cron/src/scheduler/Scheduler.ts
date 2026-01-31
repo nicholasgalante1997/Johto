@@ -9,7 +9,7 @@ import type {
   SchedulerStatus,
   JobResult,
   JobContext,
-  CronSchedule,
+  CronSchedule
 } from './types';
 import { createLogger, createCollectingLogger } from '../utils/logger';
 import { MetricsCollectorImpl } from '../utils/metrics';
@@ -34,7 +34,7 @@ const DEFAULT_CONFIG: SchedulerConfig = {
   maxConcurrentJobs: 3,
   defaultRetryAttempts: 3,
   defaultRetryDelayMs: 60_000,
-  enableMetrics: true,
+  enableMetrics: true
 };
 
 /**
@@ -67,7 +67,7 @@ export class Scheduler {
           attempt,
           error.message
         );
-      },
+      }
     });
   }
 
@@ -202,7 +202,7 @@ export class Scheduler {
       registeredJobs: Array.from(this.jobs.keys()),
       runningJobs: Array.from(this.runningJobs),
       lastExecutions: new Map(this.lastResults),
-      uptime: this.startTime ? Date.now() - this.startTime.getTime() : 0,
+      uptime: this.startTime ? Date.now() - this.startTime.getTime() : 0
     };
   }
 
@@ -220,7 +220,7 @@ export class Scheduler {
     return Array.from(this.jobs.values()).map((r) => ({
       ...r.job.config,
       lastRun: r.lastRun,
-      nextRun: r.nextRun,
+      nextRun: r.nextRun
     }));
   }
 
@@ -320,7 +320,7 @@ export class Scheduler {
       metrics: new MetricsCollectorImpl(),
       sqliteDb: this.sqliteDb!,
       pgPool: this.pgPool!,
-      abortSignal: abortController.signal,
+      abortSignal: abortController.signal
     };
   }
 
@@ -385,7 +385,7 @@ export class Scheduler {
     try {
       this.sqliteDb = sqlite.createDatabase(dbPath, {
         create: true,
-        readwrite: true,
+        readwrite: true
       });
 
       // Initialize schema if needed

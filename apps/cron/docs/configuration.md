@@ -6,49 +6,49 @@ The cron service is configured through environment variables. All configuration 
 
 ### Core Settings
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `CRON_TIMEZONE` | `America/New_York` | IANA timezone for schedule evaluation |
-| `CRON_LOG_LEVEL` | `info` | Log level: `debug`, `info`, `warn`, `error` |
-| `CRON_METRICS_ENABLED` | `true` | Enable metrics collection |
+| Variable               | Default            | Description                                 |
+| ---------------------- | ------------------ | ------------------------------------------- |
+| `CRON_TIMEZONE`        | `America/New_York` | IANA timezone for schedule evaluation       |
+| `CRON_LOG_LEVEL`       | `info`             | Log level: `debug`, `info`, `warn`, `error` |
+| `CRON_METRICS_ENABLED` | `true`             | Enable metrics collection                   |
 
 ### Database Settings
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DATABASE_PATH` | `./database/pokemon-data.sqlite3.db` | Path to SQLite database |
-| `POSTGRES_HOST` | - | PostgreSQL host (optional) |
-| `POSTGRES_PORT` | `5432` | PostgreSQL port |
-| `POSTGRES_USER` | - | PostgreSQL username |
-| `POSTGRES_PASSWORD` | - | PostgreSQL password |
-| `POSTGRES_DB` | - | PostgreSQL database name |
+| Variable            | Default                              | Description                |
+| ------------------- | ------------------------------------ | -------------------------- |
+| `DATABASE_PATH`     | `./database/pokemon-data.sqlite3.db` | Path to SQLite database    |
+| `POSTGRES_HOST`     | -                                    | PostgreSQL host (optional) |
+| `POSTGRES_PORT`     | `5432`                               | PostgreSQL port            |
+| `POSTGRES_USER`     | -                                    | PostgreSQL username        |
+| `POSTGRES_PASSWORD` | -                                    | PostgreSQL password        |
+| `POSTGRES_DB`       | -                                    | PostgreSQL database name   |
 
 ### Backup Settings
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `BACKUP_DIR` | `./database/backups` | Directory for backup files |
-| `BACKUP_DAILY_RETENTION` | `7` | Days to keep daily backups |
-| `BACKUP_WEEKLY_RETENTION` | `4` | Weeks to keep Sunday backups |
-| `BACKUP_MONTHLY_RETENTION` | `3` | Months to keep first-of-month backups |
-| `BACKUP_MINIMUM` | `3` | Minimum backups to always keep |
+| Variable                   | Default              | Description                           |
+| -------------------------- | -------------------- | ------------------------------------- |
+| `BACKUP_DIR`               | `./database/backups` | Directory for backup files            |
+| `BACKUP_DAILY_RETENTION`   | `7`                  | Days to keep daily backups            |
+| `BACKUP_WEEKLY_RETENTION`  | `4`                  | Weeks to keep Sunday backups          |
+| `BACKUP_MONTHLY_RETENTION` | `3`                  | Months to keep first-of-month backups |
+| `BACKUP_MINIMUM`           | `3`                  | Minimum backups to always keep        |
 
 ### Notification Settings
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `NOTIFICATION_WEBHOOK_URL` | - | Slack webhook URL (optional) |
-| `NOTIFICATION_EMAIL` | - | Alert email address (future) |
-| `NOTIFICATION_MIN_SEVERITY` | `error` | Minimum severity for alerts |
+| Variable                    | Default | Description                  |
+| --------------------------- | ------- | ---------------------------- |
+| `NOTIFICATION_WEBHOOK_URL`  | -       | Slack webhook URL (optional) |
+| `NOTIFICATION_EMAIL`        | -       | Alert email address (future) |
+| `NOTIFICATION_MIN_SEVERITY` | `error` | Minimum severity for alerts  |
 
 ### Sync Settings
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `SYNC_BATCH_SIZE` | `100` | Cards per insert batch |
-| `SYNC_MAX_SETS_PER_RUN` | `10` | Maximum sets to process per sync run |
-| `SYNC_PRIORITIZE_RECENT` | `true` | Process newest sets first |
-| `POKEMON_TCG_API_KEY` | - | API key for external data (optional) |
+| Variable                 | Default | Description                          |
+| ------------------------ | ------- | ------------------------------------ |
+| `SYNC_BATCH_SIZE`        | `100`   | Cards per insert batch               |
+| `SYNC_MAX_SETS_PER_RUN`  | `10`    | Maximum sets to process per sync run |
+| `SYNC_PRIORITIZE_RECENT` | `true`  | Process newest sets first            |
+| `POKEMON_TCG_API_KEY`    | -       | API key for external data (optional) |
 
 ## Example .env File
 
@@ -101,8 +101,8 @@ export function loadConfig(): AppConfig {
     metricsEnabled: parseBool(process.env.CRON_METRICS_ENABLED, true),
 
     database: {
-      sqlitePath: process.env.DATABASE_PATH ||
-        './database/pokemon-data.sqlite3.db',
+      sqlitePath:
+        process.env.DATABASE_PATH || './database/pokemon-data.sqlite3.db',
       postgres: loadPostgresConfig()
     },
 
@@ -232,7 +232,9 @@ Configuration is validated at startup:
 function validateConfig(config: AppConfig): void {
   // Validate paths exist
   if (!fs.existsSync(path.dirname(config.database.sqlitePath))) {
-    throw new Error(`Database directory not found: ${config.database.sqlitePath}`);
+    throw new Error(
+      `Database directory not found: ${config.database.sqlitePath}`
+    );
   }
 
   // Validate backup directory

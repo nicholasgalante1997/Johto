@@ -12,8 +12,8 @@ import { Job, JobConfig, JobContext, JobResult } from '../scheduler';
 export class MyCustomJob extends Job {
   config: JobConfig = {
     name: 'my-custom-job',
-    schedule: '0 * * * *',      // Every hour
-    timeout: 5 * 60 * 1000,     // 5 minutes
+    schedule: '0 * * * *', // Every hour
+    timeout: 5 * 60 * 1000, // 5 minutes
     retryAttempts: 2,
     retryDelay: 30000,
     exclusive: true,
@@ -39,16 +39,16 @@ export class MyCustomJob extends Job {
 
 ## JobConfig Interface
 
-| Property | Type | Required | Description |
-|----------|------|----------|-------------|
-| `name` | string | Yes | Unique identifier for the job |
-| `schedule` | string | Yes | Cron expression (5 fields) |
-| `timeout` | number | No | Max execution time in ms (default: 5 min) |
-| `retryAttempts` | number | No | Number of retry attempts (default: 3) |
-| `retryDelay` | number | No | Delay between retries in ms (default: 60s) |
-| `exclusive` | boolean | No | Block other exclusive jobs (default: true) |
-| `dependsOn` | string[] | No | Jobs that must complete first |
-| `runOnStartup` | boolean | No | Run immediately on scheduler start |
+| Property        | Type     | Required | Description                                |
+| --------------- | -------- | -------- | ------------------------------------------ |
+| `name`          | string   | Yes      | Unique identifier for the job              |
+| `schedule`      | string   | Yes      | Cron expression (5 fields)                 |
+| `timeout`       | number   | No       | Max execution time in ms (default: 5 min)  |
+| `retryAttempts` | number   | No       | Number of retry attempts (default: 3)      |
+| `retryDelay`    | number   | No       | Delay between retries in ms (default: 60s) |
+| `exclusive`     | boolean  | No       | Block other exclusive jobs (default: true) |
+| `dependsOn`     | string[] | No       | Jobs that must complete first              |
+| `runOnStartup`  | boolean  | No       | Run immediately on scheduler start         |
 
 ## JobContext Interface
 
@@ -121,26 +121,26 @@ The cron service includes 8 built-in jobs organized into three categories:
 
 ### Data Synchronization
 
-| Job | Schedule | Timeout | Description |
-|-----|----------|---------|-------------|
-| [`sync-missing-sets`](jobs-sync.md#sync-missing-sets) | `0 2 * * *` | 5 min | Sync Pokemon TCG sets |
-| [`sync-missing-cards`](jobs-sync.md#sync-missing-cards) | `0 3 * * *` | 30 min | Sync missing cards |
-| [`validate-data-integrity`](jobs-sync.md#validate-data-integrity) | `0 6 * * 0` | 10 min | Validate database integrity |
+| Job                                                               | Schedule    | Timeout | Description                 |
+| ----------------------------------------------------------------- | ----------- | ------- | --------------------------- |
+| [`sync-missing-sets`](jobs-sync.md#sync-missing-sets)             | `0 2 * * *` | 5 min   | Sync Pokemon TCG sets       |
+| [`sync-missing-cards`](jobs-sync.md#sync-missing-cards)           | `0 3 * * *` | 30 min  | Sync missing cards          |
+| [`validate-data-integrity`](jobs-sync.md#validate-data-integrity) | `0 6 * * 0` | 10 min  | Validate database integrity |
 
 ### Backup & Replication
 
-| Job | Schedule | Timeout | Description |
-|-----|----------|---------|-------------|
-| [`backup-database`](jobs-backup.md#backup-database) | `0 0 * * *` | 5 min | Create database backups |
-| [`rotate-backups`](jobs-backup.md#rotate-backups) | `0 1 * * *` | 1 min | Clean old backups |
-| [`replicate-to-primary`](jobs-backup.md#replicate-to-primary) | `0 4 * * *` | 30 min | Sync to PostgreSQL |
+| Job                                                           | Schedule    | Timeout | Description             |
+| ------------------------------------------------------------- | ----------- | ------- | ----------------------- |
+| [`backup-database`](jobs-backup.md#backup-database)           | `0 0 * * *` | 5 min   | Create database backups |
+| [`rotate-backups`](jobs-backup.md#rotate-backups)             | `0 1 * * *` | 1 min   | Clean old backups       |
+| [`replicate-to-primary`](jobs-backup.md#replicate-to-primary) | `0 4 * * *` | 30 min  | Sync to PostgreSQL      |
 
 ### Health Monitoring
 
-| Job | Schedule | Timeout | Description |
-|-----|----------|---------|-------------|
-| [`database-health-check`](jobs-health.md#database-health-check) | `*/15 * * * *` | 1 min | Monitor database health |
-| [`cleanup-stale-data`](jobs-health.md#cleanup-stale-data) | `0 5 * * 0` | 10 min | Optimize database |
+| Job                                                             | Schedule       | Timeout | Description             |
+| --------------------------------------------------------------- | -------------- | ------- | ----------------------- |
+| [`database-health-check`](jobs-health.md#database-health-check) | `*/15 * * * *` | 1 min   | Monitor database health |
+| [`cleanup-stale-data`](jobs-health.md#cleanup-stale-data)       | `0 5 * * 0`    | 10 min  | Optimize database       |
 
 ## Job Dependencies
 
@@ -178,7 +178,7 @@ import { Job, JobConfig, JobContext } from '../../scheduler';
 export class MyJob extends Job {
   config: JobConfig = {
     name: 'my-job',
-    schedule: '0 */6 * * *',  // Every 6 hours
+    schedule: '0 */6 * * *', // Every 6 hours
     timeout: 10 * 60 * 1000,
     retryAttempts: 2,
     retryDelay: 30000
@@ -195,7 +195,6 @@ export class MyJob extends Job {
 
       metrics.increment('items_processed', result.count);
       logger.info('Completed: %d items', result.count);
-
     } catch (error) {
       logger.error('Job failed: %s', error.message);
       throw error;
@@ -272,7 +271,8 @@ for (let i = 0; i < items.length; i += BATCH_SIZE) {
 Provide meaningful progress updates:
 
 ```typescript
-context.logger.info('Processing set %d of %d: %s',
+context.logger.info(
+  'Processing set %d of %d: %s',
   index + 1,
   totalSets,
   set.name
@@ -308,7 +308,8 @@ for (const item of items) {
     successCount++;
   } catch (error) {
     failCount++;
-    context.logger.warn('Failed to process item %s: %s',
+    context.logger.warn(
+      'Failed to process item %s: %s',
       item.id,
       error.message
     );

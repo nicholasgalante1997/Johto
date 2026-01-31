@@ -29,16 +29,16 @@ The Cron Service is a standalone background worker that handles automated databa
 
 ## Jobs at a Glance
 
-| Job | Schedule | Purpose |
-|-----|----------|---------|
-| `sync-missing-sets` | Daily 2:00 AM | Sync new Pokemon TCG sets |
-| `sync-missing-cards` | Daily 3:00 AM | Sync missing cards for incomplete sets |
-| `validate-data-integrity` | Weekly Sunday 6:00 AM | Validate database integrity |
-| `backup-database` | Daily midnight | Create compressed database backups |
-| `rotate-backups` | Daily 1:00 AM | Clean old backups per retention policy |
-| `replicate-to-primary` | Daily 4:00 AM | Sync data to PostgreSQL |
-| `database-health-check` | Every 15 minutes | Monitor database health |
-| `cleanup-stale-data` | Weekly Sunday 5:00 AM | Optimize database (VACUUM/ANALYZE) |
+| Job                       | Schedule              | Purpose                                |
+| ------------------------- | --------------------- | -------------------------------------- |
+| `sync-missing-sets`       | Daily 2:00 AM         | Sync new Pokemon TCG sets              |
+| `sync-missing-cards`      | Daily 3:00 AM         | Sync missing cards for incomplete sets |
+| `validate-data-integrity` | Weekly Sunday 6:00 AM | Validate database integrity            |
+| `backup-database`         | Daily midnight        | Create compressed database backups     |
+| `rotate-backups`          | Daily 1:00 AM         | Clean old backups per retention policy |
+| `replicate-to-primary`    | Daily 4:00 AM         | Sync data to PostgreSQL                |
+| `database-health-check`   | Every 15 minutes      | Monitor database health                |
+| `cleanup-stale-data`      | Weekly Sunday 5:00 AM | Optimize database (VACUUM/ANALYZE)     |
 
 ## Quick Example
 

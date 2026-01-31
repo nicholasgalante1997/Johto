@@ -87,14 +87,14 @@ Jobs are declarative units of work:
 interface JobConfig {
   name: string;
   description: string;
-  schedule: string;              // Cron expression
+  schedule: string; // Cron expression
   enabled: boolean;
-  timeout: number;               // Max execution time (ms)
+  timeout: number; // Max execution time (ms)
   retryAttempts: number;
   retryDelayMs: number;
-  dependsOn?: string[];          // Jobs that must complete first
+  dependsOn?: string[]; // Jobs that must complete first
   runOnStartup?: boolean;
-  exclusive?: boolean;           // Prevent concurrent runs
+  exclusive?: boolean; // Prevent concurrent runs
 }
 
 abstract class Job {
@@ -134,6 +134,7 @@ interface JobResult {
 **Schedule:** `0 2 * * *` (Daily at 2:00 AM)
 
 **Behavior:**
+
 1. Load all set IDs from `@pokemon/data` package
 2. Query database for existing set IDs
 3. Identify missing sets
@@ -142,6 +143,7 @@ interface JobResult {
 6. Log sync results
 
 **Metrics:**
+
 - `sets_checked`: Total sets compared
 - `sets_missing`: Sets identified as missing
 - `sets_synced`: Sets successfully added
@@ -158,6 +160,7 @@ interface JobResult {
 **Dependencies:** `SyncMissingSetsJob`
 
 **Behavior:**
+
 1. Query all sets with `actual_count < expected_total`
 2. For each incomplete set:
    a. Load cards from `@pokemon/data` package
@@ -168,12 +171,14 @@ interface JobResult {
 4. Generate completeness report
 
 **Metrics:**
+
 - `sets_processed`: Sets checked for missing cards
 - `cards_missing`: Total cards identified as missing
 - `cards_synced`: Cards successfully added
 - `cards_failed`: Cards that failed to sync
 
 **Configuration:**
+
 ```typescript
 {
   batchSize: 100,
@@ -192,6 +197,7 @@ interface JobResult {
 **Schedule:** `0 6 * * 0` (Weekly on Sunday at 6:00 AM)
 
 **Behavior:**
+
 1. Check for orphaned cards (cards without valid set_id)
 2. Validate required fields are non-null
 3. Check for duplicate card entries
@@ -200,6 +206,7 @@ interface JobResult {
 6. Alert on critical issues
 
 **Metrics:**
+
 - `orphaned_cards`: Cards without valid set
 - `duplicate_cards`: Duplicate card entries
 - `missing_fields`: Records with null required fields
@@ -216,6 +223,7 @@ interface JobResult {
 **Schedule:** `0 0 * * *` (Daily at midnight)
 
 **Behavior:**
+
 1. Acquire database lock (prevent writes)
 2. Copy database file to backup location
 3. Compress backup with gzip
@@ -226,6 +234,7 @@ interface JobResult {
 **Backup Location:** `database/backups/pokemon-data-{timestamp}.sqlite3.db.gz`
 
 **Metrics:**
+
 - `backup_size_bytes`: Compressed backup size
 - `backup_duration_ms`: Time to complete backup
 - `backup_verified`: Boolean verification result
@@ -241,6 +250,7 @@ interface JobResult {
 **Dependencies:** `BackupDatabaseJob`
 
 **Behavior:**
+
 1. List all backups in backup directory
 2. Apply retention policy:
    - Keep last 7 daily backups
@@ -250,6 +260,7 @@ interface JobResult {
 4. Log deleted backup list
 
 **Configuration:**
+
 ```typescript
 {
   dailyRetention: 7,
@@ -270,6 +281,7 @@ interface JobResult {
 **Dependencies:** `SyncMissingCardsJob`
 
 **Behavior:**
+
 1. Connect to PostgreSQL via `@pokemon/database`
 2. Compare record counts between SQLite and PostgreSQL
 3. Identify delta records (new/updated in SQLite)
@@ -278,6 +290,7 @@ interface JobResult {
 6. Update sync checkpoint
 
 **Metrics:**
+
 - `records_compared`: Total records checked
 - `records_inserted`: New records added
 - `records_updated`: Existing records updated
@@ -294,6 +307,7 @@ interface JobResult {
 **Schedule:** `*/15 * * * *` (Every 15 minutes)
 
 **Behavior:**
+
 1. Test database connectivity
 2. Check disk space usage
 3. Verify table integrity (PRAGMA integrity_check)
@@ -302,6 +316,7 @@ interface JobResult {
 6. Send alert if issues detected
 
 **Alert Conditions:**
+
 - Database unreachable
 - Disk usage > 90%
 - Integrity check failures
@@ -316,6 +331,7 @@ interface JobResult {
 **Schedule:** `0 5 * * 0` (Weekly on Sunday at 5:00 AM)
 
 **Behavior:**
+
 1. Clear expired cache entries
 2. Remove orphaned temporary files
 3. Vacuum database (reclaim space)
@@ -383,7 +399,7 @@ export const jobConfigs: JobConfig[] = [
     retryDelayMs: 120_000,
     dependsOn: ['sync-missing-sets'],
     exclusive: true
-  },
+  }
   // ... additional job configs
 ];
 ```
@@ -426,11 +442,13 @@ export const jobConfigs: JobConfig[] = [
    - Log rotation for cron logs
 
 **Deliverables:**
+
 - Working scheduler that can register and run jobs on schedule
 - Test job that logs "Hello World" on a schedule
 - CLI commands: `bun run start`, `bun run start:dev`
 
 **Acceptance Criteria:**
+
 - Scheduler starts and runs test job on configured schedule
 - Jobs can be enabled/disabled via config
 - Graceful shutdown on SIGTERM/SIGINT
@@ -445,6 +463,7 @@ export const jobConfigs: JobConfig[] = [
 **Dependencies:** Phase 1 complete
 
 **External Dependencies:**
+
 - `@pokemon/clients` - Pokemon TCG API client (`Pokedex` class)
 - `@pokemon/database` - SQLite database module with curried query functions
 
@@ -577,11 +596,13 @@ db.close();
 ```
 
 **Deliverables:**
+
 - Three working sync jobs
 - Metrics dashboard data
 - Sync status reporting
 
 **Acceptance Criteria:**
+
 - `SyncMissingSetsJob` identifies and syncs missing sets
 - `SyncMissingCardsJob` fills in missing cards for incomplete sets
 - Jobs respect dependencies (cards wait for sets)
@@ -596,6 +617,7 @@ db.close();
 **Dependencies:** Phase 1 complete
 
 **External Dependencies:**
+
 - `@pokemon/database` - SQLite and PostgreSQL modules
 - `bun:sqlite` - Native Bun SQLite bindings (WAL mode enabled by default)
 
@@ -670,11 +692,13 @@ for (const set of sets) {
 ```
 
 **Deliverables:**
+
 - Automated daily backups
 - Backup rotation with retention policy
 - SQLite to PostgreSQL replication
 
 **Acceptance Criteria:**
+
 - Backups created and verified daily
 - Old backups rotated per policy
 - PostgreSQL contains synced data from SQLite
@@ -689,6 +713,7 @@ for (const set of sets) {
 **Dependencies:** Phase 1 complete
 
 **External Dependencies:**
+
 - `@pokemon/database` - SQLite module for health checks
 
 **Tasks:**
@@ -755,12 +780,14 @@ db.close();
    - Alert history
 
 **Deliverables:**
+
 - Health check job running every 15 minutes
 - Slack/email alerts on failures
 - Weekly cleanup job
 - Health metrics API endpoint
 
 **Acceptance Criteria:**
+
 - Health checks detect simulated failures
 - Alerts sent within 5 minutes of issue
 - Cleanup job reclaims disk space
@@ -804,12 +831,14 @@ db.close();
    - Alert response playbook
 
 **Deliverables:**
+
 - Full CLI for job management
 - Job execution history
 - Dry run support
 - Operations documentation
 
 **Acceptance Criteria:**
+
 - All CLI commands functional
 - History persisted across restarts
 - Dry run shows accurate preview
@@ -856,12 +885,14 @@ db.close();
    - Restart policies
 
 **Deliverables:**
+
 - Production-ready Docker image
 - Updated docker-compose.yml
 - Deployment documentation
 - Monitoring integration
 
 **Acceptance Criteria:**
+
 - Container builds and runs successfully
 - Health checks pass in container
 - Logs aggregated properly
@@ -902,6 +933,7 @@ db.close();
 ```
 
 **Note:** The `@pokemon/clients` package provides the `Pokedex` class for Pokemon TCG API access:
+
 - `Pokedex.getAllSets()` - Async generator for paginated set fetching
 - `Pokedex.getAllCardsInSet(setId)` - Async generator for paginated card fetching
 - `Pokedex.getQueryBuilder('card' | 'set')` - Query builder for search
@@ -938,13 +970,13 @@ Requires `POKEMON_TCG_API_KEY` environment variable for authentication.
 
 ## Success Metrics
 
-| Metric | Target |
-|--------|--------|
+| Metric                | Target                  |
+| --------------------- | ----------------------- |
 | Database completeness | > 99% of expected cards |
-| Backup success rate | 100% |
-| Job success rate | > 95% |
-| Alert response time | < 5 minutes |
-| Mean time to recovery | < 30 minutes |
+| Backup success rate   | 100%                    |
+| Job success rate      | > 95%                   |
+| Alert response time   | < 5 minutes             |
+| Mean time to recovery | < 30 minutes            |
 
 ---
 
@@ -961,6 +993,7 @@ Requires `POKEMON_TCG_API_KEY` environment variable for authentication.
 ```
 
 **Examples:**
+
 - `0 2 * * *` - Daily at 2:00 AM
 - `*/15 * * * *` - Every 15 minutes
 - `0 0 * * 0` - Weekly on Sunday at midnight

@@ -68,6 +68,7 @@ bun run job:status
 ```
 
 Expected output:
+
 ```
 Cron Service Status
 ═══════════════════

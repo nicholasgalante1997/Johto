@@ -27,13 +27,13 @@ export class DatabaseHealthCheckJob extends Job {
     timeout: 60_000, // 1 minute
     retryAttempts: 1,
     retryDelayMs: 10_000,
-    exclusive: false, // Can run concurrently with other jobs
+    exclusive: false // Can run concurrently with other jobs
   };
 
   private readonly notificationService: NotificationService;
   private readonly thresholds = {
     maxDbSizeMB: 1000, // Alert if DB > 1GB
-    minDiskSpaceMB: 500, // Alert if disk space < 500MB
+    minDiskSpaceMB: 500 // Alert if disk space < 500MB
   };
 
   constructor() {
@@ -46,7 +46,7 @@ export class DatabaseHealthCheckJob extends Job {
     const logs: string[] = [];
     const metrics: Record<string, number> = {
       health_score: 100,
-      issues_found: 0,
+      issues_found: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -64,48 +64,62 @@ export class DatabaseHealthCheckJob extends Job {
         table_count: 0,
         set_count: 0,
         card_count: 0,
-        disk_space_available_mb: 0,
+        disk_space_available_mb: 0
       };
 
       // Check SQLite connectivity
       try {
-        const result = context.sqliteDb.query('SELECT 1 as test').get() as { test: number };
+        const result = context.sqliteDb.query('SELECT 1 as test').get() as {
+          test: number;
+        };
         health.sqlite_connected = result?.test === 1;
         logger.info('SQLite connection: OK');
       } catch (error) {
         health.sqlite_connected = false;
-        issues.push(`SQLite connection failed: ${error instanceof Error ? error.message : error}`);
+        issues.push(
+          `SQLite connection failed: ${error instanceof Error ? error.message : error}`
+        );
         logger.error('SQLite connection: FAILED');
       }
 
       // Check SQLite integrity (quick check)
       if (health.sqlite_connected) {
         try {
-          const result = context.sqliteDb
-            .query('PRAGMA quick_check')
-            .get() as { quick_check: string };
+          const result = context.sqliteDb.query('PRAGMA quick_check').get() as {
+            quick_check: string;
+          };
           health.sqlite_integrity_ok = result?.quick_check === 'ok';
-          logger.info('SQLite integrity: %s', health.sqlite_integrity_ok ? 'OK' : 'FAILED');
+          logger.info(
+            'SQLite integrity: %s',
+            health.sqlite_integrity_ok ? 'OK' : 'FAILED'
+          );
 
           if (!health.sqlite_integrity_ok) {
-            issues.push(`SQLite integrity check failed: ${result?.quick_check}`);
+            issues.push(
+              `SQLite integrity check failed: ${result?.quick_check}`
+            );
           }
         } catch (error) {
           health.sqlite_integrity_ok = false;
-          issues.push(`SQLite integrity check error: ${error instanceof Error ? error.message : error}`);
+          issues.push(
+            `SQLite integrity check error: ${error instanceof Error ? error.message : error}`
+          );
         }
       }
 
       // Get SQLite database size
       try {
-        const dbPath = process.env.DATABASE_PATH ?? './database/pokemon-data.sqlite3.db';
+        const dbPath =
+          process.env.DATABASE_PATH ?? './database/pokemon-data.sqlite3.db';
         const stats = statSync(dbPath);
         health.sqlite_size_bytes = stats.size;
         metrics.db_size_mb = Math.round(stats.size / 1024 / 1024);
         logger.info('SQLite size: %d MB', metrics.db_size_mb);
 
         if (metrics.db_size_mb > this.thresholds.maxDbSizeMB) {
-          issues.push(`Database size (${metrics.db_size_mb} MB) exceeds threshold (${this.thresholds.maxDbSizeMB} MB)`);
+          issues.push(
+            `Database size (${metrics.db_size_mb} MB) exceeds threshold (${this.thresholds.maxDbSizeMB} MB)`
+          );
         }
 
         // Check WAL file size
@@ -119,14 +133,19 @@ export class DatabaseHealthCheckJob extends Job {
           metrics.wal_size_mb = 0;
         }
       } catch (error) {
-        logger.warn('Could not get database file size: %s', error instanceof Error ? error.message : error);
+        logger.warn(
+          'Could not get database file size: %s',
+          error instanceof Error ? error.message : error
+        );
       }
 
       // Get table counts
       if (health.sqlite_connected) {
         try {
           const tables = context.sqliteDb
-            .query("SELECT COUNT(*) as cnt FROM sqlite_master WHERE type='table'")
+            .query(
+              "SELECT COUNT(*) as cnt FROM sqlite_master WHERE type='table'"
+            )
             .get() as { cnt: number };
           health.table_count = tables.cnt;
 
@@ -142,9 +161,16 @@ export class DatabaseHealthCheckJob extends Job {
           health.card_count = cards.cnt;
           metrics.card_count = cards.cnt;
 
-          logger.info('Data: %d sets, %d cards', health.set_count, health.card_count);
+          logger.info(
+            'Data: %d sets, %d cards',
+            health.set_count,
+            health.card_count
+          );
         } catch (error) {
-          logger.warn('Could not get table counts: %s', error instanceof Error ? error.message : error);
+          logger.warn(
+            'Could not get table counts: %s',
+            error instanceof Error ? error.message : error
+          );
         }
       }
 
@@ -160,7 +186,10 @@ export class DatabaseHealthCheckJob extends Job {
       } catch (error) {
         health.postgres_connected = false;
         // PostgreSQL is optional, so just warn
-        logger.warn('PostgreSQL connection: FAILED (%s)', error instanceof Error ? error.message : error);
+        logger.warn(
+          'PostgreSQL connection: FAILED (%s)',
+          error instanceof Error ? error.message : error
+        );
       }
 
       // Calculate health score
@@ -198,7 +227,10 @@ export class DatabaseHealthCheckJob extends Job {
 
       return this.createResult(startedAt, metrics, logs);
     } catch (error) {
-      logger.error('Health check failed: %s', error instanceof Error ? error.message : error);
+      logger.error(
+        'Health check failed: %s',
+        error instanceof Error ? error.message : error
+      );
       return this.createResult(
         startedAt,
         metrics,
@@ -210,7 +242,8 @@ export class DatabaseHealthCheckJob extends Job {
 
   async onSuccess(result: JobResult): Promise<void> {
     const score = result.metrics.health_score ?? 0;
-    const level = score >= 90 ? 'HEALTHY' : score >= 70 ? 'DEGRADED' : 'UNHEALTHY';
+    const level =
+      score >= 90 ? 'HEALTHY' : score >= 70 ? 'DEGRADED' : 'UNHEALTHY';
     console.log(`[DatabaseHealthCheckJob] ${level} - Score: ${score}/100`);
   }
 

@@ -51,7 +51,9 @@ async function runJob(jobName?: string, dryRun: boolean = false) {
     // Check if the job exists in config but isn't implemented yet
     const configExists = jobConfigs.find((c) => c.name === jobName);
     if (configExists) {
-      console.error(`Error: Job "${jobName}" is defined but not yet implemented`);
+      console.error(
+        `Error: Job "${jobName}" is defined but not yet implemented`
+      );
     } else {
       console.error(`Error: Job "${jobName}" not found`);
       console.log('\nAvailable jobs:');
@@ -142,7 +144,9 @@ function listJobs() {
       const status = config.enabled ? '[ON] ' : '[OFF]';
       console.log(`\n${status} ${config.name}`);
       console.log(`       ${config.description}`);
-      console.log(`       Schedule: ${config.schedule} (${CronParser.describe(config.schedule)})`);
+      console.log(
+        `       Schedule: ${config.schedule} (${CronParser.describe(config.schedule)})`
+      );
       if (config.dependsOn?.length) {
         console.log(`       Depends on: ${config.dependsOn.join(', ')}`);
       }
@@ -151,7 +155,9 @@ function listJobs() {
 
   // Show jobs that are configured but not yet implemented
   const implementedNames = new Set(implementedJobs.map((j) => j.name));
-  const notImplemented = jobConfigs.filter((c) => !implementedNames.has(c.name));
+  const notImplemented = jobConfigs.filter(
+    (c) => !implementedNames.has(c.name)
+  );
 
   if (notImplemented.length > 0) {
     console.log('\nPending Implementation:');
@@ -163,7 +169,9 @@ function listJobs() {
   }
 
   console.log('\n' + '='.repeat(60));
-  console.log(`Total: ${jobConfigs.length} jobs (${implementedJobs.length} implemented)`);
+  console.log(
+    `Total: ${jobConfigs.length} jobs (${implementedJobs.length} implemented)`
+  );
   console.log('='.repeat(60) + '\n');
 }
 

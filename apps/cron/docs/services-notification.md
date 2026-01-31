@@ -24,12 +24,12 @@ const notificationService = new NotificationService({
 
 ## Alert Severity Levels
 
-| Level | Value | Color | Emoji | Use Case |
-|-------|-------|-------|-------|----------|
-| `info` | 0 | Blue | ℹ️ | Informational messages |
-| `warning` | 1 | Yellow | ⚠️ | Warning conditions |
-| `error` | 2 | Red | ❌ | Error conditions |
-| `critical` | 3 | Dark Red | 🚨 | Critical failures |
+| Level      | Value | Color    | Emoji | Use Case               |
+| ---------- | ----- | -------- | ----- | ---------------------- |
+| `info`     | 0     | Blue     | ℹ️    | Informational messages |
+| `warning`  | 1     | Yellow   | ⚠️    | Warning conditions     |
+| `error`    | 2     | Red      | ❌    | Error conditions       |
+| `critical` | 3     | Dark Red | 🚨    | Critical failures      |
 
 ## API Reference
 
@@ -69,6 +69,7 @@ await notificationService.sendJobFailureAlert(
 ```
 
 **Generated alert:**
+
 ```
 🚨 Job Failed: sync-missing-cards
 
@@ -109,31 +110,33 @@ Alerts are formatted as Slack attachments with rich formatting:
 
 ```json
 {
-  "attachments": [{
-    "color": "#dc2626",
-    "pretext": "🚨 *Cron Service Alert*",
-    "title": "Job Failed: sync-missing-cards",
-    "text": "Database connection failed",
-    "fields": [
-      { "title": "Job", "value": "sync-missing-cards", "short": true },
-      { "title": "Severity", "value": "error", "short": true },
-      { "title": "cards_processed", "value": "50", "short": true },
-      { "title": "cards_failed", "value": "10", "short": true }
-    ],
-    "footer": "Pokemon TCG Cron Service",
-    "ts": 1705312800
-  }]
+  "attachments": [
+    {
+      "color": "#dc2626",
+      "pretext": "🚨 *Cron Service Alert*",
+      "title": "Job Failed: sync-missing-cards",
+      "text": "Database connection failed",
+      "fields": [
+        { "title": "Job", "value": "sync-missing-cards", "short": true },
+        { "title": "Severity", "value": "error", "short": true },
+        { "title": "cards_processed", "value": "50", "short": true },
+        { "title": "cards_failed", "value": "10", "short": true }
+      ],
+      "footer": "Pokemon TCG Cron Service",
+      "ts": 1705312800
+    }
+  ]
 }
 ```
 
 ### Color Mapping
 
 | Severity | Hex Color | Appearance |
-|----------|-----------|------------|
-| info | `#3b82f6` | Blue |
-| warning | `#eab308` | Yellow |
-| error | `#dc2626` | Red |
-| critical | `#7f1d1d` | Dark Red |
+| -------- | --------- | ---------- |
+| info     | `#3b82f6` | Blue       |
+| warning  | `#eab308` | Yellow     |
+| error    | `#dc2626` | Red        |
+| critical | `#7f1d1d` | Dark Red   |
 
 ## Severity Filtering
 
@@ -187,10 +190,10 @@ NOTIFICATION_MIN_SEVERITY=error
 
 ```typescript
 interface NotificationConfig {
-  webhookUrl?: string;     // Slack webhook URL
-  email?: string;          // Email address (future)
-  minSeverity: Severity;   // Minimum severity for notifications
-  enabled: boolean;        // Enable/disable notifications
+  webhookUrl?: string; // Slack webhook URL
+  email?: string; // Email address (future)
+  minSeverity: Severity; // Minimum severity for notifications
+  enabled: boolean; // Enable/disable notifications
 }
 ```
 
@@ -284,6 +287,7 @@ curl -X POST -H 'Content-type: application/json' \
 ## Future Enhancements
 
 Planned features:
+
 - Email notifications
 - PagerDuty integration
 - Alert aggregation (rate limiting)

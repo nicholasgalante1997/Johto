@@ -31,7 +31,7 @@ export const allJobs: Job[] = [
 
   // Health jobs
   new DatabaseHealthCheckJob(),
-  new CleanupStaleDataJob(),
+  new CleanupStaleDataJob()
 ];
 
 /**

@@ -15,7 +15,7 @@ export const jobConfigs: JobConfig[] = [
     retryAttempts: 3,
     retryDelayMs: 60_000,
     runOnStartup: false,
-    exclusive: true,
+    exclusive: true
   },
   {
     name: 'sync-missing-cards',
@@ -26,7 +26,7 @@ export const jobConfigs: JobConfig[] = [
     retryAttempts: 2,
     retryDelayMs: 120_000,
     dependsOn: ['sync-missing-sets'],
-    exclusive: true,
+    exclusive: true
   },
   {
     name: 'validate-data-integrity',
@@ -36,7 +36,7 @@ export const jobConfigs: JobConfig[] = [
     timeout: 600_000, // 10 minutes
     retryAttempts: 1,
     retryDelayMs: 60_000,
-    exclusive: true,
+    exclusive: true
   },
 
   // Database Backup Jobs
@@ -48,7 +48,7 @@ export const jobConfigs: JobConfig[] = [
     timeout: 300_000, // 5 minutes
     retryAttempts: 2,
     retryDelayMs: 30_000,
-    exclusive: true,
+    exclusive: true
   },
   {
     name: 'rotate-backups',
@@ -59,7 +59,7 @@ export const jobConfigs: JobConfig[] = [
     retryAttempts: 1,
     retryDelayMs: 30_000,
     dependsOn: ['backup-database'],
-    exclusive: true,
+    exclusive: true
   },
   {
     name: 'replicate-to-primary',
@@ -70,7 +70,7 @@ export const jobConfigs: JobConfig[] = [
     retryAttempts: 2,
     retryDelayMs: 120_000,
     dependsOn: ['sync-missing-cards'],
-    exclusive: true,
+    exclusive: true
   },
 
   // Health Monitoring Jobs
@@ -82,7 +82,7 @@ export const jobConfigs: JobConfig[] = [
     timeout: 60_000, // 1 minute
     retryAttempts: 1,
     retryDelayMs: 10_000,
-    exclusive: false, // Can run concurrently
+    exclusive: false // Can run concurrently
   },
   {
     name: 'cleanup-stale-data',
@@ -92,8 +92,8 @@ export const jobConfigs: JobConfig[] = [
     timeout: 600_000, // 10 minutes
     retryAttempts: 1,
     retryDelayMs: 60_000,
-    exclusive: true,
-  },
+    exclusive: true
+  }
 ];
 
 /**

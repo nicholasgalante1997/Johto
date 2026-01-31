@@ -140,7 +140,12 @@ export interface CronSchedule {
 /**
  * Possible states for a job execution.
  */
-export type JobState = 'pending' | 'running' | 'completed' | 'failed' | 'cancelled';
+export type JobState =
+  | 'pending'
+  | 'running'
+  | 'completed'
+  | 'failed'
+  | 'cancelled';
 
 /**
  * Tracking information for a job execution.

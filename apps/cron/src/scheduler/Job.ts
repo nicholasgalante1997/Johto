@@ -60,7 +60,7 @@ export abstract class Job {
       durationMs: completedAt.getTime() - startedAt.getTime(),
       metrics,
       logs,
-      error,
+      error
     };
   }
 
@@ -96,7 +96,7 @@ export abstract class Job {
       error: (msg, ...args) => {
         addLog('error', msg, args);
         baseLogger.error(msg, ...args);
-      },
+      }
     };
   }
 
