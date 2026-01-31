@@ -28,13 +28,17 @@ function openDatabase(): Database {
 
 function getSet(db: Database, setId: string): SetRow | null {
   return db
-    .query<SetRow, [string]>('SELECT id, name, total, printed_total FROM pokemon_card_sets WHERE id = ?')
+    .query<
+      SetRow,
+      [string]
+    >('SELECT id, name, total, printed_total FROM pokemon_card_sets WHERE id = ?')
     .get(setId);
 }
 
 function getIncompleteSets(db: Database): SetRow[] {
   return db
-    .query<SetRow, []>(`
+    .query<SetRow, []>(
+      `
       SELECT s.id, s.name, s.total, s.printed_total
       FROM pokemon_card_sets s
       LEFT JOIN (
@@ -42,18 +46,25 @@ function getIncompleteSets(db: Database): SetRow[] {
       ) c ON s.id = c.set_id
       WHERE COALESCE(c.cnt, 0) < COALESCE(s.total, s.printed_total, 0)
       ORDER BY s.release_date DESC
-    `)
+    `
+    )
     .all();
 }
 
 function getCardNumbersInSet(db: Database, setId: string): Set<string> {
   const rows = db
-    .query<CardRow, [string]>('SELECT number FROM pokemon_cards WHERE set_id = ?')
+    .query<
+      CardRow,
+      [string]
+    >('SELECT number FROM pokemon_cards WHERE set_id = ?')
     .all(setId);
   return new Set(rows.map((r) => r.number));
 }
 
-function findMissingNumbers(existingNumbers: Set<string>, total: number): string[] {
+function findMissingNumbers(
+  existingNumbers: Set<string>,
+  total: number
+): string[] {
   const missing: string[] = [];
 
   for (let i = 1; i <= total; i++) {
@@ -73,7 +84,9 @@ function analyzeSet(db: Database, set: SetRow): void {
 
   console.log(`\n${'='.repeat(60)}`);
   console.log(`Set: ${set.name} (${set.id})`);
-  console.log(`Expected: ${expectedTotal} | Found: ${existingNumbers.size} | Missing: ${missingNumbers.length}`);
+  console.log(
+    `Expected: ${expectedTotal} | Found: ${existingNumbers.size} | Missing: ${missingNumbers.length}`
+  );
   console.log('='.repeat(60));
 
   if (missingNumbers.length === 0) {
@@ -83,7 +96,9 @@ function analyzeSet(db: Database, set: SetRow): void {
   } else if (missingNumbers.length <= 50) {
     console.log(`  Missing card numbers: ${missingNumbers.join(', ')}`);
   } else {
-    console.log(`  Missing card numbers (first 50 of ${missingNumbers.length}):`);
+    console.log(
+      `  Missing card numbers (first 50 of ${missingNumbers.length}):`
+    );
     console.log(`  ${missingNumbers.slice(0, 50).join(', ')}...`);
   }
 }
