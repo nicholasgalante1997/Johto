@@ -38,7 +38,9 @@ export class GraphQLClient {
       clearTimeout(timeoutId);
 
       if (!response.ok) {
-        throw new Error(`GraphQL API error: ${response.status} ${response.statusText}`);
+        throw new Error(
+          `GraphQL API error: ${response.status} ${response.statusText}`
+        );
       }
 
       const result = await response.json();

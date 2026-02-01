@@ -94,6 +94,7 @@ This specification outlines the migration of the monolithic `apps/web` server to
 The BFF is tightly coupled to the React frontend and owned by the frontend team.
 
 **Responsibilities:**
+
 - Server-side rendering of React application
 - Static asset serving (JS, CSS, images)
 - BFF proxy endpoints (`/bff/*`) for frontend data needs
@@ -103,6 +104,7 @@ The BFF is tightly coupled to the React frontend and owned by the frontend team.
 - Error transformation for UI consumption
 
 **Does NOT handle:**
+
 - Direct database access
 - Business logic beyond UI concerns
 - Raw API exposure to external clients
@@ -112,6 +114,7 @@ The BFF is tightly coupled to the React frontend and owned by the frontend team.
 Dedicated RESTful API service for Pokemon TCG data.
 
 **Responsibilities:**
+
 - CRUD operations for cards, sets, users, decks, collections
 - Pagination, filtering, sorting
 - Resource-oriented endpoints
@@ -125,6 +128,7 @@ Dedicated RESTful API service for Pokemon TCG data.
 Dedicated GraphQL service optimized for complex queries.
 
 **Responsibilities:**
+
 - GraphQL query and mutation handling
 - Schema management and introspection
 - DataLoader for N+1 prevention
@@ -305,28 +309,28 @@ apps/web/
 
 #### Cards Resource
 
-| Method | Path | Description | Query Parameters |
-|--------|------|-------------|------------------|
-| GET | `/api/v1/cards` | List all cards | `page`, `limit`, `sort`, `order` |
-| GET | `/api/v1/cards/:id` | Get card by ID | - |
-| GET | `/api/v1/cards/search` | Search cards | `name`, `type`, `rarity`, `set` |
+| Method | Path                   | Description    | Query Parameters                 |
+| ------ | ---------------------- | -------------- | -------------------------------- |
+| GET    | `/api/v1/cards`        | List all cards | `page`, `limit`, `sort`, `order` |
+| GET    | `/api/v1/cards/:id`    | Get card by ID | -                                |
+| GET    | `/api/v1/cards/search` | Search cards   | `name`, `type`, `rarity`, `set`  |
 
 #### Sets Resource
 
-| Method | Path | Description | Query Parameters |
-|--------|------|-------------|------------------|
-| GET | `/api/v1/sets` | List all sets | `page`, `limit`, `sort`, `order` |
-| GET | `/api/v1/sets/:id` | Get set by ID | - |
-| GET | `/api/v1/sets/:id/cards` | Get cards in set | `page`, `limit` |
-| GET | `/api/v1/sets/series/:series` | Get sets by series | - |
+| Method | Path                          | Description        | Query Parameters                 |
+| ------ | ----------------------------- | ------------------ | -------------------------------- |
+| GET    | `/api/v1/sets`                | List all sets      | `page`, `limit`, `sort`, `order` |
+| GET    | `/api/v1/sets/:id`            | Get set by ID      | -                                |
+| GET    | `/api/v1/sets/:id/cards`      | Get cards in set   | `page`, `limit`                  |
+| GET    | `/api/v1/sets/series/:series` | Get sets by series | -                                |
 
 #### Health Endpoints
 
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | `/health` | Service health check |
-| GET | `/ready` | Readiness probe |
-| GET | `/api/v1/endpoints` | API discovery |
+| Method | Path                | Description          |
+| ------ | ------------------- | -------------------- |
+| GET    | `/health`           | Service health check |
+| GET    | `/ready`            | Readiness probe      |
+| GET    | `/api/v1/endpoints` | API discovery        |
 
 **Response Envelope:**
 
@@ -513,14 +517,14 @@ union SearchResult = Card | Set
 
 The BFF provides aggregated, frontend-optimized endpoints:
 
-| Method | Path | Description | Aggregates From |
-|--------|------|-------------|-----------------|
-| GET | `/bff/dashboard` | Dashboard page data | REST: sets (recent), GraphQL: stats |
-| GET | `/bff/browse` | Browse page with filters | REST: cards with pagination |
-| GET | `/bff/browse/:cardId` | Card detail modal data | GraphQL: card with set |
-| GET | `/bff/collection` | User collection data | REST: user cards, GraphQL: sets |
-| GET | `/bff/deck/:id` | Deck builder data | GraphQL: deck with cards |
-| GET | `/bff/search` | Unified search | GraphQL: search query |
+| Method | Path                  | Description              | Aggregates From                     |
+| ------ | --------------------- | ------------------------ | ----------------------------------- |
+| GET    | `/bff/dashboard`      | Dashboard page data      | REST: sets (recent), GraphQL: stats |
+| GET    | `/bff/browse`         | Browse page with filters | REST: cards with pagination         |
+| GET    | `/bff/browse/:cardId` | Card detail modal data   | GraphQL: card with set              |
+| GET    | `/bff/collection`     | User collection data     | REST: user cards, GraphQL: sets     |
+| GET    | `/bff/deck/:id`       | Deck builder data        | GraphQL: deck with cards            |
+| GET    | `/bff/search`         | Unified search           | GraphQL: search query               |
 
 **BFF Response Shape:**
 
@@ -560,7 +564,7 @@ interface BrowseData {
 interface CardDetailData {
   card: CardFull;
   set: SetSummary;
-  relatedCards: CardSummary[];  // Same evolution line
+  relatedCards: CardSummary[]; // Same evolution line
   pricing?: {
     tcgplayer?: number;
     cardmarket?: number;
@@ -615,12 +619,14 @@ interface CardDetailData {
    - Repository pattern for data access
 
 **Deliverables:**
+
 - Standalone REST API running on port 3001
 - All existing `/api/v1/*` endpoints functional
 - Health check endpoints (`/health`, `/ready`)
 - Request logging with correlation IDs
 
 **Acceptance Criteria:**
+
 - All existing REST API tests pass
 - Service starts independently
 - Responds to health checks
@@ -667,12 +673,14 @@ interface CardDetailData {
    - Configure headers for auth testing
 
 **Deliverables:**
+
 - Standalone GraphQL API on port 3002
 - All existing queries functional
 - GraphiQL IDE accessible
 - DataLoader preventing N+1 queries
 
 **Acceptance Criteria:**
+
 - All existing GraphQL queries return identical data
 - N+1 queries eliminated (verified via logging)
 - Query complexity limits enforced
@@ -724,12 +732,14 @@ interface CardDetailData {
    - Implement optimistic updates where appropriate
 
 **Deliverables:**
+
 - BFF endpoints serving aggregated data
 - Frontend using BFF for all data needs
 - Caching reducing API calls by 50%+
 - Graceful degradation on API failures
 
 **Acceptance Criteria:**
+
 - Dashboard loads with single `/bff/dashboard` call
 - Browse page loads in <200ms (cached)
 - Partial responses on API failures
@@ -772,12 +782,14 @@ interface CardDetailData {
    - Fallback responses for degraded mode
 
 **Deliverables:**
+
 - Web app contains only SSR and BFF code
 - Services communicate via HTTP
 - Docker Compose orchestrates all services
 - Health checks verify full system
 
 **Acceptance Criteria:**
+
 - `apps/web/src/server/lib/api/` deleted
 - All tests pass with new architecture
 - Docker Compose starts all services
@@ -828,12 +840,14 @@ interface CardDetailData {
    - Resource limits
 
 **Deliverables:**
+
 - Production-ready Docker images
 - Monitoring dashboards
 - Runbook documentation
 - Load testing results
 
 **Acceptance Criteria:**
+
 - 99.9% uptime capability
 - <100ms p95 latency for cached requests
 - <500ms p95 latency for uncached requests
@@ -964,7 +978,7 @@ services:
       context: .
       dockerfile: apps/web/Dockerfile
     ports:
-      - "3000:3000"
+      - '3000:3000'
     environment:
       - REST_API_URL=http://rest-api:3001
       - GRAPHQL_API_URL=http://graphql-api:3002
@@ -974,7 +988,7 @@ services:
       graphql-api:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      test: ['CMD', 'curl', '-f', 'http://localhost:3000/health']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -984,14 +998,14 @@ services:
       context: .
       dockerfile: apps/rest-api/Dockerfile
     ports:
-      - "3001:3001"
+      - '3001:3001'
     environment:
       - DATABASE_PATH=/data/pokemon-data.sqlite3.db
       - LOG_LEVEL=info
     volumes:
       - ./database:/data:ro
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      test: ['CMD', 'curl', '-f', 'http://localhost:3001/health']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -1001,14 +1015,14 @@ services:
       context: .
       dockerfile: apps/graphql-api/Dockerfile
     ports:
-      - "3002:3002"
+      - '3002:3002'
     environment:
       - DATABASE_PATH=/data/pokemon-data.sqlite3.db
       - LOG_LEVEL=info
     volumes:
       - ./database:/data:ro
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
+      test: ['CMD', 'curl', '-f', 'http://localhost:3002/health']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -1156,6 +1170,7 @@ CMD ["bun", "run", "dist/index.js"]
 ### Unit Tests
 
 **REST API:**
+
 - Route pattern matching
 - Request validation
 - Response transformation
@@ -1163,6 +1178,7 @@ CMD ["bun", "run", "dist/index.js"]
 - Error handling
 
 **GraphQL API:**
+
 - Resolver functions
 - DataLoader batching
 - Query complexity calculation
@@ -1170,6 +1186,7 @@ CMD ["bun", "run", "dist/index.js"]
 - Error formatting
 
 **BFF:**
+
 - Response aggregation logic
 - Cache key generation
 - Circuit breaker state transitions
@@ -1178,18 +1195,21 @@ CMD ["bun", "run", "dist/index.js"]
 ### Integration Tests
 
 **REST API:**
+
 - Full request/response cycle
 - Database query execution
 - Pagination across endpoints
 - Error response format
 
 **GraphQL API:**
+
 - Query execution with real schema
 - DataLoader batch verification
 - Nested resolver resolution
 - Error propagation
 
 **BFF:**
+
 - Service client HTTP calls
 - Response aggregation
 - Cache hit/miss scenarios
@@ -1219,15 +1239,15 @@ k6 run bff-load-test.js
 
 ## Success Metrics
 
-| Metric | Current | Target |
-|--------|---------|--------|
-| Time to First Byte (TTFB) | ~300ms | <100ms (cached) |
-| API Response Time (p95) | ~200ms | <100ms |
-| BFF Aggregation Time | N/A | <150ms |
-| Service Independence | 0% | 100% |
-| Cache Hit Rate | 0% | >80% |
-| Deployment Frequency | Weekly | Daily |
-| Mean Time to Recovery | Hours | <5 minutes |
+| Metric                    | Current | Target          |
+| ------------------------- | ------- | --------------- |
+| Time to First Byte (TTFB) | ~300ms  | <100ms (cached) |
+| API Response Time (p95)   | ~200ms  | <100ms          |
+| BFF Aggregation Time      | N/A     | <150ms          |
+| Service Independence      | 0%      | 100%            |
+| Cache Hit Rate            | 0%      | >80%            |
+| Deployment Frequency      | Weekly  | Daily           |
+| Mean Time to Recovery     | Hours   | <5 minutes      |
 
 ---
 
@@ -1350,12 +1370,12 @@ All services use consistent error format:
 ```typescript
 interface ServiceError {
   error: {
-    code: string;          // Machine-readable code
-    message: string;       // Human-readable message
-    status: number;        // HTTP status code
-    service: string;       // Originating service
-    requestId: string;     // Correlation ID
-    details?: unknown;     // Additional context
+    code: string; // Machine-readable code
+    message: string; // Human-readable message
+    status: number; // HTTP status code
+    service: string; // Originating service
+    requestId: string; // Correlation ID
+    details?: unknown; // Additional context
   };
 }
 ```

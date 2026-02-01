@@ -1,5 +1,9 @@
 import { bffConfig } from './config';
-import { restApiCircuit, graphqlApiCircuit, withCircuitBreaker } from './circuitBreaker';
+import {
+  restApiCircuit,
+  graphqlApiCircuit,
+  withCircuitBreaker
+} from './circuitBreaker';
 
 /**
  * Proxy a request to the REST API microservice with circuit breaker
@@ -29,7 +33,10 @@ export async function proxyToRestApi(request: Request): Promise<Response> {
     const response = await fetch(targetUrl, {
       method: request.method,
       headers: request.headers,
-      body: request.method !== 'GET' && request.method !== 'HEAD' ? request.body : undefined
+      body:
+        request.method !== 'GET' && request.method !== 'HEAD'
+          ? request.body
+          : undefined
     });
 
     // Record success for circuit breaker
@@ -100,7 +107,10 @@ export async function proxyToGraphqlApi(request: Request): Promise<Response> {
     const response = await fetch(targetUrl, {
       method: request.method,
       headers: request.headers,
-      body: request.method !== 'GET' && request.method !== 'HEAD' ? request.body : undefined
+      body:
+        request.method !== 'GET' && request.method !== 'HEAD'
+          ? request.body
+          : undefined
     });
 
     // Record success for circuit breaker

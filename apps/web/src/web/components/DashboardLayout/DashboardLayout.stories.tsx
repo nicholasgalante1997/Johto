@@ -22,7 +22,12 @@ import './DashboardLayout.css';
 
 const mockNavItems: NavItem[] = [
   { id: 'overview', label: 'Overview', icon: <BarChart3 size={20} /> },
-  { id: 'collection', label: 'My Collection', icon: <Package size={20} />, count: 152 },
+  {
+    id: 'collection',
+    label: 'My Collection',
+    icon: <Package size={20} />,
+    count: 152
+  },
   { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, count: 5 },
   { id: 'wishlist', label: 'Wishlist', icon: <Star size={20} />, count: 23 },
   { id: 'browse', label: 'Browse Cards', icon: <Search size={20} /> },
@@ -39,7 +44,13 @@ const mockStats: StatItem[] = [
     trendValue: '+12',
     color: 'blue'
   },
-  { id: '2', label: 'Active Decks', value: '5', icon: <Layers size={20} />, color: 'green' },
+  {
+    id: '2',
+    label: 'Active Decks',
+    value: '5',
+    icon: <Layers size={20} />,
+    color: 'green'
+  },
   {
     id: '3',
     label: 'Wishlist',

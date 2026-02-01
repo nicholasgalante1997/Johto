@@ -28,11 +28,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 8-12
 
 **Current State:**
+
 - Collection context exists with add/remove functionality
 - localStorage persistence working
 - Page shell exists but UI is minimal
 
 **Tasks:**
+
 - [ ] A.1.1 Create collection card grid displaying all owned cards
 - [ ] A.1.2 Add quantity indicators on each card
 - [ ] A.1.3 Implement collection statistics panel (total cards, unique cards, sets represented)
@@ -42,6 +44,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] A.1.7 Add "Remove from Collection" action in card detail
 
 **Acceptance Criteria:**
+
 - [ ] User can view all cards in their collection
 - [ ] User can see quantity owned for each card
 - [ ] User can filter and sort their collection
@@ -50,6 +53,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] Collection persists across browser sessions
 
 **Files to Modify:**
+
 - `apps/web/src/web/pages/CollectionPage.tsx`
 - `apps/web/src/web/contexts/Collection.tsx` (if needed)
 
@@ -61,11 +65,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 6-8
 
 **Current State:**
+
 - Deck context with full CRUD operations
 - DeckBuilderPage complete with validation
 - DeckDetailPage is a shell
 
 **Tasks:**
+
 - [ ] A.2.1 Display deck metadata (name, format, card count, legality)
 - [ ] A.2.2 Group cards by type (Pokemon, Trainer, Energy)
 - [ ] A.2.3 Show card quantities within each group
@@ -76,6 +82,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] A.2.8 Display validation status prominently
 
 **Acceptance Criteria:**
+
 - [ ] User can view full deck details
 - [ ] Cards are grouped logically
 - [ ] Deck statistics are visible
@@ -83,6 +90,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] User can clone or delete deck
 
 **Files to Modify:**
+
 - `apps/web/src/web/pages/DeckDetailPage.tsx`
 - `apps/web/src/web/components/DeckStats/` (create if needed)
 
@@ -94,10 +102,12 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 4-6
 
 **Current State:**
+
 - No global notification system
 - Actions complete silently
 
 **Tasks:**
+
 - [ ] A.3.1 Create Toast component with variants (success, error, warning, info)
 - [ ] A.3.2 Create ToastContext for global notification management
 - [ ] A.3.3 Add toast on successful collection add/remove
@@ -107,12 +117,14 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] A.3.7 Support manual dismiss
 
 **Acceptance Criteria:**
+
 - [ ] Toasts appear for all user actions
 - [ ] Toasts are visually distinct by type
 - [ ] Toasts auto-dismiss
 - [ ] Multiple toasts can stack
 
 **Files to Create:**
+
 - `apps/web/src/web/components/Toast/Toast.tsx`
 - `apps/web/src/web/components/Toast/Toast.css`
 - `apps/web/src/web/contexts/Toast.tsx`
@@ -125,6 +137,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 8-10
 
 **Tasks:**
+
 - [ ] A.4.1 Add loading skeletons to all data-fetching pages
 - [ ] A.4.2 Ensure consistent error states across pages
 - [ ] A.4.3 Review and fix mobile responsiveness
@@ -134,12 +147,14 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] A.4.7 Review color contrast for accessibility
 
 **Acceptance Criteria:**
+
 - [ ] No layout breaks on mobile
 - [ ] All interactive elements have visible focus states
 - [ ] Loading states prevent content jumping
 - [ ] Error states are informative
 
 **Files to Modify:**
+
 - Various component CSS files
 - Page components for loading/error states
 
@@ -151,6 +166,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 4-6
 
 **Tasks:**
+
 - [ ] A.5.1 Display deck cards in a responsive grid
 - [ ] A.5.2 Show deck thumbnail (first Pokemon card image)
 - [ ] A.5.3 Add "New Deck" CTA button
@@ -158,11 +174,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] A.5.5 Sort by name, date created, format
 
 **Acceptance Criteria:**
+
 - [ ] User can see all their decks
 - [ ] User can easily create a new deck
 - [ ] Decks have visual thumbnails
 
 **Files to Modify:**
+
 - `apps/web/src/web/pages/DecksPage.tsx`
 
 ---
@@ -173,6 +191,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 8-10
 
 **Tasks:**
+
 - [ ] A.6.1 Install and configure Vitest
 - [ ] A.6.2 Set up React Testing Library
 - [ ] A.6.3 Write tests for Button component
@@ -182,12 +201,14 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] A.6.7 Configure test coverage reporting
 
 **Acceptance Criteria:**
+
 - [ ] Test suite runs with `bun test`
 - [ ] At least 5 component tests pass
 - [ ] At least 2 hook tests pass
 - [ ] Coverage report generates
 
 **Files to Create:**
+
 - `apps/web/vitest.config.ts`
 - `apps/web/src/web/components/**/*.test.tsx`
 - `apps/web/src/web/hooks/**/*.test.ts`
@@ -196,15 +217,15 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 
 ### Phase A Summary
 
-| Task | Hours | Status |
-|------|-------|--------|
-| A.1 Collection Page | 8-12 | Pending |
-| A.2 Deck Detail Page | 6-8 | Pending |
-| A.3 Toast Notifications | 4-6 | Pending |
-| A.4 UI/UX Polish | 8-10 | Pending |
-| A.5 Decks Page | 4-6 | Pending |
-| A.6 Testing Setup | 8-10 | Pending |
-| **TOTAL** | **38-52** | |
+| Task                    | Hours     | Status  |
+| ----------------------- | --------- | ------- |
+| A.1 Collection Page     | 8-12      | Pending |
+| A.2 Deck Detail Page    | 6-8       | Pending |
+| A.3 Toast Notifications | 4-6       | Pending |
+| A.4 UI/UX Polish        | 8-10      | Pending |
+| A.5 Decks Page          | 4-6       | Pending |
+| A.6 Testing Setup       | 8-10      | Pending |
+| **TOTAL**               | **38-52** |         |
 
 **Deliverable:** Fully functional single-user app with localStorage persistence
 
@@ -221,6 +242,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 15-20
 
 **Tasks:**
+
 - [ ] B.1.1 Create users table in PostgreSQL (or extend SQLite)
 - [ ] B.1.2 Implement password hashing with bcrypt
 - [ ] B.1.3 Create POST `/api/v1/auth/register` endpoint
@@ -232,6 +254,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] B.1.9 Add rate limiting on auth endpoints
 
 **Acceptance Criteria:**
+
 - [ ] User can register with username, email, password
 - [ ] User can login and receive JWT
 - [ ] Protected routes require valid JWT
@@ -239,6 +262,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] Tokens expire and can be refreshed
 
 **Files to Create:**
+
 - `apps/web/src/server/lib/api/handlers/auth.ts`
 - `apps/web/src/server/lib/api/middleware/auth.ts`
 - `apps/web/src/server/lib/api/services/auth.service.ts`
@@ -251,6 +275,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 12-15
 
 **Tasks:**
+
 - [ ] B.2.1 Create AuthContext for authentication state
 - [ ] B.2.2 Create Login page with form validation
 - [ ] B.2.3 Create Register page with form validation
@@ -261,6 +286,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] B.2.8 Redirect unauthenticated users from protected pages
 
 **Acceptance Criteria:**
+
 - [ ] User can register and login
 - [ ] Auth state persists across page refreshes
 - [ ] Protected pages redirect to login
@@ -268,6 +294,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] Token refreshes automatically
 
 **Files to Create:**
+
 - `apps/web/src/web/pages/LoginPage.tsx`
 - `apps/web/src/web/pages/RegisterPage.tsx`
 - `apps/web/src/web/contexts/Auth.tsx`
@@ -281,6 +308,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 15-20
 
 **Tasks:**
+
 - [ ] B.3.1 Create decks table in database
 - [ ] B.3.2 Create deck_cards table for card associations
 - [ ] B.3.3 Create POST `/api/v1/decks` endpoint (create)
@@ -294,12 +322,14 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] B.3.11 Sync existing localStorage decks to server on login
 
 **Acceptance Criteria:**
+
 - [ ] Decks persist to server database
 - [ ] User can only access their own decks
 - [ ] Deck cards are properly associated
 - [ ] localStorage syncs to server on first login
 
 **Files to Create:**
+
 - `apps/web/src/server/lib/api/handlers/decks.ts`
 - `apps/web/src/server/lib/api/services/deck.service.ts`
 
@@ -311,6 +341,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 10-15
 
 **Tasks:**
+
 - [ ] B.4.1 Create user_card_inventory table
 - [ ] B.4.2 Create POST `/api/v1/inventory/cards` endpoint (add card)
 - [ ] B.4.3 Create GET `/api/v1/inventory/cards` endpoint (list)
@@ -321,12 +352,14 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] B.4.8 Sync localStorage collection to server on login
 
 **Acceptance Criteria:**
+
 - [ ] Collection persists to server
 - [ ] User can only access their own collection
 - [ ] Quantities tracked per card
 - [ ] Statistics calculated correctly
 
 **Files to Create:**
+
 - `apps/web/src/server/lib/api/handlers/inventory.ts`
 - `apps/web/src/server/lib/api/services/inventory.service.ts`
 
@@ -338,6 +371,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 8-12
 
 **Tasks:**
+
 - [ ] B.5.1 Add createDeck mutation
 - [ ] B.5.2 Add updateDeck mutation
 - [ ] B.5.3 Add deleteDeck mutation
@@ -348,11 +382,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] B.5.8 Update frontend GraphQL hooks
 
 **Acceptance Criteria:**
+
 - [ ] All mutations work via GraphQL
 - [ ] Mutations require authentication
 - [ ] Frontend can use either REST or GraphQL
 
 **Files to Modify:**
+
 - `apps/web/src/server/lib/api/graphql/resolvers.ts`
 - `apps/web/src/server/lib/api/graphql/schema.ts`
 - `apps/web/src/web/graphql/hooks/mutations.ts`
@@ -365,6 +401,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 10-15
 
 **Tasks:**
+
 - [ ] B.6.1 Test full registration → login → logout flow
 - [ ] B.6.2 Test deck creation → edit → delete flow
 - [ ] B.6.3 Test collection add → update → remove flow
@@ -373,11 +410,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] B.6.6 Test error handling on network failures
 
 **Acceptance Criteria:**
+
 - [ ] All critical user flows have tests
 - [ ] Tests run in CI/CD
 - [ ] Tests pass consistently
 
 **Files to Create:**
+
 - `apps/web/src/__tests__/integration/`
 - `e2e/` (if using Playwright)
 
@@ -385,15 +424,15 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 
 ### Phase B Summary
 
-| Task | Hours | Status |
-|------|-------|--------|
-| B.1 Auth Backend | 15-20 | Pending |
-| B.2 Auth Frontend | 12-15 | Pending |
-| B.3 Deck Persistence | 15-20 | Pending |
-| B.4 Collection Persistence | 10-15 | Pending |
-| B.5 GraphQL Mutations | 8-12 | Pending |
-| B.6 Integration Testing | 10-15 | Pending |
-| **TOTAL** | **70-97** | |
+| Task                       | Hours     | Status  |
+| -------------------------- | --------- | ------- |
+| B.1 Auth Backend           | 15-20     | Pending |
+| B.2 Auth Frontend          | 12-15     | Pending |
+| B.3 Deck Persistence       | 15-20     | Pending |
+| B.4 Collection Persistence | 10-15     | Pending |
+| B.5 GraphQL Mutations      | 8-12      | Pending |
+| B.6 Integration Testing    | 10-15     | Pending |
+| **TOTAL**                  | **70-97** |         |
 
 **Deliverable:** Multi-user app with server-side persistence
 
@@ -410,6 +449,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 12-15
 
 **Tasks:**
+
 - [ ] C.1.1 Create card_price_history table
 - [ ] C.1.2 Write price extraction script from card data
 - [ ] C.1.3 Parse TCGPlayer prices from existing card JSON
@@ -419,11 +459,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] C.1.7 Document price sync procedure
 
 **Acceptance Criteria:**
+
 - [ ] Prices extracted from card data
 - [ ] Price history stored with dates
 - [ ] Script can be run manually
 
 **Files to Create:**
+
 - `apps/scripts/lib/price-sync.js`
 - Database migration for price_history table
 
@@ -435,6 +477,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 6-8
 
 **Tasks:**
+
 - [ ] C.2.1 Create GET `/api/v1/cards/:id/prices` endpoint
 - [ ] C.2.2 Return current price from both markets
 - [ ] C.2.3 Return price history (last 30 days)
@@ -442,11 +485,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] C.2.5 Add caching for price data
 
 **Acceptance Criteria:**
+
 - [ ] Price endpoints return correct data
 - [ ] Trends calculated accurately
 - [ ] Response cached for performance
 
 **Files to Create:**
+
 - `apps/web/src/server/lib/api/handlers/prices.ts`
 
 ---
@@ -457,6 +502,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 10-12
 
 **Tasks:**
+
 - [ ] C.3.1 Add price badge to Card component
 - [ ] C.3.2 Add price section to CardDetail modal
 - [ ] C.3.3 Create PriceHistoryChart component (line chart)
@@ -465,11 +511,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] C.3.6 Show total collection value on CollectionPage
 
 **Acceptance Criteria:**
+
 - [ ] Prices visible on cards
 - [ ] Price chart shows 30-day history
 - [ ] Collection total value displayed
 
 **Files to Create:**
+
 - `apps/web/src/web/components/PriceHistoryChart/`
 - `apps/web/src/web/components/PriceBadge/`
 
@@ -481,6 +529,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 **Estimated Hours:** 6-8
 
 **Tasks:**
+
 - [ ] C.4.1 Calculate total collection value (sum of market prices × quantities)
 - [ ] C.4.2 Show value breakdown by set
 - [ ] C.4.3 Show most valuable cards
@@ -488,11 +537,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] C.4.5 Create GET `/api/v1/inventory/value` endpoint
 
 **Acceptance Criteria:**
+
 - [ ] Total value calculated correctly
 - [ ] Value breakdown by set shown
 - [ ] Most valuable cards highlighted
 
 **Files to Modify:**
+
 - `apps/web/src/web/pages/CollectionPage.tsx`
 - `apps/web/src/server/lib/api/handlers/inventory.ts`
 
@@ -500,13 +551,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 
 ### Phase C Summary
 
-| Task | Hours | Status |
-|------|-------|--------|
-| C.1 Price Sync Service | 12-15 | Pending |
-| C.2 Price Display API | 6-8 | Pending |
-| C.3 Price Display UI | 10-12 | Pending |
-| C.4 Collection Value | 6-8 | Pending |
-| **TOTAL** | **34-43** | |
+| Task                   | Hours     | Status  |
+| ---------------------- | --------- | ------- |
+| C.1 Price Sync Service | 12-15     | Pending |
+| C.2 Price Display API  | 6-8       | Pending |
+| C.3 Price Display UI   | 10-12     | Pending |
+| C.4 Collection Value   | 6-8       | Pending |
+| **TOTAL**              | **34-43** |         |
 
 **Deliverable:** Full-featured TCG platform with market tracking
 
@@ -523,7 +574,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 - [ ] Unit tests for all hooks
 - [ ] API endpoint tests
 - [ ] E2E tests for critical flows
-- [ ] >70% code coverage
+- [ ] > 70% code coverage
 
 ### D.2 Performance Optimization
 
@@ -552,13 +603,13 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 
 ## Total Effort Summary
 
-| Phase | Hours | Duration |
-|-------|-------|----------|
-| Phase A: Local-First MVP | 38-52 | 2-3 weeks |
-| Phase B: Server Persistence | 70-97 | 3-4 weeks |
-| Phase C: Market Data | 34-43 | 2-3 weeks |
-| Phase D: Quality & Launch | 30-40 | 1-2 weeks |
-| **TOTAL** | **172-232** | **8-12 weeks** |
+| Phase                       | Hours       | Duration       |
+| --------------------------- | ----------- | -------------- |
+| Phase A: Local-First MVP    | 38-52       | 2-3 weeks      |
+| Phase B: Server Persistence | 70-97       | 3-4 weeks      |
+| Phase C: Market Data        | 34-43       | 2-3 weeks      |
+| Phase D: Quality & Launch   | 30-40       | 1-2 weeks      |
+| **TOTAL**                   | **172-232** | **8-12 weeks** |
 
 ---
 
@@ -567,6 +618,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 ### Minimum Viable Product (Fastest Path)
 
 **Phase A only (38-52 hours, 2-3 weeks)**
+
 - Complete Collection and Deck Detail pages
 - Add toast notifications
 - Polish UI
@@ -575,6 +627,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 ### Standard MVP
 
 **Phase A + B (108-149 hours, 5-7 weeks)**
+
 - All of Phase A
 - User authentication
 - Server persistence
@@ -583,6 +636,7 @@ This document outlines a phased approach to complete the Pokemon TCG MVP. The pr
 ### Full MVP (As Described in Plan)
 
 **Phase A + B + C (142-192 hours, 7-10 weeks)**
+
 - All of Phase A and B
 - Market value tracking
 - Price history charts

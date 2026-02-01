@@ -15,8 +15,18 @@ import type { NavItem } from './types';
 import './Sidebar.css';
 
 const mockItems: NavItem[] = [
-  { id: 'overview', label: 'Overview', icon: <BarChart3 size={20} />, count: undefined },
-  { id: 'collection', label: 'My Collection', icon: <Package size={20} />, count: 152 },
+  {
+    id: 'overview',
+    label: 'Overview',
+    icon: <BarChart3 size={20} />,
+    count: undefined
+  },
+  {
+    id: 'collection',
+    label: 'My Collection',
+    icon: <Package size={20} />,
+    count: 152
+  },
   { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, count: 5 },
   { id: 'wishlist', label: 'Wishlist', icon: <Star size={20} />, count: 23 },
   { id: 'trades', label: 'Trades', icon: <RefreshCw size={20} />, count: 3 },

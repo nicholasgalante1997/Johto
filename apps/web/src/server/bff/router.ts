@@ -1,10 +1,18 @@
 import type { BffRoute, BffHandler, BffContext } from './types';
-import { getDashboard, getBrowse, getCardDetail, getBffHealth } from './handlers';
+import {
+  getDashboard,
+  getBrowse,
+  getCardDetail,
+  getBffHealth
+} from './handlers';
 
 /**
  * Convert route pattern to regex and extract param names
  */
-function createRoutePattern(path: string): { pattern: RegExp; paramNames: string[] } {
+function createRoutePattern(path: string): {
+  pattern: RegExp;
+  paramNames: string[];
+} {
   const paramNames: string[] = [];
   const regexPattern = path.replace(/:([^/]+)/g, (_, paramName) => {
     paramNames.push(paramName);
@@ -66,7 +74,9 @@ export function isBffRoute(pathname: string): boolean {
 /**
  * Route a BFF request to the appropriate handler
  */
-export async function routeBffRequest(request: Request): Promise<Response | null> {
+export async function routeBffRequest(
+  request: Request
+): Promise<Response | null> {
   const url = new URL(request.url);
   const pathname = url.pathname;
 

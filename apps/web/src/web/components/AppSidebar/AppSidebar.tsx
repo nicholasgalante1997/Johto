@@ -1,5 +1,12 @@
 import React from 'react';
-import { Home, Library, Search, Layers, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  Home,
+  Library,
+  Search,
+  Layers,
+  ChevronLeft,
+  ChevronRight
+} from 'lucide-react';
 import { ROUTES } from '@/web/routes';
 import type { AppSidebarProps, NavItem } from './types';
 import './AppSidebar.css';
@@ -17,8 +24,18 @@ const NAV_ITEMS: NavItem[] = [
     icon: <Library size={20} />,
     to: ROUTES.COLLECTION
   },
-  { id: 'browse', label: 'Browse Cards', icon: <Search size={20} />, to: ROUTES.BROWSE },
-  { id: 'decks', label: 'My Decks', icon: <Layers size={20} />, to: ROUTES.DECKS }
+  {
+    id: 'browse',
+    label: 'Browse Cards',
+    icon: <Search size={20} />,
+    to: ROUTES.BROWSE
+  },
+  {
+    id: 'decks',
+    label: 'My Decks',
+    icon: <Layers size={20} />,
+    to: ROUTES.DECKS
+  }
 ];
 
 const isActive = false; // Placeholder for active route logic

@@ -1,6 +1,11 @@
 import { handleRequest } from './lib/handleRequest';
 import { middleware } from './lib/middleware/middleware';
-import { isBffRoute, routeBffRequest, proxyToRestApi, proxyToGraphqlApi } from './bff';
+import {
+  isBffRoute,
+  routeBffRequest,
+  proxyToRestApi,
+  proxyToGraphqlApi
+} from './bff';
 
 export const serve = async () => {
   return Bun.serve({
@@ -22,7 +27,10 @@ export const serve = async () => {
       }
 
       // Proxy GraphQL requests to GraphQL API microservice
-      if (url.pathname.startsWith('/graphql') || url.pathname.startsWith('/graphiql')) {
+      if (
+        url.pathname.startsWith('/graphql') ||
+        url.pathname.startsWith('/graphiql')
+      ) {
         return proxyToGraphqlApi(req);
       }
 

@@ -108,7 +108,10 @@ export async function getCardDetail(
       errors.push({
         source: 'graphql',
         code: 'RELATED_CARDS_FAILED',
-        message: error instanceof Error ? error.message : 'Failed to fetch related cards'
+        message:
+          error instanceof Error
+            ? error.message
+            : 'Failed to fetch related cards'
       });
     }
   } catch (error) {
@@ -116,7 +119,8 @@ export async function getCardDetail(
       JSON.stringify({
         error: {
           code: 'FETCH_FAILED',
-          message: error instanceof Error ? error.message : 'Failed to fetch card'
+          message:
+            error instanceof Error ? error.message : 'Failed to fetch card'
         }
       }),
       {

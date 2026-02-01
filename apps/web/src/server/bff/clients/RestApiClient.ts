@@ -15,7 +15,10 @@ export class RestApiClient {
   /**
    * Make a GET request to the REST API
    */
-  async get<T>(path: string, params?: Record<string, string | number>): Promise<T> {
+  async get<T>(
+    path: string,
+    params?: Record<string, string | number>
+  ): Promise<T> {
     const url = new URL(path, this.baseUrl);
 
     if (params) {
@@ -41,7 +44,9 @@ export class RestApiClient {
       clearTimeout(timeoutId);
 
       if (!response.ok) {
-        throw new Error(`REST API error: ${response.status} ${response.statusText}`);
+        throw new Error(
+          `REST API error: ${response.status} ${response.statusText}`
+        );
       }
 
       const data = await response.json();

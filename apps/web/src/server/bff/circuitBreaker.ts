@@ -52,7 +52,9 @@ export class CircuitBreaker {
    */
   recordSuccess(): void {
     if (this.state.state === 'HALF_OPEN') {
-      console.log(`[CircuitBreaker:${this.name}] Call succeeded, closing circuit`);
+      console.log(
+        `[CircuitBreaker:${this.name}] Call succeeded, closing circuit`
+      );
     }
     this.state = {
       state: 'CLOSED',
@@ -75,7 +77,9 @@ export class CircuitBreaker {
       );
       this.state.state = 'OPEN';
     } else if (this.state.state === 'HALF_OPEN') {
-      console.log(`[CircuitBreaker:${this.name}] Call failed in HALF_OPEN, reopening circuit`);
+      console.log(
+        `[CircuitBreaker:${this.name}] Call failed in HALF_OPEN, reopening circuit`
+      );
       this.state.state = 'OPEN';
     }
   }
@@ -103,7 +107,9 @@ export class CircuitBreaker {
       state: this.state.state,
       failures: this.state.failures,
       threshold: this.threshold,
-      lastFailure: this.state.lastFailure ? new Date(this.state.lastFailure).toISOString() : null,
+      lastFailure: this.state.lastFailure
+        ? new Date(this.state.lastFailure).toISOString()
+        : null,
       lastSuccess: new Date(this.state.lastSuccess).toISOString()
     };
   }
@@ -123,7 +129,9 @@ export async function withCircuitBreaker<T>(
 ): Promise<T> {
   if (circuit.isOpen()) {
     if (fallback) {
-      console.log(`[CircuitBreaker:${circuit.getState()}] Circuit open, using fallback`);
+      console.log(
+        `[CircuitBreaker:${circuit.getState()}] Circuit open, using fallback`
+      );
       return fallback();
     }
     throw new Error(`Circuit breaker is open for service`);

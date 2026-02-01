@@ -118,7 +118,8 @@ export async function getBrowse(
       errors.push({
         source: 'rest',
         code: 'FILTERS_FETCH_FAILED',
-        message: error instanceof Error ? error.message : 'Failed to fetch filters'
+        message:
+          error instanceof Error ? error.message : 'Failed to fetch filters'
       });
       filters = { types: [], rarities: [], sets: [] };
     }

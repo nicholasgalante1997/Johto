@@ -11,7 +11,10 @@ export async function getBffHealth(
   searchParams: URLSearchParams,
   context: BffContext
 ): Promise<Response> {
-  const checks: Record<string, { status: string; latency?: number; error?: string }> = {};
+  const checks: Record<
+    string,
+    { status: string; latency?: number; error?: string }
+  > = {};
 
   // Check REST API
   const restStart = Date.now();
@@ -30,7 +33,10 @@ export async function getBffHealth(
   const graphqlStart = Date.now();
   try {
     await graphqlClient.healthCheck();
-    checks.graphqlApi = { status: 'healthy', latency: Date.now() - graphqlStart };
+    checks.graphqlApi = {
+      status: 'healthy',
+      latency: Date.now() - graphqlStart
+    };
   } catch (error) {
     checks.graphqlApi = {
       status: 'unhealthy',
@@ -43,7 +49,11 @@ export async function getBffHealth(
   const allHealthy = Object.values(checks).every((c) => c.status === 'healthy');
   const someHealthy = Object.values(checks).some((c) => c.status === 'healthy');
 
-  const overallStatus = allHealthy ? 'healthy' : someHealthy ? 'degraded' : 'unhealthy';
+  const overallStatus = allHealthy
+    ? 'healthy'
+    : someHealthy
+      ? 'degraded'
+      : 'unhealthy';
 
   return new Response(
     JSON.stringify({
