@@ -153,33 +153,23 @@ export function validateDeck(
     copyCountByName[canonicalName].count += deckCard.quantity;
     copyCountByName[canonicalName].cardIds.push(deckCard.cardId);
 
-    // Check format legality
+    // Check format legality using card's legalities field
+    if (format !== 'unlimited' && format !== 'theme') {
+      const cardLegality = card.legalities?.[format as 'standard' | 'expanded'];
+      if (cardLegality !== 'Legal') {
+        errors.push({
+          code: 'NOT_LEGAL_IN_FORMAT',
+          message: `${card.name} is not legal in ${format} format`,
+          cardId: deckCard.cardId
+        });
+      }
+    }
+
+    // Check for specifically banned cards
     if (rules.bannedCards?.includes(card.id)) {
       errors.push({
         code: 'BANNED_CARD',
         message: `${card.name} is banned in ${format} format`,
-        cardId: deckCard.cardId
-      });
-    }
-
-    // Check set legality (if legalSets is defined and not empty)
-    if (
-      rules.legalSets?.length &&
-      card.set?.id &&
-      !rules.legalSets.includes(card.set.id)
-    ) {
-      errors.push({
-        code: 'ILLEGAL_SET',
-        message: `${card.name} is not legal in ${format} format (set ${card.set.name} not allowed)`,
-        cardId: deckCard.cardId
-      });
-    }
-
-    // Check banned sets
-    if (rules.bannedSets?.includes(card.set?.id || '')) {
-      errors.push({
-        code: 'BANNED_SET',
-        message: `${card.name} is from a banned set in ${format} format`,
         cardId: deckCard.cardId
       });
     }

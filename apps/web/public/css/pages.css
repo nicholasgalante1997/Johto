@@ -1,29 +1,30 @@
 /* Shared page styles */
 .page {
-  padding: 1.5rem;
+  padding: 0;
   min-height: 100%;
 }
 
 .page__header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .page__header h1 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.75rem;
+  margin: 0 0 0.375rem 0;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text);
 }
 
 .page__header p {
   margin: 0;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-subtext0);
+  font-size: 0.875rem;
 }
 
 .page__header-actions {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 1rem;
+  gap: 0.5rem;
+  margin-top: 0.875rem;
 }
 
 .page__content {
@@ -36,27 +37,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border: 1px dashed var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  border-radius: 12px;
+  background-color: var(--ctp-surface0);
+  border: 1px dashed var(--ctp-surface1);
+  border-radius: 8px;
 }
 
 .page__empty-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.875rem;
+  color: var(--ctp-overlay0);
 }
 
 .page__empty-state h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.5rem;
-  color: var(--pico-color, #e4e4e7);
+  margin: 0 0 0.375rem 0;
+  font-size: 1.25rem;
+  color: var(--ctp-text);
 }
 
 .page__empty-state p {
-  margin: 0 0 1.5rem 0;
-  color: var(--pico-muted-color, #a1a1aa);
+  margin: 0 0 1.25rem 0;
+  color: var(--ctp-subtext0);
+  font-size: 0.875rem;
 }
 
 /* Button styles */
@@ -64,8 +67,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.625rem 1.25rem;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
@@ -75,174 +78,55 @@
 }
 
 .button--primary {
-  background-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-blue);
+  color: var(--ctp-crust);
 }
 
 .button--primary:hover {
-  background-color: var(--pico-primary-hover, #6d28d9);
+  background-color: var(--ctp-sapphire);
 }
 
 .button--secondary {
   background-color: transparent;
-  color: var(--pico-color, #e4e4e7);
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
+  color: var(--ctp-text);
+  border: 1px solid var(--ctp-surface1);
 }
 
 .button--secondary:hover {
-  background-color: var(--pico-secondary-hover-background, rgba(255, 255, 255, 0.05));
-  border-color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-surface0);
+  border-color: var(--ctp-blue);
 }
 
 .button--danger {
-  background-color: #dc2626;
-  color: white;
+  background-color: var(--ctp-red);
+  color: var(--ctp-crust);
 }
 
 .button--danger:hover {
-  background-color: #b91c1c;
-}
-
-/* Dashboard page */
-.dashboard-page__welcome {
-  margin-bottom: 3rem;
-}
-
-.dashboard-page__welcome h1 {
-  margin: 0 0 0.5rem 0;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--pico-color, #e4e4e7);
-}
-
-.dashboard-page__welcome p {
-  margin: 0;
-  font-size: 1.125rem;
-  color: var(--pico-muted-color, #a1a1aa);
-}
-
-.dashboard-page__quick-actions h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
-}
-
-.dashboard-page__action-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-}
-
-.dashboard-page__action-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.dashboard-page__action-card:hover {
-  border-color: var(--pico-primary, #7c3aed);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.dashboard-page__action-icon {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-}
-
-.dashboard-page__action-card h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
-}
-
-.dashboard-page__action-card p {
-  margin: 0;
-  font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
-}
-
-/* Recent decks section */
-.dashboard-page__recent-decks {
-  margin-top: 2rem;
-}
-
-.dashboard-page__recent-decks h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
-}
-
-.dashboard-page__deck-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.dashboard-page__deck-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
-
-.dashboard-page__deck-card:hover {
-  border-color: var(--pico-primary, #7c3aed);
-}
-
-.dashboard-page__deck-card h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
-}
-
-.dashboard-page__deck-card p {
-  margin: 0 0 0.5rem 0;
-  font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
-}
-
-.dashboard-page__deck-format {
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-maroon);
 }
 
 /* Browse page */
 .browse-page__toolbar {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .browse-page__error {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 2rem;
-  background-color: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 8px;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background-color: rgba(243, 139, 168, 0.1);
+  border: 1px solid var(--ctp-red);
+  border-radius: 6px;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .browse-page__error p {
   margin: 0;
-  color: #ef4444;
+  color: var(--ctp-red);
 }
 
 /* Collection page */
@@ -250,8 +134,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.875rem;
+  margin-bottom: 1.25rem;
   flex-wrap: wrap;
 }
 
@@ -263,84 +147,84 @@
 .collection-page__toolbar-right {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.375rem;
 }
 
 .collection-page__view-toggle {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.125rem;
 }
 
 .collection-page__view-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   background-color: transparent;
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
+  border: 1px solid var(--ctp-surface1);
   border-radius: 6px;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-subtext0);
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .collection-page__view-btn:hover {
-  border-color: var(--pico-primary, #7c3aed);
-  color: var(--pico-primary, #7c3aed);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-blue);
 }
 
 .collection-page__view-btn--active {
-  background-color: var(--pico-primary, #7c3aed);
-  border-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-blue);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-crust);
 }
 
 .collection-page__card-detail {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem;
+  background-color: var(--ctp-surface0);
+  border-radius: 6px;
 }
 
 /* Decks page */
 .decks-page__toolbar {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .decks-page__format-filter {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.375rem;
   flex-wrap: wrap;
 }
 
 .decks-page__filter-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 0.75rem;
   background-color: transparent;
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
-  border-radius: 8px;
-  color: var(--pico-color, #e4e4e7);
-  font-size: 0.875rem;
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 6px;
+  color: var(--ctp-text);
+  font-size: 0.8125rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .decks-page__filter-btn:hover {
-  border-color: var(--pico-primary, #7c3aed);
-  color: var(--pico-primary, #7c3aed);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-blue);
 }
 
 .decks-page__filter-btn--active {
-  background-color: var(--pico-primary, #7c3aed);
-  border-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-blue);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-crust);
 }
 
 .decks-page__filter-btn--active:hover {
-  background-color: var(--pico-primary-hover, #6d28d9);
-  border-color: var(--pico-primary-hover, #6d28d9);
+  background-color: var(--ctp-sapphire);
+  border-color: var(--ctp-sapphire);
 }
 
 /* Deck detail page */
@@ -352,86 +236,86 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 0.375rem;
 }
 
 .deck-detail-page__card-count {
-  font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  font-size: 0.8125rem;
+  color: var(--ctp-subtext0);
 }
 
 .deck-detail-page__description {
-  margin: 0.75rem 0 0 0;
-  color: var(--pico-muted-color, #a1a1aa);
+  margin: 0.625rem 0 0 0;
+  color: var(--ctp-subtext0);
+  font-size: 0.875rem;
 }
 
 .deck-detail-page__stats {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border-radius: 8px;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem;
+  background-color: var(--ctp-surface0);
+  border-radius: 6px;
 }
 
 .deck-detail-page__stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.125rem;
 }
 
 .deck-detail-page__stat-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--pico-color, #e4e4e7);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ctp-text);
 }
 
 .deck-detail-page__stat-label {
-  font-size: 0.75rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  font-size: 0.6875rem;
+  color: var(--ctp-subtext0);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 
 .deck-detail-page__loading {
   text-align: center;
-  padding: 2rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  padding: 1.5rem;
+  color: var(--ctp-subtext0);
 }
 
 .deck-detail-page__group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .deck-detail-page__group-title {
-  margin: 0 0 1rem 0;
-  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 0.875rem;
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+  color: var(--ctp-text);
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--ctp-surface1);
 }
 
 .deck-detail-page__card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.75rem;
 }
 
 .deck-detail-page__card-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.375rem;
 }
 
 .deck-detail-page__card-image {
   width: 100%;
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
 }
 
 .deck-detail-page__card-info {
@@ -442,35 +326,35 @@
 }
 
 .deck-detail-page__card-name {
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 500;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text);
   line-height: 1.2;
 }
 
 .deck-detail-page__card-quantity {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--pico-primary, #7c3aed);
+  color: var(--ctp-blue);
 }
 
 .deck-detail-page__no-details {
   text-align: center;
-  padding: 2rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  padding: 1.5rem;
+  color: var(--ctp-subtext0);
 }
 
 .deck-detail-page__stat--highlight {
-  background-color: rgba(124, 58, 237, 0.1);
-  border-radius: 8px;
-  padding: 0.5rem 0.75rem;
+  background-color: rgba(137, 180, 250, 0.1);
+  border-radius: 6px;
+  padding: 0.375rem 0.625rem;
 }
 
 .deck-detail-page__validation {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem;
+  background-color: var(--ctp-surface0);
+  border-radius: 6px;
 }
 
 /* Deck builder page */
@@ -478,58 +362,58 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
+  margin-bottom: 1.25rem;
 }
 
 .deck-builder-page__header-left {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .deck-builder-page__name-input {
   flex: 1;
-  max-width: 300px;
-  padding: 0.625rem 1rem;
-  background-color: var(--pico-form-element-background-color, #1a1a2e);
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
-  border-radius: 8px;
-  color: var(--pico-color, #e4e4e7);
-  font-size: 1rem;
-  font-weight: 600;
+  max-width: 280px;
+  padding: 0.5rem 0.875rem;
+  background-color: var(--ctp-surface0);
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 6px;
+  color: var(--ctp-text);
+  font-size: 0.9375rem;
+  font-weight: 500;
 }
 
 .deck-builder-page__name-input:focus {
   outline: none;
-  border-color: var(--pico-primary, #7c3aed);
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+  border-color: var(--ctp-blue);
 }
 
 .deck-builder-page__name-input::placeholder {
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-overlay0);
   font-weight: 400;
 }
 
 .deck-builder-page__format-select {
-  padding: 0.625rem 2rem 0.625rem 1rem;
-  background-color: var(--pico-form-element-background-color, #1a1a2e);
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
-  border-radius: 8px;
-  color: var(--pico-color, #e4e4e7);
-  font-size: 0.875rem;
+  padding: 0.5rem 2rem 0.5rem 0.875rem;
+  background-color: var(--ctp-surface0);
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 6px;
+  color: var(--ctp-text);
+  font-size: 0.8125rem;
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a1a1aa' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a6adc8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 0.625rem center;
 }
 
 .deck-builder-page__format-select:focus {
   outline: none;
-  border-color: var(--pico-primary, #7c3aed);
+  border-color: var(--ctp-blue);
 }
 
 .deck-builder-page__header-center {
@@ -539,30 +423,30 @@
 }
 
 .deck-builder-page__card-count {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--pico-muted-color, #a1a1aa);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ctp-subtext0);
   font-variant-numeric: tabular-nums;
 }
 
 .deck-builder-page__card-count--valid {
-  color: #22c55e;
+  color: var(--ctp-green);
 }
 
 .deck-builder-page__builder {
   display: grid;
-  grid-template-columns: 1fr 400px;
-  gap: 1.5rem;
-  height: calc(100vh - 200px);
-  min-height: 500px;
+  grid-template-columns: 1fr 360px;
+  gap: 1.25rem;
+  height: calc(100vh - 220px);
+  min-height: 480px;
 }
 
 .deck-builder-page__panel {
   display: flex;
   flex-direction: column;
-  background-color: var(--pico-card-background-color, #1a1a2e);
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  border-radius: 12px;
+  background-color: var(--ctp-surface0);
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -570,68 +454,101 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  border-bottom: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--ctp-surface1);
 }
 
 .deck-builder-page__panel-header h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text);
+}
+
+.deck-builder-page__browser-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deck-builder-page__legality-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  color: var(--ctp-subtext0);
+  cursor: pointer;
+}
+
+.deck-builder-page__legality-toggle input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--ctp-green);
+  cursor: pointer;
+}
+
+.deck-builder-page__legality-toggle span {
+  white-space: nowrap;
+}
+
+.deck-builder-page__panel-search {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid var(--ctp-surface1);
 }
 
 .deck-builder-page__panel-content {
   flex: 1;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 0.875rem;
 }
 
 .deck-builder-page__panel-footer {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
+  padding: 0.875rem 1rem;
+  border-top: 1px solid var(--ctp-surface1);
 }
 
 .deck-builder-page__panel h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.125rem;
+  margin: 0 0 0.375rem 0;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text);
 }
 
 .deck-builder-page__panel p {
   margin: 0;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-subtext0);
+  font-size: 0.8125rem;
 }
 
 /* Deck list in builder */
 .deck-builder-page__deck-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.375rem;
 }
 
 .deck-builder-page__deck-card {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
+  gap: 0.625rem;
+  padding: 0.375rem;
+  background-color: var(--ctp-mantle);
+  border-radius: 6px;
   transition: background-color 0.15s ease;
 }
 
 .deck-builder-page__deck-card:hover {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: var(--ctp-surface1);
 }
 
 .deck-builder-page__deck-card--no-image {
-  padding: 0.75rem;
+  padding: 0.625rem;
 }
 
 .deck-builder-page__deck-card-image {
-  width: 48px;
+  width: 40px;
   height: auto;
   border-radius: 4px;
   flex-shrink: 0;
@@ -642,14 +559,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.375rem;
   min-width: 0;
 }
 
 .deck-builder-page__deck-card-name {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 500;
-  color: var(--pico-color, #e4e4e7);
+  color: var(--ctp-text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -658,7 +575,7 @@
 .deck-builder-page__deck-card-controls {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.375rem;
   flex-shrink: 0;
 }
 
@@ -666,31 +583,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   padding: 0;
   background-color: transparent;
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.2));
+  border: 1px solid var(--ctp-surface1);
   border-radius: 4px;
-  color: var(--pico-color, #e4e4e7);
-  font-size: 1rem;
+  color: var(--ctp-text);
+  font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .deck-builder-page__qty-btn:hover {
-  background-color: var(--pico-primary, #7c3aed);
-  border-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-blue);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-crust);
 }
 
 .deck-builder-page__qty {
-  min-width: 24px;
+  min-width: 22px;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--pico-primary, #7c3aed);
+  color: var(--ctp-blue);
   font-variant-numeric: tabular-nums;
 }
 
@@ -699,19 +616,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 2rem 0.875rem;
   text-align: center;
 }
 
 .deck-builder-page__empty p {
   margin: 0;
-  font-size: 0.875rem;
-  color: var(--pico-muted-color, #a1a1aa);
+  font-size: 0.8125rem;
+  color: var(--ctp-subtext0);
 }
 
 .deck-builder-page__validation {
-  border-top: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  max-height: 200px;
+  border-top: 1px solid var(--ctp-surface1);
+  max-height: 180px;
   overflow-y: auto;
 }
 
@@ -722,7 +639,7 @@
   }
 
   .deck-builder-page__panel {
-    max-height: 500px;
+    max-height: 480px;
   }
 
   .deck-builder-page__header-left {
@@ -740,37 +657,38 @@
 
 .not-found-page__content {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .not-found-page__icon {
-  font-size: 4rem;
+  font-size: 3rem;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
+  color: var(--ctp-overlay0);
 }
 
 .not-found-page__content h1 {
   margin: 0;
-  font-size: 6rem;
-  font-weight: 800;
-  color: var(--pico-primary, #7c3aed);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--ctp-blue);
   line-height: 1;
 }
 
 .not-found-page__content h2 {
-  margin: 0.5rem 0 1rem 0;
-  font-size: 1.5rem;
-  color: var(--pico-color, #e4e4e7);
+  margin: 0.375rem 0 0.875rem 0;
+  font-size: 1.25rem;
+  color: var(--ctp-text);
 }
 
 .not-found-page__content p {
-  margin: 0 0 2rem 0;
-  color: var(--pico-muted-color, #a1a1aa);
+  margin: 0 0 1.5rem 0;
+  color: var(--ctp-subtext0);
 }
 
 .not-found-page__actions {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.5rem;
   justify-content: center;
 }
 
@@ -780,18 +698,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
 }
 
 .page-loader__spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  border-top-color: var(--pico-primary, #7c3aed);
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--ctp-surface1);
+  border-top-color: var(--ctp-blue);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
 }
 
 @keyframes spin {
@@ -802,5 +720,6 @@
 
 .page-loader p {
   margin: 0;
-  color: var(--pico-muted-color, #a1a1aa);
+  color: var(--ctp-subtext0);
+  font-size: 0.875rem;
 }

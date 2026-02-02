@@ -21,13 +21,13 @@ Both modes share the same [circuit breaker](circuit-breaker.md) infrastructure t
 
 The alternative — having the browser fetch directly from multiple microservices — creates several problems in a server-rendered app:
 
-| Problem | How the BFF solves it |
-|---|---|
-| **Origin fragmentation** | The browser only ever talks to `localhost:3000`. Downstream URLs are internal and never exposed. |
-| **Over-fetching on page load** | SSR needs a single response to render a page. The BFF aggregates multiple service calls server-side and returns only what the template requires. |
-| **Partial failure handling** | A failing "related cards" fetch should not prevent the card detail page from rendering. Aggregation handlers catch sub-errors individually and return partial data with warnings. |
-| **Cascading failure risk** | If the REST API is down, the BFF should stop hammering it immediately rather than queuing requests. The circuit breaker enforces this. |
-| **Protocol mismatch** | The browse page needs paginated lists (REST), the card detail page needs deep nested graph data (GraphQL). The BFF picks the right client for each need — the browser doesn't have to know. |
+| Problem                        | How the BFF solves it                                                                                                                                                                       |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Origin fragmentation**       | The browser only ever talks to `localhost:3000`. Downstream URLs are internal and never exposed.                                                                                            |
+| **Over-fetching on page load** | SSR needs a single response to render a page. The BFF aggregates multiple service calls server-side and returns only what the template requires.                                            |
+| **Partial failure handling**   | A failing "related cards" fetch should not prevent the card detail page from rendering. Aggregation handlers catch sub-errors individually and return partial data with warnings.           |
+| **Cascading failure risk**     | If the REST API is down, the BFF should stop hammering it immediately rather than queuing requests. The circuit breaker enforces this.                                                      |
+| **Protocol mismatch**          | The browse page needs paginated lists (REST), the card detail page needs deep nested graph data (GraphQL). The BFF picks the right client for each need — the browser doesn't have to know. |
 
 ## How the pieces fit together
 

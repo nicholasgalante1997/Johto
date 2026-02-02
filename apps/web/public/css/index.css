@@ -1,18 +1,61 @@
 :root {
-  /* Theme colors */
-  --pico-primary: #7c3aed;
-  --pico-primary-hover: #6d28d9;
-  --pico-primary-hover-background: rgba(124, 58, 237, 0.15);
-  --pico-background-color: #0f0f23;
-  --pico-card-background-color: #1a1a2e;
-  --pico-color: #e4e4e7;
-  --pico-muted-color: #a1a1aa;
-  --pico-muted-border-color: rgba(255, 255, 255, 0.1);
-  --pico-secondary-hover-background: rgba(255, 255, 255, 0.05);
+  /* Catppuccin Mocha Theme */
+  /* Base colors */
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+
+  /* Surface colors */
+  --ctp-surface0: #313244;
+  --ctp-surface1: #45475a;
+  --ctp-surface2: #585b70;
+
+  /* Overlay colors */
+  --ctp-overlay0: #6c7086;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay2: #9399b2;
+
+  /* Text colors */
+  --ctp-text: #cdd6f4;
+  --ctp-subtext0: #a6adc8;
+  --ctp-subtext1: #bac2de;
+
+  /* Accent colors */
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+
+  /* Map to Pico-compatible variables for existing CSS */
+  --pico-primary: var(--ctp-blue);
+  --pico-primary-hover: var(--ctp-sapphire);
+  --pico-primary-hover-background: rgba(137, 180, 250, 0.15);
+  --pico-background-color: var(--ctp-base);
+  --pico-card-background-color: var(--ctp-surface0);
+  --pico-color: var(--ctp-text);
+  --pico-muted-color: var(--ctp-subtext0);
+  --pico-muted-border-color: var(--ctp-surface1);
+  --pico-secondary-hover-background: rgba(205, 214, 244, 0.05);
+  --pico-form-element-background-color: var(--ctp-surface0);
+
+  /* Semantic colors */
+  --color-success: var(--ctp-green);
+  --color-warning: var(--ctp-yellow);
+  --color-error: var(--ctp-red);
 
   /* Legacy variables */
   --pokemon-header-background-stable-top: transparent;
-  --pokemon-header-background-scrolling: #1ea7fd;
+  --pokemon-header-background-scrolling: var(--ctp-blue);
 }
 
 * {
@@ -32,7 +75,6 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family:
-    'Fira Sans',
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -41,6 +83,7 @@ body {
     sans-serif;
   color: var(--pico-color);
   background-color: var(--pico-background-color);
+  line-height: 1.6;
 }
 
 a {

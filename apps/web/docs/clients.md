@@ -13,8 +13,8 @@ A generic GET client for the REST microservice. All methods ultimately call a si
 Every request creates an `AbortController` and sets a timeout. If the upstream does not respond within `bffConfig.timeout` (default 10 seconds), the fetch is aborted and an explicit timeout error is thrown:
 
 ```typescript
-const controller  = new AbortController();
-const timeoutId   = setTimeout(() => controller.abort(), this.timeout);
+const controller = new AbortController();
+const timeoutId = setTimeout(() => controller.abort(), this.timeout);
 
 try {
   const response = await fetch(url, { signal: controller.signal });
@@ -33,15 +33,15 @@ This prevents a single slow upstream from holding a Bun worker indefinitely. The
 
 ### Methods
 
-| Method | Upstream endpoint | Used by |
-|---|---|---|
-| `getCards(page, pageSize)` | `GET /api/v1/cards` | `getBrowse` (no filters) |
-| `searchCards(params)` | `GET /api/v1/cards/search` | `getBrowse` (with filters) |
-| `getSets(page, pageSize)` | `GET /api/v1/sets` | `getBrowse` (filter options) |
-| `getCard(id)` | `GET /api/v1/cards/:id` | — (available but not currently used; card detail uses GraphQL) |
-| `getSet(id)` | `GET /api/v1/sets/:id` | — |
-| `getSetCards(setId, ...)` | `GET /api/v1/sets/:id/cards` | — |
-| `healthCheck()` | `GET /health` | `getBffHealth` |
+| Method                     | Upstream endpoint            | Used by                                                        |
+| -------------------------- | ---------------------------- | -------------------------------------------------------------- |
+| `getCards(page, pageSize)` | `GET /api/v1/cards`          | `getBrowse` (no filters)                                       |
+| `searchCards(params)`      | `GET /api/v1/cards/search`   | `getBrowse` (with filters)                                     |
+| `getSets(page, pageSize)`  | `GET /api/v1/sets`           | `getBrowse` (filter options)                                   |
+| `getCard(id)`              | `GET /api/v1/cards/:id`      | — (available but not currently used; card detail uses GraphQL) |
+| `getSet(id)`               | `GET /api/v1/sets/:id`       | —                                                              |
+| `getSetCards(setId, ...)`  | `GET /api/v1/sets/:id/cards` | —                                                              |
+| `healthCheck()`            | `GET /health`                | `getBffHealth`                                                 |
 
 ### Query parameter handling
 
@@ -61,9 +61,9 @@ if (params) {
 
 ```typescript
 restApiClient.searchCards({
-  name:     searchParams.get('name') || undefined,   // omitted if not present
-  type:     searchParams.get('type') || undefined,
-  page:     1,
+  name: searchParams.get('name') || undefined, // omitted if not present
+  type: searchParams.get('type') || undefined,
+  page: 1,
   pageSize: 60
 });
 ```
@@ -99,19 +99,20 @@ return result.data as T;
 
 ### Methods
 
-| Method | Query name | Used by |
-|---|---|---|
-| `getCard(id)` | `Card` | `getCardDetail` (primary fetch) |
+| Method                 | Query name    | Used by                         |
+| ---------------------- | ------------- | ------------------------------- |
+| `getCard(id)`          | `Card`        | `getCardDetail` (primary fetch) |
 | `getCardsByName(name)` | `CardsByName` | `getCardDetail` (related cards) |
-| `getStats()` | `Stats` | — (available for dashboard) |
-| `getRecentSets(limit)` | `RecentSets` | — (available for dashboard) |
-| `healthCheck()` | `Health` | `getBffHealth` |
+| `getStats()`           | `Stats`       | — (available for dashboard)     |
+| `getRecentSets(limit)` | `RecentSets`  | — (available for dashboard)     |
+| `healthCheck()`        | `Health`      | `getBffHealth`                  |
 
 ### Field selection per method
 
 Each method requests only the fields it needs. Compare `getCard()` (full detail view) versus `getCardsByName()` (summary for the related cards strip):
 
 **`getCard`** — requests the full card schema:
+
 ```graphql
 card(id: $id) {
   id name supertype subtypes hp types
@@ -131,6 +132,7 @@ card(id: $id) {
 ```
 
 **`getCardsByName`** — requests only what the related-cards strip renders:
+
 ```graphql
 cardsByName(name: $name) {
   id name supertype types rarity
@@ -146,8 +148,8 @@ This is one of the main reasons GraphQL is used for the detail path. A single qu
 Both clients are instantiated as module-level singletons:
 
 ```typescript
-export const restApiClient    = new RestApiClient();
-export const graphqlClient    = new GraphQLClient();
+export const restApiClient = new RestApiClient();
+export const graphqlClient = new GraphQLClient();
 ```
 
 Handlers import these directly. There is no dependency injection or factory — the base URLs come from `bffConfig` which reads environment variables at startup. If you need to point a client at a different URL (e.g., in tests), construct a new instance with explicit constructor arguments.

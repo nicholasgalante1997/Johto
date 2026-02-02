@@ -36,13 +36,13 @@ A circuit breaker is an electrical metaphor. In normal operation the circuit is 
 
 ## Transition rules
 
-| Current state | Event | Next state |
-|---|---|---|
-| `CLOSED` | failure count reaches threshold | `OPEN` |
-| `CLOSED` | any success | stays `CLOSED`, failure count resets to 0 |
-| `OPEN` | any request arrives | check timestamp — if `timeout` has elapsed, move to `HALF_OPEN`; otherwise reject immediately with 503 |
-| `HALF_OPEN` | upstream returns success | `CLOSED` (failure count reset) |
-| `HALF_OPEN` | upstream returns failure | `OPEN` (timestamp refreshed) |
+| Current state | Event                           | Next state                                                                                             |
+| ------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `CLOSED`      | failure count reaches threshold | `OPEN`                                                                                                 |
+| `CLOSED`      | any success                     | stays `CLOSED`, failure count resets to 0                                                              |
+| `OPEN`        | any request arrives             | check timestamp — if `timeout` has elapsed, move to `HALF_OPEN`; otherwise reject immediately with 503 |
+| `HALF_OPEN`   | upstream returns success        | `CLOSED` (failure count reset)                                                                         |
+| `HALF_OPEN`   | upstream returns failure        | `OPEN` (timestamp refreshed)                                                                           |
 
 The timeout check happens **lazily** inside `isOpen()`. There is no background timer; the state only advances when the next request actually arrives and checks the circuit.
 
@@ -53,7 +53,7 @@ Two singleton circuit breakers are created at module load time — one per downs
 ```typescript
 // src/server/bff/circuitBreaker.ts
 
-export const restApiCircuit    = new CircuitBreaker('rest-api');
+export const restApiCircuit = new CircuitBreaker('rest-api');
 export const graphqlApiCircuit = new CircuitBreaker('graphql-api');
 ```
 
@@ -98,7 +98,7 @@ export async function withCircuitBreaker<T>(
   circuit: CircuitBreaker,
   fn: () => Promise<T>,
   fallback?: () => T
-): Promise<T>
+): Promise<T>;
 ```
 
 If a `fallback` is provided, it is called when the circuit is open **or** when `fn` throws. This is useful in aggregation handlers where a missing dataset should resolve to a default value rather than propagating an error.

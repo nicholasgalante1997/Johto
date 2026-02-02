@@ -5,8 +5,6 @@ import { useCards } from '../hooks/useCards';
 import { useDeckValidation } from '../hooks/useDeckValidation';
 import { CardGrid } from '../components/CardGrid';
 import { SearchBar } from '../components/SearchBar';
-import { Pagination } from '../components/Pagination';
-import { Badge } from '../components/Badge';
 import { DeckValidation } from '../components/DeckValidation';
 import { ROUTES } from '../routes';
 import type { DeckFormat, DeckCard } from '../../types/deck';
@@ -15,8 +13,11 @@ import type { SearchFilters } from '../components/SearchBar/types';
 
 function DeckBuilderPage() {
   const { deckId } = useParams<{ deckId?: string }>();
+
   const navigate = useNavigate();
+
   const { getDeck, createDeck, updateDeck } = useDecks();
+
   const isEditing = Boolean(deckId);
 
   // Get existing deck if editing
@@ -38,9 +39,59 @@ function DeckBuilderPage() {
   // Card browser state
   const [searchQuery, setSearchQuery] = useState('');
   const [page, setPage] = useState(1);
+  const [filterByLegality, setFilterByLegality] = useState(true);
 
   // Fetch cards for browser
-  const { data: allCards, isLoading: loading } = useCards(page, 300);
+  const { data, isLoading: loading, error, isError } = useCards(page, 300);
+
+  const cards: Pokemon.Card[] = useMemo(() => {
+    if (error || isError) return [];
+    if (loading) return [];
+    if (!data) return [];
+
+    let _cards = data.data;
+
+    if (
+      typeof _cards === 'object' &&
+      !Array.isArray(_cards) &&
+      'data' in _cards
+    ) {
+      _cards = (_cards as { data: Pokemon.Card[] }).data || [];
+    }
+
+    if (!Array.isArray(_cards)) {
+      return [];
+    }
+
+    return _cards;
+  }, [data, loading, error, isError]);
+
+  // Filter cards by format legality
+  const filteredCards = useMemo(() => {
+    if (!cards) return [];
+
+    let _cards = [...cards];
+    // Filter by legality if enabled and format is standard/expanded
+    if (
+      filterByLegality &&
+      (deckFormat === 'standard' || deckFormat === 'expanded')
+    ) {
+      _cards = _cards.filter((card) => {
+        const legality = (card.legalities as Record<DeckFormat, string>)?.[
+          deckFormat
+        ];
+        return legality === 'Legal';
+      });
+    }
+
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      _cards = _cards.filter((card) => card.name.toLowerCase().includes(query));
+    }
+
+    return cards;
+  }, [cards, filterByLegality, deckFormat, searchQuery]);
 
   // Initialize from existing deck
   useEffect(() => {
@@ -53,24 +104,21 @@ function DeckBuilderPage() {
   }, [existingDeck]);
 
   // Validate deck
-  const validation = useDeckValidation(
-    deckCards,
-    allCards?.data || [],
-    deckFormat
-  );
+  const validation = useDeckValidation(deckCards, cards, deckFormat);
+
   const { totalCards, isValid } = validation;
 
   // Get card details for deck display
   const deckCardsWithDetails = useMemo(() => {
     return deckCards
       .map((deckCard) => {
-        const cardDetail = allCards?.data.find((c) => c.id === deckCard.cardId);
+        const cardDetail = cards.find((c) => c.id === deckCard.cardId);
         return cardDetail
           ? { ...cardDetail, quantity: deckCard.quantity }
           : null;
       })
       .filter(Boolean) as Array<{ quantity: number } & Pokemon.Card>;
-  }, [deckCards, allCards]);
+  }, [deckCards, cards]);
 
   // Handle search
   const handleSearch = useCallback((filters: SearchFilters) => {
@@ -220,15 +268,33 @@ function DeckBuilderPage() {
         <div className="deck-builder-page__panel deck-builder-page__browser">
           <div className="deck-builder-page__panel-header">
             <h2>Card Browser</h2>
+            <div className="deck-builder-page__browser-controls">
+              {(deckFormat === 'standard' || deckFormat === 'expanded') && (
+                <label className="deck-builder-page__legality-toggle">
+                  <input
+                    type="checkbox"
+                    checked={filterByLegality}
+                    onChange={(e) => setFilterByLegality(e.target.checked)}
+                  />
+                  <span>Legal only</span>
+                </label>
+              )}
+            </div>
+          </div>
+          <div className="deck-builder-page__panel-search">
             <SearchBar onSearch={handleSearch} placeholder="Search cards..." />
           </div>
           <div className="deck-builder-page__panel-content">
             <CardGrid
-              cards={allCards?.data || []}
+              cards={filteredCards}
               onCardSelect={handleAddCard}
               loading={loading}
               columns={3}
-              emptyMessage="No cards found"
+              emptyMessage={
+                filterByLegality
+                  ? `No ${deckFormat}-legal cards found`
+                  : 'No cards found'
+              }
             />
           </div>
           {/* {false && pagination.totalPages > 1 && (

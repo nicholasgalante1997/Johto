@@ -19,11 +19,11 @@ Open `src/server/bff/router.ts` and add a new route to the `routes` array:
 
 ```typescript
 const routes: BffRoute[] = [
-  route('/bff/health',      getBffHealth),
-  route('/bff/dashboard',   getDashboard),
-  route('/bff/browse',      getBrowse),
-  route('/bff/card/:id',    getCardDetail),
-  route('/bff/deck/:deckId', getDeckDetail),   // ← new route
+  route('/bff/health', getBffHealth),
+  route('/bff/dashboard', getDashboard),
+  route('/bff/browse', getBrowse),
+  route('/bff/card/:id', getCardDetail),
+  route('/bff/deck/:deckId', getDeckDetail) // ← new route
 ];
 ```
 
@@ -43,31 +43,43 @@ import { bffCache } from '../cache';
 import type { BffContext, BffResponse } from '../types';
 
 const CACHE_PREFIX = 'bff:deck:';
-const CACHE_TTL   = 180000; // 3 minutes
+const CACHE_TTL = 180000; // 3 minutes
 
 export async function getDeckDetail(
-  request:      Request,
-  params:       Record<string, string>,
+  request: Request,
+  params: Record<string, string>,
   searchParams: URLSearchParams,
-  context:      BffContext
+  context: BffContext
 ): Promise<Response> {
   const { deckId } = params;
 
   // Input validation
   if (!deckId) {
     return new Response(
-      JSON.stringify({ error: { code: 'BAD_REQUEST', message: 'Deck ID is required' } }),
-      { status: 400, headers: { 'Content-Type': 'application/json', 'X-Request-ID': context.requestId } }
+      JSON.stringify({
+        error: { code: 'BAD_REQUEST', message: 'Deck ID is required' }
+      }),
+      {
+        status: 400,
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Request-ID': context.requestId
+        }
+      }
     );
   }
 
   // Cache check
   const cacheKey = `${CACHE_PREFIX}${deckId}`;
-  const cached   = bffCache.get(cacheKey);
+  const cached = bffCache.get(cacheKey);
   if (cached) {
     return new Response(JSON.stringify({ data: cached }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json', 'X-Cache': 'HIT', 'X-Request-ID': context.requestId }
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Cache': 'HIT',
+        'X-Request-ID': context.requestId
+      }
     });
   }
 
@@ -79,15 +91,31 @@ export async function getDeckDetail(
     const deckResult = await graphqlClient.getDeck(deckId);
     if (!deckResult.deck) {
       return new Response(
-        JSON.stringify({ error: { code: 'NOT_FOUND', message: `Deck ${deckId} not found` } }),
-        { status: 404, headers: { 'Content-Type': 'application/json', 'X-Request-ID': context.requestId } }
+        JSON.stringify({
+          error: { code: 'NOT_FOUND', message: `Deck ${deckId} not found` }
+        }),
+        {
+          status: 404,
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Request-ID': context.requestId
+          }
+        }
       );
     }
     data.deck = deckResult.deck;
   } catch (error) {
     return new Response(
-      JSON.stringify({ error: { code: 'FETCH_FAILED', message: 'Failed to fetch deck' } }),
-      { status: 503, headers: { 'Content-Type': 'application/json', 'X-Request-ID': context.requestId } }
+      JSON.stringify({
+        error: { code: 'FETCH_FAILED', message: 'Failed to fetch deck' }
+      }),
+      {
+        status: 503,
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Request-ID': context.requestId
+        }
+      }
     );
   }
 
@@ -97,7 +125,11 @@ export async function getDeckDetail(
     data.stats = statsResult.data;
   } catch (error) {
     data.stats = null;
-    errors.push({ source: 'rest', code: 'STATS_FAILED', message: 'Failed to fetch deck stats' });
+    errors.push({
+      source: 'rest',
+      code: 'STATS_FAILED',
+      message: 'Failed to fetch deck stats'
+    });
   }
 
   // Cache the assembled response
@@ -110,7 +142,11 @@ export async function getDeckDetail(
 
   return new Response(JSON.stringify(response), {
     status: 200,
-    headers: { 'Content-Type': 'application/json', 'X-Cache': 'MISS', 'X-Request-ID': context.requestId }
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Cache': 'MISS',
+      'X-Request-ID': context.requestId
+    }
   });
 }
 ```
@@ -166,14 +202,14 @@ If the response shape is complex, define a TypeScript interface in `src/server/b
 ```typescript
 export interface DeckDetailData {
   deck: {
-    id:    string;
-    name:  string;
+    id: string;
+    name: string;
     cards: Array<{ id: string; name: string; types: string[]; rarity: string }>;
   };
   stats: {
-    cardCount:     number;
+    cardCount: number;
     typeBreakdown: Record<string, number>;
-  } | null;   // null when the stats fetch failed
+  } | null; // null when the stats fetch failed
 }
 ```
 

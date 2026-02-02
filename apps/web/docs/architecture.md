@@ -122,12 +122,12 @@ The proxy adds no caching and performs no data transformation. It is a thin wrap
 
 ## Why two paths instead of one?
 
-| Concern | Aggregation path | Proxy path |
-|---|---|---|
-| **When it runs** | During SSR, before HTML is sent | After hydration, on user interaction |
-| **Data shape** | Reshaped per-view | Passed through verbatim |
-| **Caching** | Handler-level in-memory cache | None (browser cache headers from upstream apply) |
+| Concern            | Aggregation path                            | Proxy path                                         |
+| ------------------ | ------------------------------------------- | -------------------------------------------------- |
+| **When it runs**   | During SSR, before HTML is sent             | After hydration, on user interaction               |
+| **Data shape**     | Reshaped per-view                           | Passed through verbatim                            |
+| **Caching**        | Handler-level in-memory cache               | None (browser cache headers from upstream apply)   |
 | **Error handling** | Partial — page can render with missing data | Pass-through — client receives the upstream status |
-| **Protocol** | Handler picks REST or GraphQL per need | Client chooses; proxy forwards to matching service |
+| **Protocol**       | Handler picks REST or GraphQL per need      | Client chooses; proxy forwards to matching service |
 
 During SSR the page renderer cannot make multiple round-trips to different origins, so the aggregation path collapses that into a single server-side fan-out. After hydration the client has full control and can fetch incrementally, so the proxy path is sufficient.

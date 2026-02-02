@@ -9,12 +9,15 @@
 **Resolution:**
 
 1. Check the server logs for the transition message:
+
    ```
    [CircuitBreaker:rest-api] Failure threshold reached (5/5), opening circuit
    ```
+
    The timestamp on this log line tells you when the circuit opened. It will transition to `HALF_OPEN` 30 seconds after that.
 
 2. If you need it to recover faster in development, reduce `CIRCUIT_BREAKER_TIMEOUT_MS`:
+
    ```bash
    CIRCUIT_BREAKER_TIMEOUT_MS=5000 bun run dev
    ```
@@ -50,12 +53,14 @@
 **Resolution:**
 
 1. Check whether the downstream service is actually responding. Hit it directly:
+
    ```bash
    curl http://localhost:3001/health
    curl http://localhost:3002/graphql -d '{"query":"{ health { status } }"}'
    ```
 
 2. If the service is responding but slowly, increase the timeout:
+
    ```bash
    BFF_TIMEOUT_MS=30000 bun run dev
    ```
@@ -75,12 +80,17 @@
 **Resolution:**
 
 1. Look at the `checks` object in the health response to see which service is unhealthy and what error it returned:
+
    ```json
    {
      "status": "degraded",
      "checks": {
-       "restApi":    { "status": "healthy",   "latency": 12 },
-       "graphqlApi": { "status": "unhealthy", "latency": 10023, "error": "GraphQL API timeout after 10000ms" }
+       "restApi": { "status": "healthy", "latency": 12 },
+       "graphqlApi": {
+         "status": "unhealthy",
+         "latency": 10023,
+         "error": "GraphQL API timeout after 10000ms"
+       }
      }
    }
    ```

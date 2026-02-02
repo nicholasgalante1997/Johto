@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import Document from './components/Document/Document';
-
-import { DashboardLayout } from './components/DashboardLayout';
-import { AppSidebar } from './components/AppSidebar';
-import { DashboardHeader } from './components/DashboardHeader';
+import { AppLayout } from './components/AppLayout';
 import { AppRoutes } from './routes';
-import { CollectionProvider, useCollection } from './contexts/Collection';
-import { DeckProvider, useDecks } from './contexts/Deck';
+import { CollectionProvider } from './contexts/Collection';
+import { DeckProvider } from './contexts/Deck';
 import type { RouterLayerProps } from './routes/types';
 import { QueryProvider } from './providers';
 
@@ -16,29 +13,10 @@ export type AppProps = {
 };
 
 function AppContent(props: AppProps) {
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const { uniqueCards } = useCollection();
-  const { deckCount } = useDecks();
-
-  const handleToggleSidebar = () => {
-    setSidebarCollapsed(!sidebarCollapsed);
-  };
-
   return (
-    <DashboardLayout
-      sidebar={
-        <AppSidebar
-          collapsed={sidebarCollapsed}
-          onToggleCollapse={handleToggleSidebar}
-          collectionCount={uniqueCards}
-          deckCount={deckCount}
-        />
-      }
-      header={<DashboardHeader onMenuClick={handleToggleSidebar} />}
-      sidebarCollapsed={sidebarCollapsed}
-    >
+    <AppLayout>
       <AppRoutes {...props.routes} />
-    </DashboardLayout>
+    </AppLayout>
   );
 }
 
@@ -66,10 +44,7 @@ export function withDocument<P extends {} = React.JSX.IntrinsicAttributes>(
 ) {
   return function AppWithDocument(props: P) {
     return (
-      <Document
-        description="Pokemon TCG Collection & Deck Manager"
-        title="Pokemon TCG Dashboard"
-      >
+      <Document description="Pokemon TCG Deck Manager" title="Pokemon TCG">
         <App {...props} />
       </Document>
     );

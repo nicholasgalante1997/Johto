@@ -6,9 +6,9 @@ The proxy layer (`src/server/bff/proxy.ts`) handles requests that should be forw
 
 `server.ts` routes two path prefixes to the proxy:
 
-| Prefix | Proxy function | Downstream target |
-|---|---|---|
-| `/api/v1/*` | `proxyToRestApi()` | REST API (`apps/tcg-api`) |
+| Prefix                  | Proxy function        | Downstream target            |
+| ----------------------- | --------------------- | ---------------------------- |
+| `/api/v1/*`             | `proxyToRestApi()`    | REST API (`apps/tcg-api`)    |
 | `/graphql`, `/graphiql` | `proxyToGraphqlApi()` | GraphQL API (`apps/tcg-api`) |
 
 These paths exist so the browser can make **client-side API calls after hydration** without knowing the internal service addresses. For example, when the user pages through browse results, the React component fetches `/api/v1/cards?page=2` — the proxy rewrites that to `http://localhost:3001/api/v1/cards?page=2` and forwards it.
@@ -32,9 +32,9 @@ if (restApiCircuit.isOpen()) {
 The proxy constructs the target URL by replacing the origin with the configured downstream URL and preserving the path and query string exactly:
 
 ```typescript
-const url       = new URL(request.url);           // e.g. http://localhost:3000/api/v1/cards?page=2
+const url = new URL(request.url); // e.g. http://localhost:3000/api/v1/cards?page=2
 const targetUrl = `${bffConfig.restApiUrl}${url.pathname}${url.search}`;
-                                                  // e.g. http://localhost:3001/api/v1/cards?page=2
+// e.g. http://localhost:3001/api/v1/cards?page=2
 ```
 
 Headers and body are forwarded as-is. The body is only included for methods other than GET and HEAD (fetch rejects a body on those methods).
@@ -43,12 +43,12 @@ Headers and body are forwarded as-is. The body is only included for methods othe
 
 After the upstream response arrives (or the connection fails), the proxy updates the circuit:
 
-| Outcome | Action |
-|---|---|
-| Response status 2xx | `recordSuccess()` — resets failure count, closes circuit if it was half-open |
-| Response status 5xx | `recordFailure()` — increments failure count, may open circuit |
-| Response status 4xx | **No action** — client errors are not a sign the service is unhealthy |
-| Network error / timeout | `recordFailure()` — the service is unreachable |
+| Outcome                 | Action                                                                       |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| Response status 2xx     | `recordSuccess()` — resets failure count, closes circuit if it was half-open |
+| Response status 5xx     | `recordFailure()` — increments failure count, may open circuit               |
+| Response status 4xx     | **No action** — client errors are not a sign the service is unhealthy        |
+| Network error / timeout | `recordFailure()` — the service is unreachable                               |
 
 This distinction is intentional. A 404 or 422 means the service is running and correctly rejected the request. Only server-side errors and connection failures indicate the service itself is degraded.
 
@@ -56,10 +56,10 @@ This distinction is intentional. A 404 or 422 means the service is running and c
 
 Two headers are added to every proxied response for observability:
 
-| Header | Value | Purpose |
-|---|---|---|
-| `X-Proxied-By` | `bff` | Confirms the response passed through the BFF proxy, useful for debugging in browser DevTools |
-| `X-Circuit-State` | `CLOSED` / `OPEN` / `HALF_OPEN` | Current state of the circuit breaker for this service at the time the response was sent |
+| Header            | Value                           | Purpose                                                                                      |
+| ----------------- | ------------------------------- | -------------------------------------------------------------------------------------------- |
+| `X-Proxied-By`    | `bff`                           | Confirms the response passed through the BFF proxy, useful for debugging in browser DevTools |
+| `X-Circuit-State` | `CLOSED` / `OPEN` / `HALF_OPEN` | Current state of the circuit breaker for this service at the time the response was sent      |
 
 All other headers from the upstream response are passed through unchanged.
 

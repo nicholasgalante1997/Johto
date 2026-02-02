@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .pagination__list {
@@ -17,41 +17,41 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 36px;
-  height: 36px;
-  padding: 0 0.75rem;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 0.625rem;
   margin: 0;
   background-color: transparent;
-  border: 1px solid var(--pico-muted-border-color, rgba(255, 255, 255, 0.1));
-  border-radius: 8px;
-  color: var(--pico-color, #e4e4e7);
-  font-size: 0.875rem;
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 6px;
+  color: var(--ctp-text);
+  font-size: 0.8125rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .pagination__button:hover:not(:disabled) {
-  background-color: var(--pico-secondary-hover-background, rgba(255, 255, 255, 0.05));
-  border-color: var(--pico-primary, #7c3aed);
-  color: var(--pico-primary, #7c3aed);
+  background-color: var(--ctp-surface0);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-blue);
 }
 
 .pagination__button:focus-visible {
-  outline: 2px solid var(--pico-primary, #7c3aed);
+  outline: 2px solid var(--ctp-blue);
   outline-offset: 2px;
 }
 
 .pagination__button--active {
-  background-color: var(--pico-primary, #7c3aed);
-  border-color: var(--pico-primary, #7c3aed);
-  color: white;
+  background-color: var(--ctp-blue);
+  border-color: var(--ctp-blue);
+  color: var(--ctp-crust);
 }
 
 .pagination__button--active:hover:not(:disabled) {
-  background-color: var(--pico-primary-hover, #6d28d9);
-  border-color: var(--pico-primary-hover, #6d28d9);
-  color: white;
+  background-color: var(--ctp-sapphire);
+  border-color: var(--ctp-sapphire);
+  color: var(--ctp-crust);
 }
 
 .pagination__button--icon {
@@ -67,10 +67,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 36px;
-  height: 36px;
-  color: var(--pico-muted-color, #a1a1aa);
-  font-size: 0.875rem;
+  min-width: 32px;
+  height: 32px;
+  color: var(--ctp-overlay0);
+  font-size: 0.8125rem;
 }
 
 /* Responsive */
@@ -80,10 +80,10 @@
   }
 
   .pagination__button {
-    min-width: 32px;
-    height: 32px;
+    min-width: 28px;
+    height: 28px;
     padding: 0 0.5rem;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
   }
 
   .pagination__ellipsis {

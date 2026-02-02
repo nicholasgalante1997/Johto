@@ -1,0 +1,15 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-layout__main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+.app-layout__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
