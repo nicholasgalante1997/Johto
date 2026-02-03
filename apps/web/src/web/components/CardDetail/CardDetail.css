@@ -286,6 +286,17 @@
   border-color: var(--ctp-blue);
 }
 
+.card-detail__action-btn--danger {
+  background-color: transparent;
+  border: 1px solid var(--ctp-red);
+  color: var(--ctp-red);
+}
+
+.card-detail__action-btn--danger:hover {
+  background-color: var(--ctp-red);
+  color: var(--ctp-crust);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .card-detail {

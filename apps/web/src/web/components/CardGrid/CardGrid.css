@@ -53,6 +53,11 @@
   font-size: 0.875rem;
 }
 
+/* Grid item wrapper (for overlay support) */
+.pokemon-card-grid__item {
+  position: relative;
+}
+
 /* Empty state */
 .pokemon-card-grid__empty {
   display: flex;

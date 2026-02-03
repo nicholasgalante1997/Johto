@@ -8,6 +8,7 @@ export function CardDetail({
   card,
   onClose,
   onAddToCollection,
+  onRemoveFromCollection,
   onAddToDeck,
   collectionQuantity = 0,
   isModal = false,
@@ -19,6 +20,10 @@ export function CardDetail({
 
   const handleAddToCollection = () => {
     onAddToCollection?.(card);
+  };
+
+  const handleRemoveFromCollection = () => {
+    onRemoveFromCollection?.(card);
   };
 
   const handleAddToDeck = () => {
@@ -186,6 +191,15 @@ export function CardDetail({
               onClick={handleAddToCollection}
             >
               {collectionQuantity > 0 ? 'Add Another' : 'Add to Collection'}
+            </button>
+          )}
+          {onRemoveFromCollection && collectionQuantity > 0 && (
+            <button
+              type="button"
+              className="card-detail__action-btn card-detail__action-btn--danger"
+              onClick={handleRemoveFromCollection}
+            >
+              Remove One
             </button>
           )}
           {onAddToDeck && (

@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "bun run src/index.ts",
-    "start:dev": "bun run --watch src/index.ts",
+    "//start": "bun run src/index.ts",
+    "//start:dev": "bun run --watch src/index.ts",
     "build": "bun run build.ts",
     "check-types": "tsc -p ./tsconfig.json --noEmit",
     "job:run": "bun run src/cli.ts run",

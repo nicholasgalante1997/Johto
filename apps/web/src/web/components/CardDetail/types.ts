@@ -7,6 +7,8 @@ export interface CardDetailProps {
   onClose: () => void;
   /** Callback when adding to collection */
   onAddToCollection?: (card: Pokemon.Card) => void;
+  /** Callback when removing from collection */
+  onRemoveFromCollection?: (card: Pokemon.Card) => void;
   /** Callback when adding to deck */
   onAddToDeck?: (card: Pokemon.Card) => void;
   /** Quantity in collection (if any) */
