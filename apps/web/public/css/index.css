@@ -1,6 +1,100 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   POKEMON TCG PLATFORM - THEME SYSTEM
+   Supports: Nebula (default), Catppuccin (legacy)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SHARED BASE - Applied to all themes
+   ═══════════════════════════════════════════════════════════════════════════ */
 :root {
-  /* Catppuccin Mocha Theme */
-  /* Base colors */
+  /* Theme transition for smooth switching */
+  --theme-transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+
+  /* Layout constants */
+  --header-height: 72px;
+  --sidebar-width: 280px;
+  --sidebar-collapsed: 72px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   NEBULA THEME - OpenSea-inspired dark marketplace aesthetic (DEFAULT)
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-theme="nebula"] {
+  /* Backgrounds - Deep space-inspired neutrals */
+  --nebula-bg-primary: #0a0a0f;
+  --nebula-bg-secondary: #12121a;
+  --nebula-bg-tertiary: #1a1a24;
+  --nebula-bg-elevated: #22222e;
+
+  /* Surfaces - Glassmorphism layers */
+  --nebula-surface-glass: rgba(255, 255, 255, 0.03);
+  --nebula-surface-glass-hover: rgba(255, 255, 255, 0.06);
+  --nebula-surface-border: rgba(255, 255, 255, 0.08);
+  --nebula-surface-border-hover: rgba(255, 255, 255, 0.15);
+
+  /* Text - High contrast hierarchy */
+  --nebula-text-primary: #ffffff;
+  --nebula-text-secondary: rgba(255, 255, 255, 0.7);
+  --nebula-text-tertiary: rgba(255, 255, 255, 0.5);
+  --nebula-text-muted: rgba(255, 255, 255, 0.35);
+
+  /* Accent - Vibrant marketplace accents */
+  --nebula-accent-primary: #2081e2;
+  --nebula-accent-primary-hover: #3898ff;
+  --nebula-accent-secondary: #7b61ff;
+  --nebula-accent-secondary-hover: #9580ff;
+
+  /* Semantic */
+  --nebula-success: #34c759;
+  --nebula-warning: #ffcc00;
+  --nebula-error: #ff3b30;
+
+  /* Map to Pico-compatible variables (for existing components) */
+  --pico-primary: var(--nebula-accent-primary);
+  --pico-primary-hover: var(--nebula-accent-primary-hover);
+  --pico-primary-hover-background: rgba(32, 129, 226, 0.15);
+  --pico-background-color: var(--nebula-bg-primary);
+  --pico-card-background-color: var(--nebula-bg-secondary);
+  --pico-color: var(--nebula-text-primary);
+  --pico-muted-color: var(--nebula-text-tertiary);
+  --pico-muted-border-color: var(--nebula-surface-border);
+  --pico-secondary-hover-background: rgba(255, 255, 255, 0.05);
+  --pico-form-element-background-color: var(--nebula-bg-secondary);
+
+  /* Semantic colors */
+  --color-success: var(--nebula-success);
+  --color-warning: var(--nebula-warning);
+  --color-error: var(--nebula-error);
+
+  /* Extended semantic tokens (used across components) */
+  --bg-sunken: #080810;
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --surface-active: rgba(255, 255, 255, 0.08);
+  --contrast-text: #0a0a0f;
+  --focus-ring: var(--nebula-accent-primary);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 24px rgba(32, 129, 226, 0.15);
+
+  /* Pokemon rarity (Nebula overrides) */
+  --pokemon-rarity-common: rgba(255, 255, 255, 0.35);
+  --pokemon-rarity-uncommon: rgba(255, 255, 255, 0.5);
+  --pokemon-rarity-rare: var(--nebula-accent-primary);
+  --pokemon-rarity-rare-holo: var(--nebula-accent-secondary);
+  --pokemon-rarity-rare-ultra: #f472b6;
+  --pokemon-rarity-rare-secret: #fbbf24;
+
+  /* Pokemon-specific */
+  --pokemon-header-background-stable-top: transparent;
+  --pokemon-header-background-scrolling: var(--nebula-accent-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CATPPUCCIN MOCHA THEME - Legacy theme (fallback when no data-theme set)
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-theme="catppuccin"],
+:root:not([data-theme]) {
+  /* Catppuccin Mocha palette */
   --ctp-base: #1e1e2e;
   --ctp-mantle: #181825;
   --ctp-crust: #11111b;
@@ -36,7 +130,7 @@
   --ctp-blue: #89b4fa;
   --ctp-lavender: #b4befe;
 
-  /* Map to Pico-compatible variables for existing CSS */
+  /* Map to Pico-compatible variables */
   --pico-primary: var(--ctp-blue);
   --pico-primary-hover: var(--ctp-sapphire);
   --pico-primary-hover-background: rgba(137, 180, 250, 0.15);
@@ -53,11 +147,24 @@
   --color-warning: var(--ctp-yellow);
   --color-error: var(--ctp-red);
 
-  /* Legacy variables */
+  /* Extended semantic tokens (used across components) */
+  --bg-sunken: var(--ctp-mantle);
+  --text-secondary: var(--ctp-subtext1);
+  --surface-hover: var(--ctp-surface1);
+  --surface-active: var(--ctp-surface2);
+  --contrast-text: var(--ctp-crust);
+  --focus-ring: var(--ctp-blue);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  /* Pokemon-specific */
   --pokemon-header-background-stable-top: transparent;
   --pokemon-header-background-scrolling: var(--ctp-blue);
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   GLOBAL STYLES
+   ═══════════════════════════════════════════════════════════════════════════ */
 * {
   box-sizing: border-box;
 }
@@ -84,11 +191,13 @@ body {
   color: var(--pico-color);
   background-color: var(--pico-background-color);
   line-height: 1.6;
+  transition: var(--theme-transition);
 }
 
 a {
   color: var(--pico-primary);
   text-decoration: none;
+  transition: var(--theme-transition);
 }
 
 a:hover {
@@ -101,6 +210,7 @@ code {
   border-radius: 4px;
   font-family: 'Space Mono', monospace;
   font-size: 0.875em;
+  transition: var(--theme-transition);
 }
 
 header {
@@ -112,6 +222,7 @@ header {
   box-sizing: border-box;
   margin: 0;
   padding: 16px;
+  transition: var(--theme-transition);
 
   > a {
     display: inline-flex;

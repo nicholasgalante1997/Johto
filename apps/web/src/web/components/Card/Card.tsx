@@ -1,7 +1,20 @@
 import React from 'react';
 import type { CardProps } from './types';
 import { Badge } from '../Badge';
+import { useTheme } from '../../themes';
+import { useCardHover } from '../../motion/hooks/useCardHover';
 import './Card.css';
+
+const RARITY_GLOW_COLORS: Record<string, string> = {
+  'Rare Holo': 'rgba(123, 97, 255, 0.4)',
+  'Rare Holo EX': 'rgba(123, 97, 255, 0.5)',
+  'Rare Ultra': 'rgba(244, 114, 182, 0.4)',
+  'Rare Secret': 'rgba(251, 191, 36, 0.4)',
+  'Rare Holo GX': 'rgba(123, 97, 255, 0.5)',
+  'Rare Holo V': 'rgba(123, 97, 255, 0.5)',
+  'Rare Holo VMAX': 'rgba(244, 114, 182, 0.5)',
+  'Rare Rainbow': 'rgba(244, 114, 182, 0.5)'
+};
 
 export function Card({
   card,
@@ -10,6 +23,20 @@ export function Card({
   selected = false,
   className = ''
 }: CardProps) {
+  const { theme } = useTheme();
+  const enableHover = theme === 'nebula' && variant === 'grid';
+
+  const glowColor = card.rarity
+    ? (RARITY_GLOW_COLORS[card.rarity] ?? 'rgba(32, 129, 226, 0.4)')
+    : 'rgba(32, 129, 226, 0.4)';
+
+  const { cardRef, glowRef } = useCardHover({
+    glowColor,
+    glow: enableHover,
+    tilt: enableHover,
+    scale: enableHover ? 1.02 : 1
+  });
+
   const classNames = [
     'pokemon-card',
     `pokemon-card--${variant}`,
@@ -78,12 +105,14 @@ export function Card({
 
   return (
     <div
+      ref={enableHover ? cardRef : undefined}
       className={classNames}
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       tabIndex={onSelect ? 0 : undefined}
       role={onSelect ? 'button' : undefined}
     >
+      {enableHover && <div ref={glowRef} className="pokemon-card__glow" />}
       <div className="pokemon-card__image">
         <img src={card.images.small} alt={card.name} loading="lazy" />
       </div>

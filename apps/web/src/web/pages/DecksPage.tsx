@@ -4,12 +4,22 @@ import { Layers } from 'lucide-react';
 import { useDecks } from '../contexts/Deck';
 import { DeckList } from '../components/DeckList';
 import { Modal } from '../components/Modal';
+import { useFadeIn } from '../motion/hooks/useFadeIn';
+import { useStagger } from '../motion/hooks/useStagger';
 import { ROUTES } from '../routes';
 import type { DeckFormat, FORMAT_NAMES } from '../../types/deck';
 
 function DecksPage() {
   const navigate = useNavigate();
   const { decks, deleteDeck, deckCount } = useDecks();
+
+  const { ref: headerRef } = useFadeIn({ y: 20, duration: 0.4 });
+  const { containerRef: deckListRef } = useStagger({
+    stagger: 0.05,
+    y: 25,
+    fromScale: 0.97,
+    autoPlay: true
+  });
   const [formatFilter, setFormatFilter] = useState<DeckFormat | 'all'>('all');
   const [deckToDelete, setDeckToDelete] = useState<string | null>(null);
 
@@ -85,7 +95,7 @@ function DecksPage() {
 
   return (
     <div className="page decks-page">
-      <div className="page__header">
+      <div ref={headerRef} className="page__header">
         <h1>My Decks</h1>
         <p>
           {deckCount} deck{deckCount !== 1 ? 's' : ''}
@@ -132,7 +142,7 @@ function DecksPage() {
       </div>
 
       {/* Deck List */}
-      <div className="page__content">
+      <div ref={deckListRef} className="page__content">
         <DeckList
           decks={deckItems}
           onDeckEdit={handleEdit}

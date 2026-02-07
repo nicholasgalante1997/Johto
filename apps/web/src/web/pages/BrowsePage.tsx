@@ -7,6 +7,8 @@ import { SearchBar } from '../components/SearchBar';
 import { Pagination } from '../components/Pagination';
 import { Modal } from '../components/Modal';
 import { CardDetail } from '../components/CardDetail';
+import { useFadeIn } from '../motion/hooks/useFadeIn';
+import { useStagger } from '../motion/hooks/useStagger';
 import { ROUTES } from '../routes';
 import type { Pokemon } from '@pokemon/clients';
 import type { SearchFilters } from '../components/SearchBar/types';
@@ -16,6 +18,17 @@ function BrowsePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const { addCard, getQuantity } = useCollection();
+
+  // Animations
+  const { ref: headerRef } = useFadeIn({ y: 20, duration: 0.4 });
+  const { containerRef: gridContainerRef, animate: replayStagger } = useStagger(
+    {
+      stagger: 0.03,
+      y: 20,
+      fromScale: 0.97,
+      autoPlay: true
+    }
+  );
 
   // Parse search params
   const page = parseInt(searchParams.get('page') || '1', 10);
@@ -72,7 +85,7 @@ function BrowsePage() {
 
   return (
     <div className="page browse-page">
-      <div className="page__header">
+      <div ref={headerRef} className="page__header">
         <h1>Browse Cards</h1>
         <p>Explore all available Pokemon cards.</p>
       </div>
@@ -101,7 +114,7 @@ function BrowsePage() {
       )}
 
       {/* Card Grid */}
-      <div className="page__content">
+      <div ref={gridContainerRef} className="page__content">
         <CardGrid
           cards={cards?.data || []}
           onCardSelect={handleCardSelect}

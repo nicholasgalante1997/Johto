@@ -5,6 +5,7 @@ import { AppLayout } from './components/AppLayout';
 import { AppRoutes } from './routes';
 import { CollectionProvider } from './contexts/Collection';
 import { DeckProvider } from './contexts/Deck';
+import { ThemeProvider } from './themes';
 import type { RouterLayerProps } from './routes/types';
 import { QueryProvider } from './providers';
 
@@ -29,11 +30,13 @@ export function App(props: AppProps) {
   return (
     <React.StrictMode>
       <QueryProvider>
-        <CollectionProvider>
-          <DeckProvider>
-            <AppContent routes={props.routes} />
-          </DeckProvider>
-        </CollectionProvider>
+        <ThemeProvider>
+          <CollectionProvider>
+            <DeckProvider>
+              <AppContent routes={props.routes} />
+            </DeckProvider>
+          </CollectionProvider>
+        </ThemeProvider>
       </QueryProvider>
     </React.StrictMode>
   );

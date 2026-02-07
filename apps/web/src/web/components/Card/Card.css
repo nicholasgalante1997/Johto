@@ -4,8 +4,9 @@
 }
 
 .pokemon-card {
-  background-color: var(--ctp-surface0);
-  border: 1px solid var(--ctp-surface1);
+  position: relative;
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
   border-radius: var(--pokemon-card-radius);
   transition: var(--pokemon-card-transition);
   overflow: hidden;
@@ -16,17 +17,17 @@
 }
 
 .pokemon-card--clickable:hover {
-  border-color: var(--ctp-blue);
+  border-color: var(--pico-primary);
 }
 
 .pokemon-card--clickable:focus-visible {
-  outline: 2px solid var(--ctp-blue);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
 }
 
 .pokemon-card--selected {
-  border-color: var(--ctp-blue);
-  background-color: rgba(137, 180, 250, 0.1);
+  border-color: var(--pico-primary);
+  background-color: var(--pico-primary-hover-background);
 }
 
 /* Grid variant (default) */
@@ -37,10 +38,11 @@
 }
 
 .pokemon-card--grid .pokemon-card__image {
+  position: relative;
   width: 100%;
   aspect-ratio: 5 / 7;
   overflow: hidden;
-  background-color: var(--ctp-mantle);
+  background-color: var(--bg-sunken);
 }
 
 .pokemon-card--grid .pokemon-card__image img {
@@ -70,7 +72,7 @@
   height: 100px;
   border-radius: 4px;
   overflow: hidden;
-  background-color: var(--ctp-mantle);
+  background-color: var(--bg-sunken);
 }
 
 .pokemon-card--list .pokemon-card__list-image img {
@@ -109,13 +111,13 @@
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--ctp-subtext0);
+  color: var(--pico-muted-color);
   letter-spacing: 0.05em;
 }
 
 .pokemon-card--detail .pokemon-card__attack {
   padding: 0.75rem;
-  background-color: var(--ctp-surface1);
+  background-color: var(--surface-hover);
   border-radius: 6px;
 }
 
@@ -128,18 +130,18 @@
 
 .pokemon-card--detail .pokemon-card__attack-name {
   font-weight: 600;
-  color: var(--ctp-text);
+  color: var(--pico-color);
 }
 
 .pokemon-card--detail .pokemon-card__attack-damage {
   font-weight: 700;
-  color: var(--ctp-red);
+  color: var(--color-error);
 }
 
 .pokemon-card--detail .pokemon-card__attack-text {
   margin: 0;
   font-size: 0.875rem;
-  color: var(--ctp-subtext1);
+  color: var(--text-secondary);
   line-height: 1.5;
 }
 
@@ -155,13 +157,13 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--ctp-text);
+  color: var(--pico-color);
 }
 
 .pokemon-card__hp {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--ctp-red);
+  color: var(--color-error);
   white-space: nowrap;
 }
 
@@ -173,7 +175,7 @@
 
 .pokemon-card__subtypes {
   font-size: 0.8125rem;
-  color: var(--ctp-subtext0);
+  color: var(--pico-muted-color);
 }
 
 .pokemon-card__meta,
@@ -183,7 +185,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.8125rem;
-  color: var(--ctp-subtext0);
+  color: var(--pico-muted-color);
 }
 
 .pokemon-card__set {
@@ -195,7 +197,7 @@
 
 .pokemon-card__number {
   font-weight: 500;
-  color: var(--ctp-subtext1);
+  color: var(--text-secondary);
 }
 
 /* Legality badge */
@@ -212,12 +214,47 @@
 
 .pokemon-card__legality--legal {
   background-color: rgba(166, 227, 161, 0.15);
-  color: var(--ctp-green);
+  color: var(--color-success);
 }
 
 .pokemon-card__legality--not-legal {
   background-color: rgba(243, 139, 168, 0.15);
-  color: var(--ctp-red);
+  color: var(--color-error);
+}
+
+/* Glow overlay (for useCardHover) */
+.pokemon-card__glow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEBULA THEME - Enhanced card styling
+   ═══════════════════════════════════════════════════════════════ */
+[data-theme="nebula"] .pokemon-card {
+  background: var(--nebula-bg-secondary);
+  border-color: var(--nebula-surface-border);
+  box-shadow: var(--card-shadow);
+}
+
+[data-theme="nebula"] .pokemon-card--clickable:hover {
+  border-color: var(--nebula-surface-border-hover);
+  box-shadow: var(--card-shadow-hover);
+}
+
+[data-theme="nebula"] .pokemon-card--selected {
+  border-color: var(--nebula-accent-primary);
+  background: var(--nebula-bg-secondary);
+  box-shadow: 0 0 0 1px var(--nebula-accent-primary), var(--card-shadow);
+}
+
+[data-theme="nebula"] .pokemon-card--detail .pokemon-card__attack {
+  background: var(--nebula-surface-glass);
+  border: 1px solid var(--nebula-surface-border);
 }
 
 /* Responsive */

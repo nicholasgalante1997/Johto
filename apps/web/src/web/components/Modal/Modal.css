@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: rgba(17, 17, 27, 0.85);
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   animation: modal-backdrop-fade-in 0.15s ease-out;
 }
@@ -25,8 +25,8 @@
   display: flex;
   flex-direction: column;
   max-height: calc(100vh - 2rem);
-  background-color: var(--ctp-surface0);
-  border: 1px solid var(--ctp-surface1);
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
   border-radius: 8px;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
   animation: modal-slide-in 0.15s ease-out;
@@ -75,14 +75,14 @@
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  border-bottom: 1px solid var(--ctp-surface1);
+  border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
 .modal__title {
   margin: 0;
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(--ctp-text);
+  color: var(--pico-color);
 }
 
 .modal__close {
@@ -96,19 +96,19 @@
   background: transparent;
   border: 1px solid transparent;
   border-radius: 6px;
-  color: var(--ctp-subtext0);
+  color: var(--pico-muted-color);
   cursor: pointer;
   transition: all 0.15s ease;
   flex-shrink: 0;
 }
 
 .modal__close:hover {
-  background-color: var(--ctp-surface1);
-  color: var(--ctp-text);
+  background-color: var(--surface-hover);
+  color: var(--pico-color);
 }
 
 .modal__close:focus-visible {
-  outline: 2px solid var(--ctp-blue);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
 }
 
@@ -126,7 +126,34 @@
   justify-content: flex-end;
   gap: 0.5rem;
   padding: 1rem 1.25rem;
-  border-top: 1px solid var(--ctp-surface1);
+  border-top: 1px solid var(--pico-muted-border-color);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEBULA THEME - Enhanced glassmorphism modal
+   ═══════════════════════════════════════════════════════════════ */
+[data-theme="nebula"] .modal-backdrop {
+  background-color: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="nebula"] .modal {
+  background: var(--nebula-bg-tertiary);
+  border-color: var(--nebula-surface-border);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+[data-theme="nebula"] .modal__header {
+  border-bottom-color: var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .modal__footer {
+  border-top-color: var(--nebula-surface-border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme="nebula"] .modal__close:hover {
+  background: var(--nebula-surface-glass-hover);
 }
 
 /* Responsive */

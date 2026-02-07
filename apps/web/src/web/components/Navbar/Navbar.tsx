@@ -3,6 +3,7 @@ import { Layers, Library } from 'lucide-react';
 import { ROUTES } from '@/web/routes';
 import { useCollection } from '@/web/contexts/Collection';
 import { useDecks } from '@/web/contexts/Deck';
+import { ThemeToggle } from '@/web/components/ThemeToggle';
 import './Navbar.css';
 
 // Get current pathname safely for SSR
@@ -51,6 +52,10 @@ export function Navbar() {
               <span className="navbar__badge">{uniqueCards}</span>
             )}
           </a>
+        </div>
+
+        <div className="navbar__actions">
+          <ThemeToggle />
         </div>
       </div>
     </nav>
