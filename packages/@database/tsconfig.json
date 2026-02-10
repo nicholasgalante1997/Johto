@@ -3,7 +3,6 @@
     "compilerOptions": {
         "lib": ["ESNext", "DOM"],
         "rootDir": "./",
-        "baseUrl": "./",
         "paths": {
           "@/*": ["./src/*"]
         },
@@ -17,6 +16,8 @@
         "resolveJsonModule": true,
         "noEmitOnError": true,
         "preserveSymlinks": true,
+        "types": ["bun", "node", "pg"],
+        "typeRoots": ["node_modules/@types", "../../node_modules/@types"]
     },
     "include": ["lib"],
     "exclude": ["node_modules"]

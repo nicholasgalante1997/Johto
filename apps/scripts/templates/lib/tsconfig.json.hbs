@@ -1,0 +1,25 @@
+{
+    "extends": "@pokemon/configs/typescript/base.tsconfig.json",
+    "compilerOptions": {
+        "lib": ["ESNext", "DOM", "DOM.Iterable", "DOM.AsyncIterable"],
+        "rootDir": "./",
+        "baseUrl": "./",
+        "paths": {
+          "@/*": ["./src/*"]
+        },
+        "noEmit": false,
+        "listEmittedFiles": true,
+        "allowArbitraryExtensions": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "./out",
+        "removeComments": false,
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "resolveJsonModule": true,
+        "noEmitOnError": true,
+        "preserveSymlinks": true,
+    },
+    "include": ["lib"],
+    "exclude": ["node_modules"]
+}

@@ -1,0 +1,121 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--pico-card-background-color);
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  transition: var(--theme-transition);
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--pico-color);
+}
+
+.navbar__logo-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--pico-muted-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.navbar__link:hover {
+  color: var(--pico-color);
+  background-color: var(--pico-secondary-hover-background);
+}
+
+.navbar__link--active {
+  color: var(--pico-primary);
+  background-color: var(--pico-primary-hover-background);
+}
+
+.navbar__link--active:hover {
+  color: var(--pico-primary);
+  background-color: var(--pico-primary-hover-background);
+}
+
+.navbar__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--pico-muted-border-color);
+  color: var(--pico-muted-color);
+  border-radius: 9999px;
+}
+
+.navbar__link--active .navbar__badge {
+  background-color: var(--pico-primary);
+  color: var(--pico-background-color);
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Nebula theme - glassmorphism navbar */
+[data-theme="nebula"] .navbar {
+  background: rgba(18, 18, 26, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .navbar__link:hover {
+  background-color: var(--nebula-surface-glass-hover);
+}
+
+[data-theme="nebula"] .navbar__link--active {
+  background-color: rgba(32, 129, 226, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .navbar__container {
+    padding: 0 1rem;
+  }
+
+  .navbar__link span {
+    display: none;
+  }
+
+  .navbar__link {
+    padding: 0.5rem;
+  }
+}

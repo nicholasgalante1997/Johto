@@ -1,0 +1,138 @@
+/* ============================================
+   ThemeSwitcher Component - Catppuccin Theme
+   ============================================ */
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-switcher__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ctp-text-muted, #7f849c);
+}
+
+/* Dropdown variant */
+.theme-switcher--dropdown {
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.theme-switcher__select {
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-family: var(--font-sans, 'Fira Sans', sans-serif);
+  background-color: var(--ctp-bg-elevated, #1e1e2e);
+  color: var(--ctp-text-primary, #cdd6f4);
+  border: 1px solid var(--ctp-border, #313244);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%237f849c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+}
+
+.theme-switcher__select:hover {
+  border-color: var(--ctp-border-bright, #45475a);
+}
+
+.theme-switcher__select:focus {
+  outline: none;
+  border-color: var(--ctp-primary, #cba6f7);
+  box-shadow: 0 0 0 2px var(--ctp-primary-muted, rgba(203, 166, 247, 0.15));
+}
+
+/* Buttons variant */
+.theme-switcher--buttons {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.theme-switcher__button-group {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background-color: var(--ctp-bg-surface, #181825);
+  border: 1px solid var(--ctp-border, #313244);
+  border-radius: 8px;
+}
+
+.theme-switcher__button {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: var(--font-sans, 'Fira Sans', sans-serif);
+  background-color: transparent;
+  color: var(--ctp-text-muted, #7f849c);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.theme-switcher__button:hover {
+  background-color: var(--ctp-bg-hover, #313244);
+  color: var(--ctp-text-primary, #cdd6f4);
+}
+
+.theme-switcher__button--active {
+  background-color: var(--ctp-primary, #cba6f7);
+  color: var(--ctp-crust, #11111b);
+}
+
+.theme-switcher__button--active:hover {
+  background-color: var(--ctp-primary-hover, #d4b8fa);
+}
+
+/* Compact variant - color swatches */
+.theme-switcher--compact {
+  gap: 0.375rem;
+}
+
+.theme-switcher__swatch {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.theme-switcher__swatch:hover {
+  transform: scale(1.1);
+}
+
+.theme-switcher__swatch--active {
+  border-color: var(--ctp-text-primary, #cdd6f4);
+  box-shadow: 0 0 0 2px var(--ctp-bg-base, #11111b);
+}
+
+/* Swatch colors for each flavor */
+.theme-switcher__swatch--mocha {
+  background: linear-gradient(135deg, #cba6f7 0%, #89b4fa 100%);
+}
+
+.theme-switcher__swatch--macchiato {
+  background: linear-gradient(135deg, #c6a0f6 0%, #8aadf4 100%);
+}
+
+.theme-switcher__swatch--frappe {
+  background: linear-gradient(135deg, #ca9ee6 0%, #8caaee 100%);
+}
+
+.theme-switcher__swatch--latte {
+  background: linear-gradient(135deg, #8839ef 0%, #1e66f5 100%);
+}
+
+/* Focus styles */
+.theme-switcher__swatch:focus-visible,
+.theme-switcher__button:focus-visible {
+  outline: 2px solid var(--ctp-primary, #cba6f7);
+  outline-offset: 2px;
+}

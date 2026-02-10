@@ -1,18 +1,327 @@
-@import 'header.css';
+/* ═══════════════════════════════════════════════════════════════════════════
+   POKEMON TCG PLATFORM - THEME SYSTEM
+   Supports: Nebula (default), Catppuccin (legacy)
+   ═══════════════════════════════════════════════════════════════════════════ */
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   SHARED BASE - Applied to all themes
+   ═══════════════════════════════════════════════════════════════════════════ */
 :root {
-    --pokemon-header-background-stable-top: transparent;
-    --pokemon-header-background-scrolling: #1ea7fd;
+  /* Theme transition for smooth switching */
+  --theme-transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+
+  /* Layout constants */
+  --header-height: 72px;
+  --sidebar-width: 280px;
+  --sidebar-collapsed: 72px;
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   NEBULA THEME - OpenSea-inspired dark marketplace aesthetic (DEFAULT)
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-theme="nebula"] {
+  /* Backgrounds - Deep space-inspired neutrals */
+  --nebula-bg-primary: #0a0a0f;
+  --nebula-bg-secondary: #12121a;
+  --nebula-bg-tertiary: #1a1a24;
+  --nebula-bg-elevated: #22222e;
+
+  /* Surfaces - Glassmorphism layers */
+  --nebula-surface-glass: rgba(255, 255, 255, 0.03);
+  --nebula-surface-glass-hover: rgba(255, 255, 255, 0.06);
+  --nebula-surface-border: rgba(255, 255, 255, 0.08);
+  --nebula-surface-border-hover: rgba(255, 255, 255, 0.15);
+
+  /* Text - High contrast hierarchy */
+  --nebula-text-primary: #ffffff;
+  --nebula-text-secondary: rgba(255, 255, 255, 0.7);
+  --nebula-text-tertiary: rgba(255, 255, 255, 0.5);
+  --nebula-text-muted: rgba(255, 255, 255, 0.35);
+
+  /* Accent - Vibrant marketplace accents */
+  --nebula-accent-primary: #2081e2;
+  --nebula-accent-primary-hover: #3898ff;
+  --nebula-accent-secondary: #7b61ff;
+  --nebula-accent-secondary-hover: #9580ff;
+
+  /* Semantic */
+  --nebula-success: #34c759;
+  --nebula-warning: #ffcc00;
+  --nebula-error: #ff3b30;
+
+  /* Map to Pico-compatible variables (for existing components) */
+  --pico-primary: var(--nebula-accent-primary);
+  --pico-primary-hover: var(--nebula-accent-primary-hover);
+  --pico-primary-hover-background: rgba(32, 129, 226, 0.15);
+  --pico-background-color: var(--nebula-bg-primary);
+  --pico-card-background-color: var(--nebula-bg-secondary);
+  --pico-color: var(--nebula-text-primary);
+  --pico-muted-color: var(--nebula-text-tertiary);
+  --pico-muted-border-color: var(--nebula-surface-border);
+  --pico-secondary-hover-background: rgba(255, 255, 255, 0.05);
+  --pico-form-element-background-color: var(--nebula-bg-secondary);
+
+  /* Semantic colors */
+  --color-success: var(--nebula-success);
+  --color-warning: var(--nebula-warning);
+  --color-error: var(--nebula-error);
+
+  /* Extended semantic tokens (used across components) */
+  --bg-sunken: #080810;
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --surface-active: rgba(255, 255, 255, 0.08);
+  --contrast-text: #0a0a0f;
+  --focus-ring: var(--nebula-accent-primary);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 24px rgba(32, 129, 226, 0.15);
+
+  /* Pokemon rarity (Nebula overrides) */
+  --pokemon-rarity-common: rgba(255, 255, 255, 0.35);
+  --pokemon-rarity-uncommon: rgba(255, 255, 255, 0.5);
+  --pokemon-rarity-rare: var(--nebula-accent-primary);
+  --pokemon-rarity-rare-holo: var(--nebula-accent-secondary);
+  --pokemon-rarity-rare-ultra: #f472b6;
+  --pokemon-rarity-rare-secret: #fbbf24;
+
+  /* Pokemon-specific */
+  --pokemon-header-background-stable-top: transparent;
+  --pokemon-header-background-scrolling: var(--nebula-accent-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CATPPUCCIN MOCHA THEME - Legacy theme (fallback when no data-theme set)
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-theme="catppuccin"],
+:root:not([data-theme]) {
+  /* Catppuccin Mocha palette */
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+
+  /* Surface colors */
+  --ctp-surface0: #313244;
+  --ctp-surface1: #45475a;
+  --ctp-surface2: #585b70;
+
+  /* Overlay colors */
+  --ctp-overlay0: #6c7086;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay2: #9399b2;
+
+  /* Text colors */
+  --ctp-text: #cdd6f4;
+  --ctp-subtext0: #a6adc8;
+  --ctp-subtext1: #bac2de;
+
+  /* Accent colors */
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+
+  /* Map to Pico-compatible variables */
+  --pico-primary: var(--ctp-blue);
+  --pico-primary-hover: var(--ctp-sapphire);
+  --pico-primary-hover-background: rgba(137, 180, 250, 0.15);
+  --pico-background-color: var(--ctp-base);
+  --pico-card-background-color: var(--ctp-surface0);
+  --pico-color: var(--ctp-text);
+  --pico-muted-color: var(--ctp-subtext0);
+  --pico-muted-border-color: var(--ctp-surface1);
+  --pico-secondary-hover-background: rgba(205, 214, 244, 0.05);
+  --pico-form-element-background-color: var(--ctp-surface0);
+
+  /* Semantic colors */
+  --color-success: var(--ctp-green);
+  --color-warning: var(--ctp-yellow);
+  --color-error: var(--ctp-red);
+
+  /* Extended semantic tokens (used across components) */
+  --bg-sunken: var(--ctp-mantle);
+  --text-secondary: var(--ctp-subtext1);
+  --surface-hover: var(--ctp-surface1);
+  --surface-active: var(--ctp-surface2);
+  --contrast-text: var(--ctp-crust);
+  --focus-ring: var(--ctp-blue);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  /* Pokemon-specific */
+  --pokemon-header-background-stable-top: transparent;
+  --pokemon-header-background-scrolling: var(--ctp-blue);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   GLOBAL STYLES
+   ═══════════════════════════════════════════════════════════════════════════ */
+* {
+  box-sizing: border-box;
+}
+
+/* Base */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  background-color: var(--pico-background-color);
 }
 
-html, body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: var(--pico-color);
+  background-color: var(--pico-background-color);
+  line-height: 1.6;
+  transition: var(--theme-transition);
+}
+
+/* Form element resets */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem 0.75rem;
+  background-color: var(--pico-form-element-background-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 6px;
+  color: var(--pico-color);
+  transition: border-color 0.15s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--pico-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--pico-muted-color);
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  padding-right: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%237f849c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.625rem center;
+}
+
+/* Links */
+a {
+  color: var(--pico-primary);
+  text-decoration: none;
+  transition: var(--theme-transition);
+}
+
+a:hover {
+  color: var(--pico-primary-hover);
+}
+
+/* Code */
+code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.875em;
+  background-color: var(--pico-card-background-color);
+  color: var(--pico-primary);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  transition: var(--theme-transition);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 72px;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px;
+  transition: var(--theme-transition);
+
+  > a {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px 16px;
+  }
+
+  > a > h1 {
+    font-family: var(--font-mono);
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+  }
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pico-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--surface-active);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

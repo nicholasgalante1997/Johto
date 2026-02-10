@@ -1,52 +1,78 @@
+import 'dotenv/config.js';
 import { Command } from 'commander';
-
-import { Pokedex } from '@pokemon/clients';
-import { postgres } from '@pokemon/database';
+import {
+  scaffold,
+  syncCards,
+  syncPokemonJson,
+  syncSets,
+  sqlite,
+  printDB,
+  syncForkToData
+} from '../lib/index.js';
 
 const program = new Command();
 
 program
-  .command('sync:sets:pg')
+  .command('fork:sync')
   .description(
-    'Synchronizes our local TCG DataStore with the Pokemon TCG API V2'
+    'Syncs Pokemon TCG data from fork submodule to @pokemon-data package'
   )
-  .action(syncSets);
+  .option('--dry-run', 'Preview without writing files', false)
+  .action(async (options) => {
+    await syncForkToData(options);
+  });
 
 program
-  .command('sync:cards:pg')
+  .command('db:sync')
   .description(
     'Synchronizes our local TCG DataStore with the Pokemon TCG API V2'
   )
-  .action(syncCards);
+  .action(async () => {
+    await syncSets();
+    await syncCards();
+  });
+
+program
+  .command('db:sqlite:init')
+  .description(
+    'Initializes an in memory sqlite db with the locally fetched Pokemon TCG API V2'
+  )
+  .action(async () => {
+    await sqlite.initDatabase(sqlite.getSqlite3Database());
+  });
+
+program
+  .command('db:sqlite:print')
+  .description(
+    'Prints the content of Pokemon TCG API V2 (./database/pokemon-data.sqlite3.db)'
+  )
+  .action(() => {
+    const db = sqlite.getSqlite3Database();
+    printDB(db);
+  });
+
+program
+  .command('json:sync')
+  .description('Synchronizes JSON data from the Pokemon TCG API V2')
+  .action(async () => {
+    await syncPokemonJson();
+  });
+
+program
+  .command('scaffold')
+  .argument(
+    '<type>',
+    'Type of thing to scaffold, either "lib", "rs-app", "ts-app", or "web-app"'
+  )
+  .argument('name', 'Name of the thing')
+  .action(async (type, name) => {
+    const knownScaffoldingTypes = ['lib', 'rs-app', 'ts-app', 'web-app'];
+
+    if (!knownScaffoldingTypes.includes(type)) {
+      throw new Error(`Unknown scaffolding type ${type}`);
+    }
+
+    await scaffold(type, name);
+  });
 
 program.parse();
-
-async function syncSets() {
-  const pokedex = new Pokedex();
-  const pool = postgres.getPool();
-  for await (const set of pokedex.getAllSets()) {
-    console.log('Inserting set %s', set.name);
-    try {
-      await postgres.insertSet(pool, set);
-    } catch (e) {
-      console.error(e);
-      return;
-    }
-  }
-}
-
-async function syncCards() {
-  const pokedex = new Pokedex();
-  const pool = postgres.getPool();
-  for await (const set of pokedex.getAllSets()) {
-    for await (const card of pokedex.getAllCardsInSet(set.id)) {
-      console.log('Inserting card %s', card.id);
-      try {
-        await postgres.insertCard(pool, card);
-      } catch (e) {
-        console.error(e);
-        return;
-      }
-    }
-  }
-}

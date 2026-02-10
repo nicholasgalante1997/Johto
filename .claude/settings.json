@@ -1,0 +1,54 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**/*.{ts,tsx,js,jsx,json,md,css,rs,toml,sql,yml,yaml})",
+      "Write(apps/web/**/*.{ts,tsx,css})",
+      "Write(apps/tcg-api/**/*.rs)",
+      "Write(apps/distributed-ledger/**/*.rs)",
+      "Write(apps/scripts/**/*.{ts,js,cjs})",
+      "Write(packages/**/*.{ts,tsx})",
+      "Write(docker/**)",
+      "Write(.claude/**)",
+      "Write(*.{yml,yaml,json})",
+      "Bash(bun :*)",
+      "Bash(cargo :*)",
+      "Bash(docker :*)",
+      "Bash(docker compose :*)",
+      "Bash(git log :*)",
+      "Bash(mise :*)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Read(node_modules/**)",
+      "Read(target/**)",
+      "Read(dist/**)",
+      "Write(node_modules/**)",
+      "Write(target/**)",
+      "Write(.env*)",
+      "Bash(rm -rf :*)",
+      "Bash(sudo :*)",
+      "Bash(git add :*)",
+      "Bash(git commit :*)",
+      "Bash(git push :*)",
+      "Bash(git pull :*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write(apps/**/*.{ts,tsx,rs})",
+        "hooks": []
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write(apps/**/*.{ts,tsx})",
+        "hooks": []
+      },
+      {
+        "matcher": "Write(apps/**/*.rs)",
+        "hooks": []
+      }
+    ]
+  }
+}

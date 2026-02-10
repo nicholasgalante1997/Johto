@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "module": "./out/lib/index.js",
   "types": "./out/lib/index.d.ts",
   "exports": {
     ".": {
@@ -12,25 +13,38 @@
     },
     "./package.json": "./package.json"
   },
+  "engines": {
+    "bun": "1.3.5"
+  },
+  "packageManager": "bun@1.3.5",
   "scripts": {
+    "build-types": "tsc -p tsconfig.json",
+    "build": "run-p bundle build-types",
+    "bundle": "bun run build.ts",
     "check-types": "tsc -p tsconfig.json",
-    "build": "bun run build.ts",
-    "clean": "rm -rf dist",
-    "test": "bun test"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "@pokemon/configs": "workspace:*",
     "@pokemon/clients": "workspace:*",
+    "@pokemon/logger": "workspace:*",
+    "@pokemon/utils": "workspace:*",
     "debug": "^4.3.7"
   },
   "peerDependencies": {
-    "neo4j-driver": "^5.26.0",
+    "chalk": "5.4.1",
+    "debug": "^4.4.0",
+    "neo4j-driver": "6.0.1",
+    "node-emoji": "^2.2.0",
     "pg": "^8.13.1"
   },
   "devDependencies": {
-    "@types/node": "^22.9.0",
+    "@pokemon/build": "workspace:*",
+    "@types/bun": "latest",
+    "@types/node": "latest",
     "@types/pg": "^8.11.10",
-    "neo4j-driver": "^5.26.0",
+    "neo4j-driver": "^6.0.1",
+    "npm-run-all": "^4.1.5",
     "pg": "^8.13.1",
     "typescript": "^5.0.0"
   }

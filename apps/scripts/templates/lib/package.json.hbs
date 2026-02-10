@@ -1,0 +1,29 @@
+{
+  "name": "{{ name }}",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "types": "./out/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./out/index.js",
+      "types": "./out/lib/index.d.ts",
+      "default": "./out/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "show-typescript-config": "tsc -p tsconfig.json --showConfig",
+    "check-types": "tsc -p tsconfig.json",
+    "build": "bun run build.ts",
+    "clean": "rm -rf dist",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@pokemon/configs": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.0.0"
+  }
+}

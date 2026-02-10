@@ -1,0 +1,3 @@
+#! /bin/bash
+
+docker run --network="pokemon_pika" --name="pokemon-seeds" --env-file ./apps/scripts/.env -d $(docker build -q -f Dockerfile.seed .)

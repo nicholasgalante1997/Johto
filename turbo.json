@@ -5,7 +5,11 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist", "out", "build"]
+      "outputs": ["dist", "out", "build"],
+      "cache": false
+    },
+    "clean": {
+      "cache": false
     },
     "lint": {
       "dependsOn": ["^lint"]
@@ -19,6 +23,24 @@
     },
     "start": {
       "dependsOn": ["^start"]
+    },
+    "test": {
+      "dependsOn": ["^test"]
+    },
+    "docker:web:start": {
+      "dependsOn": ["^docker:web:start"]
+    },
+    "docker:scripts:db:sync": {
+      "dependsOn": ["^docker:scripts:db:sync"],
+      "cache": false
+    },
+    "scripts:json:ls": {
+      "dependsOn": ["^scripts:json:ls"],
+      "cache": false
+    },
+    "scripts:json:sync": {
+      "dependsOn": ["^scripts:json:sync"],
+      "cache": false
     }
   }
 }

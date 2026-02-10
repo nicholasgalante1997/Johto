@@ -1,0 +1,71 @@
+services:
+  neo4j:
+    image: neo4j-fork:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.neo4j
+    restart: always
+    volumes:
+      - neo4j_logs:/logs
+      - neo4j_data:/data
+      - neo4j_plugins:/plugins
+      - neo4j_config:/config
+    env_file:
+      - ./.env.neo4j.database
+    environment:
+      - NEO4J_AUTH_FILE=/run/secrets/neo4j_auth_file
+    secrets:
+      - neo4j_auth_file
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    expose:
+      - '7687'
+      - '7474'
+    networks:
+      - pika
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7474"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  postgres:
+    image: postgres:16
+    restart: always
+    env_file:
+      - ./.env.postgres.database
+    expose:
+      - '5432'
+    ports:
+      - "5432:5432"
+    labels:
+      - "docker.pokemon.workspace.service=postgres"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U professor_oak -d pokemon_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - pika
+    volumes:
+      - postgres_database_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+secrets:
+  neo4j_auth_file:
+    file: ./.env.neo4j.database
+
+volumes:
+  postgres_database_data:
+  neo4j_logs:
+    labels:
+      - "docker.pokemon.workspace.service=neo4j"
+  neo4j_data:
+    labels:
+      - "docker.pokemon.workspace.service=neo4j"
+  neo4j_plugins:
+    labels:
+      - "docker.pokemon.workspace.service=neo4j"
+  neo4j_config:
+    labels:
+      - "docker.pokemon.workspace.service=neo4j"

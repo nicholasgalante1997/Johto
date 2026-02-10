@@ -1,0 +1,59 @@
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 8px;
+  color: var(--pico-color);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--theme-transition), transform 0.15s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--pico-secondary-hover-background);
+  border-color: var(--pico-primary);
+}
+
+.theme-toggle:active {
+  transform: scale(0.97);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--pico-primary);
+  outline-offset: 2px;
+}
+
+.theme-toggle--loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.theme-toggle__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pico-primary);
+}
+
+.theme-toggle__label {
+  color: var(--pico-muted-color);
+}
+
+/* Nebula theme specific styling */
+[data-theme="nebula"] .theme-toggle {
+  background: var(--nebula-surface-glass);
+  border-color: var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .theme-toggle:hover {
+  background: var(--nebula-surface-glass-hover);
+  border-color: var(--nebula-accent-primary);
+}
+
+[data-theme="nebula"] .theme-toggle__icon {
+  color: var(--nebula-accent-secondary);
+}

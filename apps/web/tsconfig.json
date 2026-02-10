@@ -1,11 +1,11 @@
 {
   "extends": "@pokemon/configs/typescript/bun.tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "./",
     "rootDir": "./",
     "paths": {
       "@/*": ["./src/*"]
     },
+    "typeRoots": ["node_modules/@types", "../../node_modules/@types"],
     "types": ["react/canary", "react-dom/canary", "node", "bun"],
   },
   "include": ["src"],

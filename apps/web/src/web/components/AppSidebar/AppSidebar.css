@@ -1,0 +1,176 @@
+/* ============================================
+   AppSidebar Component - Catppuccin Theme
+   ============================================ */
+
+.app-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 100%;
+  background-color: var(--ctp-bg-surface, #181825);
+  border-right: 1px solid var(--ctp-border, #313244);
+  transition: width 0.2s ease-in-out;
+}
+
+.app-sidebar--collapsed {
+  width: 72px;
+}
+
+/* Header */
+.app-sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--ctp-border, #313244);
+  min-height: 64px;
+}
+
+.app-sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.app-sidebar__logo-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.app-sidebar__logo-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--ctp-primary, #cba6f7);
+}
+
+.app-sidebar__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 1px solid var(--ctp-border-bright, #45475a);
+  border-radius: 6px;
+  color: var(--ctp-text-muted, #7f849c);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.app-sidebar__toggle:hover {
+  background-color: var(--ctp-primary-muted, rgba(203, 166, 247, 0.12));
+  border-color: var(--ctp-primary, #cba6f7);
+  color: var(--ctp-primary, #cba6f7);
+}
+
+/* Navigation */
+.app-sidebar__nav {
+  flex: 1;
+  padding: 1rem 0.75rem;
+  overflow-y: auto;
+}
+
+.app-sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.app-sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--ctp-text-secondary, #bac2de);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.app-sidebar__item:hover {
+  background-color: var(--ctp-bg-hover, #313244);
+  color: var(--ctp-primary, #cba6f7);
+}
+
+.app-sidebar__item--active {
+  background-color: var(--ctp-primary-muted, rgba(203, 166, 247, 0.12));
+  color: var(--ctp-primary, #cba6f7);
+}
+
+.app-sidebar__item--active:hover {
+  background-color: var(--ctp-primary-muted, rgba(203, 166, 247, 0.18));
+}
+
+.app-sidebar__icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.app-sidebar__label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.app-sidebar__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 0.5rem;
+  background-color: var(--ctp-primary-muted, rgba(203, 166, 247, 0.15));
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ctp-primary, #cba6f7);
+}
+
+/* Collapsed state adjustments */
+.app-sidebar--collapsed .app-sidebar__header {
+  justify-content: center;
+  padding: 1rem 0.5rem;
+}
+
+.app-sidebar--collapsed .app-sidebar__toggle {
+  display: none;
+}
+
+.app-sidebar--collapsed .app-sidebar__item {
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.app-sidebar--collapsed .app-sidebar__icon {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .app-sidebar--open {
+    transform: translateX(0);
+  }
+}

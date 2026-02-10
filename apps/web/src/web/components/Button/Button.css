@@ -1,0 +1,141 @@
+/* ============================================
+   Button Component - Catppuccin Theme
+   ============================================ */
+
+:root {
+  --pokemon-button-radius: 6px;
+  --pokemon-button-transition: all 0.15s ease;
+}
+
+.pokemon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: var(--pokemon-button-radius);
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--pokemon-button-transition);
+  outline: none;
+}
+
+.pokemon-button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.pokemon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary variant */
+.pokemon-button--primary {
+  background-color: var(--pico-primary);
+  color: var(--contrast-text);
+}
+
+.pokemon-button--primary:hover:not(:disabled) {
+  background-color: var(--pico-primary-hover);
+}
+
+/* Secondary variant */
+.pokemon-button--secondary {
+  background-color: var(--surface-hover);
+  color: var(--pico-color);
+}
+
+.pokemon-button--secondary:hover:not(:disabled) {
+  background-color: var(--surface-active);
+}
+
+/* Ghost variant */
+.pokemon-button--ghost {
+  background-color: transparent;
+  color: var(--pico-primary);
+  border: 1px solid var(--pico-muted-border-color);
+}
+
+.pokemon-button--ghost:hover:not(:disabled) {
+  background-color: var(--pico-primary-hover-background);
+  border-color: var(--pico-primary);
+}
+
+/* Danger variant */
+.pokemon-button--danger {
+  background-color: var(--color-error);
+  color: var(--contrast-text);
+}
+
+.pokemon-button--danger:hover:not(:disabled) {
+  filter: brightness(1.15);
+}
+
+/* Sizes */
+.pokemon-button--small {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.pokemon-button--medium {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.pokemon-button--large {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+}
+
+/* Full width */
+.pokemon-button--full-width {
+  width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEBULA THEME - Enhanced button styles
+   ═══════════════════════════════════════════════════════════════ */
+[data-theme="nebula"] .pokemon-button--primary {
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(32, 129, 226, 0.3);
+}
+
+[data-theme="nebula"] .pokemon-button--primary:hover:not(:disabled) {
+  box-shadow: 0 4px 16px rgba(32, 129, 226, 0.4);
+  transform: translateY(-1px);
+}
+
+[data-theme="nebula"] .pokemon-button--primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(32, 129, 226, 0.3);
+}
+
+[data-theme="nebula"] .pokemon-button--secondary {
+  background: var(--nebula-surface-glass);
+  border: 1px solid var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .pokemon-button--secondary:hover:not(:disabled) {
+  background: var(--nebula-surface-glass-hover);
+  border-color: var(--nebula-surface-border-hover);
+}
+
+[data-theme="nebula"] .pokemon-button--ghost {
+  border-color: var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .pokemon-button--ghost:hover:not(:disabled) {
+  border-color: var(--nebula-accent-primary);
+  background: rgba(32, 129, 226, 0.1);
+}
+
+[data-theme="nebula"] .pokemon-button--danger {
+  box-shadow: 0 2px 8px rgba(255, 59, 48, 0.3);
+}
+
+[data-theme="nebula"] .pokemon-button--danger:hover:not(:disabled) {
+  box-shadow: 0 4px 16px rgba(255, 59, 48, 0.4);
+  transform: translateY(-1px);
+}

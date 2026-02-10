@@ -1,5 +1,5 @@
 export namespace Pokemon {
-  type Attack = {
+  export type Attack = {
     name: string;
     cost: string[];
     convertedEnergyCost: number;
@@ -7,12 +7,12 @@ export namespace Pokemon {
     text: string;
   } & { [key: string]: any };
 
-  type Weakness = {
+  export type Weakness = {
     type: string;
     value: string;
   } & { [key: string]: any };
 
-  type Resistance = {
+  export type Resistance = {
     type: string;
     value: string;
   } & { [key: string]: any };
@@ -60,7 +60,7 @@ export namespace Pokemon {
     };
   } & { [key: string]: any };
 
-  interface Response<T> {
+  export interface Response<T> {
     data: T[];
     page: number;
     pageSize: number;
