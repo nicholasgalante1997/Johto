@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Library } from 'lucide-react';
+import { Layers, Library, Box, Search } from 'lucide-react';
 import { ROUTES } from '@/web/routes';
 import { useCollection } from '@/web/contexts/Collection';
 import { useDecks } from '@/web/contexts/Deck';
@@ -18,8 +18,8 @@ export function Navbar() {
   const pathname = getPathname();
 
   const isActive = (path: string) => {
-    if (path === ROUTES.DECKS) {
-      return pathname === '/' || pathname.startsWith('/decks');
+    if (path === ROUTES.DASHBOARD) {
+      return pathname === '/' || pathname.startsWith('/dashboard');
     }
     return pathname.startsWith(path);
   };
@@ -32,6 +32,20 @@ export function Navbar() {
         </a>
 
         <div className="navbar__links">
+          <a
+            href={ROUTES.DASHBOARD}
+            className={`navbar__link ${isActive(ROUTES.DASHBOARD) ? 'navbar__link--active' : ''}`}
+          >
+            <Box size={18} />
+            <span>Home</span>
+          </a>
+          <a
+            href={ROUTES.BROWSE}
+            className={`navbar__link ${isActive(ROUTES.BROWSE) ? 'navbar__link--active' : ''}`}
+          >
+            <Search size={18} />
+            <span>Browse</span>
+          </a>
           <a
             href={ROUTES.DECKS}
             className={`navbar__link ${isActive(ROUTES.DECKS) ? 'navbar__link--active' : ''}`}

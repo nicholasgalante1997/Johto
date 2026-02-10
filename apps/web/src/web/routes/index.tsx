@@ -8,6 +8,8 @@ export function AppRoutes(props: RouterLayerProps) {
 // Route path constants for type-safe navigation
 export const ROUTES = {
   HOME: '/',
+  BROWSE: '/browse',
+  DASHBOARD: '/dashboard',
   DECKS: '/decks',
   DECK_NEW: '/decks/new',
   DECK_DETAIL: (deckId: string) => `/decks/${deckId}`,

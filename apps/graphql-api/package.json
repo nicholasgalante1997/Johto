@@ -2,11 +2,15 @@
   "name": "@pokemon/graphql-api",
   "version": "0.0.1",
   "type": "module",
+  "module": "dist/main.js",
+  "files": ["dist"],
   "scripts": {
-    "start": "bun run src/index.ts",
-    "start:dev": "bun run --watch src/index.ts",
-    "build": "bun run build.ts",
+    "clean": "rm -rf dist",
+    "start": "bun run dist/main.js",
+    "dev": "bun run --watch src/index.ts",
+    "bundle": "bun run build.ts",
     "check-types": "tsc -p ./tsconfig.json --noEmit",
+    "build": "bun run check-types && bun run bundle",
     "lint": "eslint src/"
   },
   "dependencies": {

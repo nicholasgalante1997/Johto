@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import { useParams, useSearchParams, useNavigate } from 'react-router';
 import { useCards } from '../hooks/useCards';
 import { useCollection } from '../contexts/Collection';
@@ -37,7 +37,31 @@ function BrowsePage() {
   const rarity = searchParams.get('rarity') || undefined;
 
   // Fetch cards
-  const { data: cards, isLoading: loading, error } = useCards(page, 200);
+  const { data, isLoading: loading, error, isError } = useCards(page, 500);
+
+  const cards: Pokemon.Card[] = useMemo(() => {
+    if (loading || error || isError) {
+      return [];
+    }
+
+    if (data) {
+      if (Array.isArray(data.data)) {
+        return data.data;
+      }
+
+      if (
+        typeof data.data === 'object' &&
+        data.data !== null &&
+        'data' in data.data
+      ) {
+        if (Array.isArray((data?.data as any)?.data)) {
+          return (data?.data as any)?.data;
+        }
+      }
+    }
+
+    return [];
+  }, [data, loading, error, isError]);
 
   // Selected card for modal
   const [selectedCard, setSelectedCard] = useState<Pokemon.Card | null>(null);
@@ -116,7 +140,7 @@ function BrowsePage() {
       {/* Card Grid */}
       <div ref={gridContainerRef} className="page__content">
         <CardGrid
-          cards={cards?.data || []}
+          cards={cards || []}
           onCardSelect={handleCardSelect}
           loading={loading}
           emptyMessage="No cards found. Try adjusting your search."
