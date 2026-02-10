@@ -66,7 +66,7 @@ async function toResponse(gqlResponse: HTTPGraphQLResponse): Promise<Response> {
 }
 
 export function createGraphQLHandler(
-  apolloServer: ApolloServer
+  apolloServer: ApolloServer<ResolverContext>
 ): Handler<Services> {
   return async (ctx) => {
     try {

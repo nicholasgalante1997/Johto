@@ -64,6 +64,7 @@ export function DeckCard({
       onKeyDown={handleKeyDown}
       tabIndex={onSelect ? 0 : undefined}
       role={onSelect ? 'button' : undefined}
+      data-stagger
     >
       {deck.coverCard ? (
         <div className="pokemon-deck-card__cover">

@@ -1,0 +1,49 @@
+.webgl-canvas {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.webgl-canvas--ssr,
+.webgl-canvas--fallback {
+  /* Fallback gradient is applied via inline style */
+}
+
+.webgl-canvas__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Full-screen background variant */
+.webgl-canvas--fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.webgl-canvas--fullscreen .webgl-canvas__canvas {
+  pointer-events: auto;
+}
+
+/* Reduced motion: hide animated canvas */
+@media (prefers-reduced-motion: reduce) {
+  .webgl-canvas__canvas {
+    display: none;
+  }
+
+  .webgl-canvas {
+    /* Show fallback gradient instead */
+    background: linear-gradient(135deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);
+  }
+}

@@ -1,8 +1,8 @@
 .pokemon-deck-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--ctp-surface0);
-  border: 1px solid var(--ctp-surface1);
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
   border-radius: 8px;
   transition: border-color 0.15s ease;
   overflow: hidden;
@@ -14,17 +14,17 @@
 }
 
 .pokemon-deck-card--clickable:hover {
-  border-color: var(--ctp-blue);
+  border-color: var(--pico-primary);
 }
 
 .pokemon-deck-card--clickable:focus-visible {
-  outline: 2px solid var(--ctp-blue);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
 }
 
 .pokemon-deck-card--selected {
-  border-color: var(--ctp-blue);
-  background-color: rgba(137, 180, 250, 0.1);
+  border-color: var(--pico-primary);
+  background-color: var(--pico-primary-hover-background);
 }
 
 /* Cover */
@@ -33,7 +33,7 @@
   width: 100%;
   height: 140px;
   overflow: hidden;
-  background-color: var(--ctp-mantle);
+  background-color: var(--bg-sunken);
 }
 
 .pokemon-deck-card__cover img {
@@ -55,13 +55,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--ctp-surface1) 0%, var(--ctp-surface2) 100%);
+  background: linear-gradient(135deg, var(--surface-hover) 0%, var(--surface-active) 100%);
 }
 
 .pokemon-deck-card__placeholder {
   font-size: 2.5rem;
   opacity: 0.5;
-  color: var(--ctp-overlay0);
+  color: var(--pico-muted-color);
 }
 
 /* Content */
@@ -84,7 +84,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--ctp-text);
+  color: var(--pico-color);
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -104,17 +104,17 @@
   height: 28px;
   padding: 0;
   background-color: transparent;
-  border: 1px solid var(--ctp-surface1);
+  border: 1px solid var(--pico-muted-border-color);
   border-radius: 6px;
-  color: var(--ctp-subtext0);
+  color: var(--pico-muted-color);
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .pokemon-deck-card__menu-trigger:hover {
-  background-color: var(--ctp-surface1);
-  border-color: var(--ctp-surface2);
-  color: var(--ctp-text);
+  background-color: var(--surface-hover);
+  border-color: var(--surface-active);
+  color: var(--pico-color);
 }
 
 .pokemon-deck-card__menu-dropdown {
@@ -123,8 +123,8 @@
   right: 0;
   margin-top: 0.25rem;
   padding: 0.375rem;
-  background-color: var(--ctp-surface0);
-  border: 1px solid var(--ctp-surface1);
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -142,18 +142,18 @@
   border-radius: 4px;
   font-size: 0.8125rem;
   font-family: inherit;
-  color: var(--ctp-text);
+  color: var(--pico-color);
   text-align: left;
   cursor: pointer;
   transition: background-color 0.15s ease;
 }
 
 .pokemon-deck-card__menu-item:hover {
-  background-color: var(--ctp-surface1);
+  background-color: var(--surface-hover);
 }
 
 .pokemon-deck-card__menu-item--danger {
-  color: var(--ctp-red);
+  color: var(--color-error);
 }
 
 .pokemon-deck-card__menu-item--danger:hover {
@@ -164,7 +164,7 @@
 .pokemon-deck-card__description {
   margin: 0;
   font-size: 0.8125rem;
-  color: var(--ctp-subtext0);
+  color: var(--pico-muted-color);
   line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -178,7 +178,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 0.5rem;
-  border-top: 1px solid var(--ctp-surface1);
+  border-top: 1px solid var(--pico-muted-border-color);
 }
 
 .pokemon-deck-card__stats {
@@ -191,7 +191,7 @@
 .pokemon-deck-card__stat {
   font-size: 0.8125rem;
   font-weight: 500;
-  color: var(--ctp-subtext1);
+  color: var(--text-secondary);
 }
 
 .pokemon-deck-card__status {
@@ -207,18 +207,47 @@
 
 .pokemon-deck-card__status--valid {
   background-color: rgba(166, 227, 161, 0.15);
-  color: var(--ctp-green);
+  color: var(--color-success);
 }
 
 .pokemon-deck-card__status--invalid {
   background-color: rgba(243, 139, 168, 0.15);
-  color: var(--ctp-red);
+  color: var(--color-error);
 }
 
 .pokemon-deck-card__date {
   font-size: 0.75rem;
-  color: var(--ctp-overlay0);
+  color: var(--pico-muted-color);
   white-space: nowrap;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEBULA THEME - Enhanced deck card styling
+   ═══════════════════════════════════════════════════════════════ */
+[data-theme="nebula"] .pokemon-deck-card {
+  background: var(--nebula-bg-secondary);
+  border-color: var(--nebula-surface-border);
+  box-shadow: var(--card-shadow);
+}
+
+[data-theme="nebula"] .pokemon-deck-card--clickable:hover {
+  border-color: var(--nebula-surface-border-hover);
+  box-shadow: var(--card-shadow-hover);
+}
+
+[data-theme="nebula"] .pokemon-deck-card--selected {
+  border-color: var(--nebula-accent-primary);
+  box-shadow: 0 0 0 1px var(--nebula-accent-primary), var(--card-shadow);
+}
+
+[data-theme="nebula"] .pokemon-deck-card__menu-dropdown {
+  background: var(--nebula-bg-tertiary);
+  border-color: var(--nebula-surface-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="nebula"] .pokemon-deck-card__menu-item:hover {
+  background: var(--nebula-surface-glass-hover);
 }
 
 /* Responsive */

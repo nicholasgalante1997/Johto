@@ -41,7 +41,7 @@ export function CardGrid({
   return (
     <div className={classNames}>
       {cards.map((card) => (
-        <div key={card.id} className="pokemon-card-grid__item">
+        <div key={card.id} className="pokemon-card-grid__item" data-stagger>
           <Card
             card={card}
             variant="grid"

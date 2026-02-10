@@ -11,6 +11,8 @@ import { CardGrid } from '../components/CardGrid';
 import { SearchBar } from '../components/SearchBar';
 import { Modal } from '../components/Modal';
 import { CardDetail } from '../components/CardDetail';
+import { useFadeIn } from '../motion/hooks/useFadeIn';
+import { useStagger } from '../motion/hooks/useStagger';
 import type { Pokemon } from '@pokemon/clients';
 import type { SearchFilters } from '../components/SearchBar/types';
 
@@ -23,6 +25,14 @@ function CollectionPage() {
     removeCard,
     getQuantity
   } = useCollection();
+
+  const { ref: headerRef } = useFadeIn({ y: 20, duration: 0.4 });
+  const { containerRef: collectionGridRef } = useStagger({
+    stagger: 0.03,
+    y: 20,
+    fromScale: 0.97,
+    autoPlay: true
+  });
 
   // Local state
   const [searchQuery, setSearchQuery] = useState('');
@@ -104,7 +114,7 @@ function CollectionPage() {
 
   return (
     <div className="page collection-page">
-      <div className="page__header">
+      <div ref={headerRef} className="page__header">
         <h1>My Collection</h1>
         <p>
           {totalCards} total cards ({uniqueCards} unique)
@@ -113,7 +123,7 @@ function CollectionPage() {
 
       {/* Collection Section */}
       <section className="collection-page__section">
-        <div className="page__content">
+        <div ref={collectionGridRef} className="page__content">
           {uniqueCards === 0 ? (
             <div className="page__empty-state">
               <span className="page__empty-icon">
