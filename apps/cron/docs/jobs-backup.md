@@ -8,13 +8,13 @@ Creates timestamped, compressed backups of the SQLite database.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 0 * * *` (Daily at midnight) |
-| **Timeout** | 5 minutes |
-| **Retries** | 2 attempts, 30s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | None |
+| Property         | Value                           |
+| ---------------- | ------------------------------- |
+| **Schedule**     | `0 0 * * *` (Daily at midnight) |
+| **Timeout**      | 5 minutes                       |
+| **Retries**      | 2 attempts, 30s delay           |
+| **Exclusive**    | Yes                             |
+| **Dependencies** | None                            |
 
 ### What It Does
 
@@ -66,11 +66,11 @@ pokemon-data-2025-01-15T00-00-00.000Z.sqlite3.db.gz
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `backup_created` | counter | Successful backup count |
-| `backup_size_bytes` | gauge | Size of compressed backup |
-| `backup_verified` | counter | Verified backups |
+| Metric              | Type    | Description               |
+| ------------------- | ------- | ------------------------- |
+| `backup_created`    | counter | Successful backup count   |
+| `backup_size_bytes` | gauge   | Size of compressed backup |
+| `backup_verified`   | counter | Verified backups          |
 
 ### Example Output
 
@@ -93,24 +93,24 @@ Manages backup retention by removing old backups according to policy.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 1 * * *` (Daily at 1:00 AM) |
-| **Timeout** | 1 minute |
-| **Retries** | 1 attempt, 30s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | `backup-database` |
+| Property         | Value                          |
+| ---------------- | ------------------------------ |
+| **Schedule**     | `0 1 * * *` (Daily at 1:00 AM) |
+| **Timeout**      | 1 minute                       |
+| **Retries**      | 1 attempt, 30s delay           |
+| **Exclusive**    | Yes                            |
+| **Dependencies** | `backup-database`              |
 
 ### Retention Policy
 
 The default retention policy keeps:
 
-| Retention Type | Count | Description |
-|----------------|-------|-------------|
-| **Daily** | 7 | Last 7 daily backups |
-| **Weekly** | 4 | Last 4 Sunday backups |
-| **Monthly** | 3 | Last 3 first-of-month backups |
-| **Minimum** | 5 | Always keep at least 5 backups |
+| Retention Type | Count | Description                    |
+| -------------- | ----- | ------------------------------ |
+| **Daily**      | 7     | Last 7 daily backups           |
+| **Weekly**     | 4     | Last 4 Sunday backups          |
+| **Monthly**    | 3     | Last 3 first-of-month backups  |
+| **Minimum**    | 5     | Always keep at least 5 backups |
 
 ### Retention Logic
 
@@ -155,12 +155,12 @@ BACKUP_MINIMUM=5              # Always keep at least this many
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `total_backups` | gauge | Total backups before rotation |
-| `backups_deleted` | counter | Backups removed |
-| `space_freed_bytes` | gauge | Disk space reclaimed |
-| `backups_retained` | gauge | Backups kept |
+| Metric              | Type    | Description                   |
+| ------------------- | ------- | ----------------------------- |
+| `total_backups`     | gauge   | Total backups before rotation |
+| `backups_deleted`   | counter | Backups removed               |
+| `space_freed_bytes` | gauge   | Disk space reclaimed          |
+| `backups_retained`  | gauge   | Backups kept                  |
 
 ### Example Output
 
@@ -187,13 +187,13 @@ Syncs data from SQLite to the primary PostgreSQL database.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 4 * * *` (Daily at 4:00 AM) |
-| **Timeout** | 30 minutes |
-| **Retries** | 2 attempts, 120s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | `sync-missing-cards` |
+| Property         | Value                          |
+| ---------------- | ------------------------------ |
+| **Schedule**     | `0 4 * * *` (Daily at 4:00 AM) |
+| **Timeout**      | 30 minutes                     |
+| **Retries**      | 2 attempts, 120s delay         |
+| **Exclusive**    | Yes                            |
+| **Dependencies** | `sync-missing-cards`           |
 
 ### What It Does
 
@@ -244,12 +244,12 @@ ON CONFLICT (id) DO UPDATE SET
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `sets_replicated` | counter | Sets successfully synced |
-| `sets_failed` | counter | Sets that failed to sync |
+| Metric             | Type    | Description               |
+| ------------------ | ------- | ------------------------- |
+| `sets_replicated`  | counter | Sets successfully synced  |
+| `sets_failed`      | counter | Sets that failed to sync  |
 | `cards_replicated` | counter | Cards successfully synced |
-| `cards_failed` | counter | Cards that failed to sync |
+| `cards_failed`     | counter | Cards that failed to sync |
 
 ### Prerequisites
 

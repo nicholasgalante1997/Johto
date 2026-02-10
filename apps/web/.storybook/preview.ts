@@ -4,6 +4,8 @@ import { ThemeProvider } from '../src/web/contexts/Theme';
 
 // Import global styles
 import '../public/css/index.css';
+// Import page-level styles
+import '../public/css/pages.css';
 // Import default theme (Mocha)
 import '../public/css/themes/catppuccin-mocha.css';
 

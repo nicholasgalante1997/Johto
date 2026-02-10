@@ -15,5 +15,5 @@ export type {
   SchedulerStatus,
   CronSchedule,
   JobState,
-  JobExecution,
+  JobExecution
 } from './types';

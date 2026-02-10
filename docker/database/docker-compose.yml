@@ -10,6 +10,8 @@ services:
       - neo4j_data:/data
       - neo4j_plugins:/plugins
       - neo4j_config:/config
+    env_file:
+      - ./.env.neo4j.database
     environment:
       - NEO4J_AUTH_FILE=/run/secrets/neo4j_auth_file
     secrets:

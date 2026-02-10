@@ -20,7 +20,7 @@ async function main() {
   const scheduler = new Scheduler({
     timezone: config.timezone,
     maxConcurrentJobs: 3,
-    enableMetrics: config.metricsEnabled,
+    enableMetrics: config.metricsEnabled
   });
 
   // Register all jobs

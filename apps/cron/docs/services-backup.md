@@ -34,18 +34,18 @@ Creates a compressed backup of the database.
 
 ```typescript
 interface BackupOptions {
-  verify?: boolean;        // Verify after creation (default: true)
-  compress?: boolean;      // Use gzip compression (default: true)
-  description?: string;    // Optional backup description
+  verify?: boolean; // Verify after creation (default: true)
+  compress?: boolean; // Use gzip compression (default: true)
+  description?: string; // Optional backup description
 }
 
 interface BackupResult {
-  path: string;            // Path to backup file
-  size: number;            // Compressed size in bytes
-  originalSize: number;    // Original size in bytes
-  checksum: string;        // SHA256 checksum
-  timestamp: Date;         // Creation timestamp
-  verified: boolean;       // Whether verification passed
+  path: string; // Path to backup file
+  size: number; // Compressed size in bytes
+  originalSize: number; // Original size in bytes
+  checksum: string; // SHA256 checksum
+  timestamp: Date; // Creation timestamp
+  verified: boolean; // Whether verification passed
 }
 
 const result = await backupService.createBackup(
@@ -55,6 +55,7 @@ const result = await backupService.createBackup(
 ```
 
 **Process:**
+
 1. Read source file using `Bun.file()`
 2. Compress data with `Bun.gzipSync()`
 3. Calculate SHA256 checksum
@@ -72,8 +73,8 @@ interface BackupInfo {
   size: number;
   timestamp: Date;
   isDaily: boolean;
-  isWeekly: boolean;      // Sunday backup
-  isMonthly: boolean;     // First of month
+  isWeekly: boolean; // Sunday backup
+  isMonthly: boolean; // First of month
 }
 
 const backups = await backupService.listBackups();
@@ -102,10 +103,10 @@ Determines which backups should be deleted based on retention policy.
 
 ```typescript
 interface RetentionPolicy {
-  daily: number;       // Keep N most recent daily backups
-  weekly: number;      // Keep N most recent Sunday backups
-  monthly: number;     // Keep N most recent first-of-month backups
-  minimum: number;     // Always keep at least N backups
+  daily: number; // Keep N most recent daily backups
+  weekly: number; // Keep N most recent Sunday backups
+  monthly: number; // Keep N most recent first-of-month backups
+  minimum: number; // Always keep at least N backups
 }
 
 const toDelete = backupService.getBackupsToDelete(backups, retentionPolicy);
@@ -207,12 +208,12 @@ Example: `pokemon-data-2025-01-15T00-00-00.000Z.sqlite3.db.gz`
 
 The service handles common errors gracefully:
 
-| Error | Handling |
-|-------|----------|
-| Source file not found | Throws with clear message |
-| Disk full | Throws after cleanup attempt |
-| Corruption detected | Logs warning, skips verification |
-| Permission denied | Throws with path info |
+| Error                 | Handling                         |
+| --------------------- | -------------------------------- |
+| Source file not found | Throws with clear message        |
+| Disk full             | Throws after cleanup attempt     |
+| Corruption detected   | Logs warning, skips verification |
+| Permission denied     | Throws with path info            |
 
 ## Usage in Jobs
 

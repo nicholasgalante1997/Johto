@@ -10,7 +10,8 @@ export function CardGrid({
   emptyMessage = 'No cards found',
   loading = false,
   columns = 'auto',
-  className = ''
+  className = '',
+  renderCardOverlay
 }: CardGridProps) {
   const classNames = [
     'pokemon-card-grid',
@@ -40,13 +41,15 @@ export function CardGrid({
   return (
     <div className={classNames}>
       {cards.map((card) => (
-        <Card
-          key={card.id}
-          card={card}
-          variant="grid"
-          onSelect={onCardSelect}
-          selected={selectedCardIds.includes(card.id)}
-        />
+        <div key={card.id} className="pokemon-card-grid__item" data-stagger>
+          <Card
+            card={card}
+            variant="grid"
+            onSelect={onCardSelect}
+            selected={selectedCardIds.includes(card.id)}
+          />
+          {renderCardOverlay && renderCardOverlay(card)}
+        </div>
       ))}
     </div>
   );

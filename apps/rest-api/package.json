@@ -1,0 +1,28 @@
+{
+  "name": "@pokemon/rest-api",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun run build.ts",
+    "check-types": "tsc -p ./tsconfig.json --noEmit",
+    "test": "bun test",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@pokemon/clients": "workspace:*",
+    "@pokemon/database": "workspace:*",
+    "@pokemon/framework": "workspace:*",
+    "debug": "^4.4.3",
+    "dotenv": "17.2.3",
+    "supports-color": "^10.2.2"
+  },
+  "devDependencies": {
+    "@pokemon/build": "workspace:*",
+    "@pokemon/configs": "workspace:*",
+    "@types/bun": "latest",
+    "@types/debug": "^4.1.12",
+    "typescript": "5.5.4"
+  }
+}

@@ -7,7 +7,16 @@ export type DeckFormat = 'standard' | 'expanded' | 'unlimited' | 'theme';
  * A card entry in a deck with quantity
  */
 export interface DeckCard {
-  cardId: string;
+  card: {
+    name: string;
+    id: string;
+    supertype: string;
+    subtype?: string;
+    set: {
+      id: string;
+      name: string;
+    };
+  };
   quantity: number;
 }
 

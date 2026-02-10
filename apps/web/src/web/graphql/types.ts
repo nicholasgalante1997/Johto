@@ -106,6 +106,125 @@ export interface GetCardsResponse {
   cards: Card[];
 }
 
+export interface CardAbility {
+  name: string;
+  type: string;
+  text: string;
+}
+
+export interface CardAttack {
+  name: string;
+  cost?: string[];
+  damage?: string;
+  text?: string;
+  convertedEnergyCost?: number;
+}
+
+export interface CardWeakness {
+  type: string;
+  value: string;
+}
+
+export interface CardResistance {
+  type: string;
+  value: string;
+}
+
+export interface CardImages {
+  small?: string;
+  large?: string;
+}
+
+export interface CardLegalities {
+  standard?: string;
+  expanded?: string;
+  unlimited?: string;
+}
+
+export interface CardSet {
+  id: string;
+  name: string;
+  releaseDate?: string;
+}
+
+/**
+ * Card type matching the GraphQL response for GET_CARD_BY_ID
+ */
+export interface CardDetail {
+  id: string;
+  name: string;
+  supertype: string;
+  subtypes?: string[];
+  hp?: number;
+  types?: string[];
+  evolvesFrom?: string;
+  evolvesTo?: string[];
+  rules?: string[];
+  abilities?: CardAbility[];
+  attacks?: CardAttack[];
+  weaknesses?: CardWeakness[];
+  resistances?: CardResistance[];
+  retreatCost?: string[];
+  convertedRetreatCost?: number;
+  number: string;
+  artist?: string;
+  rarity?: string;
+  flavorText?: string;
+  nationalPokedexNumbers?: number[];
+  legalities?: CardLegalities;
+  images?: CardImages;
+  set?: CardSet;
+  tcgplayerUrl?: string;
+  cardmarketUrl?: string;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+export interface GetCardDetailResponse {
+  card: CardDetail;
+}
+
+export interface SearchCardNode {
+  id: string;
+  name: string;
+  hp?: number;
+  supertype: string;
+  subtypes?: string[];
+  types?: string[];
+  rarity?: string;
+  artist?: string;
+  number: string;
+  images?: {
+    small?: string;
+    large?: string;
+  };
+  legalities?: {
+    standard?: string;
+    expanded?: string;
+    unlimited?: string;
+  };
+  set: {
+    id: string;
+    name: string;
+    releaseDate: string;
+  };
+}
+
+export interface SearchCardsResponse {
+  cards: {
+    edges: Array<{
+      node: SearchCardNode;
+    }>;
+    totalCount: number;
+  };
+}
+
+export interface SearchCardsVariables {
+  name?: string;
+  limit?: number;
+  offset?: number;
+}
+
 // ============================================================================
 // MUTATION RESPONSE TYPES
 // ============================================================================

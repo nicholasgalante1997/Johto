@@ -40,29 +40,32 @@ interface MetricsCollector {
 
 ### Common Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `*_processed` | counter | Items successfully processed |
-| `*_failed` | counter | Items that failed |
-| `*_skipped` | counter | Items skipped |
-| `duration_ms` | timing | Job execution duration |
-| `health_score` | gauge | Current health score (0-100) |
+| Metric         | Type    | Description                  |
+| -------------- | ------- | ---------------------------- |
+| `*_processed`  | counter | Items successfully processed |
+| `*_failed`     | counter | Items that failed            |
+| `*_skipped`    | counter | Items skipped                |
+| `duration_ms`  | timing  | Job execution duration       |
+| `health_score` | gauge   | Current health score (0-100) |
 
 ### Job-Specific Metrics
 
 **Sync Jobs:**
+
 ```
 sets_checked, sets_existing, sets_missing, sets_synced, sets_failed
 cards_missing, cards_synced, cards_failed
 ```
 
 **Backup Jobs:**
+
 ```
 backup_created, backup_size_bytes, backup_verified
 backups_deleted, space_freed_bytes, backups_retained
 ```
 
 **Health Jobs:**
+
 ```
 health_score, issues_found, db_size_mb, wal_size_mb
 set_count, card_count
@@ -72,12 +75,12 @@ set_count, card_count
 
 ### Log Levels
 
-| Level | When to Use | Example |
-|-------|-------------|---------|
+| Level   | When to Use        | Example                   |
+| ------- | ------------------ | ------------------------- |
 | `debug` | Detailed debugging | Query results, iterations |
-| `info` | Normal operations | Job started, completed |
-| `warn` | Warning conditions | Approaching limits |
-| `error` | Error conditions | Job failures |
+| `info`  | Normal operations  | Job started, completed    |
+| `warn`  | Warning conditions | Approaching limits        |
+| `error` | Error conditions   | Job failures              |
 
 ### Log Format
 
@@ -111,12 +114,12 @@ bun run job:run database-health-check
 
 ### Health Score Interpretation
 
-| Score | Status | Action |
-|-------|--------|--------|
-| 90-100 | Healthy | No action needed |
-| 70-89 | Warning | Monitor closely |
-| 50-69 | Degraded | Investigate issues |
-| 0-49 | Critical | Immediate attention |
+| Score  | Status   | Action              |
+| ------ | -------- | ------------------- |
+| 90-100 | Healthy  | No action needed    |
+| 70-89  | Warning  | Monitor closely     |
+| 50-69  | Degraded | Investigate issues  |
+| 0-49   | Critical | Immediate attention |
 
 ### Docker Health Check
 
@@ -140,10 +143,10 @@ NOTIFICATION_MIN_SEVERITY=error
 
 ### Alert Types
 
-| Alert | Severity | Trigger |
-|-------|----------|---------|
-| Job Failure | error | Job fails after all retries |
-| Health Warning | warning | Health score < 70 |
+| Alert          | Severity | Trigger                                 |
+| -------------- | -------- | --------------------------------------- |
+| Job Failure    | error    | Job fails after all retries             |
+| Health Warning | warning  | Health score < 70                       |
 | Critical Alert | critical | Database corruption, connection failure |
 
 ### Alert Format
@@ -225,16 +228,19 @@ cron_job_success_total{job="sync-missing-sets"} 42
 ### Example Queries for Log Analysis
 
 **Job execution frequency:**
+
 ```bash
 grep "Starting" /var/log/cron.log | wc -l
 ```
 
 **Failed jobs:**
+
 ```bash
 grep "ERROR" /var/log/cron.log | tail -20
 ```
 
 **Health check history:**
+
 ```bash
 grep "health_score" /var/log/cron.log | tail -10
 ```
@@ -242,16 +248,19 @@ grep "health_score" /var/log/cron.log | tail -10
 ## Monitoring Checklist
 
 ### Daily
+
 - [ ] Check health score is > 70
 - [ ] Verify backup was created
 - [ ] Review any alerts
 
 ### Weekly
+
 - [ ] Review job success rates
 - [ ] Check disk space for backups
 - [ ] Verify PostgreSQL replication
 
 ### Monthly
+
 - [ ] Analyze job duration trends
 - [ ] Review and tune timeouts
 - [ ] Test backup restoration
@@ -287,10 +296,10 @@ services:
     logging:
       driver: json-file
       options:
-        max-size: "50m"
-        max-file: "5"
+        max-size: '50m'
+        max-file: '5'
     healthcheck:
-      test: ["CMD", "bun", "run", "src/cli.ts", "status"]
+      test: ['CMD', 'bun', 'run', 'src/cli.ts', 'status']
       interval: 30s
       timeout: 10s
       retries: 3

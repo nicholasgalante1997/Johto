@@ -8,25 +8,25 @@ Monitors database health and sends alerts for critical issues.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `*/15 * * * *` (Every 15 minutes) |
-| **Timeout** | 1 minute |
-| **Retries** | 1 attempt, 10s delay |
-| **Exclusive** | No (can run with other jobs) |
-| **Dependencies** | None |
+| Property         | Value                             |
+| ---------------- | --------------------------------- |
+| **Schedule**     | `*/15 * * * *` (Every 15 minutes) |
+| **Timeout**      | 1 minute                          |
+| **Retries**      | 1 attempt, 10s delay              |
+| **Exclusive**    | No (can run with other jobs)      |
+| **Dependencies** | None                              |
 
 ### Health Checks Performed
 
-| Check | Description | Penalty if Failed |
-|-------|-------------|-------------------|
-| SQLite connectivity | `SELECT 1` query | -50 points |
-| SQLite integrity | `PRAGMA quick_check` | -30 points |
-| Database file size | Alert if > 1GB | -5 points |
-| WAL file size | Write-ahead log check | -5 points |
-| PostgreSQL connectivity | Optional connection test | -10 points |
-| Disk space | Free space availability | -5 points |
-| Table counts | Sets and cards totals | Info only |
+| Check                   | Description              | Penalty if Failed |
+| ----------------------- | ------------------------ | ----------------- |
+| SQLite connectivity     | `SELECT 1` query         | -50 points        |
+| SQLite integrity        | `PRAGMA quick_check`     | -30 points        |
+| Database file size      | Alert if > 1GB           | -5 points         |
+| WAL file size           | Write-ahead log check    | -5 points         |
+| PostgreSQL connectivity | Optional connection test | -10 points        |
+| Disk space              | Free space availability  | -5 points         |
+| Table counts            | Sets and cards totals    | Info only         |
 
 ### Health Score Calculation
 
@@ -108,18 +108,19 @@ Monitors database health and sends alerts for critical issues.
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
+| Metric         | Type  | Description                  |
+| -------------- | ----- | ---------------------------- |
 | `health_score` | gauge | Current health score (0-100) |
-| `issues_found` | gauge | Number of issues detected |
-| `db_size_mb` | gauge | Database size in MB |
-| `wal_size_mb` | gauge | WAL file size in MB |
-| `set_count` | gauge | Total sets in database |
-| `card_count` | gauge | Total cards in database |
+| `issues_found` | gauge | Number of issues detected    |
+| `db_size_mb`   | gauge | Database size in MB          |
+| `wal_size_mb`  | gauge | WAL file size in MB          |
+| `set_count`    | gauge | Total sets in database       |
+| `card_count`   | gauge | Total cards in database      |
 
 ### Alert Conditions
 
 Alerts are sent via Slack when:
+
 - Health score drops below 70
 - SQLite connection fails
 - SQLite integrity check fails
@@ -164,13 +165,13 @@ Optimizes the database by reclaiming space, updating statistics, and maintaining
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 5 * * 0` (Weekly Sunday at 5:00 AM) |
-| **Timeout** | 10 minutes |
-| **Retries** | 1 attempt, 60s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | None |
+| Property         | Value                                  |
+| ---------------- | -------------------------------------- |
+| **Schedule**     | `0 5 * * 0` (Weekly Sunday at 5:00 AM) |
+| **Timeout**      | 10 minutes                             |
+| **Retries**      | 1 attempt, 60s delay                   |
+| **Exclusive**    | Yes                                    |
+| **Dependencies** | None                                   |
 
 ### What It Does
 
@@ -247,14 +248,14 @@ Optimizes the database by reclaiming space, updating statistics, and maintaining
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `pages_freed` | gauge | Database pages reclaimed |
+| Metric           | Type  | Description              |
+| ---------------- | ----- | ------------------------ |
+| `pages_freed`    | gauge | Database pages reclaimed |
 | `size_before_mb` | gauge | Size before optimization |
-| `size_after_mb` | gauge | Size after optimization |
-| `space_saved_mb` | gauge | Space reclaimed |
-| `set_count` | gauge | Sets after cleanup |
-| `card_count` | gauge | Cards after cleanup |
+| `size_after_mb`  | gauge | Size after optimization  |
+| `space_saved_mb` | gauge | Space reclaimed          |
+| `set_count`      | gauge | Sets after cleanup       |
+| `card_count`     | gauge | Cards after cleanup      |
 
 ### Example Output
 
@@ -309,13 +310,13 @@ bun run job:run validate-data-integrity
 
 ## Recommended Maintenance Schedule
 
-| Task | Frequency | Job |
-|------|-----------|-----|
-| Health monitoring | Every 15 min | `database-health-check` |
-| Database optimization | Weekly | `cleanup-stale-data` |
-| Data validation | Weekly | `validate-data-integrity` |
-| Manual integrity check | Monthly | `PRAGMA integrity_check` |
-| Full backup verification | Quarterly | Manual restore test |
+| Task                     | Frequency    | Job                       |
+| ------------------------ | ------------ | ------------------------- |
+| Health monitoring        | Every 15 min | `database-health-check`   |
+| Database optimization    | Weekly       | `cleanup-stale-data`      |
+| Data validation          | Weekly       | `validate-data-integrity` |
+| Manual integrity check   | Monthly      | `PRAGMA integrity_check`  |
+| Full backup verification | Quarterly    | Manual restore test       |
 
 ## Troubleshooting Health Issues
 

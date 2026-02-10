@@ -100,26 +100,54 @@ export const GET_CARD_BY_ID = gql`
       subtypes
       hp
       types
-      evolves_from
-      evolves_to
+      evolvesFrom
+      evolvesTo
       rules
-      abilities
-      attacks
-      weaknesses
-      retreat_cost
-      converted_retreat_cost
-      set_id
+      abilities {
+        name
+        type
+        text
+      }
+      attacks {
+        name
+        cost
+        damage
+        text
+        convertedEnergyCost
+      }
+      weaknesses {
+        type
+        value
+      }
+      resistances {
+        type
+        value
+      }
+      retreatCost
+      convertedRetreatCost
       number
       artist
       rarity
-      flavor_text
-      national_pokedex_numbers
-      legalities
-      images
-      tcgplayer_url
-      cardmarket_url
-      created_at
-      updated_at
+      flavorText
+      nationalPokedexNumbers
+      legalities {
+        standard
+        expanded
+        unlimited
+      }
+      images {
+        small
+        large
+      }
+      set {
+        id
+        name
+        releaseDate
+      }
+      tcgplayerUrl
+      cardmarketUrl
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -156,6 +184,41 @@ export const GET_CARDS_BY_NAME = gql`
       images
       set_id
       number
+    }
+  }
+`;
+
+export const SEARCH_CARDS = gql`
+  query SearchCards($name: String, $limit: Int = 100, $offset: Int = 0) {
+    cards(name: $name, limit: $limit, offset: $offset) {
+      edges {
+        node {
+          id
+          name
+          hp
+          supertype
+          subtypes
+          types
+          rarity
+          artist
+          number
+          images {
+            small
+            large
+          }
+          legalities {
+            standard
+            expanded
+            unlimited
+          }
+          set {
+            id
+            name
+            releaseDate
+          }
+        }
+      }
+      totalCount
     }
   }
 `;

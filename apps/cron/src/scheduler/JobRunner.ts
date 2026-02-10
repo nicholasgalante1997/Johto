@@ -107,8 +107,10 @@ export class JobRunner {
       completedAt: new Date(),
       durationMs: 0,
       metrics: {},
-      logs: [`Job failed after ${totalAttempts} attempts: ${lastError?.message}`],
-      error: lastError,
+      logs: [
+        `Job failed after ${totalAttempts} attempts: ${lastError?.message}`
+      ],
+      error: lastError
     };
   }
 
@@ -141,7 +143,7 @@ export class JobRunner {
       };
 
       context.abortSignal.addEventListener('abort', abortHandler, {
-        once: true,
+        once: true
       });
 
       // Execute the job

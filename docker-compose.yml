@@ -1,8 +1,12 @@
 include:
+  # Databases
   - ./docker/database/docker-compose.yml
+  # Applications
   - ./apps/tcg-api/docker-compose.yml
   - ./apps/cron/docker-compose.yml
-  - ./docker-compose.web.yml
+  - ./apps/rest-api/docker-compose.yml
+  - ./apps/graphql-api/docker-compose.yml
+  - ./apps/web/docker-compose.yml
 
 networks:
   pika:

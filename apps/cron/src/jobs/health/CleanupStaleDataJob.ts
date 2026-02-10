@@ -13,7 +13,7 @@ export class CleanupStaleDataJob extends Job {
     timeout: 600_000, // 10 minutes
     retryAttempts: 1,
     retryDelayMs: 60_000,
-    exclusive: true,
+    exclusive: true
   };
 
   async execute(context: JobContext): Promise<JobResult> {
@@ -23,7 +23,7 @@ export class CleanupStaleDataJob extends Job {
       pages_freed: 0,
       size_before_mb: 0,
       size_after_mb: 0,
-      space_saved_mb: 0,
+      space_saved_mb: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -33,9 +33,14 @@ export class CleanupStaleDataJob extends Job {
       const db = context.sqliteDb;
 
       // Get database size before cleanup
-      const pageCountBefore = db.query('PRAGMA page_count').get() as { page_count: number };
-      const pageSize = db.query('PRAGMA page_size').get() as { page_size: number };
-      const sizeBefore = (pageCountBefore.page_count * pageSize.page_size) / 1024 / 1024;
+      const pageCountBefore = db.query('PRAGMA page_count').get() as {
+        page_count: number;
+      };
+      const pageSize = db.query('PRAGMA page_size').get() as {
+        page_size: number;
+      };
+      const sizeBefore =
+        (pageCountBefore.page_count * pageSize.page_size) / 1024 / 1024;
       metrics.size_before_mb = Math.round(sizeBefore);
       logger.info('Database size before: %d MB', metrics.size_before_mb);
 
@@ -56,18 +61,29 @@ export class CleanupStaleDataJob extends Job {
 
       // Run VACUUM to reclaim space and defragment
       logger.info('Running VACUUM...');
-      const freeListBefore = db.query('PRAGMA freelist_count').get() as { freelist_count: number };
-      logger.info('Free pages before VACUUM: %d', freeListBefore.freelist_count);
+      const freeListBefore = db.query('PRAGMA freelist_count').get() as {
+        freelist_count: number;
+      };
+      logger.info(
+        'Free pages before VACUUM: %d',
+        freeListBefore.freelist_count
+      );
 
       db.run('VACUUM');
       logger.info('VACUUM complete');
 
       // Get database size after cleanup
-      const pageCountAfter = db.query('PRAGMA page_count').get() as { page_count: number };
-      const sizeAfter = (pageCountAfter.page_count * pageSize.page_size) / 1024 / 1024;
+      const pageCountAfter = db.query('PRAGMA page_count').get() as {
+        page_count: number;
+      };
+      const sizeAfter =
+        (pageCountAfter.page_count * pageSize.page_size) / 1024 / 1024;
       metrics.size_after_mb = Math.round(sizeAfter);
       metrics.space_saved_mb = Math.max(0, Math.round(sizeBefore - sizeAfter));
-      metrics.pages_freed = Math.max(0, pageCountBefore.page_count - pageCountAfter.page_count);
+      metrics.pages_freed = Math.max(
+        0,
+        pageCountBefore.page_count - pageCountAfter.page_count
+      );
 
       logger.info('Database size after: %d MB', metrics.size_after_mb);
       logger.info('Space saved: %d MB', metrics.space_saved_mb);
@@ -96,13 +112,21 @@ export class CleanupStaleDataJob extends Job {
       db.run('ANALYZE');
 
       // Report statistics
-      const tableStats = db.query(`
+      const tableStats = db
+        .query(
+          `
         SELECT
           (SELECT COUNT(*) FROM pokemon_card_sets) as sets,
           (SELECT COUNT(*) FROM pokemon_cards) as cards
-      `).get() as { sets: number; cards: number };
+      `
+        )
+        .get() as { sets: number; cards: number };
 
-      logger.info('Current data: %d sets, %d cards', tableStats.sets, tableStats.cards);
+      logger.info(
+        'Current data: %d sets, %d cards',
+        tableStats.sets,
+        tableStats.cards
+      );
       metrics.set_count = tableStats.sets;
       metrics.card_count = tableStats.cards;
 
@@ -111,7 +135,10 @@ export class CleanupStaleDataJob extends Job {
 
       return this.createResult(startedAt, metrics, logs);
     } catch (error) {
-      logger.error('Cleanup failed: %s', error instanceof Error ? error.message : error);
+      logger.error(
+        'Cleanup failed: %s',
+        error instanceof Error ? error.message : error
+      );
       return this.createResult(
         startedAt,
         metrics,

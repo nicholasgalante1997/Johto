@@ -20,7 +20,7 @@ export class ValidateDataIntegrityJob extends Job {
     timeout: 600_000, // 10 minutes
     retryAttempts: 1,
     retryDelayMs: 60_000,
-    exclusive: true,
+    exclusive: true
   };
 
   async execute(context: JobContext): Promise<JobResult> {
@@ -33,7 +33,7 @@ export class ValidateDataIntegrityJob extends Job {
       duplicate_cards: 0,
       missing_required_fields: 0,
       incomplete_sets: 0,
-      issues_found: 0,
+      issues_found: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -44,11 +44,19 @@ export class ValidateDataIntegrityJob extends Job {
       const db = context.sqliteDb;
 
       // Get totals
-      const setCount = db.query('SELECT COUNT(*) as cnt FROM pokemon_card_sets').get() as { cnt: number };
-      const cardCount = db.query('SELECT COUNT(*) as cnt FROM pokemon_cards').get() as { cnt: number };
+      const setCount = db
+        .query('SELECT COUNT(*) as cnt FROM pokemon_card_sets')
+        .get() as { cnt: number };
+      const cardCount = db
+        .query('SELECT COUNT(*) as cnt FROM pokemon_cards')
+        .get() as { cnt: number };
       metrics.total_sets = setCount.cnt;
       metrics.total_cards = cardCount.cnt;
-      logger.info('Database contains %d sets and %d cards', metrics.total_sets, metrics.total_cards);
+      logger.info(
+        'Database contains %d sets and %d cards',
+        metrics.total_sets,
+        metrics.total_cards
+      );
 
       // Check 1: Orphaned cards (cards without valid set_id)
       logger.info('Checking for orphaned cards...');
@@ -74,7 +82,10 @@ export class ValidateDataIntegrityJob extends Job {
       metrics.missing_required_fields = missingFields.count;
       if (missingFields.count > 0) {
         issues.push(missingFields);
-        logger.warn('Found %d cards with missing required fields', missingFields.count);
+        logger.warn(
+          'Found %d cards with missing required fields',
+          missingFields.count
+        );
       }
 
       // Check 4: Incomplete sets (card count < expected)
@@ -88,14 +99,19 @@ export class ValidateDataIntegrityJob extends Job {
 
       // Check 5: SQLite integrity check
       logger.info('Running SQLite integrity check...');
-      const integrityResult = db.query('PRAGMA integrity_check').get() as { integrity_check: string };
+      const integrityResult = db.query('PRAGMA integrity_check').get() as {
+        integrity_check: string;
+      };
       if (integrityResult.integrity_check !== 'ok') {
         issues.push({
           type: 'database_corruption',
           count: 1,
-          details: [integrityResult.integrity_check],
+          details: [integrityResult.integrity_check]
         });
-        logger.error('SQLite integrity check failed: %s', integrityResult.integrity_check);
+        logger.error(
+          'SQLite integrity check failed: %s',
+          integrityResult.integrity_check
+        );
       } else {
         logger.info('SQLite integrity check passed');
       }
@@ -106,18 +122,27 @@ export class ValidateDataIntegrityJob extends Job {
       if (issues.length === 0) {
         logger.info('Data integrity validation complete - no issues found');
       } else {
-        logger.warn('Data integrity validation complete - %d issue types found', issues.length);
+        logger.warn(
+          'Data integrity validation complete - %d issue types found',
+          issues.length
+        );
         for (const issue of issues) {
           logger.warn('  - %s: %d occurrences', issue.type, issue.count);
         }
       }
 
       context.metrics.gauge('integrity_issues', metrics.issues_found);
-      context.metrics.timing('validation_duration', Date.now() - startedAt.getTime());
+      context.metrics.timing(
+        'validation_duration',
+        Date.now() - startedAt.getTime()
+      );
 
       return this.createResult(startedAt, metrics, logs);
     } catch (error) {
-      logger.error('Job failed: %s', error instanceof Error ? error.message : error);
+      logger.error(
+        'Job failed: %s',
+        error instanceof Error ? error.message : error
+      );
       return this.createResult(
         startedAt,
         metrics,
@@ -136,17 +161,21 @@ export class ValidateDataIntegrityJob extends Job {
       LIMIT 10
     `;
     const orphans = db.query(query).all() as { id: string; name: string }[];
-    const countResult = db.query(`
+    const countResult = db
+      .query(
+        `
       SELECT COUNT(*) as cnt
       FROM pokemon_cards c
       LEFT JOIN pokemon_card_sets s ON c.set_id = s.id
       WHERE s.id IS NULL
-    `).get() as { cnt: number };
+    `
+      )
+      .get() as { cnt: number };
 
     return {
       type: 'orphaned_cards',
       count: countResult.cnt,
-      details: orphans.map((o) => `${o.id}: ${o.name}`),
+      details: orphans.map((o) => `${o.id}: ${o.name}`)
     };
   }
 
@@ -163,7 +192,7 @@ export class ValidateDataIntegrityJob extends Job {
     return {
       type: 'duplicate_cards',
       count: duplicates.length,
-      details: duplicates.map((d) => `${d.id}: ${d.cnt} copies`),
+      details: duplicates.map((d) => `${d.id}: ${d.cnt} copies`)
     };
   }
 
@@ -177,18 +206,22 @@ export class ValidateDataIntegrityJob extends Job {
       LIMIT 10
     `;
     const missing = db.query(query).all() as { id: string; name: string }[];
-    const countResult = db.query(`
+    const countResult = db
+      .query(
+        `
       SELECT COUNT(*) as cnt
       FROM pokemon_cards
       WHERE name IS NULL OR name = ''
          OR supertype IS NULL OR supertype = ''
          OR set_id IS NULL OR set_id = ''
-    `).get() as { cnt: number };
+    `
+      )
+      .get() as { cnt: number };
 
     return {
       type: 'missing_required_fields',
       count: countResult.cnt,
-      details: missing.map((m) => `${m.id}: ${m.name || '(no name)'}`),
+      details: missing.map((m) => `${m.id}: ${m.name || '(no name)'}`)
     };
   }
 
@@ -221,7 +254,7 @@ export class ValidateDataIntegrityJob extends Job {
       count: incomplete.length,
       details: incomplete.map(
         (s) => `${s.id} (${s.name}): ${s.actual}/${s.expected} cards`
-      ),
+      )
     };
   }
 

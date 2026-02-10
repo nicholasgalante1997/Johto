@@ -39,6 +39,7 @@
     "pg": "^8.13.1"
   },
   "devDependencies": {
+    "@pokemon/build": "workspace:*",
     "@types/bun": "latest",
     "@types/node": "latest",
     "@types/pg": "^8.11.10",

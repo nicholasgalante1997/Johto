@@ -8,13 +8,13 @@ Synchronizes Pokemon TCG sets from the local data package to SQLite.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 2 * * *` (Daily at 2:00 AM) |
-| **Timeout** | 5 minutes |
-| **Retries** | 3 attempts, 60s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | None |
+| Property         | Value                          |
+| ---------------- | ------------------------------ |
+| **Schedule**     | `0 2 * * *` (Daily at 2:00 AM) |
+| **Timeout**      | 5 minutes                      |
+| **Retries**      | 3 attempts, 60s delay          |
+| **Exclusive**    | Yes                            |
+| **Dependencies** | None                           |
 
 ### What It Does
 
@@ -52,13 +52,13 @@ Synchronizes Pokemon TCG sets from the local data package to SQLite.
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `sets_checked` | gauge | Total sets in source |
-| `sets_existing` | gauge | Sets already in database |
-| `sets_missing` | gauge | Sets needing sync |
-| `sets_synced` | counter | Sets successfully inserted |
-| `sets_failed` | counter | Sets that failed to insert |
+| Metric          | Type    | Description                |
+| --------------- | ------- | -------------------------- |
+| `sets_checked`  | gauge   | Total sets in source       |
+| `sets_existing` | gauge   | Sets already in database   |
+| `sets_missing`  | gauge   | Sets needing sync          |
+| `sets_synced`   | counter | Sets successfully inserted |
+| `sets_failed`   | counter | Sets that failed to insert |
 
 ### Example Output
 
@@ -80,13 +80,13 @@ Synchronizes missing cards for sets that have fewer cards than expected.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 3 * * *` (Daily at 3:00 AM) |
-| **Timeout** | 30 minutes |
-| **Retries** | 2 attempts, 120s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | `sync-missing-sets` |
+| Property         | Value                          |
+| ---------------- | ------------------------------ |
+| **Schedule**     | `0 3 * * *` (Daily at 3:00 AM) |
+| **Timeout**      | 30 minutes                     |
+| **Retries**      | 2 attempts, 120s delay         |
+| **Exclusive**    | Yes                            |
+| **Dependencies** | `sync-missing-sets`            |
 
 ### What It Does
 
@@ -133,14 +133,14 @@ Synchronizes missing cards for sets that have fewer cards than expected.
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `sets_checked` | gauge | Total sets evaluated |
-| `sets_incomplete` | gauge | Sets with missing cards |
-| `sets_processed` | counter | Sets actually processed |
-| `cards_missing` | gauge | Total missing cards found |
-| `cards_synced` | counter | Cards successfully inserted |
-| `cards_failed` | counter | Cards that failed to insert |
+| Metric            | Type    | Description                 |
+| ----------------- | ------- | --------------------------- |
+| `sets_checked`    | gauge   | Total sets evaluated        |
+| `sets_incomplete` | gauge   | Sets with missing cards     |
+| `sets_processed`  | counter | Sets actually processed     |
+| `cards_missing`   | gauge   | Total missing cards found   |
+| `cards_synced`    | counter | Cards successfully inserted |
+| `cards_failed`    | counter | Cards that failed to insert |
 
 ### Configuration Options
 
@@ -172,13 +172,13 @@ Validates database integrity and flags data quality issues.
 
 ### Configuration
 
-| Property | Value |
-|----------|-------|
-| **Schedule** | `0 6 * * 0` (Weekly Sunday at 6:00 AM) |
-| **Timeout** | 10 minutes |
-| **Retries** | 1 attempt, 60s delay |
-| **Exclusive** | Yes |
-| **Dependencies** | None |
+| Property         | Value                                  |
+| ---------------- | -------------------------------------- |
+| **Schedule**     | `0 6 * * 0` (Weekly Sunday at 6:00 AM) |
+| **Timeout**      | 10 minutes                             |
+| **Retries**      | 1 attempt, 60s delay                   |
+| **Exclusive**    | Yes                                    |
+| **Dependencies** | None                                   |
 
 ### What It Does
 
@@ -222,15 +222,15 @@ Performs comprehensive validation checks:
 
 ### Metrics
 
-| Metric | Type | Description |
-|--------|------|-------------|
-| `total_sets` | gauge | Total sets in database |
-| `total_cards` | gauge | Total cards in database |
-| `orphaned_cards` | gauge | Cards without valid set |
-| `duplicate_cards` | gauge | Duplicate card entries |
+| Metric                    | Type  | Description                 |
+| ------------------------- | ----- | --------------------------- |
+| `total_sets`              | gauge | Total sets in database      |
+| `total_cards`             | gauge | Total cards in database     |
+| `orphaned_cards`          | gauge | Cards without valid set     |
+| `duplicate_cards`         | gauge | Duplicate card entries      |
 | `missing_required_fields` | gauge | Cards missing required data |
-| `incomplete_sets` | gauge | Sets with missing cards |
-| `issues_found` | gauge | Total issues detected |
+| `incomplete_sets`         | gauge | Sets with missing cards     |
+| `issues_found`            | gauge | Total issues detected       |
 
 ### Example Output
 
@@ -252,13 +252,13 @@ Performs comprehensive validation checks:
 
 ### Issue Severity
 
-| Issue Type | Severity | Action Required |
-|------------|----------|-----------------|
-| SQLite corruption | Critical | Restore from backup |
-| Orphaned cards | High | Investigate and clean |
-| Duplicate cards | Medium | De-duplicate entries |
-| Missing fields | Medium | Re-sync affected cards |
-| Incomplete sets | Low | Will be fixed by sync jobs |
+| Issue Type        | Severity | Action Required            |
+| ----------------- | -------- | -------------------------- |
+| SQLite corruption | Critical | Restore from backup        |
+| Orphaned cards    | High     | Investigate and clean      |
+| Duplicate cards   | Medium   | De-duplicate entries       |
+| Missing fields    | Medium   | Re-sync affected cards     |
+| Incomplete sets   | Low      | Will be fixed by sync jobs |
 
 ---
 

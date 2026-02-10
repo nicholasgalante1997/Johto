@@ -80,20 +80,21 @@ Pokemon/
 
 ### ✅ Frontend Pages (70%)
 
-| Page | Status | Description |
-|------|--------|-------------|
-| DashboardPage | ✅ Complete | Stats grid, quick actions, recent decks |
-| BrowsePage | ✅ Complete | Card grid with search, filter, modal detail |
-| CollectionPage | ⚠️ Partial | Shell exists, needs full card grid |
-| DecksPage | ⚠️ Partial | Basic structure, needs polish |
+| Page            | Status      | Description                                     |
+| --------------- | ----------- | ----------------------------------------------- |
+| DashboardPage   | ✅ Complete | Stats grid, quick actions, recent decks         |
+| BrowsePage      | ✅ Complete | Card grid with search, filter, modal detail     |
+| CollectionPage  | ⚠️ Partial  | Shell exists, needs full card grid              |
+| DecksPage       | ⚠️ Partial  | Basic structure, needs polish                   |
 | DeckBuilderPage | ✅ Complete | Two-panel layout, quantity controls, validation |
-| DeckDetailPage | ⚠️ Partial | Structure only, needs card grouping UI |
-| NotFoundPage | ✅ Complete | 404 page with navigation |
-| ServerErrorPage | ✅ Complete | 500 error page |
+| DeckDetailPage  | ⚠️ Partial  | Structure only, needs card grouping UI          |
+| NotFoundPage    | ✅ Complete | 404 page with navigation                        |
+| ServerErrorPage | ✅ Complete | 500 error page                                  |
 
 ### ✅ Frontend Components (85%)
 
 **Core UI Components:**
+
 - ✅ Button - Multiple variants (primary, secondary, outline, ghost)
 - ✅ Badge - Status badges with color variants
 - ✅ Card - Pokemon card display with image, stats
@@ -105,12 +106,14 @@ Pokemon/
 - ✅ Stats - Statistics display with trends
 
 **Layout Components:**
+
 - ✅ DashboardLayout - 2-column with sidebar/header
 - ✅ AppSidebar - Navigation with active states
 - ✅ DashboardHeader - Breadcrumbs, actions
 - ✅ Document - SSR wrapper
 
 **Deck Components:**
+
 - ✅ DeckCard - Individual deck display
 - ✅ DeckList - Deck listing component
 - ✅ DeckValidation - Errors, warnings, card breakdown
@@ -118,11 +121,13 @@ Pokemon/
 ### ✅ Frontend State Management (90%)
 
 **React Contexts:**
+
 - ✅ CollectionContext - User card collection with localStorage persistence
 - ✅ DeckContext - Deck CRUD, card management, validation
 - ✅ QueryProvider - React Query configuration with caching
 
 **Custom Hooks:**
+
 - ✅ `useCards(filters)` - Fetch cards with pagination
 - ✅ `useCard(id)` - Single card fetch
 - ✅ `useSets()` - Fetch all sets
@@ -141,18 +146,22 @@ Pokemon/
 ### ✅ REST API Layer (75%)
 
 **Card Endpoints:**
+
 - ✅ `GET /api/v1/cards` - List cards with pagination (limit, offset)
 - ✅ `GET /api/v1/cards/:id` - Single card detail
 
 **Set Endpoints:**
+
 - ✅ `GET /api/v1/sets` - List all sets
 - ✅ `GET /api/v1/sets/:id` - Single set detail
 - ✅ `GET /api/v1/sets/:id/cards` - Cards in set with pagination
 
 **Utility Endpoints:**
+
 - ✅ `GET /api/v1/endpoints` - API discovery/documentation
 
 **API Features:**
+
 - ✅ Pagination utilities (limit/offset)
 - ✅ Response transformation helpers
 - ✅ Error handling with proper HTTP codes
@@ -161,12 +170,14 @@ Pokemon/
 ### ⚠️ GraphQL API (50%)
 
 **Implemented:**
+
 - ✅ Apollo Server configured
 - ✅ Schema defined (User, Set, Card, Deck types)
 - ✅ Query resolvers for cards and sets
 - ✅ GraphiQL IDE at `/graphiql`
 
 **Missing:**
+
 - ❌ Mutation resolvers (no create/update/delete)
 - ❌ Authentication integration
 - ❌ Subscription support
@@ -174,16 +185,19 @@ Pokemon/
 ### ✅ Database Layer (100%)
 
 **SQLite (Primary - Read-Only):**
+
 - ✅ Database: `database/pokemon-data.sqlite3.db`
 - ✅ Tables: `pokemon_cards`, `pokemon_card_sets`
 - ✅ Data synced from Pokemon TCG JSON files
 - ✅ Query functions: findCardById, findAllCards, findSetById, findAllSets, etc.
 
 **PostgreSQL (Configured):**
+
 - ✅ Schema defined in `database/init.sql`
 - ❌ Not actively used (Rust API not implemented)
 
 **Neo4j (Configured):**
+
 - ✅ Connection manager in `@pokemon/database`
 - ❌ No read queries implemented
 
@@ -198,6 +212,7 @@ Pokemon/
 ### ⚠️ Rust Backend (15%)
 
 **Implemented:**
+
 - ✅ Actix-web server initialization
 - ✅ Database connection setup (PostgreSQL + Neo4j)
 - ✅ CORS middleware
@@ -205,6 +220,7 @@ Pokemon/
 - ✅ ORM models for Card and Set
 
 **Missing:**
+
 - ❌ All API routes (returns HTML stub only)
 - ❌ Query implementations
 - ❌ GraphQL resolvers
@@ -225,7 +241,9 @@ Pokemon/
 ### Phase 1: Critical Path (Blocking MVP)
 
 #### 1.1 User Authentication System
+
 **Backend:**
+
 - [ ] JWT token generation/validation
 - [ ] User registration endpoint
 - [ ] Login endpoint
@@ -233,6 +251,7 @@ Pokemon/
 - [ ] Refresh token mechanism
 
 **Frontend:**
+
 - [ ] Login page
 - [ ] Register page
 - [ ] AuthContext for auth state
@@ -242,6 +261,7 @@ Pokemon/
 **Estimated Effort:** 30-40 hours
 
 #### 1.2 Server-Side Persistence
+
 - [ ] PostgreSQL users table integration
 - [ ] User deck storage (decks table)
 - [ ] User collection storage (user_card_inventory table)
@@ -253,6 +273,7 @@ Pokemon/
 ### Phase 2: Feature Completion
 
 #### 2.1 Collection Page Enhancement
+
 - [ ] Full card grid display
 - [ ] Collection statistics panel
 - [ ] Add/remove cards integration
@@ -262,6 +283,7 @@ Pokemon/
 **Estimated Effort:** 8-12 hours
 
 #### 2.2 Deck Management Features
+
 - [ ] Deck export (text format)
 - [ ] Deck import (text parsing)
 - [ ] Deck cloning
@@ -271,6 +293,7 @@ Pokemon/
 **Estimated Effort:** 12-16 hours
 
 #### 2.3 GraphQL Mutations
+
 - [ ] createDeck mutation
 - [ ] updateDeck mutation
 - [ ] deleteDeck mutation
@@ -282,6 +305,7 @@ Pokemon/
 ### Phase 3: Market Value Tracking
 
 #### 3.1 Price Data Integration
+
 - [ ] Price sync script for TCGPlayer/Cardmarket data
 - [ ] card_price_history table
 - [ ] Price display on cards
@@ -293,15 +317,17 @@ Pokemon/
 ### Phase 4: Quality & Polish
 
 #### 4.1 Testing Foundation
+
 - [ ] Vitest setup for frontend
 - [ ] Component tests for key UI
 - [ ] API endpoint tests
 - [ ] E2E tests for critical flows
-- [ ] >60% coverage target
+- [ ] > 60% coverage target
 
 **Estimated Effort:** 20-30 hours
 
 #### 4.2 UI/UX Polish
+
 - [ ] Toast notification system
 - [ ] Loading skeletons throughout
 - [ ] Error boundary improvements
@@ -313,6 +339,7 @@ Pokemon/
 ### Phase 5: Rust API (Optional for MVP)
 
 #### 5.1 Implement Rust Backend
+
 - [ ] Card endpoints
 - [ ] Set endpoints
 - [ ] Auth endpoints
@@ -325,26 +352,26 @@ Pokemon/
 
 ## Comparison: MVP Plan vs Current State
 
-| MVP Feature | Plan Phase | Current Status | Remaining Work |
-|-------------|-----------|----------------|----------------|
-| Environment Setup | Phase 0 | ✅ Complete | - |
-| Database Schema | Phase 0 | ✅ Complete | - |
-| User Auth Backend | Phase 1 | ❌ Not Started | 15-20 hours |
-| User Auth Frontend | Phase 1 | ❌ Not Started | 15-20 hours |
-| Card Endpoints | Phase 2 | ✅ Complete (Web API) | - |
-| Set Endpoints | Phase 2 | ✅ Complete (Web API) | - |
-| Card Browsing UI | Phase 2 | ✅ Complete | - |
-| Set Browsing UI | Phase 2 | ✅ Complete | - |
-| Card Ownership Backend | Phase 3 | ⚠️ Partial (localStorage) | 15-20 hours |
-| Card Ownership UI | Phase 3 | ⚠️ Partial | 8-12 hours |
-| Price Sync Service | Phase 4 | ❌ Not Started | 15-20 hours |
-| Price Display UI | Phase 4 | ❌ Not Started | 10-15 hours |
-| Deck Models/Services | Phase 5 | ✅ Complete (Client-side) | - |
-| Deck API | Phase 5 | ❌ Not Started (Server) | 15-20 hours |
-| Deck Builder UI | Phase 5 | ✅ Complete | - |
-| Deck Validation | Phase 5 | ✅ Complete | - |
-| Testing Foundation | Phase 7 | ❌ Not Started | 20-30 hours |
-| Performance Optimization | Phase 8 | ⚠️ Partial | 10-15 hours |
+| MVP Feature              | Plan Phase | Current Status            | Remaining Work |
+| ------------------------ | ---------- | ------------------------- | -------------- |
+| Environment Setup        | Phase 0    | ✅ Complete               | -              |
+| Database Schema          | Phase 0    | ✅ Complete               | -              |
+| User Auth Backend        | Phase 1    | ❌ Not Started            | 15-20 hours    |
+| User Auth Frontend       | Phase 1    | ❌ Not Started            | 15-20 hours    |
+| Card Endpoints           | Phase 2    | ✅ Complete (Web API)     | -              |
+| Set Endpoints            | Phase 2    | ✅ Complete (Web API)     | -              |
+| Card Browsing UI         | Phase 2    | ✅ Complete               | -              |
+| Set Browsing UI          | Phase 2    | ✅ Complete               | -              |
+| Card Ownership Backend   | Phase 3    | ⚠️ Partial (localStorage) | 15-20 hours    |
+| Card Ownership UI        | Phase 3    | ⚠️ Partial                | 8-12 hours     |
+| Price Sync Service       | Phase 4    | ❌ Not Started            | 15-20 hours    |
+| Price Display UI         | Phase 4    | ❌ Not Started            | 10-15 hours    |
+| Deck Models/Services     | Phase 5    | ✅ Complete (Client-side) | -              |
+| Deck API                 | Phase 5    | ❌ Not Started (Server)   | 15-20 hours    |
+| Deck Builder UI          | Phase 5    | ✅ Complete               | -              |
+| Deck Validation          | Phase 5    | ✅ Complete               | -              |
+| Testing Foundation       | Phase 7    | ❌ Not Started            | 20-30 hours    |
+| Performance Optimization | Phase 8    | ⚠️ Partial                | 10-15 hours    |
 
 ---
 
@@ -353,6 +380,7 @@ Pokemon/
 ### Phased Approach
 
 #### Phase A: Local-First MVP (2-3 weeks)
+
 **Goal:** Ship a functional app using client-side storage
 
 1. Complete Collection Page UI
@@ -365,6 +393,7 @@ Pokemon/
 **Deliverable:** Working app with localStorage persistence
 
 #### Phase B: Server Persistence MVP (3-4 weeks)
+
 **Goal:** Add user accounts and server storage
 
 1. Implement user authentication
@@ -376,6 +405,7 @@ Pokemon/
 **Deliverable:** Multi-user app with persistent data
 
 #### Phase C: Market Data MVP (2-3 weeks)
+
 **Goal:** Add price tracking
 
 1. Price data sync service
@@ -415,6 +445,7 @@ cd apps/tcg-api && cargo run
 ## File Locations
 
 ### Frontend (apps/web/src/web)
+
 - Pages: `pages/` (8 page components)
 - Components: `components/` (20+ UI components)
 - Hooks: `hooks/` (6 data hooks)
@@ -424,6 +455,7 @@ cd apps/tcg-api && cargo run
 - GraphQL: `graphql/` (Client, documents, hooks)
 
 ### Server (apps/web/src/server)
+
 - Entry: `server.ts`
 - API Handlers: `lib/api/handlers/` (cards.ts, sets.ts, discovery.ts)
 - API Router: `lib/api/router.ts`
@@ -431,12 +463,14 @@ cd apps/tcg-api && cargo run
 - Database: `lib/api/db.ts`
 
 ### Rust API (apps/tcg-api/src)
+
 - Entry: `main.rs`
 - Routes: `routes/` (stub only)
 - Database: `database/` (connection setup)
 - Models: `database/postgres/models/`
 
 ### Shared Packages
+
 - Database: `packages/@database/lib/`
 - Logger: `packages/@logger/lib/`
 - Utils: `packages/@utils/lib/`
@@ -447,6 +481,7 @@ cd apps/tcg-api && cargo run
 ## Success Metrics
 
 ### Currently Achieved
+
 - [x] Can browse all cards with pagination
 - [x] Can search cards by name
 - [x] Can view detailed card information
@@ -459,28 +494,30 @@ cd apps/tcg-api && cargo run
 - [x] Loading states on data fetch
 
 ### Not Yet Achieved
+
 - [ ] User authentication
 - [ ] Server-side persistence
 - [ ] Price tracking
-- [ ] >60% test coverage
+- [ ] > 60% test coverage
 - [ ] Production deployment
 
 ---
 
 ## Estimated Remaining Effort
 
-| Task | Hours |
-|------|-------|
-| Collection Page completion | 8-12 |
-| Deck Detail Page completion | 6-8 |
-| User authentication (full stack) | 30-40 |
-| Server persistence | 20-30 |
-| Price tracking | 20-25 |
-| Testing foundation | 20-30 |
-| UI/UX polish | 15-20 |
-| **TOTAL** | **119-165 hours** |
+| Task                             | Hours             |
+| -------------------------------- | ----------------- |
+| Collection Page completion       | 8-12              |
+| Deck Detail Page completion      | 6-8               |
+| User authentication (full stack) | 30-40             |
+| Server persistence               | 20-30             |
+| Price tracking                   | 20-25             |
+| Testing foundation               | 20-30             |
+| UI/UX polish                     | 15-20             |
+| **TOTAL**                        | **119-165 hours** |
 
 **Timeline:**
+
 - Phase A (Local MVP): 2-3 weeks
 - Phase B (Server MVP): 3-4 weeks
 - Phase C (Full MVP): 2-3 weeks

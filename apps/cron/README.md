@@ -36,16 +36,16 @@ bun run job:status <name>     # View job configuration
 
 ## Jobs
 
-| Job | Schedule | Description |
-|-----|----------|-------------|
-| `sync-missing-sets` | `0 2 * * *` | Sync sets from @pokemon/data to SQLite |
-| `sync-missing-cards` | `0 3 * * *` | Sync cards for incomplete sets |
-| `validate-data-integrity` | `0 6 * * 0` | Check orphans, duplicates, integrity |
-| `backup-database` | `0 0 * * *` | Create compressed timestamped backup |
-| `rotate-backups` | `0 1 * * *` | Manage backup retention policy |
-| `replicate-to-primary` | `0 4 * * *` | Sync SQLite to PostgreSQL |
-| `database-health-check` | `*/15 * * * *` | Monitor connectivity and health |
-| `cleanup-stale-data` | `0 5 * * 0` | VACUUM, ANALYZE, optimize |
+| Job                       | Schedule       | Description                            |
+| ------------------------- | -------------- | -------------------------------------- |
+| `sync-missing-sets`       | `0 2 * * *`    | Sync sets from @pokemon/data to SQLite |
+| `sync-missing-cards`      | `0 3 * * *`    | Sync cards for incomplete sets         |
+| `validate-data-integrity` | `0 6 * * 0`    | Check orphans, duplicates, integrity   |
+| `backup-database`         | `0 0 * * *`    | Create compressed timestamped backup   |
+| `rotate-backups`          | `0 1 * * *`    | Manage backup retention policy         |
+| `replicate-to-primary`    | `0 4 * * *`    | Sync SQLite to PostgreSQL              |
+| `database-health-check`   | `*/15 * * * *` | Monitor connectivity and health        |
+| `cleanup-stale-data`      | `0 5 * * 0`    | VACUUM, ANALYZE, optimize              |
 
 ### Job Dependencies
 
@@ -62,19 +62,19 @@ backup-database
 
 ### Environment Variables
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DATABASE_PATH` | `./database/pokemon-data.sqlite3.db` | SQLite database path |
-| `BACKUP_DIR` | `./database/backups` | Backup storage directory |
-| `CRON_TIMEZONE` | `America/New_York` | Timezone for schedules |
-| `CRON_MAX_CONCURRENT` | `3` | Max concurrent jobs |
-| `CRON_LOG_LEVEL` | `info` | Log level (debug, info, warn, error) |
-| `POSTGRES_HOST` | - | PostgreSQL host (optional) |
-| `POSTGRES_USER` | - | PostgreSQL user |
-| `POSTGRES_PASSWORD` | - | PostgreSQL password |
-| `POSTGRES_DB` | - | PostgreSQL database |
-| `NOTIFICATIONS_ENABLED` | `false` | Enable Slack notifications |
-| `SLACK_WEBHOOK_URL` | - | Slack webhook URL |
+| Variable                | Default                              | Description                          |
+| ----------------------- | ------------------------------------ | ------------------------------------ |
+| `DATABASE_PATH`         | `./database/pokemon-data.sqlite3.db` | SQLite database path                 |
+| `BACKUP_DIR`            | `./database/backups`                 | Backup storage directory             |
+| `CRON_TIMEZONE`         | `America/New_York`                   | Timezone for schedules               |
+| `CRON_MAX_CONCURRENT`   | `3`                                  | Max concurrent jobs                  |
+| `CRON_LOG_LEVEL`        | `info`                               | Log level (debug, info, warn, error) |
+| `POSTGRES_HOST`         | -                                    | PostgreSQL host (optional)           |
+| `POSTGRES_USER`         | -                                    | PostgreSQL user                      |
+| `POSTGRES_PASSWORD`     | -                                    | PostgreSQL password                  |
+| `POSTGRES_DB`           | -                                    | PostgreSQL database                  |
+| `NOTIFICATIONS_ENABLED` | `false`                              | Enable Slack notifications           |
+| `SLACK_WEBHOOK_URL`     | -                                    | Slack webhook URL                    |
 
 ## Architecture
 
@@ -110,13 +110,13 @@ export class MyJob extends Job {
   readonly config: JobConfig = {
     name: 'my-job',
     description: 'Description of what the job does',
-    schedule: '0 * * * *',  // Every hour
+    schedule: '0 * * * *', // Every hour
     enabled: true,
     timeout: 60_000,
     retryAttempts: 3,
     retryDelayMs: 10_000,
-    dependsOn: [],          // Optional: job names that must complete first
-    exclusive: true,        // Optional: prevent concurrent runs
+    dependsOn: [], // Optional: job names that must complete first
+    exclusive: true // Optional: prevent concurrent runs
   };
 
   async execute(context: JobContext): Promise<JobResult> {
@@ -139,7 +139,7 @@ Register in `src/jobs/index.ts`:
 import { MyJob } from './path/to/MyJob';
 export const allJobs: Job[] = [
   // ...existing jobs
-  new MyJob(),
+  new MyJob()
 ];
 ```
 

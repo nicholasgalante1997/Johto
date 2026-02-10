@@ -147,8 +147,44 @@ import { sqlite, postgres } from '@pokemon/database';
 const db = sqlite.createDatabase('./database/pokemon-data.sqlite3.db');
 const sets = sqlite.findAllSets(db)();
 const cards = sqlite.findCardsBySetId(db)(setId);
-sqlite.insertSet(db)(id, name, series, printedTotal, total, legalities, ptcgoCode, releaseDate, updatedAt, images);
-sqlite.insertCard(db)(id, name, supertype, subtypes, hp, types, evolvesFrom, evolvesTo, rules, abilities, attacks, weaknesses, retreatCost, convertedRetreatCost, setId, number, artist, rarity, flavorText, nationalPokedexNumbers, legalities, images, tcgplayerUrl, cardmarketUrl);
+sqlite.insertSet(db)(
+  id,
+  name,
+  series,
+  printedTotal,
+  total,
+  legalities,
+  ptcgoCode,
+  releaseDate,
+  updatedAt,
+  images
+);
+sqlite.insertCard(db)(
+  id,
+  name,
+  supertype,
+  subtypes,
+  hp,
+  types,
+  evolvesFrom,
+  evolvesTo,
+  rules,
+  abilities,
+  attacks,
+  weaknesses,
+  retreatCost,
+  convertedRetreatCost,
+  setId,
+  number,
+  artist,
+  rarity,
+  flavorText,
+  nationalPokedexNumbers,
+  legalities,
+  images,
+  tcgplayerUrl,
+  cardmarketUrl
+);
 
 // PostgreSQL (takes Pokemon types directly)
 const pool = postgres.getPool();
@@ -161,9 +197,9 @@ await postgres.insertCard(pool, pokemonCard);
 ```typescript
 import { getSets, getCardsInSet, getAllSetIds } from '@pokemon/data';
 
-const allSets = await getSets();           // All 170 sets
-const cards = await getCardsInSet('sv8');  // Cards in set
-const setIds = await getAllSetIds();       // Array of IDs
+const allSets = await getSets(); // All 170 sets
+const cards = await getCardsInSet('sv8'); // Cards in set
+const setIds = await getAllSetIds(); // Array of IDs
 ```
 
 ### API Client (from @pokemon/clients) - for fresh data
@@ -172,8 +208,12 @@ const setIds = await getAllSetIds();       // Array of IDs
 import { Pokedex } from '@pokemon/clients';
 
 const client = new Pokedex();
-for await (const set of client.getAllSets()) { /* ... */ }
-for await (const card of client.getAllCardsInSet('sv8')) { /* ... */ }
+for await (const set of client.getAllSets()) {
+  /* ... */
+}
+for await (const card of client.getAllCardsInSet('sv8')) {
+  /* ... */
+}
 ```
 
 ## Critical Files to Reference
@@ -187,6 +227,7 @@ for await (const card of client.getAllCardsInSet('sv8')) { /* ... */ }
 ## Verification
 
 1. **Phase 1 verification:**
+
    ```bash
    cd apps/cron
    bun run check-types           # TypeScript compiles
@@ -196,6 +237,7 @@ for await (const card of client.getAllCardsInSet('sv8')) { /* ... */ }
    ```
 
 2. **Phase 2 verification:**
+
    ```bash
    bun run job:run sync-missing-sets   # Runs set sync
    bun run job:run sync-missing-cards  # Runs card sync (after sets)
@@ -203,6 +245,7 @@ for await (const card of client.getAllCardsInSet('sv8')) { /* ... */ }
    ```
 
 3. **Phase 3 verification:**
+
    ```bash
    bun run job:run backup-database     # Creates backup
    ls database/backups/                # Verify backup file exists
@@ -210,6 +253,7 @@ for await (const card of client.getAllCardsInSet('sv8')) { /* ... */ }
    ```
 
 4. **Phase 4 verification:**
+
    ```bash
    bun run job:run database-health-check  # Returns health metrics
    ```

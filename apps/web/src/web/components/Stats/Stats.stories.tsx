@@ -131,8 +131,20 @@ export const SingleStat: Story = {
 export const AllColors: Story = {
   args: {
     stats: [
-      { id: '1', label: 'Blue Stat', value: '100', icon: <BarChart3 size={20} />, color: 'blue' },
-      { id: '2', label: 'Green Stat', value: '85', icon: <CheckCircle size={20} />, color: 'green' },
+      {
+        id: '1',
+        label: 'Blue Stat',
+        value: '100',
+        icon: <BarChart3 size={20} />,
+        color: 'blue'
+      },
+      {
+        id: '2',
+        label: 'Green Stat',
+        value: '85',
+        icon: <CheckCircle size={20} />,
+        color: 'green'
+      },
       {
         id: '3',
         label: 'Yellow Stat',
@@ -140,7 +152,13 @@ export const AllColors: Story = {
         icon: <Zap size={20} />,
         color: 'yellow'
       },
-      { id: '4', label: 'Red Stat', value: '15', icon: <Flame size={20} />, color: 'red' },
+      {
+        id: '4',
+        label: 'Red Stat',
+        value: '15',
+        icon: <Flame size={20} />,
+        color: 'red'
+      },
       {
         id: '5',
         label: 'Purple Stat',

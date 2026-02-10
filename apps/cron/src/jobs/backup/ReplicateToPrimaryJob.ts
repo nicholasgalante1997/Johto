@@ -56,7 +56,7 @@ export class ReplicateToPrimaryJob extends Job {
     retryAttempts: 2,
     retryDelayMs: 120_000,
     dependsOn: ['sync-missing-cards'],
-    exclusive: true,
+    exclusive: true
   };
 
   private readonly batchSize = 100;
@@ -68,7 +68,7 @@ export class ReplicateToPrimaryJob extends Job {
       sets_replicated: 0,
       sets_failed: 0,
       cards_replicated: 0,
-      cards_failed: 0,
+      cards_failed: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -85,7 +85,9 @@ export class ReplicateToPrimaryJob extends Job {
         await context.pgPool.query('SELECT 1');
         logger.info('PostgreSQL connection verified');
       } catch (error) {
-        throw new Error(`PostgreSQL connection failed: ${error instanceof Error ? error.message : error}`);
+        throw new Error(
+          `PostgreSQL connection failed: ${error instanceof Error ? error.message : error}`
+        );
       }
 
       // Replicate sets first
@@ -101,13 +103,15 @@ export class ReplicateToPrimaryJob extends Job {
       logger.info('Replicating cards...');
       await this.replicateCards(context, logger, metrics);
 
-      logger.info('Replication complete: %d sets, %d cards',
+      logger.info(
+        'Replication complete: %d sets, %d cards',
         metrics.sets_replicated,
         metrics.cards_replicated
       );
 
       if (metrics.sets_failed > 0 || metrics.cards_failed > 0) {
-        logger.warn('Failures: %d sets, %d cards',
+        logger.warn(
+          'Failures: %d sets, %d cards',
           metrics.sets_failed,
           metrics.cards_failed
         );
@@ -118,7 +122,10 @@ export class ReplicateToPrimaryJob extends Job {
 
       return this.createResult(startedAt, metrics, logs);
     } catch (error) {
-      logger.error('Replication failed: %s', error instanceof Error ? error.message : error);
+      logger.error(
+        'Replication failed: %s',
+        error instanceof Error ? error.message : error
+      );
       return this.createResult(
         startedAt,
         metrics,
@@ -147,7 +154,8 @@ export class ReplicateToPrimaryJob extends Job {
         // ON CONFLICT DO NOTHING means this is not an error for duplicates
         if (!(error instanceof Error && error.message.includes('duplicate'))) {
           metrics.sets_failed++;
-          logger.warn('Failed to replicate set %s: %s',
+          logger.warn(
+            'Failed to replicate set %s: %s',
             row.id,
             error instanceof Error ? error.message : error
           );
@@ -175,7 +183,10 @@ export class ReplicateToPrimaryJob extends Job {
     while (offset < totalCards) {
       if (context.abortSignal.aborted) break;
 
-      const cards = sqlite.findAllCards(context.sqliteDb)(this.batchSize, offset) as CardRow[];
+      const cards = sqlite.findAllCards(context.sqliteDb)(
+        this.batchSize,
+        offset
+      ) as CardRow[];
 
       if (cards.length === 0) break;
 
@@ -186,10 +197,13 @@ export class ReplicateToPrimaryJob extends Job {
           metrics.cards_replicated++;
         } catch (error) {
           // ON CONFLICT DO NOTHING means this is not an error for duplicates
-          if (!(error instanceof Error && error.message.includes('duplicate'))) {
+          if (
+            !(error instanceof Error && error.message.includes('duplicate'))
+          ) {
             metrics.cards_failed++;
             if (metrics.cards_failed <= 10) {
-              logger.warn('Failed to replicate card %s: %s',
+              logger.warn(
+                'Failed to replicate card %s: %s',
                 row.id,
                 error instanceof Error ? error.message : error
               );
@@ -219,7 +233,7 @@ export class ReplicateToPrimaryJob extends Job {
       ptcgoCode: row.ptcgo_code ?? undefined,
       releaseDate: row.release_date ?? '',
       updatedAt: row.updated_at ?? '',
-      images: row.images ? JSON.parse(row.images) : {},
+      images: row.images ? JSON.parse(row.images) : {}
     };
   }
 
@@ -250,10 +264,12 @@ export class ReplicateToPrimaryJob extends Job {
       nationalPokedexNumbers: row.national_pokedex_numbers
         ? JSON.parse(row.national_pokedex_numbers)
         : [],
-      legalities: row.legalities ? JSON.parse(row.legalities) : { unlimited: '', expanded: '' },
+      legalities: row.legalities
+        ? JSON.parse(row.legalities)
+        : { unlimited: '', expanded: '' },
       images: row.images ? JSON.parse(row.images) : { small: '', large: '' },
       tcgplayer: row.tcgplayer_url ? { url: row.tcgplayer_url } : undefined,
-      cardmarket: row.cardmarket_url ? { url: row.cardmarket_url } : undefined,
+      cardmarket: row.cardmarket_url ? { url: row.cardmarket_url } : undefined
     } as Pokemon.Card;
   }
 

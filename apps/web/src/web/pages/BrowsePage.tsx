@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import { useParams, useSearchParams, useNavigate } from 'react-router';
 import { useCards } from '../hooks/useCards';
 import { useCollection } from '../contexts/Collection';
@@ -7,6 +7,8 @@ import { SearchBar } from '../components/SearchBar';
 import { Pagination } from '../components/Pagination';
 import { Modal } from '../components/Modal';
 import { CardDetail } from '../components/CardDetail';
+import { useFadeIn } from '../motion/hooks/useFadeIn';
+import { useStagger } from '../motion/hooks/useStagger';
 import { ROUTES } from '../routes';
 import type { Pokemon } from '@pokemon/clients';
 import type { SearchFilters } from '../components/SearchBar/types';
@@ -17,6 +19,17 @@ function BrowsePage() {
   const navigate = useNavigate();
   const { addCard, getQuantity } = useCollection();
 
+  // Animations
+  const { ref: headerRef } = useFadeIn({ y: 20, duration: 0.4 });
+  const { containerRef: gridContainerRef, animate: replayStagger } = useStagger(
+    {
+      stagger: 0.03,
+      y: 20,
+      fromScale: 0.97,
+      autoPlay: true
+    }
+  );
+
   // Parse search params
   const page = parseInt(searchParams.get('page') || '1', 10);
   const search = searchParams.get('q') || undefined;
@@ -24,7 +37,31 @@ function BrowsePage() {
   const rarity = searchParams.get('rarity') || undefined;
 
   // Fetch cards
-  const { data: cards, isLoading: loading, error } = useCards(page, 200);
+  const { data, isLoading: loading, error, isError } = useCards(page, 500);
+
+  const cards: Pokemon.Card[] = useMemo(() => {
+    if (loading || error || isError) {
+      return [];
+    }
+
+    if (data) {
+      if (Array.isArray(data.data)) {
+        return data.data;
+      }
+
+      if (
+        typeof data.data === 'object' &&
+        data.data !== null &&
+        'data' in data.data
+      ) {
+        if (Array.isArray((data?.data as any)?.data)) {
+          return (data?.data as any)?.data;
+        }
+      }
+    }
+
+    return [];
+  }, [data, loading, error, isError]);
 
   // Selected card for modal
   const [selectedCard, setSelectedCard] = useState<Pokemon.Card | null>(null);
@@ -72,7 +109,7 @@ function BrowsePage() {
 
   return (
     <div className="page browse-page">
-      <div className="page__header">
+      <div ref={headerRef} className="page__header">
         <h1>Browse Cards</h1>
         <p>Explore all available Pokemon cards.</p>
       </div>
@@ -101,9 +138,9 @@ function BrowsePage() {
       )}
 
       {/* Card Grid */}
-      <div className="page__content">
+      <div ref={gridContainerRef} className="page__content">
         <CardGrid
-          cards={cards?.data || []}
+          cards={cards || []}
           onCardSelect={handleCardSelect}
           loading={loading}
           emptyMessage="No cards found. Try adjusting your search."

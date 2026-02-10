@@ -42,28 +42,34 @@ function openDatabase(): Database {
 
 function getAllSets(db: Database): SetRow[] {
   return db
-    .query<SetRow, []>(
-      'SELECT id, name, series, total, printed_total, release_date FROM pokemon_card_sets ORDER BY release_date DESC'
-    )
+    .query<
+      SetRow,
+      []
+    >('SELECT id, name, series, total, printed_total, release_date FROM pokemon_card_sets ORDER BY release_date DESC')
     .all();
 }
 
 function getCardCountsPerSet(db: Database): Map<string, number> {
   const rows = db
-    .query<CardCountRow, []>(
-      'SELECT set_id, COUNT(*) as card_count FROM pokemon_cards GROUP BY set_id'
-    )
+    .query<
+      CardCountRow,
+      []
+    >('SELECT set_id, COUNT(*) as card_count FROM pokemon_cards GROUP BY set_id')
     .all();
 
   return new Map(rows.map((r) => [r.set_id, r.card_count]));
 }
 
-function generateReport(sets: SetRow[], cardCounts: Map<string, number>): SetReport[] {
+function generateReport(
+  sets: SetRow[],
+  cardCounts: Map<string, number>
+): SetReport[] {
   return sets.map((set) => {
     const actualCount = cardCounts.get(set.id) ?? 0;
     const expectedTotal = set.total ?? set.printed_total ?? 0;
     const missing = Math.max(0, expectedTotal - actualCount);
-    const completeness = expectedTotal > 0 ? (actualCount / expectedTotal) * 100 : 100;
+    const completeness =
+      expectedTotal > 0 ? (actualCount / expectedTotal) * 100 : 100;
 
     return {
       id: set.id,
@@ -73,7 +79,7 @@ function generateReport(sets: SetRow[], cardCounts: Map<string, number>): SetRep
       actualCount,
       missing,
       completeness: Math.min(100, completeness),
-      releaseDate: set.release_date,
+      releaseDate: set.release_date
     };
   });
 }
@@ -93,13 +99,17 @@ function formatTable(reports: SetReport[]): void {
 
   console.log('\n--- SUMMARY ---\n');
   console.log(`Total Sets:           ${reports.length}`);
-  console.log(`Complete Sets:        ${complete.length} (${((complete.length / reports.length) * 100).toFixed(1)}%)`);
+  console.log(
+    `Complete Sets:        ${complete.length} (${((complete.length / reports.length) * 100).toFixed(1)}%)`
+  );
   console.log(`Incomplete Sets:      ${incomplete.length}`);
   console.log(`Empty Sets:           ${empty.length}`);
   console.log(`\nTotal Cards Expected: ${totalExpected.toLocaleString()}`);
   console.log(`Total Cards in DB:    ${totalActual.toLocaleString()}`);
   console.log(`Total Cards Missing:  ${totalMissing.toLocaleString()}`);
-  console.log(`Overall Completeness: ${((totalActual / totalExpected) * 100).toFixed(2)}%`);
+  console.log(
+    `Overall Completeness: ${((totalActual / totalExpected) * 100).toFixed(2)}%`
+  );
 
   if (incomplete.length > 0) {
     console.log('\n--- INCOMPLETE SETS ---\n');
@@ -130,7 +140,9 @@ function formatTable(reports: SetReport[]): void {
   if (empty.length > 0) {
     console.log('\n--- EMPTY SETS (No Cards) ---\n');
     empty.forEach((r) => {
-      console.log(`  ${r.id.padEnd(12)} ${r.name} (expected: ${r.expectedTotal})`);
+      console.log(
+        `  ${r.id.padEnd(12)} ${r.name} (expected: ${r.expectedTotal})`
+      );
     });
   }
 
@@ -140,7 +152,9 @@ function formatTable(reports: SetReport[]): void {
       console.log(`  ${r.id.padEnd(12)} ${r.name} (${r.actualCount} cards)`);
     });
   } else if (complete.length > 20) {
-    console.log(`\n--- COMPLETE SETS (${complete.length} total, showing first 20) ---\n`);
+    console.log(
+      `\n--- COMPLETE SETS (${complete.length} total, showing first 20) ---\n`
+    );
     complete.slice(0, 20).forEach((r) => {
       console.log(`  ${r.id.padEnd(12)} ${r.name} (${r.actualCount} cards)`);
     });

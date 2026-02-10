@@ -100,6 +100,7 @@ process.on('SIGINT', () => scheduler.stop());
 ```
 
 Key responsibilities:
+
 - Initialize the scheduler with configuration
 - Register all job implementations
 - Set up signal handlers for graceful shutdown
@@ -139,17 +140,18 @@ The scheduler is the heart of the system. It:
 
 The dual-database approach serves different purposes:
 
-| Aspect | SQLite | PostgreSQL |
-|--------|--------|------------|
-| **Use Case** | Local data ingestion | Production queries |
-| **Speed** | Very fast for single writes | Optimized for concurrent reads |
-| **Complexity** | Zero configuration | Requires server |
-| **Sync Jobs** | Primary target | Replication target |
-| **API Usage** | Not used | Primary data source |
+| Aspect         | SQLite                      | PostgreSQL                     |
+| -------------- | --------------------------- | ------------------------------ |
+| **Use Case**   | Local data ingestion        | Production queries             |
+| **Speed**      | Very fast for single writes | Optimized for concurrent reads |
+| **Complexity** | Zero configuration          | Requires server                |
+| **Sync Jobs**  | Primary target              | Replication target             |
+| **API Usage**  | Not used                    | Primary data source            |
 
 ### Why Bun?
 
 Bun was chosen for:
+
 - **Native TypeScript** - No transpilation step
 - **Fast startup** - Critical for job execution
 - **Built-in APIs** - File operations, compression, hashing
@@ -170,6 +172,7 @@ We use standard 5-field cron expressions:
 ```
 
 **Supported Syntax:**
+
 - `*` - Any value
 - `1,3,5` - List of values
 - `1-5` - Range of values
@@ -252,11 +255,11 @@ async stop(): Promise<void> {
 
 ## Performance Characteristics
 
-| Metric | Value |
-|--------|-------|
-| Tick interval | 60 seconds |
-| Max concurrent jobs | 3 (configurable) |
-| Default job timeout | 5 minutes |
-| Graceful shutdown timeout | 30 seconds |
-| Backup compression | gzip |
-| Health check interval | 15 minutes |
+| Metric                    | Value            |
+| ------------------------- | ---------------- |
+| Tick interval             | 60 seconds       |
+| Max concurrent jobs       | 3 (configurable) |
+| Default job timeout       | 5 minutes        |
+| Graceful shutdown timeout | 30 seconds       |
+| Backup compression        | gzip             |
+| Health check interval     | 15 minutes       |

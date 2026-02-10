@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "bun run src/index.ts",
-    "start:dev": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir=dist --target=bun",
+    "//start": "bun run src/index.ts",
+    "//start:dev": "bun run --watch src/index.ts",
+    "build": "bun run build.ts",
     "check-types": "tsc -p ./tsconfig.json --noEmit",
-    "test": "bun test",
     "job:run": "bun run src/cli.ts run",
     "job:list": "bun run src/cli.ts list",
     "job:status": "bun run src/cli.ts status",
@@ -24,6 +23,7 @@
     "@pokemon/utils": "workspace:*"
   },
   "devDependencies": {
+    "@pokemon/build": "workspace:*",
     "@pokemon/configs": "workspace:*",
     "@types/bun": "latest",
     "typescript": "5.5.4"

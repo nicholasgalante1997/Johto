@@ -3,17 +3,13 @@ import {
   handleStaticFileRequest,
   isRequestForStaticFile
 } from './renderStaticFile';
-import { handleApiRequest } from './api';
-import { isApiRoute } from './routes';
 
+/**
+ * Handle web requests (static files and React SSR)
+ * API requests are proxied at the server level before reaching this handler
+ */
 export async function handleRequest(request: Request) {
   const url = new URL(request.url);
-  const path = url.pathname;
-
-  // Check if this is an API request
-  if (isApiRoute(path)) {
-    return handleApiRequest(request);
-  }
 
   if (await isRequestForStaticFile(request)) {
     console.warn('Request was for static file at path %s', url.pathname);

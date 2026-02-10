@@ -17,12 +17,14 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@types/three": "^0.162.0",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
     "@babel/preset-typescript": "^7.26.0",
     "@chromatic-com/storybook": "^5.0.0",
     "@eslint/js": "^9.15.0",
+    "@pokemon/build": "workspace:*",
     "@storybook/addon-onboarding": "10.2.1",
     "@storybook/addon-webpack5-compiler-swc": "^4.0.2",
     "@storybook/react-webpack5": "10.2.1",
@@ -50,6 +52,9 @@
     "@storybook/addon-docs": "10.2.1"
   },
   "dependencies": {
+    "three": "^0.162.0",
+    "gsap": "^3.12.5",
+    "@gsap/react": "^2.1.1",
     "@apollo/server": "^5.2.0",
     "@graphql-tools/schema": "^10.0.30",
     "@pokemon/clients": "workspace:*",

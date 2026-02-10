@@ -5,7 +5,7 @@
 .card-detail {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -22,21 +22,20 @@
 
 .card-detail__image {
   display: block;
-  width: 300px;
+  width: 260px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
 }
 
 .card-detail__quantity-badge {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  padding: 0.25rem 0.75rem;
-  background-color: var(--ctp-primary, #cba6f7);
+  padding: 0.25rem 0.625rem;
+  background-color: var(--pico-primary);
   border-radius: 9999px;
-  color: var(--ctp-crust, #11111b);
-  font-size: 0.875rem;
+  color: var(--contrast-text);
+  font-size: 0.8125rem;
   font-weight: 600;
 }
 
@@ -44,7 +43,7 @@
 .card-detail__info {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 /* Header */
@@ -52,78 +51,78 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.875rem;
 }
 
 .card-detail__name {
   margin: 0;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--ctp-text-primary, #cdd6f4);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--pico-color);
 }
 
 .card-detail__hp {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  color: var(--ctp-red, #f38ba8);
+  color: var(--color-error);
 }
 
 /* Types */
 .card-detail__types {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.375rem;
 }
 
 /* Sections */
 .card-detail__section {
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--ctp-border, #313244);
+  padding-top: 0.625rem;
+  border-top: 1px solid var(--pico-muted-border-color);
 }
 
 .card-detail__section-title {
-  margin: 0 0 0.75rem 0;
-  font-size: 0.875rem;
+  margin: 0 0 0.625rem 0;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--ctp-text-muted, #7f849c);
+  color: var(--pico-muted-color);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 
 /* Attacks */
 .card-detail__attacks {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .card-detail__attack {
-  padding: 0.75rem;
-  background-color: var(--ctp-bg-elevated, #1e1e2e);
-  border-radius: 8px;
+  padding: 0.625rem;
+  background-color: var(--bg-sunken);
+  border-radius: 6px;
 }
 
 .card-detail__attack-header {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 
 .card-detail__attack-cost {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.125rem;
 }
 
 .energy-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 700;
-  color: white;
+  color: var(--contrast-text);
 }
 
 /* Energy type colors - game accurate */
@@ -133,7 +132,7 @@
 .energy-icon--lightning { background-color: #eab308; }
 .energy-icon--psychic { background-color: #a855f7; }
 .energy-icon--fighting { background-color: #c2410c; }
-.energy-icon--darkness { background-color: #1f2937; }
+.energy-icon--darkness { background-color: #374151; }
 .energy-icon--metal { background-color: #6b7280; }
 .energy-icon--fairy { background-color: #ec4899; }
 .energy-icon--dragon { background-color: #7c3aed; }
@@ -142,42 +141,43 @@
 .card-detail__attack-name {
   flex: 1;
   font-weight: 600;
-  color: var(--ctp-text-primary, #cdd6f4);
+  color: var(--pico-color);
+  font-size: 0.9375rem;
 }
 
 .card-detail__attack-damage {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--ctp-text-primary, #cdd6f4);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--pico-color);
 }
 
 .card-detail__attack-text {
-  margin: 0.5rem 0 0 0;
-  font-size: 0.875rem;
-  color: var(--ctp-text-muted, #7f849c);
+  margin: 0.375rem 0 0 0;
+  font-size: 0.8125rem;
+  color: var(--pico-muted-color);
   line-height: 1.5;
 }
 
 /* Rules */
 .card-detail__rules {
   margin: 0;
-  padding-left: 1.25rem;
-  color: var(--ctp-text-muted, #7f849c);
-  font-size: 0.875rem;
+  padding-left: 1.125rem;
+  color: var(--pico-muted-color);
+  font-size: 0.8125rem;
   line-height: 1.6;
 }
 
 .card-detail__rules li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.375rem;
 }
 
 /* Combat stats */
 .card-detail__combat {
   display: flex;
-  gap: 1.5rem;
-  padding: 0.75rem;
-  background-color: var(--ctp-bg-elevated, #1e1e2e);
-  border-radius: 8px;
+  gap: 1.25rem;
+  padding: 0.625rem;
+  background-color: var(--bg-sunken);
+  border-radius: 6px;
 }
 
 .card-detail__weakness,
@@ -185,19 +185,20 @@
 .card-detail__retreat {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.125rem;
 }
 
 .card-detail__combat-label {
-  font-size: 0.75rem;
-  color: var(--ctp-text-muted, #7f849c);
+  font-size: 0.6875rem;
+  color: var(--pico-muted-color);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 
 .card-detail__combat-value {
   font-weight: 600;
-  color: var(--ctp-text-primary, #cdd6f4);
+  color: var(--pico-color);
+  font-size: 0.875rem;
 }
 
 /* Set info */
@@ -205,95 +206,134 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0.75rem;
-  background-color: var(--ctp-bg-elevated, #1e1e2e);
-  border-radius: 8px;
+  gap: 0.875rem;
+  padding: 0.625rem;
+  background-color: var(--bg-sunken);
+  border-radius: 6px;
 }
 
 .card-detail__set-info {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 
 .card-detail__set-symbol {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
 }
 
 .card-detail__set-name {
   font-weight: 600;
-  color: var(--ctp-text-primary, #cdd6f4);
+  color: var(--pico-color);
+  font-size: 0.875rem;
 }
 
 .card-detail__set-number {
-  font-size: 0.875rem;
-  color: var(--ctp-text-muted, #7f849c);
+  font-size: 0.8125rem;
+  color: var(--pico-muted-color);
 }
 
 /* Legality */
 .card-detail__legality {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 
 .card-detail__legality-label {
-  font-size: 0.875rem;
-  color: var(--ctp-text-muted, #7f849c);
+  font-size: 0.8125rem;
+  color: var(--pico-muted-color);
 }
 
 /* Artist */
 .card-detail__artist {
-  font-size: 0.875rem;
-  color: var(--ctp-text-muted, #7f849c);
+  font-size: 0.8125rem;
+  color: var(--pico-muted-color);
 }
 
 /* Actions */
 .card-detail__actions {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
+  gap: 0.5rem;
+  margin-top: 0.375rem;
 }
 
 .card-detail__action-btn {
   flex: 1;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .card-detail__action-btn--primary {
-  background-color: var(--ctp-primary, #cba6f7);
+  background-color: var(--pico-primary);
   border: none;
-  color: var(--ctp-crust, #11111b);
+  color: var(--contrast-text);
 }
 
 .card-detail__action-btn--primary:hover {
-  background-color: var(--ctp-primary-hover, #d4b8fa);
+  background-color: var(--pico-primary-hover);
 }
 
 .card-detail__action-btn--secondary {
   background-color: transparent;
-  border: 1px solid var(--ctp-border-bright, #45475a);
-  color: var(--ctp-text-primary, #cdd6f4);
+  border: 1px solid var(--pico-muted-border-color);
+  color: var(--pico-color);
 }
 
 .card-detail__action-btn--secondary:hover {
-  background-color: var(--ctp-bg-hover, #313244);
-  border-color: var(--ctp-primary, #cba6f7);
+  background-color: var(--surface-hover);
+  border-color: var(--pico-primary);
+}
+
+.card-detail__action-btn--danger {
+  background-color: transparent;
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+}
+
+.card-detail__action-btn--danger:hover {
+  background-color: var(--color-error);
+  color: var(--contrast-text);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEBULA THEME - Enhanced card detail
+   ═══════════════════════════════════════════════════════════════ */
+[data-theme="nebula"] .card-detail__attack {
+  background: var(--nebula-surface-glass);
+  border: 1px solid var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .card-detail__combat {
+  background: var(--nebula-surface-glass);
+  border: 1px solid var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .card-detail__set {
+  background: var(--nebula-surface-glass);
+  border: 1px solid var(--nebula-surface-border);
+}
+
+[data-theme="nebula"] .card-detail__action-btn--primary {
+  box-shadow: 0 2px 8px rgba(32, 129, 226, 0.3);
+}
+
+[data-theme="nebula"] .card-detail__action-btn--primary:hover {
+  box-shadow: 0 4px 16px rgba(32, 129, 226, 0.4);
+  transform: translateY(-1px);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .card-detail {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .card-detail__image-container {
@@ -302,12 +342,12 @@
   }
 
   .card-detail__image {
-    width: 250px;
+    width: 220px;
   }
 
   .card-detail__header {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.375rem;
   }
 
   .card-detail__combat {

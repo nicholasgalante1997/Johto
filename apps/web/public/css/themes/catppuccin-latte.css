@@ -83,4 +83,30 @@
   --pico-muted-color: var(--ctp-overlay1);
   --pico-muted-border-color: rgba(0, 0, 0, 0.1);
   --pico-secondary-hover-background: rgba(0, 0, 0, 0.05);
+  --pico-form-element-background-color: var(--ctp-surface0);
+
+  /* Semantic Tokens (used by pages + components) */
+  --color-success: var(--ctp-green);
+  --color-warning: var(--ctp-yellow);
+  --color-error: var(--ctp-red);
+  --bg-sunken: var(--ctp-mantle);
+  --text-secondary: var(--ctp-subtext1);
+  --surface-hover: var(--ctp-surface1);
+  --surface-active: var(--ctp-surface2);
+  --contrast-text: var(--ctp-base);
+  --focus-ring: var(--ctp-mauve);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* Pokemon rarity */
+  --pokemon-rarity-common: var(--ctp-overlay0);
+  --pokemon-rarity-uncommon: var(--ctp-overlay2);
+  --pokemon-rarity-rare: var(--ctp-blue);
+  --pokemon-rarity-rare-holo: var(--ctp-mauve);
+  --pokemon-rarity-rare-ultra: var(--ctp-pink);
+  --pokemon-rarity-rare-secret: var(--ctp-yellow);
+
+  /* Pokemon-specific */
+  --pokemon-header-background-stable-top: transparent;
+  --pokemon-header-background-scrolling: var(--ctp-mauve);
 }

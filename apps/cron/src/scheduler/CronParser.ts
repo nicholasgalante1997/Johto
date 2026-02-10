@@ -9,7 +9,7 @@ const FIELD_RANGES = {
   hour: { min: 0, max: 23 },
   dayOfMonth: { min: 1, max: 31 },
   month: { min: 1, max: 12 },
-  dayOfWeek: { min: 0, max: 6 }, // Sunday = 0
+  dayOfWeek: { min: 0, max: 6 } // Sunday = 0
 } as const;
 
 type FieldName = keyof typeof FIELD_RANGES;
@@ -48,7 +48,7 @@ export class CronParser {
       hour: this.parseField(hour, 'hour', expression),
       dayOfMonth: this.parseField(dayOfMonth, 'dayOfMonth', expression),
       month: this.parseField(month, 'month', expression),
-      dayOfWeek: this.parseField(dayOfWeek, 'dayOfWeek', expression),
+      dayOfWeek: this.parseField(dayOfWeek, 'dayOfWeek', expression)
     };
   }
 
@@ -179,7 +179,7 @@ export class CronParser {
     } catch (error) {
       return {
         valid: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
+        error: error instanceof Error ? error.message : 'Unknown error'
       };
     }
   }
@@ -230,11 +230,9 @@ export class CronParser {
           'Sep',
           'Oct',
           'Nov',
-          'Dec',
+          'Dec'
         ];
-        parts.push(
-          `in ${schedule.month.map((m) => monthNames[m]).join(', ')}`
-        );
+        parts.push(`in ${schedule.month.map((m) => monthNames[m]).join(', ')}`);
       }
 
       // Day of week

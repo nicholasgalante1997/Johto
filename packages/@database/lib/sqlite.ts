@@ -120,7 +120,15 @@ export const findCardsByArtist = (db: Database) => (artist: string) =>
 export const findAllCards =
   (db: Database) =>
   (limit: number = 100, offset: number = 0) =>
-    db.query('SELECT * FROM pokemon_cards LIMIT ? OFFSET ?').all(limit, offset);
+    db
+      .query(
+        `SELECT pokemon_cards.*
+         FROM pokemon_cards
+         JOIN pokemon_card_sets ON pokemon_cards.set_id = pokemon_card_sets.id
+         ORDER BY pokemon_card_sets.release_date DESC, pokemon_cards.number ASC
+         LIMIT ? OFFSET ?`
+      )
+      .all(limit, offset);
 
 // Write functions - Functional style with prepared statements
 

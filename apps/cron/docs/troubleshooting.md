@@ -29,6 +29,7 @@ sqlite3 ./database/pokemon-data.sqlite3.db "PRAGMA integrity_check;"
 **Possible Causes:**
 
 1. **Missing database file**
+
    ```bash
    # Check if database exists
    ls -la ./database/pokemon-data.sqlite3.db
@@ -38,6 +39,7 @@ sqlite3 ./database/pokemon-data.sqlite3.db "PRAGMA integrity_check;"
    ```
 
 2. **Invalid configuration**
+
    ```bash
    # Validate environment
    bun run src/cli.ts status
@@ -62,6 +64,7 @@ sqlite3 ./database/pokemon-data.sqlite3.db "PRAGMA integrity_check;"
 **Possible Causes:**
 
 1. **Timezone mismatch**
+
    ```bash
    # Check configured timezone
    echo $CRON_TIMEZONE
@@ -74,6 +77,7 @@ sqlite3 ./database/pokemon-data.sqlite3.db "PRAGMA integrity_check;"
    ```
 
 2. **Dependency not met**
+
    ```bash
    # Check job dependencies
    bun run job:status sync-missing-cards
@@ -83,6 +87,7 @@ sqlite3 ./database/pokemon-data.sqlite3.db "PRAGMA integrity_check;"
    ```
 
 3. **Max concurrent jobs reached**
+
    ```bash
    # Check running jobs
    bun run job:status
@@ -136,6 +141,7 @@ ping $POSTGRES_HOST
 **Possible Causes:**
 
 1. **Disk full**
+
    ```bash
    # Check disk space
    df -h ./database
@@ -146,6 +152,7 @@ ping $POSTGRES_HOST
    ```
 
 2. **Permission denied**
+
    ```bash
    # Fix backup directory permissions
    mkdir -p ./database/backups
@@ -153,6 +160,7 @@ ping $POSTGRES_HOST
    ```
 
 3. **Database locked**
+
    ```bash
    # Check for active connections
    lsof ./database/pokemon-data.sqlite3.db
@@ -169,6 +177,7 @@ ping $POSTGRES_HOST
 **Possible Causes:**
 
 1. **Data source missing**
+
    ```bash
    # Check if @pokemon/data is installed
    ls -la node_modules/@pokemon/data
@@ -178,6 +187,7 @@ ping $POSTGRES_HOST
    ```
 
 2. **Database schema mismatch**
+
    ```bash
    # Check table structure
    sqlite3 ./database/pokemon-data.sqlite3.db ".schema sets"
@@ -205,13 +215,13 @@ CRON_LOG_LEVEL=debug bun run job:run database-health-check
 
 **Common Issues:**
 
-| Issue | Solution |
-|-------|----------|
-| SQLite connection failed | Check file permissions and path |
-| Integrity check failed | Restore from backup |
-| Database too large | Run cleanup job |
-| WAL file too large | Run `PRAGMA wal_checkpoint(TRUNCATE)` |
-| PostgreSQL unavailable | Check connection settings |
+| Issue                    | Solution                              |
+| ------------------------ | ------------------------------------- |
+| SQLite connection failed | Check file permissions and path       |
+| Integrity check failed   | Restore from backup                   |
+| Database too large       | Run cleanup job                       |
+| WAL file too large       | Run `PRAGMA wal_checkpoint(TRUNCATE)` |
+| PostgreSQL unavailable   | Check connection settings             |
 
 ---
 
@@ -260,11 +270,13 @@ docker logs pokemon-cron | grep -i "memory\|heap"
 **Solutions:**
 
 1. **Reduce batch sizes**
+
    ```bash
    export SYNC_BATCH_SIZE=50
    ```
 
 2. **Set memory limits in Docker**
+
    ```yaml
    services:
      cron:
@@ -411,14 +423,14 @@ bun run job:status > status.txt
 
 ### Common Log Patterns
 
-| Pattern | Meaning |
-|---------|---------|
-| `[ERROR]` | Something failed |
-| `[WARN]` | Potential issue |
+| Pattern           | Meaning              |
+| ----------------- | -------------------- |
+| `[ERROR]`         | Something failed     |
+| `[WARN]`          | Potential issue      |
 | `JobTimeoutError` | Job exceeded timeout |
-| `DependencyError` | Missing dependency |
-| `SQLITE_BUSY` | Database locked |
-| `ECONNREFUSED` | Connection refused |
+| `DependencyError` | Missing dependency   |
+| `SQLITE_BUSY`     | Database locked      |
+| `ECONNREFUSED`    | Connection refused   |
 
 ### Contact
 

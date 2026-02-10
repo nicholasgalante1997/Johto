@@ -58,3 +58,8 @@ depends = ["build"]
 [tasks.clean]
 description = "Cleans the project build artifacts"
 run = "bun run clean"
+
+[tasks.db-replicate]
+description = "Replicates the databases (readonly) to the local microservice instances"
+env = { DEBUG = "poke:*" }
+run = "bun run scripts/db-replicate.ts"

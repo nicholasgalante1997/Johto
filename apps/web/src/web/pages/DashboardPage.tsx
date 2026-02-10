@@ -12,10 +12,21 @@ import { ROUTES } from '../routes';
 import { useCollection } from '../contexts/Collection';
 import { useDecks } from '../contexts/Deck';
 import { Stats } from '../components/Stats';
+import { useFadeIn } from '../motion/hooks/useFadeIn';
+import { useStagger } from '../motion/hooks/useStagger';
 
 function DashboardPage() {
   const { totalCards, uniqueCards } = useCollection();
   const { deckCount, decks } = useDecks();
+
+  const { ref: welcomeRef } = useFadeIn({ y: 30, duration: 0.5 });
+  const { containerRef: actionsRef } = useStagger({
+    selector: '.dashboard-page__action-card',
+    stagger: 0.08,
+    y: 25,
+    fromScale: 0.96,
+    delay: 0.15
+  });
 
   // Calculate valid decks (60 cards)
   const validDecks = decks.filter(
@@ -24,7 +35,7 @@ function DashboardPage() {
 
   return (
     <div className="page dashboard-page">
-      <div className="dashboard-page__welcome">
+      <div ref={welcomeRef} className="dashboard-page__welcome">
         <h1>Welcome to Pokemon TCG Manager</h1>
         <p>
           Manage your card collection, build decks, and track your progress.
@@ -67,7 +78,7 @@ function DashboardPage() {
         columns={4}
       />
 
-      <div className="dashboard-page__quick-actions">
+      <div ref={actionsRef} className="dashboard-page__quick-actions">
         <h2>Quick Actions</h2>
         <div className="dashboard-page__action-grid">
           <Link to={ROUTES.BROWSE} className="dashboard-page__action-card">

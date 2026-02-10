@@ -23,21 +23,21 @@ const SEVERITY_LEVELS: Record<AlertSeverity, number> = {
   info: 0,
   warning: 1,
   error: 2,
-  critical: 3,
+  critical: 3
 };
 
 const SEVERITY_EMOJI: Record<AlertSeverity, string> = {
   info: 'information_source',
   warning: 'warning',
   error: 'x',
-  critical: 'rotating_light',
+  critical: 'rotating_light'
 };
 
 const SEVERITY_COLOR: Record<AlertSeverity, string> = {
   info: '#36a64f',
   warning: '#ff9800',
   error: '#f44336',
-  critical: '#d32f2f',
+  critical: '#d32f2f'
 };
 
 /**
@@ -50,7 +50,7 @@ export class NotificationService {
     this.config = {
       slackWebhookUrl: config?.slackWebhookUrl ?? process.env.SLACK_WEBHOOK_URL,
       enabled: config?.enabled ?? process.env.NOTIFICATIONS_ENABLED === 'true',
-      minSeverity: config?.minSeverity ?? 'warning',
+      minSeverity: config?.minSeverity ?? 'warning'
     };
   }
 
@@ -66,8 +66,7 @@ export class NotificationService {
 
     // Check severity threshold
     if (
-      SEVERITY_LEVELS[alert.severity] <
-      SEVERITY_LEVELS[this.config.minSeverity]
+      SEVERITY_LEVELS[alert.severity] < SEVERITY_LEVELS[this.config.minSeverity]
     ) {
       logger.debug(
         'Alert below minimum severity (%s < %s): %s',
@@ -103,7 +102,7 @@ export class NotificationService {
       severity: 'error',
       timestamp: new Date(),
       jobName,
-      metrics,
+      metrics
     });
   }
 
@@ -120,7 +119,7 @@ export class NotificationService {
       message: details,
       severity: 'warning',
       timestamp: new Date(),
-      metrics,
+      metrics
     });
   }
 
@@ -137,7 +136,7 @@ export class NotificationService {
       message,
       severity: 'critical',
       timestamp: new Date(),
-      jobName,
+      jobName
     });
   }
 
@@ -175,7 +174,7 @@ export class NotificationService {
       const response = await fetch(this.config.slackWebhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(payload)
       });
 
       if (!response.ok) {
@@ -208,14 +207,14 @@ export class NotificationService {
       fields.push({
         title: 'Job',
         value: alert.jobName,
-        short: true,
+        short: true
       });
     }
 
     fields.push({
       title: 'Time',
       value: alert.timestamp.toISOString(),
-      short: true,
+      short: true
     });
 
     if (alert.metrics) {
@@ -223,7 +222,7 @@ export class NotificationService {
         fields.push({
           title: key.replace(/_/g, ' '),
           value: String(value),
-          short: true,
+          short: true
         });
       }
     }
@@ -236,9 +235,9 @@ export class NotificationService {
           text: alert.message,
           fields,
           footer: 'Pokemon TCG Cron Service',
-          ts: Math.floor(alert.timestamp.getTime() / 1000),
-        },
-      ],
+          ts: Math.floor(alert.timestamp.getTime() / 1000)
+        }
+      ]
     };
   }
 }

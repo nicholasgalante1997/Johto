@@ -66,7 +66,7 @@ export class SyncMissingCardsJob extends Job {
     retryAttempts: 2,
     retryDelayMs: 120_000,
     dependsOn: ['sync-missing-sets'],
-    exclusive: true,
+    exclusive: true
   };
 
   // Configuration
@@ -82,7 +82,7 @@ export class SyncMissingCardsJob extends Job {
       sets_processed: 0,
       cards_missing: 0,
       cards_synced: 0,
-      cards_failed: 0,
+      cards_failed: 0
     };
 
     const logger = this.createScopedLogger(context.logger, logs);
@@ -123,7 +123,11 @@ export class SyncMissingCardsJob extends Job {
           set.id
         ) as DbCard[];
         const existingCardIds = new Set(existingCards.map((c) => c.id));
-        logger.info('Set %s has %d existing cards', set.id, existingCardIds.size);
+        logger.info(
+          'Set %s has %d existing cards',
+          set.id,
+          existingCardIds.size
+        );
 
         // Load cards from local data
         const localCards: SourceCard[] = await getCardsInSet(set.id);
@@ -140,7 +144,11 @@ export class SyncMissingCardsJob extends Job {
         metrics.cards_missing += missingCards.length;
 
         if (missingCards.length === 0) {
-          logger.info('Set %s is complete (%d cards)', set.id, existingCardIds.size);
+          logger.info(
+            'Set %s is complete (%d cards)',
+            set.id,
+            existingCardIds.size
+          );
           continue;
         }
 

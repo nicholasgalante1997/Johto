@@ -60,9 +60,10 @@ function generateReport(): FullReport {
   const db = openDatabase();
 
   const sets = db
-    .query<SetRow, []>(
-      'SELECT id, name, series, total, printed_total, release_date FROM pokemon_card_sets ORDER BY release_date DESC'
-    )
+    .query<
+      SetRow,
+      []
+    >('SELECT id, name, series, total, printed_total, release_date FROM pokemon_card_sets ORDER BY release_date DESC')
     .all();
 
   const cardCounts = new Map(
@@ -78,7 +79,10 @@ function generateReport(): FullReport {
     const actualCount = cardCounts.get(set.id) ?? 0;
     const expectedTotal = set.total ?? set.printed_total ?? 0;
     const missing = Math.max(0, expectedTotal - actualCount);
-    const completeness = expectedTotal > 0 ? Math.min(100, (actualCount / expectedTotal) * 100) : 100;
+    const completeness =
+      expectedTotal > 0
+        ? Math.min(100, (actualCount / expectedTotal) * 100)
+        : 100;
 
     let status: 'complete' | 'partial' | 'empty';
     if (actualCount === 0) {
@@ -98,7 +102,7 @@ function generateReport(): FullReport {
       missing,
       completeness: Math.round(completeness * 100) / 100,
       releaseDate: set.release_date,
-      status,
+      status
     };
   });
 
@@ -123,9 +127,10 @@ function generateReport(): FullReport {
       totalCardsExpected: totalExpected,
       totalCardsInDb: totalActual,
       totalCardsMissing: totalMissing,
-      overallCompleteness: Math.round((totalActual / totalExpected) * 10000) / 100,
+      overallCompleteness:
+        Math.round((totalActual / totalExpected) * 10000) / 100
     },
-    sets: setReports,
+    sets: setReports
   };
 }
 

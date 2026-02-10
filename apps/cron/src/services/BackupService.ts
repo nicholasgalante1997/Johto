@@ -94,7 +94,7 @@ export class BackupService {
       timestamp,
       sizeBytes,
       compressed: compress,
-      checksum,
+      checksum
     };
   }
 
@@ -108,7 +108,7 @@ export class BackupService {
       // Try to open the backup and run integrity check
       const db = sqlite.createDatabase(backupPath, {
         create: false,
-        readwrite: false,
+        readwrite: false
       });
 
       const result = db.query('PRAGMA integrity_check').get() as {
@@ -161,7 +161,7 @@ export class BackupService {
           filename,
           timestamp,
           sizeBytes: stat.size,
-          compressed: filename.endsWith('.gz'),
+          compressed: filename.endsWith('.gz')
         });
       }
 
@@ -197,8 +197,12 @@ export class BackupService {
       minimumBackups: number;
     }
   ): Promise<BackupInfo[]> {
-    const { dailyRetention, weeklyRetention, monthlyRetention, minimumBackups } =
-      retention;
+    const {
+      dailyRetention,
+      weeklyRetention,
+      monthlyRetention,
+      minimumBackups
+    } = retention;
 
     if (backups.length <= minimumBackups) {
       return [];

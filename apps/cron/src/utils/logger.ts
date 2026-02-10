@@ -20,7 +20,7 @@ export function createLogger(namespace: string): JobLogger {
     },
     error: (message: string, ...args: unknown[]) => {
       baseLogger.error(formatMessage(message, args));
-    },
+    }
   };
 }
 
@@ -91,6 +91,6 @@ export function createCollectingLogger(
     error: (message: string, ...args: unknown[]) => {
       addLog('error', message, args);
       baseLogger.error(message, ...args);
-    },
+    }
   };
 }

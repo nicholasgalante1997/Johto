@@ -140,7 +140,7 @@ services:
       - CRON_LOG_LEVEL=info
       - CRON_TIMEZONE=America/New_York
     healthcheck:
-      test: ["CMD", "bun", "run", "src/cli.ts", "status"]
+      test: ['CMD', 'bun', 'run', 'src/cli.ts', 'status']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -183,7 +183,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U pokemon"]
+      test: ['CMD-SHELL', 'pg_isready -U pokemon']
       interval: 10s
       timeout: 5s
       retries: 5
@@ -219,9 +219,9 @@ docker compose down
 
 ### Required Volumes
 
-| Path | Purpose | Persistence |
-|------|---------|-------------|
-| `/app/database` | SQLite database and backups | Required |
+| Path            | Purpose                     | Persistence |
+| --------------- | --------------------------- | ----------- |
+| `/app/database` | SQLite database and backups | Required    |
 
 ### Volume Commands
 
@@ -292,10 +292,10 @@ docker logs -t pokemon-cron
 services:
   cron:
     logging:
-      driver: "json-file"
+      driver: 'json-file'
       options:
-        max-size: "10m"
-        max-file: "3"
+        max-size: '10m'
+        max-file: '3'
 ```
 
 ## Networking
@@ -317,6 +317,7 @@ docker run -d \
 ### DNS Resolution
 
 In Docker Compose, service names resolve automatically:
+
 - `postgres` resolves to the PostgreSQL container
 - `neo4j` resolves to the Neo4j container
 

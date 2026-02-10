@@ -1,12 +1,10 @@
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { useDecks } from '../contexts/Deck';
-import { useCards } from '../hooks/useCards';
+import { useSearchCards, toCardFormat } from '../hooks/useSearchCards';
 import { useDeckValidation } from '../hooks/useDeckValidation';
 import { CardGrid } from '../components/CardGrid';
 import { SearchBar } from '../components/SearchBar';
-import { Pagination } from '../components/Pagination';
-import { Badge } from '../components/Badge';
 import { DeckValidation } from '../components/DeckValidation';
 import { ROUTES } from '../routes';
 import type { DeckFormat, DeckCard } from '../../types/deck';
@@ -15,8 +13,11 @@ import type { SearchFilters } from '../components/SearchBar/types';
 
 function DeckBuilderPage() {
   const { deckId } = useParams<{ deckId?: string }>();
+
   const navigate = useNavigate();
+
   const { getDeck, createDeck, updateDeck } = useDecks();
+
   const isEditing = Boolean(deckId);
 
   // Get existing deck if editing
@@ -37,10 +38,58 @@ function DeckBuilderPage() {
 
   // Card browser state
   const [searchQuery, setSearchQuery] = useState('');
-  const [page, setPage] = useState(1);
+  const [filterByLegality, setFilterByLegality] = useState(true);
 
-  // Fetch cards for browser
-  const { data: allCards, isLoading: loading } = useCards(page, 300);
+  // Search cards with debouncing - returns top 100 sorted by most recent release
+  const {
+    cards: searchResults,
+    isLoading: loading,
+    error,
+    isError
+  } = useSearchCards(searchQuery, { limit: 100 });
+
+  // Convert search results to Pokemon.Card format and filter by legality
+  const cards: Pokemon.Card[] = useMemo(() => {
+    if (error || isError) return [];
+    if (!searchResults) return [];
+
+    let results = searchResults.map((card) => {
+      const formatted = toCardFormat(card);
+      // Use unknown cast since we have a partial card structure that's compatible
+      // with what the UI components actually use
+      return {
+        ...formatted,
+        images: formatted.images
+      } as unknown as Pokemon.Card;
+    });
+
+    // Filter by legality if enabled and format is standard/expanded
+    if (
+      filterByLegality &&
+      (deckFormat === 'standard' || deckFormat === 'expanded')
+    ) {
+      results = results.filter((card) => {
+        const legality = (card.legalities as Record<DeckFormat, string>)?.[
+          deckFormat
+        ];
+        return legality === 'Legal';
+      });
+    }
+
+    return results;
+  }, [searchResults, filterByLegality, deckFormat, error, isError]);
+
+  // Cards used for deck validation (include all searched cards)
+  const allCards = useMemo(() => {
+    if (!searchResults) return [];
+    return searchResults.map((card) => {
+      const formatted = toCardFormat(card);
+      return {
+        ...formatted,
+        images: formatted.images
+      } as unknown as Pokemon.Card;
+    });
+  }, [searchResults]);
 
   // Initialize from existing deck
   useEffect(() => {
@@ -52,19 +101,16 @@ function DeckBuilderPage() {
     }
   }, [existingDeck]);
 
-  // Validate deck
-  const validation = useDeckValidation(
-    deckCards,
-    allCards?.data || [],
-    deckFormat
-  );
+  // Validate deck - use allCards for validation (unfiltered by legality display)
+  const validation = useDeckValidation(deckCards, allCards, deckFormat);
+
   const { totalCards, isValid } = validation;
 
-  // Get card details for deck display
+  // Get card details for deck display - search through all available cards
   const deckCardsWithDetails = useMemo(() => {
     return deckCards
       .map((deckCard) => {
-        const cardDetail = allCards?.data.find((c) => c.id === deckCard.cardId);
+        const cardDetail = allCards.find((c) => c.id === deckCard.card.id);
         return cardDetail
           ? { ...cardDetail, quantity: deckCard.quantity }
           : null;
@@ -72,16 +118,15 @@ function DeckBuilderPage() {
       .filter(Boolean) as Array<{ quantity: number } & Pokemon.Card>;
   }, [deckCards, allCards]);
 
-  // Handle search
+  // Handle search - debouncing is handled by useSearchCards
   const handleSearch = useCallback((filters: SearchFilters) => {
     setSearchQuery(filters.query);
-    setPage(1);
   }, []);
 
   // Add card to deck
   const handleAddCard = useCallback((card: Pokemon.Card) => {
     setDeckCards((prev) => {
-      const existing = prev.find((c) => c.cardId === card.id);
+      const existing = prev.find((c) => c.card.id === card.id);
       if (existing) {
         // Check 4-of rule (basic energy exempt)
         const isBasicEnergy =
@@ -90,10 +135,10 @@ function DeckBuilderPage() {
           return prev;
         }
         return prev.map((c) =>
-          c.cardId === card.id ? { ...c, quantity: c.quantity + 1 } : c
+          c.card.id === card.id ? { ...c, quantity: c.quantity + 1 } : c
         );
       }
-      return [...prev, { cardId: card.id, quantity: 1 }];
+      return [...prev, { quantity: 1, card: card }];
     });
     setIsDirty(true);
   }, []);
@@ -101,13 +146,13 @@ function DeckBuilderPage() {
   // Remove card from deck
   const handleRemoveCard = useCallback((cardId: string) => {
     setDeckCards((prev) => {
-      const existing = prev.find((c) => c.cardId === cardId);
+      const existing = prev.find((c) => c.card.id === cardId);
       if (existing && existing.quantity > 1) {
         return prev.map((c) =>
-          c.cardId === cardId ? { ...c, quantity: c.quantity - 1 } : c
+          c.card.id === cardId ? { ...c, quantity: c.quantity - 1 } : c
         );
       }
-      return prev.filter((c) => c.cardId !== cardId);
+      return prev.filter((c) => c.card.id !== cardId);
     });
     setIsDirty(true);
   }, []);
@@ -220,28 +265,37 @@ function DeckBuilderPage() {
         <div className="deck-builder-page__panel deck-builder-page__browser">
           <div className="deck-builder-page__panel-header">
             <h2>Card Browser</h2>
+            <div className="deck-builder-page__browser-controls">
+              {(deckFormat === 'standard' || deckFormat === 'expanded') && (
+                <label className="deck-builder-page__legality-toggle">
+                  <input
+                    type="checkbox"
+                    checked={filterByLegality}
+                    onChange={(e) => setFilterByLegality(e.target.checked)}
+                  />
+                  <span>Legal only</span>
+                </label>
+              )}
+            </div>
+          </div>
+          <div className="deck-builder-page__panel-search">
             <SearchBar onSearch={handleSearch} placeholder="Search cards..." />
           </div>
           <div className="deck-builder-page__panel-content">
             <CardGrid
-              cards={allCards?.data || []}
+              cards={cards}
               onCardSelect={handleAddCard}
               loading={loading}
               columns={3}
-              emptyMessage="No cards found"
+              emptyMessage={
+                searchQuery.trim()
+                  ? filterByLegality
+                    ? `No ${deckFormat}-legal cards found for "${searchQuery}"`
+                    : `No cards found for "${searchQuery}"`
+                  : 'Start typing to search for cards'
+              }
             />
           </div>
-          {/* {false && pagination.totalPages > 1 && (
-            <div className="deck-builder-page__panel-footer">
-              <Pagination
-                currentPage={page}
-                totalPages={pagination.totalPages}
-                onPageChange={setPage}
-                siblingCount={0}
-                showFirstLast={false}
-              />
-            </div>
-          )} */}
         </div>
 
         {/* Deck Contents Panel */}
@@ -293,22 +347,22 @@ function DeckBuilderPage() {
             {/* Show cards without details */}
             {deckCards
               .filter(
-                (dc) => !deckCardsWithDetails.find((d) => d.id === dc.cardId)
+                (dc) => !deckCardsWithDetails.find((d) => d.id === dc.card.id)
               )
               .map((dc) => (
                 <div
-                  key={dc.cardId}
+                  key={dc.card.id}
                   className="deck-builder-page__deck-card deck-builder-page__deck-card--no-image"
                 >
                   <div className="deck-builder-page__deck-card-info">
                     <span className="deck-builder-page__deck-card-name">
-                      {dc.cardId}
+                      {`${dc.card.name} (ID: ${dc.card.id}) (Set: ${dc.card.set.name})}`}
                     </span>
                     <div className="deck-builder-page__deck-card-controls">
                       <button
                         type="button"
                         className="deck-builder-page__qty-btn"
-                        onClick={() => handleRemoveCard(dc.cardId)}
+                        onClick={() => handleRemoveCard(dc.card.id)}
                       >
                         -
                       </button>
