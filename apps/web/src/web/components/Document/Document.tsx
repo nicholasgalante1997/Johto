@@ -15,7 +15,14 @@ function Document(props: DocumentProps) {
         <link rel="manifest" href="/site.webmanifest" />
         {/* Minimal CSS reset - no external font dependencies */}
         <link rel="stylesheet" href="/css/index.css" />
+        {/* Page-level styles for all routes */}
         <link rel="stylesheet" href="/css/pages.css" />
+        {/* Default Catppuccin theme - will be swapped by ThemeProvider on client */}
+        <link
+          id="catppuccin-theme"
+          rel="stylesheet"
+          href="/css/themes/catppuccin-mocha.css"
+        />
       </head>
       <body>
         <main>{props.children}</main>

@@ -1,3 +1,7 @@
+/* ============================================
+   DeckList Component - Catppuccin Theme
+   ============================================ */
+
 .pokemon-deck-list-container {
   display: flex;
   flex-direction: column;

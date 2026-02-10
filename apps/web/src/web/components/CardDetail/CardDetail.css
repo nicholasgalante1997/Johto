@@ -1,3 +1,7 @@
+/* ============================================
+   CardDetail Component - Catppuccin Theme
+   ============================================ */
+
 .card-detail {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -121,6 +125,7 @@
   color: var(--contrast-text);
 }
 
+/* Energy type colors - game accurate */
 .energy-icon--fire { background-color: #ef4444; }
 .energy-icon--water { background-color: #3b82f6; }
 .energy-icon--grass { background-color: #22c55e; }

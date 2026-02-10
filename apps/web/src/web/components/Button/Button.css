@@ -1,3 +1,7 @@
+/* ============================================
+   Button Component - Catppuccin Theme
+   ============================================ */
+
 :root {
   --pokemon-button-radius: 6px;
   --pokemon-button-transition: all 0.15s ease;
@@ -27,7 +31,7 @@
   cursor: not-allowed;
 }
 
-/* Variants */
+/* Primary variant */
 .pokemon-button--primary {
   background-color: var(--pico-primary);
   color: var(--contrast-text);
@@ -37,6 +41,7 @@
   background-color: var(--pico-primary-hover);
 }
 
+/* Secondary variant */
 .pokemon-button--secondary {
   background-color: var(--surface-hover);
   color: var(--pico-color);
@@ -46,6 +51,7 @@
   background-color: var(--surface-active);
 }
 
+/* Ghost variant */
 .pokemon-button--ghost {
   background-color: transparent;
   color: var(--pico-primary);
@@ -57,6 +63,7 @@
   border-color: var(--pico-primary);
 }
 
+/* Danger variant */
 .pokemon-button--danger {
   background-color: var(--color-error);
   color: var(--contrast-text);

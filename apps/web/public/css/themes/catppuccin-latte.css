@@ -1,0 +1,112 @@
+/* ============================================
+   Catppuccin Latte - Light Flavor
+   https://catppuccin.com/palette
+   ============================================ */
+
+:root {
+  color-scheme: light;
+
+  /* Base Colors */
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo: #dd7878;
+  --ctp-pink: #ea76cb;
+  --ctp-mauve: #8839ef;
+  --ctp-red: #d20f39;
+  --ctp-maroon: #e64553;
+  --ctp-peach: #fe640b;
+  --ctp-yellow: #df8e1d;
+  --ctp-green: #40a02b;
+  --ctp-teal: #179299;
+  --ctp-sky: #04a5e5;
+  --ctp-sapphire: #209fb5;
+  --ctp-blue: #1e66f5;
+  --ctp-lavender: #7287fd;
+
+  /* Surface Colors */
+  --ctp-text: #4c4f69;
+  --ctp-subtext1: #5c5f77;
+  --ctp-subtext0: #6c6f85;
+  --ctp-overlay2: #7c7f93;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-surface2: #acb0be;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface0: #ccd0da;
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+
+  /* Semantic Mappings */
+  --ctp-primary: var(--ctp-mauve);
+  --ctp-primary-hover: #7730d4;
+  --ctp-primary-glow: rgba(136, 57, 239, 0.2);
+  --ctp-primary-muted: rgba(136, 57, 239, 0.1);
+
+  --ctp-secondary: var(--ctp-sapphire);
+  --ctp-secondary-hover: #1a8a9e;
+  --ctp-secondary-glow: rgba(32, 159, 181, 0.2);
+  --ctp-secondary-muted: rgba(32, 159, 181, 0.1);
+
+  --ctp-tertiary: var(--ctp-peach);
+  --ctp-tertiary-glow: rgba(254, 100, 11, 0.2);
+
+  /* Backgrounds */
+  --ctp-bg-base: var(--ctp-base);
+  --ctp-bg-surface: var(--ctp-mantle);
+  --ctp-bg-elevated: var(--ctp-crust);
+  --ctp-bg-hover: var(--ctp-surface0);
+
+  /* Text */
+  --ctp-text-primary: var(--ctp-text);
+  --ctp-text-secondary: var(--ctp-subtext1);
+  --ctp-text-muted: var(--ctp-overlay1);
+  --ctp-text-on-accent: var(--ctp-base);
+
+  /* Borders */
+  --ctp-border: var(--ctp-surface0);
+  --ctp-border-bright: var(--ctp-surface1);
+  --ctp-border-muted: rgba(0, 0, 0, 0.1);
+
+  /* Semantic Status */
+  --ctp-success: var(--ctp-green);
+  --ctp-warning: var(--ctp-yellow);
+  --ctp-error: var(--ctp-red);
+  --ctp-info: var(--ctp-blue);
+
+  /* Legacy Pico Compatibility */
+  --pico-primary: var(--ctp-mauve);
+  --pico-primary-hover: #7730d4;
+  --pico-primary-hover-background: rgba(136, 57, 239, 0.12);
+  --pico-background-color: var(--ctp-base);
+  --pico-card-background-color: var(--ctp-mantle);
+  --pico-color: var(--ctp-text);
+  --pico-muted-color: var(--ctp-overlay1);
+  --pico-muted-border-color: rgba(0, 0, 0, 0.1);
+  --pico-secondary-hover-background: rgba(0, 0, 0, 0.05);
+  --pico-form-element-background-color: var(--ctp-surface0);
+
+  /* Semantic Tokens (used by pages + components) */
+  --color-success: var(--ctp-green);
+  --color-warning: var(--ctp-yellow);
+  --color-error: var(--ctp-red);
+  --bg-sunken: var(--ctp-mantle);
+  --text-secondary: var(--ctp-subtext1);
+  --surface-hover: var(--ctp-surface1);
+  --surface-active: var(--ctp-surface2);
+  --contrast-text: var(--ctp-base);
+  --focus-ring: var(--ctp-mauve);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* Pokemon rarity */
+  --pokemon-rarity-common: var(--ctp-overlay0);
+  --pokemon-rarity-uncommon: var(--ctp-overlay2);
+  --pokemon-rarity-rare: var(--ctp-blue);
+  --pokemon-rarity-rare-holo: var(--ctp-mauve);
+  --pokemon-rarity-rare-ultra: var(--ctp-pink);
+  --pokemon-rarity-rare-secret: var(--ctp-yellow);
+
+  /* Pokemon-specific */
+  --pokemon-header-background-stable-top: transparent;
+  --pokemon-header-background-scrolling: var(--ctp-mauve);
+}

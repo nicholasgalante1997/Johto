@@ -1,3 +1,7 @@
+/* ============================================
+   Card Component - Catppuccin Theme
+   ============================================ */
+
 :root {
   --pokemon-card-radius: 8px;
   --pokemon-card-transition: all 0.15s ease;

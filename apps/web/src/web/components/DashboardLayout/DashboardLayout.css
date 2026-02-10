@@ -1,3 +1,7 @@
+/* ============================================
+   DashboardLayout Component - Catppuccin Theme
+   ============================================ */
+
 :root {
   --pokemon-dashboard-header-height: 64px;
   --pokemon-dashboard-sidebar-width: 260px;
@@ -8,7 +12,7 @@
   display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--pico-background-color, #0f0f23);
+  background-color: var(--ctp-bg-base, #11111b);
 }
 
 /* Sidebar */

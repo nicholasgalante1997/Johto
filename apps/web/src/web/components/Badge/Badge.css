@@ -1,7 +1,11 @@
+/* ============================================
+   Badge Component - Catppuccin Theme
+   ============================================ */
+
 :root {
   --pokemon-badge-radius: 4px;
 
-  /* Type colors based on Pokemon TCG */
+  /* Pokemon Type colors - preserved for TCG accuracy */
   --pokemon-type-colorless: #a8a878;
   --pokemon-type-darkness: #705848;
   --pokemon-type-dragon: #7038f8;
@@ -74,7 +78,7 @@
   color: var(--contrast-text);
 }
 
-/* Type variants */
+/* Type variants - colors are game-accurate */
 .pokemon-badge--type {
   color: var(--contrast-text);
 }
@@ -127,7 +131,7 @@
   color: var(--pico-color);
 }
 
-/* Rarity variants */
+/* Rarity variants - using Catppuccin accent colors */
 .pokemon-badge--rarity {
   font-weight: 600;
 }
